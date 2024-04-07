@@ -1,0 +1,140 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "minecraft:item/carrot_on_a_stick"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 2000
+      },
+      "model": "dvz:item/disc_builder"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2001
+      },
+      "model": "dvz:item/disc_blacksmith"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2002
+      },
+      "model": "dvz:item/disc_tailor"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2003
+      },
+      "model": "dvz:item/disc_baker"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2004
+      },
+      "model": "dvz:item/disc_alchemist"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2005
+      },
+      "model": "dvz:item/disc_enchanter"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3000
+      },
+      "model": "dvz:item/summoning_book"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3001
+      },
+      "model": "dvz:item/summoning_book"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3002
+      },
+      "model": "dvz:item/summoning_book"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3003
+      },
+      "model": "dvz:item/summoning_book"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3004
+      },
+      "model": "dvz:item/summoning_book"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3005
+      },
+      "model": "dvz:item/summoning_book"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3006
+      },
+      "model": "dvz:item/legendary_book"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3100
+      },
+      "model": "dvz:item/magic_health_potion"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3101
+      },
+      "model": "dvz:item/magic_speed_potion"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3102
+      },
+      "model": "dvz:item/magic_strength_potion"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3103
+      },
+      "model": "dvz:item/magic_jump_boost_potion"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3104
+      },
+      "model": "dvz:item/pearl_rod"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3105
+      },
+      "model": "dvz:item/water_wand"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3106
+      },
+      "model": "dvz:item/super_fertilizer"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4000
+      },
+      "model": "dvz:item/elder_guardian_eye"
+    },
+        {
+      "predicate": {
+        "custom_model_data": 9000
+      },
+      "model": "dvz:item/magma_cream"
+    }
+  ]
+}

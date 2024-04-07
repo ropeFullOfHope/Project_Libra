@@ -1,0 +1,394 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 3100
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Magic Health Potion",
+                "color": "red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Fully restores your health.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Requires 30 mana",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "20 second cooldown",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "Active Item",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 3101
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Magic Speed Potion",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Grants temporary Speed.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Requires 30 mana",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "Active Item",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 3102
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Magic Strength Potion",
+                "color": "red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Grants temporary Strength.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Requires 30 mana",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "Active Item",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 3103
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Magic Jump Boost Potion",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Grants temporary Jump Boost.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Requires 30 mana",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "Active Item",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:firework_rocket",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 8
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {}
+              }
+            },
+            {
+              "function": "minecraft:set_fireworks",
+              "explosions": [
+                {
+                  "shape": "small_ball",
+                  "colors": [
+                    26367
+                  ]
+                },
+                {
+                  "shape": "small_ball",
+                  "colors": [
+                    26367
+                  ]
+                },
+                {
+                  "shape": "small_ball",
+                  "colors": [
+                    26367
+                  ]
+                },
+                {
+                  "shape": "small_ball",
+                  "colors": [
+                    26367
+                  ]
+                },
+                {
+                  "shape": "small_ball",
+                  "colors": [
+                    26367
+                  ]
+                },
+                {
+                  "shape": "small_ball",
+                  "colors": [
+                    26367
+                  ]
+                },
+                {
+                  "shape": "small_ball",
+                  "colors": [
+                    26367
+                  ]
+                }
+              ],
+              "mode": "replace_all",
+              "flight_duration": 1
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Flight Duration: 1",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Firework Stars: 7",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:milk_bucket"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glass",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Craft into Glass Bottles.",
+                  "color": "blue"
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 10
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Give to the Tailor.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Craft into Bone Meal.",
+                  "color": "blue"
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Give to the Enchanter.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Transmute with Summoning Book.",
+                  "color": "blue"
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 1000
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Legendary Shard",
+                "color": "gold",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "stepping_on": {
+                "block": {
+                  "blocks": "#minecraft:ice"
+                }
+              },
+              "equipment": {
+                "feet": {
+                  "predicates": {
+                    "minecraft:custom_data": "{permafrost:1}"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "dvz:custom_enchantments/armor/permafrost"
+  }
+}

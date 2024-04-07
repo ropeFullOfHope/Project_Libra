@@ -1,0 +1,15 @@
+{
+  "block.minecraft.end_stone_brick_slab": "Reinforced Brick Slab",
+  "block.minecraft.end_stone_brick_stairs": "Reinforced Brick Stairs",
+  "block.minecraft.end_stone_brick_wall": "Reinforced Brick Wall",
+  "block.minecraft.end_stone_bricks": "Reinforced Bricks",
+  "block.minecraft.sea_lantern": "Lantern Block",
+  "effect.minecraft.luck": "Mana Regeneration",
+  "effect.minecraft.unluck": "Curse",
+  "effect.minecraft.fire_resistance": "Elemental Resistance",
+  "item.minecraft.potion.effect.fire_resistance": "Potion of Elemental Resistance",
+  "item.minecraft.splash_potion.effect.fire_resistance": "Splash Potion of Elemental Resistance",
+  "item.minecraft.lingering_potion.effect.fire_resistance": "Lingering Potion of Elemental Resistance",
+  "item.minecraft.tipped_arrow.effect.fire_resistance": "Arrow of Elemental Resistance",
+  "enchantment.minecraft.fire_protection": "Elemental Protection"
+}

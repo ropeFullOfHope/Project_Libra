@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "#minecraft:arrows",
+              "nbt": "{Tags:[\"decay\"]}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dvz:custom_enchantments/bow/decay"
+  }
+}

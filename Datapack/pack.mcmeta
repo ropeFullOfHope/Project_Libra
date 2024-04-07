@@ -1,0 +1,34 @@
+{
+  "pack": {
+    "pack_format": 18,
+    "description": "OG Dwarves VS Zombies.\nBy Sahlonahl."
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "advancements/adventure/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancements/end/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancements/husbandry/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancements/nether/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancements/story/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancements/recipes/*"
+      }
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 12
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Use to enchant weapons, tools and armor.",
+                  "color": "blue"
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 3104
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Pearl Rod",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Teleports you to the shrine.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Requires 50 mana",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "60 second cooldown",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "Active Item",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_powder",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Give to the Alchemist.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Use to fuel the Brewing Stand.",
+                  "color": "blue"
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 1000
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Legendary Shard",
+                "color": "gold",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    }
+  ]
+}

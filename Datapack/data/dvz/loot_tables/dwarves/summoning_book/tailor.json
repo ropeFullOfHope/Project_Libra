@@ -1,0 +1,267 @@
+{
+  "pools": [
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_leggings"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_boots"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "minecraft:generic.armor",
+                      "uuid": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "name": "minecraft:generic.armor",
+                      "amount": 2,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:generic.armor",
+                      "uuid": [
+                        2,
+                        2,
+                        2,
+                        2
+                      ],
+                      "name": "minecraft:generic.armor",
+                      "amount": 2,
+                      "operation": "add_value",
+                      "slot": "offhand"
+                    },
+                    {
+                      "type": "minecraft:generic.knockback_resistance",
+                      "uuid": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "name": "minecraft:generic.knockback_resistance",
+                      "amount": 0.2,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:generic.knockback_resistance",
+                      "uuid": [
+                        2,
+                        2,
+                        2,
+                        2
+                      ],
+                      "name": "minecraft:generic.knockback_resistance",
+                      "amount": 0.2,
+                      "operation": "add_value",
+                      "slot": "offhand"
+                    },
+                    {
+                      "type": "minecraft:generic.movement_speed",
+                      "uuid": [
+                        1,
+                        1,
+                        1,
+                        1
+                      ],
+                      "name": "minecraft:generic.movement_speed",
+                      "amount": -0.015,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:generic.movement_speed",
+                      "uuid": [
+                        2,
+                        2,
+                        2,
+                        2
+                      ],
+                      "name": "minecraft:generic.movement_speed",
+                      "amount": -0.015,
+                      "operation": "add_value",
+                      "slot": "offhand"
+                    }
+                  ],
+                  "show_in_tooltip": false
+                },
+                "minecraft:banner_patterns": [
+                  {
+                    "pattern": "dvz:tower",
+                    "color": "white"
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Tower Shield",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "When in Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "+2 Armor",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+2 Knockback Resistance",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "-1.5 Movement Speed",
+                  "color": "red",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ore",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 20,
+                "max": 40
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Give to the Blacksmith.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Smelt into Gold Ingots.",
+                  "color": "blue"
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Give to the Enchanter.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Transmute with Summoning Book.",
+                  "color": "blue"
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 1000
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Legendary Shard",
+                "color": "gold",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    }
+  ]
+}

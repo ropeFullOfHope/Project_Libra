@@ -1,0 +1,427 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 3,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 20
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 6,
+                  "saturation_modifier": 0.8
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Medium Meal",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "When Consumed:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "+6 Nutrition",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+9.6 Saturation",
+                  "color": "blue",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pumpkin_pie",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 20
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 6,
+                  "saturation_modifier": 0.6,
+                  "eat_seconds": 1.2
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Light Meal",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "When Consumed:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "+6 Nutrition",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+7.2 Saturation",
+                  "color": "blue",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cake",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Placable Meal",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "Regeneration II (0:10)",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "When Consumed:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "+2 Nutrition",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+0.4 Saturation",
+                  "color": "blue",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_carrot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Medium Meal",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "When Consumed:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "+6 Nutrition",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+14.4 Saturation",
+                  "color": "blue",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_lore",
+          "lore": [
+            {
+              "text": "Medium Meal",
+              "color": "gray",
+              "italic": false
+            },
+            {
+              "text": "Regeneration II (0:05)",
+              "color": "blue",
+              "italic": false
+            },
+            {
+              "text": "Absorption (2:00)",
+              "color": "blue",
+              "italic": false
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "When Consumed:",
+              "color": "gray",
+              "italic": false
+            },
+            {
+              "text": "+4 Nutrition",
+              "color": "blue",
+              "italic": false
+            },
+            {
+              "text": "+9.6 Saturation",
+              "color": "blue",
+              "italic": false
+            }
+          ],
+          "mode": "insert"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cookie",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 2,
+                  "saturation_modifier": 0.1,
+                  "eat_seconds": 0.8
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Snack",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "When Consumed:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "+2 Nutrition",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+0.4 Saturation",
+                  "color": "blue",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.01
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clay",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 4
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Mine to get Clay Balls.",
+                  "color": "blue"
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Give to the Enchanter.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Transmute with Summoning Book.",
+                  "color": "blue"
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 1000
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Legendary Shard",
+                "color": "gold",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    }
+  ]
+}
