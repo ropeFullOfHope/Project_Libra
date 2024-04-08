@@ -34,7 +34,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
   minecraft:lore=[ \
     '{"text":"Conjures weapons and tools.","color":"blue"}', \
-    '{"text":"Requires 3 Clocks","italic":false,"color":"red"}', \
+    '{"text":"Requires 5 Clocks","italic":false,"color":"red"}', \
     '{"text":"Requires 30 mana","italic":false,"color":"red"}', \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
@@ -42,7 +42,7 @@ give @s minecraft:carrot_on_a_stick[ \
 give @s minecraft:iron_pickaxe
 give @s minecraft:nether_bricks 64
 give @s minecraft:nether_bricks 64
-give @s minecraft:furnace 4
+give @s minecraft:blast_furnace 4
 give @s minecraft:chest 2
 give @s minecraft:oak_sign 3
 give @s minecraft:gold_ore[ \
@@ -51,12 +51,12 @@ give @s minecraft:gold_ore[ \
     '{"text":"Smelt to get Gold Ingots.","color":"blue"}', \
     '{"text":"Use Gold Ingots to craft Clocks.","color":"blue"}' \
   ] \
-] 32
+] 80
 give @s minecraft:redstone_ore[ \
   minecraft:lore=[ \
     '{"text":"Mine to get Redstone Dust.","color":"blue"}' \
   ] \
-] 4
+] 5
 give @s minecraft:coal[ \
   minecraft:lore=[ \
     '{"text":"Share with Baker and Alchemist.","color":"blue"}', \

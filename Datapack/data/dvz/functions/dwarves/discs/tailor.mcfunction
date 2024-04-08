@@ -60,7 +60,7 @@ give @s minecraft:bone[ \
     '{"text":"Craft into Bone Meal.","color":"blue"}', \
     '{"text":"Use Bone Meal to grow flowers.","color":"blue"}' \
   ] \
-] 10
+] 16
 give @s minecraft:cooked_porkchop 1
 execute as @s at @s run function dvz:give/legendary_book
 

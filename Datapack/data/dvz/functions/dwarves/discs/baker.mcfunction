@@ -48,13 +48,13 @@ give @s minecraft:clay_ball[ \
   minecraft:lore=[ \
     '{"text":"Smelt to get Bricks.","color":"blue"}' \
   ] \
-] 32
+] 40
 give @s minecraft:coal[ \
   minecraft:lore=[ \
     '{"text":"Share with Baker and Alchemist.","color":"blue"}', \
     '{"text":"Use to fuel the Furnace.","color":"blue"}' \
   ] \
-] 10
+] 5
 give @s minecraft:cooked_porkchop 1
 execute as @s at @s run function dvz:give/legendary_book
 

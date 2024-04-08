@@ -15,14 +15,14 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 execute store result score @s DVZ.result.score run clear @s minecraft:clock 0
-execute unless entity @s[scores={DVZ.result.score=3..}] run title @s actionbar [ \
+execute unless entity @s[scores={DVZ.result.score=5..}] run title @s actionbar [ \
   "", \
   {"text":"[Summoning Book]","bold":true,"color":"dark_red"}, \
   {"text":" You need at least ","color":"dark_red"}, \
   {"text":"3 Clocks","bold":true,"color":"dark_red"}, \
   {"text":"!","color":"dark_red"} \
 ]
-execute unless entity @s[scores={DVZ.result.score=3..}] run return 0
+execute unless entity @s[scores={DVZ.result.score=5..}] run return 0
 
 execute unless entity @s[level=30..] run title @s actionbar [ \
   "", \
@@ -33,7 +33,7 @@ execute unless entity @s[level=30..] run title @s actionbar [ \
 ]
 execute unless entity @s[level=30..] run return 0
 
-clear @s minecraft:clock 3
+clear @s minecraft:clock 5
 
 # Remove 30 levels.
 scoreboard players remove @s DVZ.mana_buildup 30000

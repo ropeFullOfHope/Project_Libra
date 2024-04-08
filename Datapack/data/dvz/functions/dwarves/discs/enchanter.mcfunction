@@ -38,13 +38,13 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]
-give @s minecraft:smooth_quartz 64
-give @s minecraft:smooth_quartz 64
+give @s minecraft:quartz_bricks 64
+give @s minecraft:quartz_bricks 64
 give @s minecraft:bookshelf 18
 give @s minecraft:enchanting_table 1
 give @s minecraft:grindstone 1
 give @s minecraft:anvil 4
-give @s minecraft:chest 2
+give @s minecraft:chest 8
 give @s minecraft:oak_sign 3
 give @s minecraft:emerald[ \
   minecraft:lore=[ \

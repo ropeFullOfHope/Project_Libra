@@ -81,7 +81,8 @@ give @s minecraft:iron_pickaxe[ \
   minecraft:item_name='{"text":"Builder Pickaxe","color":"green"}', \
   minecraft:enchantments={ \
     levels:{ \
-      "minecraft:efficiency":4 \
+      "minecraft:efficiency":4, \
+      "minecraft:unbreaking":2 \
     } \
   } \
 ]
@@ -89,7 +90,8 @@ give @s minecraft:iron_shovel[ \
   minecraft:item_name='{"text":"Builder Shovel","color":"green"}', \
   minecraft:enchantments={ \
     levels:{ \
-      "minecraft:efficiency":4 \
+      "minecraft:efficiency":4, \
+      "minecraft:unbreaking":2 \
     } \
   } \
 ]
@@ -98,6 +100,7 @@ give @s minecraft:iron_axe[ \
   minecraft:enchantments={ \
     levels:{ \
       "minecraft:efficiency":4, \
+      "minecraft:unbreaking":2, \
       "minecraft:silk_touch":1 \
     } \
   } \

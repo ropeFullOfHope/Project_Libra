@@ -53,7 +53,6 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]
-give @s minecraft:furnace
 give @s minecraft:chest 2
 give @s minecraft:oak_sign 3
 give @s minecraft:glass_bottle[ \
@@ -61,7 +60,7 @@ give @s minecraft:glass_bottle[ \
     '{"text":"Fill with Water to get Water Bottles.","color":"blue"}', \
     '{"text":"Put Water Bottles in Brewing Stand.","color":"blue"}' \
   ] \
-] 24
+] 12
 give @s minecraft:blaze_powder[ \
   minecraft:lore=[ \
     '{"text":"Give to the Alchemist.","color":"blue"}', \
@@ -74,7 +73,7 @@ give @s minecraft:redstone[ \
     '{"text":"Use to craft Clocks.","color":"blue"}', \
     '{"text":"Use as brewing ingredient.","color":"blue"}' \
   ] \
-] 8
+] 4
 give @s minecraft:cooked_porkchop 1
 execute as @s at @s run function dvz:give/legendary_book
 

@@ -342,16 +342,49 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 4
-              }
+              "count": 3
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "Mine to get Clay Balls.",
+                  "color": "blue"
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glass_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 6
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Give to the Alchemist.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Fill with water,",
+                  "color": "blue"
+                },
+                {
+                  "text": "then place in Brewing Stand.",
                   "color": "blue"
                 }
               ],
