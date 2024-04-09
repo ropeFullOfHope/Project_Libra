@@ -39,168 +39,168 @@
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/expstart.png",
+      "file": "dvz:font/expstart.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE000"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/exp0.png",
+      "file": "dvz:font/exp0.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE001"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/exp1.png",
+      "file": "dvz:font/exp1.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE002"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/exp2.png",
+      "file": "dvz:font/exp2.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE003"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/exp3.png",
+      "file": "dvz:font/exp3.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE004"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/exp4.png",
+      "file": "dvz:font/exp4.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE005"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/exp5.png",
+      "file": "dvz:font/exp5.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE006"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/exp6.png",
+      "file": "dvz:font/exp6.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE007"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/exp7.png",
+      "file": "dvz:font/exp7.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE008"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/exp8.png",
+      "file": "dvz:font/exp8.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE009"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/flamestart.png",
+      "file": "dvz:font/flamestart.png",
       "height": 9,
       "ascent": 9,
       "chars": ["\uE010"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/flame0.png",
+      "file": "dvz:font/flame0.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE011"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/flame1.png",
+      "file": "dvz:font/flame1.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE012"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/flame2.png",
+      "file": "dvz:font/flame2.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE013"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/flame3.png",
+      "file": "dvz:font/flame3.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE014"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/flame4.png",
+      "file": "dvz:font/flame4.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE015"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/flame5.png",
+      "file": "dvz:font/flame5.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE016"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/flame6.png",
+      "file": "dvz:font/flame6.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE017"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/flame7.png",
+      "file": "dvz:font/flame7.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE018"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/flame8.png",
+      "file": "dvz:font/flame8.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE019"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/flame9.png",
+      "file": "dvz:font/flame9.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE01A"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/flame10.png",
+      "file": "dvz:font/flame10.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE01B"]
     },
     {
       "type": "bitmap",
-      "file": "minecraft:font/textbox/golden_flail.png",
+      "file": "dvz:font/textbox/golden_flail.png",
       "height": 142,
       "ascent": 25,
       "chars": ["\uE020"]
     },
         {
       "type": "bitmap",
-      "file": "minecraft:font/logo.png",
+      "file": "dvz:font/logo.png",
       "height": 17,
       "ascent": 17,
       "chars": ["\uEFFF"]

@@ -137,6 +137,18 @@ give @s minecraft:golden_axe[ \
     show_in_tooltip:false \
   } \
 ]
+give @s minecraft:carrot_on_a_stick[ \
+  minecraft:custom_model_data=4001, \
+  minecraft:unbreakable={show_in_tooltip:false}, \
+  minecraft:item_name='{"text":"Dwarven Ruby","color":"red"}', \
+  minecraft:lore=[ \
+    '{"text":"Refills mana of other dwarves.","color":"blue"}', \
+    '{"text":"Requires 50 mana","color":"red","italic":false}', \
+    '{"text":"60 second cooldown","color":"red","italic":false}', \
+    '{"text":"Active Item","color":"green","italic":false}', \
+    '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
+  ] \
+]
 
 tellraw @a [ \
   "", \

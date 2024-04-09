@@ -2,7 +2,7 @@
 # Called By: dvz:tick
 # File Name: active_detect
 # Function Name: dvz:tick/active_detect
-# File Purpose: Main branch for all right-click items (active items).
+# File Purpose: Main branch for all right-click items/abilities (active items/abilities).
 # Created By: ropeFullOfHope
 # 
 # Created On: 2023.07.09
@@ -87,7 +87,8 @@ execute as @s[tag=mana,scores={DVZ.rclick.custom_model_data=3105}] at @s run fun
 execute as @s[tag=mana,scores={DVZ.rclick.custom_model_data=3106}] at @s run function dvz:dwarves/fertilizer
 
 ### Dwarf hero items (4xxx)
-execute as @s[tag=dwarven_guard,scores={DVZ.rclick.custom_model_data=4000}] at @s run function dvz:dwarves/hero/dwarven_guard/elder_guardian_eye
+execute as @s[tag=dragon_warrior,scores={DVZ.rclick.custom_model_data=4001}] at @s run function dvz:dwarves/heroes/items/dragon_warrior/dwarven_ruby
+execute as @s[tag=dwarven_guard,scores={DVZ.rclick.custom_model_data=4004}] at @s run function dvz:dwarves/hero/dwarven_guard/elder_guardian_eye
 
 ### Dwarf legendary items (5xxx)
 
