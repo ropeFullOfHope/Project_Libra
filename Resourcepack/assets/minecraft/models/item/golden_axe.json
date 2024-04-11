@@ -8,7 +8,7 @@
       "predicate": {
         "custom_model_data": 1000
       },
-      "model": "dvz:item/golden_flail"
+      "model": "ogvz:item/golden_flail"
     }
   ]
 }

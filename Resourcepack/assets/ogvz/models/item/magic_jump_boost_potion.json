@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ogvz:item/magic_jump_boost_potion"
+  }
+}

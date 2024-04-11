@@ -98,14 +98,14 @@
       "predicate": {
         "custom_model_data": 1000
       },
-      "model": "dvz:item/whispersong"
+      "model": "ogvz:item/whispersong"
     },
     {
       "predicate": {
         "custom_model_data": 1000,
         "pulling": 1
       },
-      "model": "dvz:item/whispersong_pulling_0"
+      "model": "ogvz:item/whispersong_pulling_0"
     },
     {
       "predicate": {
@@ -113,7 +113,7 @@
         "pulling": 1,
         "pull": 0.65
       },
-      "model": "dvz:item/whispersong_pulling_1"
+      "model": "ogvz:item/whispersong_pulling_1"
     },
     {
       "predicate": {
@@ -121,7 +121,7 @@
         "pulling": 1,
         "pull": 1.0
       },
-      "model": "dvz:item/whispersong_pulling_2"
+      "model": "ogvz:item/whispersong_pulling_2"
     }
   ]
 }

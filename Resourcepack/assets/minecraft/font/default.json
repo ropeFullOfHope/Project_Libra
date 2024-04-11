@@ -39,168 +39,168 @@
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/expstart.png",
+      "file": "ogvz:font/expstart.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE000"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/exp0.png",
+      "file": "ogvz:font/exp0.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE001"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/exp1.png",
+      "file": "ogvz:font/exp1.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE002"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/exp2.png",
+      "file": "ogvz:font/exp2.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE003"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/exp3.png",
+      "file": "ogvz:font/exp3.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE004"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/exp4.png",
+      "file": "ogvz:font/exp4.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE005"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/exp5.png",
+      "file": "ogvz:font/exp5.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE006"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/exp6.png",
+      "file": "ogvz:font/exp6.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE007"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/exp7.png",
+      "file": "ogvz:font/exp7.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE008"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/exp8.png",
+      "file": "ogvz:font/exp8.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE009"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/flamestart.png",
+      "file": "ogvz:font/flamestart.png",
       "height": 9,
       "ascent": 9,
       "chars": ["\uE010"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/flame0.png",
+      "file": "ogvz:font/flame0.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE011"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/flame1.png",
+      "file": "ogvz:font/flame1.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE012"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/flame2.png",
+      "file": "ogvz:font/flame2.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE013"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/flame3.png",
+      "file": "ogvz:font/flame3.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE014"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/flame4.png",
+      "file": "ogvz:font/flame4.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE015"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/flame5.png",
+      "file": "ogvz:font/flame5.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE016"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/flame6.png",
+      "file": "ogvz:font/flame6.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE017"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/flame7.png",
+      "file": "ogvz:font/flame7.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE018"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/flame8.png",
+      "file": "ogvz:font/flame8.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE019"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/flame9.png",
+      "file": "ogvz:font/flame9.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE01A"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/flame10.png",
+      "file": "ogvz:font/flame10.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\uE01B"]
     },
     {
       "type": "bitmap",
-      "file": "dvz:font/textbox/golden_flail.png",
+      "file": "ogvz:font/textbox/golden_flail.png",
       "height": 162,
       "ascent": 25,
       "chars": ["\uE020"]
     },
         {
       "type": "bitmap",
-      "file": "dvz:font/logo.png",
+      "file": "ogvz:font/logo.png",
       "height": 17,
       "ascent": 17,
       "chars": ["\uEFFF"]
