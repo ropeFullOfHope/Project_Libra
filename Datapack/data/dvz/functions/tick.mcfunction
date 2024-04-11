@@ -25,8 +25,8 @@ function dvz:tick/lasting_abilities
 execute as @e[tag=air_time] at @s run function dvz:tick/air_time
 function dvz:tick/ai_mob_teams
 execute as @a[tag=dwarves,tag=mana] at @s run function dvz:tick/mana_buildup
-execute as @a[tag=mana,scores={dvz.mana_buildup=1000..}] at @s run function dvz:tick/mana_add
-execute as @a[tag=mana,scores={dvz.mana_buildup=..-1000}] at @s run function dvz:tick/mana_subtract
+execute as @a[tag=mana,scores={dvz.dwarf.mana_buildup=1000..}] at @s run function dvz:tick/mana_add
+execute as @a[tag=mana,scores={dvz.dwarf.mana_buildup=..-1000}] at @s run function dvz:tick/mana_subtract
 execute as @a[tag=hoglin] at @s run function dvz:tick/adventure_switch
 execute as @a at @s run function dvz:tick/custom_bars
 execute as @a[tag=portal_bound] at @s run function dvz:tick/portal_bind
@@ -35,7 +35,7 @@ execute as @a[tag=!admin,tag=!creative_flight,gamemode=creative] at @s run funct
 execute as @a[tag=admin] at @s run function dvz:tick/shrine_proximity
 execute as @e[type=minecraft:item,tag=!processed] at @s run function dvz:tick/check_item
 execute as @a[tag=!DVZ_ready] at @s run function dvz:tick/dvz_ready
-execute as @a[scores={dvz.leave_game=1..}] at @s run function dvz:tick/player_join
+execute as @a[scores={dvz.misc.leave_game=1..}] at @s run function dvz:tick/player_join
 
 scoreboard players set Dwarves dvz.game.player_count 0
 execute as @a[tag=dwarves] run scoreboard players add Dwarves dvz.game.player_count 1
@@ -48,4 +48,4 @@ execute store result bossbar dvz:boss_timer value run scoreboard players get &dv
 kill @e[type=minecraft:experience_orb]
 kill @e[type=minecraft:experience_bottle]
 
-scoreboard players remove @a[tag=wither_warrior,scores={dvz.whispersong_flame.ticks=1..}] dvz.whispersong_flame.ticks 1
+scoreboard players remove @a[tag=wither_warrior,scores={dvz.wither_warrior.whispersong_flame.ticks=1..}] dvz.wither_warrior.whispersong_flame.ticks 1

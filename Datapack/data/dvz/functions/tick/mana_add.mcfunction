@@ -15,16 +15,16 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Remove the 1000 millimana from the score.
-scoreboard players remove @s dvz.mana_buildup 1000
+scoreboard players remove @s dvz.dwarf.mana_buildup 1000
 
 # The mana cap is set at 9999 mana.
 experience add @s[level=..9998] 1 levels
 
 # Update the exp bar if all the mana buildup has been added.
-execute as @s[scores={dvz.mana_buildup=..999}] at @s run function dvz:misc/mana_bar
+execute as @s[scores={dvz.dwarf.mana_buildup=..999}] at @s run function dvz:misc/mana_bar
 
 # Suppress the level up ding sound.
 stopsound @a[distance=..17] player minecraft:entity.player.levelup
 
-# Repeat function until dvz.mana_buildup is below 1000 millimana.
-execute as @s[scores={dvz.mana_buildup=1000..}] at @s run function dvz:tick/mana_add
+# Repeat function until dvz.dwarf.mana_buildup is below 1000 millimana.
+execute as @s[scores={dvz.dwarf.mana_buildup=1000..}] at @s run function dvz:tick/mana_add

@@ -15,16 +15,16 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Remove 1000 millimana from the score.
-scoreboard players add @s dvz.mana_buildup 1000
+scoreboard players add @s dvz.dwarf.mana_buildup 1000
 
 # Removing 1 level from a player with no levels will leave them at 0 levels so checking if the player has 1+ levels is useless.
 experience add @s -1 levels
 
 # Update the exp bar if all the mana buildup has been subtracted.
-execute as @s[scores={dvz.mana_buildup=-999..}] at @s run function dvz:misc/mana_bar
+execute as @s[scores={dvz.dwarf.mana_buildup=-999..}] at @s run function dvz:misc/mana_bar
 
 # Suppress the level up ding sound.
 stopsound @a[distance=..17] player minecraft:entity.player.levelup
 
-# Repeat function until dvz.mana_buildup is above -1000 millimana.
-execute as @s[scores={dvz.mana_buildup=..-1000}] at @s run function dvz:tick/mana_subtract
+# Repeat function until dvz.dwarf.mana_buildup is above -1000 millimana.
+execute as @s[scores={dvz.dwarf.mana_buildup=..-1000}] at @s run function dvz:tick/mana_subtract

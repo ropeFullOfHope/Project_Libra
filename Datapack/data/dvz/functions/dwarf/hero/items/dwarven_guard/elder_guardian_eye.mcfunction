@@ -33,7 +33,7 @@ execute if entity @s[scores={dvz.elder_guardian_eye.cool=1..}] run title @s acti
 execute if entity @s[scores={dvz.elder_guardian_eye.cool=1..}] run return 0
 
 # Remove 10 levels.
-scoreboard players remove @s dvz.mana_buildup 10000
+scoreboard players remove @s dvz.dwarf.mana_buildup 10000
 
 scoreboard players set @s dvz.elder_guardian_eye.cool 3
 

@@ -16,7 +16,7 @@
 
 advancement revoke @s only dvz:misc/wither_warrior_kill_player
 
-scoreboard players add @s dvz.whispersong_flame.ticks 720
+scoreboard players add @s dvz.wither_warrior.whispersong_flame.ticks 720
 
 # Upper limit
-execute as @s[scores={dvz.whispersong_flame.ticks=3600..}] run scoreboard players set @s dvz.whispersong_flame.ticks 3600
+execute as @s[scores={dvz.wither_warrior.whispersong_flame.ticks=3600..}] run scoreboard players set @s dvz.wither_warrior.whispersong_flame.ticks 3600

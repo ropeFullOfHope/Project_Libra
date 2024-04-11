@@ -24,7 +24,7 @@ execute unless entity @s[level=30..] run title @s actionbar [ \
 execute unless entity @s[level=30..] run return 0
 
 # Remove 30 levels.
-scoreboard players remove @s dvz.mana_buildup 30000
+scoreboard players remove @s dvz.dwarf.mana_buildup 30000
 
 title @s actionbar [ \
   "", \

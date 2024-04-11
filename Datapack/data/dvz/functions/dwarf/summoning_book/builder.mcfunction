@@ -14,16 +14,16 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute if entity @s[scores={dvz.summoning_book.cool=1..}] run title @s actionbar [ \
+execute if entity @s[scores={dvz.builder.summoning_book.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Summoning Book]","bold":true,"color":"red"}, \
   {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"dvz.summoning_book.cool"},"bold":true,"color":"red"}, \
+  {"score":{"name":"@s","objective":"dvz.builder.summoning_book.cooldown.seconds"},"bold":true,"color":"red"}, \
   {"text":" seconds remaining!","color":"red"} \
 ]
-execute if entity @s[scores={dvz.summoning_book.cool=1..}] run return 0
+execute if entity @s[scores={dvz.builder.summoning_book.cooldown.seconds=1..}] run return 0
 
-scoreboard players set @s dvz.summoning_book.cool 30
+scoreboard players set @s dvz.builder.summoning_book.cooldown.seconds 30
 
 title @s actionbar [ \
   "", \

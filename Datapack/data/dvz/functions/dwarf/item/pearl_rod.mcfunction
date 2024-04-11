@@ -52,7 +52,7 @@ execute if entity @s[scores={dvz.var=1}] run title @s actionbar [ \
 execute if entity @s[scores={dvz.var=1}] run return 0
 
 # Remove 50 levels.
-scoreboard players remove @s dvz.mana_buildup 50000
+scoreboard players remove @s dvz.dwarf.mana_buildup 50000
 
 scoreboard players set @s dvz.pearl_rod.cool 60
 

@@ -14,4 +14,4 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-scoreboard players add @s dvz.mana_buildup 100
+scoreboard players add @s dvz.dwarf.mana_buildup 100

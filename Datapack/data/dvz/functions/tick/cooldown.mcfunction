@@ -18,11 +18,11 @@
 execute as @s[scores={dvz.rclick.cooldown=1..}] run scoreboard players remove @s dvz.rclick.cooldown 1
 
 # Builder - Summoning Book
-execute as @s[scores={dvz.summoning_book.cool=1..}] run scoreboard players add @s dvz.summoning_book.tick 1
-execute as @s[scores={dvz.summoning_book.tick=20..}] run scoreboard players remove @s dvz.summoning_book.cool 1
-execute as @s[scores={dvz.summoning_book.tick=20..,dvz.summoning_book.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.summoning_book.tick=20..,dvz.summoning_book.cool=0}] run title @s actionbar ["",{"text":"[Summoning Book]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
-execute as @s[scores={dvz.summoning_book.tick=20..}] run scoreboard players set @s dvz.summoning_book.tick 0
+execute as @s[scores={dvz.builder.summoning_book.cooldown.seconds=1..}] run scoreboard players add @s dvz.builder.summoning_book.cooldown.ticks 1
+execute as @s[scores={dvz.builder.summoning_book.cooldown.ticks=20..}] run scoreboard players remove @s dvz.builder.summoning_book.cooldown.seconds 1
+execute as @s[scores={dvz.builder.summoning_book.cooldown.ticks=20..,dvz.builder.summoning_book.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.builder.summoning_book.cooldown.ticks=20..,dvz.builder.summoning_book.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Summoning Book]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={dvz.builder.summoning_book.cooldown.ticks=20..}] run scoreboard players set @s dvz.builder.summoning_book.cooldown.ticks 0
 
 # Alchemist - Water Wand
 execute as @s[scores={dvz.water_wand.cool=1..}] run scoreboard players add @s dvz.water_wand.tick 1
@@ -43,76 +43,76 @@ execute as @s[scores={dvz.elder_guardian_eye.tick=20..,dvz.elder_guardian_eye.co
 execute as @s[scores={dvz.elder_guardian_eye.tick=20..}] run scoreboard players set @s dvz.elder_guardian_eye.tick 0
 
 # Guardian - Beam
-execute as @s[scores={dvz.beam.cool=1..}] run scoreboard players add @s dvz.beam.tick 1
-execute as @s[scores={dvz.beam.tick=20..}] run scoreboard players remove @s dvz.beam.cool 1
-execute as @s[scores={dvz.beam.tick=20..,dvz.beam.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.beam.tick=20..}] run scoreboard players set @s dvz.beam.tick 0
+execute as @s[scores={dvz.guardian.beam.cooldown.seconds=1..}] run scoreboard players add @s dvz.guardian.beam.cooldown.ticks 1
+execute as @s[scores={dvz.guardian.beam.cooldown.ticks=20..}] run scoreboard players remove @s dvz.guardian.beam.cooldown.seconds 1
+execute as @s[scores={dvz.guardian.beam.cooldown.ticks=20..,dvz.guardian.beam.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.guardian.beam.cooldown.ticks=20..}] run scoreboard players set @s dvz.guardian.beam.cooldown.ticks 0
 
 # Spider - Web
-execute as @s[scores={dvz.web.cool=1..}] run scoreboard players add @s dvz.web.tick 1
-execute as @s[scores={dvz.web.tick=20..}] run scoreboard players remove @s dvz.web.cool 1
-execute as @s[scores={dvz.web.tick=20..,dvz.web.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.web.tick=20..}] run scoreboard players set @s dvz.web.tick 0
+execute as @s[scores={dvz.spider.web.cooldown.seconds=1..}] run scoreboard players add @s dvz.spider.web.cooldown.ticks 1
+execute as @s[scores={dvz.spider.web.cooldown.ticks=20..}] run scoreboard players remove @s dvz.spider.web.cooldown.seconds 1
+execute as @s[scores={dvz.spider.web.cooldown.ticks=20..,dvz.spider.web.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.spider.web.cooldown.ticks=20..}] run scoreboard players set @s dvz.spider.web.cooldown.ticks 0
 
 # Ocelot - Steal Mana
-execute as @s[scores={dvz.steal_mana.cool=1..}] run scoreboard players add @s dvz.steal_mana.tick 1
-execute as @s[scores={dvz.steal_mana.tick=20..}] run scoreboard players remove @s dvz.steal_mana.cool 1
-execute as @s[scores={dvz.steal_mana.tick=20..,dvz.steal_mana.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.steal_mana.tick=20..}] run scoreboard players set @s dvz.steal_mana.tick 0
+execute as @s[scores={dvz.ocelot.steal_mana.cooldown.seconds=1..}] run scoreboard players add @s dvz.ocelot.steal_mana.cooldown.ticks 1
+execute as @s[scores={dvz.ocelot.steal_mana.cooldown.ticks=20..}] run scoreboard players remove @s dvz.ocelot.steal_mana.cooldown.seconds 1
+execute as @s[scores={dvz.ocelot.steal_mana.cooldown.ticks=20..,dvz.ocelot.steal_mana.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.ocelot.steal_mana.cooldown.ticks=20..}] run scoreboard players set @s dvz.ocelot.steal_mana.cooldown.ticks 0
 
 # Chicken Nugget - Fly
-execute as @s[scores={dvz.fly.cool=1..}] run scoreboard players add @s dvz.fly.tick 1
-execute as @s[scores={dvz.fly.tick=20..}] run scoreboard players remove @s dvz.fly.cool 1
-execute as @s[scores={dvz.fly.tick=20..,dvz.fly.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.fly.tick=20..}] run scoreboard players set @s dvz.fly.tick 0
+execute as @s[scores={dvz.chicken_nugget.fly.cooldown.seconds=1..}] run scoreboard players add @s dvz.chicken_nugget.fly.cooldown.ticks 1
+execute as @s[scores={dvz.chicken_nugget.fly.cooldown.ticks=20..}] run scoreboard players remove @s dvz.chicken_nugget.fly.cooldown.seconds 1
+execute as @s[scores={dvz.chicken_nugget.fly.cooldown.ticks=20..,dvz.chicken_nugget.fly.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.chicken_nugget.fly.cooldown.ticks=20..}] run scoreboard players set @s dvz.chicken_nugget.fly.cooldown.ticks 0
 
 # Snowman - Snowball Barrage
-execute as @s[scores={dvz.snowball_barrage.cool=1..}] run scoreboard players add @s dvz.snowball_barrage.tick 1
-execute as @s[scores={dvz.snowball_barrage.tick=20..}] run scoreboard players remove @s dvz.snowball_barrage.cool 1
-execute as @s[scores={dvz.snowball_barrage.tick=20..,dvz.snowball_barrage.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.snowball_barrage.tick=20..}] run scoreboard players set @s dvz.snowball_barrage.tick 0
+execute as @s[scores={dvz.snowman.snowball_barrage.cooldown.seconds=1..}] run scoreboard players add @s dvz.snowman.snowball_barrage.cooldown.ticks 1
+execute as @s[scores={dvz.snowman.snowball_barrage.cooldown.ticks=20..}] run scoreboard players remove @s dvz.snowman.snowball_barrage.cooldown.seconds 1
+execute as @s[scores={dvz.snowman.snowball_barrage.cooldown.ticks=20..,dvz.snowman.snowball_barrage.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.snowman.snowball_barrage.cooldown.ticks=20..}] run scoreboard players set @s dvz.snowman.snowball_barrage.cooldown.ticks 0
 
 # Snowman - Icicle
-execute as @s[scores={dvz.icicle.cool=1..}] run scoreboard players add @s dvz.icicle.tick 1
-execute as @s[scores={dvz.icicle.tick=20..}] run scoreboard players remove @s dvz.icicle.cool 1
-execute as @s[scores={dvz.icicle.tick=20..,dvz.icicle.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.icicle.tick=20..}] run scoreboard players set @s dvz.icicle.tick 0
+execute as @s[scores={dvz.snowman.icicle.cooldown.seconds=1..}] run scoreboard players add @s dvz.snowman.icicle.cooldown.ticks 1
+execute as @s[scores={dvz.snowman.icicle.cooldown.ticks=20..}] run scoreboard players remove @s dvz.snowman.icicle.cooldown.seconds 1
+execute as @s[scores={dvz.snowman.icicle.cooldown.ticks=20..,dvz.snowman.icicle.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.snowman.icicle.cooldown.ticks=20..}] run scoreboard players set @s dvz.snowman.icicle.cooldown.ticks 0
 
 # Chillager - Ice Cube
-execute as @s[scores={dvz.ice_cube.cool=1..}] run scoreboard players add @s dvz.ice_cube.tick 1
-execute as @s[scores={dvz.ice_cube.tick=20..}] run scoreboard players remove @s dvz.ice_cube.cool 1
-execute as @s[scores={dvz.ice_cube.tick=20..,dvz.ice_cube.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.ice_cube.tick=20..}] run scoreboard players set @s dvz.ice_cube.tick 0
+execute as @s[scores={dvz.chillager.ice_cube.cooldown.seconds=1..}] run scoreboard players add @s dvz.chillager.ice_cube.cooldown.ticks 1
+execute as @s[scores={dvz.chillager.ice_cube.cooldown.ticks=20..}] run scoreboard players remove @s dvz.chillager.ice_cube.cooldown.seconds 1
+execute as @s[scores={dvz.chillager.ice_cube.cooldown.ticks=20..,dvz.chillager.ice_cube.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.chillager.ice_cube.cooldown.ticks=20..}] run scoreboard players set @s dvz.chillager.ice_cube.cooldown.ticks 0
 
 # Bee - Honey
-execute as @s[scores={dvz.honey.cool=1..}] run scoreboard players add @s dvz.honey.tick 1
-execute as @s[scores={dvz.honey.tick=20..}] run scoreboard players remove @s dvz.honey.cool 1
-execute as @s[scores={dvz.honey.tick=20..,dvz.honey.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.honey.tick=20..}] run scoreboard players set @s dvz.honey.tick 0
+execute as @s[scores={dvz.bee.honey.cooldown.seconds=1..}] run scoreboard players add @s dvz.bee.honey.cooldown.ticks 1
+execute as @s[scores={dvz.bee.honey.cooldown.ticks=20..}] run scoreboard players remove @s dvz.bee.honey.cooldown.seconds 1
+execute as @s[scores={dvz.bee.honey.cooldown.ticks=20..,dvz.bee.honey.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.bee.honey.cooldown.ticks=20..}] run scoreboard players set @s dvz.bee.honey.cooldown.ticks 0
 
 # Bee - Pollen Bomb
-execute as @s[scores={dvz.pollen_bomb.cool=1..}] run scoreboard players add @s dvz.pollen_bomb.tick 1
-execute as @s[scores={dvz.pollen_bomb.tick=20..}] run scoreboard players remove @s dvz.pollen_bomb.cool 1
-execute as @s[scores={dvz.pollen_bomb.tick=20..,dvz.pollen_bomb.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.pollen_bomb.tick=20..}] run scoreboard players set @s dvz.pollen_bomb.tick 0
+execute as @s[scores={dvz.bee.pollen_bomb.cooldown.seconds=1..}] run scoreboard players add @s dvz.bee.pollen_bomb.cooldown.ticks 1
+execute as @s[scores={dvz.bee.pollen_bomb.cooldown.ticks=20..}] run scoreboard players remove @s dvz.bee.pollen_bomb.cooldown.seconds 1
+execute as @s[scores={dvz.bee.pollen_bomb.cooldown.ticks=20..,dvz.bee.pollen_bomb.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.bee.pollen_bomb.cooldown.ticks=20..}] run scoreboard players set @s dvz.bee.pollen_bomb.cooldown.ticks 0
 
 # Phantom - Delirium
-execute as @s[scores={dvz.delirium.cool=1..}] run scoreboard players add @s dvz.delirium.tick 1
-execute as @s[scores={dvz.delirium.tick=20..}] run scoreboard players remove @s dvz.delirium.cool 1
-execute as @s[scores={dvz.delirium.tick=20..,dvz.delirium.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.delirium.tick=20..}] run scoreboard players set @s dvz.delirium.tick 0
+execute as @s[scores={dvz.phantom.delirium.cooldown.seconds=1..}] run scoreboard players add @s dvz.phantom.delirium.cooldown.ticks 1
+execute as @s[scores={dvz.phantom.delirium.cooldown.ticks=20..}] run scoreboard players remove @s dvz.phantom.delirium.cooldown.seconds 1
+execute as @s[scores={dvz.phantom.delirium.cooldown.ticks=20..,dvz.phantom.delirium.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.phantom.delirium.cooldown.ticks=20..}] run scoreboard players set @s dvz.phantom.delirium.cooldown.ticks 0
 
 # Blaze - Fireball
-execute as @s[scores={dvz.fireball.cool=1..}] run scoreboard players add @s dvz.fireball.tick 1
-execute as @s[scores={dvz.fireball.tick=20..}] run scoreboard players remove @s dvz.fireball.cool 1
-execute as @s[scores={dvz.fireball.tick=20..,dvz.fireball.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.fireball.tick=20..}] run scoreboard players set @s dvz.fireball.tick 0
+execute as @s[scores={dvz.blaze.fireball.cooldown.seconds=1..}] run scoreboard players add @s dvz.blaze.fireball.cooldown.ticks 1
+execute as @s[scores={dvz.blaze.fireball.cooldown.ticks=20..}] run scoreboard players remove @s dvz.blaze.fireball.cooldown.seconds 1
+execute as @s[scores={dvz.blaze.fireball.cooldown.ticks=20..,dvz.blaze.fireball.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.blaze.fireball.cooldown.ticks=20..}] run scoreboard players set @s dvz.blaze.fireball.cooldown.ticks 0
 
 # Blaze - Fireblast
-execute as @s[scores={dvz.fireblast.cool=1..}] run scoreboard players add @s dvz.fireblast.tick 1
-execute as @s[scores={dvz.fireblast.tick=20..}] run scoreboard players remove @s dvz.fireblast.cool 1
-execute as @s[scores={dvz.fireblast.tick=20..,dvz.fireblast.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.fireblast.tick=20..}] run scoreboard players set @s dvz.fireblast.tick 0
+execute as @s[scores={dvz.blaze.fireblast.cooldown.seconds=1..}] run scoreboard players add @s dvz.blaze.fireblast.cooldown.ticks 1
+execute as @s[scores={dvz.blaze.fireblast.cooldown.ticks=20..}] run scoreboard players remove @s dvz.blaze.fireblast.cooldown.seconds 1
+execute as @s[scores={dvz.blaze.fireblast.cooldown.ticks=20..,dvz.blaze.fireblast.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.blaze.fireblast.cooldown.ticks=20..}] run scoreboard players set @s dvz.blaze.fireblast.cooldown.ticks 0
 
 # Blaze - Firefly
 execute as @s[scores={dvz.firefly.cool=1..}] run scoreboard players add @s dvz.firefly.tick 1
@@ -121,31 +121,31 @@ execute as @s[scores={dvz.firefly.tick=20..,dvz.firefly.cool=0}] run playsound m
 execute as @s[scores={dvz.firefly.tick=20..}] run scoreboard players set @s dvz.firefly.tick 0
 
 # Silverfish - Roar
-execute as @s[scores={dvz.roar.cool=1..}] run scoreboard players add @s dvz.roar.tick 1
-execute as @s[scores={dvz.roar.tick=20..}] run scoreboard players remove @s dvz.roar.cool 1
-execute as @s[scores={dvz.roar.tick=20..,dvz.roar.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.roar.tick=20..}] run scoreboard players set @s dvz.roar.tick 0
+execute as @s[scores={dvz.silverfish.roar.cooldown.seconds=1..}] run scoreboard players add @s dvz.silverfish.roar.cooldown.ticks 1
+execute as @s[scores={dvz.silverfish.roar.cooldown.ticks=20..}] run scoreboard players remove @s dvz.silverfish.roar.cooldown.seconds 1
+execute as @s[scores={dvz.silverfish.roar.cooldown.ticks=20..,dvz.silverfish.roar.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.silverfish.roar.cooldown.ticks=20..}] run scoreboard players set @s dvz.silverfish.roar.cooldown.ticks 0
 
 # Golem - Fissure
-execute as @s[scores={dvz.fissure.cool=1..}] run scoreboard players add @s dvz.fissure.tick 1
-execute as @s[scores={dvz.fissure.tick=20..}] run scoreboard players remove @s dvz.fissure.cool 1
-execute as @s[scores={dvz.fissure.tick=20..,dvz.fissure.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.fissure.tick=20..}] run scoreboard players set @s dvz.fissure.tick 0
+execute as @s[scores={dvz.golem.fissure.cooldown.seconds=1..}] run scoreboard players add @s dvz.golem.fissure.cooldown.ticks 1
+execute as @s[scores={dvz.golem.fissure.cooldown.ticks=20..}] run scoreboard players remove @s dvz.golem.fissure.cooldown.seconds 1
+execute as @s[scores={dvz.golem.fissure.cooldown.ticks=20..,dvz.golem.fissure.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.golem.fissure.cooldown.ticks=20..}] run scoreboard players set @s dvz.golem.fissure.cooldown.ticks 0
 
 # Enderman - Teleport
-execute as @s[scores={dvz.teleport.cool=1..}] run scoreboard players add @s dvz.teleport.tick 1
-execute as @s[scores={dvz.teleport.tick=20..}] run scoreboard players remove @s dvz.teleport.cool 1
-execute as @s[scores={dvz.teleport.tick=20..,dvz.teleport.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.teleport.tick=20..}] run scoreboard players set @s dvz.teleport.tick 0
+execute as @s[scores={dvz.enderman.teleport.cooldown.seconds=1..}] run scoreboard players add @s dvz.enderman.teleport.cooldown.ticks 1
+execute as @s[scores={dvz.enderman.teleport.cooldown.ticks=20..}] run scoreboard players remove @s dvz.enderman.teleport.cooldown.seconds 1
+execute as @s[scores={dvz.enderman.teleport.cooldown.ticks=20..,dvz.enderman.teleport.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.enderman.teleport.cooldown.ticks=20..}] run scoreboard players set @s dvz.enderman.teleport.cooldown.ticks 0
 
 # Enderman - Portal
-execute as @s[scores={dvz.portal.cool=1..}] run scoreboard players add @s dvz.portal.tick 1
-execute as @s[scores={dvz.portal.tick=20..}] run scoreboard players remove @s dvz.portal.cool 1
-execute as @s[scores={dvz.portal.tick=20..,dvz.portal.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.portal.tick=20..}] run scoreboard players set @s dvz.portal.tick 0
+execute as @s[scores={dvz.enderman.portal.cooldown.seconds=1..}] run scoreboard players add @s dvz.enderman.portal.cooldown.ticks 1
+execute as @s[scores={dvz.enderman.portal.cooldown.ticks=20..}] run scoreboard players remove @s dvz.enderman.portal.cooldown.seconds 1
+execute as @s[scores={dvz.enderman.portal.cooldown.ticks=20..,dvz.enderman.portal.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.enderman.portal.cooldown.ticks=20..}] run scoreboard players set @s dvz.enderman.portal.cooldown.ticks 0
 
 # Enderman - Portal Teleport
-execute as @s[scores={dvz.reinforce.cool=1..}] run scoreboard players add @s dvz.reinforce.tick 1
-execute as @s[scores={dvz.reinforce.tick=20..}] run scoreboard players remove @s dvz.reinforce.cool 1
-execute as @s[scores={dvz.reinforce.tick=20..,dvz.reinforce.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={dvz.reinforce.tick=20..}] run scoreboard players set @s dvz.reinforce.tick 0
+execute as @s[scores={dvz.enderman.reinforce.cooldown.seconds=1..}] run scoreboard players add @s dvz.enderman.reinforce.cooldown.ticks 1
+execute as @s[scores={dvz.enderman.reinforce.cooldown.ticks=20..}] run scoreboard players remove @s dvz.enderman.reinforce.cooldown.seconds 1
+execute as @s[scores={dvz.enderman.reinforce.cooldown.ticks=20..,dvz.enderman.reinforce.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={dvz.enderman.reinforce.cooldown.ticks=20..}] run scoreboard players set @s dvz.enderman.reinforce.cooldown.ticks 0
