@@ -15,7 +15,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Return unless the player has at least 1 lava bucket.
-execute unless entity @s[scores={DVZ.inventory.lava_bucket=1..}] run return 0
+execute unless entity @s[scores={dvz.inventory.lava_bucket=1..}] run return 0
 
 clear @s minecraft:lava_bucket
 

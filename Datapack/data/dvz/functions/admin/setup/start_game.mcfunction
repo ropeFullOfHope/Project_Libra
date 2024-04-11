@@ -65,11 +65,11 @@ kill @e[type=minecraft:block_display,tag=shrine_indicator]
 kill @e[type=minecraft:item_display,tag=zombie_spawn_indicator]
 kill @e[type=minecraft:item_display,tag=boss_spawn_indicator]
 
-scoreboard players set &dvz DVZ.game.tick 0
+scoreboard players set &dvz dvz.game.time 0
 
-#scoreboard objectives setdisplay sidebar DVZ.game.player_count
+#scoreboard objectives setdisplay sidebar dvz.game.player_count
 
-execute store result bossbar dvz:boss_timer value run scoreboard players get &dvz DVZ.game.tick
+execute store result bossbar dvz:boss_timer value run scoreboard players get &dvz dvz.game.time
 
 bossbar set dvz:boss_timer visible true
 

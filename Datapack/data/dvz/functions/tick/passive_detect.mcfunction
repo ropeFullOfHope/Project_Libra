@@ -28,22 +28,22 @@
 
 ### Zombie passive abilities (5xxx)
 # Zombie (500x)
-execute as @s[tag=zombie,scores={DVZ.inventory.5000=1..}] at @s run function dvz:zombies/zombie/regenerative_bond
+execute as @s[tag=zombie,scores={dvz.inventory.5000=1..}] at @s run function dvz:zombies/zombie/regenerative_bond
 # Husk (501x)
-execute as @s[tag=husk,scores={DVZ.inventory.5010=1..}] at @s run function dvz:zombies/husk/speedy_bond
+execute as @s[tag=husk,scores={dvz.inventory.5010=1..}] at @s run function dvz:zombies/husk/speedy_bond
 # Vindicator (502x)
-execute as @s[tag=vindicator,scores={DVZ.inventory.5020=1..}] at @s run function dvz:zombies/vindicator/hasty_bond
+execute as @s[tag=vindicator,scores={dvz.inventory.5020=1..}] at @s run function dvz:zombies/vindicator/hasty_bond
 # Drowned (503x)
-execute as @s[tag=drowned,scores={DVZ.inventory.5030=1..}] at @s run function dvz:zombies/drowned/graceful_bond
+execute as @s[tag=drowned,scores={dvz.inventory.5030=1..}] at @s run function dvz:zombies/drowned/graceful_bond
 # Wither Skeleton (504x)
-execute as @s[tag=wither_skeleton,scores={DVZ.inventory.5040=1..}] at @s run function dvz:zombies/wither_skeleton/withering_bones
+execute as @s[tag=wither_skeleton,scores={dvz.inventory.5040=1..}] at @s run function dvz:zombies/wither_skeleton/withering_bones
 # Spider (505x)
-execute as @s[tag=spider,scores={DVZ.inventory.5050=1..}] at @s run function dvz:zombies/spider/poison_resistance
+execute as @s[tag=spider,scores={dvz.inventory.5050=1..}] at @s run function dvz:zombies/spider/poison_resistance
 # Phantom (506x)
-execute as @s[tag=phantom,scores={DVZ.inventory.5060=1..}] at @s run function dvz:zombies/phantom/reusable_firework_rocket
+execute as @s[tag=phantom,scores={dvz.inventory.5060=1..}] at @s run function dvz:zombies/phantom/reusable_firework_rocket
 # Blaze (507x)
-execute as @s[tag=blaze,scores={DVZ.inventory.5070=1..}] at @s run function dvz:zombies/blaze/fire_coat
-execute as @s[tag=blaze,scores={DVZ.inventory.5071=1..}] at @s run function dvz:zombies/blaze/fire_shield
+execute as @s[tag=blaze,scores={dvz.inventory.5070=1..}] at @s run function dvz:zombies/blaze/fire_coat
+execute as @s[tag=blaze,scores={dvz.inventory.5071=1..}] at @s run function dvz:zombies/blaze/fire_shield
 
 ### Zombie nature given passive abilities (6xxx)
 

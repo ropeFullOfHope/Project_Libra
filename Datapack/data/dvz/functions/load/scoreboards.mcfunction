@@ -16,9 +16,9 @@
 
 ### Game Scoreboards
 # Game time in ticks scoreboard
-scoreboard objectives add DVZ.game.tick dummy
+scoreboard objectives add dvz.game.time dummy
 # Player count scoreboard
-scoreboard objectives add DVZ.game.player_count dummy "\uEFFF"
+scoreboard objectives add dvz.game.player_count dummy "\uEFFF"
 # Game phase scoreboard
 # 0 - Setup phase
 # 1 - Build phase
@@ -26,7 +26,7 @@ scoreboard objectives add DVZ.game.player_count dummy "\uEFFF"
 # 3 - Zombie phase
 # 4 - Last Dwarf phase
 # 5 - Game Over phase
-scoreboard objectives add DVZ.game.phase dummy
+scoreboard objectives add dvz.game.phase dummy
 # Selected boss scoreboard
 # 0 - none
 # 1 - Dragon
@@ -35,92 +35,92 @@ scoreboard objectives add DVZ.game.phase dummy
 # 4 - AI Wither
 # 5 - Assassin
 # 6 - Elder Guardian
-scoreboard objectives add DVZ.game.boss dummy
+scoreboard objectives add dvz.game.boss dummy
 
 ### Game Scoreboards Setup
-scoreboard players reset Dwarves DVZ.game.player_count
-scoreboard players reset Zombies DVZ.game.player_count
-scoreboard objectives modify DVZ.game.player_count numberformat styled {"color":"red","bold":true}
-scoreboard objectives setdisplay sidebar DVZ.game.player_count
-scoreboard players set &dvz DVZ.game.phase 0
-scoreboard players set &dvz DVZ.game.boss 0
+scoreboard players reset Dwarves dvz.game.player_count
+scoreboard players reset Zombies dvz.game.player_count
+scoreboard objectives modify dvz.game.player_count numberformat styled {"color":"red","bold":true}
+scoreboard objectives setdisplay sidebar dvz.game.player_count
+scoreboard players set &dvz dvz.game.phase 0
+scoreboard players set &dvz dvz.game.boss 0
 
 ### Technical scoreboards
-scoreboard objectives add DVZ.rclick minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add DVZ.rclick.cool dummy
-scoreboard objectives add DVZ.rclick.custom_model_data dummy
-scoreboard objectives add DVZ.result.score dummy
-scoreboard objectives add DVZ.leave_game minecraft.custom:minecraft.leave_game
+scoreboard objectives add dvz.rclick.use minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add dvz.rclick.cooldown dummy
+scoreboard objectives add dvz.rclick.custom_model_data dummy
+scoreboard objectives add dvz.var dummy
+scoreboard objectives add dvz.leave_game minecraft.custom:minecraft.leave_game
 
 ### Misc scoreboards
-scoreboard objectives add DVZ.mana_buildup dummy
-scoreboard objectives add DVZ.whispersong_flame.tick dummy
-scoreboard objectives add DVZ.chicken_fly.tick dummy
-scoreboard objectives add DVZ.freeze.tick dummy
-scoreboard objectives add DVZ.invisibility.tick dummy
-scoreboard objectives add DVZ.reusable_firework_rocket.tick dummy
-scoreboard objectives add DVZ.blaze_fly.tick dummy
-scoreboard objectives add DVZ.experience dummy
-scoreboard objectives add DVZ.use.golden_pickaxe minecraft.used:minecraft.golden_pickaxe
+scoreboard objectives add dvz.mana_buildup dummy
+scoreboard objectives add dvz.whispersong_flame.ticks dummy
+scoreboard objectives add dvz.chicken_fly.ticks dummy
+scoreboard objectives add dvz.freeze.ticks dummy
+scoreboard objectives add dvz.invisibility.ticks dummy
+scoreboard objectives add dvz.reusable_firework_rocket.ticks dummy
+scoreboard objectives add dvz.blaze_fly.ticks dummy
+scoreboard objectives add dvz.experience dummy
+scoreboard objectives add dvz.use.golden_pickaxe minecraft.used:minecraft.golden_pickaxe
 
 ### Active item cooldown scoreboards
 # Dwarves
-scoreboard objectives add DVZ.summoning_book.tick dummy
-scoreboard objectives add DVZ.summoning_book.cool dummy
-scoreboard objectives add DVZ.water_wand.tick dummy
-scoreboard objectives add DVZ.water_wand.cool dummy
-scoreboard objectives add DVZ.pearl_rod.tick dummy
-scoreboard objectives add DVZ.pearl_rod.cool dummy
-scoreboard objectives add DVZ.elder_guardian_eye.tick dummy
-scoreboard objectives add DVZ.elder_guardian_eye.cool dummy
+scoreboard objectives add dvz.summoning_book.tick dummy
+scoreboard objectives add dvz.summoning_book.cool dummy
+scoreboard objectives add dvz.water_wand.tick dummy
+scoreboard objectives add dvz.water_wand.cool dummy
+scoreboard objectives add dvz.pearl_rod.tick dummy
+scoreboard objectives add dvz.pearl_rod.cool dummy
+scoreboard objectives add dvz.elder_guardian_eye.tick dummy
+scoreboard objectives add dvz.elder_guardian_eye.cool dummy
 
 # Zombies
-scoreboard objectives add DVZ.beam.tick dummy
-scoreboard objectives add DVZ.beam.cool dummy
-scoreboard objectives add DVZ.web.tick dummy
-scoreboard objectives add DVZ.web.cool dummy
-scoreboard objectives add DVZ.steal_mana.tick dummy
-scoreboard objectives add DVZ.steal_mana.cool dummy
-scoreboard objectives add DVZ.fly.tick dummy
-scoreboard objectives add DVZ.fly.cool dummy
-scoreboard objectives add DVZ.snowball_barrage.tick dummy
-scoreboard objectives add DVZ.snowball_barrage.cool dummy
-scoreboard objectives add DVZ.icicle.tick dummy
-scoreboard objectives add DVZ.icicle.cool dummy
-scoreboard objectives add DVZ.ice_cube.tick dummy
-scoreboard objectives add DVZ.ice_cube.cool dummy
-scoreboard objectives add DVZ.honey.tick dummy
-scoreboard objectives add DVZ.honey.cool dummy
-scoreboard objectives add DVZ.pollen_bomb.tick dummy
-scoreboard objectives add DVZ.pollen_bomb.cool dummy
-scoreboard objectives add DVZ.delirium.tick dummy
-scoreboard objectives add DVZ.delirium.cool dummy
-scoreboard objectives add DVZ.fireball.tick dummy
-scoreboard objectives add DVZ.fireball.cool dummy
-scoreboard objectives add DVZ.fireblast.tick dummy
-scoreboard objectives add DVZ.fireblast.cool dummy
-scoreboard objectives add DVZ.firefly.tick dummy
-scoreboard objectives add DVZ.firefly.cool dummy
-scoreboard objectives add DVZ.roar.tick dummy
-scoreboard objectives add DVZ.roar.cool dummy
-scoreboard objectives add DVZ.fissure.tick dummy
-scoreboard objectives add DVZ.fissure.cool dummy
-scoreboard objectives add DVZ.teleport.tick dummy
-scoreboard objectives add DVZ.teleport.cool dummy
-scoreboard objectives add DVZ.portal.tick dummy
-scoreboard objectives add DVZ.portal.cool dummy
-scoreboard objectives add DVZ.reinforce.tick dummy
-scoreboard objectives add DVZ.reinforce.cool dummy
+scoreboard objectives add dvz.beam.tick dummy
+scoreboard objectives add dvz.beam.cool dummy
+scoreboard objectives add dvz.web.tick dummy
+scoreboard objectives add dvz.web.cool dummy
+scoreboard objectives add dvz.steal_mana.tick dummy
+scoreboard objectives add dvz.steal_mana.cool dummy
+scoreboard objectives add dvz.fly.tick dummy
+scoreboard objectives add dvz.fly.cool dummy
+scoreboard objectives add dvz.snowball_barrage.tick dummy
+scoreboard objectives add dvz.snowball_barrage.cool dummy
+scoreboard objectives add dvz.icicle.tick dummy
+scoreboard objectives add dvz.icicle.cool dummy
+scoreboard objectives add dvz.ice_cube.tick dummy
+scoreboard objectives add dvz.ice_cube.cool dummy
+scoreboard objectives add dvz.honey.tick dummy
+scoreboard objectives add dvz.honey.cool dummy
+scoreboard objectives add dvz.pollen_bomb.tick dummy
+scoreboard objectives add dvz.pollen_bomb.cool dummy
+scoreboard objectives add dvz.delirium.tick dummy
+scoreboard objectives add dvz.delirium.cool dummy
+scoreboard objectives add dvz.fireball.tick dummy
+scoreboard objectives add dvz.fireball.cool dummy
+scoreboard objectives add dvz.fireblast.tick dummy
+scoreboard objectives add dvz.fireblast.cool dummy
+scoreboard objectives add dvz.firefly.tick dummy
+scoreboard objectives add dvz.firefly.cool dummy
+scoreboard objectives add dvz.roar.tick dummy
+scoreboard objectives add dvz.roar.cool dummy
+scoreboard objectives add dvz.fissure.tick dummy
+scoreboard objectives add dvz.fissure.cool dummy
+scoreboard objectives add dvz.teleport.tick dummy
+scoreboard objectives add dvz.teleport.cool dummy
+scoreboard objectives add dvz.portal.tick dummy
+scoreboard objectives add dvz.portal.cool dummy
+scoreboard objectives add dvz.reinforce.tick dummy
+scoreboard objectives add dvz.reinforce.cool dummy
 
 ### Inventory info scoreboards
-scoreboard objectives add DVZ.inventory.lava_bucket dummy
-scoreboard objectives add DVZ.inventory.5000 dummy
-scoreboard objectives add DVZ.inventory.5010 dummy
-scoreboard objectives add DVZ.inventory.5020 dummy
-scoreboard objectives add DVZ.inventory.5030 dummy
-scoreboard objectives add DVZ.inventory.5040 dummy
-scoreboard objectives add DVZ.inventory.5050 dummy
-scoreboard objectives add DVZ.inventory.5060 dummy
-scoreboard objectives add DVZ.inventory.5070 dummy
-scoreboard objectives add DVZ.inventory.5071 dummy
-scoreboard objectives add DVZ.inventory.7071 dummy
+scoreboard objectives add dvz.inventory.lava_bucket dummy
+scoreboard objectives add dvz.inventory.5000 dummy
+scoreboard objectives add dvz.inventory.5010 dummy
+scoreboard objectives add dvz.inventory.5020 dummy
+scoreboard objectives add dvz.inventory.5030 dummy
+scoreboard objectives add dvz.inventory.5040 dummy
+scoreboard objectives add dvz.inventory.5050 dummy
+scoreboard objectives add dvz.inventory.5060 dummy
+scoreboard objectives add dvz.inventory.5070 dummy
+scoreboard objectives add dvz.inventory.5071 dummy
+scoreboard objectives add dvz.inventory.7071 dummy

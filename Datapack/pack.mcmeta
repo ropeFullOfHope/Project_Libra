@@ -28,6 +28,10 @@
       {
         "namespace": "minecraft",
         "path": "advancements/recipes/*"
+      },
+      {
+        "namespace": "dvz",
+        "path": "functions/zombies/*"
       }
     ]
   }

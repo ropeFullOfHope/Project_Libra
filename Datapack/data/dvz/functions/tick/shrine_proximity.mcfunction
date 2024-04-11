@@ -18,7 +18,7 @@
 execute unless entity @e[type=minecraft:marker,tag=dvz,tag=setup_phase] run return 0
 execute unless entity @e[type=minecraft:marker,tag=shrine,distance=..501] run return 0
 
-scoreboard players set @s DVZ.result.score 0
+scoreboard players set @s dvz.var 0
 
 tag @s add temp_ray_origin
 
@@ -28,4 +28,4 @@ execute summon minecraft:marker run execute as @s at @s run function dvz:admin/s
 tag @s remove temp_ray_origin
 
 # Display how far the shrine is.
-title @s actionbar ["",{"score":{"name":"@s","objective":"DVZ.result.score"},"color":"gold","bold":true}]
+title @s actionbar ["",{"score":{"name":"@s","objective":"dvz.var"},"color":"gold","bold":true}]

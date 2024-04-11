@@ -22,7 +22,7 @@
               "components": {
                 "minecraft:food": {
                   "nutrition": 6,
-                  "saturation_modifier": 0.8
+                  "saturation": 9.6
                 }
               }
             },
@@ -73,7 +73,7 @@
               "components": {
                 "minecraft:food": {
                   "nutrition": 6,
-                  "saturation_modifier": 0.6,
+                  "saturation": 7.2,
                   "eat_seconds": 1.2
                 }
               }
@@ -289,7 +289,7 @@
               "components": {
                 "minecraft:food": {
                   "nutrition": 2,
-                  "saturation_modifier": 0.1,
+                  "saturation": 0.4,
                   "eat_seconds": 0.8
                 }
               }

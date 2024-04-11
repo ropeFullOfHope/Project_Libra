@@ -15,14 +15,14 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Get Air value from entity and store it in scoreboard.
-execute store result score #air_time DVZ.result.score run data get entity @s Air
+execute store result score #air_time dvz.var run data get entity @s Air
 
 # Kill entity if Air time is 0
-execute if score #air_time DVZ.result.score matches 0 run kill @s
-execute if score #air_time DVZ.result.score matches 0 run return 0
+execute if score #air_time dvz.var matches 0 run kill @s
+execute if score #air_time dvz.var matches 0 run return 0
 
 # Subtract 1 from Air time.
-scoreboard players remove #air_time DVZ.result.score 1
+scoreboard players remove #air_time dvz.var 1
 
 # Set the new Air time of the entity.
-execute store result entity @s Air short 1 run scoreboard players get #air_time DVZ.result.score
+execute store result entity @s Air short 1 run scoreboard players get #air_time dvz.var

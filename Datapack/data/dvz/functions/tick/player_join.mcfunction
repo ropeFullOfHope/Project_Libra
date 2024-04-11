@@ -14,7 +14,7 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-scoreboard players set @s DVZ.leave_game 0
+scoreboard players set @s dvz.leave_game 0
 
 # If the player hasn't joined the game yet and the game isn't set up yet, then tell them the game is still being set up.
 execute as @s[tag=!joined] if entity @e[type=minecraft:marker,tag=dvz,tag=setup_phase] run tellraw @s [ \

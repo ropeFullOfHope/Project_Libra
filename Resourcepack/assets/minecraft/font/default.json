@@ -194,7 +194,7 @@
     {
       "type": "bitmap",
       "file": "dvz:font/textbox/golden_flail.png",
-      "height": 142,
+      "height": 162,
       "ascent": 25,
       "chars": ["\uE020"]
     },
