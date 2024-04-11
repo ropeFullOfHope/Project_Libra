@@ -20,38 +20,38 @@ advancement revoke @s only dvz:misc/inventory_update
 execute as @s store result score @s dvz.inventory.lava_bucket run clear @s minecraft:lava_bucket 0
 execute as @s[tag=!chillager] store result score @s dvz.inventory.7071 run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=7071] 0
 
-### Dwarf items (1xxx)
+### Dwarf items (11xxx)
 
 
-### Dwarf hero passive abilities (2xxx)
+### Dwarf hero items (12xxx)
 
 
-### Dwarf legendary artifacts (3xxx)
+### Dwarf legendary items (13xxx)
 
 
-### Dwarf legendary weapons (4xxx)
+### Dwarf legendary weapons (14xxx)
 
 
-### Zombie passive abilities (5xxx)
-# Zombie (500x)
-execute as @s[tag=zombie] store result score @s dvz.inventory.5000 run clear @s minecraft:warped_fungus_on_a_stick[minecraft:custom_model_data=5000] 0
-# Husk (501x)
-execute as @s[tag=husk] store result score @s dvz.inventory.5010 run clear @s minecraft:warped_fungus_on_a_stick[minecraft:custom_model_data=5010] 0
-# Vindicator (502x)
-execute as @s[tag=vindicator] store result score @s dvz.inventory.5020 run clear @s minecraft:warped_fungus_on_a_stick[minecraft:custom_model_data=5020] 0
-# Drowned (503x)
-execute as @s[tag=drowned] store result score @s dvz.inventory.5030 run clear @s minecraft:warped_fungus_on_a_stick[minecraft:custom_model_data=5030] 0
-# Wither Skeleton (504x)
-execute as @s[tag=wither_skeleton] store result score @s dvz.inventory.5040 run clear @s minecraft:warped_fungus_on_a_stick[minecraft:custom_model_data=5040] 0
-# Spider (505x)
-execute as @s[tag=spider] store result score @s dvz.inventory.5050 run clear @s minecraft:warped_fungus_on_a_stick[minecraft:custom_model_data=5050] 0
-# Phantom (506x)
-execute as @s[tag=phantom] store result score @s dvz.inventory.5060 run clear @s minecraft:warped_fungus_on_a_stick[minecraft:custom_model_data=5060] 0
-# Blaze (507x)
-execute as @s[tag=blaze] store result score @s dvz.inventory.5070 run clear @s minecraft:warped_fungus_on_a_stick[minecraft:custom_model_data=5070] 0
-execute as @s[tag=blaze] store result score @s dvz.inventory.5071 run clear @s minecraft:warped_fungus_on_a_stick[minecraft:custom_model_data=5071] 0
+### Zombie abilities (15xxx)
+# Zombie (1500x)
+execute as @s[tag=zombie] store result score @s DVZ.inventory.15000 run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=15000] 0
+# Husk (1501x)
+execute as @s[tag=husk] store result score @s DVZ.inventory.15010 run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=15010] 0
+# Vindicator (1502x)
+execute as @s[tag=vindicator] store result score @s DVZ.inventory.15020 run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=15020] 0
+# Drowned (1503x)
+execute as @s[tag=drowned] store result score @s DVZ.inventory.15030 run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=15030] 0
+# Wither Skeleton (1504x)
+execute as @s[tag=wither_skeleton] store result score @s DVZ.inventory.15040 run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=15040] 0
+# Spider (1505x)
+execute as @s[tag=spider] store result score @s DVZ.inventory.15050 run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=15050] 0
+# Phantom (1506x)
+execute as @s[tag=phantom] store result score @s DVZ.inventory.15060 run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=15060] 0
+# Blaze (1507x)
+execute as @s[tag=blaze] store result score @s DVZ.inventory.15070 run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=15070] 0
+execute as @s[tag=blaze] store result score @s DVZ.inventory.15071 run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=15071] 0
 
-### Zombie nature given passive abilities (6xxx)
+### Zombie nature abilities (16xxx)
 
 
-### Other (7xxx)
+### Other (17xxx)
