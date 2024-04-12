@@ -14,12 +14,8 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute unless entity @e[type=minecraft:marker,tag=dvz,tag=setup_phase] run return 0
-
-execute as @s at @s run function dvz:admin/setup/deselect_boss
-
-tag @e[type=minecraft:marker,tag=dvz] add boss_ai_dragon
-tag @e[type=minecraft:marker,tag=dvz] add boss_selected
+# 2 - AI Dragon
+scoreboard players set &ogvz ogvz.game.boss 2
 
 bossbar set dvz:boss_timer color pink
 

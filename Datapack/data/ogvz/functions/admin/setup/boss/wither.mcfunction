@@ -14,12 +14,8 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute unless entity @e[type=minecraft:marker,tag=dvz,tag=setup_phase] run return 0
-
-execute as @s at @s run function dvz:admin/setup/deselect_boss
-
-tag @e[type=minecraft:marker,tag=dvz] add boss_wither
-tag @e[type=minecraft:marker,tag=dvz] add boss_selected
+# 3 - Wither
+scoreboard players set &ogvz ogvz.game.boss 3
 
 bossbar set dvz:boss_timer color purple
 
