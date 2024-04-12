@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: baker
-# Function Name: dvz:dwarves/book/baker
+# Function Name: ogvz:dwarves/book/baker
 # File Purpose: Gives the player Baker book transmutation items.
 # Created By: ropeFullOfHope
 # 
@@ -48,4 +48,4 @@ playsound minecraft:entity.villager.work_shepherd player @a ~ ~ ~ 1 1
 
 particle minecraft:spit ~ ~1 ~ 0.25 0.5 0.25 0 10
 
-loot give @s loot dvz:dwarves/summoning_book/baker
+loot give @s loot ogvz:dwarves/summoning_book/baker

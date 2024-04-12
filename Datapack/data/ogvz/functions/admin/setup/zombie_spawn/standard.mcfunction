@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: place_zombie_spawn_standard
-# Function Name: dvz:admin/setup/place_zombie_spawn_standard
+# Function Name: ogvz:admin/setup/place_zombie_spawn_standard
 # File Purpose: Places a standard zombie spawn.
 # Created By: ropeFullOfHope
 # 
@@ -23,7 +23,7 @@ forceload add ~ ~ ~ ~
 
 tp @s ~ ~6 ~
 
-execute at @s run place template dvz:zombie_spawn/standard ~-4 ~-1 ~-4
+execute at @s run place template ogvz:zombie_spawn/standard ~-4 ~-1 ~-4
 
 execute at @s align xyz positioned ~0.5 ~ ~0.5 summon minecraft:marker run tag @s add zombie_spawn
 

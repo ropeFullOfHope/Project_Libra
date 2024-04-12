@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: passive_detect
-# Function Name: dvz:tick/inventory_check
+# Function Name: ogvz:tick/inventory_check
 # File Purpose: Checks what special items the player has and stores the info into scoreboards.
 # Created By: ropeFullOfHope
 # 
@@ -14,7 +14,7 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-advancement revoke @s only dvz:misc/inventory_update
+advancement revoke @s only ogvz:misc/inventory_update
 
 ### Non-passive items
 execute as @s store result score @s ogvz.inventory.lava_bucket run clear @s minecraft:lava_bucket 0

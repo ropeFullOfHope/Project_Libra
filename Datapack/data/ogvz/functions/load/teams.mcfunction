@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:load
+# Called By: ogvz:load
 # File Name: teams
-# Function Name: dvz:load/teams
+# Function Name: ogvz:load/teams
 # File Purpose: Sets up teams.
 # Created By: ropeFullOfHope
 # 

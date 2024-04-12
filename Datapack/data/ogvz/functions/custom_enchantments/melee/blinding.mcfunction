@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:custom_enchantments/melee
+# Called By: ogvz:custom_enchantments/melee
 # File Name: blinding
-# Function Name: dvz:custom_enchantments/melee/blinding
+# Function Name: ogvz:custom_enchantments/melee/blinding
 # File Purpose: Gives the player hit the blindness effect.
 # Created By: ropeFullOfHope
 # 
@@ -14,6 +14,6 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-advancement revoke @s only dvz:custom_enchantments/melee/blinding
+advancement revoke @s only ogvz:custom_enchantments/melee/blinding
 
 effect give @s minecraft:blindness 4 0

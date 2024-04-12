@@ -19,6 +19,6 @@
     }
   },
   "rewards": {
-    "function": "dvz:custom_enchantments/melee/hunger_drain_1"
+    "function": "ogvz:custom_enchantments/melee/hunger_drain_1"
   }
 }

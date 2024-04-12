@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:custom_enchantments/melee
+# Called By: ogvz:custom_enchantments/melee
 # File Name: wither_aspect
-# Function Name: dvz:custom_enchantments/melee/wither_aspect
+# Function Name: ogvz:custom_enchantments/melee/wither_aspect
 # File Purpose: Gives the player hit the wither effect.
 # Created By: ropeFullOfHope
 # 
@@ -14,6 +14,6 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-advancement revoke @s only dvz:custom_enchantments/melee/wither_aspect
+advancement revoke @s only ogvz:custom_enchantments/melee/wither_aspect
 
 effect give @s minecraft:wither 10 0

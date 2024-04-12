@@ -19,6 +19,6 @@
     }
   },
   "rewards": {
-    "function": "dvz:custom_enchantments/melee/blinding"
+    "function": "ogvz:custom_enchantments/melee/blinding"
   }
 }

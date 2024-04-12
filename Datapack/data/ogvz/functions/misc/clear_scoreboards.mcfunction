@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: clear_scoreboards
-# Function Name: dvz:misc/clear_scoreboards
+# Function Name: ogvz:misc/clear_scoreboards
 # File Purpose: Called to reset all scoreboards on a player.
 # Created By: ropeFullOfHope
 # 

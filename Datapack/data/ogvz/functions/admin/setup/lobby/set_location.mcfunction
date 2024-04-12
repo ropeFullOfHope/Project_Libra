@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: set_lobby_location
-# Function Name: dvz:admin/setup/set_lobby_location
+# Function Name: ogvz:admin/setup/set_lobby_location
 # File Purpose: Sets the location the player is standing on as the spawn lobby location.
 # Created By: ropeFullOfHope
 # 

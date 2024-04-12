@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick/active_detect
+# Called By: ogvz:tick/active_detect
 # File Name: blacksmith
-# Function Name: dvz:dwarves/disk/blacksmith
+# Function Name: ogvz:dwarves/disk/blacksmith
 # File Purpose: Spawn items for the blacksmith dwarf class.
 # Created By: ropeFullOfHope
 # 
@@ -66,7 +66,7 @@ give @s minecraft:coal[ \
 give @s minecraft:flint_and_steel
 give @s minecraft:netherrack 1
 give @s minecraft:cooked_porkchop 1
-execute as @s at @s run function dvz:give/legendary_book
+execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \
   "", \
@@ -98,4 +98,4 @@ playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2
 
 particle minecraft:happy_villager ~ ~1 ~ 0.1 0.5 0.1 0.01 10
 
-function dvz:dwarves/boss_message
+function ogvz:dwarves/boss_message

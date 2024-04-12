@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:custom_enchantments/melee
+# Called By: ogvz:custom_enchantments/melee
 # File Name: backstabbing
-# Function Name: dvz:custom_enchantments/melee/backstabbing
+# Function Name: ogvz:custom_enchantments/melee/backstabbing
 # File Purpose: Deals extra damage if player attacks from behind.
 # Created By: ropeFullOfHope
 # 
@@ -14,7 +14,7 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-advancement revoke @s only dvz:custom_enchantments/melee/backstabbing
+advancement revoke @s only ogvz:custom_enchantments/melee/backstabbing
 
 scoreboard objectives add ogvz.rotation.p1.temp dummy
 scoreboard objectives add ogvz.rotation.p2.temp dummy

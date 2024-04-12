@@ -27,6 +27,6 @@
     }
   },
   "rewards": {
-    "function": "dvz:custom_enchantments/armor/permafrost"
+    "function": "ogvz:custom_enchantments/armor/permafrost"
   }
 }

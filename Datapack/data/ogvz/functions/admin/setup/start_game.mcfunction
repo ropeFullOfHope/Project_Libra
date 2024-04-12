@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: start_game
-# Function Name: dvz:admin/setup/start_game
+# Function Name: ogvz:admin/setup/start_game
 # File Purpose: Checks if all conditions for a game start are met and if they are, starts the game.
 # Created By: ropeFullOfHope
 # 
@@ -65,17 +65,17 @@ kill @e[type=minecraft:block_display,tag=shrine_indicator]
 kill @e[type=minecraft:item_display,tag=zombie_spawn_indicator]
 kill @e[type=minecraft:item_display,tag=boss_spawn_indicator]
 
-scoreboard players set &dvz ogvz.game.time 0
+scoreboard players set &ogvz ogvz.game.time 0
 
 #scoreboard objectives setdisplay sidebar ogvz.game.player_count
 
-execute store result bossbar dvz:boss_timer value run scoreboard players get &dvz ogvz.game.time
+execute store result bossbar ogvz:boss_timer value run scoreboard players get &ogvz ogvz.game.time
 
-bossbar set dvz:boss_timer visible true
+bossbar set ogvz:boss_timer visible true
 
-schedule function dvz:schedule/time 3t replace
+schedule function ogvz:schedule/time 3t replace
 
-execute as @s at @s run function dvz:give/magma_cream
+execute as @s at @s run function ogvz:give/magma_cream
 
 title @a subtitle [ \
   "", \

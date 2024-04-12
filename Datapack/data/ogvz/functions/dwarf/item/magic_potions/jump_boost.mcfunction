@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: jump_boost
-# Function Name: dvz:dwarves/magic_potion/jump_boost
+# Function Name: ogvz:dwarves/magic_potion/jump_boost
 # File Purpose: Gives Jump Boost to player.
 # Created By: ropeFullOfHope
 # 

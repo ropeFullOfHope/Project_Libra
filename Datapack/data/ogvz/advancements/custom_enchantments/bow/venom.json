@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "dvz:custom_enchantments/bow/venom"
+    "function": "ogvz:custom_enchantments/bow/venom"
   }
 }

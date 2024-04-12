@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: prevent_item_drop
-# Function Name: dvz:misc/prevent_item_drop
+# Function Name: ogvz:misc/prevent_item_drop
 # File Purpose: Returns undroppable items back to the player that threw them.
 # Created By: ropeFullOfHope
 # 

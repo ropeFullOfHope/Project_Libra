@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: place_lobby_standard
-# Function Name: dvz:admin/setup/place_lobby_standard
+# Function Name: ogvz:admin/setup/place_lobby_standard
 # File Purpose: Places a standard lobby.
 # Created By: ropeFullOfHope
 # 
@@ -21,7 +21,7 @@ kill @e[type=minecraft:marker,tag=lobby]
 
 forceload add ~ ~ ~ ~
 
-place template dvz:lobby/standard ~-10 ~-2 ~-10
+place template ogvz:lobby/standard ~-10 ~-2 ~-10
 
 execute at @s align xyz positioned ~0.5 ~ ~0.5 summon minecraft:marker run tag @s add lobby
 

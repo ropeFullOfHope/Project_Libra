@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: mana_subtract
-# Function Name: dvz:tick/mana_subtract
+# Function Name: ogvz:tick/mana_subtract
 # File Purpose: Removes levels (mana) from a player.
 # Created By: ropeFullOfHope
 # 
@@ -21,10 +21,10 @@ scoreboard players add @s ogvz.dwarf.mana_buildup 1000
 experience add @s -1 levels
 
 # Update the exp bar if all the mana buildup has been subtracted.
-execute as @s[scores={ogvz.dwarf.mana_buildup=-999..}] at @s run function dvz:misc/mana_bar
+execute as @s[scores={ogvz.dwarf.mana_buildup=-999..}] at @s run function ogvz:misc/mana_bar
 
 # Suppress the level up ding sound.
 stopsound @a[distance=..17] player minecraft:entity.player.levelup
 
 # Repeat function until ogvz.dwarf.mana_buildup is above -1000 millimana.
-execute as @s[scores={ogvz.dwarf.mana_buildup=..-1000}] at @s run function dvz:tick/mana_subtract
+execute as @s[scores={ogvz.dwarf.mana_buildup=..-1000}] at @s run function ogvz:tick/mana_subtract

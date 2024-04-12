@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick/active_detect
+# Called By: ogvz:tick/active_detect
 # File Name: water_wand
-# Function Name: dvz:dwarves/water_wand
+# Function Name: ogvz:dwarves/water_wand
 # File Purpose: Shoots a ray that replaces cauldrons with fully filled cauldrons.
 # Created By: ropeFullOfHope
 # 
@@ -32,7 +32,7 @@ execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:ma
 execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:marker,tag=ray_origin,limit=1,sort=nearest] ~ ~ ~ ~ ~
 
 # Start the ray casting loop.
-execute as @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] at @s run function dvz:dwarves/water_wand_loop
+execute as @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] at @s run function ogvz:dwarves/water_wand_loop
 
 # Replace a Cauldron with a fully filled Water Cauldron.
 execute as @s at @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:cauldron run setblock ~ ~ ~ minecraft:water_cauldron[level=3] replace

@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick/active_detect
+# Called By: ogvz:tick/active_detect
 # File Name: elder_guardian_eye
-# Function Name: dvz:dwarves/hero/elder_guardian_eye
+# Function Name: ogvz:dwarves/hero/elder_guardian_eye
 # File Purpose: Shoots a beam that deals magic damage and pierces players.
 # Created By: ropeFullOfHope
 # 
@@ -59,7 +59,7 @@ execute summon minecraft:marker run tag @s add ray
 execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] ~ ~ ~ ~ ~
 
 # Starts the ray casting loop.
-execute as @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] at @s run function dvz:dwarves/hero/dwarven_guard/elder_guardian_eye_loop
+execute as @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] at @s run function ogvz:dwarves/hero/dwarven_guard/elder_guardian_eye_loop
 
 # Deals damage to all players who have been hit by the ray.
 execute as @a[tag=temp_hit,tag=zombies] run damage @s 12 minecraft:magic by @p[tag=temp_ray_origin]

@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: health
-# Function Name: dvz:dwarves/magic_potion/health
+# Function Name: ogvz:dwarves/magic_potion/health
 # File Purpose: Heals the player.
 # Created By: ropeFullOfHope
 # 

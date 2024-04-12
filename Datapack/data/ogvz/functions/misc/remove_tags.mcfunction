@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: remove_tags
-# Function Name: dvz:misc/remove_tags
+# Function Name: ogvz:misc/remove_tags
 # File Purpose: Called to remove all tags on a player.
 # Created By: ropeFullOfHope
 # 

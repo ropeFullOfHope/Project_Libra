@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick/custom_effects
+# Called By: ogvz:tick/custom_effects
 # File Name: curse
-# Function Name: dvz:custom_effects/curse
+# Function Name: ogvz:custom_effects/curse
 # File Purpose: Removes all buffs.
 # Created By: ropeFullOfHope
 # 

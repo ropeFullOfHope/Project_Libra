@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:load
+# Called By: ogvz:load
 # File Name: scoreboards
-# Function Name: dvz:load/scoreboards
+# Function Name: ogvz:load/scoreboards
 # File Purpose: Sets up the scoreboards.
 # Created By: ropeFullOfHope
 # 
@@ -42,8 +42,8 @@ scoreboard players reset Dwarves ogvz.game.player_count
 scoreboard players reset Zombies ogvz.game.player_count
 scoreboard objectives modify ogvz.game.player_count numberformat styled {"color":"red","bold":true}
 scoreboard objectives setdisplay sidebar ogvz.game.player_count
-scoreboard players set &dvz ogvz.game.phase 0
-scoreboard players set &dvz ogvz.game.boss 0
+scoreboard players set &ogvz ogvz.game.phase 0
+scoreboard players set &ogvz ogvz.game.boss 0
 
 ### Right click scoreboards
 scoreboard objectives add ogvz.rclick.use minecraft.used:minecraft.carrot_on_a_stick

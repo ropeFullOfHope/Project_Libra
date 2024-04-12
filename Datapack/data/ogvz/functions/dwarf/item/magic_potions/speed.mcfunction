@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: speed
-# Function Name: dvz:dwarves/magic_potion/speed
+# Function Name: ogvz:dwarves/magic_potion/speed
 # File Purpose: Gives Speed to player.
 # Created By: ropeFullOfHope
 # 

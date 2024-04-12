@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:custom_enchantments/bow
+# Called By: ogvz:custom_enchantments/bow
 # File Name: venom
-# Function Name: dvz:custom_enchantments/bow/venom
+# Function Name: ogvz:custom_enchantments/bow/venom
 # File Purpose: Gives the player hit the poison effect.
 # Created By: ropeFullOfHope
 # 
@@ -14,6 +14,6 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-advancement revoke @s only dvz:custom_enchantments/bow/venom
+advancement revoke @s only ogvz:custom_enchantments/bow/venom
 
 effect give @s minecraft:poison 11 0

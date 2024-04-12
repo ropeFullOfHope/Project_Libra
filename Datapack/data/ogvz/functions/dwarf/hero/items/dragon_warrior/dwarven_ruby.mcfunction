@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick/active_detect
+# Called By: ogvz:tick/active_detect
 # File Name: dwarven_ruby
-# Function Name: dvz:dwarves/heroes/dragon_warrior/dwarven_ruby
+# Function Name: ogvz:dwarves/heroes/dragon_warrior/dwarven_ruby
 # File Purpose: Gives mana to all other dwarves.
 # Created By: ropeFullOfHope
 # 
@@ -48,4 +48,4 @@ execute as @a[tag=dwarves,tag=!hero] at @s run playsound minecraft:block.beacon.
 
 scoreboard players add @a[tag=builder] ogvz.dwarf.mana_buildup 50000
 
-execute as @a[tag=dwarves,tag=!builder,tag=!ogvz.dwarf.hero.dragon_warrior] at @s run function dvz:dwarves/heroes/items/dragon_warrior/dwarven_ruby_mana_refill
+execute as @a[tag=dwarves,tag=!builder,tag=!ogvz.dwarf.hero.dragon_warrior] at @s run function ogvz:dwarves/heroes/items/dragon_warrior/dwarven_ruby_mana_refill

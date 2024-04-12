@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: blacksmith
-# Function Name: dvz:give/dwarf_disc/blacksmith
+# Function Name: ogvz:give/dwarf_disc/blacksmith
 # File Purpose: Gives you the Blacksmith disc.
 # Created By: ropeFullOfHope
 # 

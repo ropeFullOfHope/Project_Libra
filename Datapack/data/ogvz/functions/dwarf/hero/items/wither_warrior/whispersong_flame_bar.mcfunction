@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick/custom_bars
+# Called By: ogvz:tick/custom_bars
 # File Name: whispersong_flame_bar
-# Function Name: dvz:dwarves/hero/wither_warrior/whispersong_flame_bar
+# Function Name: ogvz:dwarves/hero/wither_warrior/whispersong_flame_bar
 # File Purpose: Shows how much whispersong flame the wither warrior has.
 # Created By: ropeFullOfHope
 # 

@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick
+# Called By: ogvz:tick
 # File Name: cooldown
-# Function Name: dvz:tick/cooldown
+# Function Name: ogvz:tick/cooldown
 # File Purpose: Resets scoreboard objectives related to all active items. Also plays a jingle when a player finishes their cooldown.
 # Created By: Sahlonahl
 # 

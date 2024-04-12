@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: set_boss_location
-# Function Name: dvz:admin/setup/set_boss_location
+# Function Name: ogvz:admin/setup/set_boss_location
 # File Purpose: Sets the location the player is standing on as the boss spawn location.
 # Created By: ropeFullOfHope
 # 
@@ -14,12 +14,13 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute unless entity @e[type=minecraft:marker,tag=dvz,tag=setup_phase] run return 0
+# Return if game isn't in setup phase.
+execute unless score &ogvz ogvz.game.phase matches 0 run return 0
 
-kill @e[type=minecraft:item_display,tag=boss_spawn_indicator]
-kill @e[type=minecraft:marker,tag=boss_spawn]
+kill @e[type=minecraft:item_display,tag=ogvz.marker.boss_spawn.display]
+kill @e[type=minecraft:marker,tag=ogvz.marker.boss_spawn]
 
-forceload add ~ ~ ~ ~
+forceload add ~ ~
 
 execute at @s align xyz positioned ~0.5 ~ ~0.5 summon minecraft:marker run tag @s add boss_spawn
 

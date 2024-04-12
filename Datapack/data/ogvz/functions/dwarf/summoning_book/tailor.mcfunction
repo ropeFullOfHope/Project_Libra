@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: tailor
-# Function Name: dvz:dwarves/book/tailor
+# Function Name: ogvz:dwarves/book/tailor
 # File Purpose: Gives the player Tailor book transmutation items.
 # Created By: ropeFullOfHope
 # 
@@ -14,7 +14,7 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute store result score @s ogvz.var run clear @s #dvz:dye 0
+execute store result score @s ogvz.var run clear @s #ogvz:dye 0
 execute unless entity @s[scores={ogvz.var=10..}] run title @s actionbar [ \
   "", \
   {"text":"[Summoning Book]","bold":true,"color":"dark_red"}, \
@@ -33,7 +33,7 @@ execute unless entity @s[level=30..] run title @s actionbar [ \
 ]
 execute unless entity @s[level=30..] run return 0
 
-clear @s #dvz:dye 10
+clear @s #ogvz:dye 10
 
 # Remove 30 levels.
 scoreboard players remove @s ogvz.dwarf.mana_buildup 30000
@@ -48,4 +48,4 @@ playsound minecraft:item.armor.equip_netherite player @a ~ ~ ~ 1 1
 
 particle minecraft:spit ~ ~1 ~ 0.25 0.5 0.25 0 10
 
-loot give @s loot dvz:dwarves/summoning_book/tailor
+loot give @s loot ogvz:dwarves/summoning_book/tailor

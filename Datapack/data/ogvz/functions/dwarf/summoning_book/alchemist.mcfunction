@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: alchemist
-# Function Name: dvz:dwarves/book/alchemist
+# Function Name: ogvz:dwarves/book/alchemist
 # File Purpose: Gives the player Alchemist book transmutation items.
 # Created By: ropeFullOfHope
 # 
@@ -48,4 +48,4 @@ playsound minecraft:entity.husk.converted_to_zombie player @a ~ ~ ~ 1 1.5
 
 particle minecraft:spit ~ ~1 ~ 0.25 0.5 0.25 0 10
 
-loot give @s loot dvz:dwarves/summoning_book/alchemist
+loot give @s loot ogvz:dwarves/summoning_book/alchemist

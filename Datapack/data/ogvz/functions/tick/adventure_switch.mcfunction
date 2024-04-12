@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick
+# Called By: ogvz:tick
 # File Name: adventure_switch
-# Function Name: dvz:tick/adventure_switch
+# Function Name: ogvz:tick/adventure_switch
 # File Purpose: Switches the player between survival mode and adventure mode based on the tag of their selected item.
 # Created By: ropeFullOfHope
 # 

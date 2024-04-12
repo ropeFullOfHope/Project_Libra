@@ -19,6 +19,6 @@
     }
   },
   "rewards": {
-    "function": "dvz:custom_enchantments/melee/backstabbing"
+    "function": "ogvz:custom_enchantments/melee/backstabbing"
   }
 }

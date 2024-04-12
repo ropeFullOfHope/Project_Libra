@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick
+# Called By: ogvz:tick
 # File Name: lava_bucket
-# Function Name: dvz:tick/lava_bucket
+# Function Name: ogvz:tick/lava_bucket
 # File Purpose: Dumps lava on players with lava bucket.
 # Created By: ropeFullOfHope
 # 

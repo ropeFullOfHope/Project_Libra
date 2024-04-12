@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: strength
-# Function Name: dvz:dwarves/magic_potion/strength
+# Function Name: ogvz:dwarves/magic_potion/strength
 # File Purpose: Gives Strength to player.
 # Created By: ropeFullOfHope
 # 

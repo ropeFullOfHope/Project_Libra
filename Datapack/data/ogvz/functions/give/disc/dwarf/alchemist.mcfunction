@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: alchemist
-# Function Name: dvz:give/dwarf_disc/alchemist
+# Function Name: ogvz:give/dwarf_disc/alchemist
 # File Purpose: Gives you the Alchemist disc.
 # Created By: ropeFullOfHope
 # 

@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:custom_enchantments/bow
+# Called By: ogvz:custom_enchantments/bow
 # File Name: decay
-# Function Name: dvz:custom_enchantments/bow/decay
+# Function Name: ogvz:custom_enchantments/bow/decay
 # File Purpose: Gives the player hit the wither effect.
 # Created By: ropeFullOfHope
 # 
@@ -14,6 +14,6 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-advancement revoke @s only dvz:custom_enchantments/bow/decay
+advancement revoke @s only ogvz:custom_enchantments/bow/decay
 
 effect give @s minecraft:wither 10 0

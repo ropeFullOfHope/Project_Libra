@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: tailor
-# Function Name: dvz:give/dwarf_disc/tailor
+# Function Name: ogvz:give/dwarf_disc/tailor
 # File Purpose: Gives you the Tailor disc.
 # Created By: ropeFullOfHope
 # 

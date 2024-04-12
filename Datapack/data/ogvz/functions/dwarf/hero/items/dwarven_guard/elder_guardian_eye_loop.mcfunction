@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick/active_detect
+# Called By: ogvz:tick/active_detect
 # File Name: elder_guardian_eye_loop
-# Function Name: dvz:dwarves/hero/dwarven_guard/elder_guardian_eye_loop
+# Function Name: ogvz:dwarves/hero/dwarven_guard/elder_guardian_eye_loop
 # File Purpose: Ray scanning for Dwarven Guard's Elder Guardian Eye.
 # Created By: ropeFullOfHope
 # 
@@ -15,7 +15,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Stops ray casting if ray is inside a solid block or is too far from the origin.
-execute unless block ~ ~ ~ #dvz:go_through run return 0
+execute unless block ~ ~ ~ #ogvz:go_through run return 0
 execute unless entity @a[tag=temp_ray_origin,distance=..32] run return 0
 
 # Teleports the ray slightly forward.
@@ -58,4 +58,4 @@ execute as @a[distance=..2.5,tag=!temp_ray_origin,tag=!temp_hit,tag=temp_medium_
 execute as @a[distance=..2.5,tag=!temp_ray_origin,tag=!temp_hit,tag=temp_small_hitbox] at @s positioned ~-0.55 ~-0.25 ~-0.55 if entity @e[type=minecraft:marker,tag=ray,dx=0.1,dy=0.1,dz=0.1] run tag @s add temp_hit
 
 # Repeat ray casting loop.
-execute as @s at @s run function dvz:dwarves/hero/dwarven_guard/elder_guardian_eye_loop
+execute as @s at @s run function ogvz:dwarves/hero/dwarven_guard/elder_guardian_eye_loop

@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick/active_detect
+# Called By: ogvz:tick/active_detect
 # File Name: fertilizer
-# Function Name: dvz:dwarves/fertilizer
+# Function Name: ogvz:dwarves/fertilizer
 # File Purpose: Shoots a ray that replaces the biome around a grass block.
 # Created By: ropeFullOfHope
 # 
@@ -23,7 +23,7 @@ execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:ma
 execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:marker,tag=ray_origin,limit=1,sort=nearest] ~ ~ ~ ~ ~
 
 # Start the ray casting loop.
-execute as @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] at @s run function dvz:dwarves/fertilizer_loop
+execute as @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] at @s run function ogvz:dwarves/fertilizer_loop
 
 # Replace biome if the block targeted is a Grass Block.
 execute as @s at @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run fillbiome ~-5 ~-3 ~-5 ~5 ~3 ~5 minecraft:plains

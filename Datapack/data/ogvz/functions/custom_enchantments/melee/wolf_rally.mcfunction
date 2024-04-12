@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:custom_enchantments/melee
+# Called By: ogvz:custom_enchantments/melee
 # File Name: wolf_rally
-# Function Name: dvz:custom_enchantments/melee/wolf_rally
+# Function Name: ogvz:custom_enchantments/melee/wolf_rally
 # File Purpose: Gives your Dogs Strength effect when you attack a player.
 # Created By: ropeFullOfHope
 # 
@@ -14,7 +14,7 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-advancement revoke @s only dvz:custom_enchantments/melee/wolf_rally
+advancement revoke @s only ogvz:custom_enchantments/melee/wolf_rally
 
 tag @s add temp_owner
 

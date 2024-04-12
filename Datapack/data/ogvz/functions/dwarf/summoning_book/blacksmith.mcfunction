@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: blacksmith
-# Function Name: dvz:dwarves/book/blacksmith
+# Function Name: ogvz:dwarves/book/blacksmith
 # File Purpose: Gives the player Blacksmith book transmutation items.
 # Created By: ropeFullOfHope
 # 
@@ -48,4 +48,4 @@ playsound minecraft:block.smithing_table.use player @a ~ ~ ~ 1 1
 
 particle minecraft:spit ~ ~1 ~ 0.25 0.5 0.25 0 10
 
-loot give @s loot dvz:dwarves/summoning_book/blacksmith
+loot give @s loot ogvz:dwarves/summoning_book/blacksmith

@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: spawn
-# Function Name: dvz:dwarves/spawn
+# Function Name: ogvz:dwarves/spawn
 # File Purpose: Teleports the player to the shrine and gives them dwarf discs.
 # Created By: ropeFullOfHope
 # 
@@ -22,11 +22,11 @@ tag @s add dwarves
 
 ### Give discs to player.
 # 100%
-execute as @s at @s run function dvz:give/dwarf_disc/builder
+execute as @s at @s run function ogvz:give/dwarf_disc/builder
 
 # 50%
-execute as @s[predicate=dvz:50_chance] at @s run function dvz:give/dwarf_disc/blacksmith
-execute as @s[predicate=dvz:50_chance] at @s run function dvz:give/dwarf_disc/tailor
-execute as @s[predicate=dvz:50_chance] at @s run function dvz:give/dwarf_disc/baker
-execute as @s[predicate=dvz:50_chance] at @s run function dvz:give/dwarf_disc/alchemist
-execute as @s[predicate=dvz:50_chance] at @s run function dvz:give/dwarf_disc/enchanter
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/dwarf_disc/blacksmith
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/dwarf_disc/tailor
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/dwarf_disc/baker
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/dwarf_disc/alchemist
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/dwarf_disc/enchanter

@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick/custom_effects
+# Called By: ogvz:tick/custom_effects
 # File Name: mana_regeneration_6
-# Function Name: dvz:custom_effects/mana_regeneration_6
+# Function Name: ogvz:custom_effects/mana_regeneration_6
 # File Purpose: Regenerates mana beyond the cap.
 # Created By: ropeFullOfHope
 # 

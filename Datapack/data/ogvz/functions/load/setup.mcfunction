@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:load
+# Called By: ogvz:load
 # File Name: setup
-# Function Name: dvz:load/setup
+# Function Name: ogvz:load/setup
 # File Purpose: General initializations.
 # Created By: ropeFullOfHope
 # 

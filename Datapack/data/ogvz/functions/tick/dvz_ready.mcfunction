@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick
+# Called By: ogvz:tick
 # File Name: dvz_ready
-# Function Name: dvz:tick/dvz_ready
+# Function Name: ogvz:tick/dvz_ready
 # File Purpose: General setup for new players.
 # Created By: ropeFullOfHope
 # 
@@ -16,9 +16,9 @@
 
 gamemode adventure @s
 
-execute as @s at @s run function dvz:misc/clear_scoreboards
+execute as @s at @s run function ogvz:misc/clear_scoreboards
 
-execute as @s at @s run function dvz:misc/remove_tags
+execute as @s at @s run function ogvz:misc/remove_tags
 
 tag @s remove admin
 
@@ -64,6 +64,6 @@ tellraw @s [ \
   {"text":".\n","color":"yellow"} \
 ]
 
-execute as @s at @s run function dvz:tick/player_join
+execute as @s at @s run function ogvz:tick/player_join
 
 tag @s add DVZ_ready

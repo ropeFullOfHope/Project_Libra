@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: shrine_proximity
-# Function Name: dvz:tick/shrine_proximity
+# Function Name: ogvz:tick/shrine_proximity
 # File Purpose: Displays the distance between the player and the shrine.
 # Created By: ropeFullOfHope
 # 
@@ -23,7 +23,7 @@ scoreboard players set @s ogvz.var 0
 tag @s add temp_ray_origin
 
 # Create a marker and run a function with it.
-execute summon minecraft:marker run execute as @s at @s run function dvz:admin/setup/shrine_proximity_ray
+execute summon minecraft:marker run execute as @s at @s run function ogvz:admin/setup/shrine_proximity_ray
 
 tag @s remove temp_ray_origin
 

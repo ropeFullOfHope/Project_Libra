@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: kill
-# Function Name: dvz:dwarves/hero/wither_warrior/kill
+# Function Name: ogvz:dwarves/hero/wither_warrior/kill
 # File Purpose: Charges whispersong after killing a player as a wither warrior.
 # Created By: ropeFullOfHope
 # 
@@ -14,7 +14,7 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-advancement revoke @s only dvz:misc/wither_warrior_kill_player
+advancement revoke @s only ogvz:misc/wither_warrior_kill_player
 
 scoreboard players add @s ogvz.wither_warrior.whispersong.flame.ticks 720
 

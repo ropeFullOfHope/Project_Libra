@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: legendary_book
-# Function Name: dvz:give/legendary_book
+# Function Name: ogvz:give/legendary_book
 # File Purpose: Gives you the Legendary Book.
 # Created By: ropeFullOfHope
 # 

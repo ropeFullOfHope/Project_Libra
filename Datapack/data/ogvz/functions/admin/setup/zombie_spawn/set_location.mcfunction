@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: set_zombie_location
-# Function Name: dvz:admin/setup/set_zombie_location
+# Function Name: ogvz:admin/setup/set_zombie_location
 # File Purpose: Sets the location the player is standing on as the zombie spawn location.
 # Created By: ropeFullOfHope
 # 

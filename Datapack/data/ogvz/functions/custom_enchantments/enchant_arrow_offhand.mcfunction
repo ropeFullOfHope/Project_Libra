@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick/arrow_custom_enchantments
+# Called By: ogvz:tick/arrow_custom_enchantments
 # File Name: arrow_offhand
-# Function Name: dvz:custom_enchantments/arrow_offhand
+# Function Name: ogvz:custom_enchantments/arrow_offhand
 # File Purpose: Applies certain Bow/Crossbow custom enchantments to the arrow.
 # Created By: ropeFullOfHope
 # 

@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: mana_bar
-# Function Name: dvz:misc/mana_bar
+# Function Name: ogvz:misc/mana_bar
 # File Purpose: Displays the amount of mana you have on you experience bar (capped at level 100)
 # Created By: ropeFullOfHope
 # 

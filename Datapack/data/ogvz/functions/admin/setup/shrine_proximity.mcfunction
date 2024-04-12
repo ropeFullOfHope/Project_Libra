@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: shrine_proximity_ray
-# Function Name: dvz:admin/setup/shrine_proximity_ray
+# Function Name: ogvz:admin/setup/shrine_proximity_ray
 # File Purpose: Ray casting for shrine proximity.
 # Created By: ropeFullOfHope
 # 

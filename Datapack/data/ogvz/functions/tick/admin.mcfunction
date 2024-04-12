@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick
+# Called By: ogvz:tick
 # File Name: admin
-# Function Name: dvz:tick/admin
+# Function Name: ogvz:tick/admin
 # File Purpose: Gives the player the admin tag and gives them the setup tools if the game hasn't started yet.
 # Created By: ropeFullOfHope
 # 
@@ -28,4 +28,4 @@ tellraw @a[tag=admin] [ \
 gamemode creative @s
 
 # Give the admin the setup tools.
-execute as @s at @s run function dvz:admin/manual
+execute as @s at @s run function ogvz:admin/manual

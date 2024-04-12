@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick
+# Called By: ogvz:tick
 # File Name: portal_bind
-# Function Name: dvz:tick/portal_bind
+# Function Name: ogvz:tick/portal_bind
 # File Purpose: Kills the player if they are too far from portal.
 # Created By: ropeFullOfHope
 # 

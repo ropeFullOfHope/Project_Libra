@@ -304,7 +304,7 @@ The "Structurally Sound" Update
 + Increased golem protection level by 1
 - Mangrove log/wood/roots can no longer be obtained by zombies
 + (Maybe) Fixed "dwarves remaining message counts 1 extra player."
-+ Fixed vindication having no cooldown dvz:rightclick/cooldown
++ Fixed vindication having no cooldown ogvz:rightclick/cooldown
 - Reduced spider speed
 ==================
 

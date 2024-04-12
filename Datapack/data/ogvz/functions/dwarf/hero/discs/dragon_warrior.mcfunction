@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick/active_detect
+# Called By: ogvz:tick/active_detect
 # File Name: dragon_warrior
-# Function Name: dvz:dwarves/heroes/discs/dragon_warrior
+# Function Name: ogvz:dwarves/heroes/discs/dragon_warrior
 # File Purpose: Spawn items for the dragon warrior hero.
 # Created By: ropeFullOfHope
 # 
@@ -36,7 +36,7 @@ tag @s add mana
 
 team join d0DRAGON_WARRIOR @s
 
-execute as @s at @s run function dvz:misc/drop_armor
+execute as @s at @s run function ogvz:misc/drop_armor
 
 # Equips the hero with their armor.
 item replace entity @s armor.head with minecraft:golden_helmet[ \

@@ -19,6 +19,6 @@
     }
   },
   "rewards": {
-    "function": "dvz:custom_enchantments/melee/wither_aspect"
+    "function": "ogvz:custom_enchantments/melee/wither_aspect"
   }
 }

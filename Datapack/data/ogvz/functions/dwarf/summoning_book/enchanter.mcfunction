@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: enchanter
-# Function Name: dvz:dwarves/book/enchanter
+# Function Name: ogvz:dwarves/book/enchanter
 # File Purpose: Gives the player Enchanter book transmutation items.
 # Created By: ropeFullOfHope
 # 
@@ -36,4 +36,4 @@ playsound minecraft:entity.evoker.cast_spell player @a ~ ~ ~ 1 1
 
 particle minecraft:spit ~ ~1 ~ 0.25 0.5 0.25 0 10
 
-loot give @s loot dvz:dwarves/summoning_book/enchanter
+loot give @s loot ogvz:dwarves/summoning_book/enchanter

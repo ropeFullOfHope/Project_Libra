@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick
+# Called By: ogvz:tick
 # File Name: ai_mob_teams
-# Function Name: dvz:tick/ai_mob_teams
+# Function Name: ogvz:tick/ai_mob_teams
 # File Purpose: Joins ai mobs to specific mob class teams, so they don't attack their own species.
 # Created By: ropeFullOfHope
 # 

@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick
+# Called By: ogvz:tick
 # File Name: air_time
-# Function Name: dvz:tick/air_time
+# Function Name: ogvz:tick/air_time
 # File Purpose: Handles the air time of projectiles (how long they last before being killed).
 # Created By: ropeFullOfHope
 # 

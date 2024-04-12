@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: magma_cream
-# Function Name: dvz:give/magma_cream
+# Function Name: ogvz:give/magma_cream
 # File Purpose: Gives you the Magma Cream.
 # Created By: ropeFullOfHope
 # 

@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:load
+# Called By: ogvz:load
 # File Name: gamerules
-# Function Name: dvz:load/gamerules
+# Function Name: ogvz:load/gamerules
 # File Purpose: Sets up the game rules.
 # Created By: ropeFullOfHope
 # 

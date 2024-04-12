@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: baker
-# Function Name: dvz:give/dwarf_disc/baker
+# Function Name: ogvz:give/dwarf_disc/baker
 # File Purpose: Gives you the Baker disc.
 # Created By: ropeFullOfHope
 # 

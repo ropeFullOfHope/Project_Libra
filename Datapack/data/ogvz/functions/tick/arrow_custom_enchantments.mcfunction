@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick
+# Called By: ogvz:tick
 # File Name: arrow_custom_enchantments
-# Function Name: dvz:tick/arrow_custom_enchantments
+# Function Name: ogvz:tick/arrow_custom_enchantments
 # File Purpose: Applies certain Bow/Custom custom enchantments to the arrow.
 # Created By: ropeFullOfHope
 # 
@@ -17,10 +17,10 @@
 tag @s add applying_enchantments
 
 # Bow/Crossbow in main hand -> Check only enchantments in main hand.
-execute on origin if items entity @s weapon.mainhand #dvz:bow as @e[type=minecraft:arrow,tag=applying_enchantments] at @s run function dvz:custom_enchantments/arrow_mainhand
+execute on origin if items entity @s weapon.mainhand #ogvz:bow as @e[type=minecraft:arrow,tag=applying_enchantments] at @s run function ogvz:custom_enchantments/arrow_mainhand
 
 # Bow/Crossbow in off hand, but not in main hand -> Check only enchantments in off hand.
-execute on origin if items entity @s weapon.offhand #dvz:bow unless items entity @s weapon.mainhand #dvz:bow as @e[type=minecraft:arrow,tag=applying_enchantments] at @s run function dvz:custom_enchantments/arrow_offhand
+execute on origin if items entity @s weapon.offhand #ogvz:bow unless items entity @s weapon.mainhand #ogvz:bow as @e[type=minecraft:arrow,tag=applying_enchantments] at @s run function ogvz:custom_enchantments/arrow_offhand
 
 tag @s remove applying_enchantments
 tag @s add enchantments_applied

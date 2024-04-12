@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "dvz:misc/inventory_check"
+    "function": "ogvz:misc/inventory_check"
   }
 }

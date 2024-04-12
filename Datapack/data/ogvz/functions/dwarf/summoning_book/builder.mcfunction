@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: builder
-# Function Name: dvz:dwarves/book/builder
+# Function Name: ogvz:dwarves/book/builder
 # File Purpose: Gives the player Builder book transmutation items.
 # Created By: ropeFullOfHope
 # 
@@ -35,4 +35,4 @@ playsound minecraft:ui.stonecutter.take_result player @a ~ ~ ~ 1 1
 
 particle minecraft:spit ~ ~1 ~ 0.25 0.5 0.25 0 10
 
-loot give @s loot dvz:dwarves/summoning_book/builder
+loot give @s loot ogvz:dwarves/summoning_book/builder

@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: pearl_rod
-# Function Name: dvz:dwarves/pearl_rod
+# Function Name: ogvz:dwarves/pearl_rod
 # File Purpose: Teleports the player on top of the shrine.
 # Created By: ropeFullOfHope
 # 
@@ -35,14 +35,14 @@ execute if entity @s[scores={ogvz.pearl_rod.cool=1..}] run return 0
 scoreboard players set @s ogvz.var 0
 
 # Check if the shrine is obstructed.
-execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~-0.5 ~0.5 ~-0.5 #dvz:go_through run scoreboard players set @s ogvz.var 1
-execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~-0.5 ~0.5 ~0.5 #dvz:go_through run scoreboard players set @s ogvz.var 1
-execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~0.5 ~0.5 ~-0.5 #dvz:go_through run scoreboard players set @s ogvz.var 1
-execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~0.5 ~0.5 ~0.5 #dvz:go_through run scoreboard players set @s ogvz.var 1
-execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~-0.5 ~1.5 ~-0.5 #dvz:go_through run scoreboard players set @s ogvz.var 1
-execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~-0.5 ~1.5 ~0.5 #dvz:go_through run scoreboard players set @s ogvz.var 1
-execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~0.5 ~1.5 ~-0.5 #dvz:go_through run scoreboard players set @s ogvz.var 1
-execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~0.5 ~1.5 ~0.5 #dvz:go_through run scoreboard players set @s ogvz.var 1
+execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~-0.5 ~0.5 ~-0.5 #ogvz:go_through run scoreboard players set @s ogvz.var 1
+execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~-0.5 ~0.5 ~0.5 #ogvz:go_through run scoreboard players set @s ogvz.var 1
+execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~0.5 ~0.5 ~-0.5 #ogvz:go_through run scoreboard players set @s ogvz.var 1
+execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~0.5 ~0.5 ~0.5 #ogvz:go_through run scoreboard players set @s ogvz.var 1
+execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~-0.5 ~1.5 ~-0.5 #ogvz:go_through run scoreboard players set @s ogvz.var 1
+execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~-0.5 ~1.5 ~0.5 #ogvz:go_through run scoreboard players set @s ogvz.var 1
+execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~0.5 ~1.5 ~-0.5 #ogvz:go_through run scoreboard players set @s ogvz.var 1
+execute at @e[type=minecraft:marker,tag=shrine,limit=1,sort=nearest] unless block ~0.5 ~1.5 ~0.5 #ogvz:go_through run scoreboard players set @s ogvz.var 1
 
 execute if entity @s[scores={ogvz.var=1}] run title @s actionbar [ \
   "", \

@@ -19,6 +19,6 @@
     }
   },
   "rewards": {
-    "function": "dvz:custom_enchantments/melee/wolf_rally"
+    "function": "ogvz:custom_enchantments/melee/wolf_rally"
   }
 }
