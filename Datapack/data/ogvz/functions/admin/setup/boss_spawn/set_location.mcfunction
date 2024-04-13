@@ -24,16 +24,19 @@ forceload add ~ ~
 
 execute at @s align xyz positioned ~0.5 ~ ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["ogvz.marker","ogvz.marker.boss_spawn"]}
 
-execute at @s align xyz positioned ~0.5 ~0.75 ~0.5 run summon minecraft:item_display ~ ~ ~ { \
+execute at @s align xyz positioned ~0.25 ~0.25 ~0.25 run summon minecraft:block_display ~ ~ ~ { \
   Tags:["ogvz.display","ogvz.display.boss_spawn"], \
   brightness:{sky:15,block:15}, \
   transformation:{ \
     left_rotation:[0f,0f,0f,1f], \
     right_rotation:[0f,0f,0f,1f], \
     translation:[0f,0f,0f], \
-    scale:[1f,1f,1f] \
+    scale:[0.5f,0.5f,0.5f] \
   }, \
-  item:{id:"minecraft:skeleton_skull",Count:1b} \
+  block_state:{ \
+    Name:"minecraft:end_portal_frame", \
+    Properties:{eye:"true"} \
+  } \
 }
 
 execute as @a[tag=ogvz.admin] at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 1 2

@@ -1,525 +1,106 @@
-Project LIBRA
-=== XXXX.XX.XX ===
-- Game has been completely rewritten to improve code readability, remove bugs and improve performance thanks to new data pack features.
-- TAB now displays mob classes too.
-- Classes are now displayed differently so they take up less space.
-- All tiers of tools and armor are now craftable.
-- Tailors now start with Mud Bricks instead of Terracotta.
-- Dead players can no longer hit each other.
-- There is now a 0.2 second cooldown between right-clicking any usable item, this should prevent accidental active item usage.
-- Mobs no longer have a ton of Blast Protection, most have none now.
-- Passive abilities are now given as items, so players know they exist.
-- All abilities now have a description.
-- A ton of work was done on various visual aspects of the game to improve consistency.
-- Certain mobs no longer get randomly enchanted weapons, instead they now get a random preset weapon, so their power is more consistent.
-- Legendary books are now given to every dwarf class.
-- Certain recipes are now actually removed (e.g. rose bushes cannot be crafted into red dye) instead of being replaced with a different recipe (e.g. rose bushes crafting into rose bushes).
-- Lapis Block is now craftable.
-- Ray scanning now travels through every block that doesn't have physical collision (it used to only travel through some).
-- Ray scanning now always comes out of your eyes, even if you are crawling or crouching.
-- To not obstruct your vision, particles from ray casting don't show up when ray is still near your eyes.
-- Ray scanning is now extremely accurate. Rays now have to get inside a player's hitbox to hit them.
-- load and tick mcfunctions have been split up into multiple functions to improve readability.
-- Certain items no longer share the same CustomModelData.
-- Unbreakable text is now hidden on all abilities.
+=== 2.0 - Legendary Update (XXXX.XX.XX) ===
+- Game has been completly rewritten from scratch. Code is now more readable, scalable and has better performance.
+- Resource pack has been remade. Most textures got tweaked or completley redrawn. Textures are now more consistant with vanilla minecraft textures.
+
+Setup phase changes:
+- Admins now recieve an admin book when switching to creative mode. Only players with an admin tag can use it.
+- Admins are now notified when a player is tagged as an admin (by switching to creative mode for the first time), when an admin places a lobby/shrine/zombie spawn/boss spawn or when an admin selects a boss.
+- Boss spawn has been added, which is now required to be placed in order for the games to start (unless the selected boss is assassin).
+- Lobby is now required to be placed before the game can start.
+- Players who join the game are now in adventure mode and have Resistance 5 (complete damage immunity).
+- Players who are somehow killed in lobby, will respawn in lobby instead of at zombie spawn and will not recieve blindness/slowness.
+- Players who join a game for the first time will always spawn in lobby, even during zombie phase.
+- If magma cream is used during boss, zombie or any later phase, the player will join the zombie team.
+- Magma cream can no longer be dropped.
+- If you somehow lose your magma cream you can now receive a new one by rejoining the server.
+- Players who join the server while not yet joined the game will now be notified if the games have started yet.
+- Bedrock texture is now no longer randomly rotated.
+
+Dwarf changes:
+- Summoning books are less random.
+- All dwarves start with a legendary book now.
+- Dwarves can legendary transmute multiple times now (as long as they have legendary books).
+- Builders no longer receive mana from using their summoning book.
+- Builders now regenerate mana naturally at 0.5 mana/second. Their mana is still not limited to 100 mana.
+- Enchanters no longer receive mana from using their summoning book.
+- Enchanters now regenerate mana and have a 100 mana cap like other non-builder classes.
+- All classes can now overflow their mana under certain conditions, but they will slowly lose mana at a rate of -0.2 mana/second when above 100 mana (except for builders).
+- Standing near the shrine will now let you recover mana faster, even letting you overflow your mana.
+- Standing near the shrine will prevent mana loss from being above 100 mana.
+- Builder's instant-buildings have been completly removed.
+- Builders now always start with a crab claw and stonecutter.
+- Alchemists now start with a water wand, which allows them to fill cauldrons.
+- Tailors now start with super fertilizer, which allows them to change the biome on a patch of grass to allow flowers to grow.
+- Tailors now use mud bricks instead of terracotta.
+- Enchanters now use quartz bricks instead of polished quartz.
+- Blacksmiths now start with 4 blast furnaces instead of 4 regular furnaces. This now allows them to make 5 clocks in 30 seconds.
+- Bakers can now also rarely get 3-5 golden carrots with their transmutes.
+- Cake now stacks to 64.
+- Most dwarf classes received other slight tweaks to their starting inventory.
+- Certain items now have a tooltip, which tell the player what to do with it.
+- All potions that cost mana are now renamed to magic potions.
+- Magic health potion now has a 20 second cooldown.
+- Magic health potion now no longer gives short but strong regeneration and instead instantly heals you to full.
+- All magic potions now cost more mana (15/20 -> 30 mana).
+- Speed, strength and jump magic potions now give effects that last longer (10 -> 20 seconds).
+- Strength magic potion now gives a lesser level of strength (II -> I strength).
+- Pearl rod will now teleport you after 3 seconds. You will be slowed before your teleport. If you are hurt before teleporting the teleportation will be canceled. Cooldown starts and mana is consumed only if you teleport.
+- Chests and Barrels are now craftable again (they remain uncraftable for the zombie team).
+- All side-grades have been removed with the exception of shiv and scutum shield.
+- Shiv has been renamed to diamond dagger.
+- Scutum shield has been renamed to tower shield.
+- Tower shield now has a custom banner already applied, making it look different from the normal shield.
+- Tower shield has been reworked. The following changes have been made to it:
+    - When in off-hand -> when in hand (now works in either hand)
+    - Max health: +4 -> 0
+    - Armor: 0 -> +2
+    - Armor toughness: +2 -> 0
+    - Knockback resistance: +7 -> +2
+    - Movement speed: 0 -> -1.5
+    - No longer gives mining fatigue or slowness when in hand.
+- Diamond axes have been reworked. The following changes have been made to it (relative to vanilla diamond axe):
+    - Attack damage: 9 -> 12
+    - Can no longer receive Sharpness enchantment through the anvil.
+- Diamond daggers have been reworked. The following changes have been made to it:
+    - Attack damage: 6 -> 7
+    - Attack speed: 4.0 -> 40.0 (no longer has an attack cooldown)
+    - Attack reach: 3.0 -> 2.5
+    - Movement speed: +4 -> 0
+    - Is now a retextured diamond hoe (now has durability and can be enchanted).
+- Tridents have been reworked. The following changes have been made to it (relative to vanilla trident):
+    - Attack damage: 9 -> 10
+    - Attack speed: 1.1 -> 1.2
+    - Attack reach: 3.0 -> 3.5
+    - Durability: 250 -> 781
+    - Thrown tridents now ignore defense.
+- Crossbows now deal 50% more damage when using arrows.
+- Bread is now better:
+    - Nutrition: 5 -> 6
+    - Saturation: 6 -> 9.6
+- Pumpkin pie is now better:
+    - Nutrition: 8 -> 6
+    - Saturation: 4.8 -> 7.2
+    - Eat time: 1.6 -> 1.2 seconds
+Eating a slice of cake will now give you 10 seconds of regeneration II (4 hearts of healing).
+
+Zombie changes:
+- Creeper, Ocelot, Hoglin, Silverfish, Spider, Wolf no longer spawn with green particles and a *ding* sound, just like dwarves do.
 - Dyed text is now hidden on all mob armor.
 - Mob heads no longer have the unbreakable tag.
-- Creeper, Ocelot, Hoglin, Silverfish, Spider, Wolf no longer spawn with green particles and a *ding* sound, just like dwarves do.
+- Wolf now uses light gray dyed leather armor instead of chainmail armor (visual change only).
 - Vindicator's boots now look closer to the original Vindicator.
 - Firework Rockets now have a more compact lore text.
-- Most mobs can now affect other mobs too with their abilities.
-- Player hit player detection has been massively improved, so it's now completly consistent.
-- Custom enchantments have been introduced. They currently cannot be applied, but the system is very flexible and dynamic, so these can be used anywhere.
-- Custom enchantments have a description when present on an item.
-- All vanilla advancements have been removed.
-- A new advancement was added for killing wilkekids as a blaze, while he's wearing full Fire Prot 4.
-- Advancements are now broadcasted in chat.
-- 2 new damage types have been added. They both ignore armor, protection enchantment and resistance effect. One of them also ignores invincibility frames. These 2 are used only in specific situations.
+- Most mobs can now affect other mobs with their abilities (e.g. guardian's beam can hit other zombies).
 
-= Zombie =
-Blast Protection: 16 -> 2
-Projectile Protection: 0 -> 2
-Fire Protection: 0 -> 2
-Iron Sword can now be one of two presets:
-- Sharpness 2
-- Sharpness 1, Fire Aspect 1
-Can no longer get Fire Resistance Potion.
-Can no longer rarely get Flint and Steel, Packed Ice, Ender Pearls or a Horse.
--> Reason: I felt Zombies usually had troubles with getting killed by Bows, so they got Projectile Protection. Being able to start with Fire Aspect was added so there is more variety. Fire Resistance Potions are practically useless so they were removed, but Zombies now also have Fire Protection so they don't get hurt by blazes as much. Flint and Steel is quite useless due to the exsistance of Blaze, Packed Ice goes against the rule of mobs not starting with blocks, Ender Pearls and Horse Spawn egg were moved to natures instead (if a nature for them doesn't exsist yet, be patient, it will probably be added in later update).
-
-= Husk =
-Blast Protection: 16 -> 2
-Projectile Protection: 0 -> 2
-Fire Protection: 0 -> 2
-Can no longer get Withering Splash Potion.
-No longer get's regeneration when affected by Withering.
-To comensate, they now start with 2 Splash Potions of Healing.
-Hunger Splash Potion effect duration: 10 seconds -> 90 seconds
-Can no longer get Fire Resistance Potion.
-Can no longer rarely get Flint and Steel, Packed Ice, Ender Pearls or a Horse.
--> Reason: Same reasons as Zombie. Withering immunity is now unique to Wither Skeletons. Hunger Splash Potion was way too weak, so it's duration was buffed to the same amount as the Slowness and Weakness Potions.
-
-= Vindicator =
-Blast Protection: 16 -> 2
-Projectile Protection: 0 -> 2
-Fire Protection: 0 -> 2
-Iron Axe can now be one of two presets:
-- Sharpness 3, Efficiency 5
-- Sharpness 3, Knockback 2
-Now properly gives haste to nearby Vindicators.
-Can no longer get Fire Resistance Potion.
-Can no longer rarely get Flint and Steel, Packed Ice, Ender Pearls or a Horse.
--> Reason: Same reasons as Zombie. Haste effect was fixed so Vindicators are now encouraged to fight together just like other Zombie types.
-
-= Drowned =
-Blast Protection: 16 -> 2
-Projectile Protection: 0 -> 2
-Fire Protection: 0 -> 2
-Trident can now be one of two presets:
-- Loyalty 3, Channeling
-- Riptide 2
-Now gives Dolphin's Grace only to nearby Drowned.
-Can no longer get Fire Resistance Potion.
-Can no longer rarely get Flint and Steel, Packed Ice, Ender Pearls or a Horse.
--> Reason: Same reasons as Zombie. Dolphin's Grace was changed to encourage Drowned to fight together with other Drowned instead of mobs from different classes (excluding Drowned and Guardians). Think of this as the Speed Husks get, but for water.
-
-= Skeleton =
-Defense: 6 -> 7
-Blast Protection: 16 -> 0
-Bow can now be one of two presets:
-- Power 4, Infinity, Punch 2
-- Power 4, Infinity, Flame
-Can no longer get a Crossbow.
-Now only gets 1 Arrow.
--> Reason: Crossbows are pretty useless, also Pillagers already exist.
-
-= Wither Skeleton =
-Defense: 6 -> 7
-Blast Protection: 16 -> 0
-Withering Tipped Arrows effect duration: 10 seconds -> 11.25 seconds (visual bug, displays as 1 second, see https://bugs.mojang.com/browse/MC-98310)
-Now gets 2 rolls for:
-- 8x Slowness Tipped Arrow (11.25 seconds)
-- 8x Weakness Tipped Arrow (11.25 seconds)
-No longer gets Withering Splash Potion
-Withering being replaced with Regeneration is now exclusive to them.
--> Reason: Withering Tipped Arrows were changed for consistency. Made them focus more on debuffs than damage, to make them more different from skeletons.
-
-= Pillager =
-Defense: 6 -> 7
-Blast Protection: 16 -> 0
-Crossbow can now be one of two presets:
-- Quick Charge 3, Piercing 4, Continuity
-- Quick Charge 3, Multishot, Continuity
-Now always gets 16 Firework Rockets
-Starting Arrows: 128 -> 1
-The new custom enchantment Continuity works like Infinity, but for Crossbows.
--> Reason: Just QoL improvements really.
-
-= Guardian =
-Defense: 6 -> 7
-Blast Protection: 16 -> 0
-Beam can now hit other mobs.
-Reduced amount of particles Beam spawns.
--> Reason: Other skeleton variants can hurt each other so Guardians do that now too. Particles reduction is barely noticable, but performance should be better for people with potato PCs.
-
-= Creeper =
-Defense: 6 -> 7
-Blast Protection: 16 -> 0
-Indirect buff from difficulty being increased to Hard. (Explosion deals more damage)
--> Reason: Was nerfed way too hard in my opinion. Changed it back to original self as I never heard anyone complain about creepers.
-
-= Spider =
-Defense: 6 -> 7
-Blast Protection: 16 -> 0
-Spider eye is now actually a spider eye. (Go ahead and eat it if you want to lose that ability.)
-Spider eye is now enchanted with Poison Aspect 1 and Blinding 1, both custom advancements.
-Spider now has Poison effect immunity.
-Cube of Cobwebs spawned by Web ability is now of a different shape.
--> Reason: Because Spiders can now poison other mobs, they were given Poions Immunity just because I though it would be neat. Cobweb shape is an experimental change, I want to see how this will affect the ability. It will likely be reverted if it proves to nerf the ability too much.
-
-= Wolf =
-Blast Protection: 16 -> 2
-Projectile Protection: 0 -> 2
-Fire Protection: 0 -> 2
-No longer starts with 6 Wolf Spawn Eggs and a stack of Bones.
-Now has a single-use ability that spawns 6 Dogs.
-You can no longer breed Dogs.
-No longer starts with a Golden Sword with Fire Aspect
-Diamond Sword with Sharpness 5 was nerfed to Iron Sword with Sharpness 3
-Iron Sword now has the Wolf Rally custom enchantment, which grants your dogs 1 second of Strength 1 every time you hit a player.
-Dogs die when the Wolf player dies.
--> Reason: AI Wolves were always just a nuisance, while the player Wolf was the main damage dealer. This was changed so Wolves will now focus more on their AI Wolves which will make them more uniqe compared to Zombie class. AI Wolves being killed alongside the player is there to prevent them from carrying over to the next class you pick. Breeding is disabled to make it easier to balance the class.
-
-= Ocelot =
-Defense: 6 -> 7
-Blast Protection: 16 -> 0
-Mana Steal now actually steals mana and gives it to the Ocelot.
-Mana Steal has been nerfed to stealing 30 mana.
-Mana Steal can steal mana from other Ocelots.
-Disarm now costs mana and has no cooldown.
-Disarm no longer gives Slowness effect.
-Disarm no longer affects every dwarf around you, now affects only players in front of you.
-No longer gets permament Speed 2
-Dash ability is back and costs mana.
-Dash gives 3 seconds of Speed 4.
-Dash also costs mana.
-Ocelots can now use dwarf items that cost mana.
--> Reason: Focus was mainly on making the Ocelot more unique. Stealing mana now allows them to also use dwarf Magic Potions or Pearl Rods. Dash/Speed was reverted to make the Ocelot focus more on getting in, stealing mana, getting out without making it too annoying for dwarves. Disarm was changed to make it easier not to hit other mobs, due to the mobs affecting other mobs change.
-
-= Chicken Nugget =
-
-= Snowman =
-
-[][][][][][][][][][][]
-ADD NEW UPDATES ABOVE
-[][][][][][][][][][][]
-
-The "Structurally Sound" Update
-=== 2022.09.24 ===
-+ BUILDER STRUCTURES
-  - Builder Legendary transmute
-  - Comes in 9 different types
-    - Bunker
-    - Conduit
-    - Disposal
-    - Platform
-    - Rampart
-    - Stable
-    - Tower
-    - Talltower
-    - Workshop
-  - Place structure to build it immediately
-  - Based on where you are looking, so it always places correct
-  - Only works for builders! 
-
-+Fixed syntax error w/ "Lore" on papaya, causing it to be unobtainable
--Removed shrine mana gen sound
--Reduced pearl rod spawn chances
-+Fixed enderman and golem spawn messages (text w/ name, and sound)
-+Fixed miniboss spawns not having the horn sound
-+Fixed pearl rods not working and reduced cooldown
--Golem protection reduced
-==================
-
-
-
-=== 2022.09.18 ===
--Removed ***ALL*** zombie block pickups while maintaining dwarf pickups. (finally!)
-
--Fixed WW's bow losing infinity after the first kill 
--Shrine game over effect no longer has an explosion and dwarves should get teleported instead of killed 
--Blacksmith's legendary transmute yields more items 
--Buffed Wicked Crossbow 
--Tailor's legendary transmute yields more items 
--Tailor's netherite comes pre-enchanted 
--Baker's legendary transmute can potentially yield golden carrots and an enchanted golden apple 
-
--Ghast blast prot should protect it from nuking itself at close 
--Ghast fireball power dwindling has been tweaked and now emits smoke with its darkness indicating its current blast strength. Black is strongest, white is weak.
--Ghast is immune to fall damage, following other flyers 
--Nixed spider's web climb ability 
-
--Reduced the enchant glint to something more subtle 
--Fixed Chillager's invis ability icon to its own texture; what it should have been a while ago
-
--Increased chances of pearl rods 
--Reduced chances of transmuting crossbows 
--Added a description of the Papaya's function 
--EZ fix slabs are constructed slightly closer 
--Dwarven guard's Mind's Eye ability activation sound is much longer range
-
--Bumped up the AoE of Phantom's Delirium
--Slightly reduced Delirium cooldown 
--Fixed Phantom's delirium projectiles appearing as snowballs, now black ink
-
--removed tool crafting recipes
--added check for shrine blocks before game start 
--slightly adjusted mob spawn protection 
--fixed bug causing title notification spam.
--removed naturally generating chest items
-==================
-
-
-
-=== 2022.09.10 ===
--Made changes to the game over effects and fixed some effects not happening at all
--Extended the length of the saturation and weakness effects in the lobby.
--Reduced regen effect and slight protection reduction on Hoglin's final stage
--A sound and chat message appears when an enderman spawns
--Fixed dwarf death messages' lack of fanfare. I hope.
--Reactivated friendly fire; JBG is back.
--AI mobs have been substantially nerfed
--Reduced Hoglin's hunger affliction
--Hoglin and Iron golem have messages upon final stage and spawning respectively
--Replaced drowned's DS with FF due to a vanilla bug preventing riptide from working
--Chicken has a full complement of armor, but no armor points
--The amount of blocks hoglin must eat to evolve has increased
--Fixed miniboss spawn sounds not playing
--Miniboss spawn messages also display in chat
--Phantom no longer has an armor rating. It also lacks any protection except for blast.
--Phantom's sword is now stone. Knockback reduced to 1.
--Upped the cooldown to 20 seconds for chicken's fly ability
--Golem's projectile prot is knocked down to 1 on only 1 piece of armor; no longer gets it otherwise.
--Zombies can no longer get wooden picks as a rare chance
--Fixed normal Enderman portal spawn egg count to be 8 instead of old 16
--Increased AI creeper fuse time
--Increased follow range for AI mobs
--Removed magic milk dispenser from Baker
--Pearl Rod can teleport even if a layer of blocks covers it again
--Creeper effect clouds should die. If this doesn't work I'm going to take a shit
--Hoglin is rarer
--Blaze gives temporary fire resistance to monsters in a short radius around it
--Pearl rods are slightly more common
--Pearl rods have a cooldown
--Pearl rods have cooldown and mana error messages
--A sound and particles play when enchanters and builders regenerate mana around the shrine or assassin slayer
--Increased radius of mana regeneration around shrine
--Fixed accuracy errors in dwarf hero item descriptions
--Whispersong starts with infinity
--Fixed Hoglin's announcement message playing when it shouldn't
--Fixed particles and sounds not playing when pig mines blocks
--Fixed mobs not being able to hear silverfish's "roar"
--Hoglin gets a death announcement message
--Important monster spawn announcement messages now include the player's name
--A title message indicating the doom/boss event appears upon selection a dwarf class.
--AI mobs get weak passive regen back (except silverfish)
-==================
-
-
-
-=== 2022.08.25 ===
-+ Increased Elder Guardian boss health
-+ Increased the amount of redstone blacksmiths recieve upon transmute
-+ Fixed Creepers leaving behind effect clouds
-- AI silverfish take more knockback than previously
-+ Fixed dwarven guard being assigned when enough dwarves are killed during an assassin game
-+ Fixed wither warrior being assigned when enough dwarves are killed during a guardian game
-+ Fixed important monster death announcement sounds
-+ Reduced the number of spawn eggs enderman gets when creating a portal
-- Lowered protection of AI zombies
-- Lowered protection of player Phantoms
-+ Upped the range of Bee's honey ability
-- Eggs found by dwarves will no longer explode when thrown
-- Reduced chicken spawn chance
-+ Increased golem protection level by 1
-- Mangrove log/wood/roots can no longer be obtained by zombies
-+ (Maybe) Fixed "dwarves remaining message counts 1 extra player."
-+ Fixed vindication having no cooldown ogvz:rightclick/cooldown
-- Reduced spider speed
-==================
-
-
-
-The "Dangerous & Deadly" Update
-=== 2022.08.19 ===
-==-New Mechanics-==
-- Boss auto ends when 33% of online players are dead.
-+ The shrine grants mana regen up to 100 for builders and enchanters as long as they stay close to it
-
-+ ENDER DRAGON BOSS
-  - New ability, "World Cracker"
-    - many, many, many fireballs
-  - No more healing crystal
-
-+ CHICKEN
-  - Can be one shot
-  - ghastflight:tm:
-  - Flying dash ability
-  - EXPLODING EGGS
-
-+ PHANTOM
-  - Delerium
-    - shoots snowballs that heavily debuff dwarves
-  - Eytra
-
-+ EZ-Fix Slabs!
-  - Builder's new legendary item
-
-+ Monsters are all on one team!
-  - Prevents spying on tab menu, adding stealth
-  - allows new command /teammsg or /tm
-  - Can see fellow invisible mobs
-
-+ AI mobs now naturally spawn when the boss dies.
-  - They are tougher than normal AI mobs and won't attack the zombies team!
-
-==-Overhaul-==
-+ Johnny
-  - Faster
-  - Gets a fancy new crossbow and arrows
-  - Upgraded vindication
-    - Now teleports all zombie variants to Johnny
-    - Empowers all mobs
-    - Extra buffs for zombie variants
-    - Johnny is immune to damage for 30 seconds
-
-+ Ghast
-  - Reduced health
-  - Fireball
-    - Increased cooldown to 10 seconds
-    - Reduces power over distance, and deletes itself if it goes too far
-
-+ Spider
-  - Speed increase
-  - New wooden sword to remove webs
-  - Poison is now more severe, works by hitting dwarves, and has no cooldown
-  - spawns with a 5s web cooldown to prevent using it in mob spawn
-  - climbs webs faster
-
-+ Hoglin
-  - New tool, mine blocks with it for better control
-  - final stage is stronger, better regen, and applies hunger to dwarves on hit
-
-+ Enderman
-  - Has two portals, pick one
-    - ground level
-    - airborne
-  - airborn portal is lower
-  - all cooldowns reduced significantly
-
-+ Bee
-  - New/Reusable healing item "Honey"
-  - Has more potions to help support
-  - Takes no fall damage
-
-+ Zombie AND Skeleton are both guaranteed now
-+ Skeletons have a chance for punch and flame bows
-+ Pillagers have a chance for punch, flame, and fireworks
-+ Skeletons and skeleton variants (except guardian) have a chance of getting skeleton horse mounts
-+ Zombies and zombie variants have a chance of getting zombie horse mounts (plus other toys)
-+ All mobs get night vision and conduit power
-
-+ Papaya activates more often and provides greater healing
-+ Enchanter gets grindstone and more bookshelves
-- Alchemists now only have 1 cauldron
-- Builders no longer get reinforced brick or emeralds when combat time starts
-+ Every hero was modified for balance
-
-==-Bugfixes-==
-- Minibosses no longer get mob spawn regen
-+ Teleporting to the enderman won't mess with previous effects
-- Dragon Warrior's "ultimate potion" does not work for any other dwarves
-+ Fixed chillager invis and reapplication of armor not working
-+ Fixed the dwarf count in dwarf death messages not appearing
-
-==-Other/QoL-==
-+ Bee is more common
-+ Pearl Rod leaves an effect behind at the spot you teleported away from
-+ Blaze can now choose to descend slowly like ghast/bee
-+ Silverfish more stealthy by placing eggs silently to dwarves
-- Baker produces less cake, but more pie/bread
-+ Wolf's iron sword is now diamond and has one more wolf egg
-+ Updated block list for ravager/silverfish interactable to include shop blocks and variants like stairs and slabs
-+ Blaze fireballs have slightly less spread
-+ Ocelot speed boost is now permanent
-+ Silverfish roar makes a sound and spawns with 3 spawn eggs
-+ Lobby players have weakness and saturation to prevent dying...
-+ Assassin Slayer now has a mana regen aura for nearby dwarves
-+ "Assisted shrine" setup now clears a larger space, and includes a basic shrine room!
-+ Creepers now explode, but differently
-+ Ocelot has a new tool called "disarm" which makes dwarves unable to do damage for 3 seconds
-+ Assassin now recieves a message in chat detailing its mission and notes
-+ Wither skeletons get vines
-+ Chillager's ice bomb now comes with particles, a sound, and powder snow at its center
-+ Bumped up depth strider of aquatic mobs
-+ Replaced the player dragon boss' healing ability with something new: WORLD CRACKER
-+ Wither and Elder Guardian bosses buffed
-+ Whispersong no longer adjusts fov on crouch. It gets a spy glass in its place. 
-- Higher mana requirement for health potions
-+ Snowman's ice shard effect lasts a little longer, and its snowballs go a little further
-+ Drowned give eavh other dolphins grace instead of conduit power
-+ Hoglin's final stage depletes hunger on hit
-+ Wolf companions are tougher.
-+ Added miniboss death messages
-+ Increased mob spawn protection radius
-+ The shrine has a fancy explosion when the game is over by shrine destruction
-+ Mobs get a notification when their suicide pill is ready
-+ fix for JBG with dwarves
-+ Changed internal code to be more effecient (less lag for you)
-==================
-
-
-
-The "Very Pretty" Update
-=== 2022.02.11 ===
-==-Particles-==
-+ Added particles for dwarves' summoning and legendary books
-+ Added particles for all hero weapons
-+ All dwarven heros now emit an ambient trail of particles!
-+ Blaze now emits ambient blaze particles
-
-==-Sounds-==
-+ Added Timer sounds and different cues
-+ Added Boss spawn sounds
-+ Added sound and chat cue when attempting to use a lava bucket (don't try it)
-+ Added a sound for the game starting
-+ Added sounds for dwarves' summoning and legendary books
-+ Added sounds for all hero weapons
-+ When a dwarf recieves mana from a hero, a sound is played
-+ When the assassin is selected, a special sound plays
-+ Add a sound when using the Pearl Rod
-+ Modified the sounds when using dwarves' potions
-+ All mobs make their respective mob sounds when they are either hit or killed
-+ All mob abilities make their respective sounds
-+ Bosses' abilities have custom sounds
-
-==-Textures-==
-+ Updated the textures for the spawn in lobby, lanterns, and reinforced stone bricks
-  - (or blue bricks for you laymen)
-+ Updated diamond bow and emerald bow textures
-+ Changed the Assassin Knife texture
-+ All classes spawn in with a music disc now!
-+ Changed silverfish head (not a model, just a player head texture)
-+ Alchemist now uses lapis lazuli (like 2012)
-  - this cannot be crafted into anything else
-+ Mob spawn is now crying obsidian
-
-==-Models-==
-+ Added custom head models (some are even animated) for the following:
-  - all minibosses
-  - the illager clan
-  - wolves
-  - bees
-  - ocelots
-  - guardians
-+ Custom 3rd person model for the Whispersong (it's huuuge)
-
-==-Other-==
-+ ADDED A RULE BOOK
-  - given to players waiting in the lobby before the game starts
-
-+ Readded natural regen
-+ Buffed Papaya (woo)
-+ Dwarven deaths have a special death message
-+ Changed the armor color of (almost) all mobs
-+ Enderman portal creation has a new message
-+ When a dwarf gets their mana stolen by an Ocelot, they are notified in chat
-+ Enderman can now move around very slowly on their portal without having to spam their spacebar
-+ Mobs on the enderman platform no longer have temporary invulnerability
-  - They still don't take fall damage if they jump fast enough.
-+ Assassin Slayer is a little more tanky with added blast resistance!
-+ Added several helpful tips in chat messages for when you spawn in, pick a class, die, etc!
-+ Added team's remaining players in a sidebar on the right
-+ Added "GAME OVER" screens for when either all dwarves die or all the gold is gone.
-  - These are calculated and displayed automagically!
-+ Changed message when using pearl rod
-+ Tailor gold output buffed!
-+ Raised crafter dwarves' shop blocks to a 1.5 stacks instead of only 1!
-+ Fixed seeds and dirt and a bunch of other blocks from dropping
-  - (give me your feedback on this after a couple games, it's what I think is the best mixture of no crafting and full crafting
-  - Builders have to use their axe to get trees
-  - This fixes 2-tall flower glitch and crafting new gold
-+ Buffed builder mana
-+ Changed timer color
-+ Changed boss health colors
-+ Mobs' release message is now in chat instead of the actionbar
-+ Modified almost all legendary transmutes
-+ Bookshelves and 
-+ Baker has a cow spawn egg to get more milk buckets from
-  - (his name is Jeffry and he's invincible, literally)
-+ Obsidian cannot be picked up, but still can be a legendary transmute
-
-- GHAST NO LONGER HAS REGEN
-+ FIXED EXCALIBUR AND DIAMOND BOW
-+ FIXED COAL (iykyk)
-==================
+Misc. changes:
+- A *ding* sound will play when an active item/ability with a cooldown recharges.
+- There's is now a global 0.2 second cooldown on all active items/abilities, which should prevent accidental use of them.
+- Classes on the tab screen are now displayed differently so they take up less space and so you can read them faster.
+- All armor and tools along with some other items like block of lapis lazuli are now craftable.
+- All active/passive items/abilities now have a description.
+- Certain items are now uncraftable instead of crafting into themselves.
+- All vanilla advancements have been disabled.
+- Ray scanning has been improved and is now much more accurate while also travelling through more non-solid blocks.
+- load and tick mcfunctions now only contain sub-functions allowing for easier add-on creation.
+- Certain items/abilities no longer share the same texture.
+- Unbreaking lore text is now hidden on all active items/abilities.
