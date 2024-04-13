@@ -14,17 +14,18 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute unless entity @e[type=minecraft:marker,tag=dvz,tag=setup_phase] run return 0
+# Return if game isn't in setup phase.
+execute unless score &ogvz ogvz.game.phase matches 0 run return 0
 
-kill @e[type=minecraft:block_display,tag=lobby_indicator]
-kill @e[type=minecraft:marker,tag=lobby]
+kill @e[type=minecraft:block_display,tag=ogvz.display.lobby]
+kill @e[type=minecraft:marker,tag=ogvz.marker.lobby]
 
-forceload add ~ ~ ~ ~
+forceload add ~ ~
 
-execute at @s align xyz positioned ~0.5 ~ ~0.5 summon minecraft:marker run tag @s add lobby
+execute at @s align xyz positioned ~0.5 ~ ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["ogvz.marker","ogvz.marker.lobby"]}
 
 execute at @s align xyz positioned ~0.25 ~0.25 ~0.25 run summon minecraft:block_display ~ ~ ~ { \
-  Tags:["lobby_indicator"], \
+  Tags:["ogvz.display","ogvz.display.lobby"], \
   brightness:{sky:15,block:15}, \
   transformation:{ \
     left_rotation:[0f,0f,0f,1f], \
@@ -36,14 +37,14 @@ execute at @s align xyz positioned ~0.25 ~0.25 ~0.25 run summon minecraft:block_
 }
 
 # Set the lobby as the world spawn.
-execute if entity @e[type=minecraft:marker,tag=dvz,tag=setup_phase] at @s align xyz positioned ~0.5 ~ ~0.5 run setworldspawn ~ ~ ~
+execute at @e[type=minecraft:marker,tag=ogvz.marker.lobby] run setworldspawn ~ ~ ~
 
-# Teleport all non-admin players to the lobby, but only if it's setup phase.
-execute if entity @e[type=minecraft:marker,tag=dvz,tag=setup_phase] at @s align xyz positioned ~0.5 ~ ~0.5 run tp @a[tag=!admin] ~ ~ ~
+# Teleport all non-admin players to the lobby.
+execute at @e[type=minecraft:marker,tag=ogvz.marker.lobby] run tp @a[tag=!ogvz.admin] ~ ~ ~
 
-execute as @a[tag=admin] at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 1 2
+execute as @a[tag=ogvz.admin] at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 1 2
 
-tellraw @a [ \
+tellraw @a[tag=ogvz.admin] [ \
   "", \
   {"text":"SETUP: ","bold":true,"color":"dark_green"}, \
   {"selector":"@s"}, \
