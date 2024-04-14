@@ -32,7 +32,7 @@ execute as @a at @s run function ogvz:tick/custom_bars
 execute as @a[tag=portal_bound] at @s run function ogvz:tick/portal_bind
 execute as @a[tag=!admin] at @s run function ogvz:tick/lava_bucket
 execute as @a[tag=!admin,tag=!creative_flight,gamemode=creative] at @s run function ogvz:tick/admin
-execute as @a[tag=admin] at @s run function ogvz:tick/shrine_proximity
+execute as @a[tag=ogvz.admin] at @s run function ogvz:tick/shrine_distance
 execute as @e[type=minecraft:item,tag=!processed] at @s run function ogvz:tick/check_item
 execute as @a[tag=!DVZ_ready] at @s run function ogvz:tick/dvz_ready
 execute as @a[scores={ogvz.misc.leave_game=1..}] at @s run function ogvz:tick/player_join

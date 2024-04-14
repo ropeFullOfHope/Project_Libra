@@ -14,83 +14,93 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute unless entity @e[type=minecraft:marker,tag=dvz,tag=setup_phase] run return 0
+# Return if game is not in setup phase.
+execute unless score &ogvz ogvz.game.phase matches 0 run return 0
 
-execute unless entity @e[type=minecraft:marker,tag=lobby] run tellraw @s [ \
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.lobby] run tellraw @s [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"gray"}, \
+  {"text":"SETUP ERROR: ","bold":true,"color":"dark_green"}, \
   {"text":"Lobby","bold":true,"color":"green"}, \
-  {"text":" is missing!","color":"white"} \
+  {"text":" is missing!","color":"green"} \
 ]
 
-execute unless entity @e[type=minecraft:marker,tag=shrine] run tellraw @s [ \
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine] run tellraw @s [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"gray"}, \
+  {"text":"SETUP ERROR: ","bold":true,"color":"gold"}, \
   {"text":"Shrine","bold":true,"color":"yellow"}, \
-  {"text":" is missing!","color":"white"} \
+  {"text":" is missing!","color":"yellow"} \
 ]
 
-execute unless entity @e[type=minecraft:marker,tag=zombie_spawn] run tellraw @s [ \
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine_block] run tellraw @s [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"gray"}, \
+  {"text":"SETUP ERROR: ","bold":true,"color":"gold"}, \
+  {"text":"Shrine Block Markers","bold":true,"color":"yellow"}, \
+  {"text":" are missing!","color":"yellow"} \
+]
+
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] run tellraw @s [ \
+  "", \
+  {"text":"SETUP ERROR: ","bold":true,"color":"dark_red"}, \
   {"text":"Zombie Spawn","bold":true,"color":"red"}, \
-  {"text":" is missing!","color":"white"} \
+  {"text":" is missing!","color":"red"} \
 ]
 
-execute unless entity @e[type=minecraft:marker,tag=boss_spawn] unless entity @e[type=minecraft:marker,tag=dvz,tag=boss_assassin] run tellraw @s [ \
+# Check if boss spawn exists, unless the boss selected is the assassin (5).
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.boss_spawn] unless score &ogvz ogvz.game.boss matches 5 run tellraw @s [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"gray"}, \
+  {"text":"SETUP ERROR: ","bold":true,"color":"dark_purple"}, \
   {"text":"Boss Spawn","bold":true,"color":"light_purple"}, \
-  {"text":" is missing!","color":"white"} \
+  {"text":" is missing!","color":"light_purple"} \
 ]
 
-execute unless entity @e[type=minecraft:marker,tag=dvz,tag=boss_selected] run tellraw @s [ \
+execute if score &ogvz ogvz.game.boss matches 0 run tellraw @s [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"gray"}, \
+  {"text":"SETUP ERROR: ","bold":true,"color":"dark_purple"}, \
   {"text":"Boss","bold":true,"color":"light_purple"}, \
-  {"text":" hasn't been selected!","color":"white"} \
+  {"text":" hasn't been selected!","color":"light_purple"} \
 ]
 
-execute unless entity @e[type=minecraft:marker,tag=lobby] run return 0
-execute unless entity @e[type=minecraft:marker,tag=shrine] run return 0
-execute unless entity @e[type=minecraft:marker,tag=zombie_spawn] run return 0
-execute unless entity @e[type=minecraft:marker,tag=boss_spawn] unless entity @e[type=minecraft:marker,tag=dvz,tag=boss_assassin] run return 0
-execute unless entity @e[type=minecraft:marker,tag=dvz,tag=boss_selected] run return 0
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.lobby] run return 0
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine] run return 0
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine_block] run return 0
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] run return 0
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.boss_spawn] unless score &ogvz ogvz.game.boss matches 5 run return 0
+execute if score &ogvz ogvz.game.boss matches 0 run return 0
 
-tag @e[type=minecraft:marker,tag=dvz] remove setup_phase
-tag @e[type=minecraft:marker,tag=dvz] add build_phase
+# 1 - Build phase
+scoreboard players set &ogvz ogvz.game.phase 1
 
-kill @e[type=minecraft:block_display,tag=lobby_indicator]
-kill @e[type=minecraft:block_display,tag=shrine_indicator]
-kill @e[type=minecraft:item_display,tag=zombie_spawn_indicator]
-kill @e[type=minecraft:item_display,tag=boss_spawn_indicator]
+kill @e[type=minecraft:block_display,tag=ogvz.display.lobby]
+kill @e[type=minecraft:block_display,tag=ogvz.display.shrine]
+kill @e[type=minecraft:block_display,tag=ogvz.display.zombie_spawn]
+kill @e[type=minecraft:block_display,tag=ogvz.display.boss_spawn]
 
 scoreboard players set &ogvz ogvz.game.time 0
-
-#scoreboard objectives setdisplay sidebar ogvz.game.player_count
 
 execute store result bossbar ogvz:boss_timer value run scoreboard players get &ogvz ogvz.game.time
 
 bossbar set ogvz:boss_timer visible true
 
-schedule function ogvz:schedule/time 3t replace
+schedule function ogvz:schedule/day_time 3t replace
 
-execute as @s at @s run function ogvz:give/magma_cream
+execute as @a at @s run function ogvz:give/magma_cream
 
 title @a subtitle [ \
   "", \
-  {"text":"[","color":"gold"}, \
+  {"text":"is now starting!","color":"white"} \
+]
+title @a title [ \
+  "", \
+  {"text":"<","bold":true,"color":"gold"}, \
   {"text":"OG","bold":true,"color":"dark_aqua"}, \
   {"text":"v","bold":true,"color":"gold"}, \
   {"text":"Z","bold":true,"color":"dark_red"}, \
-  {"text":"]","color":"gold"}, \
-  {"text":" is now starting!","color":"white"} \
+  {"text":">","bold":true,"color":"gold"} \
 ]
-title @a title {"text":""}
 
 execute as @a at @s run playsound block.portal.trigger master @s ~ ~ ~ 0.7 1.5
 
-tellraw @a[tag=admin] [ \
+tellraw @a[tag=ogvz.admin] [ \
   "", \
   {"text":"SETUP: ","bold":true,"color":"dark_aqua"}, \
   {"selector":"@s"}, \

@@ -17,7 +17,7 @@
 # Return if game isn't in setup phase.
 execute unless score &ogvz ogvz.game.phase matches 0 run return 0
 
-kill @e[type=minecraft:item_display,tag=ogvz.display.boss_spawn]
+kill @e[type=minecraft:block_display,tag=ogvz.display.boss_spawn]
 kill @e[type=minecraft:marker,tag=ogvz.marker.boss_spawn]
 
 forceload add ~ ~

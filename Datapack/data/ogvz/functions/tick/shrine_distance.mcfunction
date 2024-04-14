@@ -15,17 +15,20 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Return if game is not in setup phase or if the shrine is too far away.
-execute unless entity @e[type=minecraft:marker,tag=dvz,tag=setup_phase] run return 0
-execute unless entity @e[type=minecraft:marker,tag=shrine,distance=..501] run return 0
+execute unless score &ogvz ogvz.game.phase matches 0 run return 0
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine,distance=..501] run return 0
 
-scoreboard players set @s ogvz.var 0
-
-tag @s add temp_ray_origin
+# Create temporary tag and scoreboard.
+tag @s add temp.ray_origin
+scoreboard objectives add temp.shrine_distance dummy
+scoreboard players set @s temp.shrine_distance 0
 
 # Create a marker and run a function with it.
-execute summon minecraft:marker run execute as @s at @s run function ogvz:admin/setup/shrine_proximity_ray
-
-tag @s remove temp_ray_origin
+execute summon minecraft:marker run execute as @s at @s run function ogvz:admin/setup/shrine_distance_ray
 
 # Display how far the shrine is.
-title @s actionbar ["",{"score":{"name":"@s","objective":"ogvz.var"},"color":"gold","bold":true}]
+title @s actionbar ["",{"score":{"name":"@s","objective":"temp.shrine_distance"},"color":"gold","bold":true}]
+
+# Remove temporary tag and scoreboard.
+tag @s remove temp.ray_origin
+scoreboard objectives remove temp.shrine_distance
