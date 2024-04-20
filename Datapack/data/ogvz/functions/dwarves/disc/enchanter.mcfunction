@@ -20,10 +20,11 @@ effect clear @s
 effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
-tag @s add enchanter
-tag @s add selected_class
-tag @s add mana
-tag @s add mana_regen
+tag @s add ogvz.dwarf
+tag @s add ogvz.dwarf.job
+tag @s add ogvz.dwarf.job.enchanter
+tag @s add ogvz.dwarf.selected_class
+tag @s add ogvz.mana
 
 team join d3ENCHANTER @s
 

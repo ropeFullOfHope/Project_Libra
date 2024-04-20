@@ -22,17 +22,20 @@ effect clear @s
 effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
-# Remove all dwarf class tags.
-tag @s remove builder
-tag @s remove blacksmith
-tag @s remove tailor
-tag @s remove baker
-tag @s remove alchemist
-tag @s remove enchanter
+# Remove all dwarf job tags.
+tag @s remove ogvz.dwarf.job
+tag @s remove ogvz.dwarf.job.builder
+tag @s remove ogvz.dwarf.job.blacksmith
+tag @s remove ogvz.dwarf.job.tailor
+tag @s remove ogvz.dwarf.job.baker
+tag @s remove ogvz.dwarf.job.alchemist
+tag @s remove ogvz.dwarf.job.enchanter
 
-tag @s add dragon_warrior
-tag @s add selected_class
-tag @s add mana
+tag @s add ogvz.dwarf
+tag @s add ogvz.dwarf.hero
+tag @s add ogvz.dwarf.hero.dragon_warrior
+tag @s add ogvz.dwarf.selected_class
+tag @s add ogvz.mana
 
 team join d0DRAGON_WARRIOR @s
 

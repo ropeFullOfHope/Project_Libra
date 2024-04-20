@@ -20,9 +20,11 @@ effect clear @s
 effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
-tag @s add builder
-tag @s add selected_class
-tag @s add mana
+tag @s add ogvz.dwarf
+tag @s add ogvz.dwarf.job
+tag @s add ogvz.dwarf.job.builder
+tag @s add ogvz.dwarf.selected_class
+tag @s add ogvz.mana
 
 team join d2BUILDER @s
 

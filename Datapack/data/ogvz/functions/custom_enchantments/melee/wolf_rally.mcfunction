@@ -16,8 +16,8 @@
 
 advancement revoke @s only ogvz:custom_enchantments/melee/wolf_rally
 
-tag @s add temp_owner
+tag @s add temp.owner
 
-execute as @e[type=minecraft:wolf,tag=summon,distance=..10] at @s on owner if entity @s[tag=temp_owner] as @e[type=minecraft:wolf,tag=summon,limit=1,sort=nearest] run effect give @s minecraft:strength 1 0
+execute as @e[type=minecraft:wolf,tag=ogvz.summon,distance=..10] at @s on owner if entity @s[tag=temp.owner] as @e[type=minecraft:wolf,tag=ogvz.summon,limit=1,sort=nearest] run effect give @s minecraft:strength 1 0
 
-tag @s remove temp_owner
+tag @s remove temp.owner
