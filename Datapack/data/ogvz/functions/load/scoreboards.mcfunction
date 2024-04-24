@@ -57,6 +57,8 @@ scoreboard objectives add ogvz.var dummy
 ### Dwarf scoreboards
 # All dwarves
 scoreboard objectives add ogvz.dwarf.mana_buildup dummy
+scoreboard objectives add ogvz.dwarf.magic_health_potion.cooldown.ticks dummy
+scoreboard objectives add ogvz.dwarf.magic_health_potion.cooldown.seconds dummy
 scoreboard objectives add ogvz.dwarf.pearl_rod.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarf.pearl_rod.cooldown.seconds dummy
 

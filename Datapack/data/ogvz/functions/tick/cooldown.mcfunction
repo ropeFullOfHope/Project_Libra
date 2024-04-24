@@ -31,10 +31,16 @@ execute as @s[scores={ogvz.alchemist.water_wand.cooldown.ticks=20..,ogvz.alchemi
 execute as @s[scores={ogvz.alchemist.water_wand.cooldown.ticks=20..}] run scoreboard players set @s ogvz.alchemist.water_wand.cooldown.ticks 0
 
 # Dwarves - Pearl Rod
-execute as @s[scores={ogvz.pearl_rod.cool=1..}] run scoreboard players add @s ogvz.pearl_rod.tick 1
-execute as @s[scores={ogvz.pearl_rod.tick=20..}] run scoreboard players remove @s ogvz.pearl_rod.cool 1
-execute as @s[scores={ogvz.pearl_rod.tick=20..,ogvz.pearl_rod.cool=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
-execute as @s[scores={ogvz.pearl_rod.tick=20..}] run scoreboard players set @s ogvz.pearl_rod.tick 0
+execute as @s[scores={ogvz.dwarf.magic_health_potion.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarf.magic_health_potion.cooldown.ticks 1
+execute as @s[scores={ogvz.dwarf.magic_health_potion.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarf.magic_health_potion.cooldown.seconds 1
+execute as @s[scores={ogvz.dwarf.magic_health_potion.cooldown.ticks=20..,ogvz.dwarf.magic_health_potion.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={ogvz.dwarf.magic_health_potion.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarf.magic_health_potion.cooldown.ticks 0
+
+# Dwarves - Pearl Rod
+execute as @s[scores={ogvz.dwarf.pearl_rod.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarf.pearl_rod.cooldown.ticks 1
+execute as @s[scores={ogvz.dwarf.pearl_rod.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarf.pearl_rod.cooldown.seconds 1
+execute as @s[scores={ogvz.dwarf.pearl_rod.cooldown.ticks=20..,ogvz.dwarf.pearl_rod.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 10 2
+execute as @s[scores={ogvz.dwarf.pearl_rod.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.ticks 0
 
 # Dwarven Guard - Elder Guardian Eye
 execute as @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks 1

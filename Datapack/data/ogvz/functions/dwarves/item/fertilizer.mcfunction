@@ -15,31 +15,31 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Summon 2 markers at players feet and gives them a tag.
-execute summon minecraft:marker run tag @s add ray
-execute summon minecraft:marker run tag @s add ray_origin
+execute summon minecraft:marker run tag @s add temp.ray
+execute summon minecraft:marker run tag @s add temp.ray_origin
 
 # Teleport the markers to the player's eyes and make them face in the same direction.
-execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] ~ ~ ~ ~ ~
-execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:marker,tag=ray_origin,limit=1,sort=nearest] ~ ~ ~ ~ ~
+execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] ~ ~ ~ ~ ~
+execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:marker,tag=temp.ray_origin,limit=1,sort=nearest] ~ ~ ~ ~ ~
 
 # Start the ray casting loop.
-execute as @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] at @s run function ogvz:dwarves/fertilizer_loop
+execute as @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] at @s run function ogvz:dwarves/fertilizer_loop
 
 # Replace biome if the block targeted is a Grass Block.
-execute as @s at @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run fillbiome ~-5 ~-3 ~-5 ~5 ~3 ~5 minecraft:plains
+execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run fillbiome ~-5 ~-3 ~-5 ~5 ~3 ~5 minecraft:plains
 
-execute as @s at @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run title @s actionbar [ \
+execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run title @s actionbar [ \
   "", \
   {"text":"[Fertilizer]","bold":true,"color":"dark_green"}, \
   {"text":" Poof!","color":"dark_green"} \
 ]
 
 # Play a sound at the Grass Block.
-execute as @s at @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run playsound minecraft:block.composter.fill_success block @a ~ ~ ~ 1 1
+execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run playsound minecraft:block.composter.fill_success block @a ~ ~ ~ 1 1
 
 # Remove the Fertilizer if it has been used.
-execute as @s at @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=3106] 1
+execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=3106] 1
 
 # Get rid of the markers.
-kill @e[type=minecraft:marker,tag=ray]
-kill @e[type=minecraft:marker,tag=ray_origin]
+kill @e[type=minecraft:marker,tag=temp.ray]
+kill @e[type=minecraft:marker,tag=temp.ray_origin]

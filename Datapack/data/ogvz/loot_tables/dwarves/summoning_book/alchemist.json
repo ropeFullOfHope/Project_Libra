@@ -188,57 +188,55 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:hide_additional_tooltip": {}
-              }
-            },
-            {
-              "function": "minecraft:set_fireworks",
-              "explosions": [
-                {
-                  "shape": "small_ball",
-                  "colors": [
-                    26367
-                  ]
-                },
-                {
-                  "shape": "small_ball",
-                  "colors": [
-                    26367
-                  ]
-                },
-                {
-                  "shape": "small_ball",
-                  "colors": [
-                    26367
-                  ]
-                },
-                {
-                  "shape": "small_ball",
-                  "colors": [
-                    26367
-                  ]
-                },
-                {
-                  "shape": "small_ball",
-                  "colors": [
-                    26367
-                  ]
-                },
-                {
-                  "shape": "small_ball",
-                  "colors": [
-                    26367
-                  ]
-                },
-                {
-                  "shape": "small_ball",
-                  "colors": [
-                    26367
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:fireworks": {
+                  "flight_duration": 1,
+                  "explosions": [
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    }
                   ]
                 }
-              ],
-              "mode": "replace_all",
-              "flight_duration": 1
+              }
             },
             {
               "function": "minecraft:set_lore",
