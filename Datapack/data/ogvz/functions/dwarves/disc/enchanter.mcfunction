@@ -21,8 +21,8 @@ effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
 tag @s add ogvz.dwarf
-tag @s add ogvz.dwarf.job
-tag @s add ogvz.dwarf.job.enchanter
+tag @s add ogvz.dwarf.class
+tag @s add ogvz.dwarf.class.enchanter
 tag @s add ogvz.dwarf.selected_class
 tag @s add ogvz.mana
 
@@ -31,16 +31,16 @@ team join d3ENCHANTER @s
 # Gives enchanter all their items.
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_model_data=3005, \
-  minecraft:unbreakable={show_in_toolbar:false}, \
+  minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
   minecraft:lore=[ \
-    '{"text":"Conjures Lapis Lazuli.","color":"blue"}', \
+    '{"text":"Conjures lapis lazuli.","color":"blue"}', \
     '{"text":"Requires 1 Emerald","italic":false,"color":"red"}', \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]
-give @s minecraft:quartz_bricks 64
-give @s minecraft:quartz_bricks 64
+give @s minecraft:smooth_quartz 64
+give @s minecraft:smooth_quartz 64
 give @s minecraft:bookshelf 18
 give @s minecraft:enchanting_table 1
 give @s minecraft:grindstone 1
@@ -72,7 +72,7 @@ tellraw @s [ \
   {"text":"Summoning Book","color":"gold"}, \
   {"text":" to get ","color":"yellow"}, \
   {"text":"Lapis Lazuli","color":"gold"}, \
-  {"text":", then\n   use it to enchant at the ","color":"yellow"}, \
+  {"text":",\n   then use it to enchant at the ","color":"yellow"}, \
   {"text":"Enchanting Table","color":"gold"}, \
   {"text":".\n","color":"yellow"}, \
   {"text":"\u25B6","bold":true,"color":"gold"}, \

@@ -21,8 +21,8 @@ effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
 tag @s add ogvz.dwarf
-tag @s add ogvz.dwarf.job
-tag @s add ogvz.dwarf.job.blacksmith
+tag @s add ogvz.dwarf.class
+tag @s add ogvz.dwarf.class.blacksmith
 tag @s add ogvz.dwarf.selected_class
 tag @s add ogvz.mana
 
@@ -84,7 +84,7 @@ tellraw @s [ \
   {"text":"Gold","color":"gold"}, \
   {"text":", then combine it with ","color":"yellow"}, \
   {"text":"Redstone","color":"gold"}, \
-  {"text":" to craft\n   ","color":"yellow"}, \
+  {"text":"\n   to craft ","color":"yellow"}, \
   {"text":"Clocks","color":"gold"}, \
   {"text":".\n","color":"yellow"}, \
   {"text":"\u25B6","bold":true,"color":"gold"}, \

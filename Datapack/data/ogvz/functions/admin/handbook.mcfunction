@@ -40,7 +40,7 @@ give @s written_book[ \
           {"text":"\\n"}, \
           {"text":"\\n"}, \
           {"text":"\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Legacy Setup"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/setup_panel"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Legacy Setup"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/setup_panel"}}, \
           {"text":" Legacy Setup\\n"} \
         ]' \
       }, \
@@ -49,17 +49,17 @@ give @s written_book[ \
           {"text":""}, \
           {"text":"Setup Tools (1/5)\\n","bold":true,"underlined":true,"clickEvent":{"action":"change_page","value":"1"}}, \
           {"text":"\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Start Game!"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/start_game"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Start Game!"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/start_game"}}, \
           {"text":" Start Game!\\n"}, \
           {"text":"\\n"}, \
           {"text":"Set Location:\\n","bold":true}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Lobby"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/set_lobby_location"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Lobby"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/set_lobby_location"}}, \
           {"text":" Lobby\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Shrine"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/set_shrine_location"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Shrine"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/set_shrine_location"}}, \
           {"text":" Shrine\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Zombie Spawn"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/set_zombie_spawn_location"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Zombie Spawn"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/set_zombie_spawn_location"}}, \
           {"text":" Zombie Spawn\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Boss Spawn"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/set_boss_spawn_location"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Boss Spawn"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/set_boss_spawn_location"}}, \
           {"text":" Boss Spawn\\n"} \
         ]' \
       }, \
@@ -69,9 +69,9 @@ give @s written_book[ \
           {"text":"Setup Tools (2/5)\\n","bold":true,"underlined":true}, \
           {"text":"\\n"}, \
           {"text":"Place Lobby:\\n","bold":true}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Standard"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/place_lobby_standard"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Standard"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/place_lobby_standard"}}, \
           {"text":" Standard\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Parkour"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/place_lobby_parkour"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Parkour"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/place_lobby_parkour"}}, \
           {"text":" Parkour\\n"} \
         ]' \
       }, \
@@ -81,9 +81,9 @@ give @s written_book[ \
           {"text":"Setup Tools (3/5)\\n","bold":true,"underlined":true,"clickEvent":{"action":"change_page","value":"1"}}, \
           {"text":"\\n"}, \
           {"text":"Place Shrine:\\n","bold":true}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Standard"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/place_shrine_standard"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Standard"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/place_shrine_standard"}}, \
           {"text":" Standard\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Platform"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/place_shrine_platform"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Platform"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/place_shrine_platform"}}, \
           {"text":" Platform\\n"} \
         ]' \
       }, \
@@ -93,7 +93,7 @@ give @s written_book[ \
           {"text":"Setup Tools (4/5)\\n","bold":true,"underlined":true,"clickEvent":{"action":"change_page","value":"1"}}, \
           {"text":"\\n"}, \
           {"text":"Place Mob Spawn:\\n","bold":true}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Standard"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/place_zombie_spawn_standard"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Standard"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/place_zombie_spawn_standard"}}, \
           {"text":" Standard"} \
         ]' \
       }, \
@@ -103,18 +103,18 @@ give @s written_book[ \
           {"text":"Setup Tools (5/5)\\n","bold":true,"underlined":true,"clickEvent":{"action":"change_page","value":"1"}}, \
           {"text":"\\n"}, \
           {"text":"Select Boss:\\n","bold":true}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Dragon"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/select_dragon"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Dragon"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/select_dragon"}}, \
           {"text":" Dragon\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Wither"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/select_wither"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Wither"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/select_wither"}}, \
           {"text":" Wither\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Elder Guardian"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/select_guardian"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Elder Guardian"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/select_guardian"}}, \
           {"text":" Elder Guardian\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Assassin"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/select_assassin"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Assassin"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/select_assassin"}}, \
           {"text":" Assassin\\n"}, \
           {"text":"\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"AI Dragon"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/select_ai_dragon"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"AI Dragon"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/select_ai_dragon"}}, \
           {"text":" AI Dragon\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"AI Wither"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=dvz.admin] at @s run function ogvz:admin/setup/select_ai_wither"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"AI Wither"}]},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/select_ai_wither"}}, \
           {"text":" AI Wither\\n"} \
         ]' \
       }, \

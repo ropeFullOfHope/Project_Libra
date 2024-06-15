@@ -11,19 +11,19 @@
 #
 # Credit to:
 #
-# Comments: Exceptions are: ogvz.ready, ogvz.admin tags.
+# Comments: Exceptions are: ogvz.ready, ogvz.joined, ogvz.admin tags.
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 tag @s remove ogvz.dwarf
 tag @s remove ogvz.dwarf.selected_class
 
-tag @s remove ogvz.dwarf.job
-tag @s remove ogvz.dwarf.job.builder
-tag @s remove ogvz.dwarf.job.blacksmith
-tag @s remove ogvz.dwarf.job.tailor
-tag @s remove ogvz.dwarf.job.baker
-tag @s remove ogvz.dwarf.job.alchemist
-tag @s remove ogvz.dwarf.job.enchanter
+tag @s remove ogvz.dwarf.class
+tag @s remove ogvz.dwarf.class.builder
+tag @s remove ogvz.dwarf.class.blacksmith
+tag @s remove ogvz.dwarf.class.tailor
+tag @s remove ogvz.dwarf.class.baker
+tag @s remove ogvz.dwarf.class.alchemist
+tag @s remove ogvz.dwarf.class.enchanter
 
 tag @s remove ogvz.dwarf.hero
 tag @s remove ogvz.dwarf.hero.dragon_warrior

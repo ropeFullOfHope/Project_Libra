@@ -21,8 +21,8 @@ effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
 tag @s add ogvz.dwarf
-tag @s add ogvz.dwarf.job
-tag @s add ogvz.dwarf.job.builder
+tag @s add ogvz.dwarf.class
+tag @s add ogvz.dwarf.class.builder
 tag @s add ogvz.dwarf.selected_class
 tag @s add ogvz.mana
 
@@ -98,31 +98,33 @@ give @s minecraft:stone_bricks 64
 give @s minecraft:torch 32
 give @s minecraft:fire_charge 8
 give @s minecraft:cooked_porkchop 1
-give @s minecraft:iron_pickaxe[ \
-  minecraft:item_name='{"text":"Builder Pickaxe","color":"green"}', \
+give @s iron_pickaxe[ \
+  minecraft:custom_model_data=1000, \
+  minecraft:item_name='{"text":"Iron Mattock"}', \
+  minecraft:lore=[ \
+    '{"text":" "}', \
+    '{"color":"gray","italic":false,"text":"When in Main Hand:"}', \
+    '{"color":"dark_green","italic":false,"text":" 4 Attack Damage"}', \
+    '{"color":"dark_green","italic":false,"text":" 1.2 Attack Speed"}', \
+    '{"color":"dark_green","italic":false,"text":" 3 Attack Reach"}' \
+  ], \
+  minecraft:attribute_modifiers={ \
+    modifiers:[], \
+    show_in_tooltip:false \
+  }, \
+  minecraft:tool={ \
+    default_mining_speed:6, \
+    rules:[ \
+      {correct_for_drops:true,blocks:"#mineable/pickaxe"}, \
+      {correct_for_drops:true,blocks:"#mineable/axe"}, \
+      {correct_for_drops:true,blocks:"#mineable/shovel"}, \
+      {correct_for_drops:true,blocks:"#mineable/hoe"} \
+    ] \
+  }, \
   minecraft:enchantments={ \
     levels:{ \
       "minecraft:efficiency":4, \
       "minecraft:unbreaking":2 \
-    } \
-  } \
-]
-give @s minecraft:iron_shovel[ \
-  minecraft:item_name='{"text":"Builder Shovel","color":"green"}', \
-  minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:efficiency":4, \
-      "minecraft:unbreaking":2 \
-    } \
-  } \
-]
-give @s minecraft:iron_axe[ \
-  minecraft:item_name='{"text":"Builder Axe","color":"green"}', \
-  minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:efficiency":4, \
-      "minecraft:unbreaking":2, \
-      "minecraft:silk_touch":1 \
     } \
   } \
 ]

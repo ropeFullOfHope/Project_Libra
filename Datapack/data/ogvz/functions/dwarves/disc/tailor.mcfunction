@@ -21,8 +21,8 @@ effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
 tag @s add ogvz.dwarf
-tag @s add ogvz.dwarf.job
-tag @s add ogvz.dwarf.job.tailor
+tag @s add ogvz.dwarf.class
+tag @s add ogvz.dwarf.class.tailor
 tag @s add ogvz.dwarf.selected_class
 tag @s add ogvz.mana
 
@@ -31,10 +31,10 @@ team join d3TAILOR @s
 # Gives tailor all their items.
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_model_data=3002, \
-  minecraft:unbreakable={show_in_toolbar:false}, \
+  minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
   minecraft:lore=[ \
-    '{"text":"Conjures armor and Shields.","color":"blue"}', \
+    '{"text":"Conjures armor and shields.","color":"blue"}', \
     '{"text":"Requires 10 Dyes","italic":false,"color":"red"}', \
     '{"text":"Requires 30 mana","italic":false,"color":"red"}', \
     '{"text":"Active Item","italic":false,"color":"green"}' \
@@ -45,7 +45,7 @@ give @s minecraft:mud_bricks 64
 give @s minecraft:grass_block 20
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_model_data=3106, \
-  minecraft:unbreakable={show_in_toolbar:false}, \
+  minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Super Fertilizer","color":"green"}', \
   minecraft:lore=[ \
     '{"text":"Allows flowers to grow in any biome.","color":"blue"}', \
@@ -80,11 +80,11 @@ tellraw @s [ \
   {"text":"Bone Meal","color":"gold"}, \
   {"text":" to get ","color":"yellow"}, \
   {"text":"Flowers","color":"gold"}, \
-  {"text":", then craft\n   them into ","color":"yellow"}, \
+  {"text":", then\n   craft them into ","color":"yellow"}, \
   {"text":"Dye","color":"gold"}, \
   {"text":".\n","color":"yellow"}, \
   {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You can acquire additional ","color":"yellow"}, \
+  {"text":" You can get more ","color":"yellow"}, \
   {"text":"Bones","color":"gold"}, \
   {"text":" from the ","color":"yellow"}, \
   {"text":"Alchemist","color":"blue"}, \

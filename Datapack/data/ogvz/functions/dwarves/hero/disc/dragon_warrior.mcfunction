@@ -14,22 +14,22 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-item replace entity @s[tag=ogvz.use_mainhand] weapon.mainhand with minecraft:air
-item replace entity @s[tag=ogvz.use_offhand] weapon.offhand with minecraft:air
+item replace entity @s[tag=ogvz.use.mainhand] weapon.mainhand with minecraft:air
+item replace entity @s[tag=ogvz.use.offhand] weapon.offhand with minecraft:air
 
 effect clear @s
 
 effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
-# Remove all dwarf job tags.
-tag @s remove ogvz.dwarf.job
-tag @s remove ogvz.dwarf.job.builder
-tag @s remove ogvz.dwarf.job.blacksmith
-tag @s remove ogvz.dwarf.job.tailor
-tag @s remove ogvz.dwarf.job.baker
-tag @s remove ogvz.dwarf.job.alchemist
-tag @s remove ogvz.dwarf.job.enchanter
+# Remove all dwarf class tags.
+tag @s remove ogvz.dwarf.class
+tag @s remove ogvz.dwarf.class.builder
+tag @s remove ogvz.dwarf.class.blacksmith
+tag @s remove ogvz.dwarf.class.tailor
+tag @s remove ogvz.dwarf.class.baker
+tag @s remove ogvz.dwarf.class.alchemist
+tag @s remove ogvz.dwarf.class.enchanter
 
 tag @s add ogvz.dwarf
 tag @s add ogvz.dwarf.hero

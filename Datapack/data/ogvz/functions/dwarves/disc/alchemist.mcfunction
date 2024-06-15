@@ -21,8 +21,8 @@ effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
 tag @s add ogvz.dwarf
-tag @s add ogvz.dwarf.job
-tag @s add ogvz.dwarf.job.alchemist
+tag @s add ogvz.dwarf.class
+tag @s add ogvz.dwarf.class.alchemist
 tag @s add ogvz.dwarf.selected_class
 tag @s add ogvz.mana
 
@@ -34,7 +34,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
   minecraft:lore=[ \
-    '{"text":"Conjures Magic Potions.","color":"blue"}', \
+    '{"text":"Conjures magic potions.","color":"blue"}', \
     '{"text":"Requires 3 Mundane Potions","italic":false,"color":"red"}', \
     '{"text":"Requires 30 mana","italic":false,"color":"red"}', \
     '{"text":"Active Item","italic":false,"color":"green"}' \
@@ -49,7 +49,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Water Wand","color":"aqua"}', \
   minecraft:lore=[ \
-    '{"text":"Fills Cauldrons with water.","color":"blue"}', \
+    '{"text":"Fills cauldrons with water.","color":"blue"}', \
     '{"text":"5 second cooldown","italic":false,"color":"red"}', \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
@@ -87,12 +87,20 @@ tellraw @s [ \
   {"text":"Magic Potions","color":"gold"}, \
   {"text":" for the\n   dwarves.\n","color":"yellow"}, \
   {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" Begin by using ","color":"yellow"}, \
+  {"text":" Begin by putting ","color":"yellow"}, \
+  {"text":"Water Bottles","color":"gold"}, \
+  {"text":" and ","color":"yellow"}, \
   {"text":"Redstone","color":"gold"}, \
-  {"text":" in the ","color":"yellow"}, \
+  {"text":" in the\n   ","color":"yellow"}, \
   {"text":"Brewing Stand","color":"gold"}, \
-  {"text":" to create\n   ","color":"yellow"}, \
+  {"text":" to create ","color":"yellow"}, \
   {"text":"Mundane Potions","color":"gold"}, \
+  {"text":".\n","color":"yellow"}, \
+  {"text":"\u25B6","bold":true,"color":"gold"}, \
+  {"text":" You can get more ","color":"yellow"}, \
+  {"text":"Bottles","color":"gold"}, \
+  {"text":" from the ","color":"yellow"}, \
+  {"text":"Baker","color":"blue"}, \
   {"text":".\n","color":"yellow"}, \
   {"text":"\u25B6","bold":true,"color":"gold"}, \
   {"text":" You can get more ","color":"yellow"}, \

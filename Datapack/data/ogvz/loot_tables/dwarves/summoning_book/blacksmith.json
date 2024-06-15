@@ -357,18 +357,85 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:empty",
-          "weight": 3
-        },
-        {
           "type": "minecraft:item",
           "name": "minecraft:diamond_pickaxe",
-          "weight": 5
-        },
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": "Diamond Mattock"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 1000
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:tool": {
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:mineable/pickaxe",
+                      "correct_for_drops": true
+                    },
+                    {
+                      "blocks": "#minecraft:mineable/axe",
+                      "correct_for_drops": true
+                    },
+                    {
+                      "blocks": "#minecraft:mineable/shovel",
+                      "correct_for_drops": true
+                    },
+                    {
+                      "blocks": "#minecraft:mineable/hoe",
+                      "correct_for_drops": true
+                    }
+                  ],
+                  "default_mining_speed": 8
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "When in Main Hand:",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " 5 Attack Damage",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 1.2 Attack Speed",
+                  "color": "dark_green",
+                  "italic": false
+                },
+                {
+                  "text": " 3 Attack Reach",
+                  "color": "dark_green",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ],
+      "conditions": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_shovel",
-          "weight": 2
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
         }
       ]
     },

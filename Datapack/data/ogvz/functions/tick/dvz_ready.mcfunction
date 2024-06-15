@@ -20,7 +20,7 @@ execute as @s at @s run function ogvz:misc/clear_scoreboards
 
 execute as @s at @s run function ogvz:misc/remove_tags
 
-tag @s remove admin
+tag @s remove ogvz.admin
 
 team leave @s
 
@@ -47,7 +47,7 @@ tellraw @s [ \
   {"text":"\u25B6","bold":true,"color":"gold"}, \
   {"text":" By continuing to play, you agree to our ","color":"yellow"}, \
   {"text":"Privacy Policy","color":"gold"}, \
-  {"text":" and\n   ","color":"yellow"}, \
+  {"text":"\n   and ","color":"yellow"}, \
   {"text":"TOS","color":"gold"}, \
   {"text":", provided ","color":"yellow"}, \
   {"text":"[HERE]","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":[{"text":"link","italic":true}]},"clickEvent":{"action":"open_url","value":"https://ogvz.weebly.com/TOS.html"}}, \
@@ -66,4 +66,4 @@ tellraw @s [ \
 
 execute as @s at @s run function ogvz:tick/player_join
 
-tag @s add DVZ_ready
+tag @s add ogvz.ready
