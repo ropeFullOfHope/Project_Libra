@@ -32,9 +32,8 @@ tag @s remove ogvz.dwarf.class.alchemist
 tag @s remove ogvz.dwarf.class.enchanter
 
 tag @s add ogvz.dwarf
-tag @s add ogvz.dwarf.hero
-tag @s add ogvz.dwarf.hero.dragon_warrior
-tag @s add ogvz.dwarf.selected_class
+tag @s add ogvz.dwarf.class.hero
+tag @s add ogvz.dwarf.class.hero.dragon_warrior
 tag @s add ogvz.mana
 
 team join d0DRAGON_WARRIOR @s

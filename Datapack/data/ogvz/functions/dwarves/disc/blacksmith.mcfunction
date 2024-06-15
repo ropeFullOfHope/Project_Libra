@@ -23,7 +23,6 @@ effect give @s minecraft:saturation 1 20 true
 tag @s add ogvz.dwarf
 tag @s add ogvz.dwarf.class
 tag @s add ogvz.dwarf.class.blacksmith
-tag @s add ogvz.dwarf.selected_class
 tag @s add ogvz.mana
 
 team join d3BLACKSMITH @s
@@ -40,7 +39,30 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]
-give @s minecraft:iron_pickaxe
+give @s iron_pickaxe[ \
+  minecraft:custom_model_data=1000, \
+  minecraft:item_name='{"text":"Iron Mattock"}', \
+  minecraft:lore=[ \
+    '{"text":" "}', \
+    '{"color":"gray","italic":false,"text":"When in Main Hand:"}', \
+    '{"color":"dark_green","italic":false,"text":" 4 Attack Damage"}', \
+    '{"color":"dark_green","italic":false,"text":" 1.2 Attack Speed"}', \
+    '{"color":"dark_green","italic":false,"text":" 3 Attack Reach"}' \
+  ], \
+  minecraft:attribute_modifiers={ \
+    modifiers:[], \
+    show_in_tooltip:false \
+  }, \
+  minecraft:tool={ \
+    default_mining_speed:6, \
+    rules:[ \
+      {correct_for_drops:true,blocks:"#mineable/pickaxe"}, \
+      {correct_for_drops:true,blocks:"#mineable/axe"}, \
+      {correct_for_drops:true,blocks:"#mineable/shovel"}, \
+      {correct_for_drops:true,blocks:"#mineable/hoe"} \
+    ] \
+  } \
+]
 give @s minecraft:nether_bricks 64
 give @s minecraft:nether_bricks 64
 give @s minecraft:blast_furnace 4

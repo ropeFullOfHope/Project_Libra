@@ -144,9 +144,9 @@ team modify z3CHILLAGER suffix {"text":" [Chillager]","bold":true}
 team modify z3BEE suffix {"text":" [Bee]","bold":true}
 team modify z3PHANTOM suffix {"text":" [Phantom]","bold":true}
 team modify z3WOLF suffix {"text":" [Wolf]","bold":true}
-team modify z4HOGLIN1 suffix {"text":" [Hoglin]","bold":true}
-team modify z4HOGLIN2 suffix {"text":" [Hoglin]","bold":true}
-team modify z4HOGLIN3 suffix {"text":" [Hoglin]","bold":true}
+team modify z4HOGLIN1 suffix {"text":" [Hoglin I]","bold":true}
+team modify z4HOGLIN2 suffix {"text":" [Hoglin II]","bold":true}
+team modify z4HOGLIN3 suffix {"text":" [Hoglin III]","bold":true}
 team modify z4SILVERFISH suffix {"text":" [Silverfish]","bold":true}
 team modify z5ENDERMAN suffix {"text":" [Enderman]","bold":true}
 team modify z5GOLEM suffix {"text":" [Golem]","bold":true}

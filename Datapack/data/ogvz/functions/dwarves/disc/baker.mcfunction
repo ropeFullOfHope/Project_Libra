@@ -23,7 +23,6 @@ effect give @s minecraft:saturation 1 20 true
 tag @s add ogvz.dwarf
 tag @s add ogvz.dwarf.class
 tag @s add ogvz.dwarf.class.baker
-tag @s add ogvz.dwarf.selected_class
 tag @s add ogvz.mana
 
 team join d3BAKER @s

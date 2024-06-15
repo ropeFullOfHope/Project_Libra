@@ -16,31 +16,18 @@
 
 # General setup.
 difficulty hard
-tag @a remove DVZ_ready
+tag @a remove ogvz.ready
 time set 1200t
 
 # Kill AI bosses.
-kill @e[type=minecraft:ender_dragon,tag=boss]
-kill @e[type=minecraft:wither,tag=boss]
+kill @e[type=minecraft:ender_dragon,tag=ogvz.class.boss]
+kill @e[type=minecraft:wither,tag=ogvz.class.boss]
 
 # Kill all OGvZ markers/block displays/item displays/armor stands.
-kill @e[type=minecraft:marker,tag=dvz]
-kill @e[type=minecraft:block_display,tag=dvz]
-kill @e[type=minecraft:item_display,tag=dvz]
-kill @e[type=minecraft:armor_stand,tag=dvz]
-#kill @e[type=minecraft:marker,tag=lobby]
-#kill @e[type=minecraft:marker,tag=shrine]
-#kill @e[type=minecraft:marker,tag=zombie_spawn]
-#kill @e[type=minecraft:marker,tag=boss_spawn]
-#kill @e[type=minecraft:block_display,tag=lobby_indicator]
-#kill @e[type=minecraft:block_display,tag=shrine_indicator]
-#kill @e[type=minecraft:item_display,tag=zombie_spawn_indicator]
-#kill @e[type=minecraft:item_display,tag=boss_spawn_indicator]
-#kill @e[type=minecraft:marker,tag=shrine_block]
-#kill @e[type=minecraft:marker,tag=infestation]
-#kill @e[type=minecraft:marker,tag=portal]
-#kill @e[type=minecraft:armor_stand,tag=freeze_anchor]
+kill @e[type=minecraft:marker,tag=ogvz.marker]
+kill @e[type=minecraft:block_display,tag=ogvz.block_display]
+kill @e[type=minecraft:item_display,tag=ogvz.item_display]
+kill @e[type=minecraft:armor_stand,tag=ogvz.armor_stand]
 
-# Create game phase marker.
-#execute in minecraft:overworld run forceload add 0 0
-#execute in minecraft:overworld positioned 0 0 0 run summon minecraft:marker ~ ~ ~ {Tags:["dvz","setup_phase"]}
+# Forceload 0 0 0.
+execute in minecraft:overworld run forceload add 0 0

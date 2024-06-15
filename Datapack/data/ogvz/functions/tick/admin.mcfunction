@@ -14,10 +14,10 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-tag @s add admin
+tag @s add ogvz.admin
 
 # Announce the player becoming an admin to all existing admins.
-tellraw @a[tag=admin] [ \
+tellraw @a[tag=ogvz.admin] [ \
   "", \
   {"text":"ADMIN: ","bold":true,"color":"dark_red"}, \
   {"selector":"@s"}, \
@@ -28,4 +28,4 @@ tellraw @a[tag=admin] [ \
 gamemode creative @s
 
 # Give the admin the setup tools.
-execute as @s at @s run function ogvz:admin/manual
+execute as @s at @s run function ogvz:admin/handbook

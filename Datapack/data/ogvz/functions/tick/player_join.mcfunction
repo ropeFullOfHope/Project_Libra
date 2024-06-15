@@ -25,8 +25,8 @@ execute as @s[tag=!ogvz.joined] if score &ogvz ogvz.game.phase matches 0 run tel
   {"text":" Please be patient and wait for admins to setup the\n   game.\n","color":"yellow"} \
 ]
 
-# If the player hasn't joined the game yet and the game is in progress, then tell them the game has already begun. 1..4
-execute as @s[tag=!ogvz.joined] if score &ogvz ogvz.game.phase matches 0 run tellraw @s [ \
+# If the player hasn't joined the game yet and the game is in progress, then tell them the game has already begun.
+execute as @s[tag=!ogvz.joined] if score &ogvz ogvz.game.phase matches 1..4 run tellraw @s [ \
   "", \
   {"text":"\u25B6","bold":true,"color":"gold"}, \
   {"text":" The game has already begun!\n","bold":true,"color":"gold"}, \
@@ -38,7 +38,7 @@ execute as @s[tag=!ogvz.joined] if score &ogvz ogvz.game.phase matches 0 run tel
 ]
 
 # If the game has ended, tell the player the game has ended (5 - game over phase).
-execute if score &ogvz ogvz.game.phase matches 0 run tellraw @s [ \
+execute if score &ogvz ogvz.game.phase matches 5 run tellraw @s [ \
   "", \
   {"text":"\u25B6","bold":true,"color":"gold"}, \
   {"text":" The game has ended!\n","bold":true,"color":"gold"}, \
@@ -54,7 +54,7 @@ execute as @s[tag=!ogvz.joined] if score &ogvz ogvz.game.phase matches 1..4 at @
 execute as @s[tag=ogvz.dwarf] if score &ogvz ogvz.game.phase matches 4..5 run kill @s
 
 # Kill the player if they rejoined as a zombie that has already picked a class.
-execute as @s[tag=ogvz.zombie.selected_class] run kill @s
+execute as @s[tag=ogvz.zombie.class] run kill @s
 
 # Make the progress/boss bar visible to the player if they joined during build/boss phase.
 execute if score &ogvz ogvz.game.phase matches 1 run bossbar set ogvz:boss_timer players @a

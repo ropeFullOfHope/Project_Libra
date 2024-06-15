@@ -36,38 +36,38 @@ execute store result score @s[tag=ogvz.use.offhand] ogvz.rclick.custom_model_dat
 
 ### Discs (2xxx)
 # Dwarf discs (20xx)
-execute as @s[tag=!ogvz.dwarf.selected_class,tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=2000}] at @s run function ogvz:dwarves/disc/builder
-execute as @s[tag=!ogvz.dwarf.selected_class,tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=2001}] at @s run function ogvz:dwarves/disc/blacksmith
-execute as @s[tag=!ogvz.dwarf.selected_class,tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=2002}] at @s run function ogvz:dwarves/disc/tailor
-execute as @s[tag=!ogvz.dwarf.selected_class,tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=2003}] at @s run function ogvz:dwarves/disc/baker
-execute as @s[tag=!ogvz.dwarf.selected_class,tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=2004}] at @s run function ogvz:dwarves/disc/alchemist
-execute as @s[tag=!ogvz.dwarf.selected_class,tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=2005}] at @s run function ogvz:dwarves/disc/enchanter
+execute as @s[tag=!ogvz.dwarf.class,tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=2000}] at @s run function ogvz:dwarves/disc/builder
+execute as @s[tag=!ogvz.dwarf.class,tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=2001}] at @s run function ogvz:dwarves/disc/blacksmith
+execute as @s[tag=!ogvz.dwarf.class,tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=2002}] at @s run function ogvz:dwarves/disc/tailor
+execute as @s[tag=!ogvz.dwarf.class,tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=2003}] at @s run function ogvz:dwarves/disc/baker
+execute as @s[tag=!ogvz.dwarf.class,tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=2004}] at @s run function ogvz:dwarves/disc/alchemist
+execute as @s[tag=!ogvz.dwarf.class,tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=2005}] at @s run function ogvz:dwarves/disc/enchanter
 # Zombie discs (21xx)
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2100}] at @s run function ogvz:zombies/disc/zombie
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2101}] at @s run function ogvz:zombies/disc/husk
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2102}] at @s run function ogvz:zombies/disc/vindicator
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2103}] at @s run function ogvz:zombies/disc/drowned
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2104}] at @s run function ogvz:zombies/disc/skeleton
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2105}] at @s run function ogvz:zombies/disc/wither_skeleton
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2106}] at @s run function ogvz:zombies/disc/pillager
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2107}] at @s run function ogvz:zombies/disc/guardian
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2108}] at @s run function ogvz:zombies/disc/creeper
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2109}] at @s run function ogvz:zombies/disc/spider
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2110}] at @s run function ogvz:zombies/disc/wolf
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2111}] at @s run function ogvz:zombies/disc/ocelot
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2112}] at @s run function ogvz:zombies/disc/chicken_nugget
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2113}] at @s run function ogvz:zombies/disc/snowman
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2114}] at @s run function ogvz:zombies/disc/chillager
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2115}] at @s run function ogvz:zombies/disc/bee
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2116}] at @s run function ogvz:zombies/disc/phantom
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2117}] at @s run function ogvz:zombies/disc/blaze
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2118}] at @s run function ogvz:zombies/disc/hoglin
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2119}] at @s run function ogvz:zombies/disc/silverfish
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2120}] at @s run function ogvz:zombies/disc/golem
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2121}] at @s run function ogvz:zombies/disc/enderman
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2122}] at @s run function ogvz:zombies/disc/ghast
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2123}] at @s run function ogvz:zombies/disc/ravager
-execute as @s[tag=!ogvz.zombie.selected_class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2124}] at @s run function ogvz:zombies/disc/johnny
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2100}] at @s run function ogvz:zombies/disc/zombie
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2101}] at @s run function ogvz:zombies/disc/husk
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2102}] at @s run function ogvz:zombies/disc/vindicator
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2103}] at @s run function ogvz:zombies/disc/drowned
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2104}] at @s run function ogvz:zombies/disc/skeleton
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2105}] at @s run function ogvz:zombies/disc/wither_skeleton
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2106}] at @s run function ogvz:zombies/disc/pillager
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2107}] at @s run function ogvz:zombies/disc/guardian
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2108}] at @s run function ogvz:zombies/disc/creeper
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2109}] at @s run function ogvz:zombies/disc/spider
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2110}] at @s run function ogvz:zombies/disc/wolf
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2111}] at @s run function ogvz:zombies/disc/ocelot
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2112}] at @s run function ogvz:zombies/disc/chicken_nugget
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2113}] at @s run function ogvz:zombies/disc/snowman
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2114}] at @s run function ogvz:zombies/disc/chillager
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2115}] at @s run function ogvz:zombies/disc/bee
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2116}] at @s run function ogvz:zombies/disc/phantom
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2117}] at @s run function ogvz:zombies/disc/blaze
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2118}] at @s run function ogvz:zombies/disc/hoglin
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2119}] at @s run function ogvz:zombies/disc/silverfish
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2120}] at @s run function ogvz:zombies/disc/golem
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2121}] at @s run function ogvz:zombies/disc/enderman
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2122}] at @s run function ogvz:zombies/disc/ghast
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2123}] at @s run function ogvz:zombies/disc/ravager
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=2124}] at @s run function ogvz:zombies/disc/johnny
 
 ### Dwarf items (3xxx)
 # Dwarf books (30xx)
@@ -89,13 +89,13 @@ execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3106}] at @s r
 
 ### Dwarf hero items (4xxx)
 # Dragon Warrior (40xx)
-execute as @s[tag=ogvz.dwarf.hero.dragon_warrior,scores={ogvz.rclick.custom_model_data=4001}] at @s run function ogvz:dwarves/heroes/items/dragon_warrior/dwarven_ruby
+execute as @s[tag=ogvz.dwarf.class.hero.dragon_warrior,scores={ogvz.rclick.custom_model_data=4001}] at @s run function ogvz:dwarves/heroes/items/dragon_warrior/dwarven_ruby
 # Wither Warrior (41xx)
 
 # Assassin Slayer (42xx)
 
 # Dwarven Guard (43xx)
-execute as @s[tag=ogvz.dwarf.hero.dwarven_guard,scores={ogvz.rclick.custom_model_data=4300}] at @s run function ogvz:dwarves/hero/dwarven_guard/elder_guardian_eye
+execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.custom_model_data=4300}] at @s run function ogvz:dwarves/hero/dwarven_guard/elder_guardian_eye
 
 ### Dwarf legendary items (5xxx)
 
