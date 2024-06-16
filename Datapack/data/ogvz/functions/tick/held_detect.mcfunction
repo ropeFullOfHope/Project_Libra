@@ -11,17 +11,17 @@
 #
 # Credit to:
 #
-# Comments: All held items are retextured nether stars.
+# Comments: All held items are retextured carrot on a stick.
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Held items (18xxx)
 # Chicken Nugget - Descend
-execute as @s[tag=chicken_nugget,tag=!descend_enabled] if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18000] at @s run function ogvz:zombies/chicken_nugget/descend_enable
-execute as @s[tag=chicken_nugget,tag=descend_enabled] unless items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18000] at @s run function ogvz:zombies/chicken_nugget/descend_disable
+execute as @s[tag=ogvz.zombie.class.chicken_nugget,tag=!ogvz.zombie.class.chicken_nugget.descend_enabled] if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18000] at @s run function ogvz:zombies/chicken_nugget/descend_enable
+execute as @s[tag=ogvz.zombie.class.chicken_nugget,tag=ogvz.zombie.class.chicken_nugget.descend_enabled] unless items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18000] at @s run function ogvz:zombies/chicken_nugget/descend_disable
 # Bee - Ascend/Descend
-execute as @s[tag=bee,tag=!ascend_enabled,predicate=!ogvz:is_sneaking] if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18001] at @s run function ogvz:zombies/bee/ascend_enable
-execute as @s[tag=bee,tag=!descend_enabled,predicate=ogvz:is_sneaking] if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18001] at @s run function ogvz:zombies/bee/descend_enable
-execute as @s[tag=bee,tag=ascend_descend_enabled] unless items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18001] at @s run function ogvz:zombies/bee/ascend_descend_disable
+execute as @s[tag=ogvz.zombie.class.bee,tag=!ogvz.zombie.class.bee.ascend_enabled,predicate=!ogvz:is_sneaking] if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18001] at @s run function ogvz:zombies/bee/ascend_enable
+execute as @s[tag=ogvz.zombie.class.bee,tag=!ogvz.zombie.class.bee.descend_enabled,predicate=ogvz:is_sneaking] if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18001] at @s run function ogvz:zombies/bee/descend_enable
+execute as @s[tag=ogvz.zombie.class.bee,tag=ogvz.zombie.class.bee.ascend_descend_enabled] unless items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18001] at @s run function ogvz:zombies/bee/ascend_descend_disable
 # Blaze - Descend
-execute as @s[tag=blaze,tag=!descend_enabled] if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18002] at @s run function ogvz:zombies/blaze/descend_enable
-execute as @s[tag=blaze,tag=descend_enabled] unless items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18002] at @s run function ogvz:zombies/blaze/descend_disable
+execute as @s[tag=ogvz.zombie.class.blaze,tag=!ogvz.zombie.class.blaze.descend_enabled] if items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18002] at @s run function ogvz:zombies/blaze/descend_enable
+execute as @s[tag=ogvz.zombie.class.blaze,tag=ogvz.zombie.class.blaze.descend_enabled] unless items entity @s weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_model_data=18002] at @s run function ogvz:zombies/blaze/descend_disable

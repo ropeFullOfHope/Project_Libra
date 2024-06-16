@@ -18,11 +18,13 @@ execute as @a at @s run function ogvz:tick/passive_detect
 execute as @a at @s run function ogvz:tick/held_detect
 execute as @a at @s run function ogvz:tick/active_detect
 execute as @a at @s run function ogvz:tick/cooldown
-execute as @e[type=minecraft:arrow,tag=!enchantments_applied] at @s run function ogvz:tick/arrow_custom_enchantments
-function ogvz:tick/custom_luck_effects
-function ogvz:tick/custom_effects
-function ogvz:tick/lasting_abilities
-execute as @e[tag=air_time] at @s run function ogvz:tick/air_time
+execute as @e[type=minecraft:arrow,tag=!ogvz.enchantments_applied] at @s run function ogvz:tick/arrow_custom_enchantments
+execute as @a[predicate=ogvz:effect/unluck] at @s run function ogvz:tick/custom_unluck_effects
+execute as @a at @s run function ogvz:tick/custom_effects
+#execute as @a[tag=ogvz.dwarf] at @s run function ogvz:tick/multitick_items
+execute as @a[tag=ogvz.zombie] at @s run function ogvz:tick/multitick_abilities
+#execute as @e[type=minecraft:marker,tag=ogvz.custom_projectile] at @s run function ogvz:tick/custom_projectile
+##execute as @e[tag=ogvz.air_time] at @s run function ogvz:tick/air_time
 function ogvz:tick/ai_mob_teams
 execute as @a[tag=ogvz.dwarf,tag=ogvz.mana] at @s run function ogvz:tick/mana_buildup
 execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup=1000..}] at @s run function ogvz:tick/mana_add

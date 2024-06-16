@@ -1,8 +1,8 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: ogvz:tick
-# File Name: custom_instant_effects
-# Function Name: ogvz:tick/custom_luck_effects
-# File Purpose: Applies custom instant effects to players with specific level of luck effect.
+# File Name: custom_unluck_effects
+# Function Name: ogvz:tick/custom_unluck_effects
+# File Purpose: Applies custom instant effects to players with specific level of unluck effect.
 # Created By: ropeFullOfHope
 # 
 # Created On: 2023.10.07
@@ -15,9 +15,10 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Instant Health for zombies only.
-effect give @a[tag=zombies,predicate=ogvz:effect/luck/100] minecraft:instant_health 1 0 true
-effect clear @a[predicate=ogvz:effect/luck/100] minecraft:luck
+effect give @s[tag=ogvz.zombie,predicate=ogvz:effect/unluck/1] minecraft:instant_health 1 0 true
 
 # Instant Health 2 for zombies only.
-effect give @a[tag=zombies,predicate=ogvz:effect/luck/101] minecraft:instant_health 1 1 true
-effect clear @a[predicate=ogvz:effect/luck/101] minecraft:luck
+effect give @s[tag=ogvz.zombie,predicate=ogvz:effect/unluck/2] minecraft:instant_health 1 1 true
+
+# Clear the unluck effect.
+effect clear @s minecraft:unluck

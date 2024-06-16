@@ -14,8 +14,8 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-item replace entity @s[tag=ogvz.use.mainhand] weapon.mainhand with minecraft:air
-item replace entity @s[tag=ogvz.use.offhand] weapon.offhand with minecraft:air
+item replace entity @s[tag=temp.use.mainhand] weapon.mainhand with minecraft:air
+item replace entity @s[tag=temp.use.offhand] weapon.offhand with minecraft:air
 
 effect clear @s
 

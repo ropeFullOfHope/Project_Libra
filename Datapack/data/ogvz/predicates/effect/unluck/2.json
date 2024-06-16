@@ -3,8 +3,8 @@
   "entity": "this",
   "predicate": {
     "effects": {
-      "minecraft:luck": {
-        "amplifier": 100
+      "minecraft:unluck": {
+        "amplifier": 2
       }
     }
   }

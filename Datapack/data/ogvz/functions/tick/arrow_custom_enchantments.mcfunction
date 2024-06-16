@@ -14,13 +14,13 @@
 # Comments: If an enchantment is triggered when an arrow hits a player, then the arrow needs to have a custom enchantment too.
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-tag @s add applying_enchantments
+tag @s add temp.applying_enchantments
 
 # Bow/Crossbow in main hand -> Check only enchantments in main hand.
-execute on origin if items entity @s weapon.mainhand #ogvz:bow as @e[type=minecraft:arrow,tag=applying_enchantments] at @s run function ogvz:custom_enchantments/arrow_mainhand
+execute on origin if items entity @s weapon.mainhand #ogvz:bow as @e[type=minecraft:arrow,tag=temp.applying_enchantments] at @s run function ogvz:custom_enchantments/arrow_mainhand
 
 # Bow/Crossbow in off hand, but not in main hand -> Check only enchantments in off hand.
-execute on origin if items entity @s weapon.offhand #ogvz:bow unless items entity @s weapon.mainhand #ogvz:bow as @e[type=minecraft:arrow,tag=applying_enchantments] at @s run function ogvz:custom_enchantments/arrow_offhand
+execute on origin if items entity @s weapon.offhand #ogvz:bow unless items entity @s weapon.mainhand #ogvz:bow as @e[type=minecraft:arrow,tag=temp.applying_enchantments] at @s run function ogvz:custom_enchantments/arrow_offhand
 
-tag @s remove applying_enchantments
-tag @s add enchantments_applied
+tag @s remove temp.applying_enchantments
+tag @s add ogvz.enchantments_applied
