@@ -14,10 +14,11 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute if entity @e[type=minecraft:marker,tag=dvz,tag=setup_phase] run return 0
-execute if entity @s[tag=joined] run return 0
+# Return if the game is in setup phase or if the player has already joined the game.
+execute if score &ogvz ogvz.game.phase matches 0 run return 0
+execute if entity @s[tag=ogvz.joined] run return 0
 
-tag @s add joined
+tag @s add ogvz.joined
 
 clear @s
 
@@ -28,8 +29,6 @@ effect clear @s
 effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
-execute if entity @e[type=minecraft:marker,tag=dvz,tag=build_phase] run function ogvz:dwarves/spawn
-execute if entity @e[type=minecraft:marker,tag=dvz,tag=boss_phase] run function ogvz:zombies/spawn
-execute if entity @e[type=minecraft:marker,tag=dvz,tag=zombie_phase] run function ogvz:zombies/spawn
-execute if entity @e[type=minecraft:marker,tag=dvz,tag=last_stand_phase] run function ogvz:zombies/spawn
-execute if entity @e[type=minecraft:marker,tag=dvz,tag=game_over_phase] run function ogvz:zombies/spawn
+# If a player joins during build phase (1), they spawn in as a dwarf, otherwise they spawn in as a zombie.
+execute if score &ogvz ogvz.game.phase matches 1 run function ogvz:dwarves/spawn
+execute if score &ogvz ogvz.game.phase matches 2..6 run function ogvz:zombies/spawn

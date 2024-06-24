@@ -30,7 +30,7 @@ experience set @s 51 levels
 # Reset bar.
 experience set @s 0 points
 
-## Properly set the exp bar.
+### Properly set the exp bar.
 # If the player has 100 or more mana, just fill out the mana bar.
 execute as @s[scores={temp.current_mana.1=100..}] run experience add @s 300 points
 execute as @s[scores={temp.current_mana.1=100..}] run scoreboard players set @s temp.current_mana.1 0

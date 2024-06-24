@@ -33,7 +33,7 @@ execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seco
 execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run return 0
 
 # Remove 10 levels.
-scoreboard players remove @s ogvz.dwarf.mana_buildup 10000
+scoreboard players remove @s ogvz.dwarf.mana_buildup 10000000
 
 scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds 3
 
@@ -46,34 +46,34 @@ title @s actionbar [ \
 playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 2
 
 # As the player is the one shooting the ray, the ray origin is the player.
-tag @s add temp_ray_origin
+tag @s add temp.ray_origin
 
 # Create the scoreboard used for spinning particles.
 scoreboard objectives add ogvz.spin.temp dummy
 scoreboard players set @s ogvz.spin.temp 0
 
 # Summons a marker at players feet and gives it the ray tag.
-execute summon minecraft:marker run tag @s add ray
+execute summon minecraft:marker run tag @s add temp.ray
 
 # Teleports the marker to the player's eyes and makes it face in the same direction.
-execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] ~ ~ ~ ~ ~
+execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] ~ ~ ~ ~ ~
 
 # Starts the ray casting loop.
-execute as @e[type=minecraft:marker,tag=ray,limit=1,sort=nearest] at @s run function ogvz:dwarves/hero/dwarven_guard/elder_guardian_eye_loop
+execute as @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] at @s run function ogvz:dwarves/hero/dwarven_guard/elder_guardian_eye_loop
 
 # Deals damage to all players who have been hit by the ray.
-execute as @a[tag=temp_hit,tag=zombies] run damage @s 12 minecraft:magic by @p[tag=temp_ray_origin]
-execute as @a[tag=temp_hit,tag=dwarves] run damage @s 3 minecraft:magic by @p[tag=temp_ray_origin]
+execute as @a[tag=temp.hit,tag=zombies] run damage @s 12 minecraft:magic by @p[tag=temp.ray_origin]
+execute as @a[tag=temp.hit,tag=dwarves] run damage @s 3 minecraft:magic by @p[tag=temp.ray_origin]
 
 # Gets rid of the ray.
-kill @e[type=minecraft:marker,tag=ray]
+kill @e[type=minecraft:marker,tag=temp.ray]
 
 # Remove scoreboard
 scoreboard objectives remove ogvz.spin.temp
 
 # Remove tags
-tag @s remove temp_ray_origin
-tag @a remove temp_hit
-tag @a remove temp_big_hitbox
-tag @a remove temp_medium_hitbox
-tag @a remove temp_small_hitbox
+tag @s remove temp.ray_origin
+tag @a remove temp.hit
+tag @a remove temp.big_hitbox
+tag @a remove temp.medium_hitbox
+tag @a remove temp.small_hitbox

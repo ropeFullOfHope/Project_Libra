@@ -18,7 +18,7 @@ execute at @e[type=minecraft:marker,tag=shrine] run tp @s ~ ~ ~
 
 team join d1DWARF @s
 
-tag @s add dwarves
+tag @s add ogvz.dwarf
 
 ### Give discs to player.
 # 100%

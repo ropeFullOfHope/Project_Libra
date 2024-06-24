@@ -24,7 +24,7 @@ scoreboard objectives add temp.shrine_distance dummy
 scoreboard players set @s temp.shrine_distance 0
 
 # Create a marker and run a function with it.
-execute summon minecraft:marker run execute as @s at @s positioned ~ ~2 ~ run function ogvz:admin/setup/shrine_distance_ray
+execute summon minecraft:marker run execute as @s at @s run function ogvz:admin/setup/shrine_distance_ray
 
 # Display how far the shrine is.
 title @s actionbar ["",{"score":{"name":"@s","objective":"temp.shrine_distance"},"color":"gold","bold":true}]

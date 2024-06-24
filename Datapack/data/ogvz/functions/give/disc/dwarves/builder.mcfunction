@@ -1,8 +1,8 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
-# File Name: enchanter
-# Function Name: ogvz:give/dwarf_disc/enchanter
-# File Purpose: Gives you the Enchanter disc.
+# File Name: builder
+# Function Name: ogvz:give/disc/dwarves/builder
+# File Purpose: Gives you the Builder disc.
 # Created By: ropeFullOfHope
 # 
 # Created On: 2023.11.18
@@ -15,10 +15,10 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=2005, \
+  minecraft:custom_model_data=2000, \
   minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Enchanter","color":"blue"}', \
+  minecraft:item_name='{"text":"Builder","color":"green"}', \
   minecraft:lore=[ \
-    '{"text":"Tasked with enchanting Weapons & Armor.","color":"blue"}' \
+    '{"text":"Tasked with building the keep.","color":"blue"}' \
   ] \
 ]

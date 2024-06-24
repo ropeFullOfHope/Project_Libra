@@ -14,15 +14,17 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute store result score @s ogvz.var run clear @s minecraft:emerald 0
-execute unless entity @s[scores={ogvz.var=1..}] run title @s actionbar [ \
+scoreboard objectives add temp.emerald_count dummy
+
+execute store result score @s temp.emerald_count run clear @s minecraft:emerald 0
+execute unless entity @s[scores={temp.emerald_count=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Summoning Book]","bold":true,"color":"dark_red"}, \
   {"text":" You need at least ","color":"dark_red"}, \
   {"text":"1 Emerald","bold":true,"color":"dark_red"}, \
   {"text":"!","color":"dark_red"} \
 ]
-execute unless entity @s[scores={ogvz.var=1..}] run return 0
+execute unless entity @s[scores={temp.emerald_count=1..}] run return run scoreboard objectives remove temp.emerald_count
 
 clear @s minecraft:emerald 1
 
@@ -37,3 +39,5 @@ playsound minecraft:entity.evoker.cast_spell player @a ~ ~ ~ 1 1
 particle minecraft:spit ~ ~1 ~ 0.25 0.5 0.25 0 10
 
 loot give @s loot ogvz:dwarves/summoning_book/enchanter
+
+scoreboard objectives remove temp.emerald_count

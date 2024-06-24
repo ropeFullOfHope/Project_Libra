@@ -18,4 +18,4 @@ execute as @s[level=100..] run return 0
 
 # This is a bit hacky, but it sets the player's mana to 100 while still updating the mana bar.
 experience set @s 99 levels
-scoreboard players set @s ogvz.dwarf.mana_buildup 1000
+scoreboard players set @s ogvz.dwarf.mana_buildup 1000000

@@ -14,37 +14,37 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute if entity @e[type=marker,tag=dvz,tag=boss_dragon] run tellraw @s [ \
+execute if score &ogvz ogvz.game.boss matches 1 run tellraw @s [ \
   "", \
   {"text":"\u25B6","bold":true,"color":"gold"}, \
   {"text":" The doom event is: ","color":"yellow"}, \
   {"text":"AI Dragon","bold":true,"color":"light_purple"} \
 ]
-execute if entity @e[type=marker,tag=dvz,tag=boss_ai_dragon] run tellraw @s [ \
+execute if score &ogvz ogvz.game.boss matches 2 run tellraw @s [ \
   "", \
   {"text":"\u25B6","bold":true,"color":"gold"}, \
   {"text":" The doom event is: ","color":"yellow"}, \
   {"text":"Player Dragon","bold":true,"color":"light_purple"} \
 ]
-execute if entity @e[type=marker,tag=dvz,tag=boss_wither] run tellraw @s [ \
+execute if score &ogvz ogvz.game.boss matches 3 run tellraw @s [ \
   "", \
   {"text":"\u25B6","bold":true,"color":"gold"}, \
   {"text":" The doom event is: ","color":"yellow"}, \
   {"text":"AI Wither","bold":true,"color":"dark_purple"} \
 ]
-execute if entity @e[type=marker,tag=dvz,tag=boss_ai_wither] run tellraw @s [ \
+execute if score &ogvz ogvz.game.boss matches 4 run tellraw @s [ \
   "", \
   {"text":"\u25B6","bold":true,"color":"gold"}, \
   {"text":" The doom event is: ","color":"yellow"}, \
   {"text":"Player Wither","bold":true,"color":"dark_purple"} \
 ]
-execute if entity @e[type=marker,tag=dvz,tag=boss_assassin] run tellraw @s [ \
+execute if score &ogvz ogvz.game.boss matches 5 run tellraw @s [ \
   "", \
   {"text":"\u25B6","bold":true,"color":"gold"}, \
   {"text":" The doom event is: ","color":"yellow"}, \
   {"text":"Assassin","bold":true,"color":"dark_red"} \
 ]
-execute if entity @e[type=marker,tag=dvz,tag=boss_guardian] run tellraw @s [ \
+execute if score &ogvz ogvz.game.boss matches 6 run tellraw @s [ \
   "", \
   {"text":"\u25B6","bold":true,"color":"gold"}, \
   {"text":" The doom event is: ","color":"yellow"}, \

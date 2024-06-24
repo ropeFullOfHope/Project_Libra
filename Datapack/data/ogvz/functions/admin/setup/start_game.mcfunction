@@ -70,10 +70,10 @@ execute if score &ogvz ogvz.game.boss matches 0 run return 0
 # 1 - Build phase
 scoreboard players set &ogvz ogvz.game.phase 1
 
-kill @e[type=minecraft:block_display,tag=ogvz.display.lobby]
-kill @e[type=minecraft:block_display,tag=ogvz.display.shrine]
-kill @e[type=minecraft:block_display,tag=ogvz.display.zombie_spawn]
-kill @e[type=minecraft:block_display,tag=ogvz.display.boss_spawn]
+kill @e[type=minecraft:block_display,tag=ogvz.block_display.lobby]
+kill @e[type=minecraft:block_display,tag=ogvz.block_display.shrine]
+kill @e[type=minecraft:block_display,tag=ogvz.block_display.zombie_spawn]
+kill @e[type=minecraft:block_display,tag=ogvz.block_display.boss_spawn]
 
 scoreboard players set &ogvz ogvz.game.time 0
 

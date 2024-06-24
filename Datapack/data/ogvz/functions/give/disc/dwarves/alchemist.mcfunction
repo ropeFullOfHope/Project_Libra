@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: alchemist
-# Function Name: ogvz:give/dwarf_disc/alchemist
+# Function Name: ogvz:give/disc/dwarves/alchemist
 # File Purpose: Gives you the Alchemist disc.
 # Created By: ropeFullOfHope
 # 
@@ -19,6 +19,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Alchemist","color":"blue"}', \
   minecraft:lore=[ \
-    '{"text":"Tasked with brewing Magic Potions.","color":"blue"}' \
+    '{"text":"Tasked with brewing magic","color":"blue"}', \
+    '{"text":"potions.","color":"blue"}' \
   ] \
 ]

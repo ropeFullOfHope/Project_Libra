@@ -33,7 +33,7 @@ execute if entity @s[scores={ogvz.dwarf.magic_health_potion.cooldown.seconds=1..
 execute if entity @s[scores={ogvz.dwarf.magic_health_potion.cooldown.seconds=1..}] run return 0
 
 # Remove 30 levels.
-scoreboard players remove @s ogvz.dwarf.mana_buildup 30000
+scoreboard players remove @s ogvz.dwarf.mana_buildup 30000000
 
 scoreboard players set @s ogvz.dwarf.magic_health_potion.cooldown.seconds 20
 

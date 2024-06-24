@@ -44,8 +44,8 @@ title @s actionbar [ \
 ]
 
 playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 4 1 0
-execute as @a[tag=dwarves,tag=!hero] at @s run playsound minecraft:block.beacon.activate player @s ~ ~ ~ 1 2 1
+execute as @a[tag=dwarves,tag=!ogvz.dwarf.class.hero] at @s run playsound minecraft:block.beacon.activate player @s ~ ~ ~ 1 2 1
 
-scoreboard players add @a[tag=builder] ogvz.dwarf.mana_buildup 50000
+scoreboard players add @a[tag=ogvz.dwarf.class.builder] ogvz.dwarf.mana_buildup 50000
 
-execute as @a[tag=dwarves,tag=!builder,tag=!ogvz.dwarf.class.hero.dragon_warrior] at @s run function ogvz:dwarves/heroes/items/dragon_warrior/dwarven_ruby_mana_refill
+execute as @a[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.builder,tag=!ogvz.dwarf.class.hero.dragon_warrior] at @s run function ogvz:dwarves/heroes/items/dragon_warrior/dwarven_ruby_mana_refill

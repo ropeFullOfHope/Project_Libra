@@ -17,7 +17,9 @@
 advancement revoke @s only ogvz:misc/inventory_update
 
 ### Non-passive items
+# Lava Bucket
 execute as @s store result score @s ogvz.inventory.lava_bucket run clear @s minecraft:lava_bucket 0
+# Ice Cube
 execute as @s[tag=!ogvz.zombie.class.chillager] store result score @s ogvz.inventory.7071 run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=7071] 0
 
 ### Dwarf items (11xxx)

@@ -1,8 +1,8 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
-# File Name: tailor
-# Function Name: ogvz:give/dwarf_disc/tailor
-# File Purpose: Gives you the Tailor disc.
+# File Name: blacksmith
+# Function Name: ogvz:give/disc/dwarves/blacksmith
+# File Purpose: Gives you the Blacksmith disc.
 # Created By: ropeFullOfHope
 # 
 # Created On: 2023.11.18
@@ -15,10 +15,11 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=2002, \
+  minecraft:custom_model_data=2001, \
   minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Tailor","color":"blue"}', \
+  minecraft:item_name='{"text":"Blacksmith","color":"blue"}', \
   minecraft:lore=[ \
-    '{"text":"Tasked with creating Armor & Shields.","color":"blue"}' \
+    '{"text":"Tasked with creating weapons and","color":"blue"}', \
+    '{"text":"tools.","color":"blue"}' \
   ] \
 ]
