@@ -15,5 +15,5 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Give 1 mana/second. If the dwarf is a builder, then the mana regen is halved.
-scoreboard players add @s[tag=!ogvz.dwarf.class.builder] ogvz.dwarf.mana_buildup 50
-scoreboard players add @s[tag=ogvz.dwarf.class.builder] ogvz.dwarf.mana_buildup 25
+scoreboard players add @s[tag=!ogvz.dwarf.class.builder] ogvz.dwarf.mana_buildup.micromana 50
+scoreboard players add @s[tag=ogvz.dwarf.class.builder] ogvz.dwarf.mana_buildup.micromana 25

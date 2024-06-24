@@ -75,9 +75,9 @@ kill @e[type=minecraft:block_display,tag=ogvz.block_display.shrine]
 kill @e[type=minecraft:block_display,tag=ogvz.block_display.zombie_spawn]
 kill @e[type=minecraft:block_display,tag=ogvz.block_display.boss_spawn]
 
-scoreboard players set &ogvz ogvz.game.time 0
+scoreboard players set &ogvz ogvz.game.timer 0
 
-execute store result bossbar ogvz:boss_timer value run scoreboard players get &ogvz ogvz.game.time
+execute store result bossbar ogvz:boss_timer value run scoreboard players get &ogvz ogvz.game.timer
 
 bossbar set ogvz:boss_timer visible true
 

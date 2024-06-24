@@ -55,8 +55,8 @@ execute as @a[tag=ogvz.zombie] at @s run function ogvz:tick/multitick_abilities
 
 # Mana functions
 execute as @a[tag=ogvz.dwarf,tag=ogvz.mana] at @s run function ogvz:tick/mana_buildup
-execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup=1000000..}] at @s run function ogvz:tick/mana_add
-execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup=..-1000000}] at @s run function ogvz:tick/mana_subtract
+execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.micromana=1000000..}] at @s run function ogvz:tick/mana_add
+execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.micromana=..-1000000}] at @s run function ogvz:tick/mana_subtract
 
 # Misc functions
 execute as @a[tag=ogvz.zombie] at @s run function ogvz:tick/innate_abilities

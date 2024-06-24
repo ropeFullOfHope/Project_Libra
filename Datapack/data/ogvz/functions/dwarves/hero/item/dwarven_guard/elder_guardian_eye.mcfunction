@@ -33,7 +33,7 @@ execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seco
 execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run return 0
 
 # Remove 10 levels.
-scoreboard players remove @s ogvz.dwarf.mana_buildup 10000000
+scoreboard players remove @s ogvz.dwarf.mana_buildup.micromana 10000000
 
 scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds 3
 

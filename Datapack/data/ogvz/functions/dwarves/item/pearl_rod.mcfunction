@@ -71,7 +71,7 @@ execute if entity @s[scores={temp.shrine_spawn_obstructions=1}] run title @s act
 execute if entity @s[scores={temp.shrine_spawn_obstructions=1}] run return run scoreboard objectives remove temp.shrine_spawn_obstructions
 
 # Remove 50 levels.
-scoreboard players remove @s ogvz.dwarf.mana_buildup 50000000
+scoreboard players remove @s ogvz.dwarf.mana_buildup.micromana 50000000
 
 scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.seconds 60
 

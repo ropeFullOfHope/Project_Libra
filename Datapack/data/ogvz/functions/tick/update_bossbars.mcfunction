@@ -16,5 +16,5 @@
 
 execute store result bossbar ogvz:shrine_health value run scoreboard players get &ogvz ogvz.game.shrine_health
 
-execute store result bossbar ogvz:boss_timer value run scoreboard players get &ogvz ogvz.game.time
+execute store result bossbar ogvz:boss_timer value run scoreboard players get &ogvz ogvz.game.timer
 

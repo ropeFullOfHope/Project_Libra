@@ -16,7 +16,7 @@
 
 ### Game Scoreboards
 # Game time in ticks scoreboard
-scoreboard objectives add ogvz.game.time dummy
+scoreboard objectives add ogvz.game.timer dummy
 # Player count scoreboard
 scoreboard objectives add ogvz.game.player_count dummy
 # Shrine health scoreboard
@@ -55,11 +55,11 @@ scoreboard objectives add ogvz.rclick.custom_model_data dummy
 
 ### Miscellaneous scoreboards
 scoreboard objectives add ogvz.misc.leave_game minecraft.custom:minecraft.leave_game
-scoreboard objectives add ogvz.var dummy
 
 ### Dwarf scoreboards
 # All dwarves
-scoreboard objectives add ogvz.dwarf.mana_buildup dummy
+scoreboard objectives add ogvz.dwarf.mana_buildup.mana dummy
+scoreboard objectives add ogvz.dwarf.mana_buildup.micromana dummy
 scoreboard objectives add ogvz.dwarf.magic_health_potion.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarf.magic_health_potion.cooldown.seconds dummy
 scoreboard objectives add ogvz.dwarf.pearl_rod.cooldown.ticks dummy
