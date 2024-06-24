@@ -19,6 +19,8 @@ data modify entity @s PickupDelay set value 0s
 
 execute on origin run title @s actionbar {"text":"You cannot drop this item!","color":"dark_red"}
 
-execute on origin run tag @s add temp_origin
-execute at @p[tag=temp_origin] run tp @s ~ ~0.8 ~
-tag @a remove temp_origin
+execute on origin run tag @s add temp.origin
+
+execute at @p[tag=temp.origin] run tp @s ~ ~0.8 ~
+
+tag @a remove temp.origin

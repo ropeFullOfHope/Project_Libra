@@ -14,11 +14,12 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-tag @s add processing
+tag @s add temp.processing
 
-execute on origin if entity @s[tag=zombies] as @e[type=minecraft:item,tag=processing] unless entity @s[nbt={Item:{tag:{droppable:1}}}] at @s run function ogvz:misc/prevent_item_drop
+execute on origin if entity @s[tag=ogvz.zombie] as @e[type=minecraft:item,tag=temp.processing] unless entity @s[nbt={Item:{tag:{droppable:1}}}] at @s run function ogvz:misc/prevent_item_drop
 
-execute as @s[tag=processing,nbt={Item:{tag:{undroppable:1}}}] at @s run function ogvz:misc/prevent_item_drop
+execute on origin unless entity @s[tag=!ogvz.zombie] as @e[type=minecraft:item,tag=temp.processing] if entity @s[nbt={Item:{tag:{undroppable:1}}}] at @s run function ogvz:misc/prevent_item_drop
 
-tag @s remove processing
-tag @s add processed
+tag @s remove temp.processing
+
+tag @s add ogvz.processed

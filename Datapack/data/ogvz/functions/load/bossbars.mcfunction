@@ -14,6 +14,13 @@
 # Comments: Wither boss comes with their own bossbar already.
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Shrine Health
+bossbar add ogvz:shrine_health {"text":"\u1001","font":"ogvz:custom_font"}
+bossbar set ogvz:shrine_health color blue
+bossbar set ogvz:shrine_health max 12
+bossbar set ogvz:shrine_health style notched_12
+bossbar set ogvz:shrine_health visible false
+
 # Boss timer
 bossbar add ogvz:boss_timer "Timer"
 bossbar set ogvz:boss_timer max 36000

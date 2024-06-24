@@ -2,6 +2,20 @@
   "providers": [
     {
       "type": "bitmap",
+      "file": "ogvz:font/logo.png",
+      "height": 17,
+      "ascent": 17,
+      "chars": ["\u1000"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/bossbar_shrine_health.png",
+      "height": 27,
+      "ascent": 6,
+      "chars": ["\u1001"]
+    },
+    {
+      "type": "bitmap",
       "file": "ogvz:font/expstart.png",
       "height": 7,
       "ascent": 7,
@@ -160,13 +174,6 @@
       "height": 162,
       "ascent": 25,
       "chars": ["\uE020"]
-    },
-    {
-      "type": "bitmap",
-      "file": "ogvz:font/logo.png",
-      "height": 17,
-      "ascent": 17,
-      "chars": ["\uEFFF"]
     },
     {
       "type": "space",

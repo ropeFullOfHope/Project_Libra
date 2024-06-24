@@ -56,8 +56,8 @@ execute as @s[tag=ogvz.dwarf] if score &ogvz ogvz.game.phase matches 4..5 run ki
 # Kill the player if they rejoined as a zombie that has already picked a class.
 execute as @s[tag=ogvz.zombie.class] run kill @s
 
-# Make the progress/boss bar visible to the player if they joined during build/boss phase.
-execute if score &ogvz ogvz.game.phase matches 1 run bossbar set ogvz:boss_timer players @a
-execute if score &ogvz ogvz.game.phase matches 1 if score &ogvz ogvz.game.boss matches 1..2 run bossbar set ogvz:dragon_health players @a
-execute if score &ogvz ogvz.game.phase matches 1 if score &ogvz ogvz.game.boss matches 5 run bossbar set ogvz:assassin_timer players @a
-execute if score &ogvz ogvz.game.phase matches 1 if score &ogvz ogvz.game.boss matches 6 run bossbar set ogvz:guardian_health players @a
+# Make the progress/boss bars visible to the player.
+bossbar set ogvz:boss_timer players @a
+bossbar set ogvz:dragon_health players @a
+bossbar set ogvz:assassin_timer players @a
+bossbar set ogvz:guardian_health players @a

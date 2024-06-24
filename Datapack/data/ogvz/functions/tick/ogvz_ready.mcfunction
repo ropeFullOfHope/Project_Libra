@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: ogvz:tick
-# File Name: dvz_ready
-# Function Name: ogvz:tick/dvz_ready
+# File Name: ogvz_ready
+# Function Name: ogvz:tick/ogvz_ready
 # File Purpose: General setup for new players.
 # Created By: ropeFullOfHope
 # 

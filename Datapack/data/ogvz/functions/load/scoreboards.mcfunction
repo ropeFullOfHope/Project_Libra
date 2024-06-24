@@ -18,7 +18,9 @@
 # Game time in ticks scoreboard
 scoreboard objectives add ogvz.game.time dummy
 # Player count scoreboard
-scoreboard objectives add ogvz.game.player_count dummy "\uEFFF"
+scoreboard objectives add ogvz.game.player_count dummy
+# Shrine health scoreboard
+scoreboard objectives add ogvz.game.shrine_health dummy
 # Game phase scoreboard
 # 0 - Setup phase
 # 1 - Build phase
@@ -40,6 +42,7 @@ scoreboard objectives add ogvz.game.boss dummy
 ### Game Scoreboards Setup
 scoreboard players reset Dwarves ogvz.game.player_count
 scoreboard players reset Zombies ogvz.game.player_count
+scoreboard objectives modify ogvz.game.player_count displayname {"text":"\u1000","font":"ogvz:custom_font"}
 scoreboard objectives modify ogvz.game.player_count numberformat styled {"color":"red","bold":true}
 scoreboard objectives setdisplay sidebar ogvz.game.player_count
 scoreboard players set &ogvz ogvz.game.phase 0
