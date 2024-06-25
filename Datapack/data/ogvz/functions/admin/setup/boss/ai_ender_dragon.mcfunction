@@ -1,8 +1,8 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
-# File Name: select_dragon
-# Function Name: ogvz:admin/setup/select_dragon
-# File Purpose: Selects dragon as boss.
+# File Name: ai_ender_dragon
+# Function Name: ogvz:admin/setup/boss/ai_ender_dragon
+# File Purpose: Selects ender dragon as boss.
 # Created By: ropeFullOfHope
 # 
 # Created On: 2023.11.11
@@ -29,6 +29,6 @@ tellraw @a[tag=ogvz.admin] [ \
   {"text":"SETUP: ","bold":true,"color":"dark_purple"}, \
   {"selector":"@s"}, \
   {"text":" selected ","color":"light_purple"}, \
-  {"text":"AI Dragon","bold":true,"color":"light_purple"}, \
+  {"text":"AI Ender Dragon","bold":true,"color":"light_purple"}, \
   {"text":" as the boss.","color":"light_purple"} \
 ]

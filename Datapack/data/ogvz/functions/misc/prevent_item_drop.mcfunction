@@ -17,7 +17,7 @@
 data modify entity @s Owner set from entity @s Thrower
 data modify entity @s PickupDelay set value 0s
 
-execute on origin run title @s actionbar {"text":"You cannot drop this item!","color":"dark_red"}
+execute on origin run title @s actionbar {"text":"You cannot drop this item!","color":"red"}
 
 execute on origin run tag @s add temp.origin
 

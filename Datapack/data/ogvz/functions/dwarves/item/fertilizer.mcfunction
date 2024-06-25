@@ -30,8 +30,8 @@ execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if 
 
 execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run title @s actionbar [ \
   "", \
-  {"text":"[Fertilizer]","bold":true,"color":"dark_green"}, \
-  {"text":" Poof!","color":"dark_green"} \
+  {"text":"[Fertilizer]","bold":true,"color":"green"}, \
+  {"text":" Poof!","color":"green"} \
 ]
 
 # Play a sound at the Grass Block.

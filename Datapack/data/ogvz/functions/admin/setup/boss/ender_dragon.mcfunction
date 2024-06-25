@@ -29,6 +29,6 @@ tellraw @a[tag=ogvz.admin] [ \
   {"text":"SETUP: ","bold":true,"color":"dark_purple"}, \
   {"selector":"@s"}, \
   {"text":" selected ","color":"light_purple"}, \
-  {"text":"Dragon","bold":true,"color":"light_purple"}, \
+  {"text":"Ender Dragon","bold":true,"color":"light_purple"}, \
   {"text":" as the boss.","color":"light_purple"} \
 ]

@@ -16,10 +16,10 @@
 
 execute unless entity @s[level=30..] run title @s actionbar [ \
   "", \
-  {"text":"[Magic Strength Potion]","bold":true,"color":"dark_red"}, \
-  {"text":" You need at least ","color":"dark_red"}, \
-  {"text":"30 mana","bold":true,"color":"dark_red"}, \
-  {"text":"!","color":"dark_red"} \
+  {"text":"[Magic Strength Potion]","bold":true,"color":"red"}, \
+  {"text":" You need at least ","color":"red"}, \
+  {"text":"30 mana","bold":true,"color":"red"}, \
+  {"text":"!","color":"red"} \
 ]
 execute unless entity @s[level=30..] run return 0
 
@@ -28,8 +28,8 @@ scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 30
 
 title @s actionbar [ \
   "", \
-  {"text":"[Magic Strength Potion]","bold":true,"color":"dark_green"}, \
-  {"text":" Poof!","color":"dark_green"} \
+  {"text":"[Magic Strength Potion]","bold":true,"color":"green"}, \
+  {"text":" Poof!","color":"green"} \
 ]
 
 playsound minecraft:entity.witch.drink player @a ~ ~ ~ 1 1

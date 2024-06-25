@@ -39,8 +39,8 @@ scoreboard players set @s ogvz.dwarven_ruby.cool 60
 
 title @s actionbar [ \
   "", \
-  {"text":"[Dwarven Ruby]","bold":true,"color":"dark_green"}, \
-  {"text":" Poof!","color":"dark_green"} \
+  {"text":"[Dwarven Ruby]","bold":true,"color":"green"}, \
+  {"text":" Poof!","color":"green"} \
 ]
 
 playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 4 1 0

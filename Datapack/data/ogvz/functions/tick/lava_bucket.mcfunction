@@ -19,7 +19,7 @@ execute unless entity @s[scores={ogvz.inventory.lava_bucket=1..}] run return 0
 
 clear @s minecraft:lava_bucket
 
-tellraw @s {"text":"The lava burns through the bucket!","color":"dark_red"}
+title @s actionbar {"text":"The lava burns through the bucket!","color":"red"}
 
 playsound minecraft:item.shield.break master @a ~ ~ ~ 1 1
 

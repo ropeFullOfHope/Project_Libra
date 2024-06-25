@@ -16,19 +16,19 @@
 
 execute unless entity @s[level=10..] run title @s actionbar [ \
   "", \
-  {"text":"[Elder Guardian Eye]","bold":true,"color":"dark_red"}, \
-  {"text":" You need at least ","color":"dark_red"}, \
-  {"text":"10 mana","bold":true,"color":"dark_red"}, \
-  {"text":"!","color":"dark_red"} \
+  {"text":"[Elder Guardian Eye]","bold":true,"color":"red"}, \
+  {"text":" You need at least ","color":"red"}, \
+  {"text":"10 mana","bold":true,"color":"red"}, \
+  {"text":"!","color":"red"} \
 ]
 execute unless entity @s[level=10..] run return 0
 
 execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Elder Guardian Eye]","bold":true,"color":"dark_red"}, \
-  {"text":" You have ","color":"dark_red"}, \
-  {"score":{"name":"@s","objective":"ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds"},"bold":true,"color":"dark_red"}, \
-  {"text":" seconds remaining!","color":"dark_red"} \
+  {"text":"[Elder Guardian Eye]","bold":true,"color":"red"}, \
+  {"text":" You have ","color":"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds"},"bold":true,"color":"red"}, \
+  {"text":" seconds remaining!","color":"red"} \
 ]
 execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run return 0
 
@@ -39,8 +39,8 @@ scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds
 
 title @s actionbar [ \
   "", \
-  {"text":"[Elder Guardian Eye]","bold":true,"color":"dark_green"}, \
-  {"text":" Poof!","color":"dark_green"} \
+  {"text":"[Elder Guardian Eye]","bold":true,"color":"green"}, \
+  {"text":" Poof!","color":"green"} \
 ]
 
 playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 2

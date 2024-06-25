@@ -72,15 +72,15 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 32,
-                "max": 64
+                "min": 16,
+                "max": 32
               }
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.5
+              "chance": 0.4
             }
           ]
         }

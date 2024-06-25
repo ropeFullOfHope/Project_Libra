@@ -66,7 +66,7 @@ tellraw @s [ \
   {"text":"Boss Spawn Location ","color":"light_purple"}, \
   {"text":"at your feet.\n"}, \
   {"text":"  Click "}, \
-  {"text":"[HERE]","color":"dark_purple","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Dragon","color":"light_purple"}},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/boss/dragon"}}, \
+  {"text":"[HERE]","color":"dark_purple","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Dragon","color":"light_purple"}},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/boss/ender_dragon"}}, \
   {"text":" to select "}, \
   {"text":"Dragon ","color":"light_purple"}, \
   {"text":"as the boss.\n"}, \
@@ -86,7 +86,7 @@ tellraw @s [ \
   {"text":"Assassin ","color":"light_purple"}, \
   {"text":"as the boss.\n"}, \
   {"text":"  Click "}, \
-  {"text":"[HERE]","color":"dark_purple","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"AI Dragon","color":"light_purple"}},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/boss/ai_dragon"}}, \
+  {"text":"[HERE]","color":"dark_purple","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"AI Dragon","color":"light_purple"}},"clickEvent":{"action":"run_command","value":"/execute as @s[tag=ogvz.admin] at @s run function ogvz:admin/setup/boss/ai_ender_dragon"}}, \
   {"text":" to select "}, \
   {"text":"AI Dragon ","color":"light_purple"}, \
   {"text":"as the boss.\n"}, \

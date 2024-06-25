@@ -16,19 +16,19 @@
 
 execute unless entity @s[level=50..] run title @s actionbar [ \
   "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"dark_red"}, \
-  {"text":" You need at least ","color":"dark_red"}, \
-  {"text":"50 mana","bold":true,"color":"dark_red"}, \
-  {"text":"!","color":"dark_red"} \
+  {"text":"[Pearl Rod]","bold":true,"color":"red"}, \
+  {"text":" You need at least ","color":"red"}, \
+  {"text":"50 mana","bold":true,"color":"red"}, \
+  {"text":"!","color":"red"} \
 ]
 execute unless entity @s[level=50..] run return 0
 
 execute if entity @s[scores={ogvz.dwarf.pearl_rod.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"dark_red"}, \
-  {"text":" You have ","color":"dark_red"}, \
-  {"score":{"name":"@s","objective":"ogvz.pearl_rod.cool"},"bold":true,"color":"dark_red"}, \
-  {"text":" seconds remaining!","color":"dark_red"} \
+  {"text":"[Pearl Rod]","bold":true,"color":"red"}, \
+  {"text":" You have ","color":"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.pearl_rod.cool"},"bold":true,"color":"red"}, \
+  {"text":" seconds remaining!","color":"red"} \
 ]
 execute if entity @s[scores={ogvz.dwarf.pearl_rod.cooldown.seconds=1..}] run return 0
 
@@ -48,8 +48,8 @@ execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine,limit=1,sort=nearest]
 
 execute if entity @s[scores={temp.shrine_spawn_obstructions=1}] run title @s actionbar [ \
   "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"dark_red"}, \
-  {"text":" The shrine is obstructed!","color":"dark_red"} \
+  {"text":"[Pearl Rod]","bold":true,"color":"red"}, \
+  {"text":" The shrine is obstructed!","color":"red"} \
 ]
 execute if entity @s[scores={temp.shrine_spawn_obstructions=1}] run return run scoreboard objectives remove temp.shrine_spawn_obstructions
 
@@ -65,8 +65,8 @@ execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine,limit=1,sort=nearest]
 
 execute if entity @s[scores={temp.shrine_spawn_obstructions=1}] run title @s actionbar [ \
   "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"dark_red"}, \
-  {"text":" The shrine is webbed!","color":"dark_red"} \
+  {"text":"[Pearl Rod]","bold":true,"color":"red"}, \
+  {"text":" The shrine is webbed!","color":"red"} \
 ]
 execute if entity @s[scores={temp.shrine_spawn_obstructions=1}] run return run scoreboard objectives remove temp.shrine_spawn_obstructions
 
@@ -77,8 +77,8 @@ scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.seconds 60
 
 title @s actionbar [ \
   "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"dark_green"}, \
-  {"text":" Poof!","color":"dark_green"} \
+  {"text":"[Pearl Rod]","bold":true,"color":"green"}, \
+  {"text":" Poof!","color":"green"} \
 ]
 
 playsound minecraft:entity.zombie_villager.converted player @a ~ ~ ~ 1 2
