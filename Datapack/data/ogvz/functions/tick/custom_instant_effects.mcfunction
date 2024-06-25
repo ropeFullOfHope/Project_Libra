@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: ogvz:tick
-# File Name: custom_unluck_effects
-# Function Name: ogvz:tick/custom_unluck_effects
+# File Name: custom_instant_effects
+# Function Name: ogvz:tick/custom_instant_effects
 # File Purpose: Applies custom instant effects to players with specific level of unluck effect.
 # Created By: ropeFullOfHope
 # 

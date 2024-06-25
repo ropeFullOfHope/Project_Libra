@@ -19,6 +19,10 @@ difficulty hard
 tag @a remove ogvz.ready
 time set 1200t
 
+# Reset tags and scoreboards.
+execute as @a at @s run function ogvz:misc/remove_tags
+execute as @a at @s run function ogvz:misc/clear_scoreboards
+
 # Kill AI bosses.
 kill @e[type=minecraft:ender_dragon,tag=ogvz.class.boss]
 kill @e[type=minecraft:wither,tag=ogvz.class.boss]

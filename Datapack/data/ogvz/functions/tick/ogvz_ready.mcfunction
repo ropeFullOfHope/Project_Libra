@@ -21,6 +21,7 @@ execute as @s at @s run function ogvz:misc/clear_scoreboards
 execute as @s at @s run function ogvz:misc/remove_tags
 
 tag @s remove ogvz.admin
+tag @s remove ogvz.joined
 
 team leave @s
 
@@ -64,6 +65,8 @@ tellraw @s [ \
   {"text":".\n","color":"yellow"} \
 ]
 
-execute as @s at @s run function ogvz:tick/player_join
+execute store result score @s ogvz.game.reload_count run scoreboard players get &ogvz ogvz.game.reload_count
 
 tag @s add ogvz.ready
+
+execute as @s at @s run function ogvz:tick/player_join

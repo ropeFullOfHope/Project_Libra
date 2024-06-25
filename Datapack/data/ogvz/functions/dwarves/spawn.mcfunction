@@ -14,7 +14,7 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute at @e[type=minecraft:marker,tag=shrine] run tp @s ~ ~ ~
+execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine] run tp @s ~ ~2 ~
 
 team join d1DWARF @s
 
@@ -22,11 +22,11 @@ tag @s add ogvz.dwarf
 
 ### Give discs to player.
 # 100%
-execute as @s at @s run function ogvz:give/dwarf_disc/builder
+execute as @s at @s run function ogvz:give/disc/dwarves/builder
 
 # 50%
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/dwarf_disc/blacksmith
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/dwarf_disc/tailor
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/dwarf_disc/baker
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/dwarf_disc/alchemist
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/dwarf_disc/enchanter
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarves/blacksmith
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarves/tailor
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarves/baker
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarves/alchemist
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarves/enchanter

@@ -81,8 +81,6 @@ execute store result bossbar ogvz:boss_timer value run scoreboard players get &o
 
 bossbar set ogvz:boss_timer visible true
 
-schedule function ogvz:schedule/day_time 3t replace
-
 execute as @a at @s run function ogvz:give/magma_cream
 
 title @a subtitle [ \

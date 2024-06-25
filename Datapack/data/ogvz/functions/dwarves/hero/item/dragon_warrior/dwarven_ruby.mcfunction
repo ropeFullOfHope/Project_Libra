@@ -33,7 +33,7 @@ execute if entity @s[scores={ogvz.dwarven_ruby.cool=1..}] run title @s actionbar
 execute if entity @s[scores={ogvz.dwarven_ruby.cool=1..}] run return 0
 
 # Remove 50 levels.
-scoreboard players remove @s ogvz.dwarf.mana_buildup.micromana 50000
+scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 50
 
 scoreboard players set @s ogvz.dwarven_ruby.cool 60
 
@@ -46,6 +46,6 @@ title @s actionbar [ \
 playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 4 1 0
 execute as @a[tag=dwarves,tag=!ogvz.dwarf.class.hero] at @s run playsound minecraft:block.beacon.activate player @s ~ ~ ~ 1 2 1
 
-scoreboard players add @a[tag=ogvz.dwarf.class.builder] ogvz.dwarf.mana_buildup.micromana 50000
+scoreboard players add @a[tag=ogvz.dwarf.class.builder] ogvz.dwarf.mana_buildup.mana 50
 
 execute as @a[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.builder,tag=!ogvz.dwarf.class.hero.dragon_warrior] at @s run function ogvz:dwarves/heroes/items/dragon_warrior/dwarven_ruby_mana_refill

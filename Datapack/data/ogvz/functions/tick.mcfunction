@@ -43,20 +43,22 @@ execute as @a at @s run function ogvz:tick/enchantment_cooldown
 # Custom functions
 execute as @e[type=minecraft:arrow,tag=!ogvz.enchantments_applied] at @s run function ogvz:tick/arrow_custom_enchantments
 #execute as @e[type=minecraft:marker,tag=ogvz.custom_projectile] at @s run function ogvz:tick/custom_projectile
-execute as @a[predicate=ogvz:effect/unluck] at @s run function ogvz:tick/custom_unluck_effects
+execute as @a[predicate=ogvz:effect/unluck] at @s run function ogvz:tick/custom_instant_effects
 execute as @a at @s run function ogvz:tick/custom_effects
 execute as @a at @s run function ogvz:tick/custom_bars
 
 # Multitick functions
 #execute as @a[tag=ogvz.dwarf] at @s run function ogvz:tick/multitick_items
 execute as @a[tag=ogvz.zombie] at @s run function ogvz:tick/multitick_abilities
-#execute as @a[tag=ogvz.zombie.class.hoglin] at @s run function ogvz:tick/adventure_switch
-#execute as @a[tag=ogvz.zombie.class.enderman.portal_bound] at @s run function ogvz:tick/portal_bind
+#!!!execute as @a[tag=ogvz.zombie.class.hoglin] at @s run function ogvz:tick/adventure_switch
+#!!!execute as @a[tag=ogvz.zombie.class.enderman.portal_bound] at @s run function ogvz:tick/portal_bind
 
 # Mana functions
 execute as @a[tag=ogvz.dwarf,tag=ogvz.mana] at @s run function ogvz:tick/mana_buildup
-execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.micromana=1000000..}] at @s run function ogvz:tick/mana_add
-execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.micromana=..-1000000}] at @s run function ogvz:tick/mana_subtract
+execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.micromana=1000000..}] at @s run function ogvz:tick/micromana_add
+execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.micromana=..-1000000}] at @s run function ogvz:tick/micromana_subtract
+execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.mana=1..}] at @s run function ogvz:tick/mana_add
+execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.mana=..-1}] at @s run function ogvz:tick/mana_subtract
 
 # Misc functions
 execute as @a[tag=ogvz.zombie] at @s run function ogvz:tick/innate_abilities

@@ -16,6 +16,9 @@
 
 scoreboard players set @s ogvz.misc.leave_game 0
 
+# If the player has joined after a datapack reload, execute ogvz:tick/ogvz_ready first.
+execute unless score @s ogvz.game.reload_count = &ogvz ogvz.game.reload_count run return run function ogvz:tick/ogvz_ready
+
 # If the player hasn't joined the game yet and the game isn't set up yet, then tell them the game is still being set up (0 - setup phase).
 execute as @s[tag=!ogvz.joined] if score &ogvz ogvz.game.phase matches 0 run tellraw @s [ \
   "", \

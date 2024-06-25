@@ -38,7 +38,7 @@ execute unless entity @s[level=30..] run return run scoreboard objectives remove
 clear @s minecraft:brick 10
 
 # Remove 30 levels.
-scoreboard players remove @s ogvz.dwarf.mana_buildup.micromana 30000000
+scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 30
 
 title @s actionbar [ \
   "", \

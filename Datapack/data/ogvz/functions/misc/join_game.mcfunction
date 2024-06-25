@@ -14,9 +14,8 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Return if the game is in setup phase or if the player has already joined the game.
+# Return if the game is in setup phase.
 execute if score &ogvz ogvz.game.phase matches 0 run return 0
-execute if entity @s[tag=ogvz.joined] run return 0
 
 tag @s add ogvz.joined
 

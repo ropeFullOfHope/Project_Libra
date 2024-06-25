@@ -14,5 +14,5 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-team join z5SILVERFISH @e[type=minecraft:silverfish,tag=!ogvz.joined_team]
+team join z4SILVERFISH @e[type=minecraft:silverfish,tag=!ogvz.joined_team]
 tag @e[type=minecraft:silverfish,tag=!ogvz.joined_team] add ogvz.joined_team

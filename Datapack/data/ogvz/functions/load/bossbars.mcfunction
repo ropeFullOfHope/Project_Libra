@@ -22,7 +22,7 @@ bossbar set ogvz:shrine_health style notched_12
 bossbar set ogvz:shrine_health visible false
 
 # Boss timer
-bossbar add ogvz:boss_timer "Timer"
+bossbar add ogvz:boss_timer "Time Remaning"
 bossbar set ogvz:boss_timer max 36000
 bossbar set ogvz:boss_timer style notched_10
 bossbar set ogvz:boss_timer visible false

@@ -52,6 +52,11 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]
+give @s minecraft:wooden_shovel[ \
+  minecraft:enchantments={ \
+    "minecraft:silk_touch":1 \
+  } \
+]
 give @s minecraft:chest 2
 give @s minecraft:oak_sign 3
 give @s minecraft:bone[ \

@@ -21,7 +21,7 @@ execute unless entity @s[scores={temp.clock_count=5..}] run title @s actionbar [
   "", \
   {"text":"[Summoning Book]","bold":true,"color":"dark_red"}, \
   {"text":" You need at least ","color":"dark_red"}, \
-  {"text":"3 Clocks","bold":true,"color":"dark_red"}, \
+  {"text":"5 Clocks","bold":true,"color":"dark_red"}, \
   {"text":"!","color":"dark_red"} \
 ]
 execute unless entity @s[scores={temp.clock_count=5..}] run return run scoreboard objectives remove temp.clock_count
@@ -38,7 +38,7 @@ execute unless entity @s[level=30..] run return run scoreboard objectives remove
 clear @s minecraft:clock 5
 
 # Remove 30 levels.
-scoreboard players remove @s ogvz.dwarf.mana_buildup.micromana 30000000
+scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 30
 
 title @s actionbar [ \
   "", \

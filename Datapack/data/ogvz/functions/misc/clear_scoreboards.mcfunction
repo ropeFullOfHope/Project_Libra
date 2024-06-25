@@ -19,6 +19,7 @@ scoreboard players set @s ogvz.rclick.cooldown 0
 scoreboard players set @s ogvz.rclick.custom_model_data 0
 scoreboard players set @s ogvz.misc.leave_game 0
 
+scoreboard players set @s ogvz.dwarf.mana_buildup.mana 0
 scoreboard players set @s ogvz.dwarf.mana_buildup.micromana 0
 scoreboard players set @s ogvz.wither_warrior.whispersong.flame.ticks 0
 scoreboard players set @s ogvz.chicken_nugget.fly.ticks 0

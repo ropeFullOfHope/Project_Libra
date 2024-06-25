@@ -2,4 +2,4 @@ execute as @e[tag=ogvz.air_toggle,scores={ogvz.air_toggle=1..}] run data modify 
 
 execute as @e[tag=ogvz.air_toggle,scores={ogvz.air_toggle=1..}] run scoreboard players remove @s ogvz.air_toggle 1
 
-schedule function ogvz:schedule/air_toggle_1 1t replace
+schedule function ogvz:schedules/air_toggle_1 1t replace

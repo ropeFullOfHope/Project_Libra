@@ -547,7 +547,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:heart_of_the_sea",
+          "name": "minecraft:nether_star",
           "functions": [
             {
               "function": "minecraft:set_components",

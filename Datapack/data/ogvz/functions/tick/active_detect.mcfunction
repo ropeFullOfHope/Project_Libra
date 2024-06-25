@@ -148,7 +148,7 @@ execute as @s[tag=ogvz.zombie.class.enderman,scores={ogvz.rclick.custom_model_da
 
 
 ### Other (9xxx)
-execute as @s[tag=!ogvz.dwarf,tag=!ogvz.zombie,scores={ogvz.rclick.custom_model_data=9000}] at @s run function ogvz:misc/join_game
+execute as @s[tag=!ogvz.joined,scores={ogvz.rclick.custom_model_data=9000}] at @s run function ogvz:misc/join_game
 execute as @s[tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=9001}] at @s run function ogvz:zombies/give_discs
 execute as @s[tag=ogvz.zombie,scores={ogvz.rclick.custom_model_data=9002}] at @s run function ogvz:zombies/enderman/portal_teleport
 

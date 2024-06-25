@@ -63,15 +63,13 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 ]
 
 # Gives builder all their items.
-item replace entity @s weapon.offhand with minecraft:wooden_sword[ \
+item replace entity @s weapon.offhand with minecraft:warped_fungus_on_a_stick[ \
   minecraft:custom_model_data=1000, \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
       {type:"minecraft:player.block_interaction_range",name:"minecraft:player.block_interaction_range",amount:2,operation:"add_value",slot:"mainhand",uuid:[I;1,1,1,1]}, \
-      {type:"minecraft:player.block_interaction_range",name:"minecraft:player.block_interaction_range",amount:2,operation:"add_value",slot:"offhand",uuid:[I;2,2,2,2]}, \
-      {type:"minecraft:generic.attack_damage",name:"minecraft:generic.attack_damage",amount:0,operation:"add_value",slot:"mainhand",uuid:[I;1,1,1,1]}, \
-      {type:"minecraft:generic.attack_speed",name:"minecraft:generic.attack_speed",amount:0,operation:"add_value",slot:"mainhand",uuid:[I;1,1,1,1]} \
+      {type:"minecraft:player.block_interaction_range",name:"minecraft:player.block_interaction_range",amount:2,operation:"add_value",slot:"offhand",uuid:[I;2,2,2,2]} \
     ], \
     show_in_tooltip:false \
   }, \
@@ -122,7 +120,7 @@ give @s iron_pickaxe[ \
   }, \
   minecraft:enchantments={ \
     levels:{ \
-      "minecraft:efficiency":4, \
+      "minecraft:efficiency":2, \
       "minecraft:unbreaking":2 \
     } \
   } \
