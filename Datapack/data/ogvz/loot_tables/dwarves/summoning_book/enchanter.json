@@ -18,7 +18,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Use to enchant weapons, tools and armor.",
+                  "text": "Use to enchant.",
                   "color": "blue"
                 }
               ],
@@ -104,11 +104,11 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Give to the Alchemist.",
+                  "text": "Give to the alchemist.",
                   "color": "blue"
                 },
                 {
-                  "text": "Use to fuel the Brewing Stand.",
+                  "text": "Use to fuel the brewing stand.",
                   "color": "blue"
                 }
               ],

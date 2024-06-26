@@ -47,7 +47,8 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Super Fertilizer","color":"green"}', \
   minecraft:lore=[ \
-    '{"text":"Allows flowers to grow in any biome.","color":"blue"}' \
+    '{"text":"Allows flowers to grow in any","color":"blue"}', \
+    '{"text":"biome.","color":"blue"}' \
   ] \
 ]
 give @s minecraft:wooden_shovel[ \
@@ -59,9 +60,8 @@ give @s minecraft:chest 2
 give @s minecraft:oak_sign 3
 give @s minecraft:bone[ \
   minecraft:lore=[ \
-    '{"text":"Give to the Tailor.","color":"blue"}', \
-    '{"text":"Craft into Bone Meal.","color":"blue"}', \
-    '{"text":"Use Bone Meal to grow flowers.","color":"blue"}' \
+    '{"text":"Give to the tailor.","color":"blue"}', \
+    '{"text":"Craft into bone meal.","color":"blue"}' \
   ] \
 ] 16
 give @s minecraft:cooked_porkchop[ \

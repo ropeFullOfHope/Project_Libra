@@ -469,7 +469,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Mine to get Redstone Dust.",
+                  "text": "Mine to get redstone.",
                   "color": "blue"
                 }
               ],
@@ -497,11 +497,11 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Share with the Baker.",
+                  "text": "Share with baker.",
                   "color": "blue"
                 },
                 {
-                  "text": "Use to fuel the Furnace.",
+                  "text": "Use to fuel the furnace.",
                   "color": "blue"
                 }
               ],
@@ -522,11 +522,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Give to the Enchanter.",
-                  "color": "blue"
-                },
-                {
-                  "text": "Transmute with Summoning Book.",
+                  "text": "Give to the enchanter.",
                   "color": "blue"
                 }
               ],

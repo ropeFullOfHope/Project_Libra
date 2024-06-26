@@ -13,7 +13,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Craft into Dye.",
+                  "text": "Craft into dye.",
                   "color": "blue"
                 }
               ],

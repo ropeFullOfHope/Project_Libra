@@ -72,7 +72,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Grants temporary Speed.",
+                  "text": "Grants temporary speed.",
                   "color": "blue"
                 },
                 {
@@ -113,7 +113,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Grants temporary Strength.",
+                  "text": "Grants temporary strength.",
                   "color": "blue"
                 },
                 {
@@ -154,7 +154,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Grants temporary Jump Boost.",
+                  "text": "Grants temporary jump boost.",
                   "color": "blue"
                 },
                 {
@@ -278,27 +278,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:glass",
-          "functions": [
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Craft into Glass Bottles.",
-                  "color": "blue"
-                }
-              ],
-              "mode": "insert"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
           "name": "minecraft:bone",
           "functions": [
             {
@@ -312,11 +291,11 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Give to the Tailor.",
+                  "text": "Give to the tailor.",
                   "color": "blue"
                 },
                 {
-                  "text": "Craft into Bone Meal.",
+                  "text": "Craft into bone meal.",
                   "color": "blue"
                 }
               ],
@@ -337,11 +316,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Give to the Enchanter.",
-                  "color": "blue"
-                },
-                {
-                  "text": "Transmute with Summoning Book.",
+                  "text": "Give to the enchanter.",
                   "color": "blue"
                 }
               ],

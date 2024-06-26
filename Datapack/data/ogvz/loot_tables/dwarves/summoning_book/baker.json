@@ -348,7 +348,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Mine to get Clay Balls.",
+                  "text": "Mine to get clay balls.",
                   "color": "blue"
                 }
               ],
@@ -376,15 +376,15 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Give to the Alchemist.",
+                  "text": "Give to the alchemist.",
                   "color": "blue"
                 },
                 {
-                  "text": "Fill with water,",
+                  "text": "Fill with water then place in",
                   "color": "blue"
                 },
                 {
-                  "text": "then place in Brewing Stand.",
+                  "text": "brewing stand.",
                   "color": "blue"
                 }
               ],
@@ -405,11 +405,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Give to the Enchanter.",
-                  "color": "blue"
-                },
-                {
-                  "text": "Transmute with Summoning Book.",
+                  "text": "Give to the enchanter.",
                   "color": "blue"
                 }
               ],

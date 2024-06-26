@@ -57,11 +57,11 @@
                   "function": "minecraft:set_lore",
                   "lore": [
                     {
-                      "text": "Share with the Alchemist.",
+                      "text": "Share with alchemist.",
                       "color": "blue"
                     },
                     {
-                      "text": "Craft into Clocks.",
+                      "text": "Craft into clocks.",
                       "color": "blue"
                     },
                     {

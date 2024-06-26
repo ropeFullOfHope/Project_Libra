@@ -57,20 +57,21 @@ give @s minecraft:chest 2
 give @s minecraft:oak_sign 3
 give @s minecraft:glass_bottle[ \
   minecraft:lore=[ \
-    '{"text":"Fill with Water to get Water Bottles.","color":"blue"}', \
-    '{"text":"Put Water Bottles in Brewing Stand.","color":"blue"}' \
+    '{"text":"Give to the alchemist.","color":"blue"}', \
+    '{"text":"Fill with water then place in","color":"blue"}', \
+    '{"text":"brewing stand.","color":"blue"}' \
   ] \
 ] 12
 give @s minecraft:blaze_powder[ \
   minecraft:lore=[ \
-    '{"text":"Give to the Alchemist.","color":"blue"}', \
-    '{"text":"Use to fuel the Brewing Stand.","color":"blue"}' \
+    '{"text":"Give to the alchemist.","color":"blue"}', \
+    '{"text":"Use to fuel the brewing stand.","color":"blue"}' \
   ] \
 ] 2
 give @s minecraft:redstone[ \
   minecraft:lore=[ \
-    '{"text":"Share with Alchemist.","color":"blue"}', \
-    '{"text":"Use to craft Clocks.","color":"blue"}', \
+    '{"text":"Share with alchemist.","color":"blue"}', \
+    '{"text":"Craft into clocks.","color":"blue"}', \
     '{"text":"Use as brewing ingredient.","color":"blue"}' \
   ] \
 ] 4

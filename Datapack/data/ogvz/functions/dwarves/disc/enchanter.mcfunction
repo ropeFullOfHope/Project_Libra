@@ -48,7 +48,7 @@ give @s minecraft:chest 8
 give @s minecraft:oak_sign 3
 give @s minecraft:emerald[ \
   minecraft:lore=[ \
-    '{"text":"Give to the Enchanter.","color":"blue"}' \
+    '{"text":"Give to the enchanter.","color":"blue"}' \
   ] \
 ] 4
 give @s minecraft:cooked_porkchop[ \

@@ -14,6 +14,17 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Clear the shrine if obstructed.
+execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine] positioned ~ ~3 ~ positioned ~-0.5 ~-0.5 ~-0.5 unless block ~ ~ ~ #ogvz:go_through run setblock ~ ~ ~ minecraft:air
+execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine] positioned ~ ~3 ~ positioned ~-0.5 ~-0.5 ~0.5 unless block ~ ~ ~ #ogvz:go_through run setblock ~ ~ ~ minecraft:air
+execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine] positioned ~ ~3 ~ positioned ~-0.5 ~0.5 ~-0.5 unless block ~ ~ ~ #ogvz:go_through run setblock ~ ~ ~ minecraft:air
+execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine] positioned ~ ~3 ~ positioned ~-0.5 ~0.5 ~0.5 unless block ~ ~ ~ #ogvz:go_through run setblock ~ ~ ~ minecraft:air
+execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine] positioned ~ ~3 ~ positioned ~0.5 ~-0.5 ~-0.5 unless block ~ ~ ~ #ogvz:go_through run setblock ~ ~ ~ minecraft:air
+execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine] positioned ~ ~3 ~ positioned ~0.5 ~-0.5 ~0.5 unless block ~ ~ ~ #ogvz:go_through run setblock ~ ~ ~ minecraft:air
+execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine] positioned ~ ~3 ~ positioned ~0.5 ~0.5 ~-0.5 unless block ~ ~ ~ #ogvz:go_through run setblock ~ ~ ~ minecraft:air
+execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine] positioned ~ ~3 ~ positioned ~0.5 ~0.5 ~0.5 unless block ~ ~ ~ #ogvz:go_through run setblock ~ ~ ~ minecraft:air
+
+# Teleport to the top of the shrine.
 execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine] run tp @s ~ ~2 ~
 
 team join d1DWARF @s

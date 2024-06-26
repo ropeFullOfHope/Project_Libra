@@ -46,13 +46,13 @@ give @s minecraft:chest 2
 give @s minecraft:oak_sign 3
 give @s minecraft:clay_ball[ \
   minecraft:lore=[ \
-    '{"text":"Smelt to get Bricks.","color":"blue"}' \
+    '{"text":"Smelt into bricks.","color":"blue"}' \
   ] \
 ] 40
 give @s minecraft:coal[ \
   minecraft:lore=[ \
-    '{"text":"Share with Baker and Alchemist.","color":"blue"}', \
-    '{"text":"Use to fuel the Furnace.","color":"blue"}' \
+    '{"text":"Share with baker.","color":"blue"}', \
+    '{"text":"Use to fuel the furnace.","color":"blue"}' \
   ] \
 ] 5
 give @s minecraft:cooked_porkchop[ \

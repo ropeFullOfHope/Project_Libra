@@ -70,20 +70,19 @@ give @s minecraft:chest 2
 give @s minecraft:oak_sign 3
 give @s minecraft:gold_ore[ \
   minecraft:lore=[ \
-    '{"text":"Give to the Blacksmith.","color":"blue"}', \
-    '{"text":"Smelt to get Gold Ingots.","color":"blue"}', \
-    '{"text":"Use Gold Ingots to craft Clocks.","color":"blue"}' \
+    '{"text":"Give to the blacksmith.","color":"blue"}', \
+    '{"text":"Smelt into gold ingots.","color":"blue"}' \
   ] \
 ] 80
 give @s minecraft:redstone_ore[ \
   minecraft:lore=[ \
-    '{"text":"Mine to get Redstone Dust.","color":"blue"}' \
+    '{"text":"Mine to get redstone.","color":"blue"}' \
   ] \
 ] 5
 give @s minecraft:coal[ \
   minecraft:lore=[ \
-    '{"text":"Share with Baker.","color":"blue"}', \
-    '{"text":"Use to fuel the Furnace.","color":"blue"}' \
+    '{"text":"Share with baker.","color":"blue"}', \
+    '{"text":"Use to fuel the furnace.","color":"blue"}' \
   ] \
 ] 10
 give @s minecraft:flint_and_steel
