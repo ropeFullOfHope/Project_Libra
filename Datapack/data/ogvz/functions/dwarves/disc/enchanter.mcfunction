@@ -51,7 +51,15 @@ give @s minecraft:emerald[ \
     '{"text":"Give to the Enchanter.","color":"blue"}' \
   ] \
 ] 4
-give @s minecraft:cooked_porkchop 1
+give @s minecraft:cooked_porkchop[ \
+  minecraft:lore=[ \
+    '{"text":"Medium Meal","italic":false,"color":"gray"}', \
+    '{"text":" "}', \
+    '{"text":"When Consumed:","italic":false,"color":"gray"}', \
+    '{"text":"+8 Nutrition","italic":false,"color":"blue"}', \
+    '{"text":"+12.8 Saturation","italic":false,"color":"blue"}' \
+  ] \
+] 1
 execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \

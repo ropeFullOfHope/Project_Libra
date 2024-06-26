@@ -22,4 +22,4 @@ execute unless entity @e[type=minecraft:marker,tag=temp.ray_origin,distance=..4.
 tp @s ^ ^ ^0.1
 
 # Repeat ray casting loop.
-execute as @s at @s run function ogvz:dwarves/fertilizer_loop
+execute as @s at @s run function ogvz:dwarves/item/fertilizer_loop

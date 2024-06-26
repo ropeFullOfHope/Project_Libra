@@ -84,8 +84,8 @@ execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3101}] at @s r
 execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3102}] at @s run function ogvz:dwarves/item/magic_potion/strength
 execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3103}] at @s run function ogvz:dwarves/item/magic_potion/jump_boost
 execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3104}] at @s run function ogvz:dwarves/item/pearl_rod
-execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3105}] at @s run function ogvz:dwarves/item/water_wand
-execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3106}] at @s run function ogvz:dwarves/item/fertilizer
+execute as @s[scores={ogvz.rclick.custom_model_data=3105}] at @s run function ogvz:dwarves/item/water_wand
+execute as @s[scores={ogvz.rclick.custom_model_data=3106}] at @s run function ogvz:dwarves/item/fertilizer
 
 ### Dwarf hero items (4xxx)
 # Dragon Warrior (40xx)

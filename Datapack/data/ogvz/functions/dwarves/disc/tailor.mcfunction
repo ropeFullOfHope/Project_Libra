@@ -47,9 +47,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Super Fertilizer","color":"green"}', \
   minecraft:lore=[ \
-    '{"text":"Allows flowers to grow in any biome.","color":"blue"}', \
-    '{"text":"Single-use item.","italic":false,"color":"red"}', \
-    '{"text":"Active Item","italic":false,"color":"green"}' \
+    '{"text":"Allows flowers to grow in any biome.","color":"blue"}' \
   ] \
 ]
 give @s minecraft:wooden_shovel[ \
@@ -66,7 +64,15 @@ give @s minecraft:bone[ \
     '{"text":"Use Bone Meal to grow flowers.","color":"blue"}' \
   ] \
 ] 16
-give @s minecraft:cooked_porkchop 1
+give @s minecraft:cooked_porkchop[ \
+  minecraft:lore=[ \
+    '{"text":"Medium Meal","italic":false,"color":"gray"}', \
+    '{"text":" "}', \
+    '{"text":"When Consumed:","italic":false,"color":"gray"}', \
+    '{"text":"+8 Nutrition","italic":false,"color":"blue"}', \
+    '{"text":"+12.8 Saturation","italic":false,"color":"blue"}' \
+  ] \
+] 1
 execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \

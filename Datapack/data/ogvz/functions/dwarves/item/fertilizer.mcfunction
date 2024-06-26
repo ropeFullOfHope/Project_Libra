@@ -23,16 +23,10 @@ execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:ma
 execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:marker,tag=temp.ray_origin,limit=1,sort=nearest] ~ ~ ~ ~ ~
 
 # Start the ray casting loop.
-execute as @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] at @s run function ogvz:dwarves/fertilizer_loop
+execute as @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] at @s run function ogvz:dwarves/item/fertilizer_loop
 
 # Replace biome if the block targeted is a Grass Block.
 execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run fillbiome ~-5 ~-3 ~-5 ~5 ~3 ~5 minecraft:plains
-
-execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run title @s actionbar [ \
-  "", \
-  {"text":"[Fertilizer]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
-]
 
 # Play a sound at the Grass Block.
 execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run playsound minecraft:block.composter.fill_success block @a ~ ~ ~ 1 1
