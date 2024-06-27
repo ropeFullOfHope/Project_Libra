@@ -66,19 +66,19 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 item replace entity @s weapon.offhand with minecraft:warped_fungus_on_a_stick[ \
   minecraft:custom_model_data=1000, \
   minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:player.block_interaction_range",name:"minecraft:player.block_interaction_range",amount:2,operation:"add_value",slot:"mainhand",uuid:[I;1,1,1,1]}, \
-      {type:"minecraft:player.block_interaction_range",name:"minecraft:player.block_interaction_range",amount:2,operation:"add_value",slot:"offhand",uuid:[I;2,2,2,2]} \
-    ], \
-    show_in_tooltip:false \
-  }, \
   minecraft:item_name='{"text":"Crab Claw"}', \
   minecraft:lore=[ \
     '{"text":" "}', \
     '{"text":"When in Hand:","italic":false,"color":"gray"}', \
     '{"text":"+2 Block Reach","italic":false,"color":"blue"}' \
-  ] \
+  ], \
+  minecraft:attribute_modifiers={ \
+    modifiers:[ \
+      {type:"minecraft:player.block_interaction_range",name:"minecraft:player.block_interaction_range",amount:2,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:player.block_interaction_range",name:"minecraft:player.block_interaction_range",amount:2,operation:"add_value",slot:"offhand",id:"ogvz:offhand"} \
+    ], \
+    show_in_tooltip:false \
+  } \
 ]
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_model_data=3000, \

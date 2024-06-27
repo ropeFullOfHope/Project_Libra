@@ -75,7 +75,7 @@
     "minecraft:redstone_wall_torch",
     "minecraft:tripwire",
     "minecraft:tripwire_hook",
-    "#minecraft:air"
+    "#minecraft:air",
     "#minecraft:signs",
     "#minecraft:pressure_plates",
     "#minecraft:rails",

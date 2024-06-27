@@ -42,12 +42,7 @@
                   "modifiers": [
                     {
                       "type": "minecraft:generic.armor",
-                      "uuid": [
-                        1,
-                        1,
-                        1,
-                        1
-                      ],
+                      "id": "ogvz:mainhand",
                       "name": "minecraft:generic.armor",
                       "amount": 2,
                       "operation": "add_value",
@@ -55,12 +50,7 @@
                     },
                     {
                       "type": "minecraft:generic.armor",
-                      "uuid": [
-                        2,
-                        2,
-                        2,
-                        2
-                      ],
+                      "id": "ogvz:offhand",
                       "name": "minecraft:generic.armor",
                       "amount": 2,
                       "operation": "add_value",
@@ -68,12 +58,7 @@
                     },
                     {
                       "type": "minecraft:generic.knockback_resistance",
-                      "uuid": [
-                        1,
-                        1,
-                        1,
-                        1
-                      ],
+                      "id": "ogvz:mainhand",
                       "name": "minecraft:generic.knockback_resistance",
                       "amount": 0.2,
                       "operation": "add_value",
@@ -81,12 +66,7 @@
                     },
                     {
                       "type": "minecraft:generic.knockback_resistance",
-                      "uuid": [
-                        2,
-                        2,
-                        2,
-                        2
-                      ],
+                      "id": "ogvz:offhand",
                       "name": "minecraft:generic.knockback_resistance",
                       "amount": 0.2,
                       "operation": "add_value",
@@ -94,12 +74,7 @@
                     },
                     {
                       "type": "minecraft:generic.movement_speed",
-                      "uuid": [
-                        1,
-                        1,
-                        1,
-                        1
-                      ],
+                      "id": "ogvz:mainhand",
                       "name": "minecraft:generic.movement_speed",
                       "amount": -0.015,
                       "operation": "add_value",
@@ -107,12 +82,7 @@
                     },
                     {
                       "type": "minecraft:generic.movement_speed",
-                      "uuid": [
-                        2,
-                        2,
-                        2,
-                        2
-                      ],
+                      "id": "ogvz:offhand",
                       "name": "minecraft:generic.movement_speed",
                       "amount": -0.015,
                       "operation": "add_value",

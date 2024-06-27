@@ -53,8 +53,8 @@ item replace entity @s armor.head with minecraft:golden_helmet[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:3,operation:"add_value",slot:"head",uuid:[I;3,3,3,3]}, \
-      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"head",uuid:[I;3,3,3,3]} \
+      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:3,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
     ] \
   } \
 ]
@@ -70,8 +70,8 @@ item replace entity @s armor.chest with minecraft:golden_chestplate[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:8,operation:"add_value",slot:"chest",uuid:[I;4,4,4,4]}, \
-      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"chest",uuid:[I;4,4,4,4]} \
+      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:8,operation:"add_value",slot:"chest",id:"ogvz:chest"}, \
+      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"chest",id:"ogvz:chest"} \
     ] \
   } \
 ]
@@ -87,8 +87,8 @@ item replace entity @s armor.legs with minecraft:golden_leggings[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:6,operation:"add_value",slot:"legs",uuid:[I;5,5,5,5]}, \
-      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"legs",uuid:[I;5,5,5,5]} \
+      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:6,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
     ] \
   } \
 ]
@@ -105,8 +105,8 @@ item replace entity @s armor.feet with minecraft:golden_boots[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:3,operation:"add_value",slot:"feet",uuid:[I;6,6,6,6]}, \
-      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"feet",uuid:[I;6,6,6,6]} \
+      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:3,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
     ] \
   } \
 ]
@@ -133,8 +133,8 @@ give @s minecraft:golden_axe[ \
   ], \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.attack_damage",name:"minecraft:generic.attack_damage",amount:8.5,operation:"add_value",slot:"mainhand",uuid:[I;1,1,1,1]}, \
-      {type:"minecraft:generic.attack_speed",name:"minecraft:generic.attack_speed",amount:-2.6,operation:"add_value",slot:"mainhand",uuid:[I;1,1,1,1]} \
+      {type:"minecraft:generic.attack_damage",name:"minecraft:generic.attack_damage",amount:8.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:generic.attack_speed",name:"minecraft:generic.attack_speed",amount:-2.6,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
     ], \
     show_in_tooltip:false \
   } \
