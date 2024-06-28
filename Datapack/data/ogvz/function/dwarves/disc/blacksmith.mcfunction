@@ -100,24 +100,24 @@ execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \
   "", \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You are a ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"You are a ","color":"yellow"}, \
   {"text":"Blacksmith","bold":true,"color":"blue"}, \
   {"text":". Your job is to make ","color":"yellow"}, \
   {"text":"Weapons","color":"gold"}, \
   {"text":" and\n   ","color":"yellow"}, \
   {"text":"Tools","color":"gold"}, \
   {"text":" for the dwarves.\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" Begin by smelting ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"Begin by smelting ","color":"yellow"}, \
   {"text":"Gold","color":"gold"}, \
   {"text":", then combine it with ","color":"yellow"}, \
   {"text":"Redstone","color":"gold"}, \
   {"text":"\n   to craft ","color":"yellow"}, \
   {"text":"Clocks","color":"gold"}, \
   {"text":".\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You can get more ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"You can get more ","color":"yellow"}, \
   {"text":"Gold Ore","color":"gold"}, \
   {"text":" from the ","color":"yellow"}, \
   {"text":"Tailor","color":"blue"}, \

@@ -16,6 +16,27 @@
     },
     {
       "type": "bitmap",
+      "file": "ogvz:font/death_border_left.png",
+      "height": 7,
+      "ascent": 7,
+      "chars": ["\u1100"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/death_border_skull.png",
+      "height": 7,
+      "ascent": 7,
+      "chars": ["\u1101"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/death_border_right.png",
+      "height": 7,
+      "ascent": 7,
+      "chars": ["\u1102"]
+    },
+    {
+      "type": "bitmap",
       "file": "ogvz:font/expstart.png",
       "height": 7,
       "ascent": 7,

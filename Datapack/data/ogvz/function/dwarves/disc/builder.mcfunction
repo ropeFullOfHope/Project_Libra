@@ -138,14 +138,14 @@ execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \
   "", \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You are a ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"You are a ","color":"yellow"}, \
   {"text":"Builder","bold":true,"color":"green"}, \
   {"text":". Your job is to ","color":"yellow"}, \
   {"text":"build the keep","color":"gold"}, \
   {"text":".\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" Use your ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"Use your ","color":"yellow"}, \
   {"text":"Summoning Book","color":"gold"}, \
   {"text":" to conjure ","color":"yellow"}, \
   {"text":"Blocks","color":"gold"}, \

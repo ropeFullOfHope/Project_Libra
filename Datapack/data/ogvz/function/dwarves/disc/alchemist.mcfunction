@@ -88,14 +88,14 @@ execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \
   "", \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You are an ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"You are an ","color":"yellow"}, \
   {"text":"Alchemist","bold":true,"color":"blue"}, \
   {"text":". You make ","color":"yellow"}, \
   {"text":"Magic Potions","color":"gold"}, \
   {"text":" for the\n   dwarves.\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" Begin by putting ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"Begin by putting ","color":"yellow"}, \
   {"text":"Water Bottles","color":"gold"}, \
   {"text":" and ","color":"yellow"}, \
   {"text":"Redstone","color":"gold"}, \
@@ -104,14 +104,14 @@ tellraw @s [ \
   {"text":" to create ","color":"yellow"}, \
   {"text":"Mundane Potions","color":"gold"}, \
   {"text":".\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You can get more ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"You can get more ","color":"yellow"}, \
   {"text":"Bottles","color":"gold"}, \
   {"text":" from the ","color":"yellow"}, \
   {"text":"Baker","color":"blue"}, \
   {"text":".\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You can get more ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"You can get more ","color":"yellow"}, \
   {"text":"Redstone","color":"gold"}, \
   {"text":" from the ","color":"yellow"}, \
   {"text":"Blacksmith","color":"blue"}, \

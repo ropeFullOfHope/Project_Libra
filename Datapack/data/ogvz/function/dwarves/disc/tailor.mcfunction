@@ -77,24 +77,24 @@ execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \
   "", \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You are a ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"You are a ","color":"yellow"}, \
   {"text":"Tailor","bold":true,"color":"blue"}, \
   {"text":". You make ","color":"yellow"}, \
   {"text":"Armor","color":"gold"}, \
   {"text":" and ","color":"yellow"}, \
   {"text":"Shields","color":"gold"}, \
   {"text":" for the\n   dwarves.\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" Begin by using your ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"Begin by using your ","color":"yellow"}, \
   {"text":"Bone Meal","color":"gold"}, \
   {"text":" to get ","color":"yellow"}, \
   {"text":"Flowers","color":"gold"}, \
   {"text":", then\n   craft them into ","color":"yellow"}, \
   {"text":"Dye","color":"gold"}, \
   {"text":".\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You can get more ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"You can get more ","color":"yellow"}, \
   {"text":"Bones","color":"gold"}, \
   {"text":" from the ","color":"yellow"}, \
   {"text":"Alchemist","color":"blue"}, \

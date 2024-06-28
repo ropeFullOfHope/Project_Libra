@@ -39,30 +39,30 @@ recipe give @s *
 
 tellraw @s [ \
   "", \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" Welcome to ","bold":true,"color":"gold"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"Welcome to ","bold":true,"color":"gold"}, \
   {"text":"<","bold":true,"color":"gold"}, \
   {"text":"OG","bold":true,"color":"dark_aqua"}, \
   {"text":"v","bold":true,"color":"gold"}, \
   {"text":"Z","bold":true,"color":"dark_red"}, \
   {"text":">","bold":true,"color":"gold"}, \
   {"text":"!\n","bold":true,"color":"gold"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" By continuing to play, you agree to our ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"By continuing to play, you agree to our ","color":"yellow"}, \
   {"text":"Privacy Policy","color":"gold"}, \
   {"text":"\n   and ","color":"yellow"}, \
   {"text":"TOS","color":"gold"}, \
   {"text":", provided ","color":"yellow"}, \
   {"text":"[HERE]","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":[{"text":"link","italic":true}]},"clickEvent":{"action":"open_url","value":"https://ogvz.weebly.com/TOS.html"}}, \
   {"text":".\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" Please read the ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"Please read the ","color":"yellow"}, \
   {"text":"Rules","color":"gold"}, \
   {"text":" inside the ","color":"yellow"}, \
   {"text":"Rules Book","color":"gold"}, \
   {"text":".\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" If you enjoy playing on the server, please consider\n   supporting us by donating ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"If you enjoy playing on the server, please consider\n   supporting us by donating ","color":"yellow"}, \
   {"text":"[HERE]","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":[{"text":"link","italic":true}]},"clickEvent":{"action":"open_url","value":"https://ogvz.weebly.com/store.html"}}, \
   {"text":".\n","color":"yellow"} \
 ]

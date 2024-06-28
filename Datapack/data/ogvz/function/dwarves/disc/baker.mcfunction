@@ -68,20 +68,20 @@ execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \
   "", \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You are a ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"You are a ","color":"yellow"}, \
   {"text":"Baker","bold":true,"color":"blue"}, \
   {"text":". You make ","color":"yellow"}, \
   {"text":"Food","color":"gold"}, \
   {"text":" for the dwarves.\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" Begin by smelting ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"Begin by smelting ","color":"yellow"}, \
   {"text":"Clay Balls","color":"gold"}, \
   {"text":" into ","color":"yellow"}, \
   {"text":"Bricks","color":"gold"}, \
   {"text":".\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You can get more ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"You can get more ","color":"yellow"}, \
   {"text":"Coal","color":"gold"}, \
   {"text":" from the ","color":"yellow"}, \
   {"text":"Blacksmith","color":"blue"}, \

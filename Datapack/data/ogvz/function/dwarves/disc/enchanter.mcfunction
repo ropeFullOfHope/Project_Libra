@@ -64,8 +64,8 @@ execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \
   "", \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You are an ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"You are an ","color":"yellow"}, \
   {"text":"Enchanter","bold":true,"color":"blue"}, \
   {"text":". You enchant ","color":"yellow"}, \
   {"text":"Armor","color":"gold"}, \
@@ -74,16 +74,16 @@ tellraw @s [ \
   {"text":" and\n   ","color":"yellow"}, \
   {"text":"Tools","color":"gold"}, \
   {"text":" for the dwarves.\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" Begin by using your ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"Begin by using your ","color":"yellow"}, \
   {"text":"Summoning Book","color":"gold"}, \
   {"text":" to get ","color":"yellow"}, \
   {"text":"Lapis Lazuli","color":"gold"}, \
   {"text":",\n   then use it to enchant at the ","color":"yellow"}, \
   {"text":"Enchanting Table","color":"gold"}, \
   {"text":".\n","color":"yellow"}, \
-  {"text":"\u25B6","bold":true,"color":"gold"}, \
-  {"text":" You can get more ","color":"yellow"}, \
+  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"You can get more ","color":"yellow"}, \
   {"text":"Emeralds","color":"gold"}, \
   {"text":" from other ","color":"yellow"}, \
   {"text":"Dwarves","color":"aqua"}, \
