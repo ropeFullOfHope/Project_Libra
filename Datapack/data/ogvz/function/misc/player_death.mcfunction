@@ -24,6 +24,7 @@ xp set @s 0 levels
 xp set @s 0 points
 
 execute as @s[tag=ogvz.dwarf] at @s run function ogvz:misc/dwarf_death_message
+execute as @s[tag=ogvz.dwarf] at @s run function ogvz:misc/gravestone
 
 ### If the player joined the game, dying means they always join the zombie team.
 # Remove all their tags.

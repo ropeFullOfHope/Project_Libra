@@ -31,6 +31,7 @@ kill @e[type=minecraft:wither,tag=ogvz.class.boss]
 kill @e[type=minecraft:marker,tag=ogvz.marker]
 kill @e[type=minecraft:block_display,tag=ogvz.block_display]
 kill @e[type=minecraft:item_display,tag=ogvz.item_display]
+kill @e[type=minecraft:text_display,tag=ogvz.text_display]
 kill @e[type=minecraft:armor_stand,tag=ogvz.armor_stand]
 
 # Forceload 0 0 0.
