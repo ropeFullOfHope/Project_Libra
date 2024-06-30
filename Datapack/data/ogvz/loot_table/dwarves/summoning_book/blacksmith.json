@@ -76,13 +76,14 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:max_damage": 3122,
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
                     {
                       "type": "minecraft:generic.attack_damage",
                       "id": "ogvz:mainhand",
                       "name": "minecraft:generic.attack_damage",
-                      "amount": 11,
+                      "amount": 10,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
@@ -111,7 +112,7 @@
                   "italic": false
                 },
                 {
-                  "text": " 12 Attack Damage",
+                  "text": " 11 Attack Damage",
                   "color": "dark_green",
                   "italic": false
                 },
@@ -138,13 +139,14 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_model_data": 1000,
+                "minecraft:max_damage": 3122,
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
                     {
                       "type": "minecraft:generic.attack_damage",
                       "id": "ogvz:mainhand",
                       "name": "minecraft:generic.attack_damage",
-                      "amount": 6,
+                      "amount": 4,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
@@ -188,7 +190,7 @@
                   "italic": false
                 },
                 {
-                  "text": " 7 Attack Damage",
+                  "text": " 5 Attack Damage",
                   "color": "dark_green",
                   "italic": false
                 },
@@ -214,14 +216,14 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:max_damage": 781,
+                "minecraft:max_damage": 1561,
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
                     {
                       "type": "minecraft:generic.attack_damage",
                       "id": "ogvz:mainhand",
                       "name": "minecraft:generic.attack_damage",
-                      "amount": 9,
+                      "amount": 8,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
@@ -258,7 +260,7 @@
                   "italic": false
                 },
                 {
-                  "text": " 10 Attack Damage",
+                  "text": " 9 Attack Damage",
                   "color": "dark_green",
                   "italic": false
                 },
@@ -293,7 +295,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:crossbow"
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_damage": 768,
+              }
+            }
+          ]
         }
       ],
       "conditions": [

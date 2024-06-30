@@ -30,7 +30,7 @@ execute as @s[predicate=ogvz:player/is_astraeos_] run tellraw @a [ \
   "", \
   {"text":"\u25B6 ","bold":true,"color":"red"}, \
   {"selector":"@s"}, \
-  {"text":" has fallen, now here be dragons.","color":"red"} \
+  {"text":" has fallen, now here be dragons.","color":"light_purple"} \
 ]
 execute as @s[predicate=ogvz:player/is_astraeos_] at @s run function ogvz:misc/custom_death_effect/astraeos_
 execute as @s[predicate=ogvz:player/is_astraeos_] run return 0
