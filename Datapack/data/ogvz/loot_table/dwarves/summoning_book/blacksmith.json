@@ -217,6 +217,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:max_damage": 1561,
+                "minecraft:rarity": "common",
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
                     {
@@ -300,7 +301,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:max_damage": 768,
+                "minecraft:max_damage": 768
               }
             }
           ]
