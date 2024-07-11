@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: every mcfunction in ogvz:dwarves/disc/
 # File Name: boss_message
-# Function Name: ogvz:dwarves/boss_message
+# Function Name: ogvz:dwarves/doom_event_message
 # File Purpose: Inform players about the selected boss.
 # Created By: ropeFullOfHope
 # 

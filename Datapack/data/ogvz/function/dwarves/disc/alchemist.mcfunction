@@ -122,4 +122,4 @@ playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2
 
 particle minecraft:happy_villager ~ ~1 ~ 0.1 0.5 0.1 0.01 10
 
-function ogvz:dwarves/boss_message
+function ogvz:dwarves/doom_event_message

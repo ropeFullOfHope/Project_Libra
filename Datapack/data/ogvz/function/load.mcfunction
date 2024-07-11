@@ -18,6 +18,7 @@ function ogvz:load/setup
 function ogvz:load/gamerules
 function ogvz:load/bossbars
 function ogvz:load/scoreboards
+function ogvz:load/triggers
 function ogvz:load/teams
 
 schedule clear ogvz:schedules/day_time

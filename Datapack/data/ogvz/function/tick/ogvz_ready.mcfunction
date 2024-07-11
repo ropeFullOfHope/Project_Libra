@@ -23,6 +23,9 @@ execute as @s at @s run function ogvz:misc/remove_tags
 tag @s remove ogvz.admin
 tag @s remove ogvz.joined
 
+scoreboard players enable @s ogvz.trigger.doom_event
+scoreboard players enable @s ogvz.trigger.mark_for_death
+
 team leave @s
 
 xp set @s 0 levels
