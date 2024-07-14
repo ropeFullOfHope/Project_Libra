@@ -1,10 +1,10 @@
 {
-  "anvil_cost": 1,
+  "anvil_cost": 4,
   "description": {
-    "translate": "enchantment.minecraft.piercing"
+    "translate": "enchantment.minecraft.luck_of_the_sea"
   },
   "effects": {
-    "minecraft:projectile_piercing": [
+    "minecraft:fishing_luck_bonus": [
       {
         "effect": {
           "type": "minecraft:add",
@@ -21,14 +21,14 @@
     "base": 50,
     "per_level_above_first": 0
   },
-  "max_level": 4,
+  "max_level": 3,
   "min_cost": {
-    "base": 1,
-    "per_level_above_first": 8
+    "base": 15,
+    "per_level_above_first": 9
   },
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/crossbow",
-  "weight": 5
+  "supported_items": "#minecraft:enchantable/fishing",
+  "weight": 2
 }

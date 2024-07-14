@@ -1,18 +1,18 @@
 {
-  "anvil_cost": 8,
+  "anvil_cost": 4,
   "description": {
-    "translate": "enchantment.minecraft.swift_sneak"
+    "translate": "enchantment.minecraft.respiration"
   },
   "effects": {
     "minecraft:attributes": [
       {
         "amount": {
           "type": "minecraft:linear",
-          "base": 0.15,
-          "per_level_above_first": 0.15
+          "base": 1.0,
+          "per_level_above_first": 1.0
         },
-        "attribute": "minecraft:player.sneaking_speed",
-        "id": "minecraft:enchantment.swift_sneak",
+        "attribute": "minecraft:generic.oxygen_bonus",
+        "id": "minecraft:enchantment.respiration",
         "operation": "add_value"
       }
     ]
@@ -27,8 +27,8 @@
     "per_level_above_first": 10
   },
   "slots": [
-    "legs"
+    "head"
   ],
-  "supported_items": "#minecraft:enchantable/leg_armor",
+  "supported_items": "#minecraft:enchantable/head_armor",
   "weight": 2
 }

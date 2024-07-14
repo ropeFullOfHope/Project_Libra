@@ -5,12 +5,12 @@
   },
   "exclusive_set": "#minecraft:exclusive_set/mining",
   "max_cost": {
-    "base": 65,
-    "per_level_above_first": 9
+    "base": 50,
+    "per_level_above_first": 0
   },
   "max_level": 3,
   "min_cost": {
-    "base": 15,
+    "base": 8,
     "per_level_above_first": 9
   },
   "primary_items": "#ogvz:enchantable/true_tools",

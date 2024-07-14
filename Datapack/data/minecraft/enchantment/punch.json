@@ -1,25 +1,24 @@
 {
   "anvil_cost": 4,
   "description": {
-    "translate": "enchantment.minecraft.looting"
+    "translate": "enchantment.minecraft.punch"
   },
   "effects": {
-    "minecraft:equipment_drops": [
+    "minecraft:knockback": [
       {
         "effect": {
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 0.01,
-            "per_level_above_first": 0.01
+            "base": 1.0,
+            "per_level_above_first": 1.0
           }
         },
-        "enchanted": "attacker",
         "requirements": {
           "condition": "minecraft:entity_properties",
-          "entity": "attacker",
+          "entity": "direct_attacker",
           "predicate": {
-            "type": "minecraft:player"
+            "type": "#minecraft:arrows"
           }
         }
       }
@@ -29,15 +28,14 @@
     "base": 50,
     "per_level_above_first": 0
   },
-  "max_level": 3,
+  "max_level": 2,
   "min_cost": {
-    "base": 15,
-    "per_level_above_first": 9
+    "base": 5,
+    "per_level_above_first": 20
   },
-  "primary_items": "minecraft:air",
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/sword",
+  "supported_items": "#minecraft:enchantable/bow",
   "weight": 2
 }
