@@ -18,8 +18,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:food": {
-                  "nutrition": 6,
-                  "saturation": 9.6
+                  "nutrition": 8,
+                  "saturation": 13
                 }
               }
             },
@@ -40,12 +40,12 @@
                   "italic": false
                 },
                 {
-                  "text": "+6 Nutrition",
+                  "text": "+8 Nutrition",
                   "color": "blue",
                   "italic": false
                 },
                 {
-                  "text": "+9.6 Saturation",
+                  "text": "+13 Saturation",
                   "color": "blue",
                   "italic": false
                 }
@@ -74,9 +74,9 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:food": {
-                  "nutrition": 6,
-                  "saturation": 7.2,
-                  "eat_seconds": 1.2
+                  "nutrition": 8,
+                  "saturation": 10,
+                  "eat_seconds": 1
                 }
               }
             },
@@ -97,12 +97,12 @@
                   "italic": false
                 },
                 {
-                  "text": "+6 Nutrition",
+                  "text": "+10 Nutrition",
                   "color": "blue",
                   "italic": false
                 },
                 {
-                  "text": "+7.2 Saturation",
+                  "text": "+10 Saturation",
                   "color": "blue",
                   "italic": false
                 }
@@ -185,10 +185,20 @@
               }
             },
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:food": {
+                  "nutrition": 6,
+                  "saturation": 18,
+                  "eat_seconds": 1
+                }
+              }
+            },
+            {
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Medium Meal",
+                  "text": "Light Meal",
                   "color": "gray",
                   "italic": false
                 },
@@ -206,7 +216,7 @@
                   "italic": false
                 },
                 {
-                  "text": "+14.4 Saturation",
+                  "text": "+18 Saturation",
                   "color": "blue",
                   "italic": false
                 }
@@ -232,6 +242,15 @@
         }
       ],
       "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:food": {
+              "nutrition": 6,
+              "saturation": 10
+            }
+          }
+        },
         {
           "function": "minecraft:set_lore",
           "lore": [
@@ -259,12 +278,12 @@
               "italic": false
             },
             {
-              "text": "+4 Nutrition",
+              "text": "+6 Nutrition",
               "color": "blue",
               "italic": false
             },
             {
-              "text": "+9.6 Saturation",
+              "text": "+10 Saturation",
               "color": "blue",
               "italic": false
             }
@@ -291,7 +310,7 @@
               "components": {
                 "minecraft:food": {
                   "nutrition": 2,
-                  "saturation": 0.4,
+                  "saturation": 1,
                   "eat_seconds": 0.8
                 }
               }
@@ -318,7 +337,7 @@
                   "italic": false
                 },
                 {
-                  "text": "+0.4 Saturation",
+                  "text": "+1 Saturation",
                   "color": "blue",
                   "italic": false
                 }
@@ -419,7 +438,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.3
+          "chance": 0.2
         }
       ]
     },

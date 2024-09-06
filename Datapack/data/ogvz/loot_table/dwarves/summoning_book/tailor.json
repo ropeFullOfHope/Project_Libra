@@ -27,7 +27,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:shield",
-          "weight": 3
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -41,49 +41,43 @@
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
                     {
-                      "type": "minecraft:generic.armor",
                       "id": "ogvz:mainhand",
-                      "name": "minecraft:generic.armor",
+                      "type": "minecraft:generic.armor",
                       "amount": 2,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
-                      "type": "minecraft:generic.armor",
                       "id": "ogvz:offhand",
-                      "name": "minecraft:generic.armor",
+                      "type": "minecraft:generic.armor",
                       "amount": 2,
                       "operation": "add_value",
                       "slot": "offhand"
                     },
                     {
-                      "type": "minecraft:generic.knockback_resistance",
                       "id": "ogvz:mainhand",
-                      "name": "minecraft:generic.knockback_resistance",
+                      "type": "minecraft:generic.knockback_resistance",
                       "amount": 0.2,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
-                      "type": "minecraft:generic.knockback_resistance",
                       "id": "ogvz:offhand",
-                      "name": "minecraft:generic.knockback_resistance",
+                      "type": "minecraft:generic.knockback_resistance",
                       "amount": 0.2,
                       "operation": "add_value",
                       "slot": "offhand"
                     },
                     {
+                      "id": "ogvz:mainhand",
                       "type": "minecraft:generic.movement_speed",
-                      "id": "ogvz:mainhand",
-                      "name": "minecraft:generic.movement_speed",
                       "amount": -0.015,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
-                      "type": "minecraft:generic.movement_speed",
                       "id": "ogvz:offhand",
-                      "name": "minecraft:generic.movement_speed",
+                      "type": "minecraft:generic.movement_speed",
                       "amount": -0.015,
                       "operation": "add_value",
                       "slot": "offhand"
@@ -136,6 +130,12 @@
               "mode": "insert"
             }
           ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
         }
       ]
     },
@@ -194,7 +194,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.3
+          "chance": 0.2
         }
       ]
     },

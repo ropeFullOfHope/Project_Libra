@@ -1,6 +1,6 @@
 {
   "anvil_cost": 2,
-  "description": "Physical Protection",
+  "description": "Combat Protection",
   "effects": {
     "minecraft:damage_protection": [
       {

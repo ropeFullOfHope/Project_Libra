@@ -53,7 +53,7 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]
-give @s minecraft:chest 2
+give @s minecraft:chest 4
 give @s minecraft:oak_sign 3
 give @s minecraft:glass_bottle[ \
   minecraft:lore=[ \

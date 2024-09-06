@@ -96,15 +96,15 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 8,
-                "max": 24
+                "min": 4,
+                "max": 12
               }
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.1
+              "chance": 0.2
             }
           ]
         }
@@ -130,7 +130,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.05
+          "chance": 0.1
         }
       ]
     },
@@ -157,7 +157,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.15
+          "chance": 0.1
         }
       ]
     },

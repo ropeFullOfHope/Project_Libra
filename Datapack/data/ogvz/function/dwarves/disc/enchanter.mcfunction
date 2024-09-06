@@ -44,7 +44,7 @@ give @s minecraft:bookshelf 18
 give @s minecraft:enchanting_table 1
 give @s minecraft:grindstone 1
 give @s minecraft:anvil 4
-give @s minecraft:chest 8
+give @s minecraft:chest 12
 give @s minecraft:oak_sign 3
 give @s minecraft:emerald[ \
   minecraft:lore=[ \

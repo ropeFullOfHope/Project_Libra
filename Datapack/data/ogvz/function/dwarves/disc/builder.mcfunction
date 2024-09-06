@@ -93,7 +93,7 @@ give @s minecraft:carrot_on_a_stick[ \
 give @s minecraft:stone_bricks 64
 give @s minecraft:stone_bricks 64
 give @s minecraft:torch 32
-give @s minecraft:fire_charge 8
+give @s minecraft:flint_and_steel
 give @s minecraft:cooked_porkchop[ \
   minecraft:lore=[ \
     '{"text":"Medium Meal","italic":false,"color":"gray"}', \

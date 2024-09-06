@@ -6,7 +6,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:carrot_on_a_stick",
-          "weight": 5,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -52,6 +52,52 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:carrot_on_a_stick",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 3102
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Magic Strength Potion",
+                "color": "red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Grants temporary strength.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Requires 30 mana",
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "Active Item",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
           "weight": 3,
           "functions": [
             {
@@ -93,48 +139,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:carrot_on_a_stick",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_model_data": 3102
-              }
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "Magic Strength Potion",
-                "color": "red",
-                "italic": false
-              }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Grants temporary strength.",
-                  "color": "blue"
-                },
-                {
-                  "text": "Requires 30 mana",
-                  "color": "red",
-                  "italic": false
-                },
-                {
-                  "text": "Active Item",
-                  "color": "green",
-                  "italic": false
-                }
-              ],
-              "mode": "insert"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -269,7 +274,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.25
+          "chance": 0.5
         }
       ]
     },
@@ -328,7 +333,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.3
+          "chance": 0.2
         }
       ]
     },
