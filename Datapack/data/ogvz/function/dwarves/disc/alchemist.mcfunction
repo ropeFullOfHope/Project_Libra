@@ -39,10 +39,6 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]
-give @s minecraft:dark_prismarine 64
-give @s minecraft:dark_prismarine 64
-give @s minecraft:brewing_stand 2
-give @s minecraft:cauldron 1
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_model_data=3105, \
   minecraft:unbreakable={show_in_tooltip:false}, \
@@ -53,6 +49,10 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]
+give @s minecraft:dark_prismarine 64
+give @s minecraft:dark_prismarine 64
+give @s minecraft:brewing_stand 2
+give @s minecraft:cauldron 1
 give @s minecraft:chest 4
 give @s minecraft:oak_sign 3
 give @s minecraft:glass_bottle[ \
@@ -62,12 +62,6 @@ give @s minecraft:glass_bottle[ \
     '{"text":"brewing stand.","color":"blue"}' \
   ] \
 ] 12
-give @s minecraft:blaze_powder[ \
-  minecraft:lore=[ \
-    '{"text":"Give to the alchemist.","color":"blue"}', \
-    '{"text":"Use to fuel the brewing stand.","color":"blue"}' \
-  ] \
-] 2
 give @s minecraft:redstone[ \
   minecraft:lore=[ \
     '{"text":"Share with alchemist.","color":"blue"}', \
@@ -75,14 +69,24 @@ give @s minecraft:redstone[ \
     '{"text":"Use as brewing ingredient.","color":"blue"}' \
   ] \
 ] 4
-give @s minecraft:cooked_porkchop[ \
+give @s minecraft:blaze_powder[ \
+  minecraft:lore=[ \
+    '{"text":"Give to the alchemist.","color":"blue"}', \
+    '{"text":"Use to fuel the brewing stand.","color":"blue"}' \
+  ] \
+] 2
+give @s minecraft:bread[ \
   minecraft:lore=[ \
     '{"text":"Medium Meal","italic":false,"color":"gray"}', \
     '{"text":" "}', \
     '{"text":"When Consumed:","italic":false,"color":"gray"}', \
     '{"text":"+8 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+12.8 Saturation","italic":false,"color":"blue"}' \
-  ] \
+    '{"text":"+13 Saturation","italic":false,"color":"blue"}' \
+  ], \
+  minecraft:food={ \
+    nutrition:8, \
+    saturation:13 \
+  } \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book
 

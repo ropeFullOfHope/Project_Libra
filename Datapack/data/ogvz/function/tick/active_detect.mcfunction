@@ -20,13 +20,13 @@ scoreboard players set @s ogvz.rclick.use 0
 
 execute unless items entity @s weapon.* minecraft:carrot_on_a_stick run return 0
 
-tag @s add temp.use
-execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick run tag @s add temp.use.mainhand
-execute if items entity @s[tag=!temp.use.mainhand] weapon.offhand minecraft:carrot_on_a_stick run tag @s add temp.use.offhand
-
 execute unless entity @s[scores={ogvz.rclick.cooldown=0}] run return 0
 
 scoreboard players set @s ogvz.rclick.cooldown 5
+
+tag @s add temp.use
+execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick run tag @s add temp.use.mainhand
+execute if items entity @s[tag=!temp.use.mainhand] weapon.offhand minecraft:carrot_on_a_stick run tag @s add temp.use.offhand
 
 execute store result score @s[tag=temp.use.mainhand] ogvz.rclick.custom_model_data run data get entity @s SelectedItem.components."minecraft:custom_model_data"
 execute store result score @s[tag=temp.use.offhand] ogvz.rclick.custom_model_data run data get entity @s Inventory[{Slot:-106b}].components."minecraft:custom_model_data"

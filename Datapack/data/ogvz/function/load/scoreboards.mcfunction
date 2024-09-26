@@ -59,6 +59,9 @@ scoreboard objectives add ogvz.rclick.cooldown dummy
 scoreboard objectives add ogvz.rclick.custom_model_data dummy
 
 ### Miscellaneous scoreboards
+scoreboard objectives add ogvz.misc.health health
+scoreboard objectives add ogvz.misc.food food
+scoreboard objectives add ogvz.misc.natural_regeneration_timer dummy
 scoreboard objectives add ogvz.misc.leave_game minecraft.custom:minecraft.leave_game
 
 ### Dwarf scoreboards

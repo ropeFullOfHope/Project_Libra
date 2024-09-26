@@ -37,10 +37,10 @@ execute at @s align xyz positioned ~0.25 ~0.25 ~0.25 run summon minecraft:block_
 }
 
 # Set the lobby as the world spawn.
-execute at @e[type=minecraft:marker,tag=ogvz.marker.lobby] run setworldspawn ~ ~ ~
+execute at @n[type=minecraft:marker,tag=ogvz.marker.lobby] run setworldspawn ~ ~ ~
 
 # Teleport all non-admin players to the lobby.
-execute at @e[type=minecraft:marker,tag=ogvz.marker.lobby] run tp @a[tag=!ogvz.admin] ~ ~ ~
+execute at @n[type=minecraft:marker,tag=ogvz.marker.lobby] run tp @a[tag=!ogvz.admin] ~ ~ ~
 
 execute as @a[tag=ogvz.admin] at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 1 2
 

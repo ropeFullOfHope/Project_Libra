@@ -63,39 +63,43 @@ give @s iron_pickaxe[ \
     ] \
   } \
 ]
+give @s minecraft:flint_and_steel
 give @s minecraft:nether_bricks 64
 give @s minecraft:nether_bricks 64
 give @s minecraft:blast_furnace 4
 give @s minecraft:crafting_table 1
+give @s minecraft:netherrack 1
 give @s minecraft:chest 2
 give @s minecraft:oak_sign 3
-give @s minecraft:redstone_ore[ \
-  minecraft:lore=[ \
-    '{"text":"Mine to get redstone.","color":"blue"}' \
-  ] \
-] 5
 give @s minecraft:gold_ore[ \
   minecraft:lore=[ \
     '{"text":"Give to the blacksmith.","color":"blue"}', \
     '{"text":"Smelt into gold ingots.","color":"blue"}' \
   ] \
 ] 80
+give @s minecraft:redstone_ore[ \
+  minecraft:lore=[ \
+    '{"text":"Mine to get redstone.","color":"blue"}' \
+  ] \
+] 5
 give @s minecraft:coal[ \
   minecraft:lore=[ \
     '{"text":"Share with baker.","color":"blue"}', \
     '{"text":"Use to fuel the furnace.","color":"blue"}' \
   ] \
 ] 10
-give @s minecraft:flint_and_steel
-give @s minecraft:netherrack 1
-give @s minecraft:cooked_porkchop[ \
+give @s minecraft:bread[ \
   minecraft:lore=[ \
     '{"text":"Medium Meal","italic":false,"color":"gray"}', \
     '{"text":" "}', \
     '{"text":"When Consumed:","italic":false,"color":"gray"}', \
     '{"text":"+8 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+12.8 Saturation","italic":false,"color":"blue"}' \
-  ] \
+    '{"text":"+13 Saturation","italic":false,"color":"blue"}' \
+  ], \
+  minecraft:food={ \
+    nutrition:8, \
+    saturation:13 \
+  } \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book
 

@@ -25,7 +25,7 @@ execute as @s[tag=!ogvz.joined] if score &ogvz ogvz.game.phase matches 0 run tel
   {"text":"\u25B6 ","bold":true,"color":"gold"}, \
   {"text":"The game is still being set up!\n","bold":true,"color":"gold"}, \
   {"text":"\u25B6 ","bold":true,"color":"gold"}, \
-  {"text":"Please be patient and wait for admins to setup the\n   game.\n","color":"yellow"} \
+  {"text":"Please wait for admins to setup the game.\n","color":"yellow"} \
 ]
 
 # If the player hasn't joined the game yet and the game is in progress, then tell them the game has already begun.
@@ -46,7 +46,7 @@ execute if score &ogvz ogvz.game.phase matches 5 run tellraw @s [ \
   {"text":"\u25B6 ","bold":true,"color":"gold"}, \
   {"text":"The game has ended!\n","bold":true,"color":"gold"}, \
   {"text":"\u25B6 ","bold":true,"color":"gold"}, \
-  {"text":"Please be patient and wait for admins to reset the\n   server.\n","color":"yellow"} \
+  {"text":"Please wait for admins to reset the server.\n","color":"yellow"} \
 ]
 
 # If the player hasn't joined the game yet set their spawnpoint to the lobby and teleport them there.

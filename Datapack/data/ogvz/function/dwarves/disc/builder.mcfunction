@@ -90,19 +90,6 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]
-give @s minecraft:stone_bricks 64
-give @s minecraft:stone_bricks 64
-give @s minecraft:torch 32
-give @s minecraft:flint_and_steel
-give @s minecraft:cooked_porkchop[ \
-  minecraft:lore=[ \
-    '{"text":"Medium Meal","italic":false,"color":"gray"}', \
-    '{"text":" "}', \
-    '{"text":"When Consumed:","italic":false,"color":"gray"}', \
-    '{"text":"+8 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+12.8 Saturation","italic":false,"color":"blue"}' \
-  ] \
-] 1
 give @s iron_pickaxe[ \
   minecraft:custom_model_data=1000, \
   minecraft:item_name='{"text":"Iron Mattock"}', \
@@ -133,7 +120,25 @@ give @s iron_pickaxe[ \
     } \
   } \
 ]
-give @s minecraft:stonecutter
+give @s minecraft:flint_and_steel
+give @s minecraft:stone_bricks 64
+give @s minecraft:stone_bricks 64
+give @s minecraft:crafting_table 1
+give @s minecraft:stonecutter 
+give @s minecraft:torch 32
+give @s minecraft:bread[ \
+  minecraft:lore=[ \
+    '{"text":"Medium Meal","italic":false,"color":"gray"}', \
+    '{"text":" "}', \
+    '{"text":"When Consumed:","italic":false,"color":"gray"}', \
+    '{"text":"+8 Nutrition","italic":false,"color":"blue"}', \
+    '{"text":"+13 Saturation","italic":false,"color":"blue"}' \
+  ], \
+  minecraft:food={ \
+    nutrition:8, \
+    saturation:13 \
+  } \
+] 1
 execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \

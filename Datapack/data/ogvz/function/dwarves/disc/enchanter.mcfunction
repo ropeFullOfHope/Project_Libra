@@ -40,10 +40,10 @@ give @s minecraft:carrot_on_a_stick[ \
 ]
 give @s minecraft:smooth_quartz 64
 give @s minecraft:smooth_quartz 64
-give @s minecraft:bookshelf 18
 give @s minecraft:enchanting_table 1
-give @s minecraft:grindstone 1
+give @s minecraft:bookshelf 18
 give @s minecraft:anvil 4
+give @s minecraft:grindstone 1
 give @s minecraft:chest 12
 give @s minecraft:oak_sign 3
 give @s minecraft:emerald[ \
@@ -51,14 +51,18 @@ give @s minecraft:emerald[ \
     '{"text":"Give to the enchanter.","color":"blue"}' \
   ] \
 ] 4
-give @s minecraft:cooked_porkchop[ \
+give @s minecraft:bread[ \
   minecraft:lore=[ \
     '{"text":"Medium Meal","italic":false,"color":"gray"}', \
     '{"text":" "}', \
     '{"text":"When Consumed:","italic":false,"color":"gray"}', \
     '{"text":"+8 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+12.8 Saturation","italic":false,"color":"blue"}' \
-  ] \
+    '{"text":"+13 Saturation","italic":false,"color":"blue"}' \
+  ], \
+  minecraft:food={ \
+    nutrition:8, \
+    saturation:13 \
+  } \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book
 

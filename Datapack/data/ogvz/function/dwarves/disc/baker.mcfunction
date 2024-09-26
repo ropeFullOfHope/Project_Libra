@@ -55,14 +55,18 @@ give @s minecraft:coal[ \
     '{"text":"Use to fuel the furnace.","color":"blue"}' \
   ] \
 ] 5
-give @s minecraft:cooked_porkchop[ \
+give @s minecraft:bread[ \
   minecraft:lore=[ \
     '{"text":"Medium Meal","italic":false,"color":"gray"}', \
     '{"text":" "}', \
     '{"text":"When Consumed:","italic":false,"color":"gray"}', \
     '{"text":"+8 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+12.8 Saturation","italic":false,"color":"blue"}' \
-  ] \
+    '{"text":"+13 Saturation","italic":false,"color":"blue"}' \
+  ], \
+  minecraft:food={ \
+    nutrition:8, \
+    saturation:13 \
+  } \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book
 

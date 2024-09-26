@@ -39,9 +39,11 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]
-give @s minecraft:mud_bricks 64
-give @s minecraft:mud_bricks 64
-give @s minecraft:grass_block 20
+give @s minecraft:wooden_shovel[ \
+  minecraft:enchantments={ \
+    "minecraft:silk_touch":1 \
+  } \
+]
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_model_data=3106, \
   minecraft:unbreakable={show_in_tooltip:false}, \
@@ -51,11 +53,9 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"biome.","color":"blue"}' \
   ] \
 ]
-give @s minecraft:wooden_shovel[ \
-  minecraft:enchantments={ \
-    "minecraft:silk_touch":1 \
-  } \
-]
+give @s minecraft:mud_bricks 64
+give @s minecraft:mud_bricks 64
+give @s minecraft:grass_block 20
 give @s minecraft:chest 2
 give @s minecraft:oak_sign 3
 give @s minecraft:bone[ \
@@ -64,14 +64,18 @@ give @s minecraft:bone[ \
     '{"text":"Craft into bone meal.","color":"blue"}' \
   ] \
 ] 16
-give @s minecraft:cooked_porkchop[ \
+give @s minecraft:bread[ \
   minecraft:lore=[ \
     '{"text":"Medium Meal","italic":false,"color":"gray"}', \
     '{"text":" "}', \
     '{"text":"When Consumed:","italic":false,"color":"gray"}', \
     '{"text":"+8 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+12.8 Saturation","italic":false,"color":"blue"}' \
-  ] \
+    '{"text":"+13 Saturation","italic":false,"color":"blue"}' \
+  ], \
+  minecraft:food={ \
+    nutrition:8, \
+    saturation:13 \
+  } \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book
 

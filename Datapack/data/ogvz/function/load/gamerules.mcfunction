@@ -17,7 +17,8 @@
 #gamerule sendCommandFeedback false
 gamerule doMobLoot false
 gamerule keepInventory true
-gamerule spawnRadius 0
+gamerule naturalRegeneration false
+#gamerule sendCommandFeedback false
 gamerule doMobSpawning false
 gamerule disableRaids true
 gamerule doInsomnia false
@@ -25,7 +26,7 @@ gamerule doWardenSpawning false
 gamerule doTraderSpawning false
 gamerule doPatrolSpawning false
 gamerule doDaylightCycle false
-#gamerule doWeatherCycle false
 gamerule doLimitedCrafting true
+gamerule spawnRadius 0
 gamerule playersSleepingPercentage 101
 gamerule snowAccumulationHeight 8

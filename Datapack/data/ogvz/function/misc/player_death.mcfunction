@@ -34,4 +34,7 @@ tag @s[tag=ogvz.joined] add ogvz.zombie
 # Join them into the DEAD team.
 team join z8DEAD @s[tag=ogvz.joined]
 # Set their spawnpoint to the zombie spawn and make them face the shrine when they respawn.
-execute at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] facing entity @n[type=minecraft:marker,tag=ogvz.marker.shrine] feet run spawnpoint @s ~ ~ ~ ~
+execute at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] facing entity @n[type=minecraft:marker,tag=ogvz.marker.shrine] feet run spawnpoint @s[tag=ogvz.joined] ~ ~ ~ ~
+
+# If the player hasn't joined the game, set their spawn point to lobby (in case they slept in a bed somwhere).
+execute at @n[type=minecraft:marker,tag=ogvz.marker.lobby] run spawnpoint @s[tag=!ogvz.joined] ~ ~ ~ ~

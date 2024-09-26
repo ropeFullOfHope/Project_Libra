@@ -26,6 +26,9 @@ tag @s remove ogvz.joined
 scoreboard players enable @s ogvz.trigger.doom_event
 scoreboard players enable @s ogvz.trigger.mark_for_death
 
+scoreboard players set @s ogvz.misc.health 20
+scoreboard players set @s ogvz.misc.food 20
+
 team leave @s
 
 xp set @s 0 levels
@@ -34,6 +37,8 @@ xp set @s 0 points
 clear @s
 
 effect clear @s
+
+effect give @s minecraft:instant_health 1 28
 
 effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:saturation infinite 0 true
