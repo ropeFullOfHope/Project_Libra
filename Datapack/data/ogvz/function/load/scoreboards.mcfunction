@@ -72,6 +72,8 @@ scoreboard objectives add ogvz.dwarf.magic_health_potion.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarf.magic_health_potion.cooldown.seconds dummy
 scoreboard objectives add ogvz.dwarf.pearl_rod.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarf.pearl_rod.cooldown.seconds dummy
+scoreboard objectives add ogvz.dwarf.pearl_rod.warmup.ticks dummy
+scoreboard objectives add ogvz.dwarf.pearl_rod.warmup.seconds dummy
 
 # Builder
 scoreboard objectives add ogvz.builder.summoning_book.cooldown.ticks dummy

@@ -22,6 +22,7 @@ time set 1200t
 # Reset tags and scoreboards.
 execute as @a at @s run function ogvz:misc/remove_tags
 execute as @a at @s run function ogvz:misc/clear_scoreboards
+execute as @a at @s run function ogvz:misc/remove_attributes
 
 # Kill AI bosses.
 kill @e[type=minecraft:ender_dragon,tag=ogvz.class.boss]

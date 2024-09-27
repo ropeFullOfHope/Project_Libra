@@ -104,3 +104,5 @@ tag @s remove ogvz.zombie.element.air
 tag @s remove ogvz.zombie.element.electric
 
 tag @s remove ogvz.mana
+
+tag @s remove ogvz.mana.teleporting

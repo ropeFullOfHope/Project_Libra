@@ -15,4 +15,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Dwarves - Paricles when near non-destroyed shrine.
-execute if predicate ogvz:20_chance if score &ogvz ogvz.game.shrine_health matches 1.. as @a[tag=ogvz.dwarf,tag=ogvz.mana] at @s positioned ~ ~2 ~ if entity @e[type=minecraft:marker,tag=ogvz.marker.shrine,distance=..4] at @s run particle minecraft:trial_spawner_detection ~ ~0.5 ~ 0.25 0.25 0.25 0 1 normal
+execute if predicate ogvz:20_chance if score &ogvz ogvz.game.shrine_health matches 1.. as @s[tag=ogvz.dwarf,tag=ogvz.mana] at @s positioned ~ ~2 ~ if entity @e[type=minecraft:marker,tag=ogvz.marker.shrine,distance=..4] at @s run particle minecraft:trial_spawner_detection ~ ~0.5 ~ 0.25 0.25 0.25 0 1 normal
+
+# Pearl Rod - During teleportation warmup.
+execute as @s[tag=ogvz.mana.teleporting] at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.25 0.25 0.25 0.1 1
