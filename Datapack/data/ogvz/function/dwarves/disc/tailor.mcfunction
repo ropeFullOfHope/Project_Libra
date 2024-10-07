@@ -66,15 +66,14 @@ give @s minecraft:bone[ \
 ] 16
 give @s minecraft:bread[ \
   minecraft:lore=[ \
-    '{"text":"Medium Meal","italic":false,"color":"gray"}', \
     '{"text":" "}', \
     '{"text":"When Consumed:","italic":false,"color":"gray"}', \
-    '{"text":"+8 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+13 Saturation","italic":false,"color":"blue"}' \
+    '{"text":"+5 Nutrition","italic":false,"color":"blue"}', \
+    '{"text":"+6 Saturation","italic":false,"color":"blue"}' \
   ], \
   minecraft:food={ \
-    nutrition:8, \
-    saturation:13 \
+    nutrition:5, \
+    saturation:6 \
   } \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book

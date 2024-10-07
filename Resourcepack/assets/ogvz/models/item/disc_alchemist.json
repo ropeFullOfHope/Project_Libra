@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ogvz:item/disc_alchemist"
+    "layer0": "ogvz:item/disc/dwarves/alchemist"
   }
 }

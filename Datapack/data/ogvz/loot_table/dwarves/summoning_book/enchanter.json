@@ -9,10 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
-                "min": 32,
-                "max": 40
-              }
+              "count": 30
             },
             {
               "function": "minecraft:set_lore",
@@ -62,7 +59,39 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Teleports you to the shrine.",
+                  "text": "Attempts to teleport you to the",
+                  "color": "blue"
+                },
+                {
+                  "text": "shrine after a short delay.",
+                  "color": "blue"
+                },
+                {
+                  "text": "You are unable to move during ",
+                  "color": "blue"
+                },
+                {
+                  "text": "the teleportation.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Taking damage will cancel the",
+                  "color": "blue"
+                },
+                {
+                  "text": "teleportation.",
+                  "color": "blue"
+                },
+                {
+                  "text": "You can manually cancel the",
+                  "color": "blue"
+                },
+                {
+                  "text": "teleportation by using the pearl",
+                  "color": "blue"
+                },
+                {
+                  "text": "rod again.",
                   "color": "blue"
                 },
                 {

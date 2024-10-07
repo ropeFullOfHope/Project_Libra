@@ -37,6 +37,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:max_damage": 504,
                 "minecraft:hide_additional_tooltip": {},
                 "minecraft:attribute_modifiers": {
                   "modifiers": [

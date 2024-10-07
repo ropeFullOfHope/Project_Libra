@@ -1,7 +1,10 @@
 {
   "pools": [
     {
-      "rolls": 1,
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
       "entries": [
         {
           "type": "minecraft:item",
@@ -17,7 +20,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "Magic Health Potion",
+                "text": "Magic Regeneration Potion",
                 "color": "red",
                 "italic": false
               }
@@ -26,16 +29,52 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Fully restores your health.",
+                  "text": "Grants temporary regeneration.",
                   "color": "blue"
                 },
                 {
-                  "text": "Requires 30 mana",
+                  "text": "Requires 20 mana",
                   "color": "red",
                   "italic": false
                 },
                 {
-                  "text": "20 second cooldown",
+                  "text": "Active Item",
+                  "color": "green",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 3101
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Magic Swiftness Potion",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Grants temporary speed.",
+                  "color": "blue"
+                },
+                {
+                  "text": "Requires 20 mana",
                   "color": "red",
                   "italic": false
                 },
@@ -64,7 +103,7 @@
               "function": "minecraft:set_name",
               "name": {
                 "text": "Magic Strength Potion",
-                "color": "red",
+                "color": "yellow",
                 "italic": false
               }
             },
@@ -76,94 +115,7 @@
                   "color": "blue"
                 },
                 {
-                  "text": "Requires 30 mana",
-                  "color": "red",
-                  "italic": false
-                },
-                {
-                  "text": "Active Item",
-                  "color": "green",
-                  "italic": false
-                }
-              ],
-              "mode": "insert"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_model_data": 3101
-              }
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "Magic Speed Potion",
-                "color": "aqua",
-                "italic": false
-              }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Grants temporary speed.",
-                  "color": "blue"
-                },
-                {
-                  "text": "Requires 30 mana",
-                  "color": "red",
-                  "italic": false
-                },
-                {
-                  "text": "Active Item",
-                  "color": "green",
-                  "italic": false
-                }
-              ],
-              "mode": "insert"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_model_data": 3103
-              }
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "Magic Jump Boost Potion",
-                "color": "green",
-                "italic": false
-              }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Grants temporary jump boost.",
-                  "color": "blue"
-                },
-                {
-                  "text": "Requires 30 mana",
+                  "text": "Requires 20 mana",
                   "color": "red",
                   "italic": false
                 },
@@ -268,7 +220,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:milk_bucket"
+          "name": "minecraft:bucket"
         }
       ],
       "conditions": [

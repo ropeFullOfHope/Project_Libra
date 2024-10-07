@@ -86,13 +86,13 @@
       "predicate": {
         "custom_model_data": 3100
       },
-      "model": "ogvz:item/magic_health_potion"
+      "model": "ogvz:item/magic_regeneration_potion"
     },
     {
       "predicate": {
         "custom_model_data": 3101
       },
-      "model": "ogvz:item/magic_speed_potion"
+      "model": "ogvz:item/magic_swiftness_potion"
     },
     {
       "predicate": {
@@ -104,7 +104,7 @@
       "predicate": {
         "custom_model_data": 3103
       },
-      "model": "ogvz:item/magic_jump_boost_potion"
+      "model": "ogvz:item/magic_leaping_potion"
     },
     {
       "predicate": {

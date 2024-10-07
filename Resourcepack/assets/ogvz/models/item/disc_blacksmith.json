@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ogvz:item/disc_blacksmith"
+    "layer0": "ogvz:item/disc/dwarves/blacksmith"
   }
 }

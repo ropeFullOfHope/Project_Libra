@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ogvz:item/magic_health_potion"
+    "layer0": "ogvz:item/magic_swiftness_potion"
   }
 }

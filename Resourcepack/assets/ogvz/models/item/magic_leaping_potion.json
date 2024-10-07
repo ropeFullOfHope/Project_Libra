@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ogvz:item/magic_speed_potion"
+    "layer0": "ogvz:item/magic_leaping_potion"
   }
 }

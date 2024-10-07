@@ -18,19 +18,14 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:food": {
-                  "nutrition": 8,
-                  "saturation": 13
+                  "nutrition": 5,
+                  "saturation": 6
                 }
               }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "text": "Medium Meal",
-                  "color": "gray",
-                  "italic": false
-                },
                 {
                   "text": " "
                 },
@@ -40,12 +35,12 @@
                   "italic": false
                 },
                 {
-                  "text": "+8 Nutrition",
+                  "text": "+5 Nutrition",
                   "color": "blue",
                   "italic": false
                 },
                 {
-                  "text": "+13 Saturation",
+                  "text": "+6 Saturation",
                   "color": "blue",
                   "italic": false
                 }
@@ -75,19 +70,13 @@
               "components": {
                 "minecraft:food": {
                   "nutrition": 8,
-                  "saturation": 10,
-                  "eat_seconds": 1
+                  "saturation": 5
                 }
               }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "text": "Light Meal",
-                  "color": "gray",
-                  "italic": false
-                },
                 {
                   "text": " "
                 },
@@ -102,7 +91,7 @@
                   "italic": false
                 },
                 {
-                  "text": "+10 Saturation",
+                  "text": "+5 Saturation",
                   "color": "blue",
                   "italic": false
                 }
@@ -129,11 +118,6 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "text": "Placable Meal",
-                  "color": "gray",
-                  "italic": false
-                },
                 {
                   "text": "Regeneration II (0:10)",
                   "color": "blue",
@@ -175,33 +159,80 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:golden_apple"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:food": {
+              "nutrition": 4,
+              "saturation": 10
+            }
+          }
+        },
+        {
+          "function": "minecraft:set_lore",
+          "lore": [
+            {
+              "text": "Regeneration II (0:05)",
+              "color": "blue",
+              "italic": false
+            },
+            {
+              "text": "Absorption (2:00)",
+              "color": "blue",
+              "italic": false
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "When Consumed:",
+              "color": "gray",
+              "italic": false
+            },
+            {
+              "text": "+4 Nutrition",
+              "color": "blue",
+              "italic": false
+            },
+            {
+              "text": "+10 Saturation",
+              "color": "blue",
+              "italic": false
+            }
+          ],
+          "mode": "insert"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
           "name": "minecraft:golden_carrot",
           "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 5
-              }
-            },
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:food": {
-                  "nutrition": 6,
-                  "saturation": 18,
-                  "eat_seconds": 1
+                  "nutrition": 15,
+                  "saturation": 15
                 }
               }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "text": "Light Meal",
-                  "color": "gray",
-                  "italic": false
-                },
                 {
                   "text": " "
                 },
@@ -211,12 +242,12 @@
                   "italic": false
                 },
                 {
-                  "text": "+6 Nutrition",
+                  "text": "+15 Nutrition",
                   "color": "blue",
                   "italic": false
                 },
                 {
-                  "text": "+18 Saturation",
+                  "text": "+15 Saturation",
                   "color": "blue",
                   "italic": false
                 }
@@ -238,71 +269,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:golden_apple"
-        }
-      ],
-      "functions": [
-        {
-          "function": "minecraft:set_components",
-          "components": {
-            "minecraft:food": {
-              "nutrition": 6,
-              "saturation": 10
-            }
-          }
-        },
-        {
-          "function": "minecraft:set_lore",
-          "lore": [
-            {
-              "text": "Medium Meal",
-              "color": "gray",
-              "italic": false
-            },
-            {
-              "text": "Regeneration II (0:05)",
-              "color": "blue",
-              "italic": false
-            },
-            {
-              "text": "Absorption (2:00)",
-              "color": "blue",
-              "italic": false
-            },
-            {
-              "text": " "
-            },
-            {
-              "text": "When Consumed:",
-              "color": "gray",
-              "italic": false
-            },
-            {
-              "text": "+6 Nutrition",
-              "color": "blue",
-              "italic": false
-            },
-            {
-              "text": "+10 Saturation",
-              "color": "blue",
-              "italic": false
-            }
-          ],
-          "mode": "insert"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.1
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
           "name": "minecraft:cookie",
           "functions": [
             {
@@ -310,19 +276,13 @@
               "components": {
                 "minecraft:food": {
                   "nutrition": 2,
-                  "saturation": 1,
-                  "eat_seconds": 0.8
+                  "saturation": 1
                 }
               }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "text": "Snack",
-                  "color": "gray",
-                  "italic": false
-                },
                 {
                   "text": " "
                 },
