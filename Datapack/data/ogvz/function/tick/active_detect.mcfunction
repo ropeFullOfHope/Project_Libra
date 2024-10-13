@@ -79,10 +79,10 @@ execute as @s[tag=ogvz.dwarf.class.alchemist,scores={ogvz.rclick.custom_model_da
 execute as @s[tag=ogvz.dwarf.class.enchanter,scores={ogvz.rclick.custom_model_data=3005}] at @s run function ogvz:dwarves/summoning_book/enchanter
 execute as @s[tag=ogvz.dwarf,scores={ogvz.rclick.custom_model_data=3006}] at @s run function ogvz:dwarves/legendary_book
 # Dwarf items (31xx)
-execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3100}] at @s run function ogvz:dwarves/item/magic_potion/health
-execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3101}] at @s run function ogvz:dwarves/item/magic_potion/speed
+execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3100}] at @s run function ogvz:dwarves/item/magic_potion/regeneration
+execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3101}] at @s run function ogvz:dwarves/item/magic_potion/swiftness
 execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3102}] at @s run function ogvz:dwarves/item/magic_potion/strength
-execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3103}] at @s run function ogvz:dwarves/item/magic_potion/jump_boost
+execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3103}] at @s run function ogvz:dwarves/item/magic_potion/leaping
 execute as @s[tag=ogvz.mana,scores={ogvz.rclick.custom_model_data=3104}] at @s run function ogvz:dwarves/item/pearl_rod
 execute as @s[scores={ogvz.rclick.custom_model_data=3105}] at @s run function ogvz:dwarves/item/water_wand
 execute as @s[scores={ogvz.rclick.custom_model_data=3106}] at @s run function ogvz:dwarves/item/fertilizer

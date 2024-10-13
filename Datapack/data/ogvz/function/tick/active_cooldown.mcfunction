@@ -12,6 +12,7 @@
 # Credit to:
 #
 # Comments: Uses a dual system to track ticks and seconds. Necessary because seconds are displayed in prompt messages, whereas ticks are the base minecraft time interval.
+#           Also handles warmups.
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Right click
@@ -30,14 +31,6 @@ execute as @s[scores={ogvz.alchemist.water_wand.cooldown.ticks=20..}] run scoreb
 execute as @s[scores={ogvz.alchemist.water_wand.cooldown.ticks=20..,ogvz.alchemist.water_wand.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
 execute as @s[scores={ogvz.alchemist.water_wand.cooldown.ticks=20..,ogvz.alchemist.water_wand.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Water Wand]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.alchemist.water_wand.cooldown.ticks=20..}] run scoreboard players set @s ogvz.alchemist.water_wand.cooldown.ticks 0
-
-# Dwarves - Magic Health Potion
-execute as @s[scores={ogvz.dwarf.magic_health_potion.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarf.magic_health_potion.cooldown.ticks 1
-execute as @s[scores={ogvz.dwarf.magic_health_potion.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarf.magic_health_potion.cooldown.seconds 1
-execute as @s[scores={ogvz.dwarf.magic_health_potion.cooldown.ticks=20..,ogvz.dwarf.magic_health_potion.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.dwarf.magic_health_potion.cooldown.ticks=20..,ogvz.dwarf.magic_health_potion.cooldown.seconds=0}] run playsound minecraft:block.brewing_stand.brew player @s ~ ~ ~ 1 1.3 1
-execute as @s[scores={ogvz.dwarf.magic_health_potion.cooldown.ticks=20..,ogvz.dwarf.magic_health_potion.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Magic Health Potion]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
-execute as @s[scores={ogvz.dwarf.magic_health_potion.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarf.magic_health_potion.cooldown.ticks 0
 
 # Dwarves - Pearl Rod (cooldown)
 execute as @s[scores={ogvz.dwarf.pearl_rod.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarf.pearl_rod.cooldown.ticks 1

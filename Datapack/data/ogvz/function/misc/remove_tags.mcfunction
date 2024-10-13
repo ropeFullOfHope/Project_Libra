@@ -11,7 +11,7 @@
 #
 # Credit to:
 #
-# Comments: Exceptions are: ogvz.ready, ogvz.joined, ogvz.dead, ogvz.admin tags.
+# Comments: Exceptions are: ogvz.ready, ogvz.joined, ogvz.dead, ogvz.admin, ogvz.attribute tags.
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 tag @s remove ogvz.dwarf

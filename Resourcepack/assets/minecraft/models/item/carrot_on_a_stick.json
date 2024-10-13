@@ -44,37 +44,37 @@
       "predicate": {
         "custom_model_data": 3000
       },
-      "model": "ogvz:item/summoning_book"
+      "model": "ogvz:item/summoning_book_builder"
     },
     {
       "predicate": {
         "custom_model_data": 3001
       },
-      "model": "ogvz:item/summoning_book"
+      "model": "ogvz:item/summoning_book_blacksmith"
     },
     {
       "predicate": {
         "custom_model_data": 3002
       },
-      "model": "ogvz:item/summoning_book"
+      "model": "ogvz:item/summoning_book_tailor"
     },
     {
       "predicate": {
         "custom_model_data": 3003
       },
-      "model": "ogvz:item/summoning_book"
+      "model": "ogvz:item/summoning_book_baker"
     },
     {
       "predicate": {
         "custom_model_data": 3004
       },
-      "model": "ogvz:item/summoning_book"
+      "model": "ogvz:item/summoning_book_alchemist"
     },
     {
       "predicate": {
         "custom_model_data": 3005
       },
-      "model": "ogvz:item/summoning_book"
+      "model": "ogvz:item/summoning_book_enchanter"
     },
     {
       "predicate": {

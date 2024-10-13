@@ -11,8 +11,11 @@
 #
 # Credit to:
 #
-# Comments:
+# Comments: Also removes tags used to track certain attribute modifiers.
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+tag @s remove ogvz.attribute.dolphins_grace_nerf.water_movement_efficiency
+attribute @s minecraft:generic.water_movement_efficiency modifier remove ogvz.dolphins_grace_nerf.water_movement_efficiency
 
 attribute @s minecraft:generic.movement_speed modifier remove ogvz.teleporting.movement_speed
 attribute @s minecraft:generic.jump_strength modifier remove ogvz.teleporting.jump_strength
