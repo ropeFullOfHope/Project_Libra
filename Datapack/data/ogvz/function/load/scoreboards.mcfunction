@@ -87,6 +87,10 @@ scoreboard objectives add ogvz.alchemist.water_wand.cooldown.seconds dummy
 # Wither Warrior
 scoreboard objectives add ogvz.wither_warrior.whispersong.flame.ticks dummy
 
+# Assassin Slayer
+scoreboard objectives add ogvz.assassin_slayer.assassinate.cooldown.ticks dummy
+scoreboard objectives add ogvz.assassin_slayer.assassinate.cooldown.seconds dummy
+
 # Dwarven Guard
 scoreboard objectives add ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds dummy

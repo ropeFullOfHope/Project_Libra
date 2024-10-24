@@ -130,7 +130,19 @@
       },
       "model": "ogvz:item/elder_guardian_eye"
     },
-        {
+    {
+      "predicate": {
+        "custom_model_data": 4200
+      },
+      "model": "ogvz:item/betrayers_dagger"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4201
+      },
+      "model": "ogvz:item/cloak_of_shadows"
+    },
+    {
       "predicate": {
         "custom_model_data": 9000
       },

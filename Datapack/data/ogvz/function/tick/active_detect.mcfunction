@@ -89,13 +89,15 @@ execute as @s[scores={ogvz.rclick.custom_model_data=3106}] at @s run function og
 
 ### Dwarf hero items (4xxx)
 # Dragon Warrior (40xx)
-execute as @s[tag=ogvz.dwarf.class.hero.dragon_warrior,scores={ogvz.rclick.custom_model_data=4001}] at @s run function ogvz:dwarves/heroes/items/dragon_warrior/dwarven_ruby
+#execute as @s[tag=ogvz.dwarf.class.hero.dragon_warrior,scores={ogvz.rclick.custom_model_data=4001}] at @s run function ogvz:dwarves/hero/items/dragon_warrior/dwarven_ruby
 # Wither Warrior (41xx)
 
 # Assassin Slayer (42xx)
+execute as @s[tag=ogvz.dwarf.class.hero.assassin_slayer,scores={ogvz.rclick.custom_model_data=4200}] at @s run function ogvz:dwarves/item/hero/assassin_slayer/assassinate
+execute as @s[tag=ogvz.dwarf.class.hero.assassin_slayer,scores={ogvz.rclick.custom_model_data=4201}] at @s run function ogvz:dwarves/item/hero/assassin_slayer/invisibility
 
 # Dwarven Guard (43xx)
-execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.custom_model_data=4300}] at @s run function ogvz:dwarves/hero/dwarven_guard/elder_guardian_eye
+#execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.custom_model_data=4300}] at @s run function ogvz:dwarves/hero/dwarven_guard/elder_guardian_eye
 
 ### Dwarf legendary items (5xxx)
 

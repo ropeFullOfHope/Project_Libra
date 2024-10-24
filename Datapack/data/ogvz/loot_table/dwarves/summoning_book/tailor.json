@@ -73,14 +73,14 @@
                       "id": "ogvz:mainhand",
                       "type": "minecraft:generic.movement_speed",
                       "amount": -0.015,
-                      "operation": "add_value",
+                      "operation": "add_multiplied_total",
                       "slot": "mainhand"
                     },
                     {
                       "id": "ogvz:offhand",
                       "type": "minecraft:generic.movement_speed",
                       "amount": -0.015,
-                      "operation": "add_value",
+                      "operation": "add_multiplied_total",
                       "slot": "offhand"
                     }
                   ],
@@ -123,7 +123,7 @@
                   "italic": false
                 },
                 {
-                  "text": "-1.5 Movement Speed",
+                  "text": "-15% Movement Speed",
                   "color": "red",
                   "italic": false
                 }

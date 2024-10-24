@@ -39,6 +39,8 @@ scoreboard players set @s ogvz.dwarf.magic_health_potion.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarf.magic_health_potion.cooldown.seconds 0
 scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.seconds 0
+scoreboard players set @s ogvz.assassin_slayer.assassinate.cooldown.ticks 0
+scoreboard players set @s ogvz.assassin_slayer.assassinate.cooldown.seconds 0
 scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds 0
 
