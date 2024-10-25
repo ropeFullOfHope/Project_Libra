@@ -17,7 +17,7 @@
 scoreboard objectives add temp.max_health dummy
 
 # Store player's maximum health attribute into a temporary scoreboard.
-execute store result score @s temp.max_health run attribute @s minecraft:generic.max_health get
+execute store result score @s temp.max_health run attribute @s minecraft:max_health get
 
 # If the player has full health or if they dropped down to or below 6 hunger, reset their natural regeneration timer.
 execute if score @s ogvz.misc.health = @s temp.max_health run scoreboard players set @s ogvz.misc.natural_regeneration_timer 0

@@ -15,7 +15,8 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=2002, \
+  minecraft:custom_data={active_id:2002}, \
+  minecraft:item_model="ogvz:disc_tailor", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Tailor","color":"blue"}', \
   minecraft:lore=[ \

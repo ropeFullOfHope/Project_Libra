@@ -29,7 +29,8 @@ team join d3BAKER @s
 
 # Gives baker all their items.
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=3003, \
+  minecraft:custom_data={active_id:3003}, \
+  minecraft:item_model="ogvz:summoning_book_baker", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
   minecraft:lore=[ \
@@ -61,11 +62,7 @@ give @s minecraft:bread[ \
     '{"text":"When Consumed:","italic":false,"color":"gray"}', \
     '{"text":"+5 Nutrition","italic":false,"color":"blue"}', \
     '{"text":"+6 Saturation","italic":false,"color":"blue"}' \
-  ], \
-  minecraft:food={ \
-    nutrition:5, \
-    saturation:6 \
-  } \
+  ] \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book
 

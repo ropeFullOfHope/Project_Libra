@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ogvz:item/magma_cream"
+    "layer0": "ogvz:item/dwarven_ruby"
   }
 }

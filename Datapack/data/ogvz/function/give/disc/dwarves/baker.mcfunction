@@ -15,7 +15,8 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=2003, \
+  minecraft:custom_data={active_id:2003}, \
+  minecraft:item_model="ogvz:disc_baker", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Baker","color":"blue"}', \
   minecraft:lore=[ \

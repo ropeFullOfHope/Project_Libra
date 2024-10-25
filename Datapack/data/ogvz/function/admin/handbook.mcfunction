@@ -15,7 +15,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 give @s written_book[ \
-  minecraft:custom_model_data=1000, \
+  minecraft:item_model="ogvz:admin_handbook", \
   minecraft:written_book_content={ \
     title:"Admin Handbook", \
     author:"ropeFullOfHope", \

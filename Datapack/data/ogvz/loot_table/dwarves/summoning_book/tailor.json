@@ -43,42 +43,42 @@
                   "modifiers": [
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:generic.armor",
+                      "type": "minecraft:armor",
                       "amount": 2,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
                       "id": "ogvz:offhand",
-                      "type": "minecraft:generic.armor",
+                      "type": "minecraft:armor",
                       "amount": 2,
                       "operation": "add_value",
                       "slot": "offhand"
                     },
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:generic.knockback_resistance",
+                      "type": "minecraft:knockback_resistance",
                       "amount": 0.2,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
                       "id": "ogvz:offhand",
-                      "type": "minecraft:generic.knockback_resistance",
+                      "type": "minecraft:knockback_resistance",
                       "amount": 0.2,
                       "operation": "add_value",
                       "slot": "offhand"
                     },
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:generic.movement_speed",
+                      "type": "minecraft:movement_speed",
                       "amount": -0.015,
                       "operation": "add_multiplied_total",
                       "slot": "mainhand"
                     },
                     {
                       "id": "ogvz:offhand",
-                      "type": "minecraft:generic.movement_speed",
+                      "type": "minecraft:movement_speed",
                       "amount": -0.015,
                       "operation": "add_multiplied_total",
                       "slot": "offhand"
@@ -209,7 +209,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 1000
+                "minecraft:item_model": "ogvz:legendary_shard"
               }
             },
             {

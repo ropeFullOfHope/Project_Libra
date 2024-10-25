@@ -14,7 +14,7 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-clear @s minecraft:carrot_on_a_stick[custom_model_data=1000] 1
+#clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:1000}] 1
 
 effect clear @s
 
@@ -51,8 +51,8 @@ item replace entity @s armor.head with minecraft:chainmail_helmet[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:3,operation:"add_value",slot:"head",id:"ogvz:head"}, \
-      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
+      {type:"minecraft:armor",name:"minecraft:armor",amount:3,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
     ] \
   } \
 ]
@@ -67,8 +67,8 @@ item replace entity @s armor.chest with minecraft:chainmail_chestplate[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:8,operation:"add_value",slot:"chest",id:"ogvz:chest"}, \
-      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"chest",id:"ogvz:chest"} \
+      {type:"minecraft:armor",name:"minecraft:armor",amount:8,operation:"add_value",slot:"chest",id:"ogvz:chest"}, \
+      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"chest",id:"ogvz:chest"} \
     ] \
   } \
 ]
@@ -84,8 +84,8 @@ item replace entity @s armor.legs with minecraft:chainmail_leggings[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:6,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
-      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+      {type:"minecraft:armor",name:"minecraft:armor",amount:6,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
     ] \
   } \
 ]
@@ -101,16 +101,17 @@ item replace entity @s armor.feet with minecraft:chainmail_boots[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:3,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
-      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
-      {type:"minecraft:generic.movement_speed",name:"minecraft:generic.movement_speed",amount:0.2,operation:"add_multiplied_total",slot:"feet",id:"ogvz:feet"} \
+      {type:"minecraft:armor",name:"minecraft:armor",amount:3,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+      {type:"minecraft:movement_speed",name:"minecraft:movement_speed",amount:0.2,operation:"add_multiplied_total",slot:"feet",id:"ogvz:feet"} \
       ] \
   } \
 ]
 
 # Gives the hero all their items.
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=4200, \
+  minecraft:custom_data={active_id:4200}, \
+  minecraft:item_model="ogvz:betrayers_dagger", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Betrayer\'s Dagger","color":"red","bold":true}', \
   minecraft:lore=[ \
@@ -129,15 +130,16 @@ give @s minecraft:carrot_on_a_stick[ \
   ], \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.attack_damage",name:"minecraft:generic.attack_damage",amount:7.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:generic.attack_speed",name:"minecraft:generic.attack_speed",amount:16.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+      {type:"minecraft:attack_damage",name:"minecraft:attack_damage",amount:7.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:attack_speed",name:"minecraft:attack_speed",amount:16.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
     ], \
     show_in_tooltip:false \
   } \
 ]
 
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=4201, \
+  minecraft:custom_data={active_id:4201}, \
+  minecraft:item_model="ogvz:cloak_of_shadows", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Cloak of Shadows","color":"gray","bold":true}', \
 ]

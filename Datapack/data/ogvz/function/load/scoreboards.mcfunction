@@ -56,7 +56,7 @@ scoreboard players set &ogvz ogvz.game.boss 0
 ### Right click scoreboards
 scoreboard objectives add ogvz.rclick.use minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add ogvz.rclick.cooldown dummy
-scoreboard objectives add ogvz.rclick.custom_model_data dummy
+scoreboard objectives add ogvz.rclick.active_id dummy
 
 ### Miscellaneous scoreboards
 scoreboard objectives add ogvz.misc.health health

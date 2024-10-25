@@ -412,7 +412,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 1000
+                "minecraft:item_model": "ogvz:legendary_shard"
               }
             },
             {

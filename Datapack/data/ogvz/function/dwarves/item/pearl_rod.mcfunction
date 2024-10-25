@@ -89,8 +89,8 @@ tag @s add ogvz.mana.teleporting
 
 scoreboard players set @s ogvz.dwarf.pearl_rod.warmup.seconds 5
 
-attribute @s minecraft:generic.movement_speed modifier add ogvz.teleporting.movement_speed -1 add_multiplied_total
-attribute @s minecraft:generic.jump_strength modifier add ogvz.teleporting.jump_strength -1 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add ogvz.teleporting.movement_speed -1 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add ogvz.teleporting.jump_strength -1 add_multiplied_total
 
 effect give @s minecraft:nausea 8 0 true
 

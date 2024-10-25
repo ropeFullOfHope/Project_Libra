@@ -15,14 +15,14 @@
                   "modifiers": [
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:generic.attack_damage",
+                      "type": "minecraft:attack_damage",
                       "amount": 6,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:generic.attack_speed",
+                      "type": "minecraft:attack_speed",
                       "amount": -2.4,
                       "operation": "add_value",
                       "slot": "mainhand"
@@ -71,27 +71,27 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 1000,
+                "minecraft:item_model": "ogvz:diamond_dagger",
                 "minecraft:max_damage": 3122,
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:generic.attack_damage",
+                      "type": "minecraft:attack_damage",
                       "amount": 4,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:generic.attack_speed",
+                      "type": "minecraft:attack_speed",
                       "amount": 16,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:player.entity_interaction_range",
+                      "type": "minecraft:entity_interaction_range",
                       "amount": -0.5,
                       "operation": "add_value",
                       "slot": "mainhand"
@@ -157,14 +157,14 @@
                   "modifiers": [
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:generic.attack_damage",
+                      "type": "minecraft:attack_damage",
                       "amount": 10.5,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:generic.attack_speed",
+                      "type": "minecraft:attack_speed",
                       "amount": -3,
                       "operation": "add_value",
                       "slot": "mainhand"
@@ -219,21 +219,21 @@
                   "modifiers": [
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:generic.attack_damage",
+                      "type": "minecraft:attack_damage",
                       "amount": 8,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:generic.attack_speed",
+                      "type": "minecraft:attack_speed",
                       "amount": -2.8,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
                     {
                       "id": "ogvz:mainhand",
-                      "type": "minecraft:player.entity_interaction_range",
+                      "type": "minecraft:entity_interaction_range",
                       "amount": 0.5,
                       "operation": "add_value",
                       "slot": "mainhand"
@@ -305,12 +305,9 @@
               "name": "Diamond Mattock"
             },
             {
-              "function": "minecraft:set_custom_model_data",
-              "value": 1000
-            },
-            {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_model": "ogvz:diamond_mattock",
                 "minecraft:tool": {
                   "rules": [
                     {
@@ -486,7 +483,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 1000
+                "minecraft:item_model": "ogvz:legendary_shard"
               }
             },
             {

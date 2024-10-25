@@ -32,7 +32,7 @@ execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if 
 execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run playsound minecraft:block.composter.fill_success block @a ~ ~ ~ 1 1
 
 # Remove the Fertilizer if it has been used.
-execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run clear @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=3106] 1
+execute as @s at @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] if block ~ ~ ~ minecraft:grass_block run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:3106}] 1
 
 # Get rid of the markers.
 kill @e[type=minecraft:marker,tag=temp.ray]

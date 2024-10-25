@@ -15,7 +15,8 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=3006, \
+  minecraft:custom_data={active_id:3006}, \
+  minecraft:item_model="ogvz:legendary_book", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Legendary Book","color":"gold"}', \
   minecraft:lore=[ \

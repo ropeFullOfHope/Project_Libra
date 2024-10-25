@@ -16,7 +16,7 @@
 
 scoreboard players set @s ogvz.rclick.use 0
 scoreboard players set @s ogvz.rclick.cooldown 0
-scoreboard players set @s ogvz.rclick.custom_model_data 0
+scoreboard players set @s ogvz.rclick.active_id 0
 scoreboard players set @s ogvz.misc.natural_regeneration_timer 0
 scoreboard players set @s ogvz.misc.leave_game 0
 

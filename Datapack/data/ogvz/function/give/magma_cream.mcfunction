@@ -15,8 +15,11 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=9000, \
-  minecraft:custom_data={undroppable:1}, \
+  minecraft:custom_data={ \
+    active_id:9000, \
+    undroppable:1 \
+  }, \
+  minecraft:item_model="minecraft:magma_cream", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Magma Cream"}', \
   minecraft:lore=[ \

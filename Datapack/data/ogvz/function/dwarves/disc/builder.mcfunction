@@ -64,7 +64,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 
 # Gives builder all their items.
 item replace entity @s weapon.offhand with minecraft:warped_fungus_on_a_stick[ \
-  minecraft:custom_model_data=1000, \
+  minecraft:item_model="ogvz:crab_claw", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Crab Claw"}', \
   minecraft:lore=[ \
@@ -74,14 +74,15 @@ item replace entity @s weapon.offhand with minecraft:warped_fungus_on_a_stick[ \
   ], \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:player.block_interaction_range",name:"minecraft:player.block_interaction_range",amount:2,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:player.block_interaction_range",name:"minecraft:player.block_interaction_range",amount:2,operation:"add_value",slot:"offhand",id:"ogvz:offhand"} \
+      {type:"minecraft:block_interaction_range",name:"minecraft:block_interaction_range",amount:2,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:block_interaction_range",name:"minecraft:block_interaction_range",amount:2,operation:"add_value",slot:"offhand",id:"ogvz:offhand"} \
     ], \
     show_in_tooltip:false \
   } \
 ]
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=3000, \
+  minecraft:custom_data={active_id:3000}, \
+  minecraft:item_model="ogvz:summoning_book_builder", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
   minecraft:lore=[ \
@@ -91,7 +92,7 @@ give @s minecraft:carrot_on_a_stick[ \
   ] \
 ]
 give @s iron_pickaxe[ \
-  minecraft:custom_model_data=1000, \
+  minecraft:item_model="ogvz:iron_mattock", \
   minecraft:item_name='{"text":"Iron Mattock"}', \
   minecraft:lore=[ \
     '{"text":" "}', \
@@ -132,11 +133,7 @@ give @s minecraft:bread[ \
     '{"text":"When Consumed:","italic":false,"color":"gray"}', \
     '{"text":"+5 Nutrition","italic":false,"color":"blue"}', \
     '{"text":"+6 Saturation","italic":false,"color":"blue"}' \
-  ], \
-  minecraft:food={ \
-    nutrition:5, \
-    saturation:6 \
-  } \
+  ] \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book
 

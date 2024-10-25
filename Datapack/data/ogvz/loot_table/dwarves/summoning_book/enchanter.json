@@ -44,7 +44,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 3104
+                "minecraft:custom_data": "{active_id:3104}",
+                "minecraft:item_model": "ogvz:pearl_rod"
               }
             },
             {
@@ -163,7 +164,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 1000
+                "minecraft:item_model": "ogvz:legendary_shard"
               }
             },
             {

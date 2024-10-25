@@ -53,8 +53,8 @@ item replace entity @s armor.head with minecraft:golden_helmet[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:3,operation:"add_value",slot:"head",id:"ogvz:head"}, \
-      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
+      {type:"minecraft:armor",name:"minecraft:armor",amount:3,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
     ] \
   } \
 ]
@@ -70,8 +70,8 @@ item replace entity @s armor.chest with minecraft:golden_chestplate[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:8,operation:"add_value",slot:"chest",id:"ogvz:chest"}, \
-      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"chest",id:"ogvz:chest"} \
+      {type:"minecraft:armor",name:"minecraft:armor",amount:8,operation:"add_value",slot:"chest",id:"ogvz:chest"}, \
+      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"chest",id:"ogvz:chest"} \
     ] \
   } \
 ]
@@ -87,8 +87,8 @@ item replace entity @s armor.legs with minecraft:golden_leggings[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:6,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
-      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+      {type:"minecraft:armor",name:"minecraft:armor",amount:6,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
     ] \
   } \
 ]
@@ -105,15 +105,15 @@ item replace entity @s armor.feet with minecraft:golden_boots[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.armor",name:"minecraft:generic.armor",amount:3,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
-      {type:"minecraft:generic.armor_toughness",name:"minecraft:generic.armor_toughness",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+      {type:"minecraft:armor",name:"minecraft:armor",amount:3,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
     ] \
   } \
 ]
 
 # Gives the hero all their items.
 give @s minecraft:golden_axe[ \
-  minecraft:custom_model_data=1000, \
+  minecraft:item_model="ogvz:golden_flail", \
   minecraft:custom_data={crippling:1}, \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Golden Flail","color":"gold","bold":true}', \
@@ -133,14 +133,15 @@ give @s minecraft:golden_axe[ \
   ], \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:generic.attack_damage",name:"minecraft:generic.attack_damage",amount:8.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:generic.attack_speed",name:"minecraft:generic.attack_speed",amount:-2.6,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+      {type:"minecraft:attack_damage",name:"minecraft:attack_damage",amount:8.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:attack_speed",name:"minecraft:attack_speed",amount:-2.6,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
     ], \
     show_in_tooltip:false \
   } \
 ]
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=4001, \
+  minecraft:custom_data={active_id:4001}, \
+  minecraft:item_model="ogvz:dwarven_ruby", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Dwarven Ruby","color":"red"}', \
   minecraft:lore=[ \

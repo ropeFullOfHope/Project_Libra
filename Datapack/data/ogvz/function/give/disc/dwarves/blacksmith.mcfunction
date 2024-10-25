@@ -15,7 +15,8 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=2001, \
+  minecraft:custom_data={active_id:2001}, \
+  minecraft:item_model="ogvz:disc_blacksmith", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Blacksmith","color":"blue"}', \
   minecraft:lore=[ \

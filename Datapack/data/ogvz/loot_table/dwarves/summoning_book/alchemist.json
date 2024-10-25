@@ -14,7 +14,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 3100
+                "minecraft:custom_data": "{active_id:3100}",
+                "minecraft:item_model": "ogvz:magic_regeneration_potion"
               }
             },
             {
@@ -55,7 +56,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 3101
+                "minecraft:custom_data": "{active_id:3101}",
+                "minecraft:item_model": "ogvz:magic_swiftness_potion"
               }
             },
             {
@@ -96,7 +98,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 3102
+                "minecraft:custom_data": "{active_id:3102}",
+                "minecraft:item_model": "ogvz:magic_strength_potion"
               }
             },
             {
@@ -299,7 +302,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 1000
+                "minecraft:item_model": "ogvz:legendary_shard"
               }
             },
             {

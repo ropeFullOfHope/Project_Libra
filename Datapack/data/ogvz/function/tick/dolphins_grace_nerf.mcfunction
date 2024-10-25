@@ -20,11 +20,11 @@ tag @s[tag=ogvz.attribute.dolphins_grace_nerf.water_movement_efficiency,predicat
 
 # Nerf the player.
 tag @s[tag=temp.nerf] add ogvz.attribute.dolphins_grace_nerf.water_movement_efficiency
-attribute @s[tag=temp.nerf] minecraft:generic.water_movement_efficiency modifier add ogvz.dolphins_grace_nerf.water_movement_efficiency -1 add_multiplied_total
+attribute @s[tag=temp.nerf] minecraft:water_movement_efficiency modifier add ogvz.dolphins_grace_nerf.water_movement_efficiency -1 add_multiplied_total
 
 # Un-nerf the player.
 tag @s[tag=temp.unnerf] remove ogvz.attribute.dolphins_grace_nerf.water_movement_efficiency
-attribute @s[tag=temp.unnerf] minecraft:generic.water_movement_efficiency modifier remove ogvz.dolphins_grace_nerf.water_movement_efficiency
+attribute @s[tag=temp.unnerf] minecraft:water_movement_efficiency modifier remove ogvz.dolphins_grace_nerf.water_movement_efficiency
 
 # Remove temporary tags.
 tag @s remove temp.nerf

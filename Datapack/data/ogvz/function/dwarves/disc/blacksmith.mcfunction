@@ -29,7 +29,8 @@ team join d3BLACKSMITH @s
 
 # Gives blacksmith all their items.
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_model_data=3001, \
+  minecraft:custom_data={active_id:3001}, \
+  minecraft:item_model="ogvz:summoning_book_blacksmith", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
   minecraft:lore=[ \
@@ -40,7 +41,7 @@ give @s minecraft:carrot_on_a_stick[ \
   ] \
 ]
 give @s iron_pickaxe[ \
-  minecraft:custom_model_data=1000, \
+  minecraft:item_model="ogvz:iron_mattock", \
   minecraft:item_name='{"text":"Iron Mattock"}', \
   minecraft:lore=[ \
     '{"text":" "}', \
@@ -94,11 +95,7 @@ give @s minecraft:bread[ \
     '{"text":"When Consumed:","italic":false,"color":"gray"}', \
     '{"text":"+5 Nutrition","italic":false,"color":"blue"}', \
     '{"text":"+6 Saturation","italic":false,"color":"blue"}' \
-  ], \
-  minecraft:food={ \
-    nutrition:5, \
-    saturation:6 \
-  } \
+  ] \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book
 

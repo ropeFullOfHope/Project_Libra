@@ -22,8 +22,8 @@ title @s actionbar [ \
 
 tag @s remove ogvz.mana.teleporting
 
-attribute @s minecraft:generic.movement_speed modifier remove ogvz.teleporting.movement_speed
-attribute @s minecraft:generic.jump_strength modifier remove ogvz.teleporting.jump_strength
+attribute @s minecraft:movement_speed modifier remove ogvz.teleporting.movement_speed
+attribute @s minecraft:jump_strength modifier remove ogvz.teleporting.jump_strength
 
 playsound minecraft:entity.zombie_villager.converted player @a ~ ~ ~ 1 2
 

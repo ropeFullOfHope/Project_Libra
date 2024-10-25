@@ -15,7 +15,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 tag @s remove ogvz.attribute.dolphins_grace_nerf.water_movement_efficiency
-attribute @s minecraft:generic.water_movement_efficiency modifier remove ogvz.dolphins_grace_nerf.water_movement_efficiency
+attribute @s minecraft:water_movement_efficiency modifier remove ogvz.dolphins_grace_nerf.water_movement_efficiency
 
-attribute @s minecraft:generic.movement_speed modifier remove ogvz.teleporting.movement_speed
-attribute @s minecraft:generic.jump_strength modifier remove ogvz.teleporting.jump_strength
+attribute @s minecraft:movement_speed modifier remove ogvz.teleporting.movement_speed
+attribute @s minecraft:jump_strength modifier remove ogvz.teleporting.jump_strength
