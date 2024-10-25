@@ -238,6 +238,33 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:blaze_powder",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Use to fuel the brewing stand.",
+                  "color": "blue"
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
           "name": "minecraft:bone",
           "functions": [
             {
@@ -297,12 +324,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:nether_star",
+          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "ogvz:legendary_shard"
+                "minecraft:custom_data": "{legendary_shard:1}",
+                "minecraft:item_model": "ogvz:legendary_shard",
+                "minecraft:enchantment_glint_override": true,
+                "!minecraft:food": {},
+                "!minecraft:consumable": {}
               }
             },
             {

@@ -63,8 +63,10 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 ]
 
 # Gives builder all their items.
-item replace entity @s weapon.offhand with minecraft:warped_fungus_on_a_stick[ \
+item replace entity @s weapon.offhand with minecraft:poisonous_potato[ \
   minecraft:item_model="ogvz:crab_claw", \
+  !minecraft:food, \
+  !minecraft:consumable, \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Crab Claw"}', \
   minecraft:lore=[ \
