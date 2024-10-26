@@ -49,7 +49,18 @@ execute if score &ogvz ogvz.game.shrine_health matches 1 run scoreboard players 
 execute if score &ogvz ogvz.game.shrine_health matches 0 run scoreboard players add @s[tag=ogvz.dwarf.class.builder,level=..9998] ogvz.dwarf.mana_buildup.micromana 0
 
 # If a non-builder dwarf is near shrine, they gain 1 mana every second (50000 micromana every tick), up to 200 mana.
+# Shrine marker is located 2 blocks above the center of the shrine, so positioned ~ ~2 ~ is used to measure from the center of the shrine.
 execute if score &ogvz ogvz.game.shrine_health matches 1.. positioned ~ ~2 ~ if entity @e[type=minecraft:marker,tag=ogvz.marker.shrine,distance=..4] run scoreboard players add @s[tag=!ogvz.dwarf.class.builder,level=..199] ogvz.dwarf.mana_buildup.micromana 50000
 
 # If a builder dwarf is near shrine, they gain 0.5 mana every second (25000 micromana every tick).
+# Shrine marker is located 2 blocks above the center of the shrine, so positioned ~ ~2 ~ is used to measure from the center of the shrine.
 execute if score &ogvz ogvz.game.shrine_health matches 1.. positioned ~ ~2 ~ if entity @e[type=minecraft:marker,tag=ogvz.marker.shrine,distance=..4] run scoreboard players add @s[tag=ogvz.dwarf.class.builder,level=..9998] ogvz.dwarf.mana_buildup.micromana 25000
+
+# If a non-builder dwarf is under the effect of Mana Regeneration (Luck) effect, then they regenerate 1 mana every second (50000 micromana every tick), up to 200 mana.
+scoreboard players add @s[tag=!ogvz.dwarf.class.builder,level=..199,predicate=ogvz:effect/luck] ogvz.dwarf.mana_buildup.micromana 50000
+
+# If a builder dwarf is under the effect of Mana Regeneration (Luck) effect, then they regenerate 0.5 mana every second (25000 micromana every tick).
+scoreboard players add @s[tag=ogvz.dwarf.class.builder,level=..9998,predicate=ogvz:effect/luck] ogvz.dwarf.mana_buildup.micromana 25000
+
+# If the Assassin Slayer is under the effect of Cloak of Shadows, then they lose 2 mana every second (100000 micromana every tick).
+scoreboard players remove @s[tag=ogvz.dwarf.class.hero.assassin_slayer.invisible] ogvz.dwarf.mana_buildup.micromana 100000

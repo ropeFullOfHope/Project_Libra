@@ -10,6 +10,6 @@
     }
   },
   "rewards": {
-    "function": "ogvz:dwarves/item/pearl_rod_cancel"
+    "function": "ogvz:dwarf/item/pearl_rod_cancel"
   }
 }

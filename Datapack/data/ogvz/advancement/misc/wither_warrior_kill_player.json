@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "ogvz:dwarves/hero/wither_warrior/kill"
+    "function": "ogvz:dwarf/hero/wither_warrior/kill"
   }
 }

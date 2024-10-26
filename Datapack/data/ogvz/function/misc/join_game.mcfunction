@@ -29,5 +29,5 @@ effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
 # If a player joins during build phase (1), they spawn in as a dwarf, otherwise they spawn in as a zombie.
-execute if score &ogvz ogvz.game.phase matches 1 run function ogvz:dwarves/spawn
-execute if score &ogvz ogvz.game.phase matches 2..6 run function ogvz:zombies/spawn
+execute if score &ogvz ogvz.game.phase matches 1 run function ogvz:dwarf/spawn
+execute if score &ogvz ogvz.game.phase matches 2..6 run function ogvz:zombie/spawn

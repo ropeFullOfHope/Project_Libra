@@ -4,7 +4,7 @@
     "components": {
       "minecraft:equippable": {
         "slot": "chest",
-        "model": "none"
+        "model": "ogvz:none"
       }
     }
   }

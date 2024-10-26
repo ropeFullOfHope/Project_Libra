@@ -47,7 +47,6 @@ execute as @a at @s run function ogvz:tick/enchantment_cooldown
 # Custom functions
 #execute as @e[type=minecraft:marker,tag=ogvz.custom_projectile] at @s run function ogvz:tick/custom_projectile
 execute as @a[predicate=ogvz:effect/unluck] at @s run function ogvz:tick/custom_instant_effects
-execute as @a at @s run function ogvz:tick/custom_effects
 execute as @a at @s run function ogvz:tick/custom_bars
 
 # Multitick functions

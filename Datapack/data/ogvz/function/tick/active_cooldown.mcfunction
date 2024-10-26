@@ -52,6 +52,13 @@ execute as @s[scores={ogvz.assassin_slayer.assassinate.cooldown.ticks=20..,ogvz.
 execute as @s[scores={ogvz.assassin_slayer.assassinate.cooldown.ticks=20..,ogvz.assassin_slayer.assassinate.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Assassinate]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.assassin_slayer.assassinate.cooldown.ticks=20..}] run scoreboard players set @s ogvz.assassin_slayer.assassinate.cooldown.ticks 0
 
+# Assassin Slayer - Assassinate
+execute as @s[scores={ogvz.assassin_slayer.cloak_of_shadows.cooldown.seconds=1..}] run scoreboard players add @s ogvz.assassin_slayer.cloak_of_shadows.cooldown.ticks 1
+execute as @s[scores={ogvz.assassin_slayer.cloak_of_shadows.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.assassin_slayer.cloak_of_shadows.cooldown.seconds 1
+execute as @s[scores={ogvz.assassin_slayer.cloak_of_shadows.cooldown.ticks=20..,ogvz.assassin_slayer.cloak_of_shadows.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.assassin_slayer.cloak_of_shadows.cooldown.ticks=20..,ogvz.assassin_slayer.cloak_of_shadows.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Cloak of Shadows]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.assassin_slayer.cloak_of_shadows.cooldown.ticks=20..}] run scoreboard players set @s ogvz.assassin_slayer.cloak_of_shadows.cooldown.ticks 0
+
 # Dwarven Guard - Elder Guardian Eye
 execute as @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks 1
 execute as @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds 1

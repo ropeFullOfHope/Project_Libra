@@ -4,7 +4,7 @@
     "components": {
       "minecraft:equippable": {
         "slot": "feet",
-        "model": "none"
+        "model": "ogvz:none"
       }
     }
   }

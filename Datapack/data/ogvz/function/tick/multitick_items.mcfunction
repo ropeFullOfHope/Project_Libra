@@ -14,5 +14,8 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Pearl Rod
-execute as @s[tag=ogvz.mana.teleporting,scores={ogvz.dwarf.pearl_rod.warmup.seconds=..0}] at @s run function ogvz:dwarves/item/pearl_rod_teleport
+# Dwarves - Pearl Rod
+execute as @s[tag=ogvz.mana.teleporting,scores={ogvz.dwarf.pearl_rod.warmup.seconds=..0}] at @s run function ogvz:dwarf/item/pearl_rod_teleport
+
+# Assassin Slayer - Cloak of Shadows
+execute as @s[tag=ogvz.dwarf.class.hero.assassin_slayer.invisible,level=0] at @s run function ogvz:dwarf/item/hero/assassin_slayer/cloak_of_shadows_cancel
