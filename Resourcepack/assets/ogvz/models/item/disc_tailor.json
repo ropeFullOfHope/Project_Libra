@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ogvz:item/disc/dwarves/tailor"
+    "layer0": "ogvz:item/disc/dwarf/tailor"
   }
 }

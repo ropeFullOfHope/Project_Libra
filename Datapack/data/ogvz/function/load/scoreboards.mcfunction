@@ -92,6 +92,8 @@ scoreboard objectives add ogvz.assassin_slayer.assassinate.cooldown.ticks dummy
 scoreboard objectives add ogvz.assassin_slayer.assassinate.cooldown.seconds dummy
 scoreboard objectives add ogvz.assassin_slayer.cloak_of_shadows.cooldown.ticks dummy
 scoreboard objectives add ogvz.assassin_slayer.cloak_of_shadows.cooldown.seconds dummy
+scoreboard objectives add ogvz.assassin_slayer.mana_star.cooldown.ticks dummy
+scoreboard objectives add ogvz.assassin_slayer.mana_star.cooldown.seconds dummy
 
 # Dwarven Guard
 scoreboard objectives add ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks dummy

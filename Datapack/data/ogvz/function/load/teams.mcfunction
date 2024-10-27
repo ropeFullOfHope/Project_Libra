@@ -24,7 +24,7 @@ team add d3ENCHANTER
 team add d3TAILOR
 
 team add d0DRAGON_WARRIOR
-team add d0ASSASIN_SLAYER
+team add d0ASSASSIN_SLAYER
 team add d0WITHER_WARRIOR
 team add d0DWARVEN_GUARD
 
@@ -73,7 +73,7 @@ team modify d3ENCHANTER color blue
 team modify d3TAILOR color blue
 
 team modify d0DRAGON_WARRIOR color gold
-team modify d0ASSASIN_SLAYER color gold
+team modify d0ASSASSIN_SLAYER color gold
 team modify d0WITHER_WARRIOR color gold
 team modify d0DWARVEN_GUARD color gold
 
@@ -122,7 +122,7 @@ team modify d3ENCHANTER suffix {"text":" [Enchanter]","bold":true}
 team modify d3TAILOR suffix {"text":" [Tailor]","bold":true}
 
 team modify d0DRAGON_WARRIOR suffix {"text":" [Dragon Warrior]","bold":true}
-team modify d0ASSASIN_SLAYER suffix {"text":" [Assasin Slayer]","bold":true}
+team modify d0ASSASSIN_SLAYER suffix {"text":" [Assassin Slayer]","bold":true}
 team modify d0WITHER_WARRIOR suffix {"text":" [Wither Warrior]","bold":true}
 team modify d0DWARVEN_GUARD suffix {"text":" [Dwarven Guard]","bold":true}
 
@@ -171,7 +171,7 @@ team modify d3ENCHANTER seeFriendlyInvisibles false
 team modify d3TAILOR seeFriendlyInvisibles false
 
 team modify d0DRAGON_WARRIOR seeFriendlyInvisibles false
-team modify d0ASSASIN_SLAYER seeFriendlyInvisibles false
+team modify d0ASSASSIN_SLAYER seeFriendlyInvisibles false
 team modify d0WITHER_WARRIOR seeFriendlyInvisibles false
 team modify d0DWARVEN_GUARD seeFriendlyInvisibles false
 

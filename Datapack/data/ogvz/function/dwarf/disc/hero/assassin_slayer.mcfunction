@@ -37,7 +37,7 @@ tag @s add ogvz.dwarf.class.hero
 tag @s add ogvz.dwarf.class.hero.assassin_slayer
 tag @s add ogvz.mana
 
-team join d0DRAGON_WARRIOR @s
+team join d0ASSASSIN_SLAYER @s
 
 execute as @s at @s run function ogvz:misc/drop_armor
 
@@ -48,6 +48,8 @@ item replace entity @s armor.head with minecraft:chainmail_helmet[ \
   minecraft:enchantments={ \
     levels:{ \
       "minecraft:protection":3, \
+      "minecraft:respiration":3, \
+      "minecraft:aqua_affinity":1, \
       "minecraft:binding_curse":1 \
     } \
   }, \
@@ -98,6 +100,7 @@ item replace entity @s armor.feet with minecraft:chainmail_boots[ \
     levels:{ \
       "minecraft:protection":3, \
       "minecraft:feather_falling":4, \
+      "minecraft:depth_strider":3, \
       "minecraft:binding_curse":1 \
     } \
   }, \
@@ -115,6 +118,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:4200}, \
   minecraft:item_model="ogvz:betrayers_dagger", \
   minecraft:unbreakable={show_in_tooltip:false}, \
+  minecraft:tooltip_style="ogvz:legendary", \
   minecraft:item_name='{"text":"Betrayer\'s Dagger","color":"red","bold":true}', \
   minecraft:lore=[ \
     '{"text":"Assassinate","color":"blue","italic":false,"underlined":true}', \
@@ -143,6 +147,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:4201}, \
   minecraft:item_model="ogvz:cloak_of_shadows", \
   minecraft:unbreakable={show_in_tooltip:false}, \
+  minecraft:tooltip_style="ogvz:legendary", \
   minecraft:item_name='{"text":"Cloak of Shadows","color":"gray","bold":true}', \
   minecraft:lore=[ \
     '{"text":"Makes you and your armor","color":"blue"}', \
@@ -154,6 +159,22 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"of shadows again.","color":"blue"}', \
     '{"text":"Drains 2 mana per second","color":"red","italic":false}', \
     '{"text":"5 second cooldown","color":"red","italic":false}', \
+    '{"text":"Active Item","color":"green","italic":false}', \
+    '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
+  ] \
+]
+
+give @s minecraft:carrot_on_a_stick[ \
+  minecraft:custom_data={active_id:4202}, \
+  minecraft:item_model="ogvz:mana_star", \
+  minecraft:unbreakable={show_in_tooltip:false}, \
+  minecraft:tooltip_style="ogvz:legendary", \
+  minecraft:item_name='{"text":"Mana Star","color":"green","bold":true}', \
+  minecraft:lore=[ \
+    '{"text":"Shoots a beam that gives mana","color":"blue"}', \
+    '{"text":"regeneration to a targeted","color":"blue"}', \
+    '{"text":"dwarf.","color":"blue"}', \
+    '{"text":"10 second cooldown","color":"red","italic":false}', \
     '{"text":"Active Item","color":"green","italic":false}', \
     '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
   ] \

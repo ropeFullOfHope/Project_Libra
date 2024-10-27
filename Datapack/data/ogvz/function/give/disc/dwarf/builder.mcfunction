@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: builder
-# Function Name: ogvz:give/disc/dwarves/builder
+# Function Name: ogvz:give/disc/dwarf/builder
 # File Purpose: Gives you the Builder disc.
 # Created By: ropeFullOfHope
 # 

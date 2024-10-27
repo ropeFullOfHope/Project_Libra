@@ -1,8 +1,8 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
-# File Name: alchemist
-# Function Name: ogvz:give/disc/dwarves/alchemist
-# File Purpose: Gives you the Alchemist disc.
+# File Name: tailor
+# Function Name: ogvz:give/disc/dwarf/tailor
+# File Purpose: Gives you the Tailor disc.
 # Created By: ropeFullOfHope
 # 
 # Created On: 2023.11.18
@@ -15,12 +15,12 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_data={active_id:2004}, \
-  minecraft:item_model="ogvz:disc_alchemist", \
+  minecraft:custom_data={active_id:2002}, \
+  minecraft:item_model="ogvz:disc_tailor", \
   minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Alchemist","color":"blue"}', \
+  minecraft:item_name='{"text":"Tailor","color":"blue"}', \
   minecraft:lore=[ \
-    '{"text":"Tasked with brewing magic","color":"blue"}', \
-    '{"text":"potions.","color":"blue"}' \
+    '{"text":"Tasked with creating armor and","color":"blue"}', \
+    '{"text":"shields.","color":"blue"}' \
   ] \
 ]

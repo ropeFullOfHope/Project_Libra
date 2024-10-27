@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: 
 # File Name: enchanter
-# Function Name: ogvz:give/disc/dwarves/enchanter
+# Function Name: ogvz:give/disc/dwarf/enchanter
 # File Purpose: Gives you the Enchanter disc.
 # Created By: ropeFullOfHope
 # 

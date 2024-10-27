@@ -100,6 +100,7 @@ execute as @s[scores={ogvz.rclick.active_id=3106}] at @s run function ogvz:dwarf
 # Assassin Slayer (42xx)
 execute as @s[tag=ogvz.dwarf.class.hero.assassin_slayer,scores={ogvz.rclick.active_id=4200}] at @s run function ogvz:dwarf/item/hero/assassin_slayer/assassinate
 execute as @s[tag=ogvz.dwarf.class.hero.assassin_slayer,scores={ogvz.rclick.active_id=4201}] at @s run function ogvz:dwarf/item/hero/assassin_slayer/cloak_of_shadows
+execute as @s[tag=ogvz.dwarf.class.hero.assassin_slayer,scores={ogvz.rclick.active_id=4202}] at @s run function ogvz:dwarf/item/hero/assassin_slayer/mana_star
 
 # Dwarven Guard (43xx)
 #execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.active_id=4300}] at @s run function ogvz:dwarf/hero/dwarven_guard/elder_guardian_eye

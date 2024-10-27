@@ -33,11 +33,11 @@ tag @s add ogvz.dwarf
 
 ### Give discs to player.
 # 100%
-execute as @s at @s run function ogvz:give/disc/dwarves/builder
+execute as @s at @s run function ogvz:give/disc/dwarf/builder
 
 # 50%
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarves/blacksmith
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarves/tailor
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarves/baker
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarves/alchemist
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarves/enchanter
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarf/blacksmith
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarf/tailor
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarf/baker
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarf/alchemist
+execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarf/enchanter
