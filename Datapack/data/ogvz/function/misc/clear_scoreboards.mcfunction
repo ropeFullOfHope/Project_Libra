@@ -39,8 +39,17 @@ scoreboard players set @s ogvz.dwarf.magic_health_potion.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarf.magic_health_potion.cooldown.seconds 0
 scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.seconds 0
+scoreboard players set @s ogvz.dragon_warrior.dragon_scale.cooldown.ticks 0
+scoreboard players set @s ogvz.dragon_warrior.dragon_scale.cooldown.seconds 0
+scoreboard players set @s ogvz.dragon_warrior.dragon_scale.damage 0
+scoreboard players set @s ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks 0
+scoreboard players set @s ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds 0
 scoreboard players set @s ogvz.assassin_slayer.assassinate.cooldown.ticks 0
 scoreboard players set @s ogvz.assassin_slayer.assassinate.cooldown.seconds 0
+scoreboard players set @s ogvz.assassin_slayer.cloak_of_shadows.cooldown.ticks 0
+scoreboard players set @s ogvz.assassin_slayer.cloak_of_shadows.cooldown.seconds 0
+scoreboard players set @s ogvz.assassin_slayer.mana_star.cooldown.ticks 0
+scoreboard players set @s ogvz.assassin_slayer.mana_star.cooldown.seconds 0
 scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds 0
 

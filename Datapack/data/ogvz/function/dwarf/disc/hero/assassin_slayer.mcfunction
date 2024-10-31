@@ -47,9 +47,7 @@ item replace entity @s armor.head with minecraft:chainmail_helmet[ \
   minecraft:item_name='{"text":"Assassin Slayer Helmet","color":"gold"}', \
   minecraft:enchantments={ \
     levels:{ \
-      "minecraft:protection":3, \
-      "minecraft:respiration":3, \
-      "minecraft:aqua_affinity":1, \
+      "minecraft:protection":4, \
       "minecraft:binding_curse":1 \
     } \
   }, \
@@ -98,9 +96,8 @@ item replace entity @s armor.feet with minecraft:chainmail_boots[ \
   minecraft:item_name='{"text":"Assassin Slayer Boots","color":"gold"}', \
   minecraft:enchantments={ \
     levels:{ \
-      "minecraft:protection":3, \
+      "minecraft:protection":4, \
       "minecraft:feather_falling":4, \
-      "minecraft:depth_strider":3, \
       "minecraft:binding_curse":1 \
     } \
   }, \
@@ -128,7 +125,7 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"Secondary Attack","color":"green","italic":false}', \
     '{"text":" "}', \
     '{"text":"When in Main Hand:","color":"gray","italic":false}', \
-    '{"text":" 8 Attack Damage","color":"dark_green","italic":false}', \
+    '{"text":" 8.5 Attack Damage","color":"dark_green","italic":false}', \
     '{"text":" 20 Attack Speed","color":"dark_green","italic":false}', \
     '{"text":" 2.5 Attack Reach","color":"dark_green","italic":false}', \
     '{"text":"Unbreakable","color":"blue","italic":false}', \
@@ -136,8 +133,9 @@ give @s minecraft:carrot_on_a_stick[ \
   ], \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:attack_damage",name:"minecraft:attack_damage",amount:7.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:attack_speed",name:"minecraft:attack_speed",amount:16.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+      {type:"minecraft:attack_damage",name:"minecraft:attack_damage",amount:7.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:attack_speed",name:"minecraft:attack_speed",amount:16.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:entity_interaction_range",name:"minecraft:entity_interaction_range",amount:-0.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
     ], \
     show_in_tooltip:false \
   } \

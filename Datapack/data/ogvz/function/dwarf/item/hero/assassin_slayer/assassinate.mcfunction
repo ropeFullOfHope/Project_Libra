@@ -76,6 +76,9 @@ scoreboard objectives remove temp.rotation.delta
 # Remove temporary tags.
 tag @s remove temp.ray_caster
 tag @a remove temp.hit
+tag @a remove temp.big_hitbox
+tag @a remove temp.medium_hitbox
+tag @a remove temp.small_hitbox
 
 # Remove temporary markers.
 kill @e[type=minecraft:marker,tag=temp.ray]

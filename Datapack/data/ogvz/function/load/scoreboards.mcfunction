@@ -45,7 +45,7 @@ scoreboard objectives add ogvz.game.boss dummy
 scoreboard players add &ogvz ogvz.game.reload_count 1
 scoreboard players reset Dwarves ogvz.game.player_count
 scoreboard players reset Zombies ogvz.game.player_count
-scoreboard objectives modify ogvz.game.player_count displayname {"text":"\u1000","font":"ogvz:custom_font"}
+scoreboard objectives modify ogvz.game.player_count displayname {"text":"\u1000","font":"ogvz:custom"}
 scoreboard objectives modify ogvz.game.player_count numberformat styled {"color":"red","bold":true}
 scoreboard objectives setdisplay sidebar ogvz.game.player_count
 scoreboard players set &ogvz ogvz.game.timer 0
@@ -84,6 +84,13 @@ scoreboard objectives add ogvz.alchemist.water_wand.cooldown.ticks dummy
 scoreboard objectives add ogvz.alchemist.water_wand.cooldown.seconds dummy
 
 ### Dwarf hero scoreboards
+# Dragon Warrior
+scoreboard objectives add ogvz.dragon_warrior.dragon_scale.cooldown.ticks dummy
+scoreboard objectives add ogvz.dragon_warrior.dragon_scale.cooldown.seconds dummy
+scoreboard objectives add ogvz.dragon_warrior.dragon_scale.damage minecraft.custom:minecraft.damage_taken
+scoreboard objectives add ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks dummy
+scoreboard objectives add ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds dummy
+
 # Wither Warrior
 scoreboard objectives add ogvz.wither_warrior.whispersong.flame.ticks dummy
 
@@ -100,7 +107,6 @@ scoreboard objectives add ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks d
 scoreboard objectives add ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds dummy
 
 ### Zombie scoreboards
-
 scoreboard objectives add ogvz.guardian.beam.cooldown.ticks dummy
 scoreboard objectives add ogvz.guardian.beam.cooldown.seconds dummy
 scoreboard objectives add ogvz.spider.web.cooldown.ticks dummy

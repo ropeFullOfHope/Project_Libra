@@ -23,6 +23,8 @@ execute as @s at @s run function ogvz:misc/clear_attributes
 tag @s remove ogvz.admin
 tag @s remove ogvz.joined
 
+advancement revoke @s everything
+
 scoreboard players enable @s ogvz.trigger.doom_event
 scoreboard players enable @s ogvz.trigger.mark_for_death
 

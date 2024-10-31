@@ -29,4 +29,3 @@ schedule function ogvz:schedules/day_time 1t replace
 schedule function ogvz:schedules/air_toggle_0 1t replace
 
 #~READY TO GO!
-say "loaded"

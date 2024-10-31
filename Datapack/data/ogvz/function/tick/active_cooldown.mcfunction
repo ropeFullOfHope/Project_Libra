@@ -45,6 +45,20 @@ execute as @s[scores={ogvz.dwarf.pearl_rod.warmup.seconds=1..}] run scoreboard p
 execute as @s[scores={ogvz.dwarf.pearl_rod.warmup.ticks=20..}] run scoreboard players remove @s ogvz.dwarf.pearl_rod.warmup.seconds 1
 execute as @s[scores={ogvz.dwarf.pearl_rod.warmup.ticks=20..}] run scoreboard players set @s ogvz.dwarf.pearl_rod.warmup.ticks 0
 
+# Dragon Warrior - Dwarven Ruby
+execute as @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dragon_warrior.dragon_scale.cooldown.ticks 1
+execute as @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dragon_warrior.dragon_scale.cooldown.seconds 1
+execute as @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.ticks=20..,ogvz.dragon_warrior.dragon_scale.cooldown.seconds=0}] run playsound minecraft:entity.ender_dragon.growl player @s ~ ~ ~ 1 1 1
+execute as @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.ticks=20..,ogvz.dragon_warrior.dragon_scale.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Dragon Scale]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dragon_warrior.dragon_scale.cooldown.ticks 0
+
+# Dragon Warrior - Dwarven Ruby
+execute as @s[scores={ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks 1
+execute as @s[scores={ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds 1
+execute as @s[scores={ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks=20..,ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds=0}] run playsound minecraft:block.beacon.power_select player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks=20..,ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Dwarven Ruby]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks 0
+
 # Assassin Slayer - Assassinate
 execute as @s[scores={ogvz.assassin_slayer.assassinate.cooldown.seconds=1..}] run scoreboard players add @s ogvz.assassin_slayer.assassinate.cooldown.ticks 1
 execute as @s[scores={ogvz.assassin_slayer.assassinate.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.assassin_slayer.assassinate.cooldown.seconds 1

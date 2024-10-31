@@ -34,5 +34,5 @@ title @s actionbar [ \
 
 playsound minecraft:entity.witch.drink player @a ~ ~ ~ 1 1
 
-effect give @s minecraft:speed 15 2
+effect give @s minecraft:speed 15 1
 effect give @s minecraft:dolphins_grace 15 0

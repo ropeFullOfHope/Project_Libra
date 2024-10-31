@@ -30,6 +30,8 @@ tag @s remove ogvz.dwarf.class.hero.wither_warrior
 tag @s remove ogvz.dwarf.class.hero.assassin_slayer
 tag @s remove ogvz.dwarf.class.hero.dwarven_guard
 
+tag @s remove ogvz.dwarf.class.hero.dragon_warrior.dragon_form
+
 tag @s remove ogvz.dwarf.class.hero.assassin_slayer.invisible
 
 tag @s remove ogvz.zombie

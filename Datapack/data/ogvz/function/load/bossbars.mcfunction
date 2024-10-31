@@ -15,7 +15,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Shrine Health
-bossbar add ogvz:shrine_health {"text":"\u1001","font":"ogvz:custom_font"}
+bossbar add ogvz:shrine_health {"text":"\u1001","font":"ogvz:custom"}
 bossbar set ogvz:shrine_health color blue
 bossbar set ogvz:shrine_health max 12
 bossbar set ogvz:shrine_health style notched_12

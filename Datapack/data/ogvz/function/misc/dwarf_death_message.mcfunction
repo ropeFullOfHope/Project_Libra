@@ -20,7 +20,7 @@ execute as @s run scoreboard players remove Dwarves ogvz.game.player_count 1
 # "===== skull ====="
 execute as @s run tellraw @a [ \
   "", \
-  {"text":"\u1100\u1101\u1102","font":"ogvz:custom_font"} \
+  {"text":"\u1100\u1101\u1102","font":"ogvz:custom"} \
 ]
 
 # The default "> The dwarf [player] has fallen." or the player's custom death message.
