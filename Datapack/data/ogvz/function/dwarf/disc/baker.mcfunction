@@ -35,7 +35,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
   minecraft:lore=[ \
     '{"text":"Conjures food.","color":"blue"}', \
-    '{"text":"Requires 10 Bricks","italic":false,"color":"red"}', \
+    '{"text":"Requires 10 Clay Bricks","italic":false,"color":"red"}', \
     '{"text":"Requires 30 mana","italic":false,"color":"red"}', \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \

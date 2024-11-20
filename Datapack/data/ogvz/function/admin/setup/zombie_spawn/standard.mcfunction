@@ -26,10 +26,10 @@ tp @s ~ ~6 ~
 
 execute at @s run place template ogvz:zombie_spawn/standard ~-4 ~-1 ~-4
 
-execute at @s align xyz positioned ~0.5 ~ ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["ogvz.marker","ogvz.marker.zombie_spawn"]}
+execute at @s align xyz positioned ~0.5 ~ ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["ogvz.marker","ogvz.marker.zombie_spawn","ogvz.kill_on_reload"]}
 
 execute at @s align xyz positioned ~0.25 ~0.25 ~0.25 run summon minecraft:block_display ~ ~ ~ { \
-  Tags:["ogvz.block_display","ogvz.block_display.zombie_spawn"], \
+  Tags:["ogvz.block_display","ogvz.block_display.zombie_spawn","ogvz.kill_on_reload"], \
   brightness:{sky:15,block:15}, \
   transformation:{ \
     left_rotation:[0f,0f,0f,1f], \

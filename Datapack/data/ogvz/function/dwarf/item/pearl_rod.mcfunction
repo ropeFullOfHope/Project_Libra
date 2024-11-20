@@ -16,15 +16,6 @@
 
 execute as @s[tag=ogvz.mana.teleporting] at @s run return run function ogvz:dwarf/item/pearl_rod_cancel
 
-execute unless entity @s[level=50..] run title @s actionbar [ \
-  "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"50 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
-]
-execute unless entity @s[level=50..] run return 0
-
 execute if entity @s[scores={ogvz.dwarf.pearl_rod.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Pearl Rod]","bold":true,"color":"red"}, \
@@ -33,6 +24,15 @@ execute if entity @s[scores={ogvz.dwarf.pearl_rod.cooldown.seconds=1..}] run tit
   {"text":" seconds remaining!","color":"red"} \
 ]
 execute if entity @s[scores={ogvz.dwarf.pearl_rod.cooldown.seconds=1..}] run return 0
+
+execute unless entity @s[level=50..] run title @s actionbar [ \
+  "", \
+  {"text":"[Pearl Rod]","bold":true,"color":"red"}, \
+  {"text":" You need at least ","color":"red"}, \
+  {"text":"50 mana","bold":true,"color":"red"}, \
+  {"text":"!","color":"red"} \
+]
+execute unless entity @s[level=50..] run return 0
 
 scoreboard objectives add temp.shrine_spawn_obstructions dummy
 

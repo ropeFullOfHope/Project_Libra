@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "ogvz:item/diamond_mattock"
+    "layer0": "ogvz:item/iron_paxel"
   }
 }

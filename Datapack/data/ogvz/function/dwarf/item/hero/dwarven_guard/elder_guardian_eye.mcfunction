@@ -14,15 +14,6 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute unless entity @s[level=10..] run title @s actionbar [ \
-  "", \
-  {"text":"[Elder Guardian Eye]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"10 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
-]
-execute unless entity @s[level=10..] run return 0
-
 execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Elder Guardian Eye]","bold":true,"color":"red"}, \
@@ -31,6 +22,15 @@ execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seco
   {"text":" seconds remaining!","color":"red"} \
 ]
 execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run return 0
+
+execute unless entity @s[level=10..] run title @s actionbar [ \
+  "", \
+  {"text":"[Elder Guardian Eye]","bold":true,"color":"red"}, \
+  {"text":" You need at least ","color":"red"}, \
+  {"text":"10 mana","bold":true,"color":"red"}, \
+  {"text":"!","color":"red"} \
+]
+execute unless entity @s[level=10..] run return 0
 
 # Remove 10 levels.
 scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 10

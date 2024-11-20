@@ -63,6 +63,8 @@ scoreboard objectives add ogvz.misc.health health
 scoreboard objectives add ogvz.misc.food food
 scoreboard objectives add ogvz.misc.natural_regeneration_timer dummy
 scoreboard objectives add ogvz.misc.leave_game minecraft.custom:minecraft.leave_game
+scoreboard objectives add ogvz.misc.custom_bar_hide.ticks dummy
+scoreboard objectives add ogvz.misc.custom_bar_hide.seconds dummy
 
 ### Dwarf scoreboards
 # All dwarves
@@ -74,6 +76,8 @@ scoreboard objectives add ogvz.dwarf.pearl_rod.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarf.pearl_rod.cooldown.seconds dummy
 scoreboard objectives add ogvz.dwarf.pearl_rod.warmup.ticks dummy
 scoreboard objectives add ogvz.dwarf.pearl_rod.warmup.seconds dummy
+scoreboard objectives add ogvz.dwarf.oceans_pearl_buff.cooldown.ticks dummy
+scoreboard objectives add ogvz.dwarf.oceans_pearl_buff.cooldown.seconds dummy
 
 # Builder
 scoreboard objectives add ogvz.builder.summoning_book.cooldown.ticks dummy
@@ -105,6 +109,8 @@ scoreboard objectives add ogvz.assassin_slayer.mana_star.cooldown.seconds dummy
 # Dwarven Guard
 scoreboard objectives add ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds dummy
+scoreboard objectives add ogvz.dwarven_guard.oceans_pearl.cooldown.ticks dummy
+scoreboard objectives add ogvz.dwarven_guard.oceans_pearl.cooldown.seconds dummy
 
 ### Zombie scoreboards
 scoreboard objectives add ogvz.guardian.beam.cooldown.ticks dummy

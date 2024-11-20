@@ -41,8 +41,8 @@ give @s minecraft:carrot_on_a_stick[ \
   ] \
 ]
 give @s iron_pickaxe[ \
-  minecraft:item_model="ogvz:iron_mattock", \
-  minecraft:item_name='{"text":"Iron Mattock"}', \
+  minecraft:item_model="ogvz:iron_paxel", \
+  minecraft:item_name='{"text":"Iron Paxel"}', \
   minecraft:lore=[ \
     '{"text":" "}', \
     '{"color":"gray","italic":false,"text":"When in Main Hand:"}', \

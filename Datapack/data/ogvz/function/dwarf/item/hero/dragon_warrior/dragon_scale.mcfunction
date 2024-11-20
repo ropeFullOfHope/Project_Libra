@@ -14,16 +14,8 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute as @s[tag=ogvz.dwarf.class.hero.dragon_warrior.dragon_form] at @s run return run function ogvz:dwarf/item/hero/dragon_warrior/dragon_scale_remove
-
-execute unless entity @s[level=50..] run title @s actionbar [ \
-  "", \
-  {"text":"[Dragon Scale]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"50 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
-]
-execute unless entity @s[level=50..] run return 0
+# Revert to regular form if the player uses dragon scale while in dragon form.
+#execute as @s[tag=ogvz.dwarf.class.hero.dragon_warrior.dragon_form] at @s run return run function ogvz:dwarf/item/hero/dragon_warrior/dragon_scale_remove
 
 execute if entity @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
@@ -33,6 +25,15 @@ execute if entity @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.seconds=1
   {"text":" seconds remaining!","color":"red"} \
 ]
 execute if entity @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.seconds=1..}] run return 0
+
+execute unless entity @s[level=50..] run title @s actionbar [ \
+  "", \
+  {"text":"[Dragon Scale]","bold":true,"color":"red"}, \
+  {"text":" You need at least ","color":"red"}, \
+  {"text":"50 mana","bold":true,"color":"red"}, \
+  {"text":"!","color":"red"} \
+]
+execute unless entity @s[level=50..] run return 0
 
 title @s actionbar [ \
   "", \

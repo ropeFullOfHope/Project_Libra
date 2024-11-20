@@ -1,9 +1,10 @@
 {
-  "block.minecraft.bricks": "Brick Blocks",
+  "block.minecraft.bricks": "Brick Block",
   "block.minecraft.end_stone_brick_slab": "Reinforced Brick Slab",
   "block.minecraft.end_stone_brick_stairs": "Reinforced Brick Stairs",
   "block.minecraft.end_stone_brick_wall": "Reinforced Brick Wall",
   "block.minecraft.end_stone_bricks": "Reinforced Bricks",
   "block.minecraft.sea_lantern": "Lantern Block",
+  "item.minecraft.brick": "Clay Brick",
   "effect.minecraft.luck": "Mana Regeneration"
 }

@@ -19,6 +19,8 @@ scoreboard players set @s ogvz.rclick.cooldown 0
 scoreboard players set @s ogvz.rclick.active_id 0
 scoreboard players set @s ogvz.misc.natural_regeneration_timer 0
 scoreboard players set @s ogvz.misc.leave_game 0
+scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 0
+scoreboard players set @s ogvz.misc.custom_bar_hide.seconds 0
 
 scoreboard players set @s ogvz.dwarf.mana_buildup.mana 0
 scoreboard players set @s ogvz.dwarf.mana_buildup.micromana 0
@@ -39,6 +41,8 @@ scoreboard players set @s ogvz.dwarf.magic_health_potion.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarf.magic_health_potion.cooldown.seconds 0
 scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.seconds 0
+scoreboard players set @s ogvz.dwarf.oceans_pearl_buff.cooldown.ticks 0
+scoreboard players set @s ogvz.dwarf.oceans_pearl_buff.cooldown.seconds 0
 scoreboard players set @s ogvz.dragon_warrior.dragon_scale.cooldown.ticks 0
 scoreboard players set @s ogvz.dragon_warrior.dragon_scale.cooldown.seconds 0
 scoreboard players set @s ogvz.dragon_warrior.dragon_scale.damage 0
@@ -52,6 +56,8 @@ scoreboard players set @s ogvz.assassin_slayer.mana_star.cooldown.ticks 0
 scoreboard players set @s ogvz.assassin_slayer.mana_star.cooldown.seconds 0
 scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds 0
+scoreboard players set @s ogvz.dwarven_guard.oceans_pearl.cooldown.ticks 0
+scoreboard players set @s ogvz.dwarven_guard.oceans_pearl.cooldown.seconds 0
 
 scoreboard players set @s ogvz.guardian.beam.cooldown.ticks 0
 scoreboard players set @s ogvz.guardian.beam.cooldown.seconds 0

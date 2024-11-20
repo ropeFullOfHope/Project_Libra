@@ -44,6 +44,20 @@
     },
     {
       "type": "bitmap",
+      "file": "ogvz:font/oceans_pearl_0.png",
+      "height": 8,
+      "ascent": 4,
+      "chars": ["\u1210"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/oceans_pearl_1.png",
+      "height": 8,
+      "ascent": 4,
+      "chars": ["\u1211"]
+    },
+    {
+      "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/0.png",
       "height": 5,
       "ascent": 1,

@@ -96,12 +96,12 @@
                   "color": "blue"
                 },
                 {
-                  "text": "Requires 50 mana",
+                  "text": "60 second cooldown",
                   "color": "red",
                   "italic": false
                 },
                 {
-                  "text": "60 second cooldown",
+                  "text": "Requires 50 mana",
                   "color": "red",
                   "italic": false
                 },

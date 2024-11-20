@@ -155,8 +155,8 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"You can manually cancel the","color":"blue"}', \
     '{"text":"invisibility by using the cloak","color":"blue"}', \
     '{"text":"of shadows again.","color":"blue"}', \
-    '{"text":"Drains 2 mana per second","color":"red","italic":false}', \
     '{"text":"5 second cooldown","color":"red","italic":false}', \
+    '{"text":"Drains 2 mana per second","color":"red","italic":false}', \
     '{"text":"Active Item","color":"green","italic":false}', \
     '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
   ] \

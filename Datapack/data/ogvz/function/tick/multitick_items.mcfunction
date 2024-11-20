@@ -19,3 +19,8 @@ execute as @s[tag=ogvz.mana.teleporting,scores={ogvz.dwarf.pearl_rod.warmup.seco
 
 # Assassin Slayer - Cloak of Shadows
 execute as @s[tag=ogvz.dwarf.class.hero.assassin_slayer.invisible,level=0] at @s run function ogvz:dwarf/item/hero/assassin_slayer/cloak_of_shadows_cancel
+
+# Dwarven Guard - Ocean's Pearl
+execute as @e[type=minecraft:item_display,tag=ogvz.item_display.oceans_pearl] at @s run function ogvz:dwarf/item/hero/dwarven_guard/oceans_pearl_check
+execute as @e[type=minecraft:item_display,tag=ogvz.item_display.oceans_pearl] at @s run function ogvz:dwarf/item/hero/dwarven_guard/oceans_pearl_buff
+execute as @e[type=minecraft:item_display,tag=ogvz.item_display.oceans_pearl] at @s run function ogvz:dwarf/item/hero/dwarven_guard/oceans_pearl_rotate

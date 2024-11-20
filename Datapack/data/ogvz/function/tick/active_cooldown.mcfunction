@@ -18,6 +18,11 @@
 # Right click
 execute as @s[scores={ogvz.rclick.cooldown=1..}] run scoreboard players remove @s ogvz.rclick.cooldown 1
 
+# All - Custom Bar (hide)
+execute as @s[scores={ogvz.misc.custom_bar_hide.seconds=1..}] run scoreboard players add @s ogvz.misc.custom_bar_hide.ticks 1
+execute as @s[scores={ogvz.misc.custom_bar_hide.ticks=20..}] run scoreboard players remove @s ogvz.misc.custom_bar_hide.seconds 1
+execute as @s[scores={ogvz.misc.custom_bar_hide.ticks=20..}] run scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 0
+
 # Builder - Summoning Book
 execute as @s[scores={ogvz.builder.summoning_book.cooldown.seconds=1..}] run scoreboard players add @s ogvz.builder.summoning_book.cooldown.ticks 1
 execute as @s[scores={ogvz.builder.summoning_book.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.builder.summoning_book.cooldown.seconds 1
@@ -44,6 +49,11 @@ execute as @s[scores={ogvz.dwarf.pearl_rod.cooldown.ticks=20..}] run scoreboard 
 execute as @s[scores={ogvz.dwarf.pearl_rod.warmup.seconds=1..}] run scoreboard players add @s ogvz.dwarf.pearl_rod.warmup.ticks 1
 execute as @s[scores={ogvz.dwarf.pearl_rod.warmup.ticks=20..}] run scoreboard players remove @s ogvz.dwarf.pearl_rod.warmup.seconds 1
 execute as @s[scores={ogvz.dwarf.pearl_rod.warmup.ticks=20..}] run scoreboard players set @s ogvz.dwarf.pearl_rod.warmup.ticks 0
+
+# Dwarves - Ocean's Pearl (buff)
+execute as @s[scores={ogvz.dwarf.oceans_pearl_buff.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarf.oceans_pearl_buff.cooldown.ticks 1
+execute as @s[scores={ogvz.dwarf.oceans_pearl_buff.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarf.oceans_pearl_buff.cooldown.seconds 1
+execute as @s[scores={ogvz.dwarf.oceans_pearl_buff.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarf.oceans_pearl_buff.cooldown.ticks 0
 
 # Dragon Warrior - Dwarven Ruby
 execute as @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dragon_warrior.dragon_scale.cooldown.ticks 1
@@ -86,6 +96,13 @@ execute as @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks=20..}
 execute as @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks=20..,ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
 execute as @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks=20..,ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Elder Guardian Eye]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks 0
+
+# Dwarven Guard - Elder Guardian Eye
+execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarven_guard.oceans_pearl.cooldown.ticks 1
+execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarven_guard.oceans_pearl.cooldown.seconds 1
+execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..,ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=0}] run playsound minecraft:block.conduit.attack.target player @s ~ ~ ~ 1 1 1
+execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..,ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Ocean\'s Pearl]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarven_guard.oceans_pearl.cooldown.ticks 0
 
 # Guardian - Beam
 execute as @s[scores={ogvz.guardian.beam.cooldown.seconds=1..}] run scoreboard players add @s ogvz.guardian.beam.cooldown.ticks 1

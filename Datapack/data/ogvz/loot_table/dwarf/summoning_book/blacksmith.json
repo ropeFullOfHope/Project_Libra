@@ -302,12 +302,12 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "target": "item_name",
-              "name": "Diamond Mattock"
+              "name": "Diamond Paxel"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "ogvz:diamond_mattock",
+                "minecraft:item_model": "ogvz:diamond_paxel",
                 "minecraft:tool": {
                   "rules": [
                     {

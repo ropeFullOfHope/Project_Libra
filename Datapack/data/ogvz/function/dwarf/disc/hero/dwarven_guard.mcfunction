@@ -34,20 +34,20 @@ tag @s remove ogvz.dwarf.class.enchanter
 tag @s add ogvz.dwarf
 tag @s add ogvz.dwarf.class
 tag @s add ogvz.dwarf.class.hero
-tag @s add ogvz.dwarf.class.hero.dragon_warrior
+tag @s add ogvz.dwarf.class.hero.dwarven_guard
 tag @s add ogvz.mana
 
-team join d0DRAGON_WARRIOR @s
+team join d0DWARVEN_GUARD @s
 
 execute as @s at @s run function ogvz:misc/drop_armor
 
 # Equips the hero with their armor.
-item replace entity @s armor.head with minecraft:golden_helmet[ \
+item replace entity @s armor.head with minecraft:iron_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Dragon Warrior Helmet","color":"gold"}', \
+  minecraft:item_name='{"text":"Dwarven Guard Helmet","color":"gold"}', \
   minecraft:enchantments={ \
     levels:{ \
-      "minecraft:protection":4, \
+      "minecraft:protection":5, \
       "minecraft:binding_curse":1 \
     } \
   }, \
@@ -58,9 +58,9 @@ item replace entity @s armor.head with minecraft:golden_helmet[ \
     ] \
   } \
 ]
-item replace entity @s armor.chest with minecraft:golden_chestplate[ \
+item replace entity @s armor.chest with minecraft:iron_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Dragon Warrior Chestplate","color":"gold"}', \
+  minecraft:item_name='{"text":"Dwarven Guard Chestplate","color":"gold"}', \
   minecraft:enchantments={ \
     levels:{ \
       "minecraft:protection":5, \
@@ -74,9 +74,9 @@ item replace entity @s armor.chest with minecraft:golden_chestplate[ \
     ] \
   } \
 ]
-item replace entity @s armor.legs with minecraft:golden_leggings[ \
+item replace entity @s armor.legs with minecraft:iron_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Dragon Warrior Leggings","color":"gold"}', \
+  minecraft:item_name='{"text":"Dwarven Guard Leggings","color":"gold"}', \
   minecraft:enchantments={ \
     levels:{ \
       "minecraft:protection":5, \
@@ -90,9 +90,9 @@ item replace entity @s armor.legs with minecraft:golden_leggings[ \
     ] \
   } \
 ]
-item replace entity @s armor.feet with minecraft:golden_boots[ \
+item replace entity @s armor.feet with minecraft:iron_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Dragon Warrior Boots","color":"gold"}', \
+  minecraft:item_name='{"text":"Dwarven Guard Boots","color":"gold"}', \
   minecraft:enchantments={ \
     levels:{ \
       "minecraft:protection":4, \
@@ -110,68 +110,23 @@ item replace entity @s armor.feet with minecraft:golden_boots[ \
 
 # Gives the hero all their items.
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_data={active_id:4000}, \
-  minecraft:item_model="ogvz:golden_flail", \
+  minecraft:custom_data={active_id:4301}, \
+  minecraft:item_model="ogvz:oceans_pearl", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:tooltip_style="ogvz:legendary", \
-  minecraft:item_name='{"text":"Golden Flail","color":"gold","bold":true}', \
+  minecraft:item_name='{"text":"Ocean\'s Pearl","color":"light_purple","bold":true}', \
   minecraft:lore=[ \
-    '{"text":"Conjure Wall","color":"blue","italic":false,"underlined":true}', \
-    '{"text":"Conjures a stone brick wall in","color":"blue"}', \
-    '{"text":"front of you.","color":"blue"}', \
-    '{"text":"Requires 8 mana","color":"red","italic":false}', \
-    '{"text":"Secondary Use","color":"green","italic":false}', \
-    '{"text":" "}', \
-    '{"text":"When in Main Hand:","color":"gray","italic":false}', \
-    '{"text":" 12 Attack Damage","color":"dark_green","italic":false}', \
-    '{"text":" 1.3 Attack Speed","color":"dark_green","italic":false}', \
-    '{"text":" 3 Attack Reach","color":"dark_green","italic":false}', \
-    '{"text":"Unbreakable","color":"blue","italic":false}', \
-    '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
-  ], \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:attack_damage",name:"minecraft:attack_damage",amount:11.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:attack_speed",name:"minecraft:attack_speed",amount:-2.7,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
-    ], \
-    show_in_tooltip:false \
-  } \
-]
-
-give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_data={active_id:4001}, \
-  minecraft:item_model="ogvz:dragon_scale", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:tooltip_style="ogvz:legendary", \
-  minecraft:item_name='{"text":"Dragon Scale","color":"gray","bold":true}', \
-  minecraft:lore=[ \
-    '{"text":"Unleashes your dragon form,","color":"blue"}', \
-    '{"text":"granting you a boost in damage","color":"blue"}', \
-    '{"text":"and speed while also granting","color":"blue"}', \
-    '{"text":"you wings.","color":"blue"}', \
-    '{"text":"After taking enough damage you","color":"blue"}', \
-    '{"text":"will revert back into your","color":"blue"}', \
-    '{"text":"regular form.","color":"blue"}', \
-    '{"text":"Use of firework rocket boosts is","color":"blue"}', \
-    '{"text":"not advised.","color":"blue"}', \
-    '{"text":"300 second cooldown","color":"red","italic":false}', \
+    '{"text":"Places an ocean\'s pearl above","color":"blue","italic":false}', \
+    '{"text":"you, which grants buffs to all","color":"blue","italic":false}', \
+    '{"text":"dwarves nearby.","color":"blue","italic":false}', \
+    '{"text":"The pearl must be unobstructed","color":"blue","italic":false}', \
+    '{"text":"in order to work.","color":"blue","italic":false}', \
+    '{"text":"You can have up to 2 ocean\'s.","color":"blue","italic":false}', \
+    '{"text":"pearls active at once.","color":"blue","italic":false}', \
+    '{"text":"The pearl will break after","color":"blue","italic":false}', \
+    '{"text":"sustaining enough damage.","color":"blue","italic":false}', \
+    '{"text":"30 second cooldown","color":"red","italic":false}', \
     '{"text":"Requires 50 mana","color":"red","italic":false}', \
-    '{"text":"Active Item","color":"green","italic":false}', \
-    '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
-  ] \
-]
-
-give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_data={active_id:4002}, \
-  minecraft:item_model="ogvz:dwarven_ruby", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:tooltip_style="ogvz:legendary", \
-  minecraft:item_name='{"text":"Dwarven Ruby","color":"red","bold":true}', \
-  minecraft:lore=[ \
-    '{"text":"Restores a large amount of mana","color":"blue"}', \
-    '{"text":"to all other dwarves.","color":"blue"}', \
-    '{"text":"60 second cooldown","color":"red","italic":false}', \
-    '{"text":"Requires 30 mana","color":"red","italic":false}', \
     '{"text":"Active Item","color":"green","italic":false}', \
     '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
   ] \

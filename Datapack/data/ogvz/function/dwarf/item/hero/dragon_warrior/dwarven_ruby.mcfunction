@@ -14,15 +14,6 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute unless entity @s[level=30..] run title @s actionbar [ \
-  "", \
-  {"text":"[Dwarven Ruby]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"30 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
-]
-execute unless entity @s[level=30..] run return 0
-
 execute if entity @s[scores={ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Dwarven Ruby]","bold":true,"color":"red"}, \
@@ -31,6 +22,15 @@ execute if entity @s[scores={ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds=1
   {"text":" seconds remaining!","color":"red"} \
 ]
 execute if entity @s[scores={ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds=1..}] run return 0
+
+execute unless entity @s[level=30..] run title @s actionbar [ \
+  "", \
+  {"text":"[Dwarven Ruby]","bold":true,"color":"red"}, \
+  {"text":" You need at least ","color":"red"}, \
+  {"text":"30 mana","bold":true,"color":"red"}, \
+  {"text":"!","color":"red"} \
+]
+execute unless entity @s[level=30..] run return 0
 
 scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 30
 

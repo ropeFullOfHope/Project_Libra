@@ -20,7 +20,7 @@ scoreboard objectives add temp.max_value dummy
 # Yes, it's the funny number, no it's not intentional. The custom bar is 69 pixels wide from the inside and it's aligned to vanilla bars.
 scoreboard players set @s temp.custom_bar_value 69
 # If you have changed the dragon form damage threshold, you also have to change this to that value.
-scoreboard players set @s temp.max_value 500
+scoreboard players set @s temp.max_value 300
 
 # This can be represented as: custom bar width * current value / max value
 scoreboard players operation @s temp.custom_bar_value *= @s ogvz.dragon_warrior.dragon_scale.damage
@@ -98,5 +98,5 @@ title @s[scores={temp.custom_bar_value=67}  ] actionbar {"font":"ogvz:custom","t
 title @s[scores={temp.custom_bar_value=68}  ] actionbar {"font":"ogvz:custom","text":"\uF165\u1201\u2101"}
 title @s[scores={temp.custom_bar_value=69..}] actionbar {"font":"ogvz:custom","text":"\uF165\u1201\u2100"}
 
-#scoreboard objectives remove temp.custom_bar_value
+scoreboard objectives remove temp.custom_bar_value
 scoreboard objectives remove temp.max_value
