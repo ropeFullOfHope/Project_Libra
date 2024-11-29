@@ -97,12 +97,19 @@ execute as @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks=20..,
 execute as @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks=20..,ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Elder Guardian Eye]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks 0
 
-# Dwarven Guard - Elder Guardian Eye
+# Dwarven Guard - Ocean's Pearl
 execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarven_guard.oceans_pearl.cooldown.ticks 1
 execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarven_guard.oceans_pearl.cooldown.seconds 1
 execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..,ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=0}] run playsound minecraft:block.conduit.attack.target player @s ~ ~ ~ 1 1 1
 execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..,ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Ocean\'s Pearl]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarven_guard.oceans_pearl.cooldown.ticks 0
+
+# Dwarven Guard - Glowing Shell
+execute as @s[scores={ogvz.dwarven_guard.glowing_shell.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarven_guard.glowing_shell.cooldown.ticks 1
+execute as @s[scores={ogvz.dwarven_guard.glowing_shell.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarven_guard.glowing_shell.cooldown.seconds 1
+execute as @s[scores={ogvz.dwarven_guard.glowing_shell.cooldown.ticks=20..,ogvz.dwarven_guard.glowing_shell.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.dwarven_guard.glowing_shell.cooldown.ticks=20..,ogvz.dwarven_guard.glowing_shell.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Glowing Shell]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.dwarven_guard.glowing_shell.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarven_guard.glowing_shell.cooldown.ticks 0
 
 # Guardian - Beam
 execute as @s[scores={ogvz.guardian.beam.cooldown.seconds=1..}] run scoreboard players add @s ogvz.guardian.beam.cooldown.ticks 1

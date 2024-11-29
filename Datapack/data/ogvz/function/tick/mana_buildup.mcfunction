@@ -62,5 +62,11 @@ scoreboard players add @s[tag=!ogvz.dwarf.class.builder,level=..199,predicate=og
 # If a builder dwarf is under the effect of Mana Regeneration (Luck) effect, then they regenerate 0.5 mana every second (25000 micromana every tick).
 scoreboard players add @s[tag=ogvz.dwarf.class.builder,level=..9998,predicate=ogvz:effect/luck] ogvz.dwarf.mana_buildup.micromana 25000
 
+# If a non-hero non-builder dwarf is near the glowing shell's area of effect, then they regenerate 2 mana every second (100000 micromana every tick), up to 200 mana.
+execute if entity @e[type=minecraft:marker,tag=ogvz.marker.glowing_shell,distance=..4.3] run scoreboard players add @s[tag=!ogvz.dwarf.class.builder,tag=!ogvz.dwarf.class.hero,level=..199] ogvz.dwarf.mana_buildup.micromana 100000
+
+# If a non-hero builder dwarf is near the glowing shell's area of effect, then they regenerate 1 mana every second (50000 micromana every tick).
+execute if entity @e[type=minecraft:marker,tag=ogvz.marker.glowing_shell,distance=..4.3] run scoreboard players add @s[tag=ogvz.dwarf.class.builder,tag=!ogvz.dwarf.class.hero,level=..9998,predicate=ogvz:effect/luck] ogvz.dwarf.mana_buildup.micromana 50000
+
 # If the Assassin Slayer is under the effect of Cloak of Shadows, then they lose 2 mana every second (100000 micromana every tick).
 scoreboard players remove @s[tag=ogvz.dwarf.class.hero.assassin_slayer.invisible] ogvz.dwarf.mana_buildup.micromana 100000

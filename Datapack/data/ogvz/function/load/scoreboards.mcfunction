@@ -66,6 +66,10 @@ scoreboard objectives add ogvz.misc.leave_game minecraft.custom:minecraft.leave_
 scoreboard objectives add ogvz.misc.custom_bar_hide.ticks dummy
 scoreboard objectives add ogvz.misc.custom_bar_hide.seconds dummy
 
+### Marker scoreboards
+scoreboard objectives add ogvz.marker.glowing_shell.duration.ticks dummy
+scoreboard objectives add ogvz.marker.glowing_shell.duration.seconds dummy
+
 ### Dwarf scoreboards
 # All dwarves
 scoreboard objectives add ogvz.dwarf.mana_buildup.mana dummy
@@ -111,6 +115,8 @@ scoreboard objectives add ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks d
 scoreboard objectives add ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds dummy
 scoreboard objectives add ogvz.dwarven_guard.oceans_pearl.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarven_guard.oceans_pearl.cooldown.seconds dummy
+scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.ticks dummy
+scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.seconds dummy
 
 ### Zombie scoreboards
 scoreboard objectives add ogvz.guardian.beam.cooldown.ticks dummy

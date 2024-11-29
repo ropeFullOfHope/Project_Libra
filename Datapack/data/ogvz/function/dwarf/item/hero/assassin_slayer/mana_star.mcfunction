@@ -46,7 +46,7 @@ execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:ma
 execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:dwarf/item/hero/assassin_slayer/mana_star_loop
 
 # Give mana regeneration (luck) to the hit dwarf.
-effect give @p[tag=ogvz.dwarf,tag=temp.hit] minecraft:luck 100 0
+effect give @p[tag=ogvz.mana,tag=!ogvz.dwarf.class.hero,tag=temp.hit] minecraft:luck 100 0
 
 # Remove temporary tags.
 tag @s remove temp.ray_caster

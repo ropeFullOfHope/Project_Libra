@@ -108,7 +108,7 @@ execute as @s[tag=ogvz.dwarf.class.hero.assassin_slayer,scores={ogvz.rclick.acti
 # Dwarven Guard (43xx)
 #execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.active_id=4300}] at @s run function ogvz:dwarf/item/hero/dwarven_guard/elder_guardian_eye
 execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.active_id=4301}] at @s run function ogvz:dwarf/item/hero/dwarven_guard/oceans_pearl
-#execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.active_id=4302}] at @s run function ogvz:dwarf/item/hero/dwarven_guard/elder_guardian_eye
+execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.active_id=4302}] at @s run function ogvz:dwarf/item/hero/dwarven_guard/glowing_shell
 
 ### Dwarf legendary items (5xxx)
 

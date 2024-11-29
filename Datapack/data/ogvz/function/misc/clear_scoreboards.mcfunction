@@ -58,6 +58,8 @@ scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds 0
 scoreboard players set @s ogvz.dwarven_guard.oceans_pearl.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarven_guard.oceans_pearl.cooldown.seconds 0
+scoreboard players set @s ogvz.dwarven_guard.glowing_shell.cooldown.ticks 0
+scoreboard players set @s ogvz.dwarven_guard.glowing_shell.cooldown.seconds 0
 
 scoreboard players set @s ogvz.guardian.beam.cooldown.ticks 0
 scoreboard players set @s ogvz.guardian.beam.cooldown.seconds 0

@@ -26,7 +26,7 @@ playsound minecraft:block.beacon.deactivate player @a[tag=!ogvz.dwarf.class.hero
 title @a[tag=ogvz.dwarf.class.hero.dwarven_guard] actionbar [ \
   "", \
   {"text":"[Ocean\'s Pearl]","bold":true,"color":"light_purple"}, \
-  {"text":" An Ocean\'s Pearl has been broken!","color":"light_purple"} \
+  {"text":" An ocean\'s pearl has been broken!","color":"light_purple"} \
 ]
 
 scoreboard players set @s ogvz.misc.custom_bar_hide.seconds 3

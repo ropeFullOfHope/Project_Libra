@@ -131,6 +131,22 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
   ] \
 ]
+give @s minecraft:carrot_on_a_stick[ \
+  minecraft:custom_data={active_id:4302}, \
+  minecraft:item_model="ogvz:glowing_shell", \
+  minecraft:unbreakable={show_in_tooltip:false}, \
+  minecraft:tooltip_style="ogvz:legendary", \
+  minecraft:item_name='{"text":"Glowing Shell","color":"aqua","bold":true}', \
+  minecraft:lore=[ \
+    '{"text":"Creates a temporary area of","color":"blue","italic":false}', \
+    '{"text":"effect, which grants other","color":"blue","italic":false}', \
+    '{"text":"dwarves mana regeneration.","color":"blue","italic":false}', \
+    '{"text":"30 second cooldown","color":"red","italic":false}', \
+    '{"text":"Requires 20 mana","color":"red","italic":false}', \
+    '{"text":"Active Item","color":"green","italic":false}', \
+    '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
+  ] \
+]
 
 tellraw @a [ \
   "", \

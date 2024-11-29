@@ -50,8 +50,8 @@ execute as @a[predicate=ogvz:effect/unluck] at @s run function ogvz:tick/custom_
 execute as @a at @s run function ogvz:tick/custom_bars
 
 # Multitick functions
-execute as @a[tag=ogvz.mana] at @s run function ogvz:tick/multitick_items
-execute as @a[tag=ogvz.zombie] at @s run function ogvz:tick/multitick_abilities
+function ogvz:tick/multitick_items
+function ogvz:tick/multitick_abilities
 #!!!execute as @a[tag=ogvz.zombie.class.hoglin] at @s run function ogvz:tick/adventure_switch
 #!!!execute as @a[tag=ogvz.zombie.class.enderman.portal_bound] at @s run function ogvz:tick/portal_bind
 
