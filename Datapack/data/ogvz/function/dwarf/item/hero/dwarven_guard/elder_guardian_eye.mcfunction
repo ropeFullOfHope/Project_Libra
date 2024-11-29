@@ -2,7 +2,7 @@
 # Called By: ogvz:tick/active_detect
 # File Name: elder_guardian_eye
 # Function Name: ogvz:dwarf/hero/elder_guardian_eye
-# File Purpose: Shoots a beam that deals magic damage and pierces players.
+# File Purpose: Shoots a beam that deals damage.
 # Created By: ropeFullOfHope
 # 
 # Created On: 2024.02.24
@@ -23,19 +23,19 @@ execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seco
 ]
 execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run return 0
 
-execute unless entity @s[level=10..] run title @s actionbar [ \
+execute unless entity @s[level=15..] run title @s actionbar [ \
   "", \
   {"text":"[Elder Guardian Eye]","bold":true,"color":"red"}, \
   {"text":" You need at least ","color":"red"}, \
-  {"text":"10 mana","bold":true,"color":"red"}, \
+  {"text":"15 mana","bold":true,"color":"red"}, \
   {"text":"!","color":"red"} \
 ]
-execute unless entity @s[level=10..] run return 0
+execute unless entity @s[level=15..] run return 0
 
 # Remove 10 levels.
-scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 10
+scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 15
 
-scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds 3
+scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds 5
 
 title @s actionbar [ \
   "", \
@@ -49,27 +49,30 @@ playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 2
 tag @s add temp.ray_origin
 
 # Create the scoreboard used for spinning particles.
-scoreboard objectives add ogvz.spin.temp dummy
-scoreboard players set @s ogvz.spin.temp 0
+scoreboard objectives add temp.spin dummy
+scoreboard players set @s temp.spin 0
 
 # Summons a marker at players feet and gives it the ray tag.
 execute summon minecraft:marker run tag @s add temp.ray
 
 # Teleports the marker to the player's eyes and makes it face in the same direction.
-execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] ~ ~ ~ ~ ~
+execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:marker,tag=temp.ray] ~ ~ ~ ~ ~
 
-# Starts the ray casting loop.
-execute as @e[type=minecraft:marker,tag=temp.ray,limit=1,sort=nearest] at @s run function ogvz:dwarf/hero/dwarven_guard/elder_guardian_eye_loop
+# Starts the ray casting loop. Different function is called depending on if the user is submerged in water.
+execute if entity @s[predicate=ogvz:is_inside_water] as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:dwarf/item/hero/dwarven_guard/elder_guardian_eye_long_loop
+execute unless entity @s[predicate=ogvz:is_inside_water] as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:dwarf/item/hero/dwarven_guard/elder_guardian_eye_short_loop
 
-# Deals damage to all players who have been hit by the ray.
-execute as @a[tag=temp.hit,tag=zombies] run damage @s 12 minecraft:magic by @p[tag=temp.ray_origin]
-execute as @a[tag=temp.hit,tag=dwarves] run damage @s 3 minecraft:magic by @p[tag=temp.ray_origin]
+# Deals damage to all players who have been hit by the ray. Damage is increased if the user is submerged in water.
+execute if entity @s[predicate=ogvz:is_inside_water] as @a[tag=temp.hit,tag=zombies] run damage @s 24 ogvz:electric by @p[tag=temp.ray_origin]
+execute unless entity @s[predicate=ogvz:is_inside_water] as @a[tag=temp.hit,tag=zombies] run damage @s 16 ogvz:electric by @p[tag=temp.ray_origin]
+execute if entity @s[predicate=ogvz:is_inside_water] as @a[tag=temp.hit,tag=dwarves] run damage @s 6 ogvz:electric by @p[tag=temp.ray_origin]
+execute unless entity @s[predicate=ogvz:is_inside_water] as @a[tag=temp.hit,tag=dwarves] run damage @s 4 ogvz:electric by @p[tag=temp.ray_origin]
 
 # Gets rid of the ray.
 kill @e[type=minecraft:marker,tag=temp.ray]
 
 # Remove scoreboard
-scoreboard objectives remove ogvz.spin.temp
+scoreboard objectives remove temp.spin
 
 # Remove tags
 tag @s remove temp.ray_origin

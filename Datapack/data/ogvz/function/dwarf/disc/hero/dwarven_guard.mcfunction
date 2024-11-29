@@ -110,6 +110,23 @@ item replace entity @s armor.feet with minecraft:iron_boots[ \
 
 # Gives the hero all their items.
 give @s minecraft:carrot_on_a_stick[ \
+  minecraft:custom_data={active_id:4300}, \
+  minecraft:item_model="ogvz:elder_guardian_eye", \
+  minecraft:unbreakable={show_in_tooltip:false}, \
+  minecraft:tooltip_style="ogvz:legendary", \
+  minecraft:item_name='{"text":"Elder Guardian Eye","color":"aqua","bold":true}', \
+  minecraft:lore=[ \
+    '{"text":"Shoots a damaging electric beam.","color":"blue","italic":false}', \
+    '{"text":"The beam is stronger, shoots","color":"blue","italic":false}', \
+    '{"text":"further and pierces zombies when","color":"blue","italic":false}', \
+    '{"text":"you are submerged in water.","color":"blue","italic":false}', \
+    '{"text":"5 second cooldown","color":"red","italic":false}', \
+    '{"text":"Requires 15 mana","color":"red","italic":false}', \
+    '{"text":"Active Item","color":"green","italic":false}', \
+    '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
+  ] \
+]
+give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:4301}, \
   minecraft:item_model="ogvz:oceans_pearl", \
   minecraft:unbreakable={show_in_tooltip:false}, \
