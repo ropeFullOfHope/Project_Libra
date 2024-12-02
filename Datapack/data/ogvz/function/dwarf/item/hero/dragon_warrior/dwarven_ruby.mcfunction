@@ -46,5 +46,5 @@ playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 4 1 0
 execute as @a[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero] at @s run playsound minecraft:block.beacon.activate player @s ~ ~ ~ 1 2 1
 
 # Builders receive 50 mana, non-builders receive 100 mana.
-scoreboard players add @a[tag=ogvz.dwarf.class.builder] ogvz.dwarf.mana_buildup.mana 50
-scoreboard players add @a[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.builder,tag=!ogvz.dwarf.class.hero.dragon_warrior] ogvz.dwarf.mana_buildup.mana 100
+scoreboard players add @a[tag=ogvz.dwarf.class.builder,tag=!ogvz.dwarf.class.hero] ogvz.dwarf.mana_buildup.mana 50
+scoreboard players add @a[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.builder,tag=!ogvz.dwarf.class.hero] ogvz.dwarf.mana_buildup.mana 100

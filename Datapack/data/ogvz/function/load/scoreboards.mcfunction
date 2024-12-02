@@ -100,7 +100,7 @@ scoreboard objectives add ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks dummy
 scoreboard objectives add ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds dummy
 
 # Wither Warrior
-scoreboard objectives add ogvz.wither_warrior.whispersong.flame.ticks dummy
+scoreboard objectives add ogvz.wither_warrior.soul_charges.count dummy
 
 # Assassin Slayer
 scoreboard objectives add ogvz.assassin_slayer.assassinate.cooldown.ticks dummy
@@ -165,13 +165,4 @@ scoreboard objectives add ogvz.enderman.reinforce.cooldown.seconds dummy
 
 ### Inventory info scoreboards
 scoreboard objectives add ogvz.inventory.lava_bucket dummy
-scoreboard objectives add ogvz.inventory.coas.7071 dummy
-scoreboard objectives add ogvz.inventory.coas.15000 dummy
-scoreboard objectives add ogvz.inventory.coas.15010 dummy
-scoreboard objectives add ogvz.inventory.coas.15020 dummy
-scoreboard objectives add ogvz.inventory.coas.15030 dummy
-scoreboard objectives add ogvz.inventory.coas.15040 dummy
-scoreboard objectives add ogvz.inventory.coas.15050 dummy
-scoreboard objectives add ogvz.inventory.coas.15060 dummy
-scoreboard objectives add ogvz.inventory.coas.15070 dummy
-scoreboard objectives add ogvz.inventory.coas.15071 dummy
+scoreboard objectives add ogvz.inventory.soulstone dummy

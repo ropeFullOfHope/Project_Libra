@@ -1,24 +1,19 @@
 {
   "anvil_cost": 1,
-  "description": {
-    "translate": "enchantment.minecraft.power"
-  },
+  "description": "Soul Power",
   "effects": {
     "minecraft:damage": [
       {
         "effect": {
           "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 0.4,
-            "per_level_above_first": 0.4
-          }
+          "value": 2
         },
         "requirements": {
           "condition": "minecraft:entity_properties",
           "entity": "direct_attacker",
           "predicate": {
-            "type": "#minecraft:arrows"
+            "type": "#minecraft:arrows",
+            "nbt": "{Tags:[\"temp.charged_whispersong_arrow\"]}"
           }
         }
       }
@@ -28,14 +23,14 @@
     "base": 50,
     "per_level_above_first": 0
   },
-  "max_level": 5,
+  "max_level": 1,
   "min_cost": {
-    "base": 3,
-    "per_level_above_first": 7
+    "base": 50,
+    "per_level_above_first": 0
   },
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/bow",
-  "weight": 10
+  "supported_items": "minecraft:bow",
+  "weight": 1
 }

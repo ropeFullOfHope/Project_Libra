@@ -169,7 +169,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_name='{"text":"Dwarven Ruby","color":"red","bold":true}', \
   minecraft:lore=[ \
     '{"text":"Restores a large amount of mana","color":"blue"}', \
-    '{"text":"to all other dwarves.","color":"blue"}', \
+    '{"text":"to all non-hero dwarves.","color":"blue"}', \
     '{"text":"60 second cooldown","color":"red","italic":false}', \
     '{"text":"Requires 30 mana","color":"red","italic":false}', \
     '{"text":"Active Item","color":"green","italic":false}', \

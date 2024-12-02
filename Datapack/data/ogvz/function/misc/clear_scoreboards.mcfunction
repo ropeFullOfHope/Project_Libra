@@ -24,7 +24,6 @@ scoreboard players set @s ogvz.misc.custom_bar_hide.seconds 0
 
 scoreboard players set @s ogvz.dwarf.mana_buildup.mana 0
 scoreboard players set @s ogvz.dwarf.mana_buildup.micromana 0
-scoreboard players set @s ogvz.wither_warrior.whispersong.flame.ticks 0
 scoreboard players set @s ogvz.chicken_nugget.fly.ticks 0
 scoreboard players set @s ogvz.chillager.icicle.freeze.ticks 0
 scoreboard players set @s ogvz.chillager.invisibility.duration.ticks 0
@@ -48,6 +47,7 @@ scoreboard players set @s ogvz.dragon_warrior.dragon_scale.cooldown.seconds 0
 scoreboard players set @s ogvz.dragon_warrior.dragon_scale.damage 0
 scoreboard players set @s ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks 0
 scoreboard players set @s ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds 0
+scoreboard players set @s ogvz.wither_warrior.soul_charges.count 0
 scoreboard players set @s ogvz.assassin_slayer.assassinate.cooldown.ticks 0
 scoreboard players set @s ogvz.assassin_slayer.assassinate.cooldown.seconds 0
 scoreboard players set @s ogvz.assassin_slayer.cloak_of_shadows.cooldown.ticks 0

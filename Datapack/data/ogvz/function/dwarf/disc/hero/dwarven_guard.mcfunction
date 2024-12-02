@@ -116,10 +116,10 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:tooltip_style="ogvz:legendary", \
   minecraft:item_name='{"text":"Elder Guardian Eye","color":"aqua","bold":true}', \
   minecraft:lore=[ \
-    '{"text":"Shoots a damaging electric beam.","color":"blue","italic":false}', \
-    '{"text":"The beam is stronger, shoots","color":"blue","italic":false}', \
-    '{"text":"further and pierces zombies when","color":"blue","italic":false}', \
-    '{"text":"you are submerged in water.","color":"blue","italic":false}', \
+    '{"text":"Shoots a damaging electric beam.","color":"blue"}', \
+    '{"text":"The beam is stronger, shoots","color":"blue"}', \
+    '{"text":"further and pierces zombies when","color":"blue"}', \
+    '{"text":"you are submerged in water.","color":"blue"}', \
     '{"text":"5 second cooldown","color":"red","italic":false}', \
     '{"text":"Requires 15 mana","color":"red","italic":false}', \
     '{"text":"Active Item","color":"green","italic":false}', \
@@ -133,15 +133,15 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:tooltip_style="ogvz:legendary", \
   minecraft:item_name='{"text":"Ocean\'s Pearl","color":"light_purple","bold":true}', \
   minecraft:lore=[ \
-    '{"text":"Places an ocean\'s pearl above","color":"blue","italic":false}', \
-    '{"text":"you, which grants buffs to all","color":"blue","italic":false}', \
-    '{"text":"dwarves nearby.","color":"blue","italic":false}', \
-    '{"text":"The pearl must be unobstructed","color":"blue","italic":false}', \
-    '{"text":"in order to work.","color":"blue","italic":false}', \
-    '{"text":"You can have up to 2 ocean\'s.","color":"blue","italic":false}', \
-    '{"text":"pearls active at once.","color":"blue","italic":false}', \
-    '{"text":"The pearl will break after","color":"blue","italic":false}', \
-    '{"text":"sustaining enough damage.","color":"blue","italic":false}', \
+    '{"text":"Places an ocean\'s pearl above","color":"blue"}', \
+    '{"text":"you, which grants buffs to all","color":"blue"}', \
+    '{"text":"dwarves nearby.","color":"blue"}', \
+    '{"text":"The pearl must be unobstructed","color":"blue"}', \
+    '{"text":"in order to work.","color":"blue"}', \
+    '{"text":"You can have up to 2 ocean\'s.","color":"blue"}', \
+    '{"text":"pearls active at once.","color":"blue"}', \
+    '{"text":"The pearl will break after","color":"blue"}', \
+    '{"text":"sustaining enough damage.","color":"blue"}', \
     '{"text":"30 second cooldown","color":"red","italic":false}', \
     '{"text":"Requires 50 mana","color":"red","italic":false}', \
     '{"text":"Active Item","color":"green","italic":false}', \
@@ -155,9 +155,9 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:tooltip_style="ogvz:legendary", \
   minecraft:item_name='{"text":"Glowing Shell","color":"aqua","bold":true}', \
   minecraft:lore=[ \
-    '{"text":"Creates a temporary area of","color":"blue","italic":false}', \
-    '{"text":"effect, which grants other","color":"blue","italic":false}', \
-    '{"text":"dwarves mana regeneration.","color":"blue","italic":false}', \
+    '{"text":"Creates a temporary area of","color":"blue"}', \
+    '{"text":"effect, where non-hero dwarves","color":"blue"}', \
+    '{"text":"can regenerate mana.","color":"blue"}', \
     '{"text":"30 second cooldown","color":"red","italic":false}', \
     '{"text":"Requires 20 mana","color":"red","italic":false}', \
     '{"text":"Active Item","color":"green","italic":false}', \

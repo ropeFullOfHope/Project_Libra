@@ -1,11 +1,11 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: ogvz:tick/active_detect
-# File Name: assassin_slayer
-# Function Name: ogvz:dwarf/heroes/disc/assassin_slayer
-# File Purpose: Spawn items for the assassin slayer hero.
+# File Name: wither_warrior
+# Function Name: ogvz:dwarf/disc/hero/wither_warrior
+# File Purpose: Spawn items for the wither warrior hero.
 # Created By: ropeFullOfHope
 # 
-# Created On: 2024.10.21
+# Created On: 2024.12.01
 # Last Modified On:
 # Last Modified By:
 #
@@ -23,7 +23,7 @@ effect clear @s
 effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
-# Remove all regular dwarf classes tags.
+# Remove all dwarf class tags.
 tag @s remove ogvz.dwarf.class.builder
 tag @s remove ogvz.dwarf.class.blacksmith
 tag @s remove ogvz.dwarf.class.tailor
@@ -34,17 +34,17 @@ tag @s remove ogvz.dwarf.class.enchanter
 tag @s add ogvz.dwarf
 tag @s add ogvz.dwarf.class
 tag @s add ogvz.dwarf.class.hero
-tag @s add ogvz.dwarf.class.hero.assassin_slayer
+tag @s add ogvz.dwarf.class.hero.wither_warrior
 tag @s add ogvz.mana
 
-team join d0ASSASSIN_SLAYER @s
+team join d0WITHER_WARRIOR @s
 
 execute as @s at @s run function ogvz:misc/drop_armor
 
 # Equips the hero with their armor.
-item replace entity @s armor.head with minecraft:chainmail_helmet[ \
+item replace entity @s armor.head with minecraft:netherite_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Assassin Slayer Helmet","color":"gold"}', \
+  minecraft:item_name='{"text":"Wither Warrior Helmet","color":"gold"}', \
   minecraft:enchantments={ \
     levels:{ \
       "minecraft:protection":4, \
@@ -58,12 +58,12 @@ item replace entity @s armor.head with minecraft:chainmail_helmet[ \
     ] \
   } \
 ]
-item replace entity @s armor.chest with minecraft:chainmail_chestplate[ \
+item replace entity @s armor.chest with minecraft:netherite_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Assassin Slayer Chestplate","color":"gold"}', \
+  minecraft:item_name='{"text":"Wither Warrior Chestplate","color":"gold"}', \
   minecraft:enchantments={ \
     levels:{ \
-      "minecraft:protection":4, \
+      "minecraft:protection":5, \
       "minecraft:binding_curse":1 \
     } \
   }, \
@@ -74,13 +74,12 @@ item replace entity @s armor.chest with minecraft:chainmail_chestplate[ \
     ] \
   } \
 ]
-item replace entity @s armor.legs with minecraft:chainmail_leggings[ \
+item replace entity @s armor.legs with minecraft:netherite_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Assassin Slayer Leggings","color":"gold"}', \
+  minecraft:item_name='{"text":"Wither Warrior Leggings","color":"gold"}', \
   minecraft:enchantments={ \
     levels:{ \
       "minecraft:protection":4, \
-      "minecraft:swift_sneak":3, \
       "minecraft:binding_curse":1 \
     } \
   }, \
@@ -91,9 +90,9 @@ item replace entity @s armor.legs with minecraft:chainmail_leggings[ \
     ] \
   } \
 ]
-item replace entity @s armor.feet with minecraft:chainmail_boots[ \
+item replace entity @s armor.feet with minecraft:netherite_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Assassin Slayer Boots","color":"gold"}', \
+  minecraft:item_name='{"text":"Wither Warrior Boots","color":"gold"}', \
   minecraft:enchantments={ \
     levels:{ \
       "minecraft:protection":4, \
@@ -104,76 +103,42 @@ item replace entity @s armor.feet with minecraft:chainmail_boots[ \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
       {type:"minecraft:armor",name:"minecraft:armor",amount:3,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
-      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
-      {type:"minecraft:movement_speed",name:"minecraft:movement_speed",amount:0.2,operation:"add_multiplied_total",slot:"feet",id:"ogvz:feet"} \
-      ] \
+      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+    ] \
   } \
 ]
 
 # Gives the hero all their items.
-give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_data={active_id:4200}, \
-  minecraft:item_model="ogvz:betrayers_dagger", \
+give @s minecraft:bow[ \
+  minecraft:item_model="ogvz:whispersong", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:tooltip_style="ogvz:legendary", \
-  minecraft:item_name='{"text":"Betrayer\'s Dagger","color":"red","bold":true}', \
+  minecraft:item_name='{"text":"Whispersong","color":"aqua","bold":true}', \
   minecraft:lore=[ \
-    '{"text":"Assassinate","color":"blue","italic":false,"underlined":true}', \
-    '{"text":"Attacking a player from behind","color":"blue"}', \
-    '{"text":"will deal massive damage.","color":"blue"}', \
-    '{"text":"8 second cooldown","color":"red","italic":false}', \
-    '{"text":"Secondary Attack","color":"green","italic":false}', \
-    '{"text":" "}', \
-    '{"text":"When in Main Hand:","color":"gray","italic":false}', \
-    '{"text":" 8.5 Attack Damage","color":"dark_green","italic":false}', \
-    '{"text":" 20 Attack Speed","color":"dark_green","italic":false}', \
-    '{"text":" 2.5 Attack Reach","color":"dark_green","italic":false}', \
-    '{"text":"Unbreakable","color":"blue","italic":false}', \
-    '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
-  ], \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:attack_damage",name:"minecraft:attack_damage",amount:7.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:attack_speed",name:"minecraft:attack_speed",amount:16.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:entity_interaction_range",name:"minecraft:entity_interaction_range",amount:-0.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
-    ], \
-    show_in_tooltip:false \
-  } \
-]
-
-give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_data={active_id:4201}, \
-  minecraft:item_model="ogvz:cloak_of_shadows", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:tooltip_style="ogvz:legendary", \
-  minecraft:item_name='{"text":"Cloak of Shadows","color":"gray","bold":true}', \
-  minecraft:lore=[ \
-    '{"text":"Makes you and your armor","color":"blue"}', \
-    '{"text":"invisible.","color":"blue"}', \
-    '{"text":"Taking or dealing damage will","color":"blue"}', \
-    '{"text":"cancel the invisibility.","color":"blue"}', \
-    '{"text":"You can manually cancel the","color":"blue"}', \
-    '{"text":"invisibility by using the cloak","color":"blue"}', \
-    '{"text":"of shadows again.","color":"blue"}', \
-    '{"text":"5 second cooldown","color":"red","italic":false}', \
-    '{"text":"Drains 2 mana per second","color":"red","italic":false}', \
-    '{"text":"Active Item","color":"green","italic":false}', \
     '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
   ] \
 ]
-
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_data={active_id:4202}, \
-  minecraft:item_model="ogvz:mana_star", \
+  minecraft:custom_data={active_id:4101}, \
+  minecraft:item_model="ogvz:sunfury", \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:tooltip_style="ogvz:legendary", \
-  minecraft:item_name='{"text":"Mana Star","color":"green","bold":true}', \
+  minecraft:item_name='{"text":"Sunfury","color":"red","bold":true}', \
   minecraft:lore=[ \
-    '{"text":"Shoots a beam that gives mana","color":"blue"}', \
-    '{"text":"regeneration to a targeted","color":"blue"}', \
-    '{"text":"non-hero dwarf.","color":"blue"}', \
-    '{"text":"10 second cooldown","color":"red","italic":false}', \
-    '{"text":"Active Item","color":"green","italic":false}', \
+    '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
+  ] \
+]
+give @s minecraft:carrot_on_a_stick[ \
+  minecraft:custom_data={passive_id:4102}, \
+  minecraft:item_model="ogvz:soulstone", \
+  minecraft:unbreakable={show_in_tooltip:false}, \
+  minecraft:tooltip_style="ogvz:legendary", \
+  minecraft:item_name='{"text":"Soulstone","color":"light_purple","bold":true}', \
+  minecraft:lore=[ \
+    '{"text":"Every time you get a kill, all","color":"blue"}', \
+    '{"text":"non-hero dwarves gain a small","color":"blue"}', \
+    '{"text":"amount of mana.","color":"blue"}', \
+    '{"text":"Passive Item","color":"green","italic":false}', \
     '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
   ] \
 ]

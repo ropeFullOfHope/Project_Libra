@@ -4,7 +4,7 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "player": {
-          "nbt": "{Tags:[\"wither_warrior\"]}"
+          "nbt": "{Tags:[\"ogvz.dwarf.class.hero.wither_warrior\"]}"
         },
         "entity": {
           "type": "minecraft:player"
@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "ogvz:dwarf/hero/wither_warrior/kill"
+    "function": "ogvz:dwarf/item/hero/wither_warrior/kill"
   }
 }

@@ -14,9 +14,15 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Revoke advancement, so it can be granted again.
 advancement revoke @s only ogvz:misc/wither_warrior_kill_player
 
-scoreboard players add @s ogvz.wither_warrior.whispersong.flame.ticks 720
+# Give player a set amount of soul charges.
+scoreboard players add @s ogvz.wither_warrior.soul_charges.count 5
 
-# Upper limit
-execute as @s[scores={ogvz.wither_warrior.whispersong.flame.ticks=3600..}] run scoreboard players set @s ogvz.wither_warrior.whispersong.flame.ticks 3600
+# Upper limit of soul charges.
+execute as @s[scores={ogvz.wither_warrior.soul_charges.count=5..}] run scoreboard players set @s ogvz.wither_warrior.soul_charges.count 5
+
+# Trigger soulstone if the player has it in their inventory.
+execute as @s[scores={ogvz.inventory.soulstone=1..}] at @s run function ogvz:dwarf/item/hero/wither_warrior/soulstone
+say "test"
