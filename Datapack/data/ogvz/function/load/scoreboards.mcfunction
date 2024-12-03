@@ -101,6 +101,8 @@ scoreboard objectives add ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds dumm
 
 # Wither Warrior
 scoreboard objectives add ogvz.wither_warrior.soul_charges.count dummy
+scoreboard objectives add ogvz.wither_warrior.phantom_slash.cooldown.ticks dummy
+scoreboard objectives add ogvz.wither_warrior.phantom_slash.cooldown.seconds dummy
 
 # Assassin Slayer
 scoreboard objectives add ogvz.assassin_slayer.assassinate.cooldown.ticks dummy

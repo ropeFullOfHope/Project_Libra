@@ -69,6 +69,13 @@ execute as @s[scores={ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks=20..,ogvz.
 execute as @s[scores={ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks=20..,ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Dwarven Ruby]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks 0
 
+# Wither Warrior - Phantom Slash
+execute as @s[scores={ogvz.wither_warrior.phantom_slash.cooldown.seconds=1..}] run scoreboard players add @s ogvz.wither_warrior.phantom_slash.cooldown.ticks 1
+execute as @s[scores={ogvz.wither_warrior.phantom_slash.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.wither_warrior.phantom_slash.cooldown.seconds 1
+execute as @s[scores={ogvz.wither_warrior.phantom_slash.cooldown.ticks=20..,ogvz.wither_warrior.phantom_slash.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.wither_warrior.phantom_slash.cooldown.ticks=20..,ogvz.wither_warrior.phantom_slash.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Phantom Slash]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.wither_warrior.phantom_slash.cooldown.ticks=20..}] run scoreboard players set @s ogvz.wither_warrior.phantom_slash.cooldown.ticks 0
+
 # Assassin Slayer - Assassinate
 execute as @s[scores={ogvz.assassin_slayer.assassinate.cooldown.seconds=1..}] run scoreboard players add @s ogvz.assassin_slayer.assassinate.cooldown.ticks 1
 execute as @s[scores={ogvz.assassin_slayer.assassinate.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.assassin_slayer.assassinate.cooldown.seconds 1

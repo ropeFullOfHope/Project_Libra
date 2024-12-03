@@ -20,8 +20,8 @@ execute as @s[scores={ogvz.misc.custom_bar_hide.seconds=1..}] run return 0
 # Show dragon scale custom bar to Dragon Warrior only if they are holding the dragon scale while in dragon form.
 execute as @s[tag=ogvz.dwarf.class.hero.dragon_warrior.dragon_form] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:4001}] at @s run function ogvz:dwarf/item/hero/dragon_warrior/dragon_scale_custom_bar
 
-# Show whispersong flame bar to Wither Warrior only if they are holding the whispersong.
-execute as @s[tag=ogvz.dwarf.class.hero.wither_warrior] if items entity @s weapon.* minecraft:bow[minecraft:custom_data={soul_power:1}] at @s run function ogvz:dwarf/hero/wither_warrior/whispersong_flame_bar
+# Show whispersong's custom bar to Wither Warrior only if they are holding the whispersong.
+execute if items entity @s weapon.* minecraft:bow[enchantments~[{"ogvz:soul_power":1}]] at @s run function ogvz:dwarf/item/hero/wither_warrior/whispersong_custom_bar
 
 # Show Ocean's Pearl custom bar to the Dwarven Guard only if they are holding the ocean's pearl.
 execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:4301}] at @s run function ogvz:dwarf/item/hero/dwarven_guard/oceans_pearl_custom_bar

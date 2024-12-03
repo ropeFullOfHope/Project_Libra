@@ -115,9 +115,31 @@ give @s minecraft:bow[ \
   minecraft:tooltip_style="ogvz:legendary", \
   minecraft:item_name='{"text":"Whispersong","color":"aqua","bold":true}', \
   minecraft:lore=[ \
+    '{"text":" "}', \
+    '{"text":"Soul Power","color":"blue","italic":false,"underlined":true}', \
+    '{"text":"Shooting an arrow will consume a","color":"blue"}', \
+    '{"text":"soul charge.","color":"blue"}', \
+    '{"text":"If a soul charge has been","color":"blue"}', \
+    '{"text":"consumed, the damage of the","color":"blue"}', \
+    '{"text":"arrow will drastically increase.","color":"blue"}', \
+    '{"text":"You can get soul charges by","color":"blue"}', \
+    '{"text":"killing zombies with melee","color":"blue"}', \
+    '{"text":"attacks.","color":"blue"}', \
+    '{"text":"Enchantment","color":"green","italic":false}', \
+    '{"text":" "}', \
+    '{"text":"Unbreakable","color":"blue","italic":false}', \
     '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
-  ] \
+  ], \
+  minecraft:enchantments={ \
+    levels:{ \
+      "minecraft:power":5, \
+      "minecraft:infinity":1, \
+      "minecraft:flame":1, \
+      "ogvz:soul_power":1 \
+    } \
+  } \
 ]
+
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:4101}, \
   minecraft:item_model="ogvz:sunfury", \
@@ -125,9 +147,41 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:tooltip_style="ogvz:legendary", \
   minecraft:item_name='{"text":"Sunfury","color":"red","bold":true}', \
   minecraft:lore=[ \
+    '{"text":" "}', \
+    '{"text":"Phantom Slash","color":"blue","italic":false,"underlined":true}', \
+    '{"text":"Teleport forward a short","color":"blue"}', \
+    '{"text":"distance.","color":"blue"}', \
+    '{"text":"All zombies you pass through","color":"blue"}', \
+    '{"text":"will be damaged and will have","color":"blue"}', \
+    '{"text":"weakness, slowness and blindness","color":"blue"}', \
+    '{"text":"applied to them.","color":"blue"}', \
+    '{"text":"15 second cooldown","color":"red","italic":false}', \
+    '{"text":"Requires 30 mana","color":"red","italic":false}', \
+    '{"text":"Secondary Attack","color":"green","italic":false}', \
+    '{"text":" "}', \
+    '{"text":"When in Main Hand:","color":"gray","italic":false}', \
+    '{"text":" 8 Attack Damage","color":"dark_green","italic":false}', \
+    '{"text":" 1.6 Attack Speed","color":"dark_green","italic":false}', \
+    '{"text":" 3 Attack Reach","color":"dark_green","italic":false}', \
+    '{"text":"Unbreakable","color":"blue","italic":false}', \
     '{"text":"Heroic Item","color":"gold","italic":false,"bold":true}' \
-  ] \
+  ], \
+  minecraft:attribute_modifiers={ \
+    modifiers:[ \
+      {type:"minecraft:attack_damage",name:"minecraft:attack_damage",amount:7.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:attack_speed",name:"minecraft:attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+    ], \
+    show_in_tooltip:false \
+  }, \
+  minecraft:enchantments={ \
+    levels:{ \
+      "minecraft:sharpness":5, \
+      "minecraft:sweeping_edge":3, \
+      "minecraft:fire_aspect":2 \
+    } \
+  } \
 ]
+
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={passive_id:4102}, \
   minecraft:item_model="ogvz:soulstone", \

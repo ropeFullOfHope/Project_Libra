@@ -48,6 +48,8 @@ scoreboard players set @s ogvz.dragon_warrior.dragon_scale.damage 0
 scoreboard players set @s ogvz.dragon_warrior.dwarven_ruby.cooldown.ticks 0
 scoreboard players set @s ogvz.dragon_warrior.dwarven_ruby.cooldown.seconds 0
 scoreboard players set @s ogvz.wither_warrior.soul_charges.count 0
+scoreboard players set @s ogvz.wither_warrior.phantom_slash.cooldown.ticks 0
+scoreboard players set @s ogvz.wither_warrior.phantom_slash.cooldown.seconds 0
 scoreboard players set @s ogvz.assassin_slayer.assassinate.cooldown.ticks 0
 scoreboard players set @s ogvz.assassin_slayer.assassinate.cooldown.seconds 0
 scoreboard players set @s ogvz.assassin_slayer.cloak_of_shadows.cooldown.ticks 0

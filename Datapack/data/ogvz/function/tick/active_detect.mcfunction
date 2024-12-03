@@ -99,6 +99,7 @@ execute as @s[tag=ogvz.dwarf.class.hero.dragon_warrior,scores={ogvz.rclick.activ
 execute as @s[tag=ogvz.dwarf.class.hero.dragon_warrior,scores={ogvz.rclick.active_id=4002}] at @s run function ogvz:dwarf/item/hero/dragon_warrior/dwarven_ruby
 
 # Wither Warrior (41xx)
+execute as @s[tag=ogvz.dwarf.class.hero.wither_warrior,scores={ogvz.rclick.active_id=4101}] at @s run function ogvz:dwarf/item/hero/wither_warrior/phantom_slash
 
 # Assassin Slayer (42xx)
 execute as @s[tag=ogvz.dwarf.class.hero.assassin_slayer,scores={ogvz.rclick.active_id=4200}] at @s run function ogvz:dwarf/item/hero/assassin_slayer/assassinate

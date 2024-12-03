@@ -8,11 +8,19 @@
         },
         "entity": {
           "type": "minecraft:player"
+        },
+        "killing_blow": {
+          "tags": [
+            {
+              "id": "minecraft:is_player_attack",
+              "expected": true
+            }
+          ]
         }
       }
     }
   },
   "rewards": {
-    "function": "ogvz:dwarf/item/hero/wither_warrior/soulstone"
+    "function": "ogvz:dwarf/item/hero/wither_warrior/whispersong_charge"
   }
 }

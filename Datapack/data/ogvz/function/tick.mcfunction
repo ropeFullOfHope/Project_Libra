@@ -29,7 +29,6 @@ execute as @e[type=minecraft:item,tag=!ogvz.processed] at @s run function ogvz:t
 execute as @a[tag=!ogvz.admin] at @s run function ogvz:tick/lava_bucket
 execute as @a at @s run function ogvz:tick/dolphins_grace_nerf
 execute as @a at @s run function ogvz:tick/natural_regeneration
-execute as @a at @s run function ogvz:tick/particles
 
 # Admin functions
 execute as @a[tag=!ogvz.admin,gamemode=creative] at @s run function ogvz:tick/admin
@@ -64,3 +63,5 @@ execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.mana=..-1}] at @s ru
 
 # Misc functions
 execute as @a[tag=ogvz.zombie] at @s run function ogvz:tick/innate_abilities
+execute as @e[type=#minecraft:arrows,tag=!temp.processed] at @s run function ogvz:tick/arrow_check
+function ogvz:tick/particles
