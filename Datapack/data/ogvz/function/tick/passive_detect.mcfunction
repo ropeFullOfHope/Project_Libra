@@ -34,7 +34,8 @@ execute as @s[tag=!ogvz.admin,scores={ogvz.inventory.lava_bucket=1..}] at @s run
 
 
 ### Zombie abilities
-
+# Zombie
+execute as @s[tag=ogvz.zombie.class.zombie_variant,scores={ogvz.inventory.undying_bond=1..}] at @s run function ogvz:zombie/ability/zombie_variant/undying_bond
 
 ### Zombie boss abilities
 

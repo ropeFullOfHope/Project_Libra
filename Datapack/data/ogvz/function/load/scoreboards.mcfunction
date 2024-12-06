@@ -58,6 +58,11 @@ scoreboard objectives add ogvz.rclick.use minecraft.used:minecraft.carrot_on_a_s
 scoreboard objectives add ogvz.rclick.cooldown dummy
 scoreboard objectives add ogvz.rclick.active_id dummy
 
+### Inventory info scoreboards
+scoreboard objectives add ogvz.inventory.lava_bucket dummy
+scoreboard objectives add ogvz.inventory.soulstone dummy
+scoreboard objectives add ogvz.inventory.undying_bond dummy
+
 ### Miscellaneous scoreboards
 scoreboard objectives add ogvz.misc.health health
 scoreboard objectives add ogvz.misc.food food
@@ -164,7 +169,3 @@ scoreboard objectives add ogvz.enderman.portal.cooldown.ticks dummy
 scoreboard objectives add ogvz.enderman.portal.cooldown.seconds dummy
 scoreboard objectives add ogvz.enderman.reinforce.cooldown.ticks dummy
 scoreboard objectives add ogvz.enderman.reinforce.cooldown.seconds dummy
-
-### Inventory info scoreboards
-scoreboard objectives add ogvz.inventory.lava_bucket dummy
-scoreboard objectives add ogvz.inventory.soulstone dummy

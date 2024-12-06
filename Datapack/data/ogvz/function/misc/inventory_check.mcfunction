@@ -37,7 +37,8 @@ execute as @s store result score @s ogvz.inventory.soulstone run clear @s minecr
 
 
 ### Zombie abilities (6xxx)
-
+# Zombie (600x)
+execute as @s store result score @s ogvz.inventory.undying_bond run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={passive_id:6000}] 0
 
 ### Zombie boss abilities (7xxx)
 
