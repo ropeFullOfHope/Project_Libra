@@ -30,15 +30,41 @@ execute as @s store result score @s ogvz.inventory.lava_bucket run clear @s mine
 
 
 ### Dwarf hero items (4xxx)
+# Dragon Warrior (40xx)
 # Wither Warrior (41xx)
 execute as @s store result score @s ogvz.inventory.soulstone run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={passive_id:4102}] 0
+# Assassin Slayer (42xx)
+# Dwarven Guard (43xx)
 
 ### Dwarf legendary items (5xxx)
 
 
 ### Zombie abilities (6xxx)
-# Zombie (600x)
+# Zombie variants (600x)
 execute as @s store result score @s ogvz.inventory.undying_bond run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={passive_id:6000}] 0
+# Zombie (601x)
+# Husk (602x)
+# Vindicator (603x)
+# Drowned (604x)
+# Skeleton variants (610x)
+# Skeleton (611x)
+# Wither skeleton (612x)
+# Pillager (613x)
+# Guardian (614x)
+# Creeper (620x)
+# Spider (621x)
+# Blaze (630x)
+# Chillager (631x)
+# Ocelot (632x)
+# Phantom (633x)
+# Snowman (634x)
+# Wolf (635x)
+# Hoglin (640x)
+# Silverfish (641x)
+# Enderman (650x)
+# Golem (651x)
+# Aquatic zombies (690x)
+execute as @s store result score @s ogvz.inventory.sharing_grace run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={passive_id:6900}] 0
 
 ### Zombie boss abilities (7xxx)
 

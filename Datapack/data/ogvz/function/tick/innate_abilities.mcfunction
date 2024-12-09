@@ -14,8 +14,21 @@
 # Comments: These abilities don't really matter that much and as such, do not need a passive ability item with a description.
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# All zombies have permanent night vision and conduit power.
+effect give @s[tag=!ogvz.dead] minecraft:night_vision infinite 0 true
+effect give @s[tag=!ogvz.dead] minecraft:conduit_power infinite 0 true
+
+# Husks are immune to hunger.
+effect clear @s[tag=ogvz.zombie.class.zombie_variant.husk] minecraft:hunger
+
+# Aquatic zombies have permanent dolphin's grace.
+effect give @s[tag=ogvz.zombie.aquatic] minecraft:dolphins_grace infinite 0 true
+
 # Wither skeletons are immune to wither effect.
-execute as @a[tag=ogvz.zombie.class.skeleton_variant.wither_skeleton] run effect clear @s minecraft:wither
+effect clear @s[tag=ogvz.zombie.class.skeleton_variant.wither_skeleton] minecraft:wither
 
 # Spiders are immune to poison effect.
-execute as @a[tag=ogvz.zombie.class.spider] run effect clear @s minecraft:poison 
+effect clear @s[tag=ogvz.zombie.class.spider] minecraft:poison
+
+# Blazes have permanent fire resistance.
+effect give @s[tag=ogvz.zombie.class.blaze] minecraft:fire_resistance infinite 0 true

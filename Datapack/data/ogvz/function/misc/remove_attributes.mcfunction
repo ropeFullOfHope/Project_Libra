@@ -18,10 +18,18 @@
 tag @s remove ogvz.attribute.dolphins_grace_nerf.water_movement_efficiency
 attribute @s minecraft:water_movement_efficiency modifier remove ogvz.dolphins_grace_nerf.water_movement_efficiency
 
-# Pearl rod teleportation
+# Pearl rod - teleportation
 attribute @s minecraft:movement_speed modifier remove ogvz.teleporting.movement_speed
 attribute @s minecraft:jump_strength modifier remove ogvz.teleporting.jump_strength
 
-# Dragon warrior's dragon form
+# Dragon warrior - dragon form
 attribute @s minecraft:attack_damage modifier remove ogvz.dragon_form.attack_damage
 attribute @s minecraft:movement_speed modifier remove ogvz.dragon_form.movement_speed
+
+# Creeper - explode
+attribute @s minecraft:explosion_knockback_resistance modifier remove ogvz.explosion.explosion_knockback_resistance
+
+# Wolf - base attributes
+attribute @s minecraft:movement_speed modifier remove ogvz.wolf.movement_speed
+attribute @s minecraft:jump_strength modifier remove ogvz.wolf.jump_strength
+attribute @s minecraft:safe_fall_distance modifier remove ogvz.wolf.safe_fall_distance

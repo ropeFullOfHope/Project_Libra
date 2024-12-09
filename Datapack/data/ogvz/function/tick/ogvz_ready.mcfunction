@@ -18,7 +18,7 @@ gamemode adventure @s
 
 execute as @s at @s run function ogvz:misc/clear_scoreboards
 execute as @s at @s run function ogvz:misc/remove_tags
-execute as @s at @s run function ogvz:misc/clear_attributes
+execute as @s at @s run function ogvz:misc/remove_attributes
 
 tag @s remove ogvz.admin
 tag @s remove ogvz.joined

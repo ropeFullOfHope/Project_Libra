@@ -20,6 +20,10 @@ effect clear @s
 effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
+execute as @s at @s run function ogvz:misc/remove_tags
+execute as @s at @s run function ogvz:misc/remove_attributes
+execute as @s at @s run function ogvz:misc/clear_scoreboards
+
 tag @s add ogvz.dwarf
 tag @s add ogvz.dwarf.class
 tag @s add ogvz.dwarf.class.tailor
@@ -51,8 +55,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:item_name='{"text":"Super Fertilizer","color":"green"}', \
   minecraft:lore=[ \
+    '{"text":"Use on a grass block.","color":"blue"}', \
     '{"text":"Allows flowers to grow in any","color":"blue"}', \
-    '{"text":"biome.","color":"blue"}' \
+    '{"text":"biome.","color":"blue"}', \
+    '{"text":"Single-Use","italic":false,"color":"red"}', \
+    '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]
 give @s minecraft:mud_bricks 64

@@ -99,7 +99,11 @@ tag @s remove ogvz.zombie.class.boss.wither
 tag @s remove ogvz.zombie.class.boss.assasin
 tag @s remove ogvz.zombie.class.boss.elder_guardian
 
+tag @s remove ogvz.zombie.suicide_pill
+
 tag @s remove ogvz.zombie.purple
+
+tag @s remove ogvz.zombie.aquatic
 
 tag @s remove ogvz.zombie.element
 tag @s remove ogvz.zombie.element.fire

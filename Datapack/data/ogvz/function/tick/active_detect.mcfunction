@@ -114,49 +114,35 @@ execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.active
 ### Dwarf legendary items (5xxx)
 
 
-### Zombie abilities (7xxx)
-# Guardian (700x)
-execute as @s[tag=ogvz.zombie.class.skeleton_variant.guardian,scores={ogvz.rclick.active_id=7000}] at @s run function ogvz:zombie/guardian/beam
-# Creeper (701x)
-execute as @s[tag=ogvz.zombie.class.creeper,scores={ogvz.rclick.active_id=7010}] at @s run function ogvz:zombie/creeper/explode
-# Spider (702x)
-execute as @s[tag=ogvz.zombie.class.spider,scores={ogvz.rclick.active_id=7020}] at @s run function ogvz:zombie/spider/web
-# Wolf (703x)
-execute as @s[tag=ogvz.zombie.class.wolf,scores={ogvz.rclick.active_id=7030}] at @s run function ogvz:zombie/wolf/howl
-# Ocelot (704x)
-execute as @s[tag=ogvz.zombie.class.ocelot,scores={ogvz.rclick.active_id=7040}] at @s run function ogvz:zombie/ocelot/steal_mana
-execute as @s[tag=ogvz.zombie.class.ocelot,scores={ogvz.rclick.active_id=7041}] at @s run function ogvz:zombie/ocelot/dash
-execute as @s[tag=ogvz.zombie.class.ocelot,scores={ogvz.rclick.active_id=7042}] at @s run function ogvz:zombie/ocelot/disarm
-execute as @s[tag=ogvz.zombie.class.ocelot,scores={ogvz.rclick.active_id=7043}] at @s run function ogvz:zombie/ocelot/mute
-# Chicken Nugget (705x)
-execute as @s[tag=ogvz.zombie.class.chicken_nugget,scores={ogvz.rclick.active_id=7050}] at @s run function ogvz:zombie/chicken_nugget/egg_barrage
-execute as @s[tag=ogvz.zombie.class.chicken_nugget,scores={ogvz.rclick.active_id=7051}] at @s run function ogvz:zombie/chicken_nugget/fly
-# Snowman (706x)
-execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=7060}] at @s run function ogvz:zombie/snowman/snowball_barrage
-execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=7061}] at @s run function ogvz:zombie/snowman/icicle
-# Chillager (707x)
-execute as @s[tag=ogvz.zombie.class.chillager,scores={ogvz.rclick.active_id=7070}] at @s run function ogvz:zombie/chillager/invisibility
-execute as @s[tag=ogvz.zombie.class.chillager,scores={ogvz.rclick.active_id=7071}] at @s run function ogvz:zombie/chillager/ice_cube
-# Bee (708x)
-execute as @s[tag=ogvz.zombie.class.bee,scores={ogvz.rclick.active_id=7080}] at @s run function ogvz:zombie/bee/honey
-execute as @s[tag=ogvz.zombie.class.bee,scores={ogvz.rclick.active_id=7081}] at @s run function ogvz:zombie/bee/pollen_bomb
-# Phantom (709x)
-execute as @s[tag=ogvz.zombie.class.phantom,scores={ogvz.rclick.active_id=7090}] at @s run function ogvz:zombie/phantom/delirium
-execute as @s[tag=ogvz.zombie.class.phantom,scores={ogvz.rclick.active_id=7091}] at @s run function ogvz:zombie/phantom/shrouding_fog
-# Blaze (710x)
-execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=7100}] at @s run function ogvz:zombie/blaze/fireball
-execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=7101}] at @s run function ogvz:zombie/blaze/fireblast
-execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=7102}] at @s run function ogvz:zombie/blaze/firefly
-# Silverfish (711x)
-execute as @s[tag=ogvz.zombie.class.silverfish,scores={ogvz.rclick.active_id=7110}] at @s run function ogvz:zombie/silverfish/infest
-execute as @s[tag=ogvz.zombie.class.silverfish,scores={ogvz.rclick.active_id=7111}] at @s run function ogvz:zombie/silverfish/roar
-# Golem (712x)
-execute as @s[tag=ogvz.zombie.class.golem,scores={ogvz.rclick.active_id=7120}] at @s run function ogvz:zombie/golem/fissure
-# Enderman (713x)
-execute as @s[tag=ogvz.zombie.class.enderman,scores={ogvz.rclick.active_id=7130}] at @s run function ogvz:zombie/enderman/teleport
-execute as @s[tag=ogvz.zombie.class.enderman,scores={ogvz.rclick.active_id=7131}] at @s run function ogvz:zombie/enderman/portal_above
-execute as @s[tag=ogvz.zombie.class.enderman,scores={ogvz.rclick.active_id=7132}] at @s run function ogvz:zombie/enderman/portal_below
-execute as @s[tag=ogvz.zombie.class.enderman,scores={ogvz.rclick.active_id=7133}] at @s run function ogvz:zombie/enderman/reinforce
+### Zombie abilities (6xxx)
+# Zombie variants (600x)
+# Zombie (601x)
+# Husk (602x)
+# Vindicator (603x)
+# Drowned (604x)
+# Skeleton variants (610x)
+# Skeleton (611x)
+# Wither skeleton (612x)
+# Pillager (613x)
+# Guardian (614x)
+# Creeper (620x)
+execute as @s[tag=ogvz.zombie.class.creeper,scores={ogvz.rclick.active_id=6200}] at @s run function ogvz:zombie/ability/creeper/explode
+# Spider (621x)
+# Blaze (630x)
+# Chillager (631x)
+# Ocelot (632x)
+# Phantom (633x)
+# Snowman (634x)
+# Wolf (635x)
+execute as @s[tag=ogvz.zombie.class.wolf,scores={ogvz.rclick.active_id=6350}] at @s run function ogvz:zombie/ability/wolf/howl
+# Hoglin (640x)
+# Silverfish (641x)
+# Enderman (650x)
+# Golem (651x)
+# Aquatic zombies (690x)
+
+### Zombie boss abilities (7xxx)
+
 
 ### Zombie nature given abilities (8xxx)
 

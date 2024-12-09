@@ -27,7 +27,7 @@ give @s minecraft:carrot_on_a_stick[ \
       {"text":" items.","color":"blue"} \
     ]', \
     '{"text":"Requires 5 Legendary Shards","italic":false,"color":"red"}', \
-    '{"text":"Single-use item","italic":false,"color":"red"}', \
+    '{"text":"Single-Use","italic":false,"color":"red"}', \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]

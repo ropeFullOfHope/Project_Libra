@@ -62,6 +62,7 @@ scoreboard objectives add ogvz.rclick.active_id dummy
 scoreboard objectives add ogvz.inventory.lava_bucket dummy
 scoreboard objectives add ogvz.inventory.soulstone dummy
 scoreboard objectives add ogvz.inventory.undying_bond dummy
+scoreboard objectives add ogvz.inventory.sharing_grace dummy
 
 ### Miscellaneous scoreboards
 scoreboard objectives add ogvz.misc.health health
@@ -126,46 +127,4 @@ scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.seconds dummy
 
 ### Zombie scoreboards
-scoreboard objectives add ogvz.guardian.beam.cooldown.ticks dummy
-scoreboard objectives add ogvz.guardian.beam.cooldown.seconds dummy
-scoreboard objectives add ogvz.spider.web.cooldown.ticks dummy
-scoreboard objectives add ogvz.spider.web.cooldown.seconds dummy
-scoreboard objectives add ogvz.ocelot.steal_mana.cooldown.ticks dummy
-scoreboard objectives add ogvz.ocelot.steal_mana.cooldown.seconds dummy
-scoreboard objectives add ogvz.chicken_nugget.fly.cooldown.ticks dummy
-scoreboard objectives add ogvz.chicken_nugget.fly.cooldown.seconds dummy
-scoreboard objectives add ogvz.chicken_nugget.fly.duration.ticks dummy
-scoreboard objectives add ogvz.snowman.snowball_barrage.cooldown.ticks dummy
-scoreboard objectives add ogvz.snowman.snowball_barrage.cooldown.seconds dummy
-scoreboard objectives add ogvz.snowman.icicle.cooldown.ticks dummy
-scoreboard objectives add ogvz.snowman.icicle.cooldown.seconds dummy
-scoreboard objectives add ogvz.chillager.ice_cube.cooldown.ticks dummy
-scoreboard objectives add ogvz.chillager.ice_cube.cooldown.seconds dummy
-scoreboard objectives add ogvz.chillager.icicle.freeze.ticks dummy
-scoreboard objectives add ogvz.chillager.invisibility.duration.ticks dummy
-scoreboard objectives add ogvz.bee.honey.cooldown.ticks dummy
-scoreboard objectives add ogvz.bee.honey.cooldown.seconds dummy
-scoreboard objectives add ogvz.bee.pollen_bomb.cooldown.ticks dummy
-scoreboard objectives add ogvz.bee.pollen_bomb.cooldown.seconds dummy
-scoreboard objectives add ogvz.phantom.delirium.cooldown.ticks dummy
-scoreboard objectives add ogvz.phantom.delirium.cooldown.seconds dummy
-scoreboard objectives add ogvz.phantom.reusable_firework_rocket.cooldown.ticks dummy
-scoreboard objectives add ogvz.blaze.fireball.cooldown.ticks dummy
-scoreboard objectives add ogvz.blaze.fireball.cooldown.seconds dummy
-scoreboard objectives add ogvz.blaze.fireblast.cooldown.ticks dummy
-scoreboard objectives add ogvz.blaze.fireblast.cooldown.seconds dummy
-scoreboard objectives add ogvz.blaze.firefly.cooldown.ticks dummy
-scoreboard objectives add ogvz.blaze.firefly.cooldown.seconds dummy
-scoreboard objectives add ogvz.blaze.firefly.duration.ticks dummy
-scoreboard objectives add ogvz.hoglin.experience dummy
-scoreboard objectives add ogvz.hoglin.use.golden_pickaxe minecraft.used:minecraft.golden_pickaxe
-scoreboard objectives add ogvz.silverfish.roar.cooldown.ticks dummy
-scoreboard objectives add ogvz.silverfish.roar.cooldown.seconds dummy
-scoreboard objectives add ogvz.golem.fissure.cooldown.ticks dummy
-scoreboard objectives add ogvz.golem.fissure.cooldown.seconds dummy
-scoreboard objectives add ogvz.enderman.teleport.cooldown.ticks dummy
-scoreboard objectives add ogvz.enderman.teleport.cooldown.seconds dummy
-scoreboard objectives add ogvz.enderman.portal.cooldown.ticks dummy
-scoreboard objectives add ogvz.enderman.portal.cooldown.seconds dummy
-scoreboard objectives add ogvz.enderman.reinforce.cooldown.ticks dummy
-scoreboard objectives add ogvz.enderman.reinforce.cooldown.seconds dummy
+

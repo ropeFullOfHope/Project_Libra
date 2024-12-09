@@ -4,7 +4,7 @@
     "components": {
       "minecraft:equippable": {
         "slot": "chest",
-        "model": "ogvz:dragon_warrior_wings"
+        "asset_id": "ogvz:dragon_warrior_wings"
       },
       "minecraft:glider": {}
     }

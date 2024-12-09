@@ -38,3 +38,6 @@ execute at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] facing entity 
 
 # If the player hasn't joined the game, set their spawn point to lobby (in case they slept in a bed somwhere).
 execute at @n[type=minecraft:marker,tag=ogvz.marker.lobby] run spawnpoint @s[tag=!ogvz.joined] ~ ~ ~ ~
+
+# Kill all wolves belonging to dead players.
+execute as @e[type=minecraft:wolf] at @s run function ogvz:misc/wolf_suicide

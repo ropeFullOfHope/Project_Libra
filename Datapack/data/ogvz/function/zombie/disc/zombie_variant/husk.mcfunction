@@ -17,11 +17,12 @@
 clear @s
 effect clear @s
 
-effect give @s minecraft:night_vision infinite 0 true
-effect give @s minecraft:conduit_power infinite 0 true
-
 effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
+
+execute as @s at @s run function ogvz:misc/remove_tags
+execute as @s at @s run function ogvz:misc/remove_attributes
+execute as @s at @s run function ogvz:misc/clear_scoreboards
 
 tag @s add ogvz.zombie
 tag @s add ogvz.zombie.class
@@ -33,7 +34,7 @@ team join z0HUSK @s
 
 # Equips the husk with their armor (iron tier).
 item replace entity @s armor.head with minecraft:player_head[ \
-  minecraft:item_name='{"text":"Husk Head","color":"gray"}', \
+  minecraft:item_name='{"text":"Husk Head","color":"aqua"}', \
   minecraft:profile={ \
     properties:[{ \
       name:"textures", \
@@ -162,6 +163,6 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:lore=[ \
     '{"text":"Gain regeneration when near","color":"blue"}', \
     '{"text":"another zombie variant.","color":"blue"}', \
-    '{"text":"Passive Item","color":"green","italic":false}' \
+    '{"text":"Passive Ability","color":"green","italic":false}' \
   ] \
 ]

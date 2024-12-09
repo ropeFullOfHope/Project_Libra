@@ -20,6 +20,10 @@ effect clear @s
 effect give @s minecraft:instant_health 1 5 true
 effect give @s minecraft:saturation 1 20 true
 
+execute as @s at @s run function ogvz:misc/remove_tags
+execute as @s at @s run function ogvz:misc/remove_attributes
+execute as @s at @s run function ogvz:misc/clear_scoreboards
+
 tag @s add ogvz.dwarf
 tag @s add ogvz.dwarf.class
 tag @s add ogvz.dwarf.class.alchemist

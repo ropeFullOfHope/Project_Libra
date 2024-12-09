@@ -38,526 +38,1023 @@
     {
       "type": "bitmap",
       "file": "ogvz:font/dragon_scale.png",
-      "height": 8,
+      "height": 9,
       "ascent": 4,
       "chars": ["\u1201"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/oceans_pearl_0.png",
-      "height": 8,
+      "height": 9,
       "ascent": 4,
       "chars": ["\u1210"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/oceans_pearl_1.png",
-      "height": 8,
+      "height": 9,
       "ascent": 4,
       "chars": ["\u1211"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/soul_charge_0.png",
-      "height": 8,
+      "height": 9,
       "ascent": 4,
       "chars": ["\u1220"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/soul_charge_1.png",
-      "height": 8,
+      "height": 9,
       "ascent": 4,
       "chars": ["\u1221"]
     },
     {
       "type": "bitmap",
+      "file": "ogvz:font/evolution.png",
+      "height": 9,
+      "ascent": 4,
+      "chars": ["\u1231"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/0.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2000"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/1.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2001"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/2.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2002"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/3.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2003"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/4.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2004"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/5.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2005"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/6.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2006"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/7.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2007"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/8.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2008"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/9.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2009"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/10.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2010"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/11.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2011"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/12.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2012"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/13.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2013"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/14.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2014"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/15.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2015"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/16.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2016"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/17.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2017"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/18.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2018"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/19.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2019"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/20.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2020"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/21.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2020"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/22.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2022"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/23.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2023"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/24.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2024"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/25.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2025"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/26.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2026"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/27.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2027"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/28.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2028"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/29.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2029"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/30.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2030"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/31.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2031"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/32.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2032"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/33.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2033"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/34.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2034"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/35.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2035"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/36.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2036"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/37.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2037"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/38.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2038"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/39.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2039"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/40.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2040"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/41.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2041"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/42.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2042"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/43.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2043"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/44.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2044"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/45.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2045"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/46.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2046"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/47.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2047"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/48.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2048"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/49.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2049"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/50.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2050"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/51.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2051"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/52.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2052"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/53.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2053"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/54.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2054"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/55.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2055"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/56.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2056"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/57.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2057"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/58.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2058"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/59.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2059"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/60.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2060"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/61.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2061"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/62.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2062"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/63.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2063"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/64.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2064"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/65.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2065"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/66.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2066"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/67.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2067"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/68.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2068"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green/69.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2069"]
+    },
+    {
+      "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/0.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2100"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/1.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2101"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/2.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2102"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/3.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2103"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/4.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2104"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/5.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2105"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/6.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2106"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/7.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2107"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/8.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2108"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/9.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2109"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/10.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2110"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/11.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2111"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/12.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2112"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/13.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2113"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/14.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2114"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/15.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2115"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/16.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2116"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/17.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2117"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/18.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2118"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/19.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2119"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/20.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2120"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/21.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2121"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/22.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2122"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/23.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2123"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/24.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2124"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/25.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2125"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/26.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2126"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/27.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2127"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/28.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2128"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/29.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2129"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/30.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2130"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/31.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2131"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/32.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2132"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/33.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2133"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/34.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2134"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/35.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2135"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/36.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2136"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/37.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2137"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/38.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2138"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/39.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2139"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/40.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2140"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/41.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2141"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/42.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2142"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/43.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2143"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/44.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2144"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/45.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2145"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/46.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2146"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/47.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2147"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/48.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2148"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/49.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2149"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/50.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2150"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/51.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2151"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/52.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2152"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/53.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2153"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/54.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2154"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/55.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2155"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/56.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2156"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/57.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2157"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/58.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2158"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/59.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2159"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/60.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2160"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/61.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2161"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/62.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2162"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/63.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2163"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/64.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2164"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/65.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2165"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/66.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2166"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/67.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2167"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/68.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2168"]
     },
     {
       "type": "bitmap",
       "file": "ogvz:font/custom_bar/light_purple/69.png",
       "height": 5,
-      "ascent": 1,
+      "ascent": 0,
       "chars": ["\u2169"]
     },
     {
