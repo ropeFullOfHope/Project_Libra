@@ -19,6 +19,8 @@ execute if score &ogvz ogvz.game.phase matches 0 run return 0
 
 tag @s add ogvz.joined
 
+tag @s remove ogvz.adventure.lobby
+
 clear @s
 
 gamemode survival @s

@@ -26,9 +26,6 @@ function ogvz:tick/ai_mob_teams
 execute as @a at @s run function ogvz:tick/triggers
 execute as @e[type=minecraft:player,tag=ogvz.dead] at @s run function ogvz:tick/player_respawn
 execute as @e[type=minecraft:item,tag=!ogvz.processed] at @s run function ogvz:tick/check_item
-execute as @a[tag=!ogvz.admin] at @s run function ogvz:tick/lava_bucket
-execute as @a at @s run function ogvz:tick/dolphins_grace_nerf
-execute as @a at @s run function ogvz:tick/natural_regeneration
 
 # Admin functions
 execute as @a[tag=!ogvz.admin,gamemode=creative] at @s run function ogvz:tick/admin
@@ -41,11 +38,10 @@ execute as @a at @s run function ogvz:tick/active_detect
 
 # Cooldown/warmup functions
 execute as @a at @s run function ogvz:tick/active_cooldown
-execute as @a at @s run function ogvz:tick/enchantment_cooldown
 
 # Custom functions
-#execute as @e[type=minecraft:marker,tag=ogvz.custom_projectile] at @s run function ogvz:tick/custom_projectile
 execute as @a[predicate=ogvz:effect/unluck] at @s run function ogvz:tick/custom_instant_effects
+execute as @a at @s run function ogvz:tick/custom_enchantments
 execute as @a at @s run function ogvz:tick/custom_bars
 
 # Multitick functions
@@ -64,4 +60,8 @@ execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.mana=..-1}] at @s ru
 # Misc functions
 execute as @a[tag=ogvz.zombie] at @s run function ogvz:tick/innate_abilities
 execute as @e[type=#minecraft:arrows,tag=!temp.processed] at @s run function ogvz:tick/arrow_check
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s run function ogvz:tick/adventure_mode_toggle
+execute as @a[tag=!ogvz.admin] at @s run function ogvz:tick/lava_bucket
+execute as @a at @s run function ogvz:tick/dolphins_grace_nerf
+execute as @a at @s run function ogvz:tick/natural_regeneration
 function ogvz:tick/particles

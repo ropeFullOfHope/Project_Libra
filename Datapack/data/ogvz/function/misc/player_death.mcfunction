@@ -32,7 +32,7 @@ execute as @s[tag=ogvz.joined] at @s run function ogvz:misc/remove_tags
 # Add the zombie tag.
 tag @s[tag=ogvz.joined] add ogvz.zombie
 # Join them into the DEAD team.
-team join z8DEAD @s[tag=ogvz.joined]
+team join z9DEAD @s[tag=ogvz.joined]
 # Set their spawnpoint to the zombie spawn and make them face the shrine when they respawn.
 execute at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] facing entity @n[type=minecraft:marker,tag=ogvz.marker.shrine] feet run spawnpoint @s[tag=ogvz.joined] ~ ~ ~ ~
 

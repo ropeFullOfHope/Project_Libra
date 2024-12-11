@@ -32,7 +32,7 @@ execute as @s store result score @s ogvz.inventory.lava_bucket run clear @s mine
 ### Dwarf hero items (4xxx)
 # Dragon Warrior (40xx)
 # Wither Warrior (41xx)
-execute as @s store result score @s ogvz.inventory.soulstone run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={passive_id:4102}] 0
+execute as @s[tag=ogvz.dwarf.class.hero.wither_warrior] store result score @s ogvz.inventory.soulstone run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={passive_id:4102}] 0
 # Assassin Slayer (42xx)
 # Dwarven Guard (43xx)
 
@@ -41,7 +41,7 @@ execute as @s store result score @s ogvz.inventory.soulstone run clear @s minecr
 
 ### Zombie abilities (6xxx)
 # Zombie variants (600x)
-execute as @s store result score @s ogvz.inventory.undying_bond run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={passive_id:6000}] 0
+execute as @s[tag=ogvz.zombie.class.zombie_variant] store result score @s ogvz.inventory.undying_bond run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={passive_id:6000}] 0
 # Zombie (601x)
 # Husk (602x)
 # Vindicator (603x)
@@ -59,12 +59,14 @@ execute as @s store result score @s ogvz.inventory.undying_bond run clear @s min
 # Phantom (633x)
 # Snowman (634x)
 # Wolf (635x)
-# Hoglin (640x)
+# Piglin (640x)
+execute as @s[tag=ogvz.zombie.class.piglin] store result score @s ogvz.inventory.evolution run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={passive_id:6400}] 0
 # Silverfish (641x)
-# Enderman (650x)
-# Golem (651x)
+# Hoglin (651x)
+# Enderman (660x)
+# Golem (661x)
 # Aquatic zombies (690x)
-execute as @s store result score @s ogvz.inventory.sharing_grace run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={passive_id:6900}] 0
+execute as @s[tag=ogvz.zombie.aquatic] store result score @s ogvz.inventory.sharing_grace run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={passive_id:6900}] 0
 
 ### Zombie boss abilities (7xxx)
 

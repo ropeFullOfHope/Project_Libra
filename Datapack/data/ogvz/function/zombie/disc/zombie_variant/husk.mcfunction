@@ -119,7 +119,7 @@ item replace entity @s weapon.offhand with minecraft:shield[ \
 # Gives husk all their items.
 give @s minecraft:iron_hoe[ \
   minecraft:item_model="ogvz:iron_dagger", \
-  minecraft:item_name='{"text":"Iron Hoe","color":"gray"}', \
+  minecraft:item_name='{"text":"Iron Dagger","color":"white"}', \
   minecraft:unbreakable={}, \
   minecraft:lore=[ \
     '{"text":" "}', \

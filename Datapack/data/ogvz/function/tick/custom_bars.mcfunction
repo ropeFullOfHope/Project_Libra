@@ -17,14 +17,15 @@
 # Return if custom bar has been hidden.
 execute as @s[scores={ogvz.misc.custom_bar_hide.seconds=1..}] run return 0
 
-# Show dragon scale custom bar to Dragon Warrior only if they are holding the dragon scale while in dragon form.
+# Show dragon scale custom bar to Dragon Warrior if they are holding the dragon scale while in dragon form.
 execute as @s[tag=ogvz.dwarf.class.hero.dragon_warrior.dragon_form] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:4001}] at @s run function ogvz:dwarf/item/hero/dragon_warrior/dragon_scale_custom_bar
 
-# Show whispersong's custom bar to Wither Warrior only if they are holding the whispersong.
+# Show whispersong's custom bar to Wither Warrior if they are holding the whispersong.
 execute if items entity @s weapon.* minecraft:bow[enchantments~[{"ogvz:soul_power":1}]] at @s run function ogvz:dwarf/item/hero/wither_warrior/whispersong_custom_bar
 
-# Show Ocean's Pearl custom bar to the Dwarven Guard only if they are holding the ocean's pearl.
+# Show Ocean's Pearl custom bar to the Dwarven Guard if they are holding the ocean's pearl.
 execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:4301}] at @s run function ogvz:dwarf/item/hero/dwarven_guard/oceans_pearl_custom_bar
 
-# Show experience bar to Hoglin only if they are holding the evolution tagged pickaxe.
-execute as @s[tag=ogvz.zombie.class.hoglin] if items entity @s weapon.* minecraft:golden_pickaxe[minecraft:custom_data={evolution:1}] at @s run function ogvz:zombie/hoglin/experience_bar
+# Show experience bar to Piglin if they are holding the evolution passive ability.
+execute as @s[tag=ogvz.zombie.class.piglin] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:96}}}} run function ogvz:zombie/ability/piglin/evolution_custom_bar_1
+execute as @s[tag=ogvz.zombie.class.piglin] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:96}}}} run function ogvz:zombie/ability/piglin/evolution_custom_bar_0

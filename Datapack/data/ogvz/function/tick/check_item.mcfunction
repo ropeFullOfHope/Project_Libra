@@ -16,9 +16,11 @@
 
 tag @s add temp.processing
 
-execute on origin if entity @s[tag=ogvz.zombie] as @e[type=minecraft:item,tag=temp.processing] unless entity @s[nbt={Item:{tag:{droppable:1}}}] at @s run function ogvz:misc/prevent_item_drop
+# Prevent zombie players from dropping items unless the item has droppable custom data. Players in creative mode are ignored.
+execute on origin if entity @s[tag=ogvz.zombie,gamemode=!creative] as @n[type=minecraft:item,tag=temp.processing] unless entity @s[nbt={Item:{components:{"minecraft:custom_data":{droppable:1}}}}] at @s run function ogvz:misc/prevent_item_drop
 
-execute on origin unless entity @s[tag=!ogvz.zombie] as @e[type=minecraft:item,tag=temp.processing] if entity @s[nbt={Item:{tag:{undroppable:1}}}] at @s run function ogvz:misc/prevent_item_drop
+# Prevent non-zombie players from dropping items with undroppable custom data. Players in creative mode are ignored.
+execute on origin if entity @s[tag=!ogvz.zombie,gamemode=!creative] as @n[type=minecraft:item,tag=temp.processing] if entity @s[nbt={Item:{components:{"minecraft:custom_data":{undroppable:1}}}}] at @s run function ogvz:misc/prevent_item_drop
 
 tag @s remove temp.processing
 

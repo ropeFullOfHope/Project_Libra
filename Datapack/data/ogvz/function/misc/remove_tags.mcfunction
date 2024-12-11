@@ -55,15 +55,10 @@ tag @s remove ogvz.zombie.class.creeper
 tag @s remove ogvz.zombie.class.spider
 
 tag @s remove ogvz.zombie.class.bee
-tag @s remove ogvz.zombie.class.bee.ascend_enabled
-tag @s remove ogvz.zombie.class.bee.descend_enabled
-tag @s remove ogvz.zombie.class.bee.ascend_descend_enabled
 
 tag @s remove ogvz.zombie.class.blaze
-tag @s remove ogvz.zombie.class.blaze.descend_enabled
 
 tag @s remove ogvz.zombie.class.chicken_nugget
-tag @s remove ogvz.zombie.class.chicken_nugget.descend_enabled
 
 tag @s remove ogvz.zombie.class.chillager
 
@@ -75,16 +70,13 @@ tag @s remove ogvz.zombie.class.snowman
 
 tag @s remove ogvz.zombie.class.wolf
 
-tag @s remove ogvz.zombie.class.hoglin
-tag @s remove ogvz.zombie.class.hoglin.stage_1
-tag @s remove ogvz.zombie.class.hoglin.stage_2
-tag @s remove ogvz.zombie.class.hoglin.stage_3
-tag @s remove ogvz.zombie.class.hoglin.adventure_mode
+tag @s remove ogvz.zombie.class.piglin
 
 tag @s remove ogvz.zombie.class.silverfish
 
+tag @s remove ogvz.zombie.class.hoglin
+
 tag @s remove ogvz.zombie.class.enderman
-tag @s remove ogvz.zombie.class.enderman.portal_bound
 
 tag @s remove ogvz.zombie.class.golem
 

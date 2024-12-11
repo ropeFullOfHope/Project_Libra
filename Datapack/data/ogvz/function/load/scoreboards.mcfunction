@@ -63,6 +63,7 @@ scoreboard objectives add ogvz.inventory.lava_bucket dummy
 scoreboard objectives add ogvz.inventory.soulstone dummy
 scoreboard objectives add ogvz.inventory.undying_bond dummy
 scoreboard objectives add ogvz.inventory.sharing_grace dummy
+scoreboard objectives add ogvz.inventory.evolution dummy
 
 ### Miscellaneous scoreboards
 scoreboard objectives add ogvz.misc.health health
@@ -127,4 +128,6 @@ scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.seconds dummy
 
 ### Zombie scoreboards
-
+# Piglin
+scoreboard objectives add ogvz.piglin.used.golden_pickaxe minecraft.used:minecraft.golden_pickaxe
+scoreboard objectives add ogvz.piglin.evolution.progress dummy

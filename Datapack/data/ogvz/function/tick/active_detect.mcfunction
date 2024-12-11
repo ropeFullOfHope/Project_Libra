@@ -135,10 +135,11 @@ execute as @s[tag=ogvz.zombie.class.creeper,scores={ogvz.rclick.active_id=6200}]
 # Snowman (634x)
 # Wolf (635x)
 execute as @s[tag=ogvz.zombie.class.wolf,scores={ogvz.rclick.active_id=6350}] at @s run function ogvz:zombie/ability/wolf/howl
-# Hoglin (640x)
+# Piglin (640x)
 # Silverfish (641x)
-# Enderman (650x)
-# Golem (651x)
+# Hoglin (650x)
+# Enderman (660x)
+# Golem (661x)
 # Aquatic zombies (690x)
 
 ### Zombie boss abilities (7xxx)

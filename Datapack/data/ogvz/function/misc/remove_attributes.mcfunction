@@ -33,3 +33,6 @@ attribute @s minecraft:explosion_knockback_resistance modifier remove ogvz.explo
 attribute @s minecraft:movement_speed modifier remove ogvz.wolf.movement_speed
 attribute @s minecraft:jump_strength modifier remove ogvz.wolf.jump_strength
 attribute @s minecraft:safe_fall_distance modifier remove ogvz.wolf.safe_fall_distance
+
+# Piglin - base attributes
+attribute @s minecraft:movement_speed modifier remove ogvz.piglin.movement_speed

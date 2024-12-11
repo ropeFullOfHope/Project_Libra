@@ -79,6 +79,8 @@ tellraw @s [ \
 
 execute store result score @s ogvz.game.reload_count run scoreboard players get &ogvz ogvz.game.reload_count
 
+tag @s add ogvz.adventure.lobby
+
 tag @s add ogvz.ready
 
 execute as @s at @s run function ogvz:tick/player_join

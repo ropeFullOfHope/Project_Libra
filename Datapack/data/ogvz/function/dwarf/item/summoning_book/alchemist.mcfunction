@@ -52,4 +52,4 @@ particle minecraft:spit ~ ~1 ~ 0.25 0.5 0.25 0 10
 
 loot give @s loot ogvz:dwarf/summoning_book/alchemist
 
-scoreboard objectives remove temp.potion_count
+scoreboard objectives remove temp.mundane_potion_count
