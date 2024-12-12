@@ -35,7 +35,7 @@ execute as @a at @s run function ogvz:misc/remove_attributes
 #kill @e[type=minecraft:text_display,tag=ogvz.text_display]
 #kill @e[type=minecraft:armor_stand,tag=ogvz.armor_stand]
 
-# Kill all tagged entities.
+# Kill all kill on reload tagged entities.
 kill @e[tag=ogvz.kill_on_reload]
 
 # Forceload 0 0 0.

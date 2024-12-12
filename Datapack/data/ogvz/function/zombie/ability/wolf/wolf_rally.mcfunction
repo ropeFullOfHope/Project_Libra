@@ -14,9 +14,6 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Revoke advancement, so it can be obtained again.
-advancement revoke @s only ogvz:custom_enchantments/wolf_rally
-
 # Add a temporary tag.
 tag @s add temp.target
 

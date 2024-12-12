@@ -27,5 +27,6 @@ execute if items entity @s weapon.* minecraft:bow[enchantments~[{"ogvz:soul_powe
 execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:4301}] at @s run function ogvz:dwarf/item/hero/dwarven_guard/oceans_pearl_custom_bar
 
 # Show experience bar to Piglin if they are holding the evolution passive ability.
-execute as @s[tag=ogvz.zombie.class.piglin] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:96}}}} run function ogvz:zombie/ability/piglin/evolution_custom_bar_1
-execute as @s[tag=ogvz.zombie.class.piglin] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:96}}}} run function ogvz:zombie/ability/piglin/evolution_custom_bar_0
+execute as @s[tag=ogvz.zombie.class.piglin,scores={ogvz.inventory.evolution=1..}] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:96}}}} run function ogvz:zombie/ability/piglin/evolution_custom_bar_1
+execute as @s[tag=ogvz.zombie.class.piglin,scores={ogvz.inventory.evolution=1..}] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:96}}}} run function ogvz:zombie/ability/piglin/evolution_custom_bar_0
+execute as @s[tag=ogvz.zombie.class.piglin,scores={ogvz.inventory.evolution=1..}] unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine] run function ogvz:zombie/ability/piglin/evolution_custom_bar_0

@@ -36,3 +36,6 @@ attribute @s minecraft:safe_fall_distance modifier remove ogvz.wolf.safe_fall_di
 
 # Piglin - base attributes
 attribute @s minecraft:movement_speed modifier remove ogvz.piglin.movement_speed
+
+# Hoglin - base attributes
+attribute @s minecraft:max_health modifier remove ogvz.hoglin.max_health

@@ -20,5 +20,4 @@ playsound minecraft:entity.zoglin.angry player @a ~ ~ ~ 10 0.8
 playsound minecraft:entity.zoglin.angry player @a ~ ~ ~ 10 1.5
 playsound minecraft:entity.hoglin.converted_to_zombified player @a ~ ~ ~ 10 1
 
-clear @s
-say "TODO: Add a Hoglin class and evolve Piglin into it."
+execute as @s at @s run function ogvz:zombie/disc/hoglin

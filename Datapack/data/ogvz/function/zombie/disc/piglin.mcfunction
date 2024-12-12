@@ -106,7 +106,7 @@ give @s minecraft:golden_pickaxe[ \
   minecraft:unbreakable={show_in_tooltip:false}, \
   minecraft:lore=[ \
     '{"text":" "}', \
-    '{"text":"Curse of Limitation","color":"blue","italic":false,"underlined":true}', \
+    '{"text":"Curse of Unyielding","color":"blue","italic":false,"underlined":true}', \
     '{"text":"You are limited to mining only ","color":"blue"}', \
     '{"text":"certain types of blocks.","color":"blue"}', \
     '{"text":"Curse Enchantment","color":"green","italic":false}', \
@@ -126,7 +126,7 @@ give @s minecraft:golden_pickaxe[ \
   ], \
   minecraft:enchantments={ \
     levels:{ \
-      "ogvz:limitation_curse":1 \
+      "ogvz:unyielding_curse":1 \
     } \
   }, \
   minecraft:attribute_modifiers={ \

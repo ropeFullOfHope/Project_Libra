@@ -14,19 +14,20 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#gamerule sendCommandFeedback false
+gamerule disableRaids true
+gamerule doDaylightCycle false
+gamerule doInsomnia false
+gamerule doLimitedCrafting true
 gamerule doMobLoot false
+gamerule doMobSpawning false
+gamerule doPatrolSpawning false
+gamerule doTraderSpawning false
+gamerule doWardenSpawning false
 gamerule keepInventory true
 gamerule naturalRegeneration false
 #gamerule sendCommandFeedback false
-gamerule doMobSpawning false
-gamerule disableRaids true
-gamerule doInsomnia false
-gamerule doWardenSpawning false
-gamerule doTraderSpawning false
-gamerule doPatrolSpawning false
-gamerule doDaylightCycle false
-gamerule doLimitedCrafting true
 gamerule spawnRadius 0
-gamerule playersSleepingPercentage 101
 gamerule snowAccumulationHeight 8
+gamerule playersSleepingPercentage 101
+gamerule maxCommandChainLength 2147483647
+gamerule maxCommandForkCount 2147483647

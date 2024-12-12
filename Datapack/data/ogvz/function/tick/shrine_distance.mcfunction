@@ -26,8 +26,10 @@ scoreboard players set @s temp.shrine_distance 0
 # Create a marker and run a function with it.
 execute summon minecraft:marker run execute as @s at @s run function ogvz:admin/setup/shrine_distance_ray
 
-# Display how far the shrine is.
-title @s actionbar ["",{"score":{"name":"@s","objective":"temp.shrine_distance"},"color":"gold","bold":true}]
+# Display how far the shrine is. Red is too close, green is perfect, yellow is too far.
+title @s[scores={temp.shrine_distance=..127}] actionbar ["",{"score":{"name":"@s","objective":"temp.shrine_distance"},"color":"red","bold":true}]
+title @s[scores={temp.shrine_distance=128..160}] actionbar ["",{"score":{"name":"@s","objective":"temp.shrine_distance"},"color":"green","bold":true}]
+title @s[scores={temp.shrine_distance=161..}] actionbar ["",{"score":{"name":"@s","objective":"temp.shrine_distance"},"color":"yellow","bold":true}]
 
 # Remove temporary tag and scoreboard.
 tag @s remove temp.ray_origin

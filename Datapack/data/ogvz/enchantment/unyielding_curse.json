@@ -1,13 +1,13 @@
 {
-  "anvil_cost": 1,
-  "description": "Curse of Limitation",
+  "anvil_cost": 0,
+  "description": "Curse of Unyielding",
   "max_cost": {
-    "base": 50,
+    "base": 0,
     "per_level_above_first": 0
   },
   "max_level": 1,
   "min_cost": {
-    "base": 50,
+    "base": 0,
     "per_level_above_first": 0
   },
   "slots": [
