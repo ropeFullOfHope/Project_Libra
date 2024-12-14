@@ -49,7 +49,6 @@ playsound minecraft:entity.glow_squid.squirt player @a ~ ~ ~ 1 1
 execute align xyz positioned ~0.5 ~ ~0.5 summon minecraft:marker run tag @s add temp.target
 
 # Give the marker the proper tags and set it's effect duration to 50 seconds.
-tag @n[type=minecraft:marker,tag=temp.target] add ogvz.marker
 tag @n[type=minecraft:marker,tag=temp.target] add ogvz.marker.glowing_shell
 tag @n[type=minecraft:marker,tag=temp.target] add ogvz.kill_on_reload
 scoreboard players set @n[type=minecraft:marker,tag=temp.target] ogvz.marker.glowing_shell.duration.seconds 50

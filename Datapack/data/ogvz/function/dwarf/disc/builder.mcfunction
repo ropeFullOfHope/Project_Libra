@@ -80,8 +80,8 @@ item replace entity @s weapon.offhand with minecraft:poisonous_potato[ \
   ], \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:block_interaction_range",name:"minecraft:block_interaction_range",amount:2,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:block_interaction_range",name:"minecraft:block_interaction_range",amount:2,operation:"add_value",slot:"offhand",id:"ogvz:offhand"} \
+      {type:"minecraft:block_interaction_range",amount:2,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:block_interaction_range",amount:2,operation:"add_value",slot:"offhand",id:"ogvz:offhand"} \
     ], \
     show_in_tooltip:false \
   } \
@@ -131,7 +131,7 @@ give @s minecraft:flint_and_steel
 give @s minecraft:stone_bricks 64
 give @s minecraft:stone_bricks 64
 give @s minecraft:crafting_table 1
-give @s minecraft:stonecutter 
+give @s minecraft:stonecutter 1
 give @s minecraft:torch 32
 give @s minecraft:bread[ \
   minecraft:lore=[ \

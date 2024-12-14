@@ -15,5 +15,5 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Curse of Limitation
-execute as @s[tag=!ogvz.adventure.curse_of_limitation] if items entity @s weapon.mainhand #minecraft:pickaxes[minecraft:enchantments~[{"ogvz:unyielding_curse":1}]] run tag @s add ogvz.adventure.curse_of_limitation
-execute as @s[tag=ogvz.adventure.curse_of_limitation] unless items entity @s weapon.mainhand #minecraft:pickaxes[minecraft:enchantments~[{"ogvz:unyielding_curse":1}]] run tag @s remove ogvz.adventure.curse_of_limitation
+execute as @s[tag=!ogvz.adventure.curse_of_limitation] if items entity @s weapon.mainhand #minecraft:pickaxes[minecraft:enchantments~[{enchantments:"ogvz:unyielding_curse"}]] run tag @s add ogvz.adventure.curse_of_limitation
+execute as @s[tag=ogvz.adventure.curse_of_limitation] unless items entity @s weapon.mainhand #minecraft:pickaxes[minecraft:enchantments~[{enchantments:"ogvz:unyielding_curse"}]] run tag @s remove ogvz.adventure.curse_of_limitation

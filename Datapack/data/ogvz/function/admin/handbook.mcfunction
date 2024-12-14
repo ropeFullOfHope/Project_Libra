@@ -122,26 +122,26 @@ give @s written_book[ \
           {"text":"Discs (1/4)\\n","bold":true,"underlined":true,"clickEvent":{"action":"change_page","value":"1"}}, \
           {"text":"\\n"}, \
           {"text":"Dwarf Discs:\\n","bold":true}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Builder"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Builder"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Builder\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Blacksmith"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Blacksmith"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Blacksmith\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Tailor"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Tailor"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Tailor\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Baker"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Baker"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Baker\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Alchemist"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Alchemist"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Alchemist\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Enchanter"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Enchanter"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Enchanter\\n"}, \
           {"text":"\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Dragon Warrior"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Dragon Warrior"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Dragon Warrior\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Wither Warrior"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Wither Warrior"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Wither Warrior\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Dwarven Guard"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Dwarven Guard"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Dwarven Guard\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Assassin Slayer"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Assassin Slayer"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Assassin Slayer"} \
         ]' \
       }, \
@@ -151,22 +151,22 @@ give @s written_book[ \
           {"text":"Discs (2/4)\\n","bold":true,"underlined":true,"clickEvent":{"action":"change_page","value":"1"}}, \
           {"text":"\\n"}, \
           {"text":"Zombie Discs:\\n","bold":true}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Zombie"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Zombie"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Zombie\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Husk"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Husk"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Husk\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Drowned"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Drowned"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Drowned\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Vindicator"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Vindicator"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Vindicator\\n"}, \
           {"text":"\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Skeleton"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Skeleton"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Skeleton\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Wither Skeleton"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Wither Skeleton"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Wither Skeleton\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Guardian"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Guardian"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Guardian\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Pillager"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Pillager"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Pillager\\n"} \
         ]' \
       }, \
@@ -176,25 +176,25 @@ give @s written_book[ \
           {"text":"Discs (3/4)\\n","bold":true,"underlined":true,"clickEvent":{"action":"change_page","value":"1"}}, \
           {"text":"\\n"}, \
           {"text":"Zombie Discs:\\n","bold":true}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Creeper"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Creeper"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Creeper\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Spider"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Spider"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Spider\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Ocelot"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Ocelot"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Ocelot\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Wolf"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Wolf"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Wolf\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Bee"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Bee"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Bee\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Blaze"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Blaze"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Blaze\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Chicken Nugget"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Chicken Nugget"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Chicken Nugget\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Chillager"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Chillager"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Chillager\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Phantom"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Phantom"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Phantom\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Snowman"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Snowman"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Snowman\\n"} \
         ]' \
       }, \
@@ -204,20 +204,20 @@ give @s written_book[ \
           {"text":"Discs (4/4)\\n","bold":true,"underlined":true,"clickEvent":{"action":"change_page","value":"1"}}, \
           {"text":"\\n"}, \
           {"text":"Zombie Discs:\\n","bold":true}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Silverfish"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Silverfish"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Silverfish\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Hoglin"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Hoglin"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Hoglin\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Enderman"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Enderman"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Enderman\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Golem"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Golem"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Golem\\n"}, \
           {"text":"\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Ghast"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Ghast"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Ghast\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Johnny"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Johnny"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Johnny\\n"}, \
-          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Ravager"}]},"clickEvent":{"action":"run_command","value":"/TODO"}}, \
+          {"text":"[+]","hoverEvent":{"action":"show_text","value":[{"text":"Ravager"}]},"clickEvent":{"action":"run_command","value":"/say TODO"}}, \
           {"text":" Ravager\\n"} \
         ]' \
       } \

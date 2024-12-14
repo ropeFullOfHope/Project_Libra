@@ -1,11 +1,11 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
-# File Name: explode_wait
-# Function Name: ogvz:zombie/ability/creeper/explode_wait
-# File Purpose: Wait and go to next state.
+# File Name: leap_multitick
+# Function Name: ogvz:zombie/ability/golem/leap_multitick
+# File Purpose: Finite state machine for the leap ability.
 # Created By: ropeFullOfHope
 # 
-# Created On: 2024.12.06
+# Created On: 2024.12.13
 # Last Modified On:
 # Last Modified By:
 #
@@ -14,10 +14,12 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Next state.
-tag @s[tag=ogvz.state.wait_1] add ogvz.state.explode_again
-tag @s[tag=ogvz.state.wait_1] remove ogvz.state.wait_1
+# State -3: Do nothing
 
-# Next state.
-tag @s[tag=ogvz.state.wait_0] add ogvz.state.wait_1
-tag @s[tag=ogvz.state.wait_0] remove ogvz.state.wait_0
+# State -2: Do nothing
+
+# State -1: Remove attribute.
+execute as @s[scores={ogvz.golem.leap.state=-1}] run attribute @s minecraft:gravity modifier remove ogvz.leap.gravity
+
+# Increment step.
+scoreboard players add @s ogvz.golem.leap.state 1

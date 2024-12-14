@@ -42,7 +42,7 @@ item replace entity @s armor.head with minecraft:zombie_head[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"}, \
     ] \
   } \
 ]
@@ -61,7 +61,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+      {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
     ] \
   } \
 ]
@@ -80,7 +80,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+      {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
     ] \
   } \
 ]
@@ -99,7 +99,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
     ] \
   } \
 ]
@@ -121,8 +121,8 @@ give @s minecraft:iron_sword[ \
   ], \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:attack_damage",name:"minecraft:attack_damage",amount:5.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:attack_speed",name:"minecraft:attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+      {type:"minecraft:attack_damage",amount:5.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
     ], \
     show_in_tooltip:false \
   } \
@@ -138,8 +138,8 @@ give @s minecraft:stone_axe[ \
   ], \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:attack_damage",name:"minecraft:attack_damage",amount:5.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:attack_speed",name:"minecraft:attack_speed",amount:-3.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+      {type:"minecraft:attack_damage",amount:5.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:attack_speed",amount:-3.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
     ], \
     show_in_tooltip:false \
   } \

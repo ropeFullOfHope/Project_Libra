@@ -49,8 +49,8 @@ item replace entity @s armor.head with minecraft:iron_helmet[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:3,operation:"add_value",slot:"head",id:"ogvz:head"}, \
-      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
+      {type:"minecraft:armor",amount:3,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+      {type:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
     ] \
   } \
 ]
@@ -65,8 +65,8 @@ item replace entity @s armor.chest with minecraft:iron_chestplate[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:8,operation:"add_value",slot:"chest",id:"ogvz:chest"}, \
-      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"chest",id:"ogvz:chest"} \
+      {type:"minecraft:armor",amount:8,operation:"add_value",slot:"chest",id:"ogvz:chest"}, \
+      {type:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"chest",id:"ogvz:chest"} \
     ] \
   } \
 ]
@@ -81,8 +81,8 @@ item replace entity @s armor.legs with minecraft:iron_leggings[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:6,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
-      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+      {type:"minecraft:armor",amount:6,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+      {type:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
     ] \
   } \
 ]
@@ -98,8 +98,8 @@ item replace entity @s armor.feet with minecraft:iron_boots[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:3,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
-      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+      {type:"minecraft:armor",amount:3,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+      {type:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
     ] \
   } \
 ]

@@ -108,7 +108,7 @@ execute as @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.ticks=20..}
 execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarven_guard.oceans_pearl.cooldown.ticks 1
 execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarven_guard.oceans_pearl.cooldown.seconds 1
 execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..,ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=0}] run playsound minecraft:block.conduit.attack.target player @s ~ ~ ~ 1 1 1
-execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..,ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Ocean\'s Pearl]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..,ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Ocean's Pearl]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarven_guard.oceans_pearl.cooldown.ticks 0
 
 # Dwarven Guard - Glowing Shell
@@ -118,110 +118,16 @@ execute as @s[scores={ogvz.dwarven_guard.glowing_shell.cooldown.ticks=20..,ogvz.
 execute as @s[scores={ogvz.dwarven_guard.glowing_shell.cooldown.ticks=20..,ogvz.dwarven_guard.glowing_shell.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Glowing Shell]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.dwarven_guard.glowing_shell.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarven_guard.glowing_shell.cooldown.ticks 0
 
-# Guardian - Beam
-execute as @s[scores={ogvz.guardian.beam.cooldown.seconds=1..}] run scoreboard players add @s ogvz.guardian.beam.cooldown.ticks 1
-execute as @s[scores={ogvz.guardian.beam.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.guardian.beam.cooldown.seconds 1
-execute as @s[scores={ogvz.guardian.beam.cooldown.ticks=20..,ogvz.guardian.beam.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.guardian.beam.cooldown.ticks=20..}] run scoreboard players set @s ogvz.guardian.beam.cooldown.ticks 0
-
-# Spider - Web
-execute as @s[scores={ogvz.spider.web.cooldown.seconds=1..}] run scoreboard players add @s ogvz.spider.web.cooldown.ticks 1
-execute as @s[scores={ogvz.spider.web.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.spider.web.cooldown.seconds 1
-execute as @s[scores={ogvz.spider.web.cooldown.ticks=20..,ogvz.spider.web.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.spider.web.cooldown.ticks=20..}] run scoreboard players set @s ogvz.spider.web.cooldown.ticks 0
-
-# Ocelot - Steal Mana
-execute as @s[scores={ogvz.ocelot.steal_mana.cooldown.seconds=1..}] run scoreboard players add @s ogvz.ocelot.steal_mana.cooldown.ticks 1
-execute as @s[scores={ogvz.ocelot.steal_mana.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.ocelot.steal_mana.cooldown.seconds 1
-execute as @s[scores={ogvz.ocelot.steal_mana.cooldown.ticks=20..,ogvz.ocelot.steal_mana.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.ocelot.steal_mana.cooldown.ticks=20..}] run scoreboard players set @s ogvz.ocelot.steal_mana.cooldown.ticks 0
-
-# Chicken Nugget - Fly
-execute as @s[scores={ogvz.chicken_nugget.fly.cooldown.seconds=1..}] run scoreboard players add @s ogvz.chicken_nugget.fly.cooldown.ticks 1
-execute as @s[scores={ogvz.chicken_nugget.fly.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.chicken_nugget.fly.cooldown.seconds 1
-execute as @s[scores={ogvz.chicken_nugget.fly.cooldown.ticks=20..,ogvz.chicken_nugget.fly.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.chicken_nugget.fly.cooldown.ticks=20..}] run scoreboard players set @s ogvz.chicken_nugget.fly.cooldown.ticks 0
-
-# Snowman - Snowball Barrage
-execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.seconds=1..}] run scoreboard players add @s ogvz.snowman.snowball_barrage.cooldown.ticks 1
-execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.snowman.snowball_barrage.cooldown.seconds 1
-execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.ticks=20..,ogvz.snowman.snowball_barrage.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.ticks=20..}] run scoreboard players set @s ogvz.snowman.snowball_barrage.cooldown.ticks 0
-
-# Snowman - Icicle
-execute as @s[scores={ogvz.snowman.icicle.cooldown.seconds=1..}] run scoreboard players add @s ogvz.snowman.icicle.cooldown.ticks 1
-execute as @s[scores={ogvz.snowman.icicle.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.snowman.icicle.cooldown.seconds 1
-execute as @s[scores={ogvz.snowman.icicle.cooldown.ticks=20..,ogvz.snowman.icicle.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.snowman.icicle.cooldown.ticks=20..}] run scoreboard players set @s ogvz.snowman.icicle.cooldown.ticks 0
-
-# Chillager - Ice Cube
-execute as @s[scores={ogvz.chillager.ice_cube.cooldown.seconds=1..}] run scoreboard players add @s ogvz.chillager.ice_cube.cooldown.ticks 1
-execute as @s[scores={ogvz.chillager.ice_cube.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.chillager.ice_cube.cooldown.seconds 1
-execute as @s[scores={ogvz.chillager.ice_cube.cooldown.ticks=20..,ogvz.chillager.ice_cube.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.chillager.ice_cube.cooldown.ticks=20..}] run scoreboard players set @s ogvz.chillager.ice_cube.cooldown.ticks 0
-
-# Bee - Honey
-execute as @s[scores={ogvz.bee.honey.cooldown.seconds=1..}] run scoreboard players add @s ogvz.bee.honey.cooldown.ticks 1
-execute as @s[scores={ogvz.bee.honey.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.bee.honey.cooldown.seconds 1
-execute as @s[scores={ogvz.bee.honey.cooldown.ticks=20..,ogvz.bee.honey.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.bee.honey.cooldown.ticks=20..}] run scoreboard players set @s ogvz.bee.honey.cooldown.ticks 0
-
-# Bee - Pollen Bomb
-execute as @s[scores={ogvz.bee.pollen_bomb.cooldown.seconds=1..}] run scoreboard players add @s ogvz.bee.pollen_bomb.cooldown.ticks 1
-execute as @s[scores={ogvz.bee.pollen_bomb.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.bee.pollen_bomb.cooldown.seconds 1
-execute as @s[scores={ogvz.bee.pollen_bomb.cooldown.ticks=20..,ogvz.bee.pollen_bomb.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.bee.pollen_bomb.cooldown.ticks=20..}] run scoreboard players set @s ogvz.bee.pollen_bomb.cooldown.ticks 0
-
-# Phantom - Delirium
-execute as @s[scores={ogvz.phantom.delirium.cooldown.seconds=1..}] run scoreboard players add @s ogvz.phantom.delirium.cooldown.ticks 1
-execute as @s[scores={ogvz.phantom.delirium.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.phantom.delirium.cooldown.seconds 1
-execute as @s[scores={ogvz.phantom.delirium.cooldown.ticks=20..,ogvz.phantom.delirium.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.phantom.delirium.cooldown.ticks=20..}] run scoreboard players set @s ogvz.phantom.delirium.cooldown.ticks 0
-
-# Blaze - Fireball
-execute as @s[scores={ogvz.blaze.fireball.cooldown.seconds=1..}] run scoreboard players add @s ogvz.blaze.fireball.cooldown.ticks 1
-execute as @s[scores={ogvz.blaze.fireball.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.blaze.fireball.cooldown.seconds 1
-execute as @s[scores={ogvz.blaze.fireball.cooldown.ticks=20..,ogvz.blaze.fireball.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.blaze.fireball.cooldown.ticks=20..}] run scoreboard players set @s ogvz.blaze.fireball.cooldown.ticks 0
-
-# Blaze - Fireblast
-execute as @s[scores={ogvz.blaze.fireblast.cooldown.seconds=1..}] run scoreboard players add @s ogvz.blaze.fireblast.cooldown.ticks 1
-execute as @s[scores={ogvz.blaze.fireblast.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.blaze.fireblast.cooldown.seconds 1
-execute as @s[scores={ogvz.blaze.fireblast.cooldown.ticks=20..,ogvz.blaze.fireblast.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.blaze.fireblast.cooldown.ticks=20..}] run scoreboard players set @s ogvz.blaze.fireblast.cooldown.ticks 0
-
-# Blaze - Firefly
-execute as @s[scores={ogvz.blaze.firefly.cooldown.seconds=1..}] run scoreboard players add @s ogvz.blaze.firefly.cooldown.ticks 1
-execute as @s[scores={ogvz.blaze.firefly.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.blaze.firefly.cooldown.seconds 1
-execute as @s[scores={ogvz.blaze.firefly.cooldown.ticks=20..,ogvz.blaze.firefly.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.blaze.firefly.cooldown.ticks=20..}] run scoreboard players set @s ogvz.blaze.firefly.cooldown.ticks 0
-
-# Silverfish - Roar
-execute as @s[scores={ogvz.silverfish.roar.cooldown.seconds=1..}] run scoreboard players add @s ogvz.silverfish.roar.cooldown.ticks 1
-execute as @s[scores={ogvz.silverfish.roar.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.silverfish.roar.cooldown.seconds 1
-execute as @s[scores={ogvz.silverfish.roar.cooldown.ticks=20..,ogvz.silverfish.roar.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.silverfish.roar.cooldown.ticks=20..}] run scoreboard players set @s ogvz.silverfish.roar.cooldown.ticks 0
-
 # Golem - Fissure
 execute as @s[scores={ogvz.golem.fissure.cooldown.seconds=1..}] run scoreboard players add @s ogvz.golem.fissure.cooldown.ticks 1
 execute as @s[scores={ogvz.golem.fissure.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.golem.fissure.cooldown.seconds 1
 execute as @s[scores={ogvz.golem.fissure.cooldown.ticks=20..,ogvz.golem.fissure.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.golem.fissure.cooldown.ticks=20..,ogvz.golem.fissure.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Fissure]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.golem.fissure.cooldown.ticks=20..}] run scoreboard players set @s ogvz.golem.fissure.cooldown.ticks 0
 
-# Enderman - Teleport
-execute as @s[scores={ogvz.enderman.teleport.cooldown.seconds=1..}] run scoreboard players add @s ogvz.enderman.teleport.cooldown.ticks 1
-execute as @s[scores={ogvz.enderman.teleport.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.enderman.teleport.cooldown.seconds 1
-execute as @s[scores={ogvz.enderman.teleport.cooldown.ticks=20..,ogvz.enderman.teleport.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.enderman.teleport.cooldown.ticks=20..}] run scoreboard players set @s ogvz.enderman.teleport.cooldown.ticks 0
-
-# Enderman - Portal
-execute as @s[scores={ogvz.enderman.portal.cooldown.seconds=1..}] run scoreboard players add @s ogvz.enderman.portal.cooldown.ticks 1
-execute as @s[scores={ogvz.enderman.portal.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.enderman.portal.cooldown.seconds 1
-execute as @s[scores={ogvz.enderman.portal.cooldown.ticks=20..,ogvz.enderman.portal.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.enderman.portal.cooldown.ticks=20..}] run scoreboard players set @s ogvz.enderman.portal.cooldown.ticks 0
-
-# Enderman - Portal Teleport
-execute as @s[scores={ogvz.enderman.reinforce.cooldown.seconds=1..}] run scoreboard players add @s ogvz.enderman.reinforce.cooldown.ticks 1
-execute as @s[scores={ogvz.enderman.reinforce.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.enderman.reinforce.cooldown.seconds 1
-execute as @s[scores={ogvz.enderman.reinforce.cooldown.ticks=20..,ogvz.enderman.reinforce.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.enderman.reinforce.cooldown.ticks=20..}] run scoreboard players set @s ogvz.enderman.reinforce.cooldown.ticks 0
+# Golem - Leap
+execute as @s[scores={ogvz.golem.leap.cooldown.seconds=1..}] run scoreboard players add @s ogvz.golem.leap.cooldown.ticks 1
+execute as @s[scores={ogvz.golem.leap.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.golem.leap.cooldown.seconds 1
+execute as @s[scores={ogvz.golem.leap.cooldown.ticks=20..,ogvz.golem.leap.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.golem.leap.cooldown.ticks=20..,ogvz.golem.leap.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Leap]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.golem.leap.cooldown.ticks=20..}] run scoreboard players set @s ogvz.golem.leap.cooldown.ticks 0

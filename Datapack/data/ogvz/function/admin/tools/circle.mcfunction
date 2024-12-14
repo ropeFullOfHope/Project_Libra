@@ -6,7 +6,7 @@ scoreboard objectives add temp.circle dummy
 
 scoreboard players set &temp temp.circle 0
 
-execute as @n[type=minecraft:marker,tag=temp.circle] at @s run function ogvz:temp/circle_loop
+execute as @n[type=minecraft:marker,tag=temp.circle] at @s run function ogvz:admin/tools/circle_loop
 
 scoreboard objectives remove temp.circle
 

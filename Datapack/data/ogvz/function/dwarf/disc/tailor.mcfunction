@@ -58,7 +58,7 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"Use on a grass block.","color":"blue"}', \
     '{"text":"Allows flowers to grow in any","color":"blue"}', \
     '{"text":"biome.","color":"blue"}', \
-    '{"text":"Single-Use","italic":false,"color":"red"}', \
+    '{"text":"Single-use","italic":false,"color":"red"}', \
     '{"text":"Active Item","italic":false,"color":"green"}' \
   ] \
 ]

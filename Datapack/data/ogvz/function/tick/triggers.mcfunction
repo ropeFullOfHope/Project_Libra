@@ -16,4 +16,4 @@
 
 execute as @s[scores={ogvz.trigger.doom_event=1..}] at @s run function ogvz:triggers/doom_event
 
-execute as @s[scores={ogvz.trigger.mark_for_death=1..}] at @s run function ogvz:triggers/mark_for_death
+#execute as @s[scores={ogvz.trigger.mark_for_death=1..}] at @s run function ogvz:triggers/mark_for_death

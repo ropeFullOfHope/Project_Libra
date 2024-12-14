@@ -27,6 +27,7 @@ attribute @s minecraft:attack_damage modifier remove ogvz.dragon_form.attack_dam
 attribute @s minecraft:movement_speed modifier remove ogvz.dragon_form.movement_speed
 
 # Creeper - explode
+tag @s remove ogvz.attribute.explode.explosion_knockback_resistance
 attribute @s minecraft:explosion_knockback_resistance modifier remove ogvz.explosion.explosion_knockback_resistance
 
 # Wolf - base attributes
@@ -39,3 +40,13 @@ attribute @s minecraft:movement_speed modifier remove ogvz.piglin.movement_speed
 
 # Hoglin - base attributes
 attribute @s minecraft:max_health modifier remove ogvz.hoglin.max_health
+
+# Golem - base attributes
+attribute @s minecraft:max_health modifier remove ogvz.golem.max_health
+attribute @s minecraft:attack_damage modifier remove ogvz.golem.attack_damage
+attribute @s minecraft:attack_speed modifier remove ogvz.golem.attack_speed
+attribute @s minecraft:knockback_resistance modifier remove ogvz.golem.knockback_resistance
+attribute @s minecraft:explosion_knockback_resistance modifier remove ogvz.golem.explosion_knockback_resistance
+attribute @s minecraft:movement_speed modifier remove ogvz.golem.movement_speed
+attribute @s minecraft:jump_strength modifier remove ogvz.golem.jump_strength
+attribute @s minecraft:fall_damage_multiplier modifier remove ogvz.golem.fall_damage_multiplier

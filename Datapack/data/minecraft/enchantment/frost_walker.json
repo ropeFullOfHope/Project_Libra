@@ -31,10 +31,7 @@
           "block_state": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "minecraft:ice",
-              "Properties": {
-                "age": "0"
-              }
+              "Name": "minecraft:ice"
             }
           },
           "height": 1.0,

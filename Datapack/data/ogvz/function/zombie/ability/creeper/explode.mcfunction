@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By:
 # File Name: explode
-# Function Name: ogvz:zombie/ability/aquatic/explode
+# Function Name: ogvz:zombie/ability/creeper/explode
 # File Purpose: Explode the player.
 # Created By: ropeFullOfHope
 # 
@@ -20,8 +20,10 @@ item replace entity @s[gamemode=!creative,tag=temp.use.offhand] weapon.offhand w
 
 execute summon minecraft:marker run tag @s add ogvz.marker.explode
 
-tag @n[type=minecraft:marker,tag=ogvz.marker.explode] add ogvz.state.wait_0
 tag @n[type=minecraft:marker,tag=ogvz.marker.explode] add ogvz.kill_on_reload
+
+# Initialize the explode's multitick finite state machine.
+scoreboard players set @n[type=minecraft:marker,tag=ogvz.marker.explode] ogvz.creeper.explode.state -3
 
 # Explode.
 summon minecraft:creeper ~ ~ ~ {ExplosionRadius:3b,Fuse:0,attributes:[{id:"minecraft:scale",base:0.0625}]}

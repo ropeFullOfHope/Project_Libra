@@ -15,7 +15,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Creeper - explode
-execute as @e[type=minecraft:marker,tag=ogvz.marker.explode,tag=ogvz.state.remove_attributes] at @s run function ogvz:zombie/ability/creeper/explode_remove_attribute
-execute as @e[type=minecraft:marker,tag=ogvz.marker.explode,tag=ogvz.state.explode_again] at @s run function ogvz:zombie/ability/creeper/explode_again
-execute as @e[type=minecraft:marker,tag=ogvz.marker.explode,tag=ogvz.state.wait_1] at @s run function ogvz:zombie/ability/creeper/explode_wait
-execute as @e[type=minecraft:marker,tag=ogvz.marker.explode,tag=ogvz.state.wait_0] at @s run function ogvz:zombie/ability/creeper/explode_wait
+execute as @e[type=minecraft:marker,tag=ogvz.marker.explode,scores={ogvz.creeper.explode.state=..-1}] at @s run function ogvz:zombie/ability/creeper/explode_multitick
+
+# Golem - leap
+execute as @a[tag=ogvz.zombie.class.golem,scores={ogvz.golem.leap.state=..-1}] at @s run function ogvz:zombie/ability/golem/leap_multitick

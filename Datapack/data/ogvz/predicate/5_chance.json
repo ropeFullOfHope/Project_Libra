@@ -1,6 +1,4 @@
 {
   "condition": "minecraft:random_chance",
-  "chance": 0.05,
-  "entity": "this",
-  "predicate": {}
+  "chance": 0.05
 }

@@ -31,7 +31,7 @@ tag @s add ogvz.zombie.suicide_pill
 
 attribute @s minecraft:movement_speed modifier add ogvz.wolf.movement_speed 0.4 add_multiplied_total
 attribute @s minecraft:jump_strength modifier add ogvz.wolf.jump_strength 0.2 add_value
-attribute @s minecraft:safe_fall_distance modifier add ogvz.wolf.safe_fall_distance 3 add_value
+attribute @s minecraft:safe_fall_distance modifier add ogvz.wolf.safe_fall_distance 3.0 add_value
 
 team join z3WOLF @s
 
@@ -52,7 +52,7 @@ item replace entity @s armor.head with minecraft:player_head[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"}, \
     ] \
   } \
 ]
@@ -71,7 +71,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+      {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
     ] \
   } \
 ]
@@ -90,7 +90,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+      {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
     ] \
   } \
 ]
@@ -109,7 +109,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
     ] \
   } \
 ]
@@ -137,8 +137,8 @@ give @s minecraft:iron_sword[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:attack_damage",name:"minecraft:attack_damage",amount:5.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:attack_speed",name:"minecraft:attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:attack_damage",amount:5.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
     ], \
     show_in_tooltip:false \
   } \
@@ -152,7 +152,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:lore=[ \
     '{"text":"Summon a pack of wolves to fight","color":"blue"}', \
     '{"text":"for you.","color":"blue"}', \
-    '{"text":"Single-Use","color":"red","italic":false}', \
+    '{"text":"Single-use","color":"red","italic":false}', \
     '{"text":"Active Ability","color":"green","italic":false}' \
   ] \
 ]

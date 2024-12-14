@@ -72,6 +72,7 @@ scoreboard objectives add ogvz.misc.natural_regeneration_timer dummy
 scoreboard objectives add ogvz.misc.leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ogvz.misc.custom_bar_hide.ticks dummy
 scoreboard objectives add ogvz.misc.custom_bar_hide.seconds dummy
+scoreboard objectives add ogvz.air_toggle dummy
 
 ### Marker scoreboards
 scoreboard objectives add ogvz.marker.glowing_shell.duration.ticks dummy
@@ -128,6 +129,16 @@ scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.seconds dummy
 
 ### Zombie scoreboards
+# Creeper
+scoreboard objectives add ogvz.creeper.explode.state dummy
+
 # Piglin
 scoreboard objectives add ogvz.piglin.used.golden_pickaxe minecraft.used:minecraft.golden_pickaxe
 scoreboard objectives add ogvz.piglin.evolution.progress dummy
+
+# Golem
+scoreboard objectives add ogvz.golem.fissure.cooldown.ticks dummy
+scoreboard objectives add ogvz.golem.fissure.cooldown.seconds dummy
+scoreboard objectives add ogvz.golem.leap.cooldown.ticks dummy
+scoreboard objectives add ogvz.golem.leap.cooldown.seconds dummy
+scoreboard objectives add ogvz.golem.leap.state dummy

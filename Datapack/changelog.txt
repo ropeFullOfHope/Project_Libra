@@ -1,10 +1,10 @@
 === 2.0 - Legendary Update (XXXX.XX.XX) ===
 - Game has been completly rewritten from scratch. Code is now more readable, scalable and has better performance.
-- Resource pack has been remade. Most textures got tweaked or completley redrawn. Textures are now more consistant with vanilla minecraft textures.
+- Resource pack has been remade. Most textures got tweaked or completley remade. Textures are now more consistant with vanilla minecraft textures.
 
 Setup phase changes:
 - Admins now recieve an admin book when switching to creative mode. Only players with an admin tag can use it.
-- Admins are now notified when a player is tagged as an admin (by switching to creative mode for the first time), when an admin places a lobby/shrine/zombie spawn/boss spawn or when an admin selects a boss.
+- Admins are now notified when a player is tagged as an admin (by switching to creative mode for the first time), when an admin places a lobby, shrine, zombie spawn, boss spawn or when an admin selects a boss.
 - Boss spawn has been added, which is now required to be placed in order for the games to start (unless the selected boss is assassin).
 - Lobby is now required to be placed before the game can start.
 - Players who join the game are now in adventure mode and have Resistance 5 (complete damage immunity).
@@ -13,7 +13,7 @@ Setup phase changes:
 - If magma cream is used during boss, zombie or any later phase, the player will join the zombie team.
 - Magma cream can no longer be dropped.
 - If you somehow lose your magma cream you can now receive a new one by rejoining the server.
-- Players who join the server while not yet joined the game will now be notified if the games have started yet.
+- Players will now be notified if the games have started yet upon joining the server while still in lobby.
 - Bedrock texture is now no longer randomly rotated.
 
 Dwarf changes:
@@ -21,23 +21,21 @@ Dwarf changes:
 - All dwarves start with a legendary book now.
 - Dwarves can legendary transmute multiple times now (as long as they have legendary books).
 - Builders no longer receive mana from using their summoning book.
-- Builders now regenerate mana naturally at 0.5 mana/second. Their mana is still not limited to 100 mana.
+- Builders now regenerate mana naturally at 0.5 mana/second. Their mana is still not capped at 100 mana.
 - Enchanters no longer receive mana from using their summoning book.
 - Enchanters now regenerate mana and have a 100 mana cap like other non-builder classes.
-- All classes can now overflow their mana under certain conditions, but they will slowly lose mana at a rate of -0.2 mana/second when above 100 mana (except for builders).
-- Standing near the shrine will now let you recover mana faster, even letting you overflow your mana.
-- Standing near the shrine will prevent mana loss from being above 100 mana.
+- Certain sources of mana can now overflow mana of all non-builder dwarves up to 200 mana.
+- Standing near the shrine will now let you recover mana faster and let you overflow your mana.
 - Builder's instant-buildings have been completly removed.
 - Builders now always start with a crab claw and stonecutter.
-- Alchemists now start with a water wand, which allows them to fill cauldrons.
+- Alchemists now start with a water wand, which allows them to fill cauldrons with water.
 - Tailors now start with super fertilizer, which allows them to change the biome on a patch of grass to allow flowers to grow.
 - Tailors now use mud bricks instead of terracotta.
-- Enchanters now use quartz bricks instead of polished quartz.
 - Blacksmiths now start with 4 blast furnaces instead of 4 regular furnaces. This now allows them to make 5 clocks in 30 seconds.
-- Bakers can now also rarely get 3-5 golden carrots with their transmutes.
+- Bakers can now also rarely get some golden carrots with their transmutes.
 - Cake now stacks to 64.
-- Most dwarf classes received other slight tweaks to their starting inventory.
-- Certain items now have a tooltip, which tell the player what to do with it.
+- Most dwarf classes received slight tweaks to their starting inventory.
+- Certain items now have a tooltip, which help the player dwarf with doing their job.
 - All potions that cost mana are now renamed to magic potions.
 - Magic health potion now has a 20 second cooldown.
 - Magic health potion now no longer gives short but strong regeneration and instead instantly heals you to full.

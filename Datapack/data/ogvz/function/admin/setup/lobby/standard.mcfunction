@@ -24,7 +24,7 @@ forceload add ~ ~
 
 place template ogvz:lobby/standard ~-10 ~-2 ~-10
 
-execute at @s align xyz positioned ~0.5 ~ ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["ogvz.marker","ogvz.marker.lobby","ogvz.kill_on_reload"]}
+execute at @s align xyz positioned ~0.5 ~ ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["ogvz.marker.lobby","ogvz.kill_on_reload"]}
 
 execute at @s align xyz positioned ~0.25 ~0.25 ~0.25 run summon minecraft:block_display ~ ~ ~ { \
   Tags:["ogvz.block_display","ogvz.block_display.lobby","ogvz.kill_on_reload"], \

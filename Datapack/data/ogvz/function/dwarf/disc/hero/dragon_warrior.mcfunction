@@ -49,8 +49,8 @@ item replace entity @s armor.head with minecraft:golden_helmet[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:3,operation:"add_value",slot:"head",id:"ogvz:head"}, \
-      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
+      {type:"minecraft:armor",amount:3,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+      {type:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
     ] \
   } \
 ]
@@ -65,8 +65,8 @@ item replace entity @s armor.chest with minecraft:golden_chestplate[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:8,operation:"add_value",slot:"chest",id:"ogvz:chest"}, \
-      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"chest",id:"ogvz:chest"} \
+      {type:"minecraft:armor",amount:8,operation:"add_value",slot:"chest",id:"ogvz:chest"}, \
+      {type:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"chest",id:"ogvz:chest"} \
     ] \
   } \
 ]
@@ -81,8 +81,8 @@ item replace entity @s armor.legs with minecraft:golden_leggings[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:6,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
-      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+      {type:"minecraft:armor",amount:6,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+      {type:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
     ] \
   } \
 ]
@@ -98,8 +98,8 @@ item replace entity @s armor.feet with minecraft:golden_boots[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:3,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
-      {type:"minecraft:armor_toughness",name:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+      {type:"minecraft:armor",amount:3,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+      {type:"minecraft:armor_toughness",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
     ] \
   } \
 ]
@@ -127,8 +127,8 @@ give @s minecraft:carrot_on_a_stick[ \
   ], \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:attack_damage",name:"minecraft:attack_damage",amount:11.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:attack_speed",name:"minecraft:attack_speed",amount:-2.7,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+      {type:"minecraft:attack_damage",amount:11.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+      {type:"minecraft:attack_speed",amount:-2.7,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
     ], \
     show_in_tooltip:false \
   } \

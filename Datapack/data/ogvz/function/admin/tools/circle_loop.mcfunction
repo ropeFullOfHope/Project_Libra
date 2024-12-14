@@ -13,4 +13,4 @@ tp @s ~ ~ ~ ~0.1 ~
 
 scoreboard players add &temp temp.circle 1
 
-execute if score &temp temp.circle matches ..3600 as @s at @s run function ogvz:temp/circle_loop
+execute if score &temp temp.circle matches ..3600 as @s at @s run function ogvz:admin/tools/circle_loop

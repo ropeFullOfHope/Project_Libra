@@ -40,7 +40,7 @@ item replace entity @s armor.head with minecraft:creeper_head[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:1,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+      {type:"minecraft:armor",amount:1,operation:"add_value",slot:"head",id:"ogvz:head"}, \
     ] \
   } \
 ]
@@ -58,7 +58,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:3,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+      {type:"minecraft:armor",amount:3,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
     ] \
   } \
 ]
@@ -76,7 +76,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
     ] \
   } \
 ]
@@ -94,7 +94,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",name:"minecraft:armor",amount:1,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+      {type:"minecraft:armor",amount:1,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
     ] \
   } \
 ]
@@ -107,7 +107,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_name='{"text":"Explode","color":"gray"}', \
   minecraft:lore=[ \
     '{"text":"Instantly explode.","color":"blue"}', \
-    '{"text":"Single-Use","color":"red","italic":false}', \
+    '{"text":"Single-use","color":"red","italic":false}', \
     '{"text":"Active Ability","color":"green","italic":false}' \
   ] \
 ]

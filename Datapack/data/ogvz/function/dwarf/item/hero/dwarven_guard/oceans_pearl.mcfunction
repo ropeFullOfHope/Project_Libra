@@ -18,7 +18,7 @@ scoreboard players set @s ogvz.misc.custom_bar_hide.seconds 3
 
 execute if entity @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Ocean\'s Pearl]","bold":true,"color":"red"}, \
+  {"text":"[Ocean's Pearl]","bold":true,"color":"red"}, \
   {"text":" You have ","color":"red"}, \
   {"score":{"name":"@s","objective":"ogvz.dwarven_guard.oceans_pearl.cooldown.seconds"},"bold":true,"color":"red"}, \
   {"text":" seconds remaining!","color":"red"} \
@@ -29,7 +29,7 @@ scoreboard objectives add temp.oceans_pearl_count dummy
 execute store result score @s temp.oceans_pearl_count if entity @e[type=minecraft:item_display,tag=ogvz.item_display.oceans_pearl]
 execute if entity @s[scores={temp.oceans_pearl_count=2..}] run title @s actionbar [ \
   "", \
-  {"text":"[Ocean\'s Pearl]","bold":true,"color":"red"}, \
+  {"text":"[Ocean's Pearl]","bold":true,"color":"red"}, \
   {"text":" You can have a maximum of ","color":"red"}, \
   {"text":"2","bold":true,"color":"red"}, \
   {"text":" ocean's pearls active at once!","color":"red"} \

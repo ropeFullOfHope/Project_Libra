@@ -33,7 +33,7 @@ execute as @a[tag=ogvz.admin] at @s run function ogvz:tick/shrine_distance
 
 # Detect functions
 execute as @a at @s run function ogvz:tick/passive_detect
-execute as @a at @s run function ogvz:tick/held_detect
+#execute as @a at @s run function ogvz:tick/held_detect
 execute as @a at @s run function ogvz:tick/active_detect
 
 # Cooldown/warmup functions
@@ -47,8 +47,6 @@ execute as @a at @s run function ogvz:tick/custom_bars
 # Multitick functions
 function ogvz:tick/multitick_items
 function ogvz:tick/multitick_abilities
-#!!!execute as @a[tag=ogvz.zombie.class.hoglin] at @s run function ogvz:tick/adventure_switch
-#!!!execute as @a[tag=ogvz.zombie.class.enderman.portal_bound] at @s run function ogvz:tick/portal_bind
 
 # Mana functions
 execute as @a[tag=ogvz.dwarf,tag=ogvz.mana] at @s run function ogvz:tick/mana_buildup
