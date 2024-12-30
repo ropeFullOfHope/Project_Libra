@@ -129,6 +129,10 @@ scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.seconds dummy
 
 ### Zombie scoreboards
+# Guardian
+scoreboard objectives add ogvz.guardian.beam.cooldown.ticks dummy
+scoreboard objectives add ogvz.guardian.beam.cooldown.seconds dummy
+
 # Creeper
 scoreboard objectives add ogvz.creeper.explode.state dummy
 

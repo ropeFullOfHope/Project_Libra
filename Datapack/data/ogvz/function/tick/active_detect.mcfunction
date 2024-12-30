@@ -126,6 +126,7 @@ execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.active
 # Wither skeleton (612x)
 # Pillager (613x)
 # Guardian (614x)
+execute as @s[tag=ogvz.zombie.class.skeleton_variant.guardian,scores={ogvz.rclick.active_id=6140}] at @s run function ogvz:zombie/ability/skeleton_variant/guardian/beam
 # Creeper (620x)
 execute as @s[tag=ogvz.zombie.class.creeper,scores={ogvz.rclick.active_id=6200}] at @s run function ogvz:zombie/ability/creeper/explode
 # Spider (621x)

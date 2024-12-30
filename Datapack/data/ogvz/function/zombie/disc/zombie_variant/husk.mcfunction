@@ -43,7 +43,7 @@ item replace entity @s armor.head with minecraft:player_head[ \
   }, \
   minecraft:enchantments={ \
     levels:{ \
-      "minecraft:protection":3, \
+      "minecraft:protection":4, \
       "minecraft:binding_curse":1 \
     } \
   }, \

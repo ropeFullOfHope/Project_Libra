@@ -65,13 +65,13 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   }, \
   minecraft:enchantments={ \
     levels:{ \
-      "minecraft:protection":5, \
+      "minecraft:protection":3, \
       "minecraft:binding_curse":1 \
     } \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+      {type:"minecraft:armor",amount:5,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
     ] \
   } \
 ]
@@ -84,13 +84,13 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
   }, \
   minecraft:enchantments={ \
     levels:{ \
-      "minecraft:protection":4, \
+      "minecraft:protection":3, \
       "minecraft:binding_curse":1 \
     } \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+      {type:"minecraft:armor",amount:4,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
     ] \
   } \
 ]
@@ -103,13 +103,13 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   }, \
   minecraft:enchantments={ \
     levels:{ \
-      "minecraft:protection":1, \
+      "minecraft:protection":2, \
       "minecraft:binding_curse":1 \
     } \
   }, \
   minecraft:attribute_modifiers={ \
     modifiers:[ \
-      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+      {type:"minecraft:armor",amount:1,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
     ] \
   } \
 ]
