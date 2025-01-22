@@ -6,8 +6,8 @@
       {
         "amount": {
           "type": "minecraft:linear",
-          "base": -0.15,
-          "per_level_above_first": -0.15
+          "base": -0.0625,
+          "per_level_above_first": -0.0625
         },
         "attribute": "minecraft:burning_time",
         "id": "minecraft:enchantment.fire_protection",
@@ -75,8 +75,8 @@
   },
   "max_level": 4,
   "min_cost": {
-    "base": 1,
-    "per_level_above_first": 9
+    "base": 2,
+    "per_level_above_first": 8
   },
   "slots": [
     "armor"

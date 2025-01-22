@@ -148,8 +148,6 @@ give @s minecraft:carrot_on_a_stick[ \
     '{"text":"After taking enough damage you","color":"blue"}', \
     '{"text":"will revert back into your","color":"blue"}', \
     '{"text":"regular form.","color":"blue"}', \
-    '{"text":"Use of firework rocket boosts is","color":"blue"}', \
-    '{"text":"not advised.","color":"blue"}', \
     '{"text":"300 second cooldown","color":"red","italic":false}', \
     '{"text":"Requires 50 mana","color":"red","italic":false}', \
     '{"text":"Active Item","color":"green","italic":false}', \

@@ -27,7 +27,27 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:shield",
-          "weight": 2
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Light Shield",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Instant Blocking",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "insert"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -104,6 +124,11 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
+                {
+                  "text": "Delayed Blocking",
+                  "color": "gray",
+                  "italic": false
+                },
                 {
                   "text": " "
                 },

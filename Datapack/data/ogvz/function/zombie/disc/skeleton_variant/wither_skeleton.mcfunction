@@ -109,9 +109,8 @@ give @s minecraft:bow[ \
   minecraft:unbreakable={}, \
   minecraft:enchantments={ \
     levels:{ \
-      "minecraft:power":2, \
       "minecraft:infinity":1, \
-      "ogvz:decay":1 \
+      "ogvz:decay":2 \
     } \
   } \
 ]

@@ -10,7 +10,25 @@
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 1.0,
+            "base": 1,
+            "per_level_above_first": 0.5
+          }
+        }
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "direct_entity": {
+              "type": "minecraft:trident"
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 0,
             "per_level_above_first": 0.5
           }
         }

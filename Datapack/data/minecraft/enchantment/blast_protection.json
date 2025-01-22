@@ -8,8 +8,8 @@
       {
         "amount": {
           "type": "minecraft:linear",
-          "base": 0.15,
-          "per_level_above_first": 0.15
+          "base": 0.05,
+          "per_level_above_first": 0.05
         },
         "attribute": "minecraft:explosion_knockback_resistance",
         "id": "minecraft:enchantment.blast_protection",
@@ -77,8 +77,8 @@
   },
   "max_level": 4,
   "min_cost": {
-    "base": 1,
-    "per_level_above_first": 9
+    "base": 2,
+    "per_level_above_first": 8
   },
   "slots": [
     "armor"

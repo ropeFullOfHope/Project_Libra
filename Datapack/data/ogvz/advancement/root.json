@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:gold_block"
+    },
+    "title": [
+      {
+        "text": "<",
+        "color": "dark_gray",
+        "bold": true
+      },
+      {
+        "text": "OG",
+        "color": "dark_aqua",
+        "bold": true
+      },
+      {
+        "text": "v",
+        "color": "dark_gray",
+        "bold": true
+      },
+      {
+        "text": "Z",
+        "color": "dark_red",
+        "bold": true
+      },
+      {
+        "text": ">",
+        "color": "dark_gray",
+        "bold": true
+      },
+      {
+        "text": " Challanges",
+        "color": "dark_gray",
+        "bold": true
+      }
+    ],
+    "description": {
+      "text": ""
+    },
+    "background": "minecraft:textures/block/stone_bricks.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

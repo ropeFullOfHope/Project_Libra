@@ -15,15 +15,14 @@
   },
   "exclusive_set": "#minecraft:exclusive_set/mining",
   "max_cost": {
-    "base": 50,
+    "base": 0,
     "per_level_above_first": 0
   },
   "max_level": 1,
   "min_cost": {
-    "base": 15,
+    "base": 0,
     "per_level_above_first": 0
   },
-  "primary_items": "#minecraft:shovels",
   "slots": [
     "mainhand"
   ],
