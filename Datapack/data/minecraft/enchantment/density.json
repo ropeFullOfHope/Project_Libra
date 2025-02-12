@@ -24,12 +24,12 @@
   },
   "max_level": 5,
   "min_cost": {
-    "base": 5,
-    "per_level_above_first": 8
+    "base": 2,
+    "per_level_above_first": 6
   },
   "slots": [
     "mainhand"
   ],
   "supported_items": "#minecraft:enchantable/mace",
-  "weight": 5
+  "weight": 10
 }

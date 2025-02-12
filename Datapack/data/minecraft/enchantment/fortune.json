@@ -10,8 +10,8 @@
   },
   "max_level": 3,
   "min_cost": {
-    "base": 8,
-    "per_level_above_first": 9
+    "base": 14,
+    "per_level_above_first": 6
   },
   "primary_items": "#ogvz:enchantable/true_tools",
   "slots": [

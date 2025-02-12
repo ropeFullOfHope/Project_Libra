@@ -23,12 +23,12 @@
   },
   "max_level": 3,
   "min_cost": {
-    "base": 15,
-    "per_level_above_first": 9
+    "base": 2,
+    "per_level_above_first": 12
   },
   "slots": [
     "mainhand"
   ],
   "supported_items": "#minecraft:enchantable/fishing",
-  "weight": 2
+  "weight": 10
 }

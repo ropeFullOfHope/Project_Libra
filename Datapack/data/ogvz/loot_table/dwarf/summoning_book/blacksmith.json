@@ -85,7 +85,7 @@
                     {
                       "id": "ogvz:mainhand",
                       "type": "minecraft:attack_speed",
-                      "amount": 16,
+                      "amount": 19996,
                       "operation": "add_value",
                       "slot": "mainhand"
                     },
@@ -125,7 +125,7 @@
                   "italic": false
                 },
                 {
-                  "text": " 20 Attack Speed",
+                  "text": " \u221E Attack Speed",
                   "color": "dark_green",
                   "italic": false
                 },

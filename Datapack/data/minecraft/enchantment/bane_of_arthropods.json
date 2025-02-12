@@ -67,13 +67,13 @@
   },
   "max_level": 5,
   "min_cost": {
-    "base": 0,
-    "per_level_above_first": 0
+    "base": 2,
+    "per_level_above_first": 6
   },
   "primary_items": "#minecraft:enchantable/sword",
   "slots": [
     "mainhand"
   ],
   "supported_items": "#minecraft:enchantable/weapon",
-  "weight": 5
+  "weight": 10
 }
