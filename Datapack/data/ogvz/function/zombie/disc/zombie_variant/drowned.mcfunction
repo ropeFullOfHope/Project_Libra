@@ -28,8 +28,9 @@ tag @s add ogvz.zombie
 tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.zombie_variant
 tag @s add ogvz.zombie.class.zombie_variant.drowned
-tag @s add ogvz.zombie.aquatic
 tag @s add ogvz.zombie.suicide_pill
+
+tag @s add ogvz.zombie.aquatic
 
 team join z0DROWNED @s
 

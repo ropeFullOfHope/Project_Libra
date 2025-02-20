@@ -14,6 +14,12 @@
 # Comments: Also removes tags used to track certain attribute modifiers.
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Frozen custom effect
+tag @s remove ogvz.attribute.frozen.movement_speed
+attribute @s minecraft:movement_speed modifier remove ogvz.frozen.movement_speed
+tag @s remove ogvz.attribute.frozen.movement_speed
+attribute @s minecraft:movement_speed modifier remove ogvz.frozen.movement_speed
+
 # Dolphin's grace nerf
 tag @s remove ogvz.attribute.dolphins_grace_nerf.water_movement_efficiency
 attribute @s minecraft:water_movement_efficiency modifier remove ogvz.dolphins_grace_nerf.water_movement_efficiency

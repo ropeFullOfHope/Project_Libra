@@ -6,5 +6,6 @@
   "block.minecraft.end_stone_bricks": "Reinforced Bricks",
   "block.minecraft.sea_lantern": "Lantern Block",
   "item.minecraft.brick": "Clay Brick",
-  "effect.minecraft.luck": "Mana Regeneration"
+  "effect.minecraft.luck": "Mana Regeneration",
+  "effect.minecraft.unluck": "Frozen"
 }

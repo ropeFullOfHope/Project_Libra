@@ -92,3 +92,5 @@ tag @s remove ogvz.mana.teleporting
 
 tag @s remove ogvz.adventure.lobby
 tag @s remove ogvz.adventure.curse_of_limitation
+
+tag @s remove ogvz.frozen

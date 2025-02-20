@@ -1,11 +1,11 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: ogvz:tick/active_detect
-# File Name: beam
-# Function Name: ogvz:zombie/ability/skeleton_variant/guardian/beam
-# File Purpose: Shoots a beam that deals electric damage.
+# File Name: freeze
+# Function Name: ogvz:zombie/ability/snowman/freeze
+# File Purpose: Shoots a beam that freezes.
 # Created By: ropeFullOfHope
 # 
-# Created On: 2024.12.30
+# Created On: 2025.02.16
 # Last Modified On:
 # Last Modified By:
 #
@@ -14,24 +14,24 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute if entity @s[scores={ogvz.guardian.beam.cooldown.seconds=1..}] run title @s actionbar [ \
+execute if entity @s[scores={ogvz.snowman.freeze.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Beam]","bold":true,"color":"red"}, \
+  {"text":"[Freeze]","bold":true,"color":"red"}, \
   {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.guardian.beam.cooldown.seconds"},"bold":true,"color":"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.snowman.freeze.cooldown.seconds"},"bold":true,"color":"red"}, \
   {"text":" seconds remaining!","color":"red"} \
 ]
-execute if entity @s[scores={ogvz.guardian.beam.cooldown.seconds=1..}] run return 0
+execute if entity @s[scores={ogvz.snowman.freeze.cooldown.seconds=1..}] run return 0
 
-scoreboard players set @s ogvz.guardian.beam.cooldown.seconds 5
+scoreboard players set @s ogvz.snowman.freeze.cooldown.seconds 30
 
 title @s actionbar [ \
   "", \
-  {"text":"[Beam]","bold":true,"color":"green"}, \
+  {"text":"[Freeze]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
-playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 2
+playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.6
 
 # Tag the player as the ray origin.
 tag @s add temp.ray_origin
@@ -45,14 +45,10 @@ execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:ma
 execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:marker,tag=temp.ray_origin] ~ ~ ~ ~ ~
 
 # Starts the ray casting loop.
-execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:zombie/ability/skeleton_variant/guardian/beam_loop
+execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:zombie/ability/snowman/freeze_loop
 
-# Deals damage to all players who have been hit by the ray. Damage is reduced for zombies.
-execute as @a[tag=temp.hit,tag=ogvz.dwarf] run damage @s 9 ogvz:electric by @p[tag=temp.ray_origin]
-execute as @a[tag=temp.hit,tag=ogvz.zombie] run damage @s 2.25 ogvz:electric by @p[tag=temp.ray_origin]
-
-# Play a ding sound if a player was hit.
-execute if entity @a[tag=temp.hit,tag=!ogvz.zombie.element.electric] run playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1 1
+# Freeze all players who have been hit by the ray. Area Effect Cloud is used, to apply the effect with the icon, but without the particles.
+execute as @a[tag=temp.hit] at @s run summon area_effect_cloud ~ ~ ~ {ReapplicationDelay:-1,Radius:0.0f,Duration:1,Age:-1,WaitTime:0,potion_contents:{custom_effects:[{id:"minecraft:unluck",amplifier:0,duration:100,show_particles:0b,show_icon:1b}]}}
 
 # Gets rid of the markers.
 kill @e[type=minecraft:marker,tag=temp.ray]

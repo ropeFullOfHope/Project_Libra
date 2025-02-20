@@ -136,6 +136,12 @@ scoreboard objectives add ogvz.guardian.beam.cooldown.seconds dummy
 # Creeper
 scoreboard objectives add ogvz.creeper.explode.state dummy
 
+# Snowman
+scoreboard objectives add ogvz.snowman.snowball_barrage.cooldown.ticks dummy
+scoreboard objectives add ogvz.snowman.snowball_barrage.cooldown.seconds dummy
+scoreboard objectives add ogvz.snowman.freeze.cooldown.ticks dummy
+scoreboard objectives add ogvz.snowman.freeze.cooldown.seconds dummy
+
 # Piglin
 scoreboard objectives add ogvz.piglin.used.golden_pickaxe minecraft.used:minecraft.golden_pickaxe
 scoreboard objectives add ogvz.piglin.evolution.progress dummy

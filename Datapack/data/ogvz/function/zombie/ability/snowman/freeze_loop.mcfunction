@@ -1,11 +1,11 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:zombie/ability/skeleton_variant/guardian/beam
-# File Name: elder_guardian_eye_loop
-# Function Name: ogvz:dwarf/hero/dwarven_guard/elder_guardian_eye_loop
-# File Purpose: Ray scanning for Dwarven Guard's Elder Guardian Eye.
+# Called By: ogvz:zombie/ability/snowman/freeze
+# File Name: freeze_loop
+# Function Name: ogvz:zombie/ability/snowman/freeze_loop
+# File Purpose: Ray scanning for Snowman's Freeze ability.
 # Created By: ropeFullOfHope
 # 
-# Created On: 2024.02.24
+# Created On: 2025.02.16
 # Last Modified On:
 # Last Modified By:
 #
@@ -22,7 +22,7 @@ execute if entity @a[tag=temp.hit] run return 0
 # Teleports the ray slightly forward.
 tp @s ^ ^ ^0.1
 
-execute if entity @p[tag=temp.ray_origin,distance=2..] run particle minecraft:dust_color_transition{from_color:[0.0f,1.0f,0.6f],scale:2.0f,to_color:[0.4f,0.0f,0.6f]} ~ ~ ~ 0.05 0.05 0.05 0.1 3 force
+execute if entity @p[tag=temp.ray_origin,distance=2..] run particle minecraft:snowflake ~ ~ ~ 0.05 0.05 0.05 0 1 force
 
 # When ray gets close to a player, it determines their hitbox size depending on their eye height.
 # Standing player eye height: 1.62
@@ -41,4 +41,4 @@ execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.hit,tag=temp.medium_
 execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.hit,tag=temp.small_hitbox] at @s positioned ~-0.55 ~-0.25 ~-0.55 if entity @e[type=minecraft:marker,tag=temp.ray,dx=0.1,dy=0.1,dz=0.1] run tag @s add temp.hit
 
 # Repeat ray casting loop.
-execute as @s at @s run function ogvz:zombie/ability/skeleton_variant/guardian/beam_loop
+execute as @s at @s run function ogvz:zombie/ability/snowman/freeze_loop

@@ -15,10 +15,10 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Instant Health for zombies only.
-effect give @s[tag=ogvz.zombie,predicate=ogvz:effect/unluck/1] minecraft:instant_health 1 0 true
+#effect give @s[tag=ogvz.zombie,predicate=ogvz:effect/unluck/1] minecraft:instant_health 1 0 true
 
 # Instant Health 2 for zombies only.
-effect give @s[tag=ogvz.zombie,predicate=ogvz:effect/unluck/2] minecraft:instant_health 1 1 true
+#effect give @s[tag=ogvz.zombie,predicate=ogvz:effect/unluck/2] minecraft:instant_health 1 1 true
 
 # Clear the unluck effect.
-effect clear @s minecraft:unluck
+#effect clear @s[predicate=!ogvz:effect/unluck/0] minecraft:unluck

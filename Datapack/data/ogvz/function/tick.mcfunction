@@ -60,6 +60,7 @@ execute as @a[tag=ogvz.zombie] at @s run function ogvz:tick/innate_abilities
 execute as @e[type=#minecraft:arrows,tag=!temp.processed] at @s run function ogvz:tick/arrow_check
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s run function ogvz:tick/adventure_mode_toggle
 execute as @a[tag=!ogvz.admin] at @s run function ogvz:tick/lava_bucket
+execute as @a at @s run function ogvz:tick/frozen_custom_effect
 execute as @a at @s run function ogvz:tick/dolphins_grace_nerf
 execute as @a at @s run function ogvz:tick/natural_regeneration
 function ogvz:tick/particles

@@ -30,5 +30,8 @@ effect clear @s[tag=ogvz.zombie.class.skeleton_variant.wither_skeleton] minecraf
 # Spiders are immune to poison effect.
 effect clear @s[tag=ogvz.zombie.class.spider] minecraft:poison
 
-# Blazes have permanent fire resistance.
-effect give @s[tag=ogvz.zombie.class.blaze] minecraft:fire_resistance infinite 0 true
+# Fire element zombies have permanent fire resistance.
+effect give @s[tag=ogvz.zombie.element.fire] minecraft:fire_resistance infinite 0 true
+
+# Ice element zombies are immune to frozen (bad luck) effect.
+effect clear @s[tag=ogvz.zombie.element.ice] minecraft:unluck

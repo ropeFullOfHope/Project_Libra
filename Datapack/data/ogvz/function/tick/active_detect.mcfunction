@@ -61,7 +61,7 @@ execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2130}] at @s run function ogvz:zombie/disc/wolf
 #execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2131}] at @s run function ogvz:zombie/disc/ocelot
 #execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2132}] at @s run function ogvz:zombie/disc/chicken_nugget
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2133}] at @s run function ogvz:zombie/disc/snowman
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2133}] at @s run function ogvz:zombie/disc/snowman
 #execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2134}] at @s run function ogvz:zombie/disc/chillager
 #execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2135}] at @s run function ogvz:zombie/disc/bee
 #execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2136}] at @s run function ogvz:zombie/disc/phantom
@@ -135,6 +135,8 @@ execute as @s[tag=ogvz.zombie.class.creeper,scores={ogvz.rclick.active_id=6200}]
 # Ocelot (632x)
 # Phantom (633x)
 # Snowman (634x)
+execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=6340}] at @s run function ogvz:zombie/ability/snowman/snowball_barrage
+execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=6341}] at @s run function ogvz:zombie/ability/snowman/freeze
 # Wolf (635x)
 execute as @s[tag=ogvz.zombie.class.wolf,scores={ogvz.rclick.active_id=6350}] at @s run function ogvz:zombie/ability/wolf/howl
 # Piglin (640x)
