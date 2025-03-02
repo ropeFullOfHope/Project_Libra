@@ -30,3 +30,6 @@ execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard] if items entity @s weapon
 execute as @s[tag=ogvz.zombie.class.piglin,scores={ogvz.inventory.evolution=1..}] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:96}}}} run function ogvz:zombie/ability/piglin/evolution_custom_bar_1
 execute as @s[tag=ogvz.zombie.class.piglin,scores={ogvz.inventory.evolution=1..}] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:96}}}} run function ogvz:zombie/ability/piglin/evolution_custom_bar_0
 execute as @s[tag=ogvz.zombie.class.piglin,scores={ogvz.inventory.evolution=1..}] unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine] run function ogvz:zombie/ability/piglin/evolution_custom_bar_0
+
+# Show Snowball Barrage's custom bar to the Snowman if they are holding the Snowball Barrage while it's not on cooldown.
+execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.snowman.snowball_barrage.cooldown.seconds=..0}] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:6340}] at @s run function ogvz:zombie/ability/snowman/snowball_barrage_custom_bar

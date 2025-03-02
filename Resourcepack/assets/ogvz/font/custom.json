@@ -86,6 +86,13 @@
     },
     {
       "type": "bitmap",
+      "file": "ogvz:font/snowball.png",
+      "height": 9,
+      "ascent": 4,
+      "chars": ["\u1241"]
+    },
+    {
+      "type": "bitmap",
       "file": "ogvz:font/custom_bar/green/0.png",
       "height": 5,
       "ascent": 0,
@@ -1063,6 +1070,496 @@
       "height": 5,
       "ascent": 0,
       "chars": ["\u2169"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/0.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2200"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/1.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2201"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/2.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2202"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/3.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2203"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/4.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2204"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/5.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2205"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/6.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2206"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/7.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2207"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/8.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2208"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/9.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2209"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/10.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2210"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/11.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2211"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/12.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2212"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/13.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2213"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/14.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2214"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/15.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2215"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/16.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2216"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/17.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2217"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/18.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2218"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/19.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2219"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/20.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2220"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/21.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2221"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/22.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2222"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/23.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2223"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/24.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2224"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/25.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2225"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/26.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2226"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/27.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2227"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/28.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2228"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/29.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2229"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/30.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2230"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/31.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2231"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/32.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2232"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/33.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2233"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/34.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2234"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/35.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2235"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/36.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2236"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/37.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2237"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/38.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2238"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/39.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2239"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/40.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2240"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/41.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2241"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/42.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2242"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/43.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2243"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/44.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2244"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/45.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2245"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/46.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2246"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/47.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2247"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/48.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2248"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/49.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2249"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/50.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2250"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/51.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2251"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/52.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2252"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/53.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2253"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/54.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2254"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/55.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2255"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/56.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2256"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/57.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2257"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/58.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2258"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/59.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2259"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/60.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2260"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/61.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2261"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/62.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2262"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/63.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2263"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/64.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2264"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/65.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2265"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/66.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2266"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/67.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2267"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/68.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2268"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/custom_bar/green_red_gradient/69.png",
+      "height": 5,
+      "ascent": 0,
+      "chars": ["\u2269"]
     },
     {
       "type": "space",

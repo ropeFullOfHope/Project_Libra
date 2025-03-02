@@ -33,10 +33,15 @@ scoreboard players operation @s temp.deviation.x += @s temp.vector.x
 scoreboard players operation @s temp.deviation.y += @s temp.vector.y
 scoreboard players operation @s temp.deviation.z += @s temp.vector.z
 
+# Apply the power percentage to the scoreboard.
+scoreboard players operation @s temp.deviation.x *= @s temp.power
+scoreboard players operation @s temp.deviation.y *= @s temp.power
+scoreboard players operation @s temp.deviation.z *= @s temp.power
+
 # Copy the scoreboards into the motion vector of the snowball.
-execute store result entity @n[type=minecraft:snowball,tag=temp.processing] Motion[0] double 0.0013 run scoreboard players get @s temp.deviation.x
-execute store result entity @n[type=minecraft:snowball,tag=temp.processing] Motion[1] double 0.0013 run scoreboard players get @s temp.deviation.y
-execute store result entity @n[type=minecraft:snowball,tag=temp.processing] Motion[2] double 0.0013 run scoreboard players get @s temp.deviation.z
+execute store result entity @n[type=minecraft:snowball,tag=temp.processing] Motion[0] double 0.000001 run scoreboard players get @s temp.deviation.x
+execute store result entity @n[type=minecraft:snowball,tag=temp.processing] Motion[1] double 0.000001 run scoreboard players get @s temp.deviation.y
+execute store result entity @n[type=minecraft:snowball,tag=temp.processing] Motion[2] double 0.000001 run scoreboard players get @s temp.deviation.z
 
 # Remove the temporary tag from the snowball.
 tag @n[type=minecraft:snowball,tag=temp.processing] remove temp.processing
