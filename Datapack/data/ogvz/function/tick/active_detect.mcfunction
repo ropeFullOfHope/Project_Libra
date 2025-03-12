@@ -131,6 +131,11 @@ execute as @s[tag=ogvz.zombie.class.skeleton_variant.guardian,scores={ogvz.rclic
 execute as @s[tag=ogvz.zombie.class.creeper,scores={ogvz.rclick.active_id=6200}] at @s run function ogvz:zombie/ability/creeper/explode
 # Spider (621x)
 # Blaze (630x)
+execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=6300}] at @s run function ogvz:zombie/ability/blaze/fireball
+execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=6301}] at @s run function ogvz:zombie/ability/blaze/firefly
+execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=6302}] at @s run function ogvz:zombie/ability/blaze/heat_wave
+# Chicken Nugget (631x)
+# TODO: FIX WRONG IDs
 # Chillager (631x)
 # Ocelot (632x)
 # Phantom (633x)

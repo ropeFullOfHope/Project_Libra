@@ -38,10 +38,6 @@ playsound minecraft:entity.snowball.throw player @s ~ ~ ~ 1 0.75
 # Create temporary scoreboard for storing the power of the shot in percentage.
 scoreboard objectives add temp.power dummy
 
-# Set the power scoreboard based on how high/low the player is looking.
-scoreboard players set @s[x_rotation=-90.0..-45.0] temp.power 130
-scoreboard players set @s[x_rotation=45.0..90.0] temp.power 30
-
 # Set the power scoreboard to the rotation of a summoned marker that faces in the same direction as the player.
 # Reading data off of a marker is faster than reading it off of the player.
 execute summon minecraft:marker run tag @s add temp.yaw
@@ -60,7 +56,7 @@ scoreboard objectives add temp.power.min dummy
 scoreboard objectives add temp.power.max dummy
 scoreboard players set @s temp.angle.min 22500
 scoreboard players set @s temp.angle.max -45000
-scoreboard players set @s temp.power.min 300
+scoreboard players set @s temp.power.min 500
 scoreboard players set @s temp.power.max 1300
 
 # Create temporary constant scoreboards and calculate ranges.

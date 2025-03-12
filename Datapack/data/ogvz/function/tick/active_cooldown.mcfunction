@@ -125,6 +125,27 @@ execute as @s[scores={ogvz.guardian.beam.cooldown.ticks=20..,ogvz.guardian.beam.
 execute as @s[scores={ogvz.guardian.beam.cooldown.ticks=20..,ogvz.guardian.beam.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Beam]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.guardian.beam.cooldown.ticks=20..}] run scoreboard players set @s ogvz.guardian.beam.cooldown.ticks 0
 
+# Blaze - Fireball
+execute as @s[scores={ogvz.blaze.fireball.cooldown.seconds=1..}] run scoreboard players add @s ogvz.blaze.fireball.cooldown.ticks 1
+execute as @s[scores={ogvz.blaze.fireball.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.blaze.fireball.cooldown.seconds 1
+execute as @s[scores={ogvz.blaze.fireball.cooldown.ticks=20..,ogvz.blaze.fireball.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.blaze.fireball.cooldown.ticks=20..,ogvz.blaze.fireball.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Fireball]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.blaze.fireball.cooldown.ticks=20..}] run scoreboard players set @s ogvz.blaze.fireball.cooldown.ticks 0
+
+# Blaze - Firefly
+execute as @s[scores={ogvz.blaze.firefly.cooldown.seconds=1..}] run scoreboard players add @s ogvz.blaze.firefly.cooldown.ticks 1
+execute as @s[scores={ogvz.blaze.firefly.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.blaze.firefly.cooldown.seconds 1
+execute as @s[scores={ogvz.blaze.firefly.cooldown.ticks=20..,ogvz.blaze.firefly.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.blaze.firefly.cooldown.ticks=20..,ogvz.blaze.firefly.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Firefly]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.blaze.firefly.cooldown.ticks=20..}] run scoreboard players set @s ogvz.blaze.firefly.cooldown.ticks 0
+
+# Blaze - Heat Wave
+execute as @s[scores={ogvz.blaze.heat_wave.cooldown.seconds=1..}] run scoreboard players add @s ogvz.blaze.heat_wave.cooldown.ticks 1
+execute as @s[scores={ogvz.blaze.heat_wave.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.blaze.heat_wave.cooldown.seconds 1
+execute as @s[scores={ogvz.blaze.heat_wave.cooldown.ticks=20..,ogvz.blaze.heat_wave.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.blaze.heat_wave.cooldown.ticks=20..,ogvz.blaze.heat_wave.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Heat Wave]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.blaze.heat_wave.cooldown.ticks=20..}] run scoreboard players set @s ogvz.blaze.heat_wave.cooldown.ticks 0
+
 # Snowman - Snowball Barrage
 execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.seconds=1..}] run scoreboard players add @s ogvz.snowman.snowball_barrage.cooldown.ticks 1
 execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.snowman.snowball_barrage.cooldown.seconds 1

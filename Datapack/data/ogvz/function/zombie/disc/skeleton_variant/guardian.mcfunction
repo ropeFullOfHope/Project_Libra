@@ -125,7 +125,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_name='{"text":"Beam","color":"aqua"}', \
   minecraft:lore=[ \
     '{"text":"Shoots a damaging electric beam.","color":"blue"}', \
-    '{"text":"5 second cooldown","color":"red","italic":false}', \
+    '{"text":"3 second cooldown","color":"red","italic":false}', \
     '{"text":"Active Ability","color":"green","italic":false}' \
   ] \
 ]

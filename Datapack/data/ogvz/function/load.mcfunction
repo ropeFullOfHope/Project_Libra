@@ -22,10 +22,10 @@ function ogvz:load/triggers
 function ogvz:load/teams
 
 schedule clear ogvz:schedules/day_time
-schedule clear ogvz:schedules/air_toggle_0
-schedule clear ogvz:schedules/air_toggle_1
+#schedule clear ogvz:schedules/air_toggle_0
+#schedule clear ogvz:schedules/air_toggle_1
 
-schedule function ogvz:schedules/day_time 1t replace
-schedule function ogvz:schedules/air_toggle_0 1t replace
+#schedule function ogvz:schedules/day_time 1t replace
+#schedule function ogvz:schedules/air_toggle_0 1t replace
 
 #~READY TO GO!

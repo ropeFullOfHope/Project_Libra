@@ -36,6 +36,9 @@ attribute @s minecraft:movement_speed modifier remove ogvz.dragon_form.movement_
 tag @s remove ogvz.attribute.explode.explosion_knockback_resistance
 attribute @s minecraft:explosion_knockback_resistance modifier remove ogvz.explosion.explosion_knockback_resistance
 
+# Blaze - firefly
+attribute @s minecraft:gravity modifier remove ogvz.blaze.firefly.gravity
+
 # Wolf - base attributes
 attribute @s minecraft:movement_speed modifier remove ogvz.wolf.movement_speed
 attribute @s minecraft:jump_strength modifier remove ogvz.wolf.jump_strength

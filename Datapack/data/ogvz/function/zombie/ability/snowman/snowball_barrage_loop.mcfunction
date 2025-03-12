@@ -21,7 +21,13 @@ execute summon minecraft:snowball run tag @s add temp.processing
 execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:snowball,tag=temp.processing] ~ ~ ~ ~ -45
 
 # Set the owner of the snowball to the player who shot it.
-data modify entity @n[type=minecraft:snowball,tag=temp.processing] Owner set from entity @p UUID
+#data modify entity @n[type=minecraft:snowball,tag=temp.processing] Owner set from entity @p UUID
+
+# Summon a marker, give it a tag and make it ride the snowball.
+execute summon minecraft:marker run tag @s add temp.processing
+tag @n[type=minecraft:marker,tag=temp.processing] add ogvz.projectile.snowball_barrage
+ride @n[type=minecraft:marker,tag=temp.processing] mount @n[type=minecraft:snowball,tag=temp.processing]
+tag @n[type=minecraft:marker,tag=temp.processing] remove temp.processing
 
 # Create random deviation.
 execute store result score @s temp.deviation.x run random value -150..150

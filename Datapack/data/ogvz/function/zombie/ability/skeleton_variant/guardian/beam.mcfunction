@@ -23,7 +23,7 @@ execute if entity @s[scores={ogvz.guardian.beam.cooldown.seconds=1..}] run title
 ]
 execute if entity @s[scores={ogvz.guardian.beam.cooldown.seconds=1..}] run return 0
 
-scoreboard players set @s ogvz.guardian.beam.cooldown.seconds 5
+scoreboard players set @s ogvz.guardian.beam.cooldown.seconds 3
 
 title @s actionbar [ \
   "", \
@@ -48,8 +48,8 @@ execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:ma
 execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:zombie/ability/skeleton_variant/guardian/beam_loop
 
 # Deals damage to all players who have been hit by the ray. Damage is reduced for zombies.
-execute as @a[tag=temp.hit,tag=ogvz.dwarf] run damage @s 9 ogvz:electric by @p[tag=temp.ray_origin]
-execute as @a[tag=temp.hit,tag=ogvz.zombie] run damage @s 2.25 ogvz:electric by @p[tag=temp.ray_origin]
+execute as @a[tag=temp.hit,tag=ogvz.dwarf] run damage @s 5 ogvz:electric by @p[tag=temp.ray_origin]
+execute as @a[tag=temp.hit,tag=ogvz.zombie] run damage @s 1.125 ogvz:electric by @p[tag=temp.ray_origin]
 
 # Play a ding sound if a player was hit.
 execute if entity @a[tag=temp.hit,tag=!ogvz.zombie.element.electric] run playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1 1
