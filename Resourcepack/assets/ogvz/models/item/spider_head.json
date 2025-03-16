@@ -21,6 +21,7 @@
 			"name": "eyes",
 			"from": [4, 4, 4],
 			"to": [12, 12, 12],
+      "light_emission": 15,
 			"faces": {
 				"north": {"uv": [10, 8, 12, 16], "texture": "#0"},
 				"east": {"uv": [8, 8, 10, 16], "texture": "#0"},
@@ -28,8 +29,7 @@
 				"west": {"uv": [12, 8, 14, 16], "texture": "#0"},
 				"up": {"uv": [12, 8, 10, 0], "texture": "#0"},
 				"down": {"uv": [14, 0, 12, 8], "texture": "#0"}
-			},
-      "light_emission": 15
+			}
 		}
 	],
 	"display": {
