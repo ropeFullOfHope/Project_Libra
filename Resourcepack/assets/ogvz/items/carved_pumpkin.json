@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "ogvz:block/carved_pumpkin"
+    "model": "ogvz:item/carved_pumpkin"
   }
 }
