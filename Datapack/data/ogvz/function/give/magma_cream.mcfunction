@@ -20,9 +20,14 @@ give @s minecraft:carrot_on_a_stick[ \
     undroppable:1 \
   }, \
   minecraft:item_model="minecraft:magma_cream", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Magma Cream"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Magma Cream"}, \
   minecraft:lore=[ \
-      '{"text":"Right-click to join the game!","color":"blue"}' \
-  ] \
+      {"text":"Right-click to join the game!","color":"blue"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]

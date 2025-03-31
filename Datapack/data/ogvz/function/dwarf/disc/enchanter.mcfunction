@@ -35,13 +35,18 @@ team join d3ENCHANTER @s
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3005}, \
   minecraft:item_model="ogvz:summoning_book_enchanter", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Summoning Book","color":"green"}, \
   minecraft:lore=[ \
-    '{"text":"Conjures lapis lazuli.","color":"blue"}', \
-    '{"text":"Requires 1 Emerald","italic":false,"color":"red"}', \
-    '{"text":"Active Item","italic":false,"color":"green"}' \
-  ] \
+    {"text":"Conjures lapis lazuli.","color":"blue"}, \
+    {"text":"Requires 1 Emerald","italic":false,"color":"red"}, \
+    {"text":"Active Item","italic":false,"color":"green"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]
 give @s minecraft:smooth_quartz 64
 give @s minecraft:smooth_quartz 64
@@ -53,15 +58,15 @@ give @s minecraft:chest 12
 give @s minecraft:oak_sign 3
 give @s minecraft:lapis_lazuli[ \
   minecraft:lore=[ \
-    '{"text":"Use to enchant.","color":"blue"}' \
+    {"text":"Use to enchant.","color":"blue"} \
   ] \
 ] 30
 give @s minecraft:bread[ \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"text":"When Consumed:","italic":false,"color":"gray"}', \
-    '{"text":"+5 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+6 Saturation","italic":false,"color":"blue"}' \
+    {"text":" "}, \
+    {"text":"When Consumed:","italic":false,"color":"gray"}, \
+    {"text":"+5 Nutrition","italic":false,"color":"blue"}, \
+    {"text":"+6 Saturation","italic":false,"color":"blue"} \
   ] \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book

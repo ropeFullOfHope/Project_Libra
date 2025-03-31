@@ -15,7 +15,13 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": "{active_id:3100}",
-                "minecraft:item_model": "ogvz:magic_regeneration_potion"
+                "minecraft:item_model": "ogvz:magic_regeneration_potion",
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                }
               }
             },
             {
@@ -57,7 +63,13 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": "{active_id:3101}",
-                "minecraft:item_model": "ogvz:magic_swiftness_potion"
+                "minecraft:item_model": "ogvz:magic_swiftness_potion",
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                }
               }
             },
             {
@@ -99,7 +111,13 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": "{active_id:3102}",
-                "minecraft:item_model": "ogvz:magic_strength_potion"
+                "minecraft:item_model": "ogvz:magic_strength_potion",
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                }
               }
             },
             {
@@ -148,9 +166,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:hide_additional_tooltip": {},
                 "minecraft:fireworks": {
-                  "flight_duration": 1,
                   "explosions": [
                     {
                       "shape": "small_ball",
@@ -194,6 +210,12 @@
                         26367
                       ]
                     }
+                  ],
+                  "flight_duration": 1
+                },
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:fireworks"
                   ]
                 }
               }

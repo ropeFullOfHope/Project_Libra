@@ -35,14 +35,19 @@ team join d3TAILOR @s
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3002}, \
   minecraft:item_model="ogvz:summoning_book_tailor", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Summoning Book","color":"green"}, \
   minecraft:lore=[ \
-    '{"text":"Conjures armor and shields.","color":"blue"}', \
-    '{"text":"Requires 10 Dyes","italic":false,"color":"red"}', \
-    '{"text":"Requires 30 mana","italic":false,"color":"red"}', \
-    '{"text":"Active Item","italic":false,"color":"green"}' \
-  ] \
+    {"text":"Conjures armor and shields.","color":"blue"}, \
+    {"text":"Requires 10 Dyes","italic":false,"color":"red"}, \
+    {"text":"Requires 30 mana","italic":false,"color":"red"}, \
+    {"text":"Active Item","italic":false,"color":"green"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]
 give @s minecraft:wooden_shovel[ \
   minecraft:enchantments={ \
@@ -52,15 +57,20 @@ give @s minecraft:wooden_shovel[ \
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3106}, \
   minecraft:item_model="ogvz:super_fertilizer", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Super Fertilizer","color":"green"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Super Fertilizer","color":"green"}, \
   minecraft:lore=[ \
-    '{"text":"Use on a grass block.","color":"blue"}', \
-    '{"text":"Allows flowers to grow in any","color":"blue"}', \
-    '{"text":"biome.","color":"blue"}', \
-    '{"text":"Single-use","italic":false,"color":"red"}', \
-    '{"text":"Active Item","italic":false,"color":"green"}' \
-  ] \
+    {"text":"Use on a grass block.","color":"blue"}, \
+    {"text":"Allows flowers to grow in any","color":"blue"}, \
+    {"text":"biome.","color":"blue"}, \
+    {"text":"Single-use","italic":false,"color":"red"}, \
+    {"text":"Active Item","italic":false,"color":"green"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]
 give @s minecraft:mud_bricks 64
 give @s minecraft:mud_bricks 64
@@ -69,16 +79,16 @@ give @s minecraft:chest 2
 give @s minecraft:oak_sign 3
 give @s minecraft:bone[ \
   minecraft:lore=[ \
-    '{"text":"Give to the tailor.","color":"blue"}', \
-    '{"text":"Craft into bone meal.","color":"blue"}' \
+    {"text":"Give to the tailor.","color":"blue"}, \
+    {"text":"Craft into bone meal.","color":"blue"} \
   ] \
 ] 16
 give @s minecraft:bread[ \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"text":"When Consumed:","italic":false,"color":"gray"}', \
-    '{"text":"+5 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+6 Saturation","italic":false,"color":"blue"}' \
+    {"text":" "}, \
+    {"text":"When Consumed:","italic":false,"color":"gray"}, \
+    {"text":"+5 Nutrition","italic":false,"color":"blue"}, \
+    {"text":"+6 Saturation","italic":false,"color":"blue"} \
   ] \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book

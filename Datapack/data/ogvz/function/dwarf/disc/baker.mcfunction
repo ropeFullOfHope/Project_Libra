@@ -35,14 +35,19 @@ team join d3BAKER @s
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3003}, \
   minecraft:item_model="ogvz:summoning_book_baker", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Summoning Book","color":"green"}, \
   minecraft:lore=[ \
-    '{"text":"Conjures food.","color":"blue"}', \
-    '{"text":"Requires 10 Clay Bricks","italic":false,"color":"red"}', \
-    '{"text":"Requires 30 mana","italic":false,"color":"red"}', \
-    '{"text":"Active Item","italic":false,"color":"green"}' \
-  ] \
+    {"text":"Conjures food.","color":"blue"}, \
+    {"text":"Requires 10 Clay Bricks","italic":false,"color":"red"}, \
+    {"text":"Requires 30 mana","italic":false,"color":"red"}, \
+    {"text":"Active Item","italic":false,"color":"green"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]
 give @s minecraft:bricks 64
 give @s minecraft:bricks 64
@@ -51,21 +56,21 @@ give @s minecraft:chest 2
 give @s minecraft:oak_sign 3
 give @s minecraft:clay_ball[ \
   minecraft:lore=[ \
-    '{"text":"Smelt into bricks.","color":"blue"}' \
+    {"text":"Smelt into bricks.","color":"blue"} \
   ] \
 ] 40
 give @s minecraft:coal[ \
   minecraft:lore=[ \
-    '{"text":"Share with baker.","color":"blue"}', \
-    '{"text":"Use to fuel the furnace.","color":"blue"}' \
+    {"text":"Share with baker.","color":"blue"}, \
+    {"text":"Use to fuel the furnace.","color":"blue"} \
   ] \
 ] 5
 give @s minecraft:bread[ \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"text":"When Consumed:","italic":false,"color":"gray"}', \
-    '{"text":"+5 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+6 Saturation","italic":false,"color":"blue"}' \
+    {"text":" "}, \
+    {"text":"When Consumed:","italic":false,"color":"gray"}, \
+    {"text":"+5 Nutrition","italic":false,"color":"blue"}, \
+    {"text":"+6 Saturation","italic":false,"color":"blue"} \
   ] \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book

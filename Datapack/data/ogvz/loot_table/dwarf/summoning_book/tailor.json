@@ -30,6 +30,15 @@
           "weight": 2,
           "functions": [
             {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:blocks_attacks": {
+                  "block_sound": "minecraft:item.shield.block",
+                  "disabled_sound": "minecraft:item.shield.break"
+                }
+              }
+            },
+            {
               "function": "minecraft:set_name",
               "name": {
                 "text": "Light Shield",
@@ -58,60 +67,62 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:max_damage": 504,
-                "minecraft:hide_additional_tooltip": {},
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [
-                    {
-                      "id": "ogvz:mainhand",
-                      "type": "minecraft:armor",
-                      "amount": 2,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    },
-                    {
-                      "id": "ogvz:offhand",
-                      "type": "minecraft:armor",
-                      "amount": 2,
-                      "operation": "add_value",
-                      "slot": "offhand"
-                    },
-                    {
-                      "id": "ogvz:mainhand",
-                      "type": "minecraft:knockback_resistance",
-                      "amount": 0.2,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    },
-                    {
-                      "id": "ogvz:offhand",
-                      "type": "minecraft:knockback_resistance",
-                      "amount": 0.2,
-                      "operation": "add_value",
-                      "slot": "offhand"
-                    },
-                    {
-                      "id": "ogvz:mainhand",
-                      "type": "minecraft:movement_speed",
-                      "amount": -0.015,
-                      "operation": "add_multiplied_total",
-                      "slot": "mainhand"
-                    },
-                    {
-                      "id": "ogvz:offhand",
-                      "type": "minecraft:movement_speed",
-                      "amount": -0.015,
-                      "operation": "add_multiplied_total",
-                      "slot": "offhand"
-                    }
-                  ],
-                  "show_in_tooltip": false
-                },
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "ogvz:mainhand",
+                    "type": "minecraft:armor",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "ogvz:offhand",
+                    "type": "minecraft:armor",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "offhand"
+                  },
+                  {
+                    "id": "ogvz:mainhand",
+                    "type": "minecraft:knockback_resistance",
+                    "amount": 0.2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "ogvz:offhand",
+                    "type": "minecraft:knockback_resistance",
+                    "amount": 0.2,
+                    "operation": "add_value",
+                    "slot": "offhand"
+                  },
+                  {
+                    "id": "ogvz:mainhand",
+                    "type": "minecraft:movement_speed",
+                    "amount": -0.15,
+                    "operation": "add_multiplied_total",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "ogvz:offhand",
+                    "type": "minecraft:movement_speed",
+                    "amount": -0.15,
+                    "operation": "add_multiplied_total",
+                    "slot": "offhand"
+                  }
+                ],
                 "minecraft:banner_patterns": [
                   {
                     "pattern": "ogvz:tower",
                     "color": "white"
                   }
-                ]
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:attribute_modifiers",
+                    "minecraft:banner_patterns"
+                  ]
+                }
               }
             },
             {

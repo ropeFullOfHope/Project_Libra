@@ -35,29 +35,30 @@ team join d3BLACKSMITH @s
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3001}, \
   minecraft:item_model="ogvz:summoning_book_blacksmith", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Summoning Book","color":"green"}, \
   minecraft:lore=[ \
-    '{"text":"Conjures weapons and tools.","color":"blue"}', \
-    '{"text":"Requires 5 Clocks","italic":false,"color":"red"}', \
-    '{"text":"Requires 30 mana","italic":false,"color":"red"}', \
-    '{"text":"Active Item","italic":false,"color":"green"}' \
-  ] \
+    {"text":"Conjures weapons and tools.","color":"blue"}, \
+    {"text":"Requires 5 Clocks","italic":false,"color":"red"}, \
+    {"text":"Requires 30 mana","italic":false,"color":"red"}, \
+    {"text":"Active Item","italic":false,"color":"green"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]
 give @s iron_pickaxe[ \
   minecraft:item_model="ogvz:iron_paxel", \
-  minecraft:item_name='{"text":"Iron Paxel"}', \
+  minecraft:item_name={"text":"Iron Paxel"}, \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"color":"gray","italic":false,"text":"When in Main Hand:"}', \
-    '{"color":"dark_green","italic":false,"text":" 4 Attack Damage"}', \
-    '{"color":"dark_green","italic":false,"text":" 1.2 Attack Speed"}', \
-    '{"color":"dark_green","italic":false,"text":" 3 Attack Reach"}' \
+    {"text":" "}, \
+    {"color":"gray","italic":false,"text":"When in Main Hand:"}, \
+    {"color":"dark_green","italic":false,"text":" 4 Attack Damage"}, \
+    {"color":"dark_green","italic":false,"text":" 1.2 Attack Speed"}, \
+    {"color":"dark_green","italic":false,"text":" 3 Attack Reach"} \
   ], \
-  minecraft:attribute_modifiers={ \
-    modifiers:[], \
-    show_in_tooltip:false \
-  }, \
   minecraft:tool={ \
     default_mining_speed:6, \
     rules:[ \
@@ -65,6 +66,12 @@ give @s iron_pickaxe[ \
       {correct_for_drops:true,blocks:"#mineable/axe"}, \
       {correct_for_drops:true,blocks:"#mineable/shovel"}, \
       {correct_for_drops:true,blocks:"#mineable/hoe"} \
+    ] \
+  }, \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable", \
+      "minecraft:attribute_modifiers" \
     ] \
   } \
 ]
@@ -78,27 +85,27 @@ give @s minecraft:chest 2
 give @s minecraft:oak_sign 3
 give @s minecraft:gold_ore[ \
   minecraft:lore=[ \
-    '{"text":"Give to the blacksmith.","color":"blue"}', \
-    '{"text":"Smelt into gold ingots.","color":"blue"}' \
+    {"text":"Give to the blacksmith.","color":"blue"}, \
+    {"text":"Smelt into gold ingots.","color":"blue"} \
   ] \
 ] 80
 give @s minecraft:redstone_ore[ \
   minecraft:lore=[ \
-    '{"text":"Mine to get redstone.","color":"blue"}' \
+    {"text":"Mine to get redstone.","color":"blue"} \
   ] \
 ] 5
 give @s minecraft:coal[ \
   minecraft:lore=[ \
-    '{"text":"Share with baker.","color":"blue"}', \
-    '{"text":"Use to fuel the furnace.","color":"blue"}' \
+    {"text":"Share with baker.","color":"blue"}, \
+    {"text":"Use to fuel the furnace.","color":"blue"} \
   ] \
 ] 10
 give @s minecraft:bread[ \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"text":"When Consumed:","italic":false,"color":"gray"}', \
-    '{"text":"+5 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+6 Saturation","italic":false,"color":"blue"}' \
+    {"text":" "}, \
+    {"text":"When Consumed:","italic":false,"color":"gray"}, \
+    {"text":"+5 Nutrition","italic":false,"color":"blue"}, \
+    {"text":"+6 Saturation","italic":false,"color":"blue"} \
   ] \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book

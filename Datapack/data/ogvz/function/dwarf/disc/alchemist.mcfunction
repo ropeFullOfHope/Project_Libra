@@ -35,25 +35,35 @@ team join d3ALCHEMIST @s
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3004}, \
   minecraft:item_model="ogvz:summoning_book_alchemist", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Summoning Book","color":"green"}, \
   minecraft:lore=[ \
-    '{"text":"Conjures magic potions.","color":"blue"}', \
-    '{"text":"Requires 3 Mundane Potions","italic":false,"color":"red"}', \
-    '{"text":"Requires 30 mana","italic":false,"color":"red"}', \
-    '{"text":"Active Item","italic":false,"color":"green"}' \
-  ] \
+    {"text":"Conjures magic potions.","color":"blue"}, \
+    {"text":"Requires 3 Mundane Potions","italic":false,"color":"red"}, \
+    {"text":"Requires 30 mana","italic":false,"color":"red"}, \
+    {"text":"Active Item","italic":false,"color":"green"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3105}, \
   minecraft:item_model="ogvz:water_wand", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Water Wand","color":"aqua"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Water Wand","color":"aqua"}, \
   minecraft:lore=[ \
-    '{"text":"Fills cauldrons with water.","color":"blue"}', \
-    '{"text":"5 second cooldown","italic":false,"color":"red"}', \
-    '{"text":"Active Item","italic":false,"color":"green"}' \
-  ] \
+    {"text":"Fills cauldrons with water.","color":"blue"}, \
+    {"text":"5 second cooldown","italic":false,"color":"red"}, \
+    {"text":"Active Item","italic":false,"color":"green"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]
 give @s minecraft:dark_prismarine 64
 give @s minecraft:dark_prismarine 64
@@ -63,30 +73,30 @@ give @s minecraft:chest 4
 give @s minecraft:oak_sign 3
 give @s minecraft:glass_bottle[ \
   minecraft:lore=[ \
-    '{"text":"Give to the alchemist.","color":"blue"}', \
-    '{"text":"Fill with water then place in","color":"blue"}', \
-    '{"text":"brewing stand.","color":"blue"}' \
+    {"text":"Give to the alchemist.","color":"blue"}, \
+    {"text":"Fill with water then place in","color":"blue"}, \
+    {"text":"brewing stand.","color":"blue"} \
   ] \
 ] 12
 give @s minecraft:redstone[ \
   minecraft:lore=[ \
-    '{"text":"Share with alchemist.","color":"blue"}', \
-    '{"text":"Craft into clocks.","color":"blue"}', \
-    '{"text":"Use as brewing ingredient.","color":"blue"}' \
+    {"text":"Share with alchemist.","color":"blue"}, \
+    {"text":"Craft into clocks.","color":"blue"}, \
+    {"text":"Use as brewing ingredient.","color":"blue"} \
   ] \
 ] 4
 give @s minecraft:blaze_powder[ \
   minecraft:lore=[ \
-    '{"text":"Give to the alchemist.","color":"blue"}', \
-    '{"text":"Use to fuel the brewing stand.","color":"blue"}' \
+    {"text":"Give to the alchemist.","color":"blue"}, \
+    {"text":"Use to fuel the brewing stand.","color":"blue"} \
   ] \
 ] 2
 give @s minecraft:bread[ \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"text":"When Consumed:","italic":false,"color":"gray"}', \
-    '{"text":"+5 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+6 Saturation","italic":false,"color":"blue"}' \
+    {"text":" "}, \
+    {"text":"When Consumed:","italic":false,"color":"gray"}, \
+    {"text":"+5 Nutrition","italic":false,"color":"blue"}, \
+    {"text":"+6 Saturation","italic":false,"color":"blue"} \
   ] \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book

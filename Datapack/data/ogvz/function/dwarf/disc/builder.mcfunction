@@ -33,36 +33,28 @@ team join d2BUILDER @s
 
 # Equips the builder with builder armor.
 item replace entity @s armor.head with minecraft:leather_helmet[ \
-  minecraft:item_name='{"text":"Builder Helmet","color":"green"}', \
+  minecraft:item_name={"text":"Builder Helmet","color":"green"}, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:respiration":3, \
-      "minecraft:aqua_affinity":1 \
-    } \
+    "minecraft:respiration":3, \
+    "minecraft:aqua_affinity":1 \
   } \
 ]
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
-  minecraft:item_name='{"text":"Builder Chestplate","color":"green"}', \
+  minecraft:item_name={"text":"Builder Chestplate","color":"green"}, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":3 \
-    } \
+    "minecraft:protection":3 \
   } \
 ]
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
-  minecraft:item_name='{"text":"Builder Leggings","color":"green"}', \
+  minecraft:item_name={"text":"Builder Leggings","color":"green"}, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:swift_sneak":3 \
-    } \
+    "minecraft:swift_sneak":3 \
   } \
 ]
 item replace entity @s armor.feet with minecraft:leather_boots[ \
-  minecraft:item_name='{"text":"Builder Boots","color":"green"}', \
+  minecraft:item_name={"text":"Builder Boots","color":"green"}, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:feather_falling":4 \
-    } \
+    "minecraft:feather_falling":4 \
   } \
 ]
 
@@ -71,46 +63,50 @@ item replace entity @s weapon.offhand with minecraft:poisonous_potato[ \
   minecraft:item_model="ogvz:crab_claw", \
   !minecraft:food, \
   !minecraft:consumable, \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Crab Claw"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Crab Claw"}, \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"text":"When in Hand:","italic":false,"color":"gray"}', \
-    '{"text":"+2 Block Reach","italic":false,"color":"blue"}' \
+    {"text":" "}, \
+    {"text":"When in Hand:","italic":false,"color":"gray"}, \
+    {"text":"+2 Block Reach","italic":false,"color":"blue"} \
   ], \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:block_interaction_range",amount:2,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:block_interaction_range",amount:2,operation:"add_value",slot:"offhand",id:"ogvz:offhand"} \
-    ], \
-    show_in_tooltip:false \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:block_interaction_range",amount:2,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+    {type:"minecraft:block_interaction_range",amount:2,operation:"add_value",slot:"offhand",id:"ogvz:offhand"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable", \
+      "minecraft:attribute_modifiers" \
+    ] \
   } \
 ]
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3000}, \
   minecraft:item_model="ogvz:summoning_book_builder", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Summoning Book","color":"green"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Summoning Book","color":"green"}, \
   minecraft:lore=[ \
-    '{"text":"Conjures blocks.","color":"blue"}', \
-    '{"text":"30 second cooldown","italic":false,"color":"red"}', \
-    '{"text":"Active Item","italic":false,"color":"green"}' \
-  ] \
+    {"text":"Conjures blocks.","color":"blue"}, \
+    {"text":"30 second cooldown","italic":false,"color":"red"}, \
+    {"text":"Active Item","italic":false,"color":"green"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]
 give @s iron_pickaxe[ \
   minecraft:item_model="ogvz:iron_paxel", \
-  minecraft:item_name='{"text":"Iron Paxel"}', \
+  minecraft:item_name={"text":"Iron Paxel"}, \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"color":"gray","italic":false,"text":"When in Main Hand:"}', \
-    '{"color":"dark_green","italic":false,"text":" 4 Attack Damage"}', \
-    '{"color":"dark_green","italic":false,"text":" 1.2 Attack Speed"}', \
-    '{"color":"dark_green","italic":false,"text":" 3 Attack Reach"}' \
+    {"text":" "}, \
+    {"color":"gray","italic":false,"text":"When in Main Hand:"}, \
+    {"color":"dark_green","italic":false,"text":" 4 Attack Damage"}, \
+    {"color":"dark_green","italic":false,"text":" 1.2 Attack Speed"}, \
+    {"color":"dark_green","italic":false,"text":" 3 Attack Reach"} \
   ], \
-  minecraft:attribute_modifiers={ \
-    modifiers:[], \
-    show_in_tooltip:false \
-  }, \
   minecraft:tool={ \
     default_mining_speed:6, \
     rules:[ \
@@ -121,10 +117,13 @@ give @s iron_pickaxe[ \
     ] \
   }, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:efficiency":2, \
-      "minecraft:unbreaking":2 \
-    } \
+    "minecraft:efficiency":2, \
+    "minecraft:unbreaking":2 \
+  }, \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:attribute_modifiers" \
+    ] \
   } \
 ]
 give @s minecraft:flint_and_steel
@@ -135,10 +134,10 @@ give @s minecraft:stonecutter 1
 give @s minecraft:torch 32
 give @s minecraft:bread[ \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"text":"When Consumed:","italic":false,"color":"gray"}', \
-    '{"text":"+5 Nutrition","italic":false,"color":"blue"}', \
-    '{"text":"+6 Saturation","italic":false,"color":"blue"}' \
+    {"text":" "}, \
+    {"text":"When Consumed:","italic":false,"color":"gray"}, \
+    {"text":"+5 Nutrition","italic":false,"color":"blue"}, \
+    {"text":"+6 Saturation","italic":false,"color":"blue"} \
   ] \
 ] 1
 execute as @s at @s run function ogvz:give/legendary_book
