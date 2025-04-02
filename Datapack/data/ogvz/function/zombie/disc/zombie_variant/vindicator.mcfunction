@@ -33,80 +33,76 @@ tag @s add ogvz.zombie.suicide_pill
 team join z0VINDICATOR @s
 
 # Equips the vindicator with their armor (iron tier).
-item replace entity @s armor.head with minecraft:player_head[ \
-  minecraft:item_name='{"text":"Vindicator Head","color":"aqua"}', \
-  minecraft:profile={ \
-    properties:[{ \
-      name:"textures", \
-      value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJmYjgwYTZiNjgzM2UzMWQ5Y2U4MzEzYTU0Nzc3NjQ1ZjljMWU1NWI4MTA5MThhNzA2ZTdiY2M4ZDM1YTVhMiJ9fX0=" \
-    }] \
-  }, \
+item replace entity @s armor.head with minecraft:leather_helmet[ \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Vindicator Head","color":"aqua"}, \
+  minecraft:item_model="ogvz:vindicator_head", \
+  minecraft:equippable={slot:"head"}, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
     ] \
   } \
 ]
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Vindicator Chestplate"}', \
-  minecraft:dyed_color={ \
-    rgb:4209720, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Vindicator Chestplate"}, \
+  minecraft:dyed_color=4209720, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:dyed_color" \
     ] \
   } \
 ]
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Vindicator Leggings"}', \
-  minecraft:dyed_color={ \
-    rgb:2580065, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Vindicator Leggings"}, \
+  minecraft:dyed_color=2580065, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:dyed_color" \
     ] \
   } \
 ]
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Vindicator Boots"}', \
-  minecraft:dyed_color={ \
-    rgb:1775896, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Vindicator Boots"}, \
+  minecraft:dyed_color=1775896, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:dyed_color" \
     ] \
   } \
 ]
@@ -120,29 +116,36 @@ item replace entity @s weapon.offhand with minecraft:shield[ \
 give @s minecraft:iron_axe[ \
   minecraft:unbreakable={}, \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"text":"When in Main Hand:","color":"gray","italic":false}', \
-    '{"text":" 8.5 Attack Damage","color":"dark_green","italic":false}', \
-    '{"text":" 1 Attack Speed","color":"dark_green","italic":false}', \
-    '{"text":" 3 Attack Reach","color":"dark_green","italic":false}' \
+    {"text":" "}, \
+    {"text":"When in Main Hand:","color":"gray","italic":false}, \
+    {"text":" 8.5 Attack Damage","color":"dark_green","italic":false}, \
+    {"text":" 1 Attack Speed","color":"dark_green","italic":false}, \
+    {"text":" 3 Attack Reach","color":"dark_green","italic":false} \
   ], \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:attack_damage",amount:7.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:attack_speed",amount:-3.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
-    ], \
-    show_in_tooltip:false \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:attack_damage",amount:7.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+    {type:"minecraft:attack_speed",amount:-3.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:attribute_modifiers" \
+    ] \
   } \
 ]
 give @s minecraft:cooked_beef 64
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={passive_id:6000}, \
   minecraft:item_model="ogvz:undying_bond", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Undying Bond","color":"red"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Undying Bond","color":"red"}, \
   minecraft:lore=[ \
-    '{"text":"Gain regeneration when near","color":"blue"}', \
-    '{"text":"another zombie variant.","color":"blue"}', \
-    '{"text":"Passive Ability","color":"green","italic":false}' \
-  ] \
+    {"text":"Gain regeneration when near","color":"blue"}, \
+    {"text":"another zombie variant.","color":"blue"}, \
+    {"text":"Passive Ability","color":"green","italic":false} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]

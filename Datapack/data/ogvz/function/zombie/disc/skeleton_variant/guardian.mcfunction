@@ -38,81 +38,77 @@ tag @s add ogvz.zombie.element.electric
 team join z1GUARDIAN @s
 
 # Equips the guardian with their armor (chainmail tier).
-item replace entity @s armor.head with minecraft:player_head[ \
-  minecraft:item_name='{"text":"Guardian Head","color":"aqua"}', \
-  minecraft:profile={ \
-    properties:[{ \
-      name:"textures", \
-      value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzI4ZGI2YjA1NDIzNWU0NTFkNjY2ZmM2NDRhMDg2NjMyYzZhYjIyYzdjZDUzNTY1YWU4MjZlMWQ1Y2MwYjE3In19fQ==" \
-    }] \
-  }, \
+item replace entity @s armor.head with minecraft:leather_helmet[ \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Guardian Head","color":"aqua"}, \
+  minecraft:item_model="ogvz:guardian_head", \
+  minecraft:equippable={slot:"head"}, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":1, \
-      "minecraft:binding_curse":1, \
-      "ogvz:electric_immunity":1, \
-    } \
+    "minecraft:protection":1, \
+    "minecraft:binding_curse":1, \
+    "ogvz:electric_immunity":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
     ] \
   } \
 ]
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Guardian Chestplate"}', \
-  minecraft:dyed_color={ \
-    rgb:5287080, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Guardian Chestplate"}, \
+  minecraft:dyed_color=5287080, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":2, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":2, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:5,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:5,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:dyed_color" \
     ] \
   } \
 ]
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Guardian Leggings"}', \
-  minecraft:dyed_color={ \
-    rgb:5287080, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Guardian Leggings"}, \
+  minecraft:dyed_color=5287080, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":1, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":1, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:4,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:4,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:dyed_color" \
     ] \
   } \
 ]
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Guardian Boots"}', \
-  minecraft:dyed_color={ \
-    rgb:15759144, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Guardian Boots"}, \
+  minecraft:dyed_color=15759144, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":1, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":1, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:1,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:1,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:dyed_color" \
     ] \
   } \
 ]
@@ -121,24 +117,34 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6140}, \
   minecraft:item_model="ogvz:beam", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Beam","color":"aqua"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Beam","color":"aqua"}, \
   minecraft:lore=[ \
-    '{"text":"Shoots a damaging electric beam.","color":"blue"}', \
-    '{"text":"3 second cooldown","color":"red","italic":false}', \
-    '{"text":"Active Ability","color":"green","italic":false}' \
-  ] \
+    {"text":"Shoots a damaging electric beam.","color":"blue"}, \
+    {"text":"3 second cooldown","color":"red","italic":false}, \
+    {"text":"Active Ability","color":"green","italic":false} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]
 give @s minecraft:vine 64
 give @s minecraft:cooked_beef 64
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={passive_id:6900}, \
   minecraft:item_model="ogvz:sharing_grace", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Sharing Grace","color":"aqua"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Sharing Grace","color":"aqua"}, \
   minecraft:lore=[ \
-    '{"text":"Non-aquatic zombies near you","color":"blue"}', \
-    '{"text":"gain dolphin\'s grace.","color":"blue"}', \
-    '{"text":"Passive Ability","color":"green","italic":false}' \
-  ] \
+    {"text":"Non-aquatic zombies near you","color":"blue"}, \
+    {"text":"gain dolphin\'s grace.","color":"blue"}, \
+    {"text":"Passive Ability","color":"green","italic":false} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]

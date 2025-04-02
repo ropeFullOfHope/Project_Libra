@@ -33,80 +33,76 @@ tag @s add ogvz.zombie.suicide_pill
 team join z0HUSK @s
 
 # Equips the husk with their armor (iron tier).
-item replace entity @s armor.head with minecraft:player_head[ \
-  minecraft:item_name='{"text":"Husk Head","color":"aqua"}', \
-  minecraft:profile={ \
-    properties:[{ \
-      name:"textures", \
-      value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY5Yjk3MzRkMGU3YmYwNjBmZWRjNmJmN2ZlYzY0ZTFmN2FkNmZjODBiMGZkODQ0MWFkMGM3NTA4Yzg1MGQ3MyJ9fX0=" \
-    }] \
-  }, \
+item replace entity @s armor.head with minecraft:leather_helmet[ \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Husk Head","color":"aqua"}, \
+  minecraft:item_model="ogvz:husk_head", \
+  minecraft:equippable={slot:"head"}, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
     ] \
   } \
 ]
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Husk Chestplate"}', \
-  minecraft:dyed_color={ \
-    rgb:13875325, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Husk Chestplate"}, \
+  minecraft:dyed_color=13875325, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:dyed_color" \
     ] \
   } \
 ]
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Husk Leggings"}', \
-  minecraft:dyed_color={ \
-    rgb:3353113, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Husk Leggings"}, \
+  minecraft:dyed_color=3353113, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:dyed_color" \
     ] \
   } \
 ]
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Husk Boots"}', \
-  minecraft:dyed_color={ \
-    rgb:3353113, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Husk Boots"}, \
+  minecraft:dyed_color=3353113, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:dyed_color" \
     ] \
   } \
 ]
@@ -119,50 +115,59 @@ item replace entity @s weapon.offhand with minecraft:shield[ \
 # Gives husk all their items.
 give @s minecraft:iron_hoe[ \
   minecraft:item_model="ogvz:iron_dagger", \
-  minecraft:item_name='{"text":"Iron Dagger","color":"white"}', \
+  minecraft:item_name={"text":"Iron Dagger","color":"white"}, \
   minecraft:unbreakable={}, \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"text":"When in Main Hand:","color":"gray","italic":false}', \
-    '{"text":" 5.5 Attack Damage","color":"dark_green","italic":false}', \
-    '{"text":" 20 Attack Speed","color":"dark_green","italic":false}', \
-    '{"text":" 2.5 Attack Reach","color":"dark_green","italic":false}' \
+    {"text":" "}, \
+    {"text":"When in Main Hand:","color":"gray","italic":false}, \
+    {"text":" 5.5 Attack Damage","color":"dark_green","italic":false}, \
+    {"text":" 20 Attack Speed","color":"dark_green","italic":false}, \
+    {"text":" 2.5 Attack Reach","color":"dark_green","italic":false} \
   ], \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:attack_damage",amount:4.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:attack_speed",amount:16.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:entity_interaction_range",amount:-0.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
-    ], \
-    show_in_tooltip:false \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:attack_damage",amount:4.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+    {type:"minecraft:attack_speed",amount:16.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+    {type:"minecraft:entity_interaction_range",amount:-0.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:attribute_modifiers" \
+    ] \
   } \
 ]
 give @s minecraft:stone_axe[ \
   minecraft:unbreakable={}, \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"text":"When in Main Hand:","color":"gray","italic":false}', \
-    '{"text":" 6 Attack Damage","color":"dark_green","italic":false}', \
-    '{"text":" 1 Attack Speed","color":"dark_green","italic":false}', \
-    '{"text":" 3 Attack Reach","color":"dark_green","italic":false}' \
+    {"text":" "}, \
+    {"text":"When in Main Hand:","color":"gray","italic":false}, \
+    {"text":" 6 Attack Damage","color":"dark_green","italic":false}, \
+    {"text":" 1 Attack Speed","color":"dark_green","italic":false}, \
+    {"text":" 3 Attack Reach","color":"dark_green","italic":false} \
   ], \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:attack_damage",amount:5.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:attack_speed",amount:-3.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
-    ], \
-    show_in_tooltip:false \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:attack_damage",amount:5.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+    {type:"minecraft:attack_speed",amount:-3.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:attribute_modifiers" \
+    ] \
   } \
 ]
 give @s minecraft:cooked_beef 64
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={passive_id:6000}, \
   minecraft:item_model="ogvz:undying_bond", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Undying Bond","color":"red"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Undying Bond","color":"red"}, \
   minecraft:lore=[ \
-    '{"text":"Gain regeneration when near","color":"blue"}', \
-    '{"text":"another zombie variant.","color":"blue"}', \
-    '{"text":"Passive Ability","color":"green","italic":false}' \
-  ] \
+    {"text":"Gain regeneration when near","color":"blue"}, \
+    {"text":"another zombie variant.","color":"blue"}, \
+    {"text":"Passive Ability","color":"green","italic":false} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]
