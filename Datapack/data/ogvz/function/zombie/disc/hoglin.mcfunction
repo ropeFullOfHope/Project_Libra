@@ -36,110 +36,106 @@ effect give @s minecraft:instant_health 1 5 true
 team join z5HOGLIN @s
 
 # Equips the hoglin with their armor (iron tier).
-item replace entity @s armor.head with minecraft:player_head[ \
-  minecraft:item_name='{"text":"Hoglin Head","color":"aqua"}', \
-  minecraft:profile={ \
-    properties:[{ \
-      name:"textures", \
-      value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2FkN2I1YWViMjIwYzA3OWUzMTljZDcwYWM4ODAwZTgwNzc0YTkzMTNjMjJmMzhlNzdhZmI4OTk5OWU2ZWM4NyJ9fX0=" \
-    }] \
-  }, \
+item replace entity @s armor.head with minecraft:leather_helmet[ \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Hoglin Head","color":"aqua"}, \
+  minecraft:item_model="ogvz:hoglin_head", \
+  minecraft:equippable={slot:"head"}, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":3, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":3, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
     ] \
   } \
 ]
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Hoglin Chestplate"}', \
-  minecraft:dyed_color={ \
-    rgb:10838864, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Hoglin Chestplate"}, \
+  minecraft:dyed_color=0xC98265, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:dyed_color" \
     ] \
   } \
 ]
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Hoglin Leggings"}', \
-  minecraft:dyed_color={ \
-    rgb:10838864, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Hoglin Leggings"}, \
+  minecraft:dyed_color=0xC98265, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:dyed_color" \
     ] \
   } \
 ]
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Hoglin Boots"}', \
-  minecraft:dyed_color={ \
-    rgb:10838864, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Hoglin Boots"}, \
+  minecraft:dyed_color=0xC98265, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:dyed_color" \
     ] \
   } \
 ]
 
 # Gives hoglin all their items.
 give @s minecraft:golden_axe[ \
-  minecraft:unbreakable={show_in_tooltip:true}, \
+  minecraft:unbreakable={}, \
   minecraft:lore=[ \
-    '{"text":" "}', \
-    '{"text":"Hunger Drain","color":"blue","italic":false,"underlined":true}', \
-    '{"text":"Attacks inflict hunger.","color":"blue"}', \
-    '{"text":"Enchantment","color":"green","italic":false}', \
-    '{"text":" "}', \
-    '{"text":"When in Main Hand:","color":"gray","italic":false}', \
-    '{"text":" 10 Attack Damage","color":"dark_green","italic":false}', \
-    '{"text":" 1 Attack Speed","color":"dark_green","italic":false}', \
-    '{"text":" 3 Attack Reach","color":"dark_green","italic":false}' \
+    {"text":" "}, \
+    {"text":"Hunger Drain","color":"blue","italic":false,"underlined":true}, \
+    {"text":"Attacks inflict hunger.","color":"blue"}, \
+    {"text":"Enchantment","color":"green","italic":false}, \
+    {"text":" "}, \
+    {"text":"When in Main Hand:","color":"gray","italic":false}, \
+    {"text":" 10 Attack Damage","color":"dark_green","italic":false}, \
+    {"text":" 1 Attack Speed","color":"dark_green","italic":false}, \
+    {"text":" 3 Attack Reach","color":"dark_green","italic":false} \
   ], \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:sharpness":5, \
-      "ogvz:hunger_drain":1 \
-    } \
+    "minecraft:sharpness":5, \
+    "ogvz:hunger_drain":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:attack_damage",amount:9.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:attack_speed",amount:-3.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \ 
-    ], \
-    show_in_tooltip:false \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:attack_damage",amount:9.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+    {type:"minecraft:attack_speed",amount:-3.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \ 
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:attribute_modifiers" \
+    ] \
   } \
 ]
 give @s minecraft:cooked_beef 64

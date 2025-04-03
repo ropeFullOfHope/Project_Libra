@@ -65,7 +65,8 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
     "minecraft:protection":2, \
-    "minecraft:binding_curse":1 \
+    "minecraft:binding_curse":1, \
+    "ogvz:electric_immunity":1 \
   }, \
   minecraft:attribute_modifiers=[ \
     {type:"minecraft:armor",amount:5,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
@@ -83,7 +84,8 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
     "minecraft:protection":1, \
-    "minecraft:binding_curse":1 \
+    "minecraft:binding_curse":1, \
+    "ogvz:electric_immunity":1 \
   }, \
   minecraft:attribute_modifiers=[ \
     {type:"minecraft:armor",amount:4,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
@@ -101,7 +103,8 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
     "minecraft:protection":1, \
-    "minecraft:binding_curse":1 \
+    "minecraft:binding_curse":1, \
+    "ogvz:electric_immunity":1 \
   }, \
   minecraft:attribute_modifiers=[ \
     {type:"minecraft:armor",amount:1,operation:"add_value",slot:"feet",id:"ogvz:feet"} \

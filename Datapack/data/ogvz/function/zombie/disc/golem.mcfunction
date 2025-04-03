@@ -41,102 +41,94 @@ attribute @s minecraft:fall_damage_multiplier modifier add ogvz.golem.fall_damag
 team join z6GOLEM @s
 
 # Equips the golem with their armor (iron tier).
-item replace entity @s armor.head with minecraft:player_head[ \
-  minecraft:item_name='{"text":"Golem Head","color":"aqua"}', \
-  minecraft:profile={ \
-    properties:[{ \
-      name:"textures", \
-      value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTEzZjM0MjI3MjgzNzk2YmMwMTcyNDRjYjQ2NTU3ZDY0YmQ1NjJmYTlkYWIwZTEyYWY1ZDIzYWQ2OTljZjY5NyJ9fX0=" \
-    }] \
-  }, \
+item replace entity @s armor.head with minecraft:iron_helmet[ \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Golem Head","color":"aqua"}, \
+  minecraft:item_model="ogvz:golem_head", \
+  minecraft:equippable={slot:"head"}, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"}, \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
     ] \
   } \
 ]
 item replace entity @s armor.chest with minecraft:iron_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Golem Chestplate"}', \
+  minecraft:item_name={"text":"Golem Chestplate"}, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
-    ] \
-  } \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+  ] \
 ]
 item replace entity @s armor.legs with minecraft:iron_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Golem Leggings"}', \
-  minecraft:dyed_color={ \
-    rgb:10082192, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Golem Leggings"}, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"}, \
-    ] \
-  } \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+  ] \
 ]
 item replace entity @s armor.feet with minecraft:iron_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name='{"text":"Golem Boots"}', \
-  minecraft:dyed_color={ \
-    rgb:1854485, \
-    show_in_tooltip:false \
-  }, \
+  minecraft:item_name={"text":"Golem Boots"}, \
+  minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    levels:{ \
-      "minecraft:protection":4, \
-      "minecraft:binding_curse":1 \
-    } \
+    "minecraft:protection":4, \
+    "minecraft:binding_curse":1 \
   }, \
-  minecraft:attribute_modifiers={ \
-    modifiers:[ \
-      {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \
-    ] \
-  } \
+  minecraft:attribute_modifiers=[ \
+    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+  ] \
 ]
 
 # Gives golem all their items.
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6610}, \
   minecraft:item_model="ogvz:fissure", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Fissure","color":"gray"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Fissure","color":"gray"}, \
   minecraft:lore=[ \
-    '{"text":"Raise the ground in a straight","color":"blue"}', \
-    '{"text":"line in front of you.","color":"blue"}', \
-    '{"text":"5 second cooldown","color":"red","italic":false}', \
-    '{"text":"Active Ability","color":"green","italic":false}' \
-  ] \
+    {"text":"Raise the ground in a straight","color":"blue"}, \
+    {"text":"line in front of you.","color":"blue"}, \
+    {"text":"5 second cooldown","color":"red","italic":false}, \
+    {"text":"Active Ability","color":"green","italic":false} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6611}, \
   minecraft:item_model="ogvz:leap", \
-  minecraft:unbreakable={show_in_tooltip:false}, \
-  minecraft:item_name='{"text":"Leap","color":"green"}', \
+  minecraft:unbreakable={}, \
+  minecraft:item_name={"text":"Leap","color":"green"}, \
   minecraft:lore=[ \
-    '{"text":"Jump high into the air.","color":"blue"}', \
-    '{"text":"20 second cooldown","color":"red","italic":false}', \
-    '{"text":"Active Ability","color":"green","italic":false}' \
-  ] \
+    {"text":"Jump high into the air.","color":"blue"}, \
+    {"text":"20 second cooldown","color":"red","italic":false}, \
+    {"text":"Active Ability","color":"green","italic":false} \
+  ], \
+  minecraft:tooltip_display={ \
+    hidden_components:[ \
+      "minecraft:unbreakable" \
+    ] \
+  } \
 ]
 give @s minecraft:cooked_beef 64
