@@ -14,6 +14,13 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+execute if entity @s[scores={ogvz.blaze.firefly.duration.ticks=1..}] run title @s actionbar [ \
+  "", \
+  {"text":"[Firefly]","bold":true,"color":"light_purple"}, \
+  {"text":" Canceled!","color":"light_purple"} \
+]
+execute if entity @s[scores={ogvz.blaze.firefly.duration.ticks=1..}] run return run function ogvz:zombie/ability/blaze/firefly_stop
+
 execute if entity @s[scores={ogvz.blaze.firefly.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Firefly]","bold":true,"color":"red"}, \
@@ -39,3 +46,8 @@ attribute @s minecraft:gravity modifier add ogvz.blaze.firefly.gravity -1 add_mu
 
 effect give @s minecraft:invisibility infinite 0 true
 effect give @s minecraft:resistance infinite 4 true
+
+item modify entity @s armor.head ogvz:remove_item_model_head
+item modify entity @s armor.chest ogvz:remove_item_model_chest
+item modify entity @s armor.legs ogvz:remove_item_model_legs
+item modify entity @s armor.feet ogvz:remove_item_model_feet
