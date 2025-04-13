@@ -14,7 +14,11 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute positioned ~-1.3 ~-2.5 ~-1.3 as @a[dx=1.0,dy=1.6,dz=1.0] run damage @s[tag=ogvz.dwarf] 12 minecraft:freeze
-execute positioned ~-1.3 ~-2.5 ~-1.3 as @a[dx=1.0,dy=1.6,dz=1.0] run damage @s[tag=ogvz.zombie] 1.2 minecraft:freeze
+execute on origin run tag @s add temp.origin
+
+execute positioned ~-1.3 ~-2.5 ~-1.3 as @a[dx=1.0,dy=1.6,dz=1.0] run damage @s[tag=ogvz.dwarf] 12 ogvz:snowball by @p[tag=temp.origin]
+execute positioned ~-1.3 ~-2.5 ~-1.3 as @a[dx=1.0,dy=1.6,dz=1.0] run damage @s[tag=ogvz.zombie] 1.2 ogvz:snowball by @p[tag=temp.origin]
+
+execute on origin run tag @s remove temp.origin
 
 kill @s

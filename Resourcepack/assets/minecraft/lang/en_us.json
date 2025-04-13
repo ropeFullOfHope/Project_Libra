@@ -7,5 +7,7 @@
   "block.minecraft.sea_lantern": "Lantern Block",
   "item.minecraft.brick": "Clay Brick",
   "effect.minecraft.luck": "Mana Regeneration",
-  "effect.minecraft.unluck": "Frozen"
+  "effect.minecraft.unluck": "Frozen",
+  "death.attack.electric": "%1$s was electrocuted by %2$s.",
+  "death.attack.snowball": "%1$s was snowballed by %2$s."
 }

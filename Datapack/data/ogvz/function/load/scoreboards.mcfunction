@@ -139,6 +139,7 @@ scoreboard objectives add ogvz.creeper.explode.state dummy
 # Blaze
 scoreboard objectives add ogvz.blaze.fireball.cooldown.ticks dummy
 scoreboard objectives add ogvz.blaze.fireball.cooldown.seconds dummy
+scoreboard objectives add ogvz.blaze.fireball.lifetime.ticks dummy
 scoreboard objectives add ogvz.blaze.firefly.cooldown.ticks dummy
 scoreboard objectives add ogvz.blaze.firefly.cooldown.seconds dummy
 scoreboard objectives add ogvz.blaze.firefly.duration.ticks dummy

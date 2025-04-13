@@ -1,8 +1,6 @@
 {
   "values": [
-    "ogvz:fire",
-    "ogvz:ice",
     "ogvz:electric",
-    "ogvz:wind"
+    "ogvz:snowball"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "values": [
-    "ogvz:ice",
-    "#minecraft:is_freezing"
+    "#minecraft:is_freezing",
+    "ogvz:snowball"
   ]
 }

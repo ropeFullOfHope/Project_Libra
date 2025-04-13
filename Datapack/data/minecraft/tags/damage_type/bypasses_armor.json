@@ -1,9 +1,7 @@
 {
   "values": [
     "minecraft:trident",
-    "ogvz:fire",
-    "ogvz:ice",
     "ogvz:electric",
-    "ogvz:wind"
+    "ogvz:snowball"
   ]
 }
