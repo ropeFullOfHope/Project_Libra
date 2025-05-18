@@ -112,7 +112,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 
 # Gives snowman all their items.
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_data={active_id:6340}, \
+  minecraft:custom_data={active_id:6350}, \
   minecraft:item_model="ogvz:snowball_barrage", \
   minecraft:unbreakable={}, \
   minecraft:item_name={"text":"Snowball Barrage","color":"aqua"}, \
@@ -132,7 +132,7 @@ give @s minecraft:carrot_on_a_stick[ \
   } \
 ]
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_data={active_id:6341}, \
+  minecraft:custom_data={active_id:6351}, \
   minecraft:item_model="ogvz:freeze", \
   minecraft:unbreakable={}, \
   minecraft:item_name={"text":"Freeze","color":"aqua"}, \

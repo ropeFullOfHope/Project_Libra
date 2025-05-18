@@ -63,6 +63,8 @@ scoreboard objectives add ogvz.inventory.lava_bucket dummy
 scoreboard objectives add ogvz.inventory.soulstone dummy
 scoreboard objectives add ogvz.inventory.undying_bond dummy
 scoreboard objectives add ogvz.inventory.sharing_grace dummy
+scoreboard objectives add ogvz.inventory.featherlight dummy
+scoreboard objectives add ogvz.inventory.flutter dummy
 scoreboard objectives add ogvz.inventory.evolution dummy
 
 ### Miscellaneous scoreboards

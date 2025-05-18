@@ -141,7 +141,7 @@ give @s minecraft:iron_sword[ \
 ]
 give @s minecraft:cooked_beef 64
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_data={active_id:6350}, \
+  minecraft:custom_data={active_id:6360}, \
   minecraft:item_model="ogvz:howl", \
   minecraft:unbreakable={}, \
   minecraft:item_name={"text":"Howl","color":"gray"}, \

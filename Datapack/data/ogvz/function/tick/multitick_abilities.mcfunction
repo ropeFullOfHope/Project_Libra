@@ -30,6 +30,3 @@ execute as @a[tag=ogvz.zombie.class.blaze,scores={ogvz.blaze.firefly.duration.ti
 execute as @e[type=minecraft:snowball,tag=ogvz.projectile.snowball_barrage] on vehicle on passengers run tag @s add temp.exclude
 execute as @e[type=minecraft:snowball,tag=ogvz.projectile.snowball_barrage,tag=!temp.exclude] at @s run function ogvz:zombie/ability/snowman/snowball_barrage_hit
 execute as @e[type=minecraft:snowball,tag=ogvz.projectile.snowball_barrage] run tag @s remove temp.exclude
-
-# Golem - leap
-execute as @a[tag=ogvz.zombie.class.golem,scores={ogvz.golem.leap.state=..-1}] at @s run function ogvz:zombie/ability/golem/leap_multitick

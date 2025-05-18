@@ -29,7 +29,7 @@ execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick run tag @
 execute if items entity @s[tag=!temp.use.mainhand] weapon.offhand minecraft:carrot_on_a_stick run tag @s add temp.use.offhand
 
 execute store result score @s[tag=temp.use.mainhand] ogvz.rclick.active_id run data get entity @s SelectedItem.components."minecraft:custom_data".active_id
-execute store result score @s[tag=temp.use.offhand] ogvz.rclick.active_id run data get entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".active_id
+execute store result score @s[tag=temp.use.offhand] ogvz.rclick.active_id run data get entity @s equipment.offhand.components."minecraft:custom_data".active_id
 
 ### Admin tools (1xxx)
 
@@ -135,15 +135,16 @@ execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=6300}] a
 execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=6301}] at @s run function ogvz:zombie/ability/blaze/firefly
 execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=6302}] at @s run function ogvz:zombie/ability/blaze/heat_wave
 # Chicken Nugget (631x)
-# TODO: FIX WRONG IDs
-# Chillager (631x)
-# Ocelot (632x)
-# Phantom (633x)
-# Snowman (634x)
-execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=6340}] at @s run function ogvz:zombie/ability/snowman/snowball_barrage
-execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=6341}] at @s run function ogvz:zombie/ability/snowman/freeze
-# Wolf (635x)
-execute as @s[tag=ogvz.zombie.class.wolf,scores={ogvz.rclick.active_id=6350}] at @s run function ogvz:zombie/ability/wolf/howl
+execute as @s[tag=ogvz.zombie.class.chicken_nugget,scores={ogvz.rclick.active_id=6310}] at @s run function ogvz:zombie/ability/chicken_nugget/eggsplosive_egg
+execute as @s[tag=ogvz.zombie.class.chicken_nugget,scores={ogvz.rclick.active_id=6311}] at @s run function ogvz:zombie/ability/chicken_nugget/featherlight_toggle
+# Chillager (632x)
+# Ocelot (633x)
+# Phantom (634x)
+# Snowman (635x)
+execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=6350}] at @s run function ogvz:zombie/ability/snowman/snowball_barrage
+execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=6351}] at @s run function ogvz:zombie/ability/snowman/freeze
+# Wolf (636x)
+execute as @s[tag=ogvz.zombie.class.wolf,scores={ogvz.rclick.active_id=6360}] at @s run function ogvz:zombie/ability/wolf/howl
 # Piglin (640x)
 # Silverfish (641x)
 # Hoglin (650x)

@@ -38,8 +38,39 @@ playsound minecraft:entity.iron_golem.repair player @a ~ ~ ~ 8 0.5
 
 particle minecraft:campfire_cosy_smoke ~ ~ ~ 0.25 0 0.25 0.1 30
 
-# Invert the player's gravity. The lower the number, the higher the jump.
-attribute @s minecraft:gravity modifier add ogvz.leap.gravity -0.65 add_value
+# Store the player's gamemode as a tag.
+execute as @s[gamemode=creative] run tag @s add temp.gamemode.creative
+execute as @s[gamemode=survival] run tag @s add temp.gamemode.survival
+execute as @s[gamemode=adventure] run tag @s add temp.gamemode.adventure
+execute as @s[gamemode=spectator] run tag @s add temp.gamemode.spectator
 
-# Initialize the leap's multi-tick finite state machine.
-scoreboard players set @s ogvz.golem.leap.state -3
+# Set the player's gamemode to creative, which has immunity to explosion damage.
+gamemode creative
+
+# Disable any knockback resistance the player has by multiplying it with 0.
+attribute @s minecraft:explosion_knockback_resistance modifier add ogvz:temp.remove.knockback_resistance -1 add_multiplied_total
+
+# Teleport the player 10000 blocks into the air, where the soon to be summon explosion cannot be heard or affect anything.
+tp @s ~ ~10000 ~
+
+# Summon 2 explosions by summoning 2 end crystals and damaging them.
+execute at @s positioned ~ ~ ~ summon minecraft:end_crystal run damage @s 0
+execute at @s positioned ~ ~-9 ~ summon minecraft:end_crystal run damage @s 0
+
+# Teleport the player back to where they've been.
+tp @s ~ ~ ~
+
+# Remove the attribute that disables knockback resistance.
+attribute @s minecraft:explosion_knockback_resistance modifier remove ogvz:temp.remove.knockback_resistance
+
+# Restore the player's gamemode.
+execute as @s[tag=temp.gamemode.creative] run gamemode creative @s
+execute as @s[tag=temp.gamemode.survival] run gamemode survival @s
+execute as @s[tag=temp.gamemode.adventure] run gamemode adventure @s
+execute as @s[tag=temp.gamemode.spectator] run gamemode spectator @s
+
+# Remove all temporary tags.
+tag @s remove temp.gamemode.creative
+tag @s remove temp.gamemode.survival
+tag @s remove temp.gamemode.adventure
+tag @s remove temp.gamemode.spectator
