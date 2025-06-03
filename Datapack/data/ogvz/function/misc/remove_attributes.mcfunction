@@ -17,8 +17,8 @@
 # Frozen custom effect
 tag @s remove ogvz.attribute.frozen.movement_speed
 attribute @s minecraft:movement_speed modifier remove ogvz.frozen.movement_speed
-tag @s remove ogvz.attribute.frozen.movement_speed
-attribute @s minecraft:movement_speed modifier remove ogvz.frozen.movement_speed
+tag @s remove ogvz.attribute.frozen.jump_strength
+attribute @s minecraft:movement_speed modifier remove ogvz.frozen.jump_strength
 
 # Dolphin's grace nerf
 tag @s remove ogvz.attribute.dolphins_grace_nerf.water_movement_efficiency
@@ -38,6 +38,12 @@ attribute @s minecraft:explosion_knockback_resistance modifier remove ogvz.explo
 
 # Blaze - firefly
 attribute @s minecraft:gravity modifier remove ogvz.blaze.firefly.gravity
+
+# Chicken Nugget - base attributes
+attribute @s minecraft:max_health modifier remove ogvz.chicken_nugget.max_health
+attribute @s minecraft:movement_speed modifier remove ogvz.chicken_nugget.movement_speed
+attribute @s minecraft:jump_strength modifier remove ogvz.chicken_nugget.jump_strength
+attribute @s minecraft:safe_fall_distance modifier remove ogvz.chicken_nugget.safe_fall_distance
 
 # Wolf - base attributes
 attribute @s minecraft:movement_speed modifier remove ogvz.wolf.movement_speed

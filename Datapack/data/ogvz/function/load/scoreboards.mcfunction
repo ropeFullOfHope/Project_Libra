@@ -64,8 +64,14 @@ scoreboard objectives add ogvz.inventory.soulstone dummy
 scoreboard objectives add ogvz.inventory.undying_bond dummy
 scoreboard objectives add ogvz.inventory.sharing_grace dummy
 scoreboard objectives add ogvz.inventory.featherlight dummy
-scoreboard objectives add ogvz.inventory.flutter dummy
 scoreboard objectives add ogvz.inventory.evolution dummy
+
+### Enchantment scoreboards
+scoreboard objectives add ogvz.midair_jump.jumps dummy
+scoreboard objectives add ogvz.midair_jump.button_state.current dummy
+scoreboard objectives add ogvz.midair_jump.button_state.previous dummy
+scoreboard objectives add ogvz.midair_jump.is_airborne.current dummy
+scoreboard objectives add ogvz.midair_jump.is_airborne.previous dummy
 
 ### Miscellaneous scoreboards
 scoreboard objectives add ogvz.misc.health health

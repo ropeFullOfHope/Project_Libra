@@ -29,6 +29,11 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.chicken_nugget
 tag @s add ogvz.zombie.suicide_pill
 
+attribute @s minecraft:max_health modifier add ogvz.chicken_nugget.max_health -4.0 add_value
+attribute @s minecraft:movement_speed modifier add ogvz.chicken_nugget.movement_speed 0.4 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add ogvz.chicken_nugget.jump_strength 0.2 add_value
+attribute @s minecraft:safe_fall_distance modifier add ogvz.chicken_nugget.safe_fall_distance 3.0 add_value
+
 team join z3CHICKEN_NUGGET @s
 
 # Equip the chicken nugget with their armor (leather tier).
@@ -42,7 +47,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:1,operation:"add_value",slot:"head",id:"ogvz:head"} \
+    {type:"minecraft:armor",amount:0,operation:"add_value",slot:"head",id:"ogvz:head"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -59,7 +64,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:3,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+    {type:"minecraft:armor",amount:0,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -76,7 +81,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+    {type:"minecraft:armor",amount:0,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -90,10 +95,11 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:dyed_color=16573808, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:binding_curse":1 \
+    "minecraft:binding_curse":1, \
+    "ogvz:midair_jump":3 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:1,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+    {type:"minecraft:armor",amount:0,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -130,25 +136,6 @@ give @s minecraft:carrot_on_a_stick[ \
     {"text":"Sneak to temporary remove the","color":"blue"}, \
     {"text":"effect.","color":"blue"}, \
     {"text":"Togglable","color":"blue","italic":false}, \
-    {"text":"Passive Ability","color":"green","italic":false} \
-  ], \
-  minecraft:tooltip_display={ \
-    hidden_components:[ \
-      "minecraft:unbreakable" \
-    ] \
-  } \
-]
-give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_data={passive_id:6311}, \
-  minecraft:item_model="ogvz:flutter", \
-  minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Flutter","color":"gray"}, \
-  minecraft:lore=[ \
-    {"text":"Turn into a fireball and fly in","color":"blue"}, \
-    {"text":"the direction you are looking.","color":"blue"}, \
-    {"text":"You are invulnerable in this","color":"blue"}, \
-    {"text":"state.","color":"blue"}, \
-    {"text":"15 second cooldown","color":"red","italic":false}, \
     {"text":"Passive Ability","color":"green","italic":false} \
   ], \
   minecraft:tooltip_display={ \
