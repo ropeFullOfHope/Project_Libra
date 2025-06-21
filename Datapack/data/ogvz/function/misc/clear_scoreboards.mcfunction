@@ -18,12 +18,6 @@ scoreboard players set @s ogvz.rclick.use 0
 scoreboard players set @s ogvz.rclick.cooldown 0
 scoreboard players set @s ogvz.rclick.active_id 0
 
-scoreboard players set @s ogvz.midair_jump.jumps 0
-scoreboard players set @s ogvz.midair_jump.button_state.current 0
-scoreboard players set @s ogvz.midair_jump.button_state.previous 0
-scoreboard players set @s ogvz.midair_jump.is_airborne.current 0
-scoreboard players set @s ogvz.midair_jump.is_airborne.previous 0
-
 scoreboard players set @s ogvz.misc.natural_regeneration_timer 0
 scoreboard players set @s ogvz.misc.leave_game 0
 scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 0
@@ -78,6 +72,9 @@ scoreboard players set @s ogvz.blaze.firefly.cooldown.seconds 0
 scoreboard players set @s ogvz.blaze.firefly.duration.ticks 0
 scoreboard players set @s ogvz.blaze.heat_wave.cooldown.ticks 0
 scoreboard players set @s ogvz.blaze.heat_wave.cooldown.seconds 0
+
+scoreboard players set @s ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks 0
+scoreboard players set @s ogvz.chicken_nugget.eggsplosive_egg.cooldown.seconds 0
 
 scoreboard players set @s ogvz.snowman.snowball_barrage.cooldown.ticks 0
 scoreboard players set @s ogvz.snowman.snowball_barrage.cooldown.seconds 0

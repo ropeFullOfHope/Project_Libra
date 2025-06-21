@@ -17,16 +17,15 @@
 # Summon a snowball and give it a temporary tag.
 execute summon minecraft:snowball run tag @s add temp.processing
 
-# Teleport the snowball to the player's eyes and make it face in the same direction as the player
+# Teleport the snowball to the player's eyes and make it face in the same direction as the player.
 execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:snowball,tag=temp.processing] ~ ~ ~ ~ -45
 
-# Summon a new snowball, give it a tag, make it invisible, set it's owner to the player's UUID and make it ride the previous snowball.
-execute positioned ~ 10000 ~ summon minecraft:snowball run tag @s add temp.processing.2
-tag @n[type=minecraft:snowball,tag=temp.processing.2] add ogvz.projectile.snowball_barrage
-data modify entity @n[type=minecraft:snowball,tag=temp.processing.2] Item set value {id:"minecraft:snowball",count:1,components:{"minecraft:item_model":"ogvz:empty"}}
-data modify entity @n[type=minecraft:snowball,tag=temp.processing.2] Owner set from entity @s UUID
-ride @n[type=minecraft:snowball,tag=temp.processing.2] mount @n[type=minecraft:snowball,tag=temp.processing]
-tag @n[type=minecraft:snowball,tag=temp.processing.2] remove temp.processing.2
+# Summon an area effect cloud, give it a tag, make it invisible, set it's owner to the player's UUID and make it ride the snowball.
+summon minecraft:area_effect_cloud ~ ~ ~ {custom_particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Tags:["temp.processing"]}
+tag @n[type=minecraft:area_effect_cloud,tag=temp.processing] add ogvz.projectile.snowball_barrage
+data modify entity @n[type=minecraft:area_effect_cloud,tag=temp.processing] Owner set from entity @s UUID
+ride @n[type=minecraft:area_effect_cloud,tag=temp.processing] mount @n[type=minecraft:snowball,tag=temp.processing]
+tag @n[type=minecraft:area_effect_cloud,tag=temp.processing] remove temp.processing
 
 # Create random deviation.
 execute store result score @s temp.deviation.x run random value -150..150

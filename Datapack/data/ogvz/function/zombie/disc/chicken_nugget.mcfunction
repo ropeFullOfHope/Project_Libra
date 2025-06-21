@@ -29,10 +29,9 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.chicken_nugget
 tag @s add ogvz.zombie.suicide_pill
 
-attribute @s minecraft:max_health modifier add ogvz.chicken_nugget.max_health -4.0 add_value
 attribute @s minecraft:movement_speed modifier add ogvz.chicken_nugget.movement_speed 0.4 add_multiplied_total
 attribute @s minecraft:jump_strength modifier add ogvz.chicken_nugget.jump_strength 0.2 add_value
-attribute @s minecraft:safe_fall_distance modifier add ogvz.chicken_nugget.safe_fall_distance 3.0 add_value
+attribute @s minecraft:fall_damage_multiplier modifier add ogvz.chicken_nugget.fall_damage_multiplier -1.0 add_multiplied_total
 
 team join z3CHICKEN_NUGGET @s
 
@@ -47,7 +46,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:0,operation:"add_value",slot:"head",id:"ogvz:head"} \
+    {type:"minecraft:armor",amount:1,operation:"add_value",slot:"head",id:"ogvz:head"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -64,7 +63,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:0,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+    {type:"minecraft:armor",amount:3,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -81,7 +80,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:0,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -99,7 +98,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
     "ogvz:midair_jump":3 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:0,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+    {type:"minecraft:armor",amount:1,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -115,9 +114,9 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:unbreakable={}, \
   minecraft:item_name={"text":"Eggsplosive Egg","color":"gray"}, \
   minecraft:lore=[ \
-    {"text":"Shoot an egg that explodes on","color":"blue"}, \
+    {"text":"Shoot an egg which explodes on","color":"blue"}, \
     {"text":"impact.","color":"blue"}, \
-    {"text":"2 second cooldown","color":"red","italic":false}, \
+    {"text":"3 second cooldown","color":"red","italic":false}, \
     {"text":"Active Ability","color":"green","italic":false} \
   ], \
   minecraft:tooltip_display={ \

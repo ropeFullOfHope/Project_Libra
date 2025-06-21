@@ -14,6 +14,9 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Return if the area effect cloud is still riding the snowball.
+execute on vehicle run return fail
+
 execute on origin run tag @s add temp.origin
 
 execute positioned ~-1.3 ~-2.5 ~-1.3 as @a[dx=1.0,dy=1.6,dz=1.0] run damage @s[tag=ogvz.dwarf] 12 ogvz:snowball by @p[tag=temp.origin]

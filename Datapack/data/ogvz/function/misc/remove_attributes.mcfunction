@@ -32,18 +32,13 @@ attribute @s minecraft:jump_strength modifier remove ogvz.teleporting.jump_stren
 attribute @s minecraft:attack_damage modifier remove ogvz.dragon_form.attack_damage
 attribute @s minecraft:movement_speed modifier remove ogvz.dragon_form.movement_speed
 
-# Creeper - explode
-tag @s remove ogvz.attribute.explode.explosion_knockback_resistance
-attribute @s minecraft:explosion_knockback_resistance modifier remove ogvz.explosion.explosion_knockback_resistance
-
 # Blaze - firefly
 attribute @s minecraft:gravity modifier remove ogvz.blaze.firefly.gravity
 
 # Chicken Nugget - base attributes
-attribute @s minecraft:max_health modifier remove ogvz.chicken_nugget.max_health
 attribute @s minecraft:movement_speed modifier remove ogvz.chicken_nugget.movement_speed
 attribute @s minecraft:jump_strength modifier remove ogvz.chicken_nugget.jump_strength
-attribute @s minecraft:safe_fall_distance modifier remove ogvz.chicken_nugget.safe_fall_distance
+attribute @s minecraft:fall_damage_multiplier modifier remove ogvz.chicken_nugget.fall_damage_multiplier
 
 # Wolf - base attributes
 attribute @s minecraft:movement_speed modifier remove ogvz.wolf.movement_speed
