@@ -125,6 +125,13 @@ execute as @s[scores={ogvz.guardian.beam.cooldown.ticks=20..,ogvz.guardian.beam.
 execute as @s[scores={ogvz.guardian.beam.cooldown.ticks=20..,ogvz.guardian.beam.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Beam]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.guardian.beam.cooldown.ticks=20..}] run scoreboard players set @s ogvz.guardian.beam.cooldown.ticks 0
 
+# Spider - Web
+execute as @s[scores={ogvz.spider.web.cooldown.seconds=1..}] run scoreboard players add @s ogvz.spider.web.cooldown.ticks 1
+execute as @s[scores={ogvz.spider.web.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.spider.web.cooldown.seconds 1
+execute as @s[scores={ogvz.spider.web.cooldown.ticks=20..,ogvz.spider.web.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.spider.web.cooldown.ticks=20..,ogvz.spider.web.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Web]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.spider.web.cooldown.ticks=20..}] run scoreboard players set @s ogvz.spider.web.cooldown.ticks 0
+
 # Blaze - Fireball
 execute as @s[scores={ogvz.blaze.fireball.cooldown.seconds=1..}] run scoreboard players add @s ogvz.blaze.fireball.cooldown.ticks 1
 execute as @s[scores={ogvz.blaze.fireball.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.blaze.fireball.cooldown.seconds 1

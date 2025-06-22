@@ -141,6 +141,10 @@ scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.seconds dumm
 scoreboard objectives add ogvz.guardian.beam.cooldown.ticks dummy
 scoreboard objectives add ogvz.guardian.beam.cooldown.seconds dummy
 
+# Spider
+scoreboard objectives add ogvz.spider.web.cooldown.ticks dummy
+scoreboard objectives add ogvz.spider.web.cooldown.seconds dummy
+
 # Blaze
 scoreboard objectives add ogvz.blaze.fireball.cooldown.ticks dummy
 scoreboard objectives add ogvz.blaze.fireball.cooldown.seconds dummy

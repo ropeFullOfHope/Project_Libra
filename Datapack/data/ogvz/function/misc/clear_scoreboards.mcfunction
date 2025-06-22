@@ -65,6 +65,9 @@ scoreboard players set @s ogvz.dwarven_guard.glowing_shell.cooldown.seconds 0
 scoreboard players set @s ogvz.guardian.beam.cooldown.ticks 0
 scoreboard players set @s ogvz.guardian.beam.cooldown.seconds 0
 
+scoreboard players set @s ogvz.spider.web.cooldown.ticks 0
+scoreboard players set @s ogvz.spider.web.cooldown.seconds 0
+
 scoreboard players set @s ogvz.blaze.fireball.cooldown.ticks 0
 scoreboard players set @s ogvz.blaze.fireball.cooldown.seconds 0
 scoreboard players set @s ogvz.blaze.firefly.cooldown.ticks 0
