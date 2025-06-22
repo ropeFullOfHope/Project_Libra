@@ -1,0 +1,47 @@
+execute if entity @s[scores={ogvz.spider.web.cooldown.seconds=1..}] run title @s actionbar [ \
+  "", \
+  {"text":"[Web]","bold":true,"color":"red"}, \
+  {"text":" You have ","color":"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.spider.web.cooldown.seconds"},"bold":true,"color":"red"}, \
+  {"text":" seconds remaining!","color":"red"} \
+]
+execute if entity @s[scores={ogvz.spider.web.cooldown.seconds=1..}] run return 0
+
+scoreboard players set @s ogvz.spider.web.cooldown.seconds 15
+
+title @s actionbar [ \
+  "", \
+  {"text":"[Web]","bold":true,"color":"green"}, \
+  {"text":" Poof!","color":"green"} \
+]
+
+playsound minecraft:block.cobweb.place player @a ~ ~ ~ 1 0.65
+
+# Tag the player as the ray origin.
+tag @s add temp.ray_origin
+
+# Summons two marker at players feet and gives them a proper tag.
+execute summon minecraft:marker run tag @s add temp.ray
+execute summon minecraft:marker run tag @s add temp.ray_origin
+
+# Teleport the markers to the player's eyes and make them face in the same direction as the player.
+execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:marker,tag=temp.ray] ~ ~ ~ ~ ~
+execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:marker,tag=temp.ray_origin] ~ ~ ~ ~ ~
+
+# Starts the ray casting loop.
+execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:zombie/ability/spider/web_loop
+
+# Place a cobweb at the targeted player's feet. If no player was targeted place cobweb behind the ray marker unless it's not inside a block.
+execute as @p[tag=temp.hit] at @s run function ogvz:zombie/ability/spider/web_place
+execute unless entity @a[tag=temp.hit] as @n[type=minecraft:marker,tag=temp.ray] at @s unless block ~ ~ ~ #ogvz:go_through positioned ^ ^ ^-0.1 run function ogvz:zombie/ability/spider/web_place
+
+# Get rid of the markers.
+kill @e[type=minecraft:marker,tag=temp.ray]
+kill @e[type=minecraft:marker,tag=temp.ray_origin]
+
+# Remove temporary tags.
+tag @s remove temp.ray_origin
+tag @a remove temp.hit
+tag @a remove temp.big_hitbox
+tag @a remove temp.medium_hitbox
+tag @a remove temp.small_hitbox

@@ -116,7 +116,7 @@ item replace entity @s hotbar.8 with minecraft:shield[ \
 
 # Gives drowned all their items.
 give @s minecraft:trident[ \
-  minecraft:item_name={"text":"Rusted Trident","color":"aqua"}, \
+  minecraft:item_name={"text":"Worn Trident","color":"aqua"}, \
   minecraft:unbreakable={}, \
   minecraft:enchantments={ \
     "minecraft:riptide":1 \

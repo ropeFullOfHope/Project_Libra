@@ -121,12 +121,12 @@ give @s minecraft:iron_hoe[ \
     {"text":" "}, \
     {"text":"When in Main Hand:","color":"gray","italic":false}, \
     {"text":" 5.5 Attack Damage","color":"dark_green","italic":false}, \
-    {"text":" 20 Attack Speed","color":"dark_green","italic":false}, \
+    {"text":" \u221E Attack Speed","color":"dark_green","italic":false}, \
     {"text":" 2.5 Attack Reach","color":"dark_green","italic":false} \
   ], \
   minecraft:attribute_modifiers=[ \
     {type:"minecraft:attack_damage",amount:4.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-    {type:"minecraft:attack_speed",amount:16.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
+    {type:"minecraft:attack_speed",amount:19996.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
     {type:"minecraft:entity_interaction_range",amount:-0.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
   ], \
   minecraft:tooltip_display={ \

@@ -130,6 +130,7 @@ execute as @s[tag=ogvz.zombie.class.skeleton_variant.guardian,scores={ogvz.rclic
 # Creeper (620x)
 execute as @s[tag=ogvz.zombie.class.creeper,scores={ogvz.rclick.active_id=6200}] at @s run function ogvz:zombie/ability/creeper/explode
 # Spider (621x)
+execute as @s[tag=ogvz.zombie.class.spider,scores={ogvz.rclick.active_id=6210}] at @s run function ogvz:zombie/ability/spider/web
 # Blaze (630x)
 execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=6300}] at @s run function ogvz:zombie/ability/blaze/fireball
 execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=6301}] at @s run function ogvz:zombie/ability/blaze/firefly

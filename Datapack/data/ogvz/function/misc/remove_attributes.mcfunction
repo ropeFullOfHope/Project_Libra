@@ -32,6 +32,11 @@ attribute @s minecraft:jump_strength modifier remove ogvz.teleporting.jump_stren
 attribute @s minecraft:attack_damage modifier remove ogvz.dragon_form.attack_damage
 attribute @s minecraft:movement_speed modifier remove ogvz.dragon_form.movement_speed
 
+# Spider - base attributes
+attribute @s minecraft:movement_speed modifier remove ogvz.spider.movement_speed
+attribute @s minecraft:jump_strength modifier remove ogvz.spider.jump_strength
+attribute @s minecraft:safe_fall_distance modifier remove ogvz.spider.safe_fall_distance
+
 # Blaze - firefly
 attribute @s minecraft:gravity modifier remove ogvz.blaze.firefly.gravity
 
