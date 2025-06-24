@@ -160,6 +160,13 @@ execute as @s[scores={ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks=20..,og
 execute as @s[scores={ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks=20..,ogvz.chicken_nugget.eggsplosive_egg.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Eggsplosive Egg]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks=20..}] run scoreboard players set @s ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks 0
 
+# Ocelot - Mana Steal
+execute as @s[scores={ogvz.ocelot.mana_steal.cooldown.seconds=1..}] run scoreboard players add @s ogvz.ocelot.mana_steal.cooldown.ticks 1
+execute as @s[scores={ogvz.ocelot.mana_steal.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.ocelot.mana_steal.cooldown.seconds 1
+execute as @s[scores={ogvz.ocelot.mana_steal.cooldown.ticks=20..,ogvz.ocelot.mana_steal.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.ocelot.mana_steal.cooldown.ticks=20..,ogvz.ocelot.mana_steal.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Mana Steal]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.ocelot.mana_steal.cooldown.ticks=20..}] run scoreboard players set @s ogvz.ocelot.mana_steal.cooldown.ticks 0
+
 # Snowman - Snowball Barrage
 execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.seconds=1..}] run scoreboard players add @s ogvz.snowman.snowball_barrage.cooldown.ticks 1
 execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.snowman.snowball_barrage.cooldown.seconds 1

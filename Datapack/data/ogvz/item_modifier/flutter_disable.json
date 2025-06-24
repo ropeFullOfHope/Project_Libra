@@ -6,7 +6,7 @@
   {
     "function":"minecraft:set_components",
     "components":{
-      "minecraft:item_model":"ogvz:featherlight_disabled"
+      "minecraft:item_model":"ogvz:flutter_disabled"
     }
   }
 ]

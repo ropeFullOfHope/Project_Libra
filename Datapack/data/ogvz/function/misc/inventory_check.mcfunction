@@ -55,7 +55,7 @@ execute as @s[tag=ogvz.zombie.class.zombie_variant] store result score @s ogvz.i
 # Spider (621x)
 # Blaze (630x)
 # Chicken Nugget (631x)
-execute as @s[tag=ogvz.zombie.class.chicken_nugget] store result score @s ogvz.inventory.featherlight run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data~{passive_id:6310,disabled:0}] 0
+execute as @s[tag=ogvz.zombie.class.chicken_nugget] store result score @s ogvz.inventory.flutter run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data~{passive_id:6310,disabled:0}] 0
 # Chillager (632x)
 # Ocelot (633x)
 # Phantom (634x)

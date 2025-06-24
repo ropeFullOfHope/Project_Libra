@@ -63,7 +63,7 @@ scoreboard objectives add ogvz.inventory.lava_bucket dummy
 scoreboard objectives add ogvz.inventory.soulstone dummy
 scoreboard objectives add ogvz.inventory.undying_bond dummy
 scoreboard objectives add ogvz.inventory.sharing_grace dummy
-scoreboard objectives add ogvz.inventory.featherlight dummy
+scoreboard objectives add ogvz.inventory.flutter dummy
 scoreboard objectives add ogvz.inventory.evolution dummy
 
 ### Enchantment scoreboards
@@ -158,6 +158,10 @@ scoreboard objectives add ogvz.blaze.heat_wave.cooldown.seconds dummy
 # Chicken Nugget
 scoreboard objectives add ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks dummy
 scoreboard objectives add ogvz.chicken_nugget.eggsplosive_egg.cooldown.seconds dummy
+
+# Ocelot
+scoreboard objectives add ogvz.ocelot.mana_steal.cooldown.ticks dummy
+scoreboard objectives add ogvz.ocelot.mana_steal.cooldown.seconds dummy
 
 # Snowman
 scoreboard objectives add ogvz.snowman.snowball_barrage.cooldown.ticks dummy

@@ -137,9 +137,12 @@ execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=6301}] a
 execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=6302}] at @s run function ogvz:zombie/ability/blaze/heat_wave
 # Chicken Nugget (631x)
 execute as @s[tag=ogvz.zombie.class.chicken_nugget,scores={ogvz.rclick.active_id=6310}] at @s run function ogvz:zombie/ability/chicken_nugget/eggsplosive_egg
-execute as @s[tag=ogvz.zombie.class.chicken_nugget,scores={ogvz.rclick.active_id=6311}] at @s run function ogvz:zombie/ability/chicken_nugget/featherlight_toggle
+execute as @s[tag=ogvz.zombie.class.chicken_nugget,scores={ogvz.rclick.active_id=6311}] at @s run function ogvz:zombie/ability/chicken_nugget/flutter_toggle
 # Chillager (632x)
 # Ocelot (633x)
+execute as @s[tag=ogvz.zombie.class.ocelot,scores={ogvz.rclick.active_id=6330}] at @s run function ogvz:zombie/ability/ocelot/slapper_fish_charge
+execute as @s[tag=ogvz.zombie.class.ocelot,scores={ogvz.rclick.active_id=6331}] at @s run function ogvz:zombie/ability/ocelot/mana_steal
+execute as @s[tag=ogvz.zombie.class.ocelot,scores={ogvz.rclick.active_id=6332}] at @s run function ogvz:zombie/ability/ocelot/disarm
 # Phantom (634x)
 # Snowman (635x)
 execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=6350}] at @s run function ogvz:zombie/ability/snowman/snowball_barrage

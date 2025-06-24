@@ -45,6 +45,10 @@ attribute @s minecraft:movement_speed modifier remove ogvz.chicken_nugget.moveme
 attribute @s minecraft:jump_strength modifier remove ogvz.chicken_nugget.jump_strength
 attribute @s minecraft:fall_damage_multiplier modifier remove ogvz.chicken_nugget.fall_damage_multiplier
 
+# Chicken Nugget - base attributes
+attribute @s minecraft:movement_speed modifier remove ogvz.ocelot.movement_speed
+attribute @s minecraft:fall_damage_multiplier modifier remove ogvz.ocelot.fall_damage_multiplier
+
 # Wolf - base attributes
 attribute @s minecraft:movement_speed modifier remove ogvz.wolf.movement_speed
 attribute @s minecraft:jump_strength modifier remove ogvz.wolf.jump_strength
