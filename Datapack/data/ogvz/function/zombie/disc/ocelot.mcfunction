@@ -12,6 +12,7 @@ tag @s add ogvz.zombie
 tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.ocelot
 tag @s add ogvz.zombie.suicide_pill
+
 tag @s add ogvz.mana
 
 attribute @s minecraft:movement_speed modifier add ogvz.ocelot.movement_speed 0.4 add_multiplied_total
@@ -147,4 +148,9 @@ give @s minecraft:carrot_on_a_stick[ \
     ] \
   } \
 ]
-give @s minecraft:cooked_cod 64
+give @s minecraft:cooked_cod[ \
+  minecraft:food={ \
+    nutrition:8, \
+    saturation:12.8 \
+  } \
+] 64

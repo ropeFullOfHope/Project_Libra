@@ -19,9 +19,7 @@
 execute as @s[scores={ogvz.rclick.cooldown=1..}] run scoreboard players remove @s ogvz.rclick.cooldown 1
 
 # All - Custom Bar (hide)
-execute as @s[scores={ogvz.misc.custom_bar_hide.seconds=1..}] run scoreboard players add @s ogvz.misc.custom_bar_hide.ticks 1
-execute as @s[scores={ogvz.misc.custom_bar_hide.ticks=20..}] run scoreboard players remove @s ogvz.misc.custom_bar_hide.seconds 1
-execute as @s[scores={ogvz.misc.custom_bar_hide.ticks=20..}] run scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 0
+execute as @s[scores={ogvz.misc.custom_bar_hide.ticks=1..}] run scoreboard players remove @s ogvz.misc.custom_bar_hide.ticks 1
 
 # Builder - Summoning Book
 execute as @s[scores={ogvz.builder.summoning_book.cooldown.seconds=1..}] run scoreboard players add @s ogvz.builder.summoning_book.cooldown.ticks 1
@@ -159,6 +157,22 @@ execute as @s[scores={ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks=20..}] 
 execute as @s[scores={ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks=20..,ogvz.chicken_nugget.eggsplosive_egg.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
 execute as @s[scores={ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks=20..,ogvz.chicken_nugget.eggsplosive_egg.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Eggsplosive Egg]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks=20..}] run scoreboard players set @s ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks 0
+
+# Chillager - Invisibility
+execute as @s[scores={ogvz.chillager.invisibility.cooldown.seconds=1..}] run scoreboard players add @s ogvz.chillager.invisibility.cooldown.ticks 1
+execute as @s[scores={ogvz.chillager.invisibility.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.chillager.invisibility.cooldown.seconds 1
+execute as @s[scores={ogvz.chillager.invisibility.cooldown.ticks=20..,ogvz.chillager.invisibility.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.chillager.invisibility.cooldown.ticks=20..,ogvz.chillager.invisibility.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Invisibility]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.chillager.invisibility.cooldown.ticks=20..,ogvz.chillager.invisibility.cooldown.seconds=0}] run scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
+execute as @s[scores={ogvz.chillager.invisibility.cooldown.ticks=20..}] run scoreboard players set @s ogvz.chillager.invisibility.cooldown.ticks 0
+
+# Chillager - Ice Bridge
+execute as @s[scores={ogvz.chillager.ice_bridge.cooldown.seconds=1..}] run scoreboard players add @s ogvz.chillager.ice_bridge.cooldown.ticks 1
+execute as @s[scores={ogvz.chillager.ice_bridge.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.chillager.ice_bridge.cooldown.seconds 1
+execute as @s[scores={ogvz.chillager.ice_bridge.cooldown.ticks=20..,ogvz.chillager.ice_bridge.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.chillager.ice_bridge.cooldown.ticks=20..,ogvz.chillager.ice_bridge.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Ice Bridge]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.chillager.ice_bridge.cooldown.ticks=20..,ogvz.chillager.ice_bridge.cooldown.seconds=0}] run scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
+execute as @s[scores={ogvz.chillager.ice_bridge.cooldown.ticks=20..}] run scoreboard players set @s ogvz.chillager.ice_bridge.cooldown.ticks 0
 
 # Ocelot - Mana Steal
 execute as @s[scores={ogvz.ocelot.mana_steal.cooldown.seconds=1..}] run scoreboard players add @s ogvz.ocelot.mana_steal.cooldown.ticks 1

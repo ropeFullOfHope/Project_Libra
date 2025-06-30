@@ -66,6 +66,8 @@ tag @s remove ogvz.zombie.class.hoglin
 tag @s remove ogvz.zombie.class.enderman
 tag @s remove ogvz.zombie.class.golem
 
+tag @s remove ogvz.zombie.class.chillager.invisible
+
 tag @s remove ogvz.zombie.class.miniboss
 tag @s remove ogvz.zombie.class.miniboss.ghast
 tag @s remove ogvz.zombie.class.miniboss.ravager

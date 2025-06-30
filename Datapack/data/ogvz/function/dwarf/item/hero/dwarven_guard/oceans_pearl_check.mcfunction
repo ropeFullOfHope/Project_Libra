@@ -29,6 +29,6 @@ title @a[tag=ogvz.dwarf.class.hero.dwarven_guard] actionbar [ \
   {"text":" An ocean's pearl has been broken!","color":"light_purple"} \
 ]
 
-scoreboard players set @s ogvz.misc.custom_bar_hide.seconds 3
+scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 
 kill @s

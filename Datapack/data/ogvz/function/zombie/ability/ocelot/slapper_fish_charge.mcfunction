@@ -1,6 +1,6 @@
 # Return if the player used an already charged slapper fish.
-execute if items entity @s[tag=temp.use.mainhand] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_data~{"charged":1}] run return fail
-execute if items entity @s[tag=temp.use.offhand] weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_data~{"charged":1}] run return fail
+execute if items entity @s[tag=temp.use.mainhand] weapon.mainhand minecraft:carrot_on_a_stick[minecraft:custom_data~{"charged":1}] run return 0
+execute if items entity @s[tag=temp.use.offhand] weapon.offhand minecraft:carrot_on_a_stick[minecraft:custom_data~{"charged":1}] run return 0
 
 execute unless entity @s[level=15..] run title @s actionbar [ \
   "", \

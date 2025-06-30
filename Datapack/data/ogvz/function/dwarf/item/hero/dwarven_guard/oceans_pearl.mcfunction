@@ -14,7 +14,7 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-scoreboard players set @s ogvz.misc.custom_bar_hide.seconds 3
+scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 
 execute if entity @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \

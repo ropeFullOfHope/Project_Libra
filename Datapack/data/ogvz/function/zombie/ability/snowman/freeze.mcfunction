@@ -50,6 +50,12 @@ execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:zombie
 # Freeze all players who have been hit by the ray. Area Effect Cloud is used, to apply the effect with the icon, but without the particles.
 execute as @a[tag=temp.hit] at @s run summon area_effect_cloud ~ ~ ~ {ReapplicationDelay:-1,Radius:0.0f,Duration:1,Age:-1,WaitTime:0,potion_contents:{custom_effects:[{id:"minecraft:unluck",amplifier:0,duration:100,show_particles:0b,show_icon:1b}]}}
 
+# Display a messege to the affected player.
+title @a[tag=temp.hit] actionbar [ \
+  "", \
+  {"text":"A Snowman has frozen you!","color":"red"} \
+]
+
 # Gets rid of the markers.
 kill @e[type=minecraft:marker,tag=temp.ray]
 kill @e[type=minecraft:marker,tag=temp.ray_origin]

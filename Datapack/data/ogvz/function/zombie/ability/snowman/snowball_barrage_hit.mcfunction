@@ -15,7 +15,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Return if the area effect cloud is still riding the snowball.
-execute on vehicle run return fail
+execute on vehicle run return 0
 
 execute on origin run tag @s add temp.origin
 

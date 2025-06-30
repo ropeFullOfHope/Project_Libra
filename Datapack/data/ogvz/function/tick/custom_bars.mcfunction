@@ -15,7 +15,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Return if custom bar has been hidden.
-execute as @s[scores={ogvz.misc.custom_bar_hide.seconds=1..}] run return 0
+execute as @s[scores={ogvz.misc.custom_bar_hide.ticks=1..}] run return 0
 
 # Show dragon scale custom bar to Dragon Warrior if they are holding the dragon scale while in dragon form.
 execute as @s[tag=ogvz.dwarf.class.hero.dragon_warrior.dragon_form] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:4001}] at @s run function ogvz:dwarf/item/hero/dragon_warrior/dragon_scale_custom_bar
@@ -31,5 +31,9 @@ execute as @s[tag=ogvz.zombie.class.piglin,scores={ogvz.inventory.evolution=1..}
 execute as @s[tag=ogvz.zombie.class.piglin,scores={ogvz.inventory.evolution=1..}] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:96}}}} run function ogvz:zombie/ability/piglin/evolution_custom_bar_0
 execute as @s[tag=ogvz.zombie.class.piglin,scores={ogvz.inventory.evolution=1..}] unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine] run function ogvz:zombie/ability/piglin/evolution_custom_bar_0
 
+# Show Invisibility's custom bar to the Chillager if they are invisible or are still regenerating invisibility.
+execute as @s[tag=ogvz.zombie.class.chillager.invisible] at @s run function ogvz:zombie/ability/chillager/invisibility_custom_bar
+execute as @s[tag=ogvz.zombie.class.chillager,tag=!ogvz.zombie.class.chillager.invisible,scores={ogvz.chillager.invisibility.duration=..1199}] at @s run function ogvz:zombie/ability/chillager/invisibility_custom_bar
+
 # Show Snowball Barrage's custom bar to the Snowman if they are holding the Snowball Barrage while it's not on cooldown.
-execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.snowman.snowball_barrage.cooldown.seconds=..0}] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:6340}] at @s run function ogvz:zombie/ability/snowman/snowball_barrage_custom_bar
+execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.snowman.snowball_barrage.cooldown.seconds=..0}] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:6350}] at @s run function ogvz:zombie/ability/snowman/snowball_barrage_custom_bar

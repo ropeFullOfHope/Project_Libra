@@ -79,6 +79,12 @@ scoreboard players set @s ogvz.blaze.heat_wave.cooldown.seconds 0
 scoreboard players set @s ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks 0
 scoreboard players set @s ogvz.chicken_nugget.eggsplosive_egg.cooldown.seconds 0
 
+scoreboard players set @s ogvz.chillager.invisibility.cooldown.ticks 0
+scoreboard players set @s ogvz.chillager.invisibility.cooldown.seconds 0
+scoreboard players set @s ogvz.chillager.invisibility.duration 0
+scoreboard players set @s ogvz.chillager.ice_bridge.cooldown.ticks 0
+scoreboard players set @s ogvz.chillager.ice_bridge.cooldown.seconds 0
+
 scoreboard players set @s ogvz.ocelot.mana_steal.cooldown.ticks 0
 scoreboard players set @s ogvz.ocelot.mana_steal.cooldown.seconds 0
 

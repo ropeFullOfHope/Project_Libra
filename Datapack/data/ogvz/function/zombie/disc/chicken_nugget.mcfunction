@@ -143,4 +143,9 @@ give @s minecraft:carrot_on_a_stick[ \
     ] \
   } \
 ]
-give @s minecraft:cooked_chicken 64
+give @s minecraft:cooked_chicken[ \
+  minecraft:food={ \
+    nutrition:8, \
+    saturation:12.8 \
+  } \
+] 64

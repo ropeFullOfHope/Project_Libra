@@ -13,6 +13,16 @@
       "conditions": {
         "player": {
           "nbt": "{Tags:[\"ogvz.dwarf.class.hero.assassin_slayer.invisible\"]}"
+        },
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "minecraft:is_fall",
+                "expected": false
+              }
+            ]
+          }
         }
       }
     }

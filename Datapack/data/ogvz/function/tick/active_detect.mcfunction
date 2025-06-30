@@ -139,6 +139,8 @@ execute as @s[tag=ogvz.zombie.class.blaze,scores={ogvz.rclick.active_id=6302}] a
 execute as @s[tag=ogvz.zombie.class.chicken_nugget,scores={ogvz.rclick.active_id=6310}] at @s run function ogvz:zombie/ability/chicken_nugget/eggsplosive_egg
 execute as @s[tag=ogvz.zombie.class.chicken_nugget,scores={ogvz.rclick.active_id=6311}] at @s run function ogvz:zombie/ability/chicken_nugget/flutter_toggle
 # Chillager (632x)
+execute as @s[tag=ogvz.zombie.class.chillager,scores={ogvz.rclick.active_id=6320}] at @s run function ogvz:zombie/ability/chillager/invisibility
+execute as @s[tag=ogvz.zombie.class.chillager,scores={ogvz.rclick.active_id=6321}] at @s run function ogvz:zombie/ability/chillager/ice_bridge
 # Ocelot (633x)
 execute as @s[tag=ogvz.zombie.class.ocelot,scores={ogvz.rclick.active_id=6330}] at @s run function ogvz:zombie/ability/ocelot/slapper_fish_charge
 execute as @s[tag=ogvz.zombie.class.ocelot,scores={ogvz.rclick.active_id=6331}] at @s run function ogvz:zombie/ability/ocelot/mana_steal

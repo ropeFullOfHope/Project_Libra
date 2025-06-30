@@ -31,17 +31,17 @@ scoreboard players set @s[predicate=ogvz:is_on_ground] ogvz.midair_jump.is_airbo
 execute as @s[scores={ogvz.midair_jump.is_airborne.current=0}] run return run scoreboard players set @s ogvz.midair_jump.jumps 0
 
 # Return if the player was previously grounded (the player likely jumped).
-execute as @s[scores={ogvz.midair_jump.is_airborne.previous=0}] run return fail
+execute as @s[scores={ogvz.midair_jump.is_airborne.previous=0}] run return 0
 
 # Return if the player is swimming.
-execute as @s[predicate=ogvz:is_swimming] run return fail
+execute as @s[predicate=ogvz:is_swimming] run return 0
 
 # Return if the player is riding something.
-execute on vehicle run return fail
+execute on vehicle run return 0
 
 # Return if the jump button hasn't been pressed (hasn't went from being released to being held).
-execute as @s[scores={ogvz.midair_jump.button_state.current=0}] run return fail
-execute as @s[scores={ogvz.midair_jump.button_state.previous=1}] run return fail
+execute as @s[scores={ogvz.midair_jump.button_state.current=0}] run return 0
+execute as @s[scores={ogvz.midair_jump.button_state.previous=1}] run return 0
 
 # Create a temporary scoreboard.
 scoreboard objectives add temp.midair_jump.max_jumps dummy

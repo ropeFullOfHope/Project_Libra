@@ -1,5 +1,5 @@
 # Return if the area effect cloud is still riding the egg.
-execute on vehicle run return fail
+execute on vehicle run return 0
 
 playsound minecraft:entity.generic.explode player @a ~ ~ ~ 1 1
 particle minecraft:explosion ~ ~ ~ 1 1 1 0 8

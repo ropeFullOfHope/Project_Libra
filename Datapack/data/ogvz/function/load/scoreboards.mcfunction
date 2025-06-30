@@ -79,7 +79,6 @@ scoreboard objectives add ogvz.misc.food food
 scoreboard objectives add ogvz.misc.natural_regeneration_timer dummy
 scoreboard objectives add ogvz.misc.leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ogvz.misc.custom_bar_hide.ticks dummy
-scoreboard objectives add ogvz.misc.custom_bar_hide.seconds dummy
 scoreboard objectives add ogvz.air_toggle dummy
 
 ### Marker scoreboards
@@ -158,6 +157,14 @@ scoreboard objectives add ogvz.blaze.heat_wave.cooldown.seconds dummy
 # Chicken Nugget
 scoreboard objectives add ogvz.chicken_nugget.eggsplosive_egg.cooldown.ticks dummy
 scoreboard objectives add ogvz.chicken_nugget.eggsplosive_egg.cooldown.seconds dummy
+
+# Chillager
+scoreboard objectives add ogvz.chillager.invisibility.cooldown.ticks dummy
+scoreboard objectives add ogvz.chillager.invisibility.cooldown.seconds dummy
+scoreboard objectives add ogvz.chillager.invisibility.duration dummy
+scoreboard objectives add ogvz.chillager.ice_bridge.cooldown.ticks dummy
+scoreboard objectives add ogvz.chillager.ice_bridge.cooldown.seconds dummy
+scoreboard objectives add ogvz.chillager.ice_bridge.ice_melt.ticks dummy
 
 # Ocelot
 scoreboard objectives add ogvz.ocelot.mana_steal.cooldown.ticks dummy
