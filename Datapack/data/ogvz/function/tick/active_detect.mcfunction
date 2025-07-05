@@ -32,7 +32,7 @@ execute store result score @s[tag=temp.use.mainhand] ogvz.rclick.active_id run d
 execute store result score @s[tag=temp.use.offhand] ogvz.rclick.active_id run data get entity @s equipment.offhand.components."minecraft:custom_data".active_id
 
 ### Admin tools (1xxx)
-
+execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1000}] at @s run dialog show @s ogvz:admin_menu
 
 ### Discs (2xxx)
 # Dwarf discs (200x)
@@ -153,6 +153,8 @@ execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=6351}]
 execute as @s[tag=ogvz.zombie.class.wolf,scores={ogvz.rclick.active_id=6360}] at @s run function ogvz:zombie/ability/wolf/howl
 # Piglin (640x)
 # Silverfish (641x)
+execute as @s[tag=ogvz.zombie.class.silverfish,scores={ogvz.rclick.active_id=6410}] at @s run function ogvz:zombie/ability/silverfish/infest
+execute as @s[tag=ogvz.zombie.class.silverfish,scores={ogvz.rclick.active_id=6411}] at @s run function ogvz:zombie/ability/silverfish/roar
 # Hoglin (650x)
 # Enderman (660x)
 # Golem (661x)

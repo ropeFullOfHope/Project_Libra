@@ -91,14 +91,7 @@ give @s minecraft:blaze_powder[ \
     {"text":"Use to fuel the brewing stand.","color":"blue"} \
   ] \
 ] 2
-give @s minecraft:bread[ \
-  minecraft:lore=[ \
-    {"text":" "}, \
-    {"text":"When Consumed:","italic":false,"color":"gray"}, \
-    {"text":"+5 Nutrition","italic":false,"color":"blue"}, \
-    {"text":"+6 Saturation","italic":false,"color":"blue"} \
-  ] \
-] 1
+give @s minecraft:bread 1
 execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \

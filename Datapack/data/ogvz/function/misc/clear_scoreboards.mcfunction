@@ -96,6 +96,11 @@ scoreboard players set @s ogvz.snowman.freeze.cooldown.seconds 0
 scoreboard players set @s ogvz.piglin.used.golden_pickaxe 0
 scoreboard players set @s ogvz.piglin.evolution.progress 0
 
+scoreboard players set @s ogvz.silverfish.roar.cooldown.ticks 0
+scoreboard players set @s ogvz.silverfish.roar.cooldown.seconds 0
+scoreboard players set @s ogvz.silverfish.silverfish_egg.count 0
+scoreboard players set @s ogvz.silverfish.silverfish_egg.warmup.ticks 0
+
 scoreboard players set @s ogvz.golem.fissure.cooldown.ticks 0
 scoreboard players set @s ogvz.golem.fissure.cooldown.seconds 0
 scoreboard players set @s ogvz.golem.leap.cooldown.ticks 0

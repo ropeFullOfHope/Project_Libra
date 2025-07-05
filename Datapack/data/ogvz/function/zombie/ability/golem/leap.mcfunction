@@ -48,7 +48,7 @@ execute as @s[gamemode=spectator] run tag @s add temp.gamemode.spectator
 gamemode creative
 
 # Disable any knockback resistance the player has by multiplying it with 0.
-attribute @s minecraft:explosion_knockback_resistance modifier add ogvz:temp.remove.knockback_resistance -1 add_multiplied_total
+attribute @s minecraft:explosion_knockback_resistance modifier add ogvz:temp.remove.explosion_knockback_resistance -1 add_multiplied_total
 
 # Teleport the player 10000 blocks into the air, where the soon to be summon explosion cannot be heard or affect anything.
 tp @s ~ ~10000 ~
@@ -61,7 +61,7 @@ execute at @s positioned ~ ~-9 ~ summon minecraft:end_crystal run damage @s 0
 tp @s ~ ~ ~
 
 # Remove the attribute that disables knockback resistance.
-attribute @s minecraft:explosion_knockback_resistance modifier remove ogvz:temp.remove.knockback_resistance
+attribute @s minecraft:explosion_knockback_resistance modifier remove ogvz:temp.remove.explosion_knockback_resistance
 
 # Restore the player's gamemode.
 execute as @s[tag=temp.gamemode.creative] run gamemode creative @s

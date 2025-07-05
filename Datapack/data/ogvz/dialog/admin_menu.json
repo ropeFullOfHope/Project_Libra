@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Admin Menu",
+    "bold": true
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Setup Tools",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:admin_menu"
+      }
+    },
+    {
+      "label": "Give Disc",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:admin_menu/give_disc"
+      }
+    },
+    {
+      "label": "Give Other",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:admin_menu"
+      }
+    },
+    {
+      "label": "Exit"
+    }
+  ]
+}

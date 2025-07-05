@@ -37,3 +37,6 @@ execute as @s[tag=ogvz.zombie.class.chillager,tag=!ogvz.zombie.class.chillager.i
 
 # Show Snowball Barrage's custom bar to the Snowman if they are holding the Snowball Barrage while it's not on cooldown.
 execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.snowman.snowball_barrage.cooldown.seconds=..0}] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:6350}] at @s run function ogvz:zombie/ability/snowman/snowball_barrage_custom_bar
+
+# Show Silverfish Egg custom bar to the Silverfish if they are holding Infest ability.
+execute as @s[tag=ogvz.zombie.class.silverfish] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:6410}] at @s run function ogvz:zombie/ability/silverfish/silverfish_egg_custom_bar

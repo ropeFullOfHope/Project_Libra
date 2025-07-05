@@ -22,13 +22,11 @@ function ogvz:tick/shrine_health
 function ogvz:tick/update_bossbars
 function ogvz:tick/update_sidebar
 function ogvz:tick/kill_entities
-function ogvz:tick/ai_mob_teams
 execute as @a at @s run function ogvz:tick/triggers
 execute as @e[type=minecraft:player,tag=ogvz.dead] at @s run function ogvz:tick/player_respawn
 execute as @e[type=minecraft:item,tag=!ogvz.processed] at @s run function ogvz:tick/check_item
 
 # Admin functions
-execute as @a[tag=!ogvz.admin,gamemode=creative] at @s run function ogvz:tick/admin
 execute as @a[tag=ogvz.admin] at @s run function ogvz:tick/shrine_distance
 
 # Detect functions

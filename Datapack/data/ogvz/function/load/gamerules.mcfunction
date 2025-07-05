@@ -24,11 +24,12 @@ gamerule doPatrolSpawning false
 gamerule doTraderSpawning false
 gamerule doWardenSpawning false
 gamerule keepInventory true
+gamerule locatorBar false
 gamerule naturalRegeneration false
 #gamerule sendCommandFeedback false
+gamerule maxEntityCramming 0
 gamerule spawnRadius 0
 gamerule snowAccumulationHeight 8
 gamerule playersSleepingPercentage 101
-gamerule locatorBar false
 gamerule maxCommandChainLength 2147483647
 gamerule maxCommandForkCount 2147483647

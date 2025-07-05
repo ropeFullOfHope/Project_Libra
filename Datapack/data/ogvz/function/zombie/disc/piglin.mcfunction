@@ -29,7 +29,7 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.piglin
 tag @s add ogvz.zombie.suicide_pill
 
-attribute @s minecraft:movement_speed modifier add ogvz.piglin.movement_speed 0.4 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add ogvz.piglin.movement_speed 0.2 add_multiplied_total
 
 team join z4PIGLIN @s
 

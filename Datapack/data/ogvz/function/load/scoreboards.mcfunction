@@ -180,6 +180,13 @@ scoreboard objectives add ogvz.snowman.freeze.cooldown.seconds dummy
 scoreboard objectives add ogvz.piglin.used.golden_pickaxe minecraft.used:minecraft.golden_pickaxe
 scoreboard objectives add ogvz.piglin.evolution.progress dummy
 
+# Silverfish
+scoreboard objectives add ogvz.silverfish.roar.cooldown.ticks dummy
+scoreboard objectives add ogvz.silverfish.roar.cooldown.seconds dummy
+scoreboard objectives add ogvz.silverfish.silverfish_egg.count dummy
+scoreboard objectives add ogvz.silverfish.silverfish_egg.warmup.ticks dummy
+scoreboard objectives add ogvz.silverfish.lifetime.ticks dummy
+
 # Golem
 scoreboard objectives add ogvz.golem.fissure.cooldown.ticks dummy
 scoreboard objectives add ogvz.golem.fissure.cooldown.seconds dummy

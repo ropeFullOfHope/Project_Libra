@@ -100,6 +100,20 @@
     },
     {
       "type": "bitmap",
+      "file": "ogvz:font/silverfish_egg_0.png",
+      "height": 9,
+      "ascent": 4,
+      "chars": ["\u1260"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/silverfish_egg_1.png",
+      "height": 9,
+      "ascent": 4,
+      "chars": ["\u1261"]
+    },
+    {
+      "type": "bitmap",
       "file": "ogvz:font/custom_bar/green/0.png",
       "height": 5,
       "ascent": 0,

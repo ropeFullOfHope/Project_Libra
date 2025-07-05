@@ -1,0 +1,69 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "comment": "ropeFullOfHope",
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{UUID:[I;-1745797036,248531691,-1083904022,819018852]}"
+      }
+    },
+    {
+      "comment": "hopeFullOfRope",
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{UUID:[I;-439842970,980436660,-1587991126,-67516460]}"
+      }
+    },
+    {
+      "comment": "Sahlonahl",
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{UUID:[I;1448479584,-1598666229,-1750013586,1362885982]}"
+      }
+    },
+    {
+      "comment": "Astraeos_",
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{UUID:[I;1448479584,-1598666229,-1750013586,1362885982]}"
+      }
+    },
+    {
+      "comment": "the_lasagna_man",
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{UUID:[I;1873853338,-1695921841,-1369806257,-768558102]}"
+      }
+    },
+    {
+      "comment": "Ethamore",
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{UUID:[I;-1289897957,-102546391,-1939643043,-1706757047]}"
+      }
+    },
+    {
+      "comment": "Laikbruh",
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{UUID:[I;2104706525,-951500332,-1516022170,-1820822042]}"
+      }
+    },
+    {
+      "comment": "Shoo0",
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{UUID:[I;1872372687,1735543575,-1270984573,509539218]}"
+      }
+    }
+  ]
+}

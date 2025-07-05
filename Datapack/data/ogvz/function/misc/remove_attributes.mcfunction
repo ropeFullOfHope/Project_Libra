@@ -65,6 +65,9 @@ attribute @s minecraft:movement_speed modifier remove ogvz.piglin.movement_speed
 # Hoglin - base attributes
 attribute @s minecraft:max_health modifier remove ogvz.hoglin.max_health
 
+# Silverfish - base attributes
+attribute @s minecraft:movement_speed modifier remove ogvz.silverfish.movement_speed
+
 # Golem - base attributes
 attribute @s minecraft:max_health modifier remove ogvz.golem.max_health
 attribute @s minecraft:attack_damage modifier remove ogvz.golem.attack_damage

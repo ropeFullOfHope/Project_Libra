@@ -34,3 +34,10 @@ execute as @e[type=minecraft:marker,tag=ogvz.ice] at @s run function ogvz:zombie
 
 # Snowman - Snowball Barrage
 execute as @e[type=minecraft:area_effect_cloud,tag=ogvz.projectile.snowball_barrage] at @s run function ogvz:zombie/ability/snowman/snowball_barrage_hit
+
+# Silverfish - Silverfish Egg regeneration
+execute as @a[tag=ogvz.zombie.class.silverfish,scores={ogvz.silverfish.silverfish_egg.warmup.ticks=1..}] at @s run function ogvz:zombie/ability/silverfish/silverfish_egg_regenerate
+
+# Silverfish - AI Silverfish
+execute as @e[type=minecraft:silverfish,tag=!ogvz.silverfish.processed] at @s run function ogvz:zombie/ability/silverfish/ai_silverfish_init
+execute as @e[type=minecraft:silverfish,tag=ogvz.silverfish.processed] at @s run function ogvz:zombie/ability/silverfish/ai_silverfish_main

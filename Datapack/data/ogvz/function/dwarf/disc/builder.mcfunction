@@ -42,7 +42,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:item_name={"text":"Builder Chestplate","color":"green"}, \
   minecraft:enchantments={ \
-    "minecraft:protection":3 \
+    "minecraft:protection":4 \
   } \
 ]
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
@@ -132,14 +132,7 @@ give @s minecraft:stone_bricks 64
 give @s minecraft:crafting_table 1
 give @s minecraft:stonecutter 1
 give @s minecraft:torch 32
-give @s minecraft:bread[ \
-  minecraft:lore=[ \
-    {"text":" "}, \
-    {"text":"When Consumed:","italic":false,"color":"gray"}, \
-    {"text":"+5 Nutrition","italic":false,"color":"blue"}, \
-    {"text":"+6 Saturation","italic":false,"color":"blue"} \
-  ] \
-] 1
+give @s minecraft:bread 1
 execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \
