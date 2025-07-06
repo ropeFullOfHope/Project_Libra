@@ -26,12 +26,8 @@ execute as @a at @s run function ogvz:tick/triggers
 execute as @e[type=minecraft:player,tag=ogvz.dead] at @s run function ogvz:tick/player_respawn
 execute as @e[type=minecraft:item,tag=!ogvz.processed] at @s run function ogvz:tick/check_item
 
-# Admin functions
-execute as @a[tag=ogvz.admin] at @s run function ogvz:tick/shrine_distance
-
 # Detect functions
 execute as @a at @s run function ogvz:tick/passive_detect
-#execute as @a at @s run function ogvz:tick/held_detect
 execute as @a at @s run function ogvz:tick/active_detect
 
 # Cooldown/warmup functions

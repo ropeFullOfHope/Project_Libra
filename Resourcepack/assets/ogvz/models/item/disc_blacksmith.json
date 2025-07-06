@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ogvz:item/disc/dwarf/blacksmith"
+    "layer0": "ogvz:item/dwarf/disc/blacksmith"
   }
 }

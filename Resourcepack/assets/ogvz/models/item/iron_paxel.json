@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "ogvz:item/iron_paxel"
+    "layer0": "ogvz:item/dwarf/item/iron_paxel"
   }
 }

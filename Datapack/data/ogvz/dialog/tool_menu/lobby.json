@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Lobby Tool Menu",
+    "color": "green",
+    "bold": true
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "text": "Set Lobby Location",
+        "color": "green"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/lobby/set_location"
+      }
+    },
+    {
+      "label": {
+        "text": "Place Standard Lobby",
+        "color": "green"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/lobby/place_standard"
+      }
+    },
+    {
+      "label": "Exit"
+    }
+  ]
+}

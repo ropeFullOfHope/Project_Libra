@@ -21,6 +21,7 @@ execute as @s at @s run function ogvz:misc/remove_tags
 execute as @s at @s run function ogvz:misc/remove_attributes
 
 tag @s remove ogvz.joined
+tag @s remove ogvz.admin
 
 advancement revoke @s everything
 
@@ -85,5 +86,7 @@ tag @s add ogvz.ready
 tag @s[predicate=ogvz:is_admin] add ogvz.admin
 
 execute as @s[tag=ogvz.admin] run function ogvz:admin/handbook
+
+gamemode creative @s[tag=ogvz.admin]
 
 execute as @s at @s run function ogvz:tick/player_join

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "ogvz:item/betrayers_dagger"
+    "layer0": "ogvz:item/dwarf/item/betrayers_dagger"
   }
 }

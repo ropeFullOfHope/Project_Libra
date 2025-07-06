@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ogvz:item/magic_strength_potion"
+    "layer0": "ogvz:item/dwarf/item/magic_strength_potion"
   }
 }

@@ -19,7 +19,7 @@
 execute as @s[tag=!ogvz.admin,scores={ogvz.inventory.lava_bucket=1..}] at @s run function ogvz:misc/lava_bucket
 
 ### Admin tools
-
+execute as @s[tag=ogvz.admin,scores={ogvz.inventory.shrine_tape_measure=1..}] at @s run function ogvz:admin/setup/shrine_tape_measure
 
 ### Discs
 

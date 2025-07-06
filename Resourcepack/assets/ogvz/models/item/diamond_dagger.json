@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "ogvz:item/diamond_dagger"
+    "layer0": "ogvz:item/dwarf/item/diamond_dagger"
   }
 }

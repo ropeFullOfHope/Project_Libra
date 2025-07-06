@@ -1,19 +1,3 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: set_lobby_location
-# Function Name: ogvz:admin/setup/set_lobby_location
-# File Purpose: Sets the location the player is standing on as the spawn lobby location.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2023.10.10
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 # Return if game isn't in setup phase.
 execute unless score &ogvz ogvz.game.phase matches 0 run return 0
 
@@ -25,7 +9,7 @@ forceload add ~ ~
 execute at @s align xyz positioned ~0.5 ~ ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["ogvz.marker.lobby","ogvz.kill_on_reload"]}
 
 execute at @s align xyz positioned ~0.25 ~0.25 ~0.25 run summon minecraft:block_display ~ ~ ~ { \
-  Tags:["ogvz.block_display","ogvz.block_display.lobby","ogvz.kill_on_reload"], \
+  Tags:["ogvz.block_display.lobby","ogvz.kill_on_reload"], \
   brightness:{sky:15,block:15}, \
   transformation:{ \
     left_rotation:[0f,0f,0f,1f], \
@@ -46,7 +30,7 @@ execute as @a[tag=ogvz.admin] at @s run playsound minecraft:block.note_block.bit
 
 tellraw @a[tag=ogvz.admin] [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"dark_green"}, \
-  {"selector":"@s"}, \
-  {"text":" set a lobby location.","color":"green"} \
+  {"text":"SETUP: ","bold":true,"color":"green"}, \
+  {"selector":"@s","color":"green"}, \
+  {"text":" set a Lobby Location.","color":"green"} \
 ]

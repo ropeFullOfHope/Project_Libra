@@ -60,6 +60,7 @@ scoreboard objectives add ogvz.rclick.active_id dummy
 
 ### Inventory info scoreboards
 scoreboard objectives add ogvz.inventory.lava_bucket dummy
+scoreboard objectives add ogvz.inventory.shrine_tape_measure dummy
 scoreboard objectives add ogvz.inventory.soulstone dummy
 scoreboard objectives add ogvz.inventory.undying_bond dummy
 scoreboard objectives add ogvz.inventory.sharing_grace dummy

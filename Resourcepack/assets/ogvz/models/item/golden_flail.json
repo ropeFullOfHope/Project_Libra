@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "ogvz:item/golden_flail"
+    "layer0": "ogvz:item/dwarf/item/golden_flail"
   }
 }

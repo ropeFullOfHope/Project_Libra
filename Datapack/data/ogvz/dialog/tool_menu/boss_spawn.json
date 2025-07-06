@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Boss Spawn Tool Menu",
+    "color": "light_purple",
+    "bold": true
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "text": "Set Boss Spawn Location",
+        "color": "light_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/boss_spawn/set_location"
+      }
+    },
+    {
+      "label": {
+        "text": "Select AI Ender Dragon Boss",
+        "color": "light_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/boss_spawn/select_ender_dragon_ai"
+      }
+    },
+    {
+      "label": {
+        "text": "Select AI Wither Boss",
+        "color": "light_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/boss_spawn/select_wither_ai"
+      }
+    },
+    {
+      "label": {
+        "text": "Select AI Elder Guardian Boss",
+        "color": "light_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/boss_spawn/select_elder_guardian_ai"
+      }
+    },
+    {
+      "label": {
+        "text": "Select Assassin Boss",
+        "color": "light_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/boss_spawn/select_assassin"
+      }
+    },
+    {
+      "label": "Exit"
+    }
+  ]
+}

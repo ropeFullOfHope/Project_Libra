@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Give Other",
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "text": "Shrine Tape Measure",
+        "color": "gold"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/shrine_tape_measure"
+      }
+    },
+    {
+      "label": {
+        "text": "Legendary Book",
+        "color": "gold"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/legendary_book"
+      }
+    },
+    {
+      "label": {
+        "text": "Legendary Shard",
+        "color": "gold"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/legendary_shard"
+      }
+    },
+    {
+      "label": "back",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:admin_menu"
+      }
+    }
+  ]
+}

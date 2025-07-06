@@ -33,6 +33,11 @@ execute store result score @s[tag=temp.use.offhand] ogvz.rclick.active_id run da
 
 ### Admin tools (1xxx)
 execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1000}] at @s run dialog show @s ogvz:admin_menu
+execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1001}] at @s run dialog show @s ogvz:tool_menu/lobby
+execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1002}] at @s run dialog show @s ogvz:tool_menu/shrine
+execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1003}] at @s run dialog show @s ogvz:tool_menu/zombie_spawn
+execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1004}] at @s run dialog show @s ogvz:tool_menu/boss_spawn
+execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1005}] at @s run function ogvz:admin/setup/setup_check
 
 ### Discs (2xxx)
 # Dwarf discs (200x)
@@ -52,28 +57,28 @@ execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2101}] at @s run function ogvz:zombie/disc/zombie_variant/husk
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2102}] at @s run function ogvz:zombie/disc/zombie_variant/vindicator
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2103}] at @s run function ogvz:zombie/disc/zombie_variant/drowned
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2110}] at @s run function ogvz:zombie/disc/skeleton_variant/skeleton
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2111}] at @s run function ogvz:zombie/disc/skeleton_variant/wither_skeleton
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2112}] at @s run function ogvz:zombie/disc/skeleton_variant/pillager
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2113}] at @s run function ogvz:zombie/disc/skeleton_variant/guardian
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2110}] at @s run function ogvz:zombie/disc/skeleton_variant/skeleton
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2111}] at @s run function ogvz:zombie/disc/skeleton_variant/wither_skeleton
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2112}] at @s run function ogvz:zombie/disc/skeleton_variant/pillager
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2113}] at @s run function ogvz:zombie/disc/skeleton_variant/guardian
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2120}] at @s run function ogvz:zombie/disc/creeper
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2121}] at @s run function ogvz:zombie/disc/spider
-execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2130}] at @s run function ogvz:zombie/disc/wolf
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2131}] at @s run function ogvz:zombie/disc/ocelot
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2132}] at @s run function ogvz:zombie/disc/chicken_nugget
-execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2133}] at @s run function ogvz:zombie/disc/snowman
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2134}] at @s run function ogvz:zombie/disc/chillager
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2135}] at @s run function ogvz:zombie/disc/bee
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2136}] at @s run function ogvz:zombie/disc/phantom
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2137}] at @s run function ogvz:zombie/disc/blaze
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2121}] at @s run function ogvz:zombie/disc/spider
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2130}] at @s run function ogvz:zombie/disc/bee
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2131}] at @s run function ogvz:zombie/disc/blaze
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2132}] at @s run function ogvz:zombie/disc/chicken_nugget
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2133}] at @s run function ogvz:zombie/disc/chillager
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2134}] at @s run function ogvz:zombie/disc/ocelot
+#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2135}] at @s run function ogvz:zombie/disc/phantom
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2136}] at @s run function ogvz:zombie/disc/snowman
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2137}] at @s run function ogvz:zombie/disc/wolf
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2140}] at @s run function ogvz:zombie/disc/piglin
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2141}] at @s run function ogvz:zombie/disc/silverfish
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2141}] at @s run function ogvz:zombie/disc/silverfish
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2150}] at @s run function ogvz:zombie/disc/hoglin
-execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2160}] at @s run function ogvz:zombie/disc/golem
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2161}] at @s run function ogvz:zombie/disc/enderman
+#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2160}] at @s run function ogvz:zombie/disc/enderman
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2161}] at @s run function ogvz:zombie/disc/golem
 #execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2170}] at @s run function ogvz:zombie/disc/ghast
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2171}] at @s run function ogvz:zombie/disc/ravager
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2172}] at @s run function ogvz:zombie/disc/johnny
+#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2171}] at @s run function ogvz:zombie/disc/johnny
+#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2172}] at @s run function ogvz:zombie/disc/ravager
 
 ### Dwarf items (3xxx)
 # Dwarf books (30xx)

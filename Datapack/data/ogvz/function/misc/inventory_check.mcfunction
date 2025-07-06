@@ -18,10 +18,10 @@ advancement revoke @s only ogvz:misc/inventory_update
 
 ### Non-passive items
 # Lava Bucket
-execute as @s store result score @s ogvz.inventory.lava_bucket run clear @s minecraft:lava_bucket 0
+execute as @s[tag=!ogvz.admin] store result score @s ogvz.inventory.lava_bucket run clear @s minecraft:lava_bucket 0
 
 ### Admin tools (1xxx)
-
+execute as @s[tag=ogvz.admin] store result score @s ogvz.inventory.shrine_tape_measure run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data~{passive_id:1000}] 0
 
 ### Discs (2xxx)
 

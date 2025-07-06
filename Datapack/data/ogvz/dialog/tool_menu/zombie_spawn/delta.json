@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Zombie Spawn Tool Menu [Delta]",
+    "color": "red",
+    "bold": true
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "text": "Set Zombie Spawn Location",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/zombie_spawn/set_location/delta"
+      }
+    },
+    {
+      "label": {
+        "text": "Remove Zombie Spawn Location",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/zombie_spawn/remove_location/delta"
+      }
+    },
+    {
+      "label": {
+        "text": "Place Standard Zombie Spawn",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/zombie_spawn/place_standard/delta"
+      }
+    },
+    {
+      "label": {
+        "text": "back"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:tool_menu/zombie_spawn"
+      }
+    }
+  ]
+}

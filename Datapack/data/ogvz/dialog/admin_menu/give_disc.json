@@ -15,6 +15,7 @@
         "text": "Builder",
         "color": "green"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/dwarf/builder"
@@ -25,6 +26,7 @@
         "text": "Blacksmith",
         "color": "blue"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/dwarf/blacksmith"
@@ -35,6 +37,7 @@
         "text": "Tailor",
         "color": "blue"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/dwarf/tailor"
@@ -45,6 +48,7 @@
         "text": "Baker",
         "color": "blue"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/dwarf/baker"
@@ -55,6 +59,7 @@
         "text": "Alchemist",
         "color": "blue"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/dwarf/alchemist"
@@ -65,6 +70,7 @@
         "text": "Enchanter",
         "color": "blue"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/dwarf/enchanter"
@@ -75,9 +81,10 @@
         "text": "Dragon Warrior",
         "color": "gold"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/dwarf/hero/dragon_warrior"
+        "command": "function ogvz:give/disc/dwarf/dragon_warrior"
       }
     },
     {
@@ -85,9 +92,10 @@
         "text": "Wither Warrior",
         "color": "gold"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/dwarf/hero/wither_warrior"
+        "command": "function ogvz:give/disc/dwarf/wither_warrior"
       }
     },
     {
@@ -95,9 +103,10 @@
         "text": "Dwarven Guard",
         "color": "gold"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/dwarf/hero/dwarven_guard"
+        "command": "function ogvz:give/disc/dwarf/dwarven_guard"
       }
     },
     {
@@ -105,9 +114,10 @@
         "text": "Assassin Slayer",
         "color": "gold"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/dwarf/hero/assassin_slayer"
+        "command": "function ogvz:give/disc/dwarf/assassin_slayer"
       }
     },
     {
@@ -115,9 +125,10 @@
         "text": "Zombie",
         "color": "red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/zombie/zombie_variant/zombie"
+        "command": "function ogvz:give/disc/zombie/zombie"
       }
     },
     {
@@ -125,9 +136,10 @@
         "text": "Husk",
         "color": "red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/zombie/zombie_variant/husk"
+        "command": "function ogvz:give/disc/zombie/husk"
       }
     },
     {
@@ -135,9 +147,10 @@
         "text": "Drowned",
         "color": "red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/zombie/zombie_variant/drowned"
+        "command": "function ogvz:give/disc/zombie/drowned"
       }
     },
     {
@@ -145,9 +158,10 @@
         "text": "Vindicator",
         "color": "red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/zombie/zombie_variant/vindicator"
+        "command": "function ogvz:give/disc/zombie/vindicator"
       }
     },
     {
@@ -155,9 +169,10 @@
         "text": "Skeleton",
         "color": "red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/zombie/skeleton_variant/skeleton"
+        "command": "function ogvz:give/disc/zombie/skeleton"
       }
     },
     {
@@ -165,9 +180,10 @@
         "text": "Wither Skeleton",
         "color": "red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/zombie/skeleton_variant/wither_skeleton"
+        "command": "function ogvz:give/disc/zombie/wither_skeleton"
       }
     },
     {
@@ -175,9 +191,10 @@
         "text": "Guardian",
         "color": "red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/zombie/skeleton_variant/guardian"
+        "command": "function ogvz:give/disc/zombie/guardian"
       }
     },
     {
@@ -185,9 +202,10 @@
         "text": "Pillager",
         "color": "red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/zombie/skeleton_variant/pillager"
+        "command": "function ogvz:give/disc/zombie/pillager"
       }
     },
     {
@@ -195,6 +213,7 @@
         "text": "Creeper",
         "color": "red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/creeper"
@@ -205,6 +224,7 @@
         "text": "Spider",
         "color": "red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/spider"
@@ -215,6 +235,7 @@
         "text": "Bee",
         "color": "dark_red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/bee"
@@ -225,6 +246,7 @@
         "text": "Blaze",
         "color": "dark_red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/blaze"
@@ -235,6 +257,7 @@
         "text": "Chicken Nugget",
         "color": "dark_red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/chicken_nugget"
@@ -245,6 +268,7 @@
         "text": "Chillager",
         "color": "dark_red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/chillager"
@@ -255,6 +279,7 @@
         "text": "Ocelot",
         "color": "dark_red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/ocelot"
@@ -265,6 +290,7 @@
         "text": "Phantom",
         "color": "dark_red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/phantom"
@@ -275,6 +301,7 @@
         "text": "Snowman",
         "color": "dark_red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/snowman"
@@ -285,6 +312,7 @@
         "text": "Wolf",
         "color": "dark_red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/wolf"
@@ -295,6 +323,7 @@
         "text": "Piglin",
         "color": "dark_red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/piglin"
@@ -305,6 +334,7 @@
         "text": "Hoglin",
         "color": "dark_red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/hoglin"
@@ -315,6 +345,7 @@
         "text": "Silverfish",
         "color": "dark_red"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/silverfish"
@@ -325,6 +356,7 @@
         "text": "Enderman",
         "color": "dark_purple"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/enderman"
@@ -335,6 +367,7 @@
         "text": "Golem",
         "color": "dark_purple"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:give/disc/zombie/golem"
@@ -345,9 +378,10 @@
         "text": "Ghast",
         "color": "light_purple"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/zombie/miniboss/ghast"
+        "command": "function ogvz:give/disc/zombie/ghast"
       }
     },
     {
@@ -355,9 +389,10 @@
         "text": "Johnny",
         "color": "light_purple"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/zombie/miniboss/johnny"
+        "command": "function ogvz:give/disc/zombie/johnny"
       }
     },
     {
@@ -365,9 +400,10 @@
         "text": "Ravager",
         "color": "light_purple"
       },
+      "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/zombie/miniboss/ravager"
+        "command": "function ogvz:give/disc/zombie/ravager"
       }
     },
     {

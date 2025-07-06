@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld_rod",
   "textures": {
-    "layer0": "ogvz:item/water_wand"
+    "layer0": "ogvz:item/dwarf/item/water_wand"
   }
 }

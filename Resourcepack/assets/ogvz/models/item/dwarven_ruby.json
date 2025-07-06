@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ogvz:item/dwarven_ruby"
+    "layer0": "ogvz:item/dwarf/item/dwarven_ruby"
   }
 }

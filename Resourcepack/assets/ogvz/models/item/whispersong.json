@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/bow",
   "textures": {
-    "layer0": "ogvz:item/whispersong"
+    "layer0": "ogvz:item/dwarf/item/whispersong"
   },
   "display": {
     "thirdperson_righthand": {

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ogvz:item/dragon_scale"
+    "layer0": "ogvz:item/dwarf/item/dragon_scale"
   }
 }

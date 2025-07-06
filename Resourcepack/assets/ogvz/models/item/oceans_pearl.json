@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ogvz:item/oceans_pearl"
+    "layer0": "ogvz:item/dwarf/item/oceans_pearl"
   }
 }
