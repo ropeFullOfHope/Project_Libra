@@ -21,7 +21,7 @@ execute unless entity @e[type=minecraft:marker,tag=temp.ray_origin,distance=..8]
 # Teleports the ray slightly forward.
 tp @s ^ ^ ^0.1
 
-execute if predicate ogvz:5_chance run particle minecraft:sweep_attack ~ ~-1 ~ 0 0 0 0 1 force
+execute if predicate {condition:"minecraft:random_chance",chance:0.05} run particle minecraft:sweep_attack ~ ~-1 ~ 0 0 0 0 1 force
 
 # When ray gets close to a player, it determines their hitbox size depending on their eye height.
 # Standing player eye height: 1.62

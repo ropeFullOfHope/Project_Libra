@@ -8,7 +8,8 @@ execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.lobby] run return
 execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine] run return run dialog show @s ogvz:setup_error/shrine_location
 
 # Check if the shrine block markers exists. Return on fail.
-execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine_block] run return run dialog show @s ogvz:setup_error/shrine_block_markers
+execute unless score &ogvz ogvz.game.shrine_health matches 12.. run return run dialog show @s ogvz:setup_error/shrine_block_markers_missing
+execute unless score &ogvz ogvz.game.shrine_health matches ..12 run return run dialog show @s ogvz:setup_error/shrine_block_markers_incorrect_amount
 
 # Check if the zombie spawn location exists. Return on fail.
 execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] run return run dialog show @s ogvz:setup_error/zombie_spawn_location

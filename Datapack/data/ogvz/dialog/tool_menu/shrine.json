@@ -8,10 +8,18 @@
   "columns": 1,
   "actions": [
     {
-      "label": {
-        "text": "Set Shrine Location",
-        "color": "gold"
-      },
+      "label": [
+        {
+          "text": "Set",
+          "color": "gold",
+          "underlined": true
+        },
+        {
+          "text": " Shrine Location",
+          "color": "gold",
+          "underlined": false
+        }
+      ],
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
@@ -19,10 +27,37 @@
       }
     },
     {
-      "label": {
-        "text": "Place Standard Shrine",
-        "color": "gold"
-      },
+      "label": [
+        {
+          "text": "Teleport to",
+          "color": "gold",
+          "underlined": true
+        },
+        {
+          "text": " Shrine Location",
+          "color": "gold",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/shrine/teleport_to"
+      }
+    },
+    {
+      "label": [
+        {
+          "text": "Place Standard",
+          "color": "gold",
+          "underlined": true
+        },
+        {
+          "text": " Shrine",
+          "color": "gold",
+          "underlined": false
+        }
+      ],
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
@@ -30,10 +65,18 @@
       }
     },
     {
-      "label": {
-        "text": "Place Platform Shrine",
-        "color": "gold"
-      },
+      "label": [
+        {
+          "text": "Place Platform",
+          "color": "gold",
+          "underlined": true
+        },
+        {
+          "text": " Shrine",
+          "color": "gold",
+          "underlined": false
+        }
+      ],
       "width": 200,
       "action": {
         "type": "minecraft:run_command",

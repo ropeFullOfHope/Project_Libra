@@ -14,7 +14,8 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-gamemode adventure @s
+gamemode adventure @s[predicate=!ogvz:is_admin]
+gamemode creative @s[predicate=ogvz:is_admin]
 
 execute as @s at @s run function ogvz:misc/clear_scoreboards
 execute as @s at @s run function ogvz:misc/remove_tags
@@ -47,6 +48,9 @@ effect give @s minecraft:saturation infinite 0 true
 
 recipe give @s *
 
+execute as @s[predicate=ogvz:is_admin] run function ogvz:give/admin_handbook
+execute as @s[predicate=!ogvz:is_admin] run function ogvz:give/rulebook
+
 tellraw @s [ \
   "", \
   {"text":"\u25B6 ","bold":true,"color":"gold"}, \
@@ -63,7 +67,7 @@ tellraw @s [ \
   {"text":"\n   and ","color":"yellow"}, \
   {"text":"TOS","color":"gold"}, \
   {"text":", provided ","color":"yellow"}, \
-  {"text":"[HERE]","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":[{"text":"link","italic":true}]},"clickEvent":{"action":"open_url","value":"https://ogvz.weebly.com/TOS.html"}}, \
+  {"text":"[HERE]","bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"text":"link","italic":true}]},"click_event":{"action":"open_url","url":"https://ogvz.weebly.com/TOS.html"}}, \
   {"text":".\n","color":"yellow"}, \
   {"text":"\u25B6 ","bold":true,"color":"gold"}, \
   {"text":"Please read the ","color":"yellow"}, \
@@ -73,20 +77,14 @@ tellraw @s [ \
   {"text":".\n","color":"yellow"}, \
   {"text":"\u25B6 ","bold":true,"color":"gold"}, \
   {"text":"If you enjoy playing on the server, please consider\n   supporting us by donating ","color":"yellow"}, \
-  {"text":"[HERE]","bold":true,"color":"gold","hoverEvent":{"action":"show_text","value":[{"text":"link","italic":true}]},"clickEvent":{"action":"open_url","value":"https://ogvz.weebly.com/store.html"}}, \
+  {"text":"[HERE]","bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"text":"link","italic":true}]},"click_event":{"action":"open_url","url":"https://ogvz.weebly.com/store.html"}}, \
   {"text":".\n","color":"yellow"} \
 ]
 
 execute store result score @s ogvz.game.reload_count run scoreboard players get &ogvz ogvz.game.reload_count
 
+tag @s[predicate=ogvz:is_admin] add ogvz.admin
 tag @s add ogvz.adventure.lobby
-
 tag @s add ogvz.ready
 
-tag @s[predicate=ogvz:is_admin] add ogvz.admin
-
-execute as @s[tag=ogvz.admin] run function ogvz:admin/handbook
-
-gamemode creative @s[tag=ogvz.admin]
-
-execute as @s at @s run function ogvz:tick/player_join
+execute as @s at @s run function ogvz:tick/join_server

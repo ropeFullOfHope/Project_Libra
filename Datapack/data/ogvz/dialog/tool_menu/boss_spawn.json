@@ -8,10 +8,18 @@
   "columns": 1,
   "actions": [
     {
-      "label": {
-        "text": "Set Boss Spawn Location",
-        "color": "light_purple"
-      },
+      "label": [
+        {
+          "text": "Set",
+          "color": "light_purple",
+          "underlined": true
+        },
+        {
+          "text": " Boss Spawn Location",
+          "color": "light_purple",
+          "underlined": false
+        }
+      ],
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
@@ -19,10 +27,37 @@
       }
     },
     {
-      "label": {
-        "text": "Select AI Ender Dragon Boss",
-        "color": "light_purple"
-      },
+      "label": [
+        {
+          "text": "Teleport to",
+          "color": "light_purple",
+          "underlined": true
+        },
+        {
+          "text": " Boss Spawn",
+          "color": "light_purple",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/boss_spawn/teleport_to"
+      }
+    },
+    {
+      "label": [
+        {
+          "text": "Select AI Ender Dragon",
+          "color": "light_purple",
+          "underlined": true
+        },
+        {
+          "text": " Boss",
+          "color": "light_purple",
+          "underlined": false
+        }
+      ],
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
@@ -30,10 +65,18 @@
       }
     },
     {
-      "label": {
-        "text": "Select AI Wither Boss",
-        "color": "light_purple"
-      },
+      "label": [
+        {
+          "text": "Select AI Wither",
+          "color": "light_purple",
+          "underlined": true
+        },
+        {
+          "text": " Boss",
+          "color": "light_purple",
+          "underlined": false
+        }
+      ],
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
@@ -41,10 +84,18 @@
       }
     },
     {
-      "label": {
-        "text": "Select AI Elder Guardian Boss",
-        "color": "light_purple"
-      },
+      "label": [
+        {
+          "text": "Select AI Elder Guardian",
+          "color": "light_purple",
+          "underlined": true
+        },
+        {
+          "text": " Boss",
+          "color": "light_purple",
+          "underlined": false
+        }
+      ],
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
@@ -52,10 +103,18 @@
       }
     },
     {
-      "label": {
-        "text": "Select Assassin Boss",
-        "color": "light_purple"
-      },
+      "label": [
+        {
+          "text": "Select Assassin",
+          "color": "light_purple",
+          "underlined": true
+        },
+        {
+          "text": " Boss",
+          "color": "light_purple",
+          "underlined": false
+        }
+      ],
       "width": 200,
       "action": {
         "type": "minecraft:run_command",

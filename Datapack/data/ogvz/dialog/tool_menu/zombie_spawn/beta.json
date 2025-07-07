@@ -8,10 +8,18 @@
   "columns": 1,
   "actions": [
     {
-      "label": {
-        "text": "Set Zombie Spawn Location",
-        "color": "red"
-      },
+      "label": [
+        {
+          "text": "Set",
+          "color": "red",
+          "underlined": true
+        },
+        {
+          "text": " Zombie Spawn Location",
+          "color": "red",
+          "underlined": false
+        }
+      ],
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
@@ -19,10 +27,18 @@
       }
     },
     {
-      "label": {
-        "text": "Remove Zombie Spawn Location",
-        "color": "red"
-      },
+      "label": [
+        {
+          "text": "Remove",
+          "color": "red",
+          "underlined": true
+        },
+        {
+          "text": " Zombie Spawn Location",
+          "color": "red",
+          "underlined": false
+        }
+      ],
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
@@ -30,10 +46,37 @@
       }
     },
     {
-      "label": {
-        "text": "Place Standard Zombie Spawn",
-        "color": "red"
-      },
+      "label": [
+        {
+          "text": "Teleport to",
+          "color": "red",
+          "underlined": true
+        },
+        {
+          "text": " Zombie Spawn",
+          "color": "red",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/zombie_spawn/teleport_to/beta"
+      }
+    },
+    {
+      "label": [
+        {
+          "text": "Place Standard",
+          "color": "red",
+          "underlined": true
+        },
+        {
+          "text": " Zombie Spawn",
+          "color": "red",
+          "underlined": false
+        }
+      ],
       "width": 200,
       "action": {
         "type": "minecraft:run_command",

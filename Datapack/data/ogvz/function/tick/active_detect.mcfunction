@@ -38,6 +38,8 @@ execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1002}] at @s run dial
 execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1003}] at @s run dialog show @s ogvz:tool_menu/zombie_spawn
 execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1004}] at @s run dialog show @s ogvz:tool_menu/boss_spawn
 execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1005}] at @s run function ogvz:admin/setup/setup_check
+execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1006}] at @s run dialog show @s ogvz:rulebook
+execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1007}] at @s run function ogvz:admin/setup/join_game
 
 ### Discs (2xxx)
 # Dwarf discs (200x)

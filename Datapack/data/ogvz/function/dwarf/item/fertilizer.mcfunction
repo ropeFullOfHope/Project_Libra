@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: fertilizer
-# Function Name: ogvz:dwarf/fertilizer
-# File Purpose: Shoots a ray that replaces the biome around a grass block.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.01.04
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Shoots a ray that replaces the biome around a grass block.
 
 # Summon 2 markers at players feet and gives them a tag.
 execute summon minecraft:marker run tag @s add temp.ray

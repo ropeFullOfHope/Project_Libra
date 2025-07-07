@@ -16,7 +16,7 @@
 
 # Game functions
 execute as @a[tag=!ogvz.ready] at @s run function ogvz:tick/ogvz_ready
-execute as @a[scores={ogvz.misc.leave_game=1..}] at @s run function ogvz:tick/player_join
+execute as @a[scores={ogvz.misc.leave_game=1..}] at @s run function ogvz:tick/join_server
 function ogvz:tick/timer
 function ogvz:tick/shrine_health
 function ogvz:tick/update_bossbars
