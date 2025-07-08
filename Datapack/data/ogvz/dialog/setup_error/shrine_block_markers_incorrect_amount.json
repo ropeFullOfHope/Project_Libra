@@ -30,7 +30,7 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "If issues persists, something is terribly wrong with the code!",
+        "text": "If issue persists, something is terribly wrong with the code!",
         "color": "red"
       }
     }

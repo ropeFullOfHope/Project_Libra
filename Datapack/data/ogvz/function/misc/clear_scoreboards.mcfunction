@@ -88,6 +88,10 @@ scoreboard players set @s ogvz.chillager.ice_bridge.cooldown.seconds 0
 scoreboard players set @s ogvz.ocelot.mana_steal.cooldown.ticks 0
 scoreboard players set @s ogvz.ocelot.mana_steal.cooldown.seconds 0
 
+scoreboard players set @s ogvz.phantom.used.firework_rocket 0
+scoreboard players set @s ogvz.phantom.delirium.cooldown.ticks 0
+scoreboard players set @s ogvz.phantom.delirium.cooldown.seconds 0
+
 scoreboard players set @s ogvz.snowman.snowball_barrage.cooldown.ticks 0
 scoreboard players set @s ogvz.snowman.snowball_barrage.cooldown.seconds 0
 scoreboard players set @s ogvz.snowman.freeze.cooldown.ticks 0

@@ -55,7 +55,7 @@ execute as @s[tag=!ogvz.joined] at @n[type=minecraft:marker,tag=ogvz.marker.lobb
 
 # If the player hasn't joined the game yet and the game is in progress/over, clear their inventory and give them a magma cream.
 execute as @s[tag=!ogvz.joined] if score &ogvz ogvz.game.phase matches 1..5 run clear @s
-execute as @s[tag=!ogvz.joined] if score &ogvz ogvz.game.phase matches 1..5 at @s run function ogvz:give/magma_cream
+execute as @s[tag=!ogvz.joined] if score &ogvz ogvz.game.phase matches 1..5 at @s run function ogvz:give/join_game_magma_cream
 
 # Kill the player if they rejoined as a dwarf during last stand or game over phase.
 execute as @s[tag=ogvz.dwarf] if score &ogvz ogvz.game.phase matches 4..5 run kill @s

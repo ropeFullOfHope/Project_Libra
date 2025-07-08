@@ -153,6 +153,7 @@ execute as @s[tag=ogvz.zombie.class.ocelot,scores={ogvz.rclick.active_id=6330}] 
 execute as @s[tag=ogvz.zombie.class.ocelot,scores={ogvz.rclick.active_id=6331}] at @s run function ogvz:zombie/ability/ocelot/mana_steal
 execute as @s[tag=ogvz.zombie.class.ocelot,scores={ogvz.rclick.active_id=6332}] at @s run function ogvz:zombie/ability/ocelot/disarm
 # Phantom (634x)
+execute as @s[tag=ogvz.zombie.class.phantom,scores={ogvz.rclick.active_id=6340}] at @s run function ogvz:zombie/ability/phantom/delirium
 # Snowman (635x)
 execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=6350}] at @s run function ogvz:zombie/ability/snowman/snowball_barrage
 execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=6351}] at @s run function ogvz:zombie/ability/snowman/freeze

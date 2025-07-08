@@ -1,6 +1,6 @@
 scoreboard objectives add temp.day_time dummy
 
-execute if score &ogvz ogvz.game.phase matches 1..6 run time add 1t
+execute if score &ogvz ogvz.game.phase matches 1..5 run time add 1t
 
 execute store result score &ogvz temp.day_time run time query daytime
 

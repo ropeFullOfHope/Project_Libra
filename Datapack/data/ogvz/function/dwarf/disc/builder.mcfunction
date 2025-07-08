@@ -132,7 +132,6 @@ give @s minecraft:stone_bricks 64
 give @s minecraft:crafting_table 1
 give @s minecraft:stonecutter 1
 give @s minecraft:torch 32
-give @s minecraft:bread 1
 execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \

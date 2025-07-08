@@ -38,6 +38,8 @@ execute as @s[tag=ogvz.admin,scores={ogvz.inventory.shrine_tape_measure=1..}] at
 execute as @s[tag=ogvz.zombie.class.zombie_variant,scores={ogvz.inventory.undying_bond=1..}] at @s run function ogvz:zombie/ability/zombie_variant/undying_bond
 # Chicken Nugget
 execute as @s[tag=ogvz.zombie.class.chicken_nugget,scores={ogvz.inventory.flutter=1..}] at @s run function ogvz:zombie/ability/chicken_nugget/flutter
+# Phantom
+execute as @s[tag=ogvz.zombie.class.phantom,scores={ogvz.phantom.used.firework_rocket=1..}] at @s run function ogvz:zombie/ability/phantom/firework_rocket
 # Piglin
 execute as @s[tag=ogvz.zombie.class.piglin,scores={ogvz.piglin.used.golden_pickaxe=1..}] at @s run function ogvz:zombie/ability/piglin/evolution
 # Aquatic zombies

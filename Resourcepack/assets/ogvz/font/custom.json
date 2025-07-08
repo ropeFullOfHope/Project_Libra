@@ -114,6 +114,13 @@
     },
     {
       "type": "bitmap",
+      "file": "ogvz:font/velocity.png",
+      "height": 9,
+      "ascent": 4,
+      "chars": ["\u1271"]
+    },
+    {
+      "type": "bitmap",
       "file": "ogvz:font/custom_bar/green/0.png",
       "height": 5,
       "ascent": 0,

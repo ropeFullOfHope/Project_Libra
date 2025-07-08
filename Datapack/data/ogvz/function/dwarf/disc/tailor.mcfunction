@@ -83,7 +83,6 @@ give @s minecraft:bone[ \
     {"text":"Craft into bone meal.","color":"blue"} \
   ] \
 ] 16
-give @s minecraft:bread 1
 execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \

@@ -28,7 +28,7 @@ scoreboard objectives add ogvz.game.shrine_health dummy
 # 1 - Build phase
 # 2 - Boss phase
 # 3 - Zombie phase
-# 4 - Last Dwarf phase
+# 4 - Last Stand phase
 # 5 - Game Over phase
 scoreboard objectives add ogvz.game.phase dummy
 # Selected boss scoreboard
@@ -170,6 +170,11 @@ scoreboard objectives add ogvz.chillager.ice_bridge.ice_melt.ticks dummy
 # Ocelot
 scoreboard objectives add ogvz.ocelot.mana_steal.cooldown.ticks dummy
 scoreboard objectives add ogvz.ocelot.mana_steal.cooldown.seconds dummy
+
+# Phantom
+scoreboard objectives add ogvz.phantom.used.firework_rocket minecraft.used:minecraft.firework_rocket
+scoreboard objectives add ogvz.phantom.delirium.cooldown.ticks dummy
+scoreboard objectives add ogvz.phantom.delirium.cooldown.seconds dummy
 
 # Snowman
 scoreboard objectives add ogvz.snowman.snowball_barrage.cooldown.ticks dummy

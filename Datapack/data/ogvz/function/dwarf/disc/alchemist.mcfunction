@@ -91,7 +91,6 @@ give @s minecraft:blaze_powder[ \
     {"text":"Use to fuel the brewing stand.","color":"blue"} \
   ] \
 ] 2
-give @s minecraft:bread 1
 execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \

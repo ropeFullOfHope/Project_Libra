@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:firework_rocket"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ogvz:temp"
+  }
+}

@@ -61,7 +61,6 @@ give @s minecraft:lapis_lazuli[ \
     {"text":"Use to enchant.","color":"blue"} \
   ] \
 ] 30
-give @s minecraft:bread 1
 execute as @s at @s run function ogvz:give/legendary_book
 
 tellraw @s [ \

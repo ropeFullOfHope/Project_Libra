@@ -15,7 +15,7 @@ execute store result bossbar ogvz:boss_timer value run scoreboard players get &o
 
 bossbar set ogvz:boss_timer visible true
 
-execute as @a at @s run function ogvz:give/magma_cream
+execute as @a at @s run function ogvz:give/join_game_magma_cream
 
 title @a subtitle [ \
   "", \
@@ -34,8 +34,8 @@ execute as @a at @s run playsound block.portal.trigger master @s ~ ~ ~ 0.7 1.5
 
 tellraw @a[tag=ogvz.admin] [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"dark_aqua"}, \
-  {"selector":"@s"}, \
+  {"text":"SETUP: ","bold":true,"color":"aqua"}, \
+  {"selector":"@s","color":"aqua"}, \
   {"text":" started the game!","color":"aqua"} \
 ]
 

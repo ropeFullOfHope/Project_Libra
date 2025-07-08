@@ -54,6 +54,9 @@ attribute @s minecraft:safe_fall_distance modifier remove ogvz.chillager.safe_fa
 attribute @s minecraft:movement_speed modifier remove ogvz.ocelot.movement_speed
 attribute @s minecraft:fall_damage_multiplier modifier remove ogvz.ocelot.fall_damage_multiplier
 
+# Phantom - base attributes
+attribute @s minecraft:max_health modifier remove ogvz.phantom.max_health
+
 # Wolf - base attributes
 attribute @s minecraft:movement_speed modifier remove ogvz.wolf.movement_speed
 attribute @s minecraft:jump_strength modifier remove ogvz.wolf.jump_strength

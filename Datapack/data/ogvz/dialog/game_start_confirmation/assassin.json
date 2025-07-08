@@ -50,7 +50,7 @@
       "label": "Start Game!",
       "action": {
         "type": "minecraft:run_command",
-        "command": "ogvz:admin/setup/game_start"
+        "command": "function ogvz:admin/setup/start_game"
       }
     },
     {

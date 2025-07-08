@@ -71,10 +71,10 @@ execute store result score @s temp.jump_strength run attribute @s minecraft:jump
 scoreboard players remove @s temp.jump_strength 4
 
 # Store the player's y position into storage.
-data modify storage ogvz:pos y set from entity @s Pos[1]
+data modify storage ogvz:vector y set from entity @s Pos[1]
 
 # Run a macro that resets the player's y motion.
-execute as @s run function ogvz:macro/teleport_y with storage ogvz:pos
+execute as @s run function ogvz:macro/teleport_y with storage ogvz:vector
 
 playsound minecraft:entity.breeze.jump player @a ~ ~ ~ 1 1
 
