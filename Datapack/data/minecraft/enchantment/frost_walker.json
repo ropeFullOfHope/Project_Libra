@@ -1,5 +1,5 @@
 {
-  "anvil_cost": 0,
+  "anvil_cost": 1,
   "description": {
     "translate": "enchantment.minecraft.frost_walker"
   },
@@ -96,7 +96,7 @@
   },
   "max_level": 2,
   "min_cost": {
-    "base": 50,
+    "base": 2147483647,
     "per_level_above_first": 0
   },
   "slots": [

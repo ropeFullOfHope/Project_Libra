@@ -1,5 +1,5 @@
 {
-  "anvil_cost": 0,
+  "anvil_cost": 1,
   "description": {
     "translate": "enchantment.minecraft.feather_falling"
   },
@@ -33,7 +33,7 @@
     ]
   },
   "max_cost": {
-    "base": 50,
+    "base": 2147483647,
     "per_level_above_first": 0
   },
   "max_level": 4,

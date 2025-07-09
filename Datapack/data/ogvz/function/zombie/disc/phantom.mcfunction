@@ -142,7 +142,7 @@ give @s minecraft:cooked_beef 64
 item replace entity @s weapon.offhand with minecraft:firework_rocket[ \
   minecraft:item_name="Reusable Firework Rocket", \
   minecraft:fireworks={flight_duration:1}, \
-  minecraft:use_cooldown={seconds:2}, \
+  minecraft:use_cooldown={seconds:2.55}, \
   minecraft:use_remainder={ \
     id:"minecraft:poisonous_potato", \
     components:{ \

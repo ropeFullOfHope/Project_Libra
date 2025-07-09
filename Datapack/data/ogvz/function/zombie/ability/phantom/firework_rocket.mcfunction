@@ -8,7 +8,7 @@ execute as @s[gamemode=creative] run return 0
 execute unless items entity @s weapon.* minecraft:poisonous_potato[minecraft:custom_data~{"firework_remainder":1}] run give @s minecraft:firework_rocket[ \
   minecraft:item_name="Reusable Firework Rocket", \
   minecraft:fireworks={flight_duration:1}, \
-  minecraft:use_cooldown={seconds:2}, \
+  minecraft:use_cooldown={seconds:2.55}, \
   minecraft:use_remainder={ \
     id:"minecraft:poisonous_potato", \
     components:{ \
@@ -25,7 +25,7 @@ execute unless items entity @s weapon.* minecraft:poisonous_potato[minecraft:cus
 execute if items entity @s weapon.mainhand minecraft:poisonous_potato[minecraft:custom_data~{"firework_remainder":1}] run item replace entity @s weapon.mainhand with minecraft:firework_rocket[ \
   minecraft:item_name="Reusable Firework Rocket", \
   minecraft:fireworks={flight_duration:1}, \
-  minecraft:use_cooldown={seconds:2}, \
+  minecraft:use_cooldown={seconds:2.55}, \
   minecraft:use_remainder={ \
     id:"minecraft:poisonous_potato", \
     components:{ \
@@ -42,7 +42,7 @@ execute if items entity @s weapon.mainhand minecraft:poisonous_potato[minecraft:
 execute if items entity @s weapon.offhand minecraft:poisonous_potato[minecraft:custom_data~{"firework_remainder":1}] run item replace entity @s weapon.offhand with minecraft:firework_rocket[ \
   minecraft:item_name="Reusable Firework Rocket", \
   minecraft:fireworks={flight_duration:1}, \
-  minecraft:use_cooldown={seconds:2}, \
+  minecraft:use_cooldown={seconds:2.55}, \
   minecraft:use_remainder={ \
     id:"minecraft:poisonous_potato", \
     components:{ \

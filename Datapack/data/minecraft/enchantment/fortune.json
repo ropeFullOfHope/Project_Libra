@@ -1,11 +1,11 @@
 {
-  "anvil_cost": 0,
+  "anvil_cost": 1,
   "description": {
     "translate": "enchantment.minecraft.fortune"
   },
   "exclusive_set": "#minecraft:exclusive_set/mining",
   "max_cost": {
-    "base": 50,
+    "base": 2147483647,
     "per_level_above_first": 0
   },
   "max_level": 3,
@@ -13,10 +13,10 @@
     "base": 14,
     "per_level_above_first": 6
   },
-  "primary_items": "#ogvz:enchantable/true_tools",
   "slots": [
     "mainhand"
   ],
   "supported_items": "#minecraft:enchantable/mining_loot",
+  "primary_items": "#ogvz:enchantable/true_tools",
   "weight": 2
 }

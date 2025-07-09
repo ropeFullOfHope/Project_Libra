@@ -1,5 +1,5 @@
 {
-  "anvil_cost": 0,
+  "anvil_cost": 1,
   "description": "Chilling Backstab",
   "max_cost": {
     "base": 0,
@@ -13,7 +13,7 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:swords",
+  "supported_items": "minecraft:music_disc_13",
   "weight": 1,
   "effects": {
     "minecraft:post_attack": [

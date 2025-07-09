@@ -1,5 +1,5 @@
 {
-  "anvil_cost": 0,
+  "anvil_cost": 1,
   "description": "Wolf Rally",
   "max_cost": {
     "base": 0,
