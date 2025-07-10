@@ -159,6 +159,10 @@ execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=6350}]
 execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.rclick.active_id=6351}] at @s run function ogvz:zombie/ability/snowman/freeze
 # Wolf (636x)
 execute as @s[tag=ogvz.zombie.class.wolf,scores={ogvz.rclick.active_id=6360}] at @s run function ogvz:zombie/ability/wolf/howl
+# Bee (637x)
+execute as @s[tag=ogvz.zombie.class.bee,scores={ogvz.rclick.active_id=6370}] at @s run function ogvz:zombie/ability/bee/honey
+execute as @s[tag=ogvz.zombie.class.bee,scores={ogvz.rclick.active_id=6371}] at @s run function ogvz:zombie/ability/bee/pollen_bomb
+execute as @s[tag=ogvz.zombie.class.bee,scores={ogvz.rclick.active_id=6372}] at @s run function ogvz:zombie/ability/bee/hover_toggle
 # Piglin (640x)
 # Silverfish (641x)
 execute as @s[tag=ogvz.zombie.class.silverfish,scores={ogvz.rclick.active_id=6410}] at @s run function ogvz:zombie/ability/silverfish/infest

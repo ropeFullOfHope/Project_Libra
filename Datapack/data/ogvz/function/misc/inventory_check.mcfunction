@@ -61,6 +61,8 @@ execute as @s[tag=ogvz.zombie.class.chicken_nugget] store result score @s ogvz.i
 # Phantom (634x)
 # Snowman (635x)
 # Wolf (636x)
+# Bee (637x)
+execute as @s[tag=ogvz.zombie.class.bee] store result score @s ogvz.inventory.hover run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data~{passive_id:6370,disabled:0}] 0
 # Piglin (640x)
 execute as @s[tag=ogvz.zombie.class.piglin] store result score @s ogvz.inventory.evolution run clear @s minecraft:carrot_on_a_stick[minecraft:custom_data~{passive_id:6400}] 0
 # Silverfish (641x)

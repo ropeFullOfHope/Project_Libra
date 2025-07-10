@@ -65,6 +65,7 @@ scoreboard objectives add ogvz.inventory.soulstone dummy
 scoreboard objectives add ogvz.inventory.undying_bond dummy
 scoreboard objectives add ogvz.inventory.sharing_grace dummy
 scoreboard objectives add ogvz.inventory.flutter dummy
+scoreboard objectives add ogvz.inventory.hover dummy
 scoreboard objectives add ogvz.inventory.evolution dummy
 
 ### Enchantment scoreboards
@@ -181,6 +182,14 @@ scoreboard objectives add ogvz.snowman.snowball_barrage.cooldown.ticks dummy
 scoreboard objectives add ogvz.snowman.snowball_barrage.cooldown.seconds dummy
 scoreboard objectives add ogvz.snowman.freeze.cooldown.ticks dummy
 scoreboard objectives add ogvz.snowman.freeze.cooldown.seconds dummy
+
+# Bee
+scoreboard objectives add ogvz.bee.honey.cooldown.ticks dummy
+scoreboard objectives add ogvz.bee.honey.cooldown.seconds dummy
+scoreboard objectives add ogvz.bee.pollen_bomb.cooldown.ticks dummy
+scoreboard objectives add ogvz.bee.pollen_bomb.cooldown.seconds dummy
+scoreboard objectives add ogvz.bee.pollen_bomb.heal_cooldown.ticks dummy
+scoreboard objectives add ogvz.bee.pollen_bomb.lifetime.ticks dummy
 
 # Piglin
 scoreboard objectives add ogvz.piglin.used.golden_pickaxe minecraft.used:minecraft.golden_pickaxe

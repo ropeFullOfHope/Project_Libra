@@ -203,6 +203,20 @@ execute as @s[scores={ogvz.snowman.freeze.cooldown.ticks=20..,ogvz.snowman.freez
 execute as @s[scores={ogvz.snowman.freeze.cooldown.ticks=20..,ogvz.snowman.freeze.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Freeze]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.snowman.freeze.cooldown.ticks=20..}] run scoreboard players set @s ogvz.snowman.freeze.cooldown.ticks 0
 
+# Bee - Honey
+execute as @s[scores={ogvz.bee.honey.cooldown.seconds=1..}] run scoreboard players add @s ogvz.bee.honey.cooldown.ticks 1
+execute as @s[scores={ogvz.bee.honey.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.bee.honey.cooldown.seconds 1
+execute as @s[scores={ogvz.bee.honey.cooldown.ticks=20..,ogvz.bee.honey.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.bee.honey.cooldown.ticks=20..,ogvz.bee.honey.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Honey]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.bee.honey.cooldown.ticks=20..}] run scoreboard players set @s ogvz.bee.honey.cooldown.ticks 0
+
+# Bee - Pollen Bomb
+execute as @s[scores={ogvz.bee.pollen_bomb.cooldown.seconds=1..}] run scoreboard players add @s ogvz.bee.pollen_bomb.cooldown.ticks 1
+execute as @s[scores={ogvz.bee.pollen_bomb.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.bee.pollen_bomb.cooldown.seconds 1
+execute as @s[scores={ogvz.bee.pollen_bomb.cooldown.ticks=20..,ogvz.bee.pollen_bomb.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.bee.pollen_bomb.cooldown.ticks=20..,ogvz.bee.pollen_bomb.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Pollen Bomb]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.bee.pollen_bomb.cooldown.ticks=20..}] run scoreboard players set @s ogvz.bee.pollen_bomb.cooldown.ticks 0
+
 # Silverfish - Roar
 execute as @s[scores={ogvz.silverfish.roar.cooldown.seconds=1..}] run scoreboard players add @s ogvz.silverfish.roar.cooldown.ticks 1
 execute as @s[scores={ogvz.silverfish.roar.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.silverfish.roar.cooldown.seconds 1

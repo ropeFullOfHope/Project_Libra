@@ -62,6 +62,15 @@ attribute @s minecraft:movement_speed modifier remove ogvz.wolf.movement_speed
 attribute @s minecraft:jump_strength modifier remove ogvz.wolf.jump_strength
 attribute @s minecraft:safe_fall_distance modifier remove ogvz.wolf.safe_fall_distance
 
+# Bee - base attributes
+attribute @s minecraft:max_health modifier remove ogvz.bee.max_health
+attribute @s minecraft:fall_damage_multiplier modifier remove ogvz.bee.fall_damage_multiplier
+
+# Bee - hover attributes
+attribute @s minecraft:gravity base reset
+attribute @s minecraft:gravity modifier remove ogvz.bee.hover.ascend.gravity
+attribute @s minecraft:gravity modifier remove ogvz.bee.hover.descend.gravity
+
 # Piglin - base attributes
 attribute @s minecraft:movement_speed modifier remove ogvz.piglin.movement_speed
 

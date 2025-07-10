@@ -97,6 +97,11 @@ scoreboard players set @s ogvz.snowman.snowball_barrage.cooldown.seconds 0
 scoreboard players set @s ogvz.snowman.freeze.cooldown.ticks 0
 scoreboard players set @s ogvz.snowman.freeze.cooldown.seconds 0
 
+scoreboard players set @s ogvz.bee.honey.cooldown.ticks 0
+scoreboard players set @s ogvz.bee.honey.cooldown.seconds 0
+scoreboard players set @s ogvz.bee.pollen_bomb.cooldown.ticks 0
+scoreboard players set @s ogvz.bee.pollen_bomb.cooldown.seconds 0
+
 scoreboard players set @s ogvz.piglin.used.golden_pickaxe 0
 scoreboard players set @s ogvz.piglin.evolution.progress 0
 
