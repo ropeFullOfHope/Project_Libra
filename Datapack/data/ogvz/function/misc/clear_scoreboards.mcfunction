@@ -110,6 +110,14 @@ scoreboard players set @s ogvz.silverfish.roar.cooldown.seconds 0
 scoreboard players set @s ogvz.silverfish.silverfish_egg.count 0
 scoreboard players set @s ogvz.silverfish.silverfish_egg.warmup.ticks 0
 
+scoreboard players set @s ogvz.enderman.teleport.cooldown.ticks 0
+scoreboard players set @s ogvz.enderman.teleport.cooldown.seconds 0
+scoreboard players set @s ogvz.enderman.create_portal.cooldown.ticks 0
+scoreboard players set @s ogvz.enderman.create_portal.cooldown.seconds 0
+scoreboard players set @s ogvz.enderman.create_portal.warmup.ticks 0
+scoreboard players set @s ogvz.enderman.create_portal.warmup.seconds 0
+scoreboard players set @s ogvz.enderman.create_portal.cutscene.ticks 0
+
 scoreboard players set @s ogvz.golem.fissure.cooldown.ticks 0
 scoreboard players set @s ogvz.golem.fissure.cooldown.seconds 0
 scoreboard players set @s ogvz.golem.leap.cooldown.ticks 0

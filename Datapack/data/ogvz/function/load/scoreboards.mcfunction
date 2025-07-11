@@ -81,7 +81,7 @@ scoreboard objectives add ogvz.misc.food food
 scoreboard objectives add ogvz.misc.natural_regeneration_timer dummy
 scoreboard objectives add ogvz.misc.leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add ogvz.misc.custom_bar_hide.ticks dummy
-scoreboard objectives add ogvz.air_toggle dummy
+scoreboard objectives add ogvz.misc.air_toggle dummy
 
 ### Marker scoreboards
 scoreboard objectives add ogvz.marker.glowing_shell.duration.ticks dummy
@@ -91,8 +91,6 @@ scoreboard objectives add ogvz.marker.glowing_shell.duration.seconds dummy
 # All dwarves
 scoreboard objectives add ogvz.dwarf.mana_buildup.mana dummy
 scoreboard objectives add ogvz.dwarf.mana_buildup.micromana dummy
-scoreboard objectives add ogvz.dwarf.magic_health_potion.cooldown.ticks dummy
-scoreboard objectives add ogvz.dwarf.magic_health_potion.cooldown.seconds dummy
 scoreboard objectives add ogvz.dwarf.pearl_rod.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarf.pearl_rod.cooldown.seconds dummy
 scoreboard objectives add ogvz.dwarf.pearl_rod.warmup.ticks dummy
@@ -201,6 +199,15 @@ scoreboard objectives add ogvz.silverfish.roar.cooldown.seconds dummy
 scoreboard objectives add ogvz.silverfish.silverfish_egg.count dummy
 scoreboard objectives add ogvz.silverfish.silverfish_egg.warmup.ticks dummy
 scoreboard objectives add ogvz.silverfish.lifetime.ticks dummy
+
+# Enderman
+scoreboard objectives add ogvz.enderman.teleport.cooldown.ticks dummy
+scoreboard objectives add ogvz.enderman.teleport.cooldown.seconds dummy
+scoreboard objectives add ogvz.enderman.create_portal.cooldown.ticks dummy
+scoreboard objectives add ogvz.enderman.create_portal.cooldown.seconds dummy
+scoreboard objectives add ogvz.enderman.create_portal.warmup.ticks dummy
+scoreboard objectives add ogvz.enderman.create_portal.warmup.seconds dummy
+scoreboard objectives add ogvz.enderman.create_portal.cutscene.ticks dummy
 
 # Golem
 scoreboard objectives add ogvz.golem.fissure.cooldown.ticks dummy

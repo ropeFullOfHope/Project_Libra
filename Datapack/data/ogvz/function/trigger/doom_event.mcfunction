@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Called By: ogvz:tick/triggers
 # File Name: doom_event
-# Function Name: ogvz:triggers/doom_event
+# Function Name: ogvz:trigger/doom_event
 # File Purpose: Shows the doom event selected for the current game.
 # Created By: ropeFullOfHope
 # 

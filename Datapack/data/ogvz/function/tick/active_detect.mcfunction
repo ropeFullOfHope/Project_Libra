@@ -169,6 +169,8 @@ execute as @s[tag=ogvz.zombie.class.silverfish,scores={ogvz.rclick.active_id=641
 execute as @s[tag=ogvz.zombie.class.silverfish,scores={ogvz.rclick.active_id=6411}] at @s run function ogvz:zombie/ability/silverfish/roar
 # Hoglin (650x)
 # Enderman (660x)
+execute as @s[tag=ogvz.zombie.class.enderman,scores={ogvz.rclick.active_id=6600}] at @s run function ogvz:zombie/ability/enderman/teleport
+execute as @s[tag=ogvz.zombie.class.enderman,scores={ogvz.rclick.active_id=6601}] at @s run function ogvz:zombie/ability/enderman/create_portal
 # Golem (661x)
 execute as @s[tag=ogvz.zombie.class.golem,scores={ogvz.rclick.active_id=6610}] at @s run function ogvz:zombie/ability/golem/fissure
 execute as @s[tag=ogvz.zombie.class.golem,scores={ogvz.rclick.active_id=6611}] at @s run function ogvz:zombie/ability/golem/leap

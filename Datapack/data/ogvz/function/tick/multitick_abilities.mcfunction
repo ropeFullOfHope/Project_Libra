@@ -44,3 +44,9 @@ execute as @a[tag=ogvz.zombie.class.silverfish,scores={ogvz.silverfish.silverfis
 # Silverfish - AI Silverfish
 execute as @e[type=minecraft:silverfish,tag=!ogvz.silverfish.processed] at @s run function ogvz:zombie/ability/silverfish/ai_silverfish_init
 execute as @e[type=minecraft:silverfish,tag=ogvz.silverfish.processed] at @s run function ogvz:zombie/ability/silverfish/ai_silverfish_main
+
+# Enderman - Create Portal
+execute as @a[tag=ogvz.zombie.class.enderman.creating_portal.above,scores={ogvz.enderman.create_portal.warmup.seconds=..0}] at @s run function ogvz:zombie/ability/enderman/create_portal_create_above
+execute as @a[tag=ogvz.zombie.class.enderman.creating_portal.below,scores={ogvz.enderman.create_portal.warmup.seconds=..0}] at @s run function ogvz:zombie/ability/enderman/create_portal_create_below
+execute as @a[tag=ogvz.zombie.class.enderman.create_portal.cutscene] at @s at @n[type=minecraft:marker,tag=ogvz.marker.enderman_portal] run function ogvz:zombie/ability/enderman/create_portal_cutscene
+

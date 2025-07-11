@@ -68,6 +68,11 @@ tag @s remove ogvz.zombie.class.golem
 
 tag @s remove ogvz.zombie.class.chillager.invisible
 
+tag @s remove ogvz.zombie.class.enderman.creating_portal
+tag @s remove ogvz.zombie.class.enderman.creating_portal.above
+tag @s remove ogvz.zombie.class.enderman.creating_portal.below
+tag @s remove ogvz.zombie.class.enderman.create_portal.cutscene
+
 tag @s remove ogvz.zombie.class.miniboss
 tag @s remove ogvz.zombie.class.miniboss.ghast
 tag @s remove ogvz.zombie.class.miniboss.ravager

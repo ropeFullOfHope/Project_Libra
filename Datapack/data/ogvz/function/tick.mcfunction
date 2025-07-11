@@ -58,3 +58,4 @@ execute as @a at @s run function ogvz:tick/frozen_custom_effect
 execute as @a at @s run function ogvz:tick/dolphins_grace_nerf
 execute as @a at @s run function ogvz:tick/natural_regeneration
 function ogvz:tick/particles
+execute as @e[scores={ogvz.misc.air_toggle=-2147483648..2147483647}] at @s run function ogvz:tick/air_toggle

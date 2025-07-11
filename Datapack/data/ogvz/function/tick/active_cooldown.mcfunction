@@ -225,6 +225,25 @@ execute as @s[scores={ogvz.silverfish.roar.cooldown.ticks=20..,ogvz.silverfish.r
 execute as @s[scores={ogvz.silverfish.roar.cooldown.ticks=20..,ogvz.silverfish.roar.cooldown.seconds=0}] run scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 execute as @s[scores={ogvz.silverfish.roar.cooldown.ticks=20..}] run scoreboard players set @s ogvz.silverfish.roar.cooldown.ticks 0
 
+# Enderman - Teleport
+execute as @s[scores={ogvz.enderman.teleport.cooldown.seconds=1..}] run scoreboard players add @s ogvz.enderman.teleport.cooldown.ticks 1
+execute as @s[scores={ogvz.enderman.teleport.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.enderman.teleport.cooldown.seconds 1
+execute as @s[scores={ogvz.enderman.teleport.cooldown.ticks=20..,ogvz.enderman.teleport.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.enderman.teleport.cooldown.ticks=20..,ogvz.enderman.teleport.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Teleport]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.enderman.teleport.cooldown.ticks=20..}] run scoreboard players set @s ogvz.enderman.teleport.cooldown.ticks 0
+
+# Enderman - Create Portal (cooldown)
+execute as @s[scores={ogvz.enderman.create_portal.cooldown.seconds=1..}] run scoreboard players add @s ogvz.enderman.create_portal.cooldown.ticks 1
+execute as @s[scores={ogvz.enderman.create_portal.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.enderman.create_portal.cooldown.seconds 1
+execute as @s[scores={ogvz.enderman.create_portal.cooldown.ticks=20..,ogvz.enderman.create_portal.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.enderman.create_portal.cooldown.ticks=20..,ogvz.enderman.create_portal.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Create Portal]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.enderman.create_portal.cooldown.ticks=20..}] run scoreboard players set @s ogvz.enderman.create_portal.cooldown.ticks 0
+
+# Enderman - Create Portal (warmup)
+execute as @s[scores={ogvz.enderman.create_portal.warmup.seconds=1..}] run scoreboard players add @s ogvz.enderman.create_portal.warmup.ticks 1
+execute as @s[scores={ogvz.enderman.create_portal.warmup.ticks=20..}] run scoreboard players remove @s ogvz.enderman.create_portal.warmup.seconds 1
+execute as @s[scores={ogvz.enderman.create_portal.warmup.ticks=20..}] run scoreboard players set @s ogvz.enderman.create_portal.warmup.ticks 0
+
 # Golem - Fissure
 execute as @s[scores={ogvz.golem.fissure.cooldown.seconds=1..}] run scoreboard players add @s ogvz.golem.fissure.cooldown.ticks 1
 execute as @s[scores={ogvz.golem.fissure.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.golem.fissure.cooldown.seconds 1
