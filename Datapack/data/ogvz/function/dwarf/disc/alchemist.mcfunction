@@ -56,7 +56,6 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_name={"text":"Water Wand","color":"aqua"}, \
   minecraft:lore=[ \
     {"text":"Fills cauldrons with water.","color":"blue"}, \
-    {"text":"5 second cooldown","italic":false,"color":"red"}, \
     {"text":"Active Item","italic":false,"color":"green"} \
   ], \
   minecraft:tooltip_display={ \
@@ -91,7 +90,7 @@ give @s minecraft:blaze_powder[ \
     {"text":"Use to fuel the brewing stand.","color":"blue"} \
   ] \
 ] 2
-execute as @s at @s run function ogvz:give/legendary_book
+execute as @s at @s run function ogvz:give/other/legendary_book
 
 tellraw @s [ \
   "", \

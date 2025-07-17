@@ -22,15 +22,13 @@ title @s actionbar [ \
 
 tag @s remove ogvz.mana.teleporting
 
-attribute @s minecraft:movement_speed modifier remove ogvz.teleporting.movement_speed
-attribute @s minecraft:jump_strength modifier remove ogvz.teleporting.jump_strength
-
-playsound minecraft:entity.zombie_villager.converted player @a ~ ~ ~ 1 2
-
-particle minecraft:reverse_portal ~ ~1 ~ 0.25 0.5 0.25 0.1 50
+attribute @s minecraft:movement_speed modifier remove ogvz.pearl_rod.teleporting.movement_speed
+attribute @s minecraft:jump_strength modifier remove ogvz.pearl_rod.teleporting.jump_strength
 
 execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine,limit=1,sort=nearest] run tp @s ~ ~2 ~
 
+playsound minecraft:entity.zombie_villager.converted player @a ~ ~ ~ 1 2
 execute at @s run playsound minecraft:entity.zombie_villager.converted player @a ~ ~ ~ 1 2
 
+particle minecraft:reverse_portal ~ ~1 ~ 0.25 0.5 0.25 0.1 50
 execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.25 0.5 0.25 0.1 50

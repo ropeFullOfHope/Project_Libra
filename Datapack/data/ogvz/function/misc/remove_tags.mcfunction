@@ -11,7 +11,7 @@
 #
 # Credit to:
 #
-# Comments: Exceptions are: ogvz.ready, ogvz.joined, ogvz.dead, ogvz.attribute tags.
+# Comments: Exceptions are: ogvz.ready, ogvz.joined_game, ogvz.dead, ogvz.attribute tags.
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 tag @s remove ogvz.dwarf
@@ -71,7 +71,7 @@ tag @s remove ogvz.zombie.class.chillager.invisible
 tag @s remove ogvz.zombie.class.enderman.creating_portal
 tag @s remove ogvz.zombie.class.enderman.creating_portal.above
 tag @s remove ogvz.zombie.class.enderman.creating_portal.below
-tag @s remove ogvz.zombie.class.enderman.create_portal.cutscene
+tag @s remove ogvz.zombie.class.enderman.kill
 
 tag @s remove ogvz.zombie.class.miniboss
 tag @s remove ogvz.zombie.class.miniboss.ghast
@@ -87,6 +87,8 @@ tag @s remove ogvz.zombie.class.boss.elder_guardian
 tag @s remove ogvz.zombie.suicide_pill
 
 tag @s remove ogvz.zombie.aquatic
+
+tag @s remove ogvz.zombie.teleporting
 
 tag @s remove ogvz.zombie.element
 tag @s remove ogvz.zombie.element.fire

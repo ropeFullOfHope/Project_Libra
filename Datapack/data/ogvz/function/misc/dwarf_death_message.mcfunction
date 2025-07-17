@@ -17,7 +17,7 @@
 # Instead of removing the ogvz.dwarf tag and recalculating the amount of dwarves, the dwarf count is reduced by 1.
 execute as @s run scoreboard players remove Dwarves ogvz.game.player_count 1
 
-# "===== skull ====="
+# =====( [skull] )=====
 execute as @s run tellraw @a [ \
   "", \
   {"text":"\u1100\u1101\u1102","font":"ogvz:custom"} \

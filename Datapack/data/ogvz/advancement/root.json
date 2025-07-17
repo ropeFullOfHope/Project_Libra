@@ -38,7 +38,7 @@
     "description": {
       "text": ""
     },
-    "background": "minecraft:textures/block/stone_bricks.png",
+    "background": "minecraft:block/stone_bricks",
     "show_toast": false,
     "announce_to_chat": false
   },

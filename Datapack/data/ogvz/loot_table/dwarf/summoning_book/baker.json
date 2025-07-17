@@ -99,7 +99,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.2
+          "chance": 0.5
         }
       ]
     },
@@ -150,7 +150,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.2
+          "chance": 0.5
         }
       ]
     },
@@ -216,7 +216,10 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 3
+              "count": {
+                "min": 2,
+                "max": 3
+              }
             },
             {
               "function": "minecraft:set_lore",

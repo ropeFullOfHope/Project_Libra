@@ -14,7 +14,7 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-advancement revoke @s only ogvz:misc/player_hurt_while_teleporting
+advancement revoke @s only ogvz:misc/player_hurt_while_teleporting_pearl_rod
 
 title @s actionbar [ \
   "", \
@@ -31,7 +31,7 @@ tag @s remove ogvz.mana.teleporting
 scoreboard players set @s ogvz.dwarf.pearl_rod.warmup.seconds 0
 scoreboard players set @s ogvz.dwarf.pearl_rod.warmup.ticks 0
 
-attribute @s minecraft:movement_speed modifier remove ogvz.teleporting.movement_speed
-attribute @s minecraft:jump_strength modifier remove ogvz.teleporting.jump_strength
+attribute @s minecraft:movement_speed modifier remove ogvz.pearl_rod.teleporting.movement_speed
+attribute @s minecraft:jump_strength modifier remove ogvz.pearl_rod.teleporting.jump_strength
 
 effect clear @s minecraft:nausea

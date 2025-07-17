@@ -18,10 +18,10 @@ tag @s remove ogvz.dead
 
 ### Player who hasn't joined the game yet.
 # Reapply the effects.
-effect give @s[tag=!ogvz.joined] minecraft:resistance infinite 4 true
-effect give @s[tag=!ogvz.joined] minecraft:saturation infinite 0 true
+effect give @s[tag=!ogvz.joined_game] minecraft:resistance infinite 4 true
+effect give @s[tag=!ogvz.joined_game] minecraft:saturation infinite 0 true
 # If the game is in progress/over, give them a magma cream.
-execute if score &ogvz ogvz.game.phase matches 1..5 as @s[tag=!ogvz.joined] at @s run function ogvz:give/join_game_magma_cream
+execute if score &ogvz ogvz.game.phase matches 1..5 as @s[tag=!ogvz.joined_game] at @s run function ogvz:give/join_game_magma_cream
 
 ### Zombie player.
 # Apply effects to them.

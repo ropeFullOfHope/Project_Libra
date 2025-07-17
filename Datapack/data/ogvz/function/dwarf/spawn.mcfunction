@@ -32,12 +32,11 @@ team join d1DWARF @s
 tag @s add ogvz.dwarf
 
 ### Give discs to player.
-# 100%
+# 100% - Builder class
 execute as @s at @s run function ogvz:give/disc/dwarf/builder
-
-# 50%
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarf/blacksmith
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarf/tailor
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarf/baker
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarf/alchemist
-execute as @s[predicate=ogvz:50_chance] at @s run function ogvz:give/disc/dwarf/enchanter
+#  50% - Non-Builder classes
+execute if predicate {condition:"minecraft:random_chance",chance:0.5} as @s at @s run function ogvz:give/disc/dwarf/blacksmith
+execute if predicate {condition:"minecraft:random_chance",chance:0.5} as @s at @s run function ogvz:give/disc/dwarf/tailor
+execute if predicate {condition:"minecraft:random_chance",chance:0.5} as @s at @s run function ogvz:give/disc/dwarf/baker
+execute if predicate {condition:"minecraft:random_chance",chance:0.5} as @s at @s run function ogvz:give/disc/dwarf/alchemist
+execute if predicate {condition:"minecraft:random_chance",chance:0.5} as @s at @s run function ogvz:give/disc/dwarf/enchanter

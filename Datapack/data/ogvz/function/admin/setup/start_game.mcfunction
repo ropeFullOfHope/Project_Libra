@@ -8,6 +8,7 @@ kill @e[type=minecraft:block_display,tag=ogvz.block_display.lobby]
 kill @e[type=minecraft:block_display,tag=ogvz.block_display.shrine]
 kill @e[type=minecraft:block_display,tag=ogvz.block_display.zombie_spawn]
 kill @e[type=minecraft:block_display,tag=ogvz.block_display.boss_spawn]
+kill @e[type=minecraft:text_display,tag=ogvz.text_display.zombie_spawn]
 
 scoreboard players set &ogvz ogvz.game.timer 0
 
@@ -15,7 +16,7 @@ execute store result bossbar ogvz:boss_timer value run scoreboard players get &o
 
 bossbar set ogvz:boss_timer visible true
 
-execute as @a at @s run function ogvz:give/join_game_magma_cream
+execute as @a at @s run function ogvz:give/other/join_game_magma_cream
 
 title @a subtitle [ \
   "", \

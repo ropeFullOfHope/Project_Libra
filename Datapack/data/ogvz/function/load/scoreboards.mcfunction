@@ -102,10 +102,6 @@ scoreboard objectives add ogvz.dwarf.oceans_pearl_buff.cooldown.seconds dummy
 scoreboard objectives add ogvz.builder.summoning_book.cooldown.ticks dummy
 scoreboard objectives add ogvz.builder.summoning_book.cooldown.seconds dummy
 
-# Alchemist
-scoreboard objectives add ogvz.alchemist.water_wand.cooldown.ticks dummy
-scoreboard objectives add ogvz.alchemist.water_wand.cooldown.seconds dummy
-
 ### Dwarf hero scoreboards
 # Dragon Warrior
 scoreboard objectives add ogvz.dragon_warrior.dragon_scale.cooldown.ticks dummy
@@ -136,6 +132,12 @@ scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.seconds dummy
 
 ### Zombie scoreboards
+# All zombies
+scoreboard objectives add ogvz.zombie.ender_eye.cooldown.ticks dummy
+scoreboard objectives add ogvz.zombie.ender_eye.cooldown.seconds dummy
+scoreboard objectives add ogvz.zombie.ender_eye.warmup.ticks dummy
+scoreboard objectives add ogvz.zombie.ender_eye.warmup.seconds dummy
+
 # Guardian
 scoreboard objectives add ogvz.guardian.beam.cooldown.ticks dummy
 scoreboard objectives add ogvz.guardian.beam.cooldown.seconds dummy
@@ -207,7 +209,7 @@ scoreboard objectives add ogvz.enderman.create_portal.cooldown.ticks dummy
 scoreboard objectives add ogvz.enderman.create_portal.cooldown.seconds dummy
 scoreboard objectives add ogvz.enderman.create_portal.warmup.ticks dummy
 scoreboard objectives add ogvz.enderman.create_portal.warmup.seconds dummy
-scoreboard objectives add ogvz.enderman.create_portal.cutscene.ticks dummy
+scoreboard objectives add ogvz.enderman.ender_portal.animation.ticks dummy
 
 # Golem
 scoreboard objectives add ogvz.golem.fissure.cooldown.ticks dummy

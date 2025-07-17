@@ -14,18 +14,6 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-execute if entity @s[scores={ogvz.alchemist.water_wand.cooldown.seconds=1..}] run title @s actionbar [ \
-  "", \
-  {"text":"[Water Wand]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.alchemist.water_wand.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
-]
-execute if entity @s[scores={ogvz.alchemist.water_wand.cooldown.seconds=1..}] run return 0
-
-# Set a 5 second cooldown.
-scoreboard players set @s ogvz.alchemist.water_wand.cooldown.seconds 5
-
 title @s actionbar [ \
   "", \
   {"text":"[Water Wand]","bold":true,"color":"green"}, \

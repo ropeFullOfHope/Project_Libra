@@ -118,3 +118,6 @@ give @s minecraft:bow[ \
 give @s minecraft:vine 64
 give @s minecraft:cooked_beef 64
 give @s minecraft:arrow 1
+
+# Give the player the "Ender Eye" ability if the ender portal exists.
+execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s at @s run function ogvz:give/other/teleport_to_ender_portal_ender_eye

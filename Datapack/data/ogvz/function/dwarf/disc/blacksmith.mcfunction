@@ -39,7 +39,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_name={"text":"Summoning Book","color":"green"}, \
   minecraft:lore=[ \
     {"text":"Conjures weapons and tools.","color":"blue"}, \
-    {"text":"Requires 5 Clocks","italic":false,"color":"red"}, \
+    {"text":"Requires 4 Clocks","italic":false,"color":"red"}, \
     {"text":"Requires 30 mana","italic":false,"color":"red"}, \
     {"text":"Active Item","italic":false,"color":"green"} \
   ], \
@@ -49,29 +49,76 @@ give @s minecraft:carrot_on_a_stick[ \
     ] \
   } \
 ]
-give @s iron_pickaxe[ \
+give @s minecraft:iron_pickaxe[ \
+  minecraft:item_name="Iron Paxel", \
   minecraft:item_model="ogvz:iron_paxel", \
-  minecraft:item_name={"text":"Iron Paxel"}, \
-  minecraft:lore=[ \
-    {"text":" "}, \
-    {"color":"gray","italic":false,"text":"When in Main Hand:"}, \
-    {"color":"dark_green","italic":false,"text":" 4 Attack Damage"}, \
-    {"color":"dark_green","italic":false,"text":" 1.2 Attack Speed"}, \
-    {"color":"dark_green","italic":false,"text":" 3 Attack Reach"} \
+  minecraft:attribute_modifiers=[ \
+    { \
+      id:"minecraft:base_attack_damage", \
+      type:"minecraft:attack_damage", \
+      amount:3.0, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_attack_speed", \
+      type:"minecraft:attack_speed", \
+      amount:-2.8, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_entity_interaction_range", \
+      type:"minecraft:entity_interaction_range", \
+      amount:0.0, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" 3 Attack Reach",color:"dark_green"} \
+      } \
+    } \
   ], \
   minecraft:tool={ \
-    default_mining_speed:6, \
+    damage_per_block:1, \
     rules:[ \
-      {correct_for_drops:true,blocks:"#mineable/pickaxe"}, \
-      {correct_for_drops:true,blocks:"#mineable/axe"}, \
-      {correct_for_drops:true,blocks:"#mineable/shovel"}, \
-      {correct_for_drops:true,blocks:"#mineable/hoe"} \
-    ] \
-  }, \
-  minecraft:tooltip_display={ \
-    hidden_components:[ \
-      "minecraft:unbreakable", \
-      "minecraft:attribute_modifiers" \
+      { \
+        blocks:"#minecraft:incorrect_for_diamond_tool", \
+        correct_for_drops:false \
+      }, \
+      { \
+        blocks:"#minecraft:sword_instantly_mines", \
+        speed:3.4028235e+38 \
+      }, \
+      { \
+        blocks:"minecraft:cobweb", \
+        correct_for_drops:true, \
+        speed:15.0 \
+      }, \
+      { \
+        blocks:"#minecraft:mineable/pickaxe", \
+        correct_for_drops:true, \
+        speed:6.0 \
+      }, \
+      { \
+        blocks:"#minecraft:mineable/shovel", \
+        correct_for_drops:true, \
+        speed:6.0 \
+      }, \
+      { \
+        blocks:"#minecraft:mineable/axe", \
+        correct_for_drops:true, \
+        speed:6.0 \
+      }, \
+      { \
+        blocks:"#minecraft:mineable/hoe", \
+        correct_for_drops:true, \
+        speed:6.0 \
+      }, \
+      { \
+        blocks:"#minecraft:sword_efficient", \
+        speed:1.5 \
+      } \
     ] \
   } \
 ]
@@ -88,19 +135,19 @@ give @s minecraft:gold_ore[ \
     {"text":"Give to the blacksmith.","color":"blue"}, \
     {"text":"Smelt into gold ingots.","color":"blue"} \
   ] \
-] 80
+] 64
 give @s minecraft:redstone_ore[ \
   minecraft:lore=[ \
     {"text":"Mine to get redstone.","color":"blue"} \
   ] \
-] 5
+] 4
 give @s minecraft:coal[ \
   minecraft:lore=[ \
     {"text":"Share with baker.","color":"blue"}, \
     {"text":"Use to fuel the furnace.","color":"blue"} \
   ] \
-] 10
-execute as @s at @s run function ogvz:give/legendary_book
+] 8
+execute as @s at @s run function ogvz:give/other/legendary_book
 
 tellraw @s [ \
   "", \

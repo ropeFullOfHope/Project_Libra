@@ -29,9 +29,6 @@ scoreboard players set @s ogvz.dwarf.mana_buildup.micromana 0
 scoreboard players set @s ogvz.builder.summoning_book.cooldown.ticks 0
 scoreboard players set @s ogvz.builder.summoning_book.cooldown.seconds 0
 
-scoreboard players set @s ogvz.alchemist.water_wand.cooldown.ticks 0
-scoreboard players set @s ogvz.alchemist.water_wand.cooldown.seconds 0
-
 scoreboard players set @s ogvz.dwarf.magic_health_potion.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarf.magic_health_potion.cooldown.seconds 0
 scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.ticks 0
@@ -116,7 +113,10 @@ scoreboard players set @s ogvz.enderman.create_portal.cooldown.ticks 0
 scoreboard players set @s ogvz.enderman.create_portal.cooldown.seconds 0
 scoreboard players set @s ogvz.enderman.create_portal.warmup.ticks 0
 scoreboard players set @s ogvz.enderman.create_portal.warmup.seconds 0
-scoreboard players set @s ogvz.enderman.create_portal.cutscene.ticks 0
+scoreboard players set @s ogvz.zombie.ender_eye.cooldown.ticks 0
+scoreboard players set @s ogvz.zombie.ender_eye.cooldown.seconds 0
+scoreboard players set @s ogvz.zombie.ender_eye.warmup.ticks 0
+scoreboard players set @s ogvz.zombie.ender_eye.warmup.seconds 0
 
 scoreboard players set @s ogvz.golem.fissure.cooldown.ticks 0
 scoreboard players set @s ogvz.golem.fissure.cooldown.seconds 0

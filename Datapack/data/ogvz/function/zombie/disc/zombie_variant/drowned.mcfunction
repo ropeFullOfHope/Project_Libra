@@ -116,45 +116,53 @@ item replace entity @s hotbar.8 with minecraft:shield[ \
 
 # Gives drowned all their items.
 give @s minecraft:trident[ \
-  minecraft:item_name={"text":"Worn Trident","color":"aqua"}, \
-  minecraft:unbreakable={}, \
+  minecraft:item_name="Worn Trident", \
+  minecraft:rarity="common", \
   minecraft:enchantments={ \
     "minecraft:riptide":1 \
   }, \
-  minecraft:lore=[ \
-    {"text":" "}, \
-    {"text":"When in Main Hand:","color":"gray","italic":false}, \
-    {"text":" 7 Attack Damage","color":"dark_green","italic":false}, \
-    {"text":" 1.2 Attack Speed","color":"dark_green","italic":false}, \
-    {"text":" 3.5 Attack Reach","color":"dark_green","italic":false} \
-  ], \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:attack_damage",amount:6.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-    {type:"minecraft:attack_speed",amount:-2.8,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-    {type:"minecraft:entity_interaction_range",amount:0.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+    { \
+      id:"minecraft:base_attack_damage", \
+      type:"minecraft:attack_damage", \
+      amount:6.0, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_attack_speed", \
+      type:"minecraft:attack_speed", \
+      amount:-2.8, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_entity_interaction_range", \
+      type:"minecraft:entity_interaction_range", \
+      amount:0.5, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" 3.5 Attack Reach",color:"dark_green"} \
+      } \
+    } \
   ], \
-  minecraft:tooltip_display={ \
-    hidden_components:[ \
-      "minecraft:attribute_modifiers" \
-    ] \
-  } \
-]
-give @s minecraft:stone_axe[ \
-  minecraft:unbreakable={}, \
-  minecraft:lore=[ \
-    {"text":" "}, \
-    {"text":"When in Main Hand:","color":"gray","italic":false}, \
-    {"text":" 6 Attack Damage","color":"dark_green","italic":false}, \
-    {"text":" 1 Attack Speed","color":"dark_green","italic":false}, \
-    {"text":" 3 Attack Reach","color":"dark_green","italic":false} \
-  ], \
-  minecraft:attribute_modifiers=[ \
-    {type:"minecraft:attack_damage",amount:5.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-    {type:"minecraft:attack_speed",amount:-3.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
-  ], \
-  minecraft:tooltip_display={ \
-    hidden_components:[ \
-      "minecraft:attribute_modifiers" \
+  minecraft:max_damage=1561, \
+  minecraft:enchantable={value:10}, \
+  minecraft:weapon={ \
+    item_damage_per_attack:1, \
+    disable_blocking_for_seconds:3.5 \
+  }, \
+  minecraft:tool={ \
+    can_destroy_blocks_in_creative:false, \
+    damage_per_block:2, \
+    rules:[ \
+      { \
+        blocks:"minecraft:cobweb", \
+        correct_for_drops:true, \
+        speed:15.0 \
+      } \
     ] \
   } \
 ]
@@ -191,3 +199,6 @@ give @s minecraft:carrot_on_a_stick[ \
     ] \
   } \
 ]
+
+# Give the player the "Ender Eye" ability if the ender portal exists.
+execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s at @s run function ogvz:give/other/teleport_to_ender_portal_ender_eye

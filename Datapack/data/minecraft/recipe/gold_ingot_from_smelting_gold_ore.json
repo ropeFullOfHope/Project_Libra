@@ -9,7 +9,10 @@
     "id": "minecraft:gold_ingot",
     "components": {
       "minecraft:lore": [
-        "{\"text\":\"Craft into clocks.\",\"color\":\"blue\"}"
+        {
+          "text": "Craft into clocks.",
+          "color": "blue"
+        }
       ]
     }
   }

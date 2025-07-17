@@ -28,6 +28,46 @@
       {
         "namespace": "minecraft",
         "path": "advancement/recipes/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/gold_block.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/white_dye.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/yellow_dye_from_sunflower.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/magenta_dye_from_lilac.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/red_dye_from_rose_bush.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/pink_dye_from_peony.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/pink_dye_from_pink_petals.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/yellow_dye_from_wildflowers.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/bricks.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/terracotta.json"
       }
     ]
   }

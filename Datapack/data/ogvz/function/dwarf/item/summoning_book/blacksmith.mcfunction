@@ -17,14 +17,14 @@
 scoreboard objectives add temp.clock_count dummy
 
 execute store result score @s temp.clock_count run clear @s minecraft:clock 0
-execute unless entity @s[scores={temp.clock_count=5..}] run title @s actionbar [ \
+execute unless entity @s[scores={temp.clock_count=4..}] run title @s actionbar [ \
   "", \
   {"text":"[Summoning Book]","bold":true,"color":"red"}, \
   {"text":" You need at least ","color":"red"}, \
-  {"text":"5 Clocks","bold":true,"color":"red"}, \
+  {"text":"4 Clocks","bold":true,"color":"red"}, \
   {"text":"!","color":"red"} \
 ]
-execute unless entity @s[scores={temp.clock_count=5..}] run return run scoreboard objectives remove temp.clock_count
+execute unless entity @s[scores={temp.clock_count=4..}] run return run scoreboard objectives remove temp.clock_count
 
 execute unless entity @s[level=30..] run title @s actionbar [ \
   "", \
@@ -35,7 +35,7 @@ execute unless entity @s[level=30..] run title @s actionbar [ \
 ]
 execute unless entity @s[level=30..] run return run scoreboard objectives remove temp.clock_count
 
-clear @s minecraft:clock 5
+clear @s minecraft:clock 4
 
 # Remove 30 levels.
 scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 30

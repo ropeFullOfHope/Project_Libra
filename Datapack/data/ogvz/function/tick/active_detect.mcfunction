@@ -39,7 +39,6 @@ execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1003}] at @s run dial
 execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1004}] at @s run dialog show @s ogvz:tool_menu/boss_spawn
 execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1005}] at @s run function ogvz:admin/setup/setup_check
 execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1006}] at @s run dialog show @s ogvz:rulebook
-execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1007}] at @s run function ogvz:admin/setup/join_game
 
 ### Discs (2xxx)
 # Dwarf discs (200x)
@@ -183,9 +182,8 @@ execute as @s[tag=ogvz.zombie.class.golem,scores={ogvz.rclick.active_id=6611}] a
 
 
 ### Other (9xxx)
-execute as @s[tag=!ogvz.joined,scores={ogvz.rclick.active_id=9000}] at @s run function ogvz:misc/join_game
-#execute as @s[tag=ogvz.zombie,scores={ogvz.rclick.active_id=9001}] at @s run function ogvz:zombie/give_discs
-#execute as @s[tag=ogvz.zombie,scores={ogvz.rclick.active_id=9002}] at @s run function ogvz:zombie/enderman/portal_teleport
+execute as @s[tag=!ogvz.joined_game,scores={ogvz.rclick.active_id=9000}] at @s run function ogvz:misc/join_game
+execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9001}] at @s run function ogvz:zombie/ability/enderman/ender_eye
 
 # Remove tags
 tag @s remove temp.use

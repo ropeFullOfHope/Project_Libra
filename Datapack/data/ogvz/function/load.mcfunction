@@ -20,7 +20,3 @@ function ogvz:load/bossbars
 function ogvz:load/scoreboards
 function ogvz:load/triggers
 function ogvz:load/teams
-
-schedule clear ogvz:schedule/day_time
-
-#~READY TO GO!

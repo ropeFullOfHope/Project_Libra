@@ -154,3 +154,6 @@ item replace entity @s weapon.offhand with minecraft:firework_rocket[ \
     } \
   } \
 ]
+
+# Give the player the "Ender Eye" ability if the ender portal exists.
+execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s at @s run function ogvz:give/other/teleport_to_ender_portal_ender_eye

@@ -16,6 +16,8 @@
 
 advancement revoke @s only ogvz:misc/player_death
 
+tag @s remove ogvz.kill
+
 tag @s add ogvz.dead
 
 clear @s
@@ -28,16 +30,16 @@ execute as @s[tag=ogvz.dwarf] at @s run function ogvz:misc/gravestone
 
 ### If the player joined the game, dying means they always join the zombie team.
 # Remove all their tags.
-execute as @s[tag=ogvz.joined] at @s run function ogvz:misc/remove_tags
+execute as @s[tag=ogvz.joined_game] at @s run function ogvz:misc/remove_tags
 # Add the zombie tag.
-tag @s[tag=ogvz.joined] add ogvz.zombie
+tag @s[tag=ogvz.joined_game] add ogvz.zombie
 # Join them into the DEAD team.
-team join z9DEAD @s[tag=ogvz.joined]
+team join z9DEAD @s[tag=ogvz.joined_game]
 # Set their spawnpoint to the zombie spawn and make them face the shrine when they respawn.
-execute at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] facing entity @n[type=minecraft:marker,tag=ogvz.marker.shrine] feet run spawnpoint @s[tag=ogvz.joined] ~ ~ ~ ~
+execute at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] facing entity @n[type=minecraft:marker,tag=ogvz.marker.shrine] feet run spawnpoint @s[tag=ogvz.joined_game] ~ ~ ~ ~
 
 # If the player hasn't joined the game, set their spawn point to lobby (in case they slept in a bed somwhere).
-execute at @n[type=minecraft:marker,tag=ogvz.marker.lobby] run spawnpoint @s[tag=!ogvz.joined] ~ ~ ~ ~
+execute at @n[type=minecraft:marker,tag=ogvz.marker.lobby] run spawnpoint @s[tag=!ogvz.joined_game] ~ ~ ~ ~
 
 # Kill all wolves belonging to dead players.
 execute as @e[type=minecraft:wolf] at @s run function ogvz:misc/wolf_suicide

@@ -17,7 +17,6 @@
 gamerule disableRaids true
 gamerule doDaylightCycle false
 gamerule doInsomnia false
-gamerule doLimitedCrafting true
 gamerule doMobLoot false
 gamerule doMobSpawning false
 gamerule doPatrolSpawning false

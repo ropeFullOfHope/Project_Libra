@@ -16,8 +16,8 @@
 
 # General setup.
 difficulty hard
-tag @a remove ogvz.ready
-time set 1200t
+tag @a remove ogvz.initialized
+time set 1000t
 
 # Kill all entities with kill on reload tag.
 kill @e[tag=ogvz.kill_on_reload]

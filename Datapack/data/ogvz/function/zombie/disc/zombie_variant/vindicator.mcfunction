@@ -149,3 +149,6 @@ give @s minecraft:carrot_on_a_stick[ \
     ] \
   } \
 ]
+
+# Give the player the "Ender Eye" ability if the ender portal exists.
+execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s at @s run function ogvz:give/other/teleport_to_ender_portal_ender_eye

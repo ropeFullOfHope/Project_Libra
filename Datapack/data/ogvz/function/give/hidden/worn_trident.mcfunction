@@ -1,5 +1,6 @@
 give @s minecraft:trident[ \
   minecraft:item_name="Worn Trident", \
+  minecraft:rarity="common", \
   minecraft:attribute_modifiers=[ \
     { \
       id:"minecraft:base_attack_damage", \
@@ -29,6 +30,10 @@ give @s minecraft:trident[ \
   ], \
   minecraft:max_damage=1561, \
   minecraft:enchantable={value:10}, \
+  minecraft:weapon={ \
+    item_damage_per_attack:1, \
+    disable_blocking_for_seconds:3.5 \
+  }, \
   minecraft:tool={ \
     can_destroy_blocks_in_creative:false, \
     damage_per_block:2, \

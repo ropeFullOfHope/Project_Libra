@@ -39,7 +39,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_name={"text":"Summoning Book","color":"green"}, \
   minecraft:lore=[ \
     {"text":"Conjures food.","color":"blue"}, \
-    {"text":"Requires 10 Clay Bricks","italic":false,"color":"red"}, \
+    {"text":"Requires 8 Clay Bricks","italic":false,"color":"red"}, \
     {"text":"Requires 30 mana","italic":false,"color":"red"}, \
     {"text":"Active Item","italic":false,"color":"green"} \
   ], \
@@ -58,14 +58,14 @@ give @s minecraft:clay_ball[ \
   minecraft:lore=[ \
     {"text":"Smelt into bricks.","color":"blue"} \
   ] \
-] 40
+] 32
 give @s minecraft:coal[ \
   minecraft:lore=[ \
     {"text":"Share with baker.","color":"blue"}, \
     {"text":"Use to fuel the furnace.","color":"blue"} \
   ] \
-] 5
-execute as @s at @s run function ogvz:give/legendary_book
+] 4
+execute as @s at @s run function ogvz:give/other/legendary_book
 
 tellraw @s [ \
   "", \

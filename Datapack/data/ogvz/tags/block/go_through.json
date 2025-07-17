@@ -1,7 +1,6 @@
 {
   "values": [
     "#ogvz:non_solid_blocks",
-    "#ogvz:small_blocks",
-    "minecraft:barrier"
+    "#ogvz:small_blocks"
   ]
 }

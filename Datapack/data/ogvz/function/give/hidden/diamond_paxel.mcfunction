@@ -36,6 +36,15 @@ give @s minecraft:diamond_pickaxe[ \
         correct_for_drops:false \
       }, \
       { \
+        blocks:"#minecraft:sword_instantly_mines", \
+        speed:3.4028235e+38 \
+      }, \
+      { \
+        blocks:"minecraft:cobweb", \
+        correct_for_drops:true, \
+        speed:15.0 \
+      }, \
+      { \
         blocks:"#minecraft:mineable/pickaxe", \
         correct_for_drops:true, \
         speed:8.0 \
@@ -54,6 +63,10 @@ give @s minecraft:diamond_pickaxe[ \
         blocks:"#minecraft:mineable/hoe", \
         correct_for_drops:true, \
         speed:8.0 \
+      }, \
+      { \
+        blocks:"#minecraft:sword_efficient", \
+        speed:1.5 \
       } \
     ] \
   } \

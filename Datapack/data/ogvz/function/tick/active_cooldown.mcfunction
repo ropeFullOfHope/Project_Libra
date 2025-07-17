@@ -28,13 +28,6 @@ execute as @s[scores={ogvz.builder.summoning_book.cooldown.ticks=20..,ogvz.build
 execute as @s[scores={ogvz.builder.summoning_book.cooldown.ticks=20..,ogvz.builder.summoning_book.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Summoning Book]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
 execute as @s[scores={ogvz.builder.summoning_book.cooldown.ticks=20..}] run scoreboard players set @s ogvz.builder.summoning_book.cooldown.ticks 0
 
-# Alchemist - Water Wand
-execute as @s[scores={ogvz.alchemist.water_wand.cooldown.seconds=1..}] run scoreboard players add @s ogvz.alchemist.water_wand.cooldown.ticks 1
-execute as @s[scores={ogvz.alchemist.water_wand.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.alchemist.water_wand.cooldown.seconds 1
-execute as @s[scores={ogvz.alchemist.water_wand.cooldown.ticks=20..,ogvz.alchemist.water_wand.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
-execute as @s[scores={ogvz.alchemist.water_wand.cooldown.ticks=20..,ogvz.alchemist.water_wand.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Water Wand]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
-execute as @s[scores={ogvz.alchemist.water_wand.cooldown.ticks=20..}] run scoreboard players set @s ogvz.alchemist.water_wand.cooldown.ticks 0
-
 # Dwarves - Pearl Rod (cooldown)
 execute as @s[scores={ogvz.dwarf.pearl_rod.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarf.pearl_rod.cooldown.ticks 1
 execute as @s[scores={ogvz.dwarf.pearl_rod.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarf.pearl_rod.cooldown.seconds 1
@@ -243,6 +236,18 @@ execute as @s[scores={ogvz.enderman.create_portal.cooldown.ticks=20..}] run scor
 execute as @s[scores={ogvz.enderman.create_portal.warmup.seconds=1..}] run scoreboard players add @s ogvz.enderman.create_portal.warmup.ticks 1
 execute as @s[scores={ogvz.enderman.create_portal.warmup.ticks=20..}] run scoreboard players remove @s ogvz.enderman.create_portal.warmup.seconds 1
 execute as @s[scores={ogvz.enderman.create_portal.warmup.ticks=20..}] run scoreboard players set @s ogvz.enderman.create_portal.warmup.ticks 0
+
+# Zombies - Ender Eye (cooldown)
+execute as @s[scores={ogvz.zombie.ender_eye.cooldown.seconds=1..}] run scoreboard players add @s ogvz.zombie.ender_eye.cooldown.ticks 1
+execute as @s[scores={ogvz.zombie.ender_eye.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.zombie.ender_eye.cooldown.seconds 1
+execute as @s[scores={ogvz.zombie.ender_eye.cooldown.ticks=20..,ogvz.zombie.ender_eye.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.zombie.ender_eye.cooldown.ticks=20..,ogvz.zombie.ender_eye.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Ender Eye]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.zombie.ender_eye.cooldown.ticks=20..}] run scoreboard players set @s ogvz.zombie.ender_eye.cooldown.ticks 0
+
+# Zombies - Ender Eye (warmup)
+execute as @s[scores={ogvz.zombie.ender_eye.warmup.seconds=1..}] run scoreboard players add @s ogvz.zombie.ender_eye.warmup.ticks 1
+execute as @s[scores={ogvz.zombie.ender_eye.warmup.ticks=20..}] run scoreboard players remove @s ogvz.zombie.ender_eye.warmup.seconds 1
+execute as @s[scores={ogvz.zombie.ender_eye.warmup.ticks=20..}] run scoreboard players set @s ogvz.zombie.ender_eye.warmup.ticks 0
 
 # Golem - Fissure
 execute as @s[scores={ogvz.golem.fissure.cooldown.seconds=1..}] run scoreboard players add @s ogvz.golem.fissure.cooldown.ticks 1

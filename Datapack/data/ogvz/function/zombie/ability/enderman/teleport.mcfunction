@@ -59,6 +59,9 @@ execute if entity @e[type=minecraft:marker,tag=temp.teleport] at @s run playsoun
 execute if entity @e[type=minecraft:marker,tag=temp.teleport] run particle minecraft:reverse_portal ~ ~1 ~ 0.25 0.5 0.25 0.1 50
 execute if entity @e[type=minecraft:marker,tag=temp.teleport] at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.25 0.5 0.25 0.1 50
 
+# Cancel create portal ability if teleport is used.
+execute as @s[tag=ogvz.zombie.class.enderman.creating_portal] if entity @e[type=minecraft:marker,tag=temp.teleport] at @s run function ogvz:zombie/ability/enderman/create_portal_cancel
+
 # Get rid of the temporary markers.
 kill @e[type=minecraft:marker,tag=temp.ray]
 kill @e[type=minecraft:marker,tag=temp.ray_origin]

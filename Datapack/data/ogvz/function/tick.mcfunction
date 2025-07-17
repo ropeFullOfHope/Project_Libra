@@ -15,9 +15,11 @@
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Game functions
-execute as @a[tag=!ogvz.ready] at @s run function ogvz:tick/ogvz_ready
-execute as @a[scores={ogvz.misc.leave_game=1..}] at @s run function ogvz:tick/join_server
+execute as @a[tag=!ogvz.initialized] at @s run function ogvz:tick/player_join_server
+execute as @a[scores={ogvz.misc.leave_game=1..}] at @s run function ogvz:tick/player_rejoin_server
+execute as @a[tag=ogvz.kill] at @s run function ogvz:tick/kill_player
 function ogvz:tick/timer
+function ogvz:tick/day_time
 function ogvz:tick/shrine_health
 function ogvz:tick/update_bossbars
 function ogvz:tick/update_sidebar
@@ -53,9 +55,10 @@ execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.mana=..-1}] at @s ru
 execute as @a[tag=ogvz.zombie] at @s run function ogvz:tick/innate_abilities
 execute as @e[type=#minecraft:arrows,tag=!temp.processed] at @s run function ogvz:tick/arrow_check
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s run function ogvz:tick/adventure_mode_toggle
+execute as @a[tag=ogvz.dwarf] at @s run function ogvz:tick/zones
 execute as @a[tag=!ogvz.admin] at @s run function ogvz:tick/lava_bucket
 execute as @a at @s run function ogvz:tick/frozen_custom_effect
 execute as @a at @s run function ogvz:tick/dolphins_grace_nerf
 execute as @a at @s run function ogvz:tick/natural_regeneration
-function ogvz:tick/particles
 execute as @e[scores={ogvz.misc.air_toggle=-2147483648..2147483647}] at @s run function ogvz:tick/air_toggle
+function ogvz:tick/particles

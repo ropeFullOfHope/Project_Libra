@@ -63,23 +63,32 @@ item replace entity @s weapon.offhand with minecraft:poisonous_potato[ \
   minecraft:item_model="ogvz:crab_claw", \
   !minecraft:food, \
   !minecraft:consumable, \
-  minecraft:unbreakable={}, \
+  !minecraft:max_stack_size, \
   minecraft:item_name={"text":"Crab Claw"}, \
-  minecraft:lore=[ \
-    {"text":" "}, \
-    {"text":"When in Hand:","italic":false,"color":"gray"}, \
-    {"text":"+2 Block Reach","italic":false,"color":"blue"} \
-  ], \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:block_interaction_range",amount:2,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-    {type:"minecraft:block_interaction_range",amount:2,operation:"add_value",slot:"offhand",id:"ogvz:offhand"} \
-  ], \
-  minecraft:tooltip_display={ \
-    hidden_components:[ \
-      "minecraft:unbreakable", \
-      "minecraft:attribute_modifiers" \
-    ] \
-  } \
+    { \
+      id:"ogvz:mainhand", \
+      type:"minecraft:block_interaction_range", \
+      amount:2.0, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:"+2 Block Reach",color:"blue"} \
+      } \
+    }, \
+    { \
+      id:"ogvz:offhand", \
+      type:"minecraft:block_interaction_range", \
+      amount:2.0, \
+      operation:"add_value", \
+      slot:"offhand", \
+      display:{ \
+        type:"override", \
+        value:{text:"+2 Block Reach",color:"blue"} \
+      } \
+    } \
+  ] \
 ]
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3000}, \
@@ -97,32 +106,80 @@ give @s minecraft:carrot_on_a_stick[ \
     ] \
   } \
 ]
-give @s iron_pickaxe[ \
+give @s minecraft:iron_pickaxe[ \
+  minecraft:item_name="Iron Paxel", \
   minecraft:item_model="ogvz:iron_paxel", \
-  minecraft:item_name={"text":"Iron Paxel"}, \
-  minecraft:lore=[ \
-    {"text":" "}, \
-    {"color":"gray","italic":false,"text":"When in Main Hand:"}, \
-    {"color":"dark_green","italic":false,"text":" 4 Attack Damage"}, \
-    {"color":"dark_green","italic":false,"text":" 1.2 Attack Speed"}, \
-    {"color":"dark_green","italic":false,"text":" 3 Attack Reach"} \
-  ], \
-  minecraft:tool={ \
-    default_mining_speed:6, \
-    rules:[ \
-      {correct_for_drops:true,blocks:"#mineable/pickaxe"}, \
-      {correct_for_drops:true,blocks:"#mineable/axe"}, \
-      {correct_for_drops:true,blocks:"#mineable/shovel"}, \
-      {correct_for_drops:true,blocks:"#mineable/hoe"} \
-    ] \
-  }, \
   minecraft:enchantments={ \
     "minecraft:efficiency":2, \
     "minecraft:unbreaking":2 \
   }, \
-  minecraft:tooltip_display={ \
-    hidden_components:[ \
-      "minecraft:attribute_modifiers" \
+  minecraft:attribute_modifiers=[ \
+    { \
+      id:"minecraft:base_attack_damage", \
+      type:"minecraft:attack_damage", \
+      amount:3.0, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_attack_speed", \
+      type:"minecraft:attack_speed", \
+      amount:-2.8, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_entity_interaction_range", \
+      type:"minecraft:entity_interaction_range", \
+      amount:0.0, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" 3 Attack Reach",color:"dark_green"} \
+      } \
+    } \
+  ], \
+  minecraft:tool={ \
+    damage_per_block:1, \
+    rules:[ \
+      { \
+        blocks:"#minecraft:incorrect_for_diamond_tool", \
+        correct_for_drops:false \
+      }, \
+      { \
+        blocks:"#minecraft:sword_instantly_mines", \
+        speed:3.4028235e+38 \
+      }, \
+      { \
+        blocks:"minecraft:cobweb", \
+        correct_for_drops:true, \
+        speed:15.0 \
+      }, \
+      { \
+        blocks:"#minecraft:mineable/pickaxe", \
+        correct_for_drops:true, \
+        speed:6.0 \
+      }, \
+      { \
+        blocks:"#minecraft:mineable/shovel", \
+        correct_for_drops:true, \
+        speed:6.0 \
+      }, \
+      { \
+        blocks:"#minecraft:mineable/axe", \
+        correct_for_drops:true, \
+        speed:6.0 \
+      }, \
+      { \
+        blocks:"#minecraft:mineable/hoe", \
+        correct_for_drops:true, \
+        speed:6.0 \
+      }, \
+      { \
+        blocks:"#minecraft:sword_efficient", \
+        speed:1.5 \
+      } \
     ] \
   } \
 ]
@@ -132,7 +189,7 @@ give @s minecraft:stone_bricks 64
 give @s minecraft:crafting_table 1
 give @s minecraft:stonecutter 1
 give @s minecraft:torch 32
-execute as @s at @s run function ogvz:give/legendary_book
+execute as @s at @s run function ogvz:give/other/legendary_book
 
 tellraw @s [ \
   "", \

@@ -105,11 +105,29 @@ give @s minecraft:carrot_on_a_stick[ \
 ]
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6601}, \
-  minecraft:item_model="ogvz:create_portal_above", \
+  minecraft:item_model="ogvz:create_portal", \
   minecraft:unbreakable={}, \
   minecraft:item_name={"text":"Create Portal","color":"light_purple"}, \
   minecraft:lore=[ \
-    {"text":"TODO: Add description","color":"blue"}, \
+    {"text":"Open an Ender Portal above/below","color":"blue"}, \
+    {"text":"you.","color":"blue"}, \
+    {"text":"Other zombies will be able to","color":"blue"}, \
+    {"text":"teleport to the ender portal.","color":"blue"}, \
+    {"text":"Normally you will create the","color":"blue"}, \
+    {"text":"ender portal high above you, but","color":"blue"}, \
+    {"text":"you can sneak to place it right","color":"blue"}, \
+    {"text":"below you instead.","color":"blue"}, \
+    {"text":"You need enough room above you","color":"blue"}, \
+    {"text":"to create the ender portal.","color":"blue"}, \
+    {"text":"The ender portal will close when","color":"blue"}, \
+    {"text":"one of its end stones is broken.","color":"blue"}, \
+    {"text":"Creating the ender portal takes time.","color":"blue"}, \
+    {"text":"You will not be able to move","color":"blue"}, \
+    {"text":"during the process and you will","color":"blue"}, \
+    {"text":"be interrupted if you take","color":"blue"}, \
+    {"text":"damage or teleport.","color":"blue"}, \
+    {"text":"You can manually interrupt the","color":"blue"}, \
+    {"text":"ability by using it again.","color":"blue"}, \
     {"text":"15 second cooldown","color":"red","italic":false}, \
     {"text":"Single-use","color":"red","italic":false}, \
     {"text":"Active Ability","color":"green","italic":false} \

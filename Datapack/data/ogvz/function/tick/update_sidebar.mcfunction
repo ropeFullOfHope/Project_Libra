@@ -1,23 +1,17 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick
-# File Name: update_sidebar
-# Function Name: ogvz:tick/update_sidebar
-# File Purpose: Updates the sidebar, which counts the amount of dwarves and zombies.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.06.24
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Create a temporary scoreboard.
+scoreboard objectives add temp.new_player_count dummy
 
 # Count dwarves.
-scoreboard players set Dwarves ogvz.game.player_count 0
-execute as @a[tag=ogvz.dwarf] run scoreboard players add Dwarves ogvz.game.player_count 1
+scoreboard players set Dwarves temp.new_player_count 0
+execute as @a[tag=ogvz.dwarf] run scoreboard players add Dwarves temp.new_player_count 1
 
 # Count zombies.
-scoreboard players set Zombies ogvz.game.player_count 0
-execute as @a[tag=ogvz.zombie] run scoreboard players add Zombies ogvz.game.player_count 1
+scoreboard players set Zombies temp.new_player_count 0
+execute as @a[tag=ogvz.zombie] run scoreboard players add Zombies temp.new_player_count 1
+
+# Transfer the player count from the temporary scoreboard onto the real one.
+scoreboard players operation Dwarves ogvz.game.player_count = Dwarves temp.new_player_count
+scoreboard players operation Zombies ogvz.game.player_count = Zombies temp.new_player_count
+
+# Remove temporary scoreboard.
+scoreboard objectives remove temp.new_player_count

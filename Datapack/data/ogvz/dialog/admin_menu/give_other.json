@@ -11,7 +11,18 @@
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/rulebook"
+        "command": "function ogvz:give/other/rulebook"
+      }
+    },
+    {
+      "label": {
+        "text": "Join Game (Magma Cream)",
+        "color": "white"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/join_game_magma_cream"
       }
     },
     {
@@ -22,7 +33,7 @@
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/shrine_tape_measure"
+        "command": "function ogvz:give/other/shrine_tape_measure"
       }
     },
     {
@@ -33,7 +44,7 @@
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/legendary_book"
+        "command": "function ogvz:give/other/legendary_book"
       }
     },
     {
@@ -44,7 +55,18 @@
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/legendary_shard"
+        "command": "function ogvz:give/other/legendary_shard"
+      }
+    },
+    {
+      "label": {
+        "text": "Ender Eye",
+        "color": "light_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/ender_eye"
       }
     },
     {

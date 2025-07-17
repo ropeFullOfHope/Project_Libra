@@ -49,12 +49,12 @@ execute if score &ogvz ogvz.game.shrine_health matches 1 run scoreboard players 
 execute if score &ogvz ogvz.game.shrine_health matches 0 run scoreboard players add @s[tag=ogvz.dwarf.class.builder,level=..9998] ogvz.dwarf.mana_buildup.micromana 0
 
 # If a non-builder dwarf is near shrine, they gain 1 mana every second (50000 micromana every tick), up to 200 mana.
-# Shrine marker is located 2 blocks above the center of the shrine, so positioned ~ ~2 ~ is used to measure from the center of the shrine.
-execute if score &ogvz ogvz.game.shrine_health matches 1.. positioned ~ ~2 ~ if entity @e[type=minecraft:marker,tag=ogvz.marker.shrine,distance=..4] run scoreboard players add @s[tag=!ogvz.dwarf.class.builder,level=..199] ogvz.dwarf.mana_buildup.micromana 50000
+# This only works during zombie phase (3) and last stand phase (4).
+execute if score &ogvz ogvz.game.phase matches 3..4 if score &ogvz ogvz.game.shrine_health matches 1.. positioned ~ ~ ~ if entity @e[type=minecraft:marker,tag=ogvz.marker.shrine,distance=..4] run scoreboard players add @s[tag=!ogvz.dwarf.class.builder,level=..199] ogvz.dwarf.mana_buildup.micromana 50000
 
 # If a builder dwarf is near shrine, they gain 0.5 mana every second (25000 micromana every tick).
-# Shrine marker is located 2 blocks above the center of the shrine, so positioned ~ ~2 ~ is used to measure from the center of the shrine.
-execute if score &ogvz ogvz.game.shrine_health matches 1.. positioned ~ ~2 ~ if entity @e[type=minecraft:marker,tag=ogvz.marker.shrine,distance=..4] run scoreboard players add @s[tag=ogvz.dwarf.class.builder,level=..9998] ogvz.dwarf.mana_buildup.micromana 25000
+# This only works during zombie phase (3) and last stand phase (4).
+execute if score &ogvz ogvz.game.phase matches 3..4 if score &ogvz ogvz.game.shrine_health matches 1.. positioned ~ ~ ~ if entity @e[type=minecraft:marker,tag=ogvz.marker.shrine,distance=..4] run scoreboard players add @s[tag=ogvz.dwarf.class.builder,level=..9998] ogvz.dwarf.mana_buildup.micromana 25000
 
 # If a non-builder dwarf is under the effect of Mana Regeneration (Luck) effect, then they regenerate 1 mana every second (50000 micromana every tick), up to 200 mana.
 scoreboard players add @s[tag=!ogvz.dwarf.class.builder,level=..199,predicate=ogvz:effect/luck] ogvz.dwarf.mana_buildup.micromana 50000
