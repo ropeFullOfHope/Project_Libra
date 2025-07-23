@@ -17,9 +17,11 @@
 # Return if the game is in setup phase.
 execute if score &ogvz ogvz.game.phase matches 0 run return 0
 
-tag @s add ogvz.joined_game
+execute as @s at @s run function ogvz:misc/remove_tags
+execute as @s at @s run function ogvz:misc/clear_scoreboards
+execute as @s at @s run function ogvz:misc/remove_attributes
 
-tag @s remove ogvz.adventure.lobby
+tag @s add ogvz.joined_game
 
 clear @s
 

@@ -13,13 +13,17 @@ execute as @s at @s run function ogvz:misc/remove_attributes
 # Remove the player's tags that aren't removed by the "ogvz:misc/remove_tags" function.
 tag @s remove ogvz.joined_game
 tag @s remove ogvz.admin
+tag @s remove ogvz.dead
+tag @s remove ogvz.zombie.punish
 
 # Revoke all advancements.
 advancement revoke @s everything
 
 # Enable the player to use trigger commands.
-scoreboard players enable @s ogvz.trigger.doom_event
-scoreboard players enable @s ogvz.trigger.mark_for_death
+scoreboard players enable @s[predicate=ogvz:is_admin] admin_handbook
+scoreboard players enable @s game_status
+scoreboard players enable @s doom_event
+scoreboard players enable @s mark_for_death
 
 # Set the player's health and food scoreboards to max (20).
 scoreboard players set @s ogvz.misc.health 20
@@ -41,10 +45,6 @@ effect clear @s
 # Fully heal the player.
 effect give @s minecraft:instant_health 1 28
 
-# Give the player infinite resistance 5 (100% damage reduction) and infinite saturation (prevents starving).
-effect give @s minecraft:resistance infinite 4 true
-effect give @s minecraft:saturation infinite 0 true
-
 # Give all recipes to the player.
 recipe give @s *
 
@@ -59,7 +59,8 @@ tag @s[predicate=ogvz:is_admin] add ogvz.admin
 # Display a welcoming message to the player.
 tellraw @s [ \
   "", \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {text:"\u1110\u1111\u1112\n",font:"ogvz:custom"}, \
+  {"text":"▶ ","bold":true,"color":"gold"}, \
   {"text":"Welcome to ","bold":true,"color":"gold"}, \
   {"text":"<","bold":true,"color":"gold"}, \
   {"text":"OG","bold":true,"color":"dark_aqua"}, \
@@ -67,24 +68,27 @@ tellraw @s [ \
   {"text":"Z","bold":true,"color":"dark_red"}, \
   {"text":">","bold":true,"color":"gold"}, \
   {"text":"!\n","bold":true,"color":"gold"}, \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"▶ ","bold":true,"color":"gold"}, \
   {"text":"By continuing to play, you agree to our ","color":"yellow"}, \
-  {"text":"Privacy Policy","color":"gold"}, \
-  {"text":"\n   and ","color":"yellow"}, \
+  {"text":"Privacy Policy\n","color":"gold"}, \
+  {"text":"\uF00D",font:"ogvz:custom"}, \
+  {"text":"and ","color":"yellow"}, \
   {"text":"TOS","color":"gold"}, \
   {"text":", provided ","color":"yellow"}, \
   {"text":"[HERE]","bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"text":"link","italic":true}]},"click_event":{"action":"open_url","url":"https://ogvz.weebly.com/TOS.html"}}, \
   {"text":".\n","color":"yellow"}, \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"▶ ","bold":true,"color":"gold"}, \
   {"text":"Please read the ","color":"yellow"}, \
   {"text":"Rules","color":"gold"}, \
   {"text":" inside the ","color":"yellow"}, \
-  {"text":"Rules Book","color":"gold"}, \
+  {"text":"Rulebook","color":"gold"}, \
   {"text":".\n","color":"yellow"}, \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
-  {"text":"If you enjoy playing on the server, please consider\n   supporting us by donating ","color":"yellow"}, \
+  {"text":"▶ ","bold":true,"color":"gold"}, \
+  {"text":"If you enjoy playing on the server, please consider\n","color":"yellow"}, \
+  {"text":"\uF00D",font:"ogvz:custom"}, \
+  {"text":"supporting us by donating ","color":"yellow"}, \
   {"text":"[HERE]","bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"text":"link","italic":true}]},"click_event":{"action":"open_url","url":"https://ogvz.weebly.com/store.html"}}, \
-  {"text":".\n","color":"yellow"} \
+  {"text":".","color":"yellow"} \
 ]
 
 # Run code common to the player joining the game for the first time and player rejoining the game.

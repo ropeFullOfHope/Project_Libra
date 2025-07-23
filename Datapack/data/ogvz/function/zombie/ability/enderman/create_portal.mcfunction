@@ -9,6 +9,14 @@ execute if entity @s[scores={ogvz.enderman.create_portal.cooldown.seconds=1..}] 
 ]
 execute if entity @s[scores={ogvz.enderman.create_portal.cooldown.seconds=1..}] run return 0
 
+# Terrain modifying abilities cannot be used when the player is in adventure mode.
+execute if entity @s[gamemode=adventure] run title @s actionbar [ \
+  "", \
+  {"text":"[Create Portal]","bold":true,"color":"red"}, \
+  {"text":" You cannnot use this ability right now!","color":"red"} \
+]
+execute if entity @s[gamemode=adventure] run return 0
+
 # Perform a check depending on if the player is sneaking or not. Return if the check fails.
 execute as @s[predicate=!ogvz:input_sneak_pressed] at @s run function ogvz:zombie/ability/enderman/create_portal_check_above
 execute as @s[predicate=ogvz:input_sneak_pressed] at @s run function ogvz:zombie/ability/enderman/create_portal_check_below

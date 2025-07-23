@@ -11,7 +11,7 @@
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:admin/setup_tools"
+        "command": "function ogvz:admin/setup/setup_tools"
       }
     },
     {

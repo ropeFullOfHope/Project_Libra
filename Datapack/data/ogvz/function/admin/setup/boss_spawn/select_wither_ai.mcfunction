@@ -2,7 +2,7 @@
 execute unless score &ogvz ogvz.game.phase matches 0 run return 0
 
 # 3 - AI Wither
-scoreboard players set &ogvz ogvz.game.boss 3
+scoreboard players set &ogvz ogvz.game.boss 2
 
 bossbar set ogvz:boss_timer color purple
 

@@ -16,6 +16,34 @@
     },
     {
       "type": "bitmap",
+      "file": "ogvz:font/bossbar_assassin_health.png",
+      "height": 27,
+      "ascent": 6,
+      "chars": ["\u1010"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/bossbar_ender_dragon_health.png",
+      "height": 28,
+      "ascent": 6,
+      "chars": ["\u1011"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/bossbar_wither_health.png",
+      "height": 27,
+      "ascent": 6,
+      "chars": ["\u1012"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/bossbar_elder_guardian_health.png",
+      "height": 27,
+      "ascent": 6,
+      "chars": ["\u1013"]
+    },
+    {
+      "type": "bitmap",
       "file": "ogvz:font/death_border_left.png",
       "height": 7,
       "ascent": 7,
@@ -37,24 +65,45 @@
     },
     {
       "type": "bitmap",
-      "file": "ogvz:font/alert_border_left.png",
+      "file": "ogvz:font/dwarf_alert_border_left.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\u1110"]
     },
     {
       "type": "bitmap",
-      "file": "ogvz:font/alert_border_star.png",
+      "file": "ogvz:font/dwarf_alert_border_star.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\u1111"]
     },
     {
       "type": "bitmap",
-      "file": "ogvz:font/alert_border_right.png",
+      "file": "ogvz:font/dwarf_alert_border_right.png",
       "height": 7,
       "ascent": 7,
       "chars": ["\u1112"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/zombie_alert_border_left.png",
+      "height": 7,
+      "ascent": 7,
+      "chars": ["\u1120"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/zombie_alert_border_star.png",
+      "height": 7,
+      "ascent": 7,
+      "chars": ["\u1121"]
+    },
+    {
+      "type": "bitmap",
+      "file": "ogvz:font/zombie_alert_border_right.png",
+      "height": 7,
+      "ascent": 7,
+      "chars": ["\u1122"]
     },
     {
       "type": "bitmap",

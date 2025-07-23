@@ -4,7 +4,29 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:unbreakable={}, \
   minecraft:item_name={"text":"Skeleton","color":"red"}, \
   minecraft:lore=[ \
-    {"text":"TODO: Add Class Description!","color":"blue"} \
+    {text:"Basic archer. Uses vines to",color:"blue"}, \
+    {text:"climb walls.",color:"blue"}, \
+    [ \
+      {text:"ATK: ",color:"red",italic:false}, \
+      {text:"⭐⭐",color:"#FCA854",italic:false}, \
+      {text:"⭐⭐⭐",color:"gray",italic:false} \
+    ], \
+    [ \
+      {text:"DEF: ",color:"red",italic:false}, \
+      {text:"⭐⭐⭐",color:"yellow",italic:false}, \
+      {text:"⭐⭐",color:"gray",italic:false} \
+    ], \
+    [ \
+      {text:"MOV: ",color:"red",italic:false}, \
+      {text:"⭐⭐",color:"#FCA854",italic:false}, \
+      {text:"⭐⭐⭐",color:"gray",italic:false} \
+    ], \
+    [ \
+      {text:"UTL: ",color:"red",italic:false}, \
+      {text:"⭐⭐",color:"#FCA854",italic:false}, \
+      {text:"⭐⭐⭐",color:"gray",italic:false} \
+    ], \
+    {text:"Ranged Combat Class",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

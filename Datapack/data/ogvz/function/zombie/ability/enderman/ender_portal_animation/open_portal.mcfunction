@@ -7,7 +7,7 @@ playsound minecraft:block.end_portal.spawn player @a ~ ~10000 ~ 1 1 1
 # =====( [star] )=====
 tellraw @a [ \
   "", \
-  {text:"\u1110\u1111\u1112",font:"ogvz:custom"}, \
+  {text:"\u1120\u1121\u1122\n",font:"ogvz:custom"}, \
   {text:"The ",color:"light_purple"}, \
   {text:"Ender Portal",color:"light_purple",bold:true}, \
   {text:" has been opened!",color:"light_purple"} \

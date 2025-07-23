@@ -23,6 +23,14 @@ execute if entity @s[scores={ogvz.blaze.heat_wave.cooldown.seconds=1..}] run tit
 ]
 execute if entity @s[scores={ogvz.blaze.heat_wave.cooldown.seconds=1..}] run return 0
 
+# Terrain modifying abilities cannot be used when the player is in adventure mode.
+execute if entity @s[gamemode=adventure] run title @s actionbar [ \
+  "", \
+  {"text":"[Heat Wave]","bold":true,"color":"red"}, \
+  {"text":" You cannnot use this ability right now!","color":"red"} \
+]
+execute if entity @s[gamemode=adventure] run return 0
+
 scoreboard players set @s ogvz.blaze.heat_wave.cooldown.seconds 15
 
 title @s actionbar [ \

@@ -4,7 +4,29 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:unbreakable={}, \
   minecraft:item_name={"text":"Vindicator","color":"red"}, \
   minecraft:lore=[ \
-    {"text":"TODO: Add Class Description!","color":"blue"} \
+    {text:"Basic tank. Stronger with other",color:"blue"}, \
+    {text:"vindicators nearby.",color:"blue"}, \
+    [ \
+      {text:"ATK: ",color:"red",italic:false}, \
+      {text:"⭐⭐",color:"#FCA854",italic:false}, \
+      {text:"⭐⭐⭐",color:"gray",italic:false} \
+    ], \
+    [ \
+      {text:"DEF: ",color:"red",italic:false}, \
+      {text:"⭐⭐⭐⭐",color:"green",italic:false}, \
+      {text:"⭐",color:"gray",italic:false} \
+    ], \
+    [ \
+      {text:"MOV: ",color:"red",italic:false}, \
+      {text:"⭐⭐",color:"#FCA854",italic:false}, \
+      {text:"⭐⭐⭐",color:"gray",italic:false} \
+    ], \
+    [ \
+      {text:"UTL: ",color:"red",italic:false}, \
+      {text:"⭐⭐",color:"#FCA854",italic:false}, \
+      {text:"⭐⭐⭐",color:"gray",italic:false} \
+    ], \
+    {text:"Melee Combat Class",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

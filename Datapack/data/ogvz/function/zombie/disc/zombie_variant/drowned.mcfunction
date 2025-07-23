@@ -28,7 +28,7 @@ tag @s add ogvz.zombie
 tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.zombie_variant
 tag @s add ogvz.zombie.class.zombie_variant.drowned
-tag @s add ogvz.zombie.suicide_pill
+tag @s add ogvz.zombie.punish
 
 tag @s add ogvz.zombie.aquatic
 
@@ -156,7 +156,7 @@ give @s minecraft:trident[ \
   }, \
   minecraft:tool={ \
     can_destroy_blocks_in_creative:false, \
-    damage_per_block:2, \
+    damage_per_block:1, \
     rules:[ \
       { \
         blocks:"minecraft:cobweb", \
@@ -199,6 +199,13 @@ give @s minecraft:carrot_on_a_stick[ \
     ] \
   } \
 ]
+
+# Give the player the punish tag and set a timer for it's removal.
+tag @s add ogvz.zombie.punish
+scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Give the player the Suicide Pill.
+execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 
 # Give the player the "Ender Eye" ability if the ender portal exists.
 execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s at @s run function ogvz:give/other/teleport_to_ender_portal_ender_eye

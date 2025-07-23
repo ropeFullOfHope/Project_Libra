@@ -7,6 +7,14 @@ execute if entity @s[scores={ogvz.spider.web.cooldown.seconds=1..}] run title @s
 ]
 execute if entity @s[scores={ogvz.spider.web.cooldown.seconds=1..}] run return 0
 
+# Terrain modifying abilities cannot be used when the player is in adventure mode.
+execute if entity @s[gamemode=adventure] run title @s actionbar [ \
+  "", \
+  {"text":"[Web]","bold":true,"color":"red"}, \
+  {"text":" You cannnot use this ability right now!","color":"red"} \
+]
+execute if entity @s[gamemode=adventure] run return 0
+
 scoreboard players set @s ogvz.spider.web.cooldown.seconds 15
 
 title @s actionbar [ \

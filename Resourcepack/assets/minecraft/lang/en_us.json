@@ -11,5 +11,6 @@
   "death.attack.electric": "%1$s was electrocuted by %2$s.",
   "death.attack.snowball": "%1$s was snowballed by %2$s.",
   "death.attack.outside_shrine_range": "%s wandered too far from the shrine.",
-  "death.attack.inside_zombie_spawn_range": "%s wandered too close to the zombie spawn."
+  "death.attack.inside_zombie_spawn_range": "%s wandered too close to the zombie spawn.",
+  "death.attack.cyanide": "%s succumbed to cyanide poisoning."
 }

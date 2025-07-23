@@ -60,6 +60,28 @@
     },
     {
       "label": {
+        "text": "Suicide Pill",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/suicide_pill"
+      }
+    },
+    {
+      "label": {
+        "text": "Obsidian Skull",
+        "color": "light_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/obsidian_skull"
+      }
+    },
+    {
+      "label": {
         "text": "Ender Eye",
         "color": "light_purple"
       },

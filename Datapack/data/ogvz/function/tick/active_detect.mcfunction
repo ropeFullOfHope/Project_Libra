@@ -1,18 +1,5 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick
-# File Name: active_detect
-# Function Name: ogvz:tick/active_detect
-# File Purpose: Main branch for all right-click items/abilities (active items/abilities).
-# Created By: ropeFullOfHope
-# 
-# Created On: 2023.07.09
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments: Tests for and executes functions from right-clicking a retextured carrot on a stick. Also handles secondary attacks.
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Main branch for all right-click items/abilities (active items/abilities and secondary attacks).
+#> Note: Tests for and executes functions from right-clicking a retextured carrot on a stick.
 
 execute unless entity @s[scores={ogvz.rclick.use=1..}] run return 0
 
@@ -24,7 +11,6 @@ execute unless entity @s[scores={ogvz.rclick.cooldown=0}] run return 0
 
 scoreboard players set @s ogvz.rclick.cooldown 5
 
-tag @s add temp.use
 execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick run tag @s add temp.use.mainhand
 execute if items entity @s[tag=!temp.use.mainhand] weapon.offhand minecraft:carrot_on_a_stick run tag @s add temp.use.offhand
 
@@ -69,13 +55,13 @@ execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2132}] at @s run function ogvz:zombie/disc/chicken_nugget
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2133}] at @s run function ogvz:zombie/disc/chillager
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2134}] at @s run function ogvz:zombie/disc/ocelot
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2135}] at @s run function ogvz:zombie/disc/phantom
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2135}] at @s run function ogvz:zombie/disc/phantom
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2136}] at @s run function ogvz:zombie/disc/snowman
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2137}] at @s run function ogvz:zombie/disc/wolf
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2140}] at @s run function ogvz:zombie/disc/piglin
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2141}] at @s run function ogvz:zombie/disc/silverfish
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2150}] at @s run function ogvz:zombie/disc/hoglin
-#execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2160}] at @s run function ogvz:zombie/disc/enderman
+execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2160}] at @s run function ogvz:zombie/disc/enderman
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2161}] at @s run function ogvz:zombie/disc/golem
 #execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2170}] at @s run function ogvz:zombie/disc/ghast
 #execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2171}] at @s run function ogvz:zombie/disc/johnny
@@ -183,9 +169,10 @@ execute as @s[tag=ogvz.zombie.class.golem,scores={ogvz.rclick.active_id=6611}] a
 
 ### Other (9xxx)
 execute as @s[tag=!ogvz.joined_game,scores={ogvz.rclick.active_id=9000}] at @s run function ogvz:misc/join_game
-execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9001}] at @s run function ogvz:zombie/ability/enderman/ender_eye
+execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9001}] at @s run function ogvz:zombie/ability/suicide_pill
+execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9002}] at @s run function ogvz:zombie/ability/obsidian_skull
+execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9003}] at @s run function ogvz:zombie/ability/enderman/ender_eye
 
 # Remove tags
-tag @s remove temp.use
 tag @s remove temp.use.mainhand
 tag @s remove temp.use.offhand

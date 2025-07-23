@@ -14,9 +14,40 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Terrain modifying abilities cannot be used when the player is in adventure mode.
+execute if entity @s[gamemode=adventure] run title @s actionbar [ \
+  "", \
+  {"text":"[Explode]","bold":true,"color":"red"}, \
+  {"text":" You cannnot use this ability right now!","color":"red"} \
+]
+execute if entity @s[gamemode=adventure] run return 0
+
+# Prevent exploding the ender portal.
+execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal,distance=..8] run title @s actionbar [ \
+  "", \
+  {text:"[Explode]",bold:true,color:"red"}, \
+  {text:" You cannot explode this close to the ",color:"red"}, \
+  {text:"Ender Portal",bold:true,color:"red"}, \
+  {text:"!",color:"red"} \
+]
+execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal,distance=..8] run return 0
+
 # Remove the item.
 item replace entity @s[gamemode=!creative,tag=temp.use.mainhand] weapon.mainhand with minecraft:air
 item replace entity @s[gamemode=!creative,tag=temp.use.offhand] weapon.offhand with minecraft:air
+
+# Remove the punish tag if the player exploded near a dwarf or near dwarf blocks.
+execute as @s[tag=ogvz.zombie.punish] if entity @a[tag=ogvz.dwarf,distance=..6] run tag @s remove ogvz.zombie.punish
+execute as @s[tag=ogvz.zombie.punish] if block ~ ~-1 ~ #ogvz:dwarf_blocks run tag @s remove ogvz.zombie.punish
+execute as @s[tag=ogvz.zombie.punish] if block ~1 ~ ~ #ogvz:dwarf_blocks run tag @s remove ogvz.zombie.punish
+execute as @s[tag=ogvz.zombie.punish] if block ~-1 ~ ~ #ogvz:dwarf_blocks run tag @s remove ogvz.zombie.punish
+execute as @s[tag=ogvz.zombie.punish] if block ~ ~ ~1 #ogvz:dwarf_blocks run tag @s remove ogvz.zombie.punish
+execute as @s[tag=ogvz.zombie.punish] if block ~ ~ ~-1 #ogvz:dwarf_blocks run tag @s remove ogvz.zombie.punish
+execute as @s[tag=ogvz.zombie.punish] if block ~1 ~1 ~ #ogvz:dwarf_blocks run tag @s remove ogvz.zombie.punish
+execute as @s[tag=ogvz.zombie.punish] if block ~-1 ~1 ~ #ogvz:dwarf_blocks run tag @s remove ogvz.zombie.punish
+execute as @s[tag=ogvz.zombie.punish] if block ~ ~1 ~1 #ogvz:dwarf_blocks run tag @s remove ogvz.zombie.punish
+execute as @s[tag=ogvz.zombie.punish] if block ~ ~1 ~-1 #ogvz:dwarf_blocks run tag @s remove ogvz.zombie.punish
+execute as @s[tag=ogvz.zombie.punish] if block ~ ~2 ~ #ogvz:dwarf_blocks run tag @s remove ogvz.zombie.punish
 
 # Clear dwarf blocks around the player to promote blowing up keep walls.
 fill ~ ~ ~-1 ~ ~1 ~1 minecraft:air replace #ogvz:dwarf_blocks

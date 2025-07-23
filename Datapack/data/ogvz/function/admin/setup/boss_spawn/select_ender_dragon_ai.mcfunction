@@ -2,7 +2,7 @@
 execute unless score &ogvz ogvz.game.phase matches 0 run return 0
 
 # 2 - AI Dragon
-scoreboard players set &ogvz ogvz.game.boss 2
+scoreboard players set &ogvz ogvz.game.boss 1
 
 bossbar set ogvz:boss_timer color pink
 

@@ -2,7 +2,7 @@
 execute unless score &ogvz ogvz.game.phase matches 0 run return 0
 
 # 4 - Elder Guardian
-scoreboard players set &ogvz ogvz.game.boss 4
+scoreboard players set &ogvz ogvz.game.boss 3
 
 bossbar set ogvz:boss_timer color blue
 

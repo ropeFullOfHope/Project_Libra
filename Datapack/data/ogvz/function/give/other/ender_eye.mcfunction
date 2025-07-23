@@ -1,7 +1,7 @@
 give @s minecraft:carrot_on_a_stick[ \
-  minecraft:custom_data={active_id:9001}, \
+  minecraft:custom_data={active_id:9003}, \
   minecraft:item_name={text:"Ender Eye",color:"light_purple"}, \
-  minecraft:item_model="ogvz:teleport_to_ender_portal", \
+  minecraft:item_model="ogvz:ender_eye", \
   minecraft:lore=[ \
     {text:"Teleport to the ender portal.",color:"blue"}, \
     {text:"Teleportation takes time, unless",color:"blue"}, \

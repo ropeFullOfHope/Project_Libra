@@ -8,6 +8,14 @@ execute unless entity @s[scores={ogvz.silverfish.silverfish_egg.count=1..}] run 
 execute unless entity @s[scores={ogvz.silverfish.silverfish_egg.count=1..}] run scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 execute unless entity @s[scores={ogvz.silverfish.silverfish_egg.count=1..}] run return 0
 
+# Terrain modifying abilities cannot be used when the player is in adventure mode.
+execute if entity @s[gamemode=adventure] run title @s actionbar [ \
+  "", \
+  {"text":"[Infest]","bold":true,"color":"red"}, \
+  {"text":" You cannnot use this ability right now!","color":"red"} \
+]
+execute if entity @s[gamemode=adventure] run return 0
+
 # Summon two markers at the players feet and give them a tag.
 execute summon minecraft:marker run tag @s add temp.ray
 execute summon minecraft:marker run tag @s add temp.ray_origin

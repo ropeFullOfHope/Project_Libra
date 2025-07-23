@@ -151,7 +151,7 @@ execute as @s at @s run function ogvz:give/other/legendary_book
 
 tellraw @s [ \
   "", \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"▶ ","bold":true,"color":"gold"}, \
   {"text":"You are a ","color":"yellow"}, \
   {"text":"Blacksmith","bold":true,"color":"blue"}, \
   {"text":". Your job is to make ","color":"yellow"}, \
@@ -159,7 +159,7 @@ tellraw @s [ \
   {"text":" and\n   ","color":"yellow"}, \
   {"text":"Tools","color":"gold"}, \
   {"text":" for the dwarves.\n","color":"yellow"}, \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"▶ ","bold":true,"color":"gold"}, \
   {"text":"Begin by smelting ","color":"yellow"}, \
   {"text":"Gold","color":"gold"}, \
   {"text":", then combine it with ","color":"yellow"}, \
@@ -167,7 +167,7 @@ tellraw @s [ \
   {"text":"\n   to craft ","color":"yellow"}, \
   {"text":"Clocks","color":"gold"}, \
   {"text":".\n","color":"yellow"}, \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"▶ ","bold":true,"color":"gold"}, \
   {"text":"You can get more ","color":"yellow"}, \
   {"text":"Gold Ore","color":"gold"}, \
   {"text":" from the ","color":"yellow"}, \
@@ -179,4 +179,4 @@ playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2
 
 particle minecraft:happy_villager ~ ~1 ~ 0.1 0.5 0.1 0.01 10
 
-function ogvz:dwarf/doom_event_message
+function ogvz:misc/doom_event_message

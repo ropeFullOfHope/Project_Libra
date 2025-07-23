@@ -14,39 +14,33 @@
 # Comments:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# =====( [star] )=====
+tellraw @a [ \
+  "", \
+  {text:"\u1120\u1121\u1122",font:"ogvz:custom"} \
+]
+
 execute if score &ogvz ogvz.game.boss matches 1 run tellraw @s [ \
   "", \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
-  {"text":"The doom event is: ","color":"yellow"}, \
+  {"text":"▶ ","bold":true,"color":"light_purple"}, \
+  {"text":"The doom event is: ","color":"light_purple"}, \
   {"text":"Ender Dragon","bold":true,"color":"light_purple"} \
 ]
 execute if score &ogvz ogvz.game.boss matches 2 run tellraw @s [ \
   "", \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
-  {"text":"The doom event is: ","color":"yellow"}, \
-  {"text":"AI Ender Dragon","bold":true,"color":"light_purple"} \
+  {"text":"▶ ","bold":true,"color":"light_purple"}, \
+  {"text":"The doom event is: ","color":"light_purple"}, \
+  {"text":"Wither","bold":true,"color":"dark_purple"} \
 ]
 execute if score &ogvz ogvz.game.boss matches 3 run tellraw @s [ \
   "", \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
-  {"text":"The doom event is: ","color":"yellow"}, \
-  {"text":"Wither","bold":true,"color":"dark_purple"} \
+  {"text":"▶ ","bold":true,"color":"light_purple"}, \
+  {"text":"The doom event is: ","color":"light_purple"}, \
+  {"text":"Elder Guardian","bold":true,"color":"aqua"} \
 ]
 execute if score &ogvz ogvz.game.boss matches 4 run tellraw @s [ \
   "", \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
-  {"text":"The doom event is: ","color":"yellow"}, \
-  {"text":"AI Wither","bold":true,"color":"dark_purple"} \
-]
-execute if score &ogvz ogvz.game.boss matches 5 run tellraw @s [ \
-  "", \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
-  {"text":"The doom event is: ","color":"yellow"}, \
+  {"text":"▶ ","bold":true,"color":"light_purple"}, \
+  {"text":"The doom event is: ","color":"light_purple"}, \
   {"text":"Assassin","bold":true,"color":"dark_red"} \
-]
-execute if score &ogvz ogvz.game.boss matches 6 run tellraw @s [ \
-  "", \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
-  {"text":"The doom event is: ","color":"yellow"}, \
-  {"text":"Elder Guardian","bold":true,"color":"dark_aqua"} \
 ]

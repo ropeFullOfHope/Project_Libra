@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "ogvz:item/teleport_to_ender_portal"
+    "model": "ogvz:item/ender_eye"
   }
 }

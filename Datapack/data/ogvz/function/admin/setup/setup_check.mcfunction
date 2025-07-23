@@ -18,10 +18,10 @@ execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] run
 execute unless score &ogvz ogvz.game.boss matches 1..4 run return run dialog show @s ogvz:setup_error/boss_selection
 
 # Check if boss spawn location exists, unless the boss selected is the assassin (1). Return on fail.
-execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.boss_spawn] unless score &ogvz ogvz.game.boss matches 1 run return run dialog show @s ogvz:setup_error/boss_spawn_location
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.boss_spawn] unless score &ogvz ogvz.game.boss matches 4 run return run dialog show @s ogvz:setup_error/boss_spawn_location
 
 # Show the game start dialog if every check passed.
-execute if score &ogvz ogvz.game.boss matches 1 run dialog show @s ogvz:game_start_confirmation/assassin
-execute if score &ogvz ogvz.game.boss matches 2 run dialog show @s ogvz:game_start_confirmation/ai_ender_dragon
-execute if score &ogvz ogvz.game.boss matches 3 run dialog show @s ogvz:game_start_confirmation/ai_wither
-execute if score &ogvz ogvz.game.boss matches 4 run dialog show @s ogvz:game_start_confirmation/ai_elder_guardian
+execute if score &ogvz ogvz.game.boss matches 1 run dialog show @s ogvz:game_start_confirmation/ai_ender_dragon
+execute if score &ogvz ogvz.game.boss matches 2 run dialog show @s ogvz:game_start_confirmation/ai_wither
+execute if score &ogvz ogvz.game.boss matches 3 run dialog show @s ogvz:game_start_confirmation/ai_elder_guardian
+execute if score &ogvz ogvz.game.boss matches 4 run dialog show @s ogvz:game_start_confirmation/assassin

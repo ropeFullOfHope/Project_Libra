@@ -3,6 +3,7 @@
     "ogvz:electric",
     "ogvz:snowball",
     "ogvz:outside_shrine_range",
-    "ogvz:inside_zombie_spawn_range"
+    "ogvz:inside_zombie_spawn_range",
+    "ogvz:cyanide"
   ]
 }

@@ -21,6 +21,8 @@ scoreboard objectives add ogvz.game.reload_count dummy
 scoreboard objectives add ogvz.game.timer dummy
 # Player count scoreboard
 scoreboard objectives add ogvz.game.player_count dummy
+# Zombie spawn count scoreboard
+scoreboard objectives add ogvz.game.zombie_spawn_count dummy
 # Shrine health scoreboard
 scoreboard objectives add ogvz.game.shrine_health dummy
 # Game phase scoreboard
@@ -133,6 +135,7 @@ scoreboard objectives add ogvz.dwarven_guard.glowing_shell.cooldown.seconds dumm
 
 ### Zombie scoreboards
 # All zombies
+scoreboard objectives add ogvz.zombie.punish_timer.ticks dummy
 scoreboard objectives add ogvz.zombie.ender_eye.cooldown.ticks dummy
 scoreboard objectives add ogvz.zombie.ender_eye.cooldown.seconds dummy
 scoreboard objectives add ogvz.zombie.ender_eye.warmup.ticks dummy

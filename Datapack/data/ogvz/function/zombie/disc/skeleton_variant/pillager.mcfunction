@@ -28,7 +28,7 @@ tag @s add ogvz.zombie
 tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.skeleton_variant
 tag @s add ogvz.zombie.class.skeleton_variant.pillager
-tag @s add ogvz.zombie.suicide_pill
+tag @s add ogvz.zombie.punish
 
 team join z1PILLAGER @s
 
@@ -118,6 +118,13 @@ give @s minecraft:crossbow[ \
 give @s minecraft:vine 64
 give @s minecraft:cooked_beef 64
 give @s minecraft:arrow 1
+
+# Give the player the punish tag and set a timer for it's removal.
+tag @s add ogvz.zombie.punish
+scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Give the player the Suicide Pill.
+execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 
 # Give the player the "Ender Eye" ability if the ender portal exists.
 execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s at @s run function ogvz:give/other/teleport_to_ender_portal_ender_eye

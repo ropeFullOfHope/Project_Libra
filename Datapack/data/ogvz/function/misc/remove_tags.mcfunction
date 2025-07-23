@@ -1,18 +1,5 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By:
-# File Name: remove_tags
-# Function Name: ogvz:misc/remove_tags
-# File Purpose: Called to remove all tags on a player.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2023.07.04
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments: Exceptions are: ogvz.ready, ogvz.joined_game, ogvz.dead, ogvz.attribute tags.
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Removes most of the ogvz tags.
+#> Note: Exceptions are: ogvz.initialized, ogvz.admin, ogvz.joined_game, ogvz.dead, ogvz.zombie.punish, ogvz.attribute tags.
 
 tag @s remove ogvz.dwarf
 
@@ -33,6 +20,8 @@ tag @s remove ogvz.dwarf.class.hero.dwarven_guard
 tag @s remove ogvz.dwarf.class.hero.dragon_warrior.dragon_form
 
 tag @s remove ogvz.dwarf.class.hero.assassin_slayer.invisible
+
+tag @s remove ogvz.dwarf.last_dwarf
 
 tag @s remove ogvz.zombie
 
@@ -84,7 +73,7 @@ tag @s remove ogvz.zombie.class.boss.wither
 tag @s remove ogvz.zombie.class.boss.assasin
 tag @s remove ogvz.zombie.class.boss.elder_guardian
 
-tag @s remove ogvz.zombie.suicide_pill
+tag @s remove ogvz.zombie.obsidian_skull
 
 tag @s remove ogvz.zombie.aquatic
 
@@ -100,6 +89,7 @@ tag @s remove ogvz.mana
 tag @s remove ogvz.mana.teleporting
 
 tag @s remove ogvz.adventure.lobby
-tag @s remove ogvz.adventure.curse_of_limitation
+tag @s remove ogvz.adventure.zombie_spawn
+tag @s remove ogvz.adventure.curse_of_unyielding
 
 tag @s remove ogvz.frozen

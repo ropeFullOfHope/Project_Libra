@@ -8,7 +8,7 @@ particle minecraft:reverse_portal ~ ~-1.5 ~ 3 1 3 1 1000
 # =====( [star] )=====
 tellraw @a [ \
   "", \
-  {text:"\u1110\u1111\u1112",font:"ogvz:custom"}, \
+  {text:"\u1120\u1121\u1122\n",font:"ogvz:custom"}, \
   {text:"The ",color:"light_purple"}, \
   {text:"Ender Portal",color:"light_purple",bold:true}, \
   {text:" has been closed!",color:"light_purple"} \

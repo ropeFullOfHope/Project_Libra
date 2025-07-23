@@ -2,7 +2,7 @@
 execute unless score &ogvz ogvz.game.phase matches 0 run return 0
 
 # 1 - Assassin
-scoreboard players set &ogvz ogvz.game.boss 1
+scoreboard players set &ogvz ogvz.game.boss 4
 
 bossbar set ogvz:boss_timer color red
 

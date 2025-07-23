@@ -17,7 +17,7 @@ give @s minecraft:iron_pickaxe[ \
       slot:"mainhand" \
     }, \
     { \
-      id:"minecraft:base_entity_interaction_range", \
+      id:"minecraft:entity_interaction_range.mainhand", \
       type:"minecraft:entity_interaction_range", \
       amount:0.0, \
       operation:"add_value", \
@@ -28,6 +28,9 @@ give @s minecraft:iron_pickaxe[ \
       } \
     } \
   ], \
+  minecraft:weapon={ \
+    item_damage_per_attack:1 \
+  }, \
   minecraft:tool={ \
     damage_per_block:1, \
     rules:[ \

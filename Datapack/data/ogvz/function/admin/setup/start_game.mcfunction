@@ -42,9 +42,9 @@ tellraw @a[tag=ogvz.admin] [ \
 
 tellraw @a [ \
   "", \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"▶ ","bold":true,"color":"gold"}, \
   {"text":"The game begins!\n","bold":true,"color":"gold"}, \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"▶ ","bold":true,"color":"gold"}, \
   {"text":"Right-Click","color":"gold"}, \
   {"text":" your ","color":"yellow"}, \
   {"text":"Magma Cream","color":"gold"}, \

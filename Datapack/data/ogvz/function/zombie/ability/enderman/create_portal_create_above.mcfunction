@@ -27,6 +27,9 @@ clear @s minecraft:carrot_on_a_stick
 scoreboard players set @s ogvz.enderman.teleport.cooldown.seconds 0
 scoreboard players set @s ogvz.enderman.create_portal.cooldown.seconds 0
 
+# Remove the punish tag.
+tag @s remove ogvz.zombie.punish
+
 # Summon 2 temporary markers.
 execute align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run tag @s add temp.ray_origin
 execute align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run tag @s add temp.ray

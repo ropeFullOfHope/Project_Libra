@@ -27,7 +27,7 @@ execute as @s at @s run function ogvz:misc/clear_scoreboards
 tag @s add ogvz.zombie
 tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.hoglin
-tag @s add ogvz.zombie.suicide_pill
+tag @s add ogvz.zombie.punish
 
 attribute @s minecraft:max_health modifier add ogvz.hoglin.max_health 12 add_value
 

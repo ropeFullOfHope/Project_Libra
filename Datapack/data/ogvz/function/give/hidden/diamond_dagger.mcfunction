@@ -19,11 +19,11 @@ give @s minecraft:music_disc_13[ \
       slot:"mainhand", \
       display:{ \
         type:"override", \
-        value:{text:" \u221E Attack Speed",color:"dark_green"} \
+        value:{text:" ∞ Attack Speed",color:"dark_green"} \
       } \
     }, \
     { \
-      id:"minecraft:base_entity_interaction_range", \
+      id:"minecraft:entity_interaction_range.mainhand", \
       type:"minecraft:entity_interaction_range", \
       amount:-0.5, \
       operation:"add_value", \
@@ -41,16 +41,16 @@ give @s minecraft:music_disc_13[ \
   minecraft:weapon={}, \
   minecraft:tool={ \
     can_destroy_blocks_in_creative:false, \
-    damage_per_block:2, \
+    damage_per_block:1, \
     rules:[ \
+      { \
+        blocks:"#minecraft:sword_instantly_mines", \
+        speed:3.4028235e+38 \
+      }, \
       { \
         blocks:"minecraft:cobweb", \
         correct_for_drops:true, \
         speed:15.0 \
-      }, \
-      { \
-        blocks:"#minecraft:sword_instantly_mines", \
-        speed:3.4028235e+38 \
       }, \
       { \
         blocks:"#minecraft:sword_efficient", \

@@ -1,5 +1,8 @@
 give @s minecraft:trident[ \
   minecraft:item_name="Worn Trident", \
+  minecraft:lore=[ \
+    {text:"Disables Shields",color:"gray",italic:false} \
+  ], \
   minecraft:rarity="common", \
   minecraft:attribute_modifiers=[ \
     { \
@@ -17,7 +20,7 @@ give @s minecraft:trident[ \
       slot:"mainhand" \
     }, \
     { \
-      id:"minecraft:base_entity_interaction_range", \
+      id:"minecraft:entity_interaction_range.mainhand", \
       type:"minecraft:entity_interaction_range", \
       amount:0.5, \
       operation:"add_value", \
@@ -36,7 +39,7 @@ give @s minecraft:trident[ \
   }, \
   minecraft:tool={ \
     can_destroy_blocks_in_creative:false, \
-    damage_per_block:2, \
+    damage_per_block:1, \
     rules:[ \
       { \
         blocks:"minecraft:cobweb", \

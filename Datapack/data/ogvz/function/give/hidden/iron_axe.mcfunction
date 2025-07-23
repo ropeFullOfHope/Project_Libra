@@ -1,4 +1,7 @@
 give @s minecraft:iron_axe[ \
+  minecraft:lore=[ \
+    {text:"Disables Shields",color:"gray",italic:false} \
+  ], \
   minecraft:attribute_modifiers=[ \
     { \
       id:"minecraft:base_attack_damage", \
@@ -15,7 +18,7 @@ give @s minecraft:iron_axe[ \
       slot:"mainhand" \
     }, \
     { \
-      id:"minecraft:base_entity_interaction_range", \
+      id:"minecraft:entity_interaction_range.mainhand", \
       type:"minecraft:entity_interaction_range", \
       amount:0.0, \
       operation:"add_value", \
@@ -34,13 +37,13 @@ give @s minecraft:iron_axe[ \
     damage_per_block:1, \
     rules:[ \
       { \
+        blocks:"#minecraft:incorrect_for_diamond_tool", \
+        correct_for_drops:false \
+      }, \
+      { \
         blocks:"minecraft:cobweb", \
         correct_for_drops:true, \
         speed:15.0 \
-      }, \
-      { \
-        blocks:"#minecraft:incorrect_for_diamond_tool", \
-        correct_for_drops:false \
       }, \
       { \
         blocks:"#minecraft:mineable/axe", \

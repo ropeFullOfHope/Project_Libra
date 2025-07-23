@@ -27,7 +27,7 @@ execute as @s at @s run function ogvz:misc/clear_scoreboards
 tag @s add ogvz.zombie
 tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.piglin
-tag @s add ogvz.zombie.suicide_pill
+tag @s add ogvz.zombie.punish
 
 attribute @s minecraft:movement_speed modifier add ogvz.piglin.movement_speed 0.2 add_multiplied_total
 
@@ -171,6 +171,13 @@ give @s minecraft:carrot_on_a_stick[ \
     ] \
   } \
 ]
+
+# Give the player the punish tag and set a timer for it's removal.
+tag @s add ogvz.zombie.punish
+scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Give the player the Suicide Pill.
+execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 
 # Give the player the "Ender Eye" ability if the ender portal exists.
 execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s at @s run function ogvz:give/other/teleport_to_ender_portal_ender_eye

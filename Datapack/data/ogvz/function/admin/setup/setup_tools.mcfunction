@@ -58,4 +58,4 @@ give @s minecraft:carrot_on_a_stick[ \
   } \
 ]
 
-execute as @s at @s run function ogvz:give/shrine_tape_measure
+execute as @s at @s run function ogvz:give/other/shrine_tape_measure

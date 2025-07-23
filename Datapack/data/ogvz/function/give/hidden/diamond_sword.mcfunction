@@ -15,7 +15,7 @@ give @s minecraft:diamond_sword[ \
       slot:"mainhand" \
     }, \
     { \
-      id:"minecraft:base_entity_interaction_range", \
+      id:"minecraft:entity_interaction_range.mainhand", \
       type:"minecraft:entity_interaction_range", \
       amount:0.0, \
       operation:"add_value", \

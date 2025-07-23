@@ -23,7 +23,9 @@ function ogvz:tick/day_time
 function ogvz:tick/shrine_health
 function ogvz:tick/update_bossbars
 function ogvz:tick/update_sidebar
+function ogvz:tick/phase_switch
 function ogvz:tick/kill_entities
+function ogvz:tick/permanent_effects
 execute as @a at @s run function ogvz:tick/triggers
 execute as @e[type=minecraft:player,tag=ogvz.dead] at @s run function ogvz:tick/player_respawn
 execute as @e[type=minecraft:item,tag=!ogvz.processed] at @s run function ogvz:tick/check_item
@@ -34,6 +36,7 @@ execute as @a at @s run function ogvz:tick/active_detect
 
 # Cooldown/warmup functions
 execute as @a at @s run function ogvz:tick/active_cooldown
+execute as @a[tag=ogvz.zombie.punish,tag=ogvz.zombie.class] at @s run function ogvz:tick/punish_timer
 
 # Custom functions
 execute as @a[predicate=ogvz:effect/unluck] at @s run function ogvz:tick/custom_instant_effects
@@ -54,9 +57,10 @@ execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.mana=..-1}] at @s ru
 # Misc functions
 execute as @a[tag=ogvz.zombie] at @s run function ogvz:tick/innate_abilities
 execute as @e[type=#minecraft:arrows,tag=!temp.processed] at @s run function ogvz:tick/arrow_check
+execute as @a at @s run function ogvz:tick/zones
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s run function ogvz:tick/adventure_mode_toggle
-execute as @a[tag=ogvz.dwarf] at @s run function ogvz:tick/zones
 execute as @a[tag=!ogvz.admin] at @s run function ogvz:tick/lava_bucket
+execute as @a[tag=ogvz.zombie,tag=!ogvz.zombie.class] at @s run function ogvz:tick/zombie_spawn_immobilize
 execute as @a at @s run function ogvz:tick/frozen_custom_effect
 execute as @a at @s run function ogvz:tick/dolphins_grace_nerf
 execute as @a at @s run function ogvz:tick/natural_regeneration

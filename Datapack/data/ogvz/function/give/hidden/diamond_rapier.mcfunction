@@ -19,7 +19,7 @@ give @s minecraft:music_disc_cat[ \
       slot:"mainhand" \
     }, \
     { \
-      id:"minecraft:base_entity_interaction_range", \
+      id:"minecraft:entity_interaction_range.mainhand", \
       type:"minecraft:entity_interaction_range", \
       amount:0.0, \
       operation:"add_value", \
@@ -37,16 +37,16 @@ give @s minecraft:music_disc_cat[ \
   minecraft:weapon={}, \
   minecraft:tool={ \
     can_destroy_blocks_in_creative:false, \
-    damage_per_block:2, \
+    damage_per_block:1, \
     rules:[ \
+      { \
+        blocks:"#minecraft:sword_instantly_mines", \
+        speed:3.4028235e+38 \
+      }, \
       { \
         blocks:"minecraft:cobweb", \
         correct_for_drops:true, \
         speed:15.0 \
-      }, \
-      { \
-        blocks:"#minecraft:sword_instantly_mines", \
-        speed:3.4028235e+38 \
       }, \
       { \
         blocks:"#minecraft:sword_efficient", \
@@ -57,6 +57,7 @@ give @s minecraft:music_disc_cat[ \
   minecraft:blocks_attacks={ \
     damage_reductions:[ \
       { \
+        type:"#ogvz:is_physical", \
         base:0.0, \
         factor:0.5 \
       } \

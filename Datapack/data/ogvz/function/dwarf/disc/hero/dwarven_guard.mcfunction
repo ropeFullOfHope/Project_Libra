@@ -162,7 +162,7 @@ give @s minecraft:carrot_on_a_stick[ \
 
 tellraw @a [ \
   "", \
-  {"text":"\u25B6 ","bold":true,"color":"gold"}, \
+  {"text":"▶ ","bold":true,"color":"gold"}, \
   {"text":"Due to their valiant efforts, ","color":"yellow"}, \
   {"selector":"@s"}, \
   {"text":" has been proclaimed as a ","color":"yellow"}, \
