@@ -120,32 +120,61 @@ item replace entity @s weapon.offhand with minecraft:firework_rocket[ \
 ]
 
 # Iron Rapier
-give @s minecraft:iron_hoe[ \
+give @s minecraft:music_disc_cat[ \
+  !minecraft:jukebox_playable, \
+  minecraft:item_name="Iron Rapier", \
   minecraft:item_model="ogvz:iron_rapier", \
-  minecraft:item_name={"text":"Iron Rapier","color":"aqua"}, \
-  minecraft:unbreakable={}, \
-  minecraft:lore=[ \
-    {"text":" "}, \
-    {"text":"Impact","color":"blue","italic":false,"underlined":true}, \
-    {"text":"Deal more damage the faster you","color":"blue"}, \
-    {"text":"are moving.","color":"blue"}, \
-    {"text":"Enchantment","color":"green","italic":false}, \
-    {"text":" "}, \
-    {"text":"When in Main Hand:","color":"gray","italic":false}, \
-    {"text":" 5 Attack Damage","color":"dark_green","italic":false}, \
-    {"text":" 2.2 Attack Speed","color":"dark_green","italic":false}, \
-    {"text":" 3 Attack Reach","color":"dark_green","italic":false} \
-  ], \
-  minecraft:enchantments={ \
-    "ogvz:impact":1 \
-  }, \
+  minecraft:enchantments={"ogvz:impact":1}, \
+  minecraft:rarity="common", \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:attack_damage",amount:4.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-    {type:"minecraft:attack_speed",amount:-1.8,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+    { \
+      id:"minecraft:base_attack_damage", \
+      type:"minecraft:attack_damage", \
+      amount:4.0, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_attack_speed", \
+      type:"minecraft:attack_speed", \
+      amount:-1.8, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:entity_interaction_range.mainhand", \
+      type:"minecraft:entity_interaction_range", \
+      amount:0.0, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" 3 Attack Reach",color:"dark_green"} \
+      } \
+    } \
   ], \
-  minecraft:tooltip_display={ \
-    hidden_components:[ \
-      "minecraft:attribute_modifiers" \
+  minecraft:max_damage=250, \
+  minecraft:damage=0, \
+  minecraft:repairable={items:"#minecraft:iron_tool_materials"}, \
+  minecraft:enchantable={value:14}, \
+  minecraft:weapon={}, \
+  minecraft:tool={ \
+    can_destroy_blocks_in_creative:false, \
+    damage_per_block:1, \
+    rules:[ \
+      { \
+        blocks:"#minecraft:sword_instantly_mines", \
+        speed:3.4028235e+38 \
+      }, \
+      { \
+        blocks:"minecraft:cobweb", \
+        correct_for_drops:true, \
+        speed:15.0 \
+      }, \
+      { \
+        blocks:"#minecraft:sword_efficient", \
+        speed:1.5 \
+      } \
     ] \
   } \
 ]
@@ -156,8 +185,9 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:unbreakable={}, \
   minecraft:item_name={"text":"Delirium","color":"gray"}, \
   minecraft:lore=[ \
-    {"text":"Needs Description.","color":"blue"}, \
-    {"text":"X second cooldown","color":"red","italic":false}, \
+    {"text":"Shoot a darkness inflicting","color":"blue"}, \
+    {"text":"beam.","color":"blue"}, \
+    {"text":"20 second cooldown","color":"red","italic":false}, \
     {"text":"Active Ability","color":"green","italic":false} \
   ], \
   minecraft:tooltip_display={ \

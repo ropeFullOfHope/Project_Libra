@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: assassinate_loop
-# Function Name: ogvz:dwarf/item/hero/assassin_slayer/assassinate_loop
-# File Purpose: Ray scanning for Assassin Slayer's assassinate.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.10.23
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Raycasting for assassin slayer's assassinate.
 
 # Stops ray casting if ray is inside a solid block, is too far from the origin or has hit a player.
 execute unless block ~ ~ ~ #ogvz:go_through run return 0

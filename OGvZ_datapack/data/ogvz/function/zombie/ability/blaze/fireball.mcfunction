@@ -1,19 +1,6 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: fireball
-# Function Name: ogvz:zombie/ability/blaze/fireball
-# File Purpose: Shoots a fireball.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2025.04.11
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Shoot a fireball.
 
+# Display a fail message and return if ability is on cooldown.
 execute if entity @s[scores={ogvz.blaze.fireball.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Fireball]","bold":true,"color":"red"}, \
@@ -23,14 +10,17 @@ execute if entity @s[scores={ogvz.blaze.fireball.cooldown.seconds=1..}] run titl
 ]
 execute if entity @s[scores={ogvz.blaze.fireball.cooldown.seconds=1..}] run return 0
 
+# Set cooldown.
 scoreboard players set @s ogvz.blaze.fireball.cooldown.seconds 8
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Fireball]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an activation sound.
 playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 1
 
 # Summon a vector marker and point it in the same direction as the player, lastly teleport it forward, so it can be considered a vector.
@@ -70,4 +60,5 @@ tag @n[type=minecraft:marker,tag=temp.processing] remove temp.processing
 tag @n[type=minecraft:small_fireball,tag=temp.processing] add ogvz.projectile.blaze_fireball
 tag @n[type=minecraft:small_fireball,tag=temp.processing] remove temp.processing
 
+# Kill the temporary marker.
 kill @e[type=minecraft:marker,tag=temp.vector]

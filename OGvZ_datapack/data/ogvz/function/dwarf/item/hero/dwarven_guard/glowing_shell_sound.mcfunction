@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: glowing_shell_sound
-# Function Name: ogvz:dwarf/item/hero/dwarven_guard/glowing_shell_sound
-# File Purpose: Periodically plays a sound.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.11.29
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Periodically plays a sound.
 
 # Return if a full second hasn't passed yet.
 execute as @s[scores={ogvz.marker.glowing_shell.duration.ticks=1..}] run return 0

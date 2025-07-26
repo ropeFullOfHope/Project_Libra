@@ -1,3 +1,6 @@
+#> Description: Apply weakness and mining fatigue to dwarves in front of the player.
+
+# Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=45..] run title @s actionbar [ \
   "", \
   {"text":"[Disarm]","bold":true,"color":"red"}, \
@@ -7,15 +10,17 @@ execute unless entity @s[level=45..] run title @s actionbar [ \
 ]
 execute unless entity @s[level=45..] run return 0
 
-# Remove 45 levels.
+# Remove 45 mana (levels).
 scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 45
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Disarm]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an activation sound.
 playsound minecraft:entity.cat.hiss player @s ~ ~ ~ 1 1
 
 # Tag all dwarves in a sphere 4 blocks ahead of you with a radius of 4 blocks.

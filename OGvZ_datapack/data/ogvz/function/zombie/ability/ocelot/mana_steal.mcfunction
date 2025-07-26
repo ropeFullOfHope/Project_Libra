@@ -1,3 +1,6 @@
+#> Description: Shoot a ray that steals mana from a player.
+
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.ocelot.mana_steal.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Mana Steal]","bold":true,"color":"red"}, \
@@ -7,14 +10,17 @@ execute if entity @s[scores={ogvz.ocelot.mana_steal.cooldown.seconds=1..}] run t
 ]
 execute if entity @s[scores={ogvz.ocelot.mana_steal.cooldown.seconds=1..}] run return 0
 
+# Set the cooldown.
 scoreboard players set @s ogvz.ocelot.mana_steal.cooldown.seconds 10
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Mana Steal]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an activation sound.
 playsound minecraft:entity.cat.stray_ambient player @a ~ ~ ~ 1 1
 
 # Tag the player as the ray origin.

@@ -1,19 +1,6 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: assassinate
-# Function Name: ogvz:dwarf/item/hero/assassin_slayer/assassinate
-# File Purpose: Deals massive damage when backstabbing a player.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.10.23
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Deals massive damage when backstabbing a player.
 
+# Display a fail message and return if the secondary attack is on a cooldown.
 execute if entity @s[scores={ogvz.assassin_slayer.assassinate.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Assassinate]","bold":true,"color":"red"}, \

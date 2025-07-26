@@ -1,19 +1,6 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: mana_star
-# Function Name: ogvz:dwarf/item/hero/assassin_slayer/mana_star
-# File Purpose: Shoots a ray that grants mana regeneration effect.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.10.27
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Shoot a ray that grants mana regeneration effect.
 
+# Display a fail message and return if the item is on a cooldown.
 execute if entity @s[scores={ogvz.assassin_slayer.mana_star.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Mana Star]","bold":true,"color":"red"}, \
@@ -23,12 +10,14 @@ execute if entity @s[scores={ogvz.assassin_slayer.mana_star.cooldown.seconds=1..
 ]
 execute if entity @s[scores={ogvz.assassin_slayer.mana_star.cooldown.seconds=1..}] run return 0
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Mana Star]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Set the cooldown.
 scoreboard players set @s ogvz.assassin_slayer.mana_star.cooldown.seconds 10
 
 # Give the player a temporary tag.

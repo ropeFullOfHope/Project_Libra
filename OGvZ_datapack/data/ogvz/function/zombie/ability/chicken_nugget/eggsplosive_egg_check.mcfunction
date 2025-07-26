@@ -1,3 +1,5 @@
+#> Description: Raycast to determine if an explosion can hit the player.
+
 # Summons a marker at player's feet and gives it a temporary tag.
 execute positioned ~ ~0.01 ~ summon minecraft:marker run tag @s add temp.ray
 

@@ -1,3 +1,6 @@
+#> Description: Turn targeted dwarf blocks into infested stone.
+
+# Display a fail message, hide custom bars for a bit and return if the player doens't have a silverfish egg.
 execute unless entity @s[scores={ogvz.silverfish.silverfish_egg.count=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Infest]","bold":true,"color":"red"}, \

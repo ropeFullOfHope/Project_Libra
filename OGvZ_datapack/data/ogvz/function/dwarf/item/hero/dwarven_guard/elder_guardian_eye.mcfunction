@@ -1,19 +1,6 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: elder_guardian_eye
-# Function Name: ogvz:dwarf/hero/elder_guardian_eye
-# File Purpose: Shoots a beam that deals damage.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.02.24
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Shoot a beam that deals electric type damage.
 
+# Display a fail message and return if the item is on a cooldown.
 execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Elder Guardian Eye]","bold":true,"color":"red"}, \
@@ -23,6 +10,7 @@ execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seco
 ]
 execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run return 0
 
+# Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=15..] run title @s actionbar [ \
   "", \
   {"text":"[Elder Guardian Eye]","bold":true,"color":"red"}, \
@@ -32,17 +20,20 @@ execute unless entity @s[level=15..] run title @s actionbar [ \
 ]
 execute unless entity @s[level=15..] run return 0
 
-# Remove 10 levels.
+# Remove 10 mana (levels) from the player.
 scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 15
 
+# Set the cooldown.
 scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds 5
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Elder Guardian Eye]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an activation sound.
 playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 2
 
 # As the player is the one shooting the ray, the ray origin is the player.

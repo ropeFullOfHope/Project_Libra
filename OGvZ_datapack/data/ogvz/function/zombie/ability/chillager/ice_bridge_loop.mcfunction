@@ -1,7 +1,10 @@
+#> Description: Ray casting loop for placing down ice blocks.
+
 # Stops ray casting if ray is inside a solid block, is too far from the origin or has hit a player.
 execute unless block ~ ~ ~ #ogvz:go_through unless block ~ ~ ~ minecraft:packed_ice run return 0
 execute unless entity @n[tag=temp.ray_origin,distance=..8] run return 0
 
+# Show snowflake particles.
 particle minecraft:snowflake ~ ~ ~ 0.5 0.5 0.5 0 3 normal
 
 # Place an ice marker on the center of the block the ray is currently inside if there isn't one yet.

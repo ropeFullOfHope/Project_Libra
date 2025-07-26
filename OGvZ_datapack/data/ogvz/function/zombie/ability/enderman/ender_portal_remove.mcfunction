@@ -1,3 +1,5 @@
+#> Description: Remove the ender portal.
+
 # Remove all ender portal blocks.
 fill ~-5 ~-3 ~-5 ~5 ~-1 ~5 minecraft:air replace #ogvz:ender_portal_blocks
 
@@ -5,7 +7,7 @@ fill ~-5 ~-3 ~-5 ~5 ~-1 ~5 minecraft:air replace #ogvz:ender_portal_blocks
 playsound minecraft:block.end_portal.spawn player @a ~ ~10000 ~ 1 0.5 1
 particle minecraft:reverse_portal ~ ~-1.5 ~ 3 1 3 1 1000
 
-# =====( [star] )=====
+# Display a ender portal close message.
 tellraw @a [ \
   "", \
   {text:"\u1120\u1121\u1122\n",font:"ogvz:custom"}, \

@@ -1,21 +1,9 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: oceans_pearl_custom_bar
-# Function Name: ogvz:dwarf/item/hero/dwarven_guard/oceans_pearl_custom_bar
-# File Purpose: Displays the custom bar for ocean's pearl.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.11.20
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Show the ocean's pearl custom bar.
 
+# Add a temporary tag to the player.
 tag @s add temp.player
 
+# Create a temporary scoreboard.
 scoreboard objectives add temp.custom_bar_value dummy
 
 # Set the custom bar value to 2, then decrement it for each active ocean's pearl.

@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: whispersong_custom_bar
-# Function Name: ogvz:dwarf/item/hero/wither_warrior/whispersong_custom_bar
-# File Purpose: Displays the custom bar for whispersong.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.12.03
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Show the soul charge custom bar.
 
 title @s[scores={ogvz.wither_warrior.soul_charges.count=..0 }] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF164\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220"}
 title @s[scores={ogvz.wither_warrior.soul_charges.count=1   }] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF164\u1221\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220"}

@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:zombie/ability/snowman/freeze
-# File Name: freeze_loop
-# Function Name: ogvz:zombie/ability/snowman/freeze_loop
-# File Purpose: Ray scanning for Snowman's Freeze ability.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2025.02.16
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Raycasting loop for Snowman's Freeze ability.
 
 # Stops ray casting if ray is inside a solid block, is too far from the origin or has hit a player.
 execute unless block ~ ~ ~ #ogvz:go_through run return 0
@@ -22,6 +8,7 @@ execute if entity @a[tag=temp.hit] run return 0
 # Teleports the ray slightly forward.
 tp @s ^ ^ ^0.1
 
+# Show particles at the ray.
 execute if entity @p[tag=temp.ray_origin,distance=2..] run particle minecraft:snowflake ~ ~ ~ 0.05 0.05 0.05 0 1 force
 
 # When ray gets close to a player, it determines their hitbox size depending on their eye height.

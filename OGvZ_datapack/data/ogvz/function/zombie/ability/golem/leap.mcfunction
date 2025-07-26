@@ -1,22 +1,9 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By:
-# File Name: leap
-# Function Name: ogvz:zombie/ability/golem/leap
-# File Purpose: Boost the player high into the air.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.12.06
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Boost the player high into the air.
 
 # Return if the player is not on ground.
 execute unless predicate ogvz:is_on_ground run return 0
 
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.golem.leap.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Leap]","bold":true,"color":"red"}, \
@@ -26,16 +13,18 @@ execute if entity @s[scores={ogvz.golem.leap.cooldown.seconds=1..}] run title @s
 ]
 execute if entity @s[scores={ogvz.golem.leap.cooldown.seconds=1..}] run return 0
 
+# Set the cooldown.
 scoreboard players set @s ogvz.golem.leap.cooldown.seconds 20
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Leap]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play a leap sound and show particles.
 playsound minecraft:entity.iron_golem.repair player @a ~ ~ ~ 8 0.5
-
 particle minecraft:campfire_cosy_smoke ~ ~ ~ 0.25 0 0.25 0.1 30
 
 # Store the player's gamemode as a tag.

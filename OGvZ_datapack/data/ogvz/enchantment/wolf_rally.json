@@ -18,6 +18,13 @@
   "effects": {
     "minecraft:post_attack": [
       {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:player"
+          }
+        },
         "effect": {
           "type": "minecraft:run_function",
           "function": "ogvz:zombie/ability/wolf/wolf_rally"

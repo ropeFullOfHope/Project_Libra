@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By:
-# File Name: oceans_pearl_buff
-# Function Name: ogvz:dwarf/hero/dwarven_guard/oceans_pearl_buff
-# File Purpose: Spins the ocean's pearl.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.11.20
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Raycasting loop for ocean's pearl buff.
 
 # Stops ray casting if ray is inside a solid block, is too far from the origin or has hit a player.
 execute unless block ~ ~ ~ #ogvz:go_through run return 0
@@ -22,6 +8,7 @@ execute if entity @a[tag=temp.hit] run return 0
 # Teleports the ray slightly forward.
 tp @s ^ ^ ^0.1
 
+# Show particles at the ray.
 execute if entity @a[tag=temp.target,distance=2..] run particle minecraft:dust_color_transition{from_color:[0.620,0.482,0.867],scale:1,to_color:[0.984,0.788,0.890]} ~ ~ ~ 0 0 0 0.01 1 force
 
 # Checks if the ray is inside the player's hitbox. Because the smallest collision  check is a 1 * 1 * 1 cube, 2 hitboxes are used where the player's hitbox is exactly inside the intersection between the 2 hitboxes.

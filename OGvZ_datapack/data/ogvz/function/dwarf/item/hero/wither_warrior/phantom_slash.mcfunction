@@ -1,19 +1,6 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: sunfury
-# Function Name: ogvz:dwarf/hero/phantom_slash
-# File Purpose: Cuts through enemies in front of you.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.12.03
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Cut through enemies in front of the player and debuffs them.
 
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.wither_warrior.phantom_slash.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Phantom Slash]","bold":true,"color":"red"}, \
@@ -23,6 +10,7 @@ execute if entity @s[scores={ogvz.wither_warrior.phantom_slash.cooldown.seconds=
 ]
 execute if entity @s[scores={ogvz.wither_warrior.phantom_slash.cooldown.seconds=1..}] run return 0
 
+# Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=15..] run title @s actionbar [ \
   "", \
   {"text":"[Phantom Slash]","bold":true,"color":"red"}, \
@@ -32,11 +20,13 @@ execute unless entity @s[level=15..] run title @s actionbar [ \
 ]
 execute unless entity @s[level=30..] run return 0
 
-# Remove 15 levels.
+# Remove 15 mana (levels) from the player.
 scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 30
 
+# Set the cooldown.
 scoreboard players set @s ogvz.wither_warrior.phantom_slash.cooldown.seconds 15
 
+# Play an activation sound.
 playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 2 0.5
 
 # Give the player a temporary tag.

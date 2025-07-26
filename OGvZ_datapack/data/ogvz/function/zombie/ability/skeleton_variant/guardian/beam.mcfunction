@@ -1,19 +1,6 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: beam
-# Function Name: ogvz:zombie/ability/skeleton_variant/guardian/beam
-# File Purpose: Shoots a beam that deals electric damage.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.12.30
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Shoot a beam that deals electric damage to targeted player.
 
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.guardian.beam.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Beam]","bold":true,"color":"red"}, \
@@ -23,14 +10,17 @@ execute if entity @s[scores={ogvz.guardian.beam.cooldown.seconds=1..}] run title
 ]
 execute if entity @s[scores={ogvz.guardian.beam.cooldown.seconds=1..}] run return 0
 
+# Set the cooldown.
 scoreboard players set @s ogvz.guardian.beam.cooldown.seconds 3
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Beam]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an activation sound.
 playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 2
 
 # Tag the player as the ray origin.

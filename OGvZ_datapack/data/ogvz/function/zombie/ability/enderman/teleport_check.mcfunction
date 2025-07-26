@@ -1,3 +1,5 @@
+#> Description: Perform several checks to see if a player can be teleported.
+
 # Summon 6 markers at the center of each face of the block the ray is inside.
 execute align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~0.5 ~ ~ summon minecraft:marker run tag @s add temp.direction
 execute align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~-0.5 ~ ~ summon minecraft:marker run tag @s add temp.direction

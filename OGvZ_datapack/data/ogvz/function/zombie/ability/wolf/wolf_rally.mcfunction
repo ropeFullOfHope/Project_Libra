@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By:
-# File Name: wolf_rally
-# Function Name: ogvz:zombie/ability/wolf/wolf_rally
-# File Purpose: Buff your wolves.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.12.07
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Give strength effect to your wolves.
 
 # Add a temporary tag.
 tag @s add temp.target

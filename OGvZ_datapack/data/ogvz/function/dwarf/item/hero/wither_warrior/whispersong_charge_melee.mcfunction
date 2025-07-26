@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: whispersong_charge
-# Function Name: ogvz:dwarf/hero/wither_warrior/whispersong_charge
-# File Purpose: Charges whispersong after killing a player as a wither warrior with melee damage.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.02.17
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Charge whispersong after a melee kill.
 
 # Revoke advancement, so it can be granted again.
 advancement revoke @s only ogvz:misc/wither_warrior_kill_player_melee

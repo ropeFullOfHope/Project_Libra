@@ -10,7 +10,6 @@ gamerule doTraderSpawning false
 gamerule doWardenSpawning false
 gamerule keepInventory true
 gamerule locatorBar false
-gamerule mobGriefing false
 gamerule naturalRegeneration false
 gamerule sendCommandFeedback false
 

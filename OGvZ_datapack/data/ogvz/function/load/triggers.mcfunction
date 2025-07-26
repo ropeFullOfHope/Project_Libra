@@ -1,4 +1,4 @@
-#> Creates the triggers.
+#> Description: Creates the triggers.
 
 # Admin Handbook - Gives the player the admin handbook.
 scoreboard objectives add admin_handbook trigger

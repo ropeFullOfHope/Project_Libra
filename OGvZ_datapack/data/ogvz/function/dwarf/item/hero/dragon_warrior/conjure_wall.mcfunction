@@ -1,19 +1,6 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: conjure_wall
-# Function Name: ogvz:dwarf/item/hero/dragon_warrior/conjure_wall
-# File Purpose: Places a box of stone bricks where you point.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.10.28
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Places a box of stone bricks where you are looking at.
 
+# Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=8..] run title @s actionbar [ \
   "", \
   {"text":"[Conjure Wall]","bold":true,"color":"red"}, \
@@ -34,6 +21,7 @@ execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:ma
 # Start the ray casting loop.
 execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:dwarf/item/hero/dragon_warrior/conjure_wall_loop
 
+# Display an activation message.
 execute at @n[type=minecraft:marker,tag=temp.ray] unless block ~ ~ ~ #ogvz:go_through run title @s actionbar [ \
   "", \
   {"text":"[Conjure Wall]","bold":true,"color":"green"}, \

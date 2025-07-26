@@ -3,6 +3,12 @@
 # Set the game pahase to 3 - Plague phase.
 scoreboard players set &ogvz ogvz.game.phase 3
 
+# Make a random dwarf into a specific hero depending on which boss was chosen.
+execute if score &ogvz ogvz.game.boss matches 1 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero] at @s run function ogvz:dwarf/disc/hero/dragon_warrior
+execute if score &ogvz ogvz.game.boss matches 2 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero] at @s run function ogvz:dwarf/disc/hero/wither_warrior
+execute if score &ogvz ogvz.game.boss matches 3 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero] at @s run function ogvz:dwarf/disc/hero/dwarven_guard
+execute if score &ogvz ogvz.game.boss matches 4 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero] at @s run function ogvz:dwarf/disc/hero/assassin_slayer
+
 # Create a temporary scoreboard that holds a constant number 100.
 scoreboard objectives add temp.const.100 dummy
 scoreboard players set &ogvz temp.const.100 100
@@ -39,6 +45,9 @@ execute if score &ogvz temp.kill_dwarf_count matches 1.. run function ogvz:misc/
 
 # Give short darkness to all plagued players. 
 effect give @a[tag=ogvz.dwarf.plague] minecraft:darkness 2 0 true
+
+# Fully heal all non-plagued dwarves.
+effect give @a[tag=ogvz.dwarf,tag=!ogvz.dwarf.plague] minecraft:instant_health 1 5 true
 
 # Remove temporary scoreboards.
 scoreboard objectives remove temp.const.100

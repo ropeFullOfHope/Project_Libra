@@ -1,19 +1,9 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: snowball_barage
-# Function Name: ogvz:zombie/ability/snowman/snowball_barage
-# File Purpose: Shoots a barrage of snowballs.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2025.02.22
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Lobs a barrage of snowballs.
 
+# Hide the custom bars for a bit.
+scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
+
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.snowman.freeze.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Snowball Barrage]","bold":true,"color":"red"}, \
@@ -23,14 +13,17 @@ execute if entity @s[scores={ogvz.snowman.freeze.cooldown.seconds=1..}] run titl
 ]
 execute if entity @s[scores={ogvz.snowman.snowball_barrage.cooldown.seconds=1..}] run return 0
 
+# Set the cooldown.
 scoreboard players set @s ogvz.snowman.snowball_barrage.cooldown.seconds 8
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Snowball Barrage]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an activation sound.
 playsound minecraft:entity.snowball.throw player @s ~ ~ ~ 1 0.50
 playsound minecraft:entity.snowball.throw player @s ~ ~ ~ 1 0.63
 playsound minecraft:entity.snowball.throw player @s ~ ~ ~ 1 0.75
@@ -120,5 +113,6 @@ scoreboard objectives remove temp.deviation.y
 scoreboard objectives remove temp.deviation.z
 scoreboard objectives remove temp.snowball_amount
 
+# Kill all temporary markers.
 kill @e[type=minecraft:marker,tag=temp.vector]
 kill @e[type=minecraft:marker,tag=temp.yaw]

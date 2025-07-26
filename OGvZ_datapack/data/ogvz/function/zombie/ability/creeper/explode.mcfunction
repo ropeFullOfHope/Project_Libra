@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By:
-# File Name: explode
-# Function Name: ogvz:zombie/ability/creeper/explode
-# File Purpose: Explode the player.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.12.06
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Explode the player.
 
 # Terrain modifying abilities cannot be used when the player is in adventure mode.
 execute if entity @s[gamemode=adventure] run title @s actionbar [ \
@@ -22,7 +8,7 @@ execute if entity @s[gamemode=adventure] run title @s actionbar [ \
 ]
 execute if entity @s[gamemode=adventure] run return 0
 
-# Prevent exploding the ender portal.
+# Prevent exploding near the ender portal.
 execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal,distance=..8] run title @s actionbar [ \
   "", \
   {text:"[Explode]",bold:true,color:"red"}, \
@@ -49,7 +35,7 @@ execute as @s[tag=ogvz.zombie.punish] if block ~ ~1 ~1 #ogvz:dwarf_blocks run ta
 execute as @s[tag=ogvz.zombie.punish] if block ~ ~1 ~-1 #ogvz:dwarf_blocks run tag @s remove ogvz.zombie.punish
 execute as @s[tag=ogvz.zombie.punish] if block ~ ~2 ~ #ogvz:dwarf_blocks run tag @s remove ogvz.zombie.punish
 
-# Clear dwarf blocks around the player to promote blowing up keep walls.
+# Clear dwarf blocks (except reinforced bricks) around the player to promote blowing up keep walls.
 fill ~ ~ ~-1 ~ ~1 ~1 minecraft:air replace #ogvz:dwarf_blocks
 fill ~-1 ~ ~ ~1 ~1 ~ minecraft:air replace #ogvz:dwarf_blocks
 
@@ -57,3 +43,6 @@ fill ~-1 ~ ~ ~1 ~1 ~ minecraft:air replace #ogvz:dwarf_blocks
 summon minecraft:tnt ~ ~ ~ {fuse:0,explosion_power:3,Tags:["temp.processing"],block_state:{Name:"minecraft:air"}}
 data modify entity @n[type=minecraft:tnt,tag=temp.processing] owner set from entity @s UUID
 tag @n[type=minecraft:tnt,tag=temp.processing] remove temp.processing
+
+# Deal a lot of explosion damage to the player.
+damage @s 10000 minecraft:explosion by @s

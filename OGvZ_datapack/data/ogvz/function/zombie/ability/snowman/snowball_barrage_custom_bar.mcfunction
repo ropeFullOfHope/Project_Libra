@@ -1,25 +1,13 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: snowball_barrage_custom_bar
-# Function Name: ogvz:zombie/ability/snowman/snowball_barrage_custom_bar
-# File Purpose: Displays the custom bar for snowball barrage.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2025.03.02
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Show the invisibility custom bar.
 
+# Create temporary scoreboards.
 scoreboard objectives add temp.custom_bar_value dummy
 scoreboard objectives add temp.max_value dummy
 
-# Yes, it's the funny number, no it's not intentional. The custom bar is 69 pixels wide from the inside and it's aligned to vanilla bars.
+# The custom bar is 69 pixels wide from the inside.
 scoreboard players set @s temp.custom_bar_value 69
 
+# Set the maximum power.
 scoreboard players set @s temp.max_value 1000
 
 # Create and set the power scoreboard to the rotation of a summoned marker that faces in the same direction as the player.
@@ -51,6 +39,7 @@ scoreboard players operation @s temp.power -= @s temp.angle.min
 scoreboard players operation @s temp.power *= @s temp.max_value
 scoreboard players operation @s temp.power /= @s temp.angle.range
 
+# Calculate the custom bar fullness.
 # This can be represented as: custom bar width * current value / max value
 scoreboard players operation @s temp.custom_bar_value *= @s temp.power
 scoreboard players operation @s temp.custom_bar_value /= @s temp.max_value
@@ -127,9 +116,9 @@ title @s[scores={temp.custom_bar_value=67}  ] actionbar {"font":"ogvz:custom","s
 title @s[scores={temp.custom_bar_value=68}  ] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF164\u1241\u2268"}
 title @s[scores={temp.custom_bar_value=69..}] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF164\u1241\u2269"}
 
+# Remove temporary scoreboards.
 scoreboard objectives remove temp.custom_bar_value
 scoreboard objectives remove temp.max_value
-
 scoreboard objectives remove temp.angle.min
 scoreboard objectives remove temp.angle.max
 scoreboard objectives remove temp.angle.range

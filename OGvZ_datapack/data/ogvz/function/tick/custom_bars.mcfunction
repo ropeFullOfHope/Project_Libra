@@ -19,8 +19,8 @@ execute as @s[tag=ogvz.zombie.class.chillager,tag=!ogvz.zombie.class.chillager.i
 # Show Velocity custom bar to Phantom.
 execute as @s[tag=ogvz.zombie.class.phantom] at @s run function ogvz:zombie/ability/phantom/velocity_custom_bar
 
-# Show Snowball Barrage's custom bar to the Snowman if they are holding the Snowball Barrage while it's not on cooldown.
-execute as @s[tag=ogvz.zombie.class.snowman,scores={ogvz.snowman.snowball_barrage.cooldown.seconds=..0}] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:6350}] at @s run function ogvz:zombie/ability/snowman/snowball_barrage_custom_bar
+# Show Snowball Barrage's custom bar to the Snowman if they are holding the Snowball Barrage ability.
+execute as @s[tag=ogvz.zombie.class.snowman] if items entity @s weapon.* minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:6350}] at @s run function ogvz:zombie/ability/snowman/snowball_barrage_custom_bar
 
 # Show experience bar to Piglin if they are holding the evolution passive ability.
 execute as @s[tag=ogvz.zombie.class.piglin,scores={ogvz.inventory.evolution=1..}] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:96}}}} run function ogvz:zombie/ability/piglin/evolution_custom_bar_1

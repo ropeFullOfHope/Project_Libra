@@ -1,3 +1,5 @@
+#> Description: Heals nearby zombies and tracks the pollen bomb's lifetime.
+
 # Return if the marker is still riding the splash potion.
 execute on vehicle run return 0
 

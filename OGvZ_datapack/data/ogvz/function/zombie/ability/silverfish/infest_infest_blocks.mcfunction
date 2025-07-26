@@ -1,15 +1,20 @@
+#> Description: Checks and infests blocks.
+
+# Hide custom bars for a bit.
 scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 
+# Decrement silverfish eggs by 1.
 scoreboard players remove @s ogvz.silverfish.silverfish_egg.count 1
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Infest]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an infest sound and show particles.
 execute align xyz positioned ~0.5 ~0.5 ~0.5 run playsound minecraft:entity.silverfish.step player @a ~ ~ ~ 1 1
-
 execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle minecraft:infested ~ ~ ~ 0.5 0.5 0.5 0 30
 
 # Summon a infestation marker and give it a temporary tag.

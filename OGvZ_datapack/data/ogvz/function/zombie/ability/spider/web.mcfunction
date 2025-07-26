@@ -1,3 +1,6 @@
+#> Description: Shoot a beam that creates a clump of cobwebs.
+
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.spider.web.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Web]","bold":true,"color":"red"}, \
@@ -15,14 +18,17 @@ execute if entity @s[gamemode=adventure] run title @s actionbar [ \
 ]
 execute if entity @s[gamemode=adventure] run return 0
 
+# Set the cooldown.
 scoreboard players set @s ogvz.spider.web.cooldown.seconds 15
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Web]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an activation sound.
 playsound minecraft:block.cobweb.place player @a ~ ~ ~ 1 0.65
 
 # Tag the player as the ray origin.

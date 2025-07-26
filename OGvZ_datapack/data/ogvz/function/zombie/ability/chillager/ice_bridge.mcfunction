@@ -1,5 +1,9 @@
+#> Description: Creates a bridge made of ice.
+
+# Hides the custom bars for a bit.
 scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.chillager.ice_bridge.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Ice Bridge]","bold":true,"color":"red"}, \
@@ -17,14 +21,17 @@ execute if entity @s[gamemode=adventure] run title @s actionbar [ \
 ]
 execute if entity @s[gamemode=adventure] run return 0
 
+# Set the cooldown.
 scoreboard players set @s ogvz.chillager.ice_bridge.cooldown.seconds 20
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Ice Bridge]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an activation sound.
 playsound minecraft:entity.player.hurt_freeze player @a ~ ~ ~ 1 0.5
 
 # Summons two marker at players feet and gives them a proper tag.

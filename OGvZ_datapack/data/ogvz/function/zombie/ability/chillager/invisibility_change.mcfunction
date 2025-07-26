@@ -1,3 +1,5 @@
+#> Description: Fills/drains the invisibility bar and checks for if it's empty.
+
 # Drain invisibility if invisible.
 scoreboard players remove @s[tag=ogvz.zombie.class.chillager.invisible] ogvz.chillager.invisibility.duration 2
 

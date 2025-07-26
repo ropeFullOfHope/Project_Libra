@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: conjure_wall_loop
-# Function Name: ogvz:dwarf/item/hero/dragon_warrior/conjure_wall_loop
-# File Purpose: Ray casting loop for dragon warrior's conjure wall.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.10.28
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Raycasting for dragon warrior's conjure wall.
 
 # Stops ray casting if ray is inside a solid block or is too far from the origin.
 execute unless block ~ ~ ~ #ogvz:go_through run return 0

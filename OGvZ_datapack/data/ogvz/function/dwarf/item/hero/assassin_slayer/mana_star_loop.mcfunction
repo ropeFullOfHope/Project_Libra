@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: mana_star_loop
-# Function Name: ogvz:dwarf/item/hero/assassin_slayer/mana_star_loop
-# File Purpose: Ray scanning for Assassin Slayer's mana star.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.10.27
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Raycasting for assassin slayer's mana star.
 
 # Stops ray casting if ray is inside a solid block, is too far from the origin or has hit a player.
 execute unless block ~ ~ ~ #ogvz:go_through run return 0

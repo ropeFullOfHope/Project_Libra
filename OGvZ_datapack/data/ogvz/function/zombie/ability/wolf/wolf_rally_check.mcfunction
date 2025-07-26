@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By:
-# File Name: wolf_rally_check
-# Function Name: ogvz:zombie/ability/wolf/wolf_rally_check
-# File Purpose: Checks if the wolf belongs to the targeted player.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.12.07
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Checks if the wolf belongs to the targeted player.
 
 # Add temporary tag.
 tag @s add temp.target

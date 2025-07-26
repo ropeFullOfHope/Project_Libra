@@ -1,3 +1,6 @@
+#> Description: Shoot a ray that heals other zombies.
+
+# Show fail message and return if ability is on cooldown.
 execute if entity @s[scores={ogvz.bee.honey.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Honey]","bold":true,"color":"red"}, \
@@ -7,14 +10,17 @@ execute if entity @s[scores={ogvz.bee.honey.cooldown.seconds=1..}] run title @s 
 ]
 execute if entity @s[scores={ogvz.bee.honey.cooldown.seconds=1..}] run return 0
 
+# Set cooldown.
 scoreboard players set @s ogvz.bee.honey.cooldown.seconds 10
 
+# Display activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Honey]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play a sound.
 playsound minecraft:entity.bee.death player @a ~ ~ ~ 1 0.8
 
 # Tag the player as the ray origin.

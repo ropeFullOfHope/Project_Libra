@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: whispersong_arrow
-# Function Name: ogvz:dwarf/hero/wither_warrior/whispersong_arrow
-# File Purpose: Applies a tag to a soul charged arrow and removes one soul charge.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.02.17
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Apply a tag to a soul charged arrow and removes one soul charge.
 
 # Add a tag to the arrow, that let's it deal extra damage and show particles.
 tag @s add temp.charged_whispersong_arrow

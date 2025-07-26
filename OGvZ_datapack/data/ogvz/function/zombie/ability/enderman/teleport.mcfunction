@@ -1,3 +1,6 @@
+#> Description: Teleport the player to where they are looking.
+
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.enderman.teleport.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Teleport]","bold":true,"color":"red"}, \

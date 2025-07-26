@@ -1,3 +1,5 @@
+#> Description: Checks if the ender portal is missing any blocks.
+
 # Add a temporary scoreboard.
 scoreboard objectives add temp.ender_portal.block_count dummy
 
@@ -8,4 +10,5 @@ fill ~-5 ~-3 ~-5 ~5 ~-1 ~5 minecraft:end_stone replace minecraft:structure_void 
 # Remove the portal if any block is missing.
 execute as @s[scores={temp.ender_portal.block_count=..86}] at @s run function ogvz:zombie/ability/enderman/ender_portal_remove
 
+# Remove temorary scoreboard.
 scoreboard objectives remove temp.ender_portal.block_count

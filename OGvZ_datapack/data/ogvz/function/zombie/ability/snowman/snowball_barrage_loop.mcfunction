@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: snowball_barage_loop
-# Function Name: ogvz:zombie/ability/snowman/snowball_barage_loop
-# File Purpose: A loop for snowman's snowball barrage.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2025.02.22
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: A loop for creating snowball for snowman's snowball barrage.
 
 # Summon a snowball and give it a temporary tag.
 execute summon minecraft:snowball run tag @s add temp.processing

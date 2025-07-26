@@ -1,22 +1,6 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: dragon_scale
-# Function Name: ogvz:dwarf/item/hero/dragon_warrior/dragon_scale
-# File Purpose: Transform into your dragon form.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.10.31
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Transform the dragon warrior into dragon form.
 
-# Revert to regular form if the player uses dragon scale while in dragon form.
-#execute as @s[tag=ogvz.dwarf.class.hero.dragon_warrior.dragon_form] at @s run return run function ogvz:dwarf/item/hero/dragon_warrior/dragon_scale_remove
-
+# Display a fail message and return if the item is on a cooldown.
 execute if entity @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Dragon Scale]","bold":true,"color":"red"}, \
@@ -26,6 +10,7 @@ execute if entity @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.seconds=1
 ]
 execute if entity @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.seconds=1..}] run return 0
 
+# Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=50..] run title @s actionbar [ \
   "", \
   {"text":"[Dragon Scale]","bold":true,"color":"red"}, \
@@ -35,14 +20,17 @@ execute unless entity @s[level=50..] run title @s actionbar [ \
 ]
 execute unless entity @s[level=50..] run return 0
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Dragon Scale]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Remove 50 mana (levels) from the player.
 scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 50
 
+# Give the player the dragon form tag.
 tag @s add ogvz.dwarf.class.hero.dragon_warrior.dragon_form
 
 # Reset the damage scoreboard used to track how much damage the DW has taken while in dragon form.
@@ -58,4 +46,5 @@ item modify entity @s armor.chest ogvz:dragon_warrior_dragon_form_chestplate
 # Play a global sound announcing the transformation.
 playsound minecraft:entity.ender_dragon.growl player @a ~ ~ ~ 1 1 1
 
+# Show particles.
 particle minecraft:dragon_breath ~ ~0.9 ~ 0 0 0 0.2 100 force

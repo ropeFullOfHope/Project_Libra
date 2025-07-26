@@ -1,5 +1,9 @@
+#> Description: Hatch all nearby infested blocks into ai silverfish.
+
+# Hide the custom bars for a bit.
 scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.silverfish.roar.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Roar]","bold":true,"color":"red"}, \
@@ -17,14 +21,17 @@ execute if entity @s[gamemode=adventure] run title @s actionbar [ \
 ]
 execute if entity @s[gamemode=adventure] run return 0
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Roar]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Set the cooldown.
 scoreboard players set @s ogvz.silverfish.roar.cooldown.seconds 20
 
+# Play an activation sound.
 playsound minecraft:entity.silverfish.hurt player @a ~ ~ ~ 4 0.5
 
 # Start the warmup timer for when the Silverfish will regenerate all of it's Silverfish Eggs in ticks (1 second = 20 ticks). 

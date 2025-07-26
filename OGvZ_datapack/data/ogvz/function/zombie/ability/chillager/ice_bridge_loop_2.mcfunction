@@ -1,3 +1,5 @@
+#> Description: Loop for applying an increasing lifetime scoreboard to all ice markers.
+
 # Exit the loop if there are no ice markers left.
 execute unless entity @e[type=minecraft:marker,tag=temp.ice] run return 0
 

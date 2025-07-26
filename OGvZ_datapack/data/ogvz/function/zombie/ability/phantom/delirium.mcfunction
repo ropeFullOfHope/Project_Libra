@@ -1,5 +1,9 @@
+#> Description: Shoot a ray that gives darkness to targeted player.
+
+# Hide the custom bars for a bit.
 scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.phantom.delirium.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Delirium]","bold":true,"color":"red"}, \
@@ -9,14 +13,17 @@ execute if entity @s[scores={ogvz.phantom.delirium.cooldown.seconds=1..}] run ti
 ]
 execute if entity @s[scores={ogvz.phantom.delirium.cooldown.seconds=1..}] run return 0
 
+# Set a cooldown.
 scoreboard players set @s ogvz.phantom.delirium.cooldown.seconds 20
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Delirium]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an activation sound.
 playsound minecraft:entity.phantom.ambient player @a ~ ~ ~ 1 1
 
 # Tag the player as the ray origin.

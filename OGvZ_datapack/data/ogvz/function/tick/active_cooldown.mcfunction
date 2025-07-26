@@ -174,6 +174,7 @@ execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.seconds=1..}] run s
 execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.snowman.snowball_barrage.cooldown.seconds 1
 execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.ticks=20..,ogvz.snowman.snowball_barrage.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
 execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.ticks=20..,ogvz.snowman.snowball_barrage.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Snowball Barrage]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.ticks=20..,ogvz.snowman.snowball_barrage.cooldown.seconds=0}] run scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 execute as @s[scores={ogvz.snowman.snowball_barrage.cooldown.ticks=20..}] run scoreboard players set @s ogvz.snowman.snowball_barrage.cooldown.ticks 0
 
 # Snowman - Freeze
@@ -181,6 +182,7 @@ execute as @s[scores={ogvz.snowman.freeze.cooldown.seconds=1..}] run scoreboard 
 execute as @s[scores={ogvz.snowman.freeze.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.snowman.freeze.cooldown.seconds 1
 execute as @s[scores={ogvz.snowman.freeze.cooldown.ticks=20..,ogvz.snowman.freeze.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
 execute as @s[scores={ogvz.snowman.freeze.cooldown.ticks=20..,ogvz.snowman.freeze.cooldown.seconds=0}] run title @s actionbar ["",{"text":"[Freeze]","bold":true,"color":"blue"},{"text":" Recharged!","color":"blue"}]
+execute as @s[scores={ogvz.snowman.freeze.cooldown.ticks=20..,ogvz.snowman.freeze.cooldown.seconds=0}] run scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 execute as @s[scores={ogvz.snowman.freeze.cooldown.ticks=20..}] run scoreboard players set @s ogvz.snowman.freeze.cooldown.ticks 0
 
 # Bee - Honey

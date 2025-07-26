@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:zombie/ability/golem/fissure_loop
-# File Name: fissure_raise
-# Function Name: dvz:zombie/ability/golem/fissure_raise
-# File Purpose: Clones the block below ground with some exceptions.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.12.14
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Clones the block below ground with some exceptions.
 
 # Clone the block from 3 blocks below 3 blocks up.
 clone ~ ~-3 ~ ~ ~-3 ~ ~ ~ ~ replace force

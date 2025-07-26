@@ -1,3 +1,6 @@
+#> Description: Throw an egg that explodes on impact.
+
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.chicken_nugget.eggsplosive_egg.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Eggsplosive Egg]","bold":true,"color":"red"}, \
@@ -7,8 +10,10 @@ execute if entity @s[scores={ogvz.chicken_nugget.eggsplosive_egg.cooldown.second
 ]
 execute if entity @s[scores={ogvz.chicken_nugget.eggsplosive_egg.cooldown.seconds=1..}] run return 0
 
+# Set the cooldown.
 scoreboard players set @s ogvz.chicken_nugget.eggsplosive_egg.cooldown.seconds 3
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Eggsplosive Egg]","bold":true,"color":"green"}, \

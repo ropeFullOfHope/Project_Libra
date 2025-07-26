@@ -1,3 +1,5 @@
+#> Description: Handles silverfish lifetime and prevents it from targeting zombie players.
+
 # Decrement lifetime scoreboard.
 scoreboard players remove @s ogvz.silverfish.lifetime.ticks 1
 

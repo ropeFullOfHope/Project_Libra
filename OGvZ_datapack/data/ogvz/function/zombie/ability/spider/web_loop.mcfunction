@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:zombie/ability/skeleton_variant/guardian/beam
-# File Name: elder_guardian_eye_loop
-# Function Name: ogvz:dwarf/hero/dwarven_guard/elder_guardian_eye_loop
-# File Purpose: Ray scanning for Dwarven Guard's Elder Guardian Eye.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.02.24
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Raycasting for spider's web ability.
 
 # Stops ray casting if ray is inside a solid block, is too far from the origin or has hit a player.
 execute unless block ~ ~ ~ #ogvz:go_through run return 0
@@ -22,6 +8,7 @@ execute if entity @a[tag=temp.hit] run return 0
 # Teleports the ray slightly forward.
 tp @s ^ ^ ^0.1
 
+# Show particles at the ray.
 execute if entity @p[tag=temp.ray_origin,distance=2..] run particle minecraft:block_crumble{block_state:"minecraft:cobweb"} ~ ~ ~ 0 0 0 0 1
 
 # When ray gets close to a player, it determines their hitbox size depending on their eye height.

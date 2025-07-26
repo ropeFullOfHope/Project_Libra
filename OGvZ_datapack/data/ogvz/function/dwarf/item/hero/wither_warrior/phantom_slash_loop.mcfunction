@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: elder_guardian_eye_loop
-# Function Name: ogvz:dwarf/hero/dwarven_guard/elder_guardian_eye_loop
-# File Purpose: Ray scanning for Dwarven Guard's Elder Guardian Eye.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.02.24
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Raycasting for phantom slash.
 
 # Stops ray casting if ray is inside a solid block or is too far from the origin.
 execute unless block ~ ~ ~ #ogvz:go_through run return 0
@@ -21,6 +7,7 @@ execute unless entity @e[type=minecraft:marker,tag=temp.ray_origin,distance=..8]
 # Teleports the ray slightly forward.
 tp @s ^ ^ ^0.1
 
+# Shows particles at the ray.
 execute if predicate {condition:"minecraft:random_chance",chance:0.05} run particle minecraft:sweep_attack ~ ~-1 ~ 0 0 0 0 1 force
 
 # When ray gets close to a player, it determines their hitbox size depending on their eye height.

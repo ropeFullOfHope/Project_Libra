@@ -1,19 +1,6 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By:
-# File Name: swiftness
-# Function Name: ogvz:dwarf/magic_potion/swiftness
-# File Purpose: Gives Speed to player.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.01.03
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Give temporary speed and dolphin's grace to the player.
 
+# Display fail message and return if the player doens't have enough mana.
 execute unless entity @s[level=20..] run title @s actionbar [ \
   "", \
   {"text":"[Magic Swiftness Potion]","bold":true,"color":"red"}, \
@@ -23,16 +10,19 @@ execute unless entity @s[level=20..] run title @s actionbar [ \
 ]
 execute unless entity @s[level=20..] run return 0
 
-# Remove 20 levels.
+# Remove 20 mana (levels) from the player.
 scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 20
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Magic Swiftness Potion]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an activation sound.
 playsound minecraft:entity.witch.drink player @a ~ ~ ~ 1 1
 
+# Give the player temporary speed and dolphin's grace.
 effect give @s minecraft:speed 15 1
 effect give @s minecraft:dolphins_grace 15 0

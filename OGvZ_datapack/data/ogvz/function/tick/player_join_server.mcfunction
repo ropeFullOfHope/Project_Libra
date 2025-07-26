@@ -14,6 +14,7 @@ execute as @s at @s run function ogvz:misc/remove_attributes
 tag @s remove ogvz.joined_game
 tag @s remove ogvz.admin
 tag @s remove ogvz.dead
+tag @s remove ogvz.marked_for_death
 tag @s remove ogvz.zombie.punish
 
 # Revoke all advancements.

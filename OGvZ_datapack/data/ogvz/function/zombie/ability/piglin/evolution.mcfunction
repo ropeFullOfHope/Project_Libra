@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By:
-# File Name: evolution
-# Function Name: ogvz:zombie/ability/piglin/evolution
-# File Purpose: Add experience towards evolution.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.12.11
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Add experience towards evolution.
 
 # Reset golden pickaxe uses scoreboard.
 scoreboard players set @s ogvz.piglin.used.golden_pickaxe 0

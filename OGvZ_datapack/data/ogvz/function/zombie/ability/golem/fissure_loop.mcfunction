@@ -1,19 +1,6 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:zombie/ability/golem/fissure
-# File Name: fissure_loop
-# Function Name: dvz:zombies/golem/fissure_loop
-# File Purpose: Ray casting loop for golem's fissure.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2023.09.25
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Raycasting loop for golem's fissure.
 
+# Return if the ray reached it's maximum range.
 execute unless entity @n[tag=temp.ray_origin,distance=..11] run return 0
 
 # Go up 1 or 2 blocks if the ray marker is inside a block.
@@ -33,10 +20,14 @@ execute at @s positioned ~ ~0 ~ if block ~ ~ ~ #ogvz:go_through run function ogv
 execute at @s positioned ~ ~1 ~ if block ~ ~ ~ #ogvz:go_through run function ogvz:zombie/ability/golem/fissure_raise
 execute at @s positioned ~ ~2 ~ if block ~ ~ ~ #ogvz:go_through run function ogvz:zombie/ability/golem/fissure_raise
 
+# Show particles.
 execute at @s run particle minecraft:block{block_state:"minecraft:stone"} ~ ~1 ~ 0.25 1 0.25 0 20 normal
 
+# Create temporary marker inside the block.
 execute at @s align xyz summon minecraft:marker run tag @s add temp.fissure
 
+# Raycast the ray forward.
 execute as @s at @s run function ogvz:zombie/ability/golem/fissure_search
 
+# Repeat the raycasting loop.
 execute as @s at @s run function ogvz:zombie/ability/golem/fissure_loop

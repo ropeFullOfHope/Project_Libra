@@ -1,3 +1,5 @@
+#> Description: Replace the used reusable firework rocket with another reusable firework rocket.
+
 # Reset firework rocket uses scoreboard.
 scoreboard players set @s ogvz.phantom.used.firework_rocket 0
 

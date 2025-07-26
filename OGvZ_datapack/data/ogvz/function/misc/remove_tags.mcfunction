@@ -1,5 +1,5 @@
 #> Description: Removes most of the ogvz tags.
-#> Note: Exceptions are: ogvz.initialized, ogvz.admin, ogvz.joined_game, ogvz.dead, ogvz.zombie.punish, ogvz.attribute tags.
+#> Note: Exceptions are: ogvz.initialized, ogvz.admin, ogvz.joined_game, ogvz.dead, ogvz.marked_for_death, ogvz.zombie.punish, ogvz.attribute tags.
 
 tag @s remove ogvz.dwarf
 

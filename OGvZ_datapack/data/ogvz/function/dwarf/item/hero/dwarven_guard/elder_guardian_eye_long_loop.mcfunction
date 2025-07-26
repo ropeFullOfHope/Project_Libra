@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: elder_guardian_eye_loop
-# Function Name: ogvz:dwarf/hero/dwarven_guard/elder_guardian_eye_loop
-# File Purpose: Ray scanning for Dwarven Guard's Elder Guardian Eye.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.02.24
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Raycasting for dwarven guard's elder guardian eye for when they are inside water.
 
 # Stops ray casting if ray is inside a solid block or is too far from the origin.
 execute unless block ~ ~ ~ #ogvz:go_through run return 0
@@ -21,6 +7,7 @@ execute unless entity @a[tag=temp.ray_origin,distance=..36] run return 0
 # Teleports the ray slightly forward.
 tp @s ^ ^ ^0.1
 
+# Show particles at the ray.
 execute if entity @p[tag=temp.ray_origin,distance=2..] run particle minecraft:dust_color_transition{from_color:[0.0f,1.0f,0.6f],scale:2.0f,to_color:[0.4f,0.0f,0.6f]} ~ ~ ~ 0.05 0.05 0.05 0.1 3 force
 
 # Spiraling particles.

@@ -1,3 +1,5 @@
+#> Description: Start the ender portal animation.
+
 # Play sound
 playsound minecraft:block.portal.trigger player @a ~ ~ ~ 4 1.6
 

@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By:
-# File Name: howl
-# Function Name: ogvz:zombie/ability/wolf/howl
-# File Purpose: Summons a pack of wolves.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.12.07
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Summons a pack of wolves.
 
 # Add temporary tag.
 tag @s add temp.target
@@ -21,6 +7,7 @@ tag @s add temp.target
 item replace entity @s[gamemode=!creative,tag=temp.use.mainhand] weapon.mainhand with minecraft:air
 item replace entity @s[gamemode=!creative,tag=temp.use.offhand] weapon.offhand with minecraft:air
 
+# Play an activation sound.
 playsound minecraft:entity.wolf.ambient player @a ~ ~ ~ 1 0.7
 
 # Summon 4 wolves with temporary tags.

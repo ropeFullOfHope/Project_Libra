@@ -1,3 +1,5 @@
+#> Description: Checks if the player has performed a backstab and slows the targeted player if the check passes.
+
 # Create temporary scoreboards.
 scoreboard objectives add temp.rotation.p1 dummy
 scoreboard objectives add temp.rotation.p2 dummy

@@ -1,19 +1,6 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: dvz:tick/active_detect
-# File Name: fissure
-# Function Name: dvz:zombie/ability/golem/fissure
-# File Purpose: Raises ground to form a wall.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.12.14
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Raise the ground to form a wall.
 
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.golem.fissure.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Fissure]","bold":true,"color":"red"}, \
@@ -31,14 +18,17 @@ execute if entity @s[gamemode=adventure] run title @s actionbar [ \
 ]
 execute if entity @s[gamemode=adventure] run return 0
 
+# Set the cooldown.
 scoreboard players set @s ogvz.golem.fissure.cooldown.seconds 5
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Fissure]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play a fissure sound.
 playsound minecraft:block.chain.break player @a ~ ~ ~ 8 0.5
 playsound minecraft:entity.zombie.attack_wooden_door player @a ~ ~ ~ 8 0.5
 

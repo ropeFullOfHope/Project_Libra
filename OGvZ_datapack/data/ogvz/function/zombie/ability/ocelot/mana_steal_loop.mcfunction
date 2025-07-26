@@ -1,3 +1,5 @@
+#> Description: Ray casting loop for mana steal.
+
 # Stops ray casting if ray is inside a solid block, is too far from the origin or has hit a player.
 execute unless block ~ ~ ~ #ogvz:go_through run return 0
 execute unless entity @n[tag=temp.ray_origin,distance=..12] run return 0
@@ -6,6 +8,7 @@ execute if entity @a[tag=temp.hit] run return 0
 # Teleports the ray slightly forward.
 tp @s ^ ^ ^0.1
 
+# Show particles at the ray.
 execute if entity @p[tag=temp.ray_origin,distance=2..] run particle minecraft:sculk_charge_pop ~ ~ ~ 0 0 0 0 1 force
 
 # When ray gets close to a player, it determines their hitbox size depending on their eye height.

@@ -1,3 +1,5 @@
+#> Description: Deal bonus damage to a targeted player depending on how fast the attacker was travelling.
+
 # Tag self and the attacker.
 tag @s add temp.victim
 execute on attacker run tag @s add temp.attacker

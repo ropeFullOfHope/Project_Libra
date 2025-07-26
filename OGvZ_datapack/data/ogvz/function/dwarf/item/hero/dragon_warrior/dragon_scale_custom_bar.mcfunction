@@ -1,32 +1,22 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: dragon_scale_custom_bar
-# Function Name: ogvz:dwarf/item/hero/dragon_warrior/dragon_scale_custom_bar
-# File Purpose: Displays the custom bar for dragon scale.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.10.31
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Display the dragon scale custom bar.
 
 scoreboard objectives add temp.custom_bar_value dummy
 scoreboard objectives add temp.max_value dummy
 
-# Yes, it's the funny number, no it's not intentional. The custom bar is 69 pixels wide from the inside and it's aligned to vanilla bars.
+# The custom bar is 69 pixels wide from the inside.
 scoreboard players set @s temp.custom_bar_value 69
-# If you have changed the dragon form damage threshold, you also have to change this to that value.
+
+# Set the maximum damage.
+# If you have changed the max damage, you also have to change this to that value.
 scoreboard players set @s temp.max_value 300
 
+# Calculate the custom bar fullness.
 # This can be represented as: custom bar width * current value / max value
 scoreboard players operation @s temp.custom_bar_value *= @s ogvz.dragon_warrior.dragon_scale.damage
 scoreboard players operation @s temp.custom_bar_value /= @s temp.max_value
 
 # Display the custom bar in the actionbar.
+# The custom bar is inverted, showing as full when no damage has been taken.
 title @s[scores={temp.custom_bar_value=0}   ] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF164\u1201\u2169"}
 title @s[scores={temp.custom_bar_value=1}   ] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF164\u1201\u2168"}
 title @s[scores={temp.custom_bar_value=2}   ] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF164\u1201\u2167"}
@@ -98,5 +88,6 @@ title @s[scores={temp.custom_bar_value=67}  ] actionbar {"font":"ogvz:custom","s
 title @s[scores={temp.custom_bar_value=68}  ] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF164\u1201\u2101"}
 title @s[scores={temp.custom_bar_value=69..}] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF164\u1201\u2100"}
 
+# Remove temporary scoreboards.
 scoreboard objectives remove temp.custom_bar_value
 scoreboard objectives remove temp.max_value

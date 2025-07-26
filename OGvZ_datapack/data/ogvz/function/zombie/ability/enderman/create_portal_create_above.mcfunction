@@ -1,6 +1,9 @@
+#> Description: Create the ender portal above.
+
 # Perform a check to see if the player still meets the conditions to place a portal.
 function ogvz:zombie/ability/enderman/create_portal_check_above
 
+# Remove the ender portal creating tags.
 tag @s remove ogvz.zombie.class.enderman.creating_portal
 tag @s remove ogvz.zombie.class.enderman.creating_portal.above
 
@@ -14,6 +17,7 @@ playsound minecraft:block.respawn_anchor.deplete player @s[tag=temp.fail] ~ ~ ~ 
 # Return if the check failed.
 execute as @s[tag=temp.fail] run return run tag @s remove temp.fail
 
+# Display a success message.
 title @s actionbar [ \
   "", \
   {"text":"[Create Portal]","bold":true,"color":"light_purple"}, \

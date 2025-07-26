@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By:
-# File Name: oceans_pearl_buff
-# Function Name: ogvz:dwarf/hero/dwarven_guard/oceans_pearl_buff
-# File Purpose: Spins the ocean's pearl.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.11.20
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Applies a buff to the player in sight.
 
 # Give the player a temporary tag if they are a dwarf and are not on buff cooldown.
 tag @p[tag=ogvz.dwarf,scores={ogvz.dwarf.oceans_pearl_buff.cooldown.seconds=0},distance=..16] add temp.target

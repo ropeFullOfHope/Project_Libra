@@ -1,19 +1,9 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: freeze
-# Function Name: ogvz:zombie/ability/snowman/freeze
-# File Purpose: Shoots a beam that freezes.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2025.02.16
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Shoots a beam that freezes the targeted player.
 
+# Hide the custom bars for a bit.
+scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
+
+# Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.snowman.freeze.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Freeze]","bold":true,"color":"red"}, \
@@ -23,14 +13,17 @@ execute if entity @s[scores={ogvz.snowman.freeze.cooldown.seconds=1..}] run titl
 ]
 execute if entity @s[scores={ogvz.snowman.freeze.cooldown.seconds=1..}] run return 0
 
+# Set the cooldown.
 scoreboard players set @s ogvz.snowman.freeze.cooldown.seconds 30
 
+# Display an activation message.
 title @s actionbar [ \
   "", \
   {"text":"[Freeze]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an activation message.
 playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0.6
 
 # Tag the player as the ray origin.

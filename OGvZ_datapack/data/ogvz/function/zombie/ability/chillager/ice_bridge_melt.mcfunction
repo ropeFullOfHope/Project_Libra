@@ -1,3 +1,5 @@
+#> Description: Tracks the ice lifetime and breaks it when it expires.
+
 # Decrement the melt scoreboard.
 scoreboard players remove @s ogvz.chillager.ice_bridge.ice_melt.ticks 1
 

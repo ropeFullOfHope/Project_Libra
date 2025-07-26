@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: glowing_shell_check
-# Function Name: ogvz:dwarf/item/hero/dwarven_guard/glowing_shell_check
-# File Purpose: Manages the active duration of the area of effect.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.11.29
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Manages the lifetime of the mana zone created by the glowing shell.
 
 # Kill if duration score has reached 0.
 execute as @s[scores={ogvz.marker.glowing_shell.duration.seconds=..0}] run kill @s

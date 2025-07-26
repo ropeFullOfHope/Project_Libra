@@ -4,6 +4,7 @@ give @s minecraft:music_disc_cat[ \
   !minecraft:jukebox_playable, \
   minecraft:item_name="Iron Rapier", \
   minecraft:item_model="ogvz:iron_rapier", \
+  minecraft:lore=[{text:"Blocks Attacks",color:"gray",italic:false}], \
   minecraft:rarity="common", \
   minecraft:attribute_modifiers=[ \
     { \

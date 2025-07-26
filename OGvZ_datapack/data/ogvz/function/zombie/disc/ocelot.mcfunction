@@ -116,7 +116,7 @@ give @s minecraft:carrot_on_a_stick[ \
     {"text":"Increase the power of the","color":"blue"}, \
     {"text":"knocback for the next attack.","color":"blue"}, \
     {"text":"Requires 15 mana","color":"red","italic":false}, \
-    {"text":"Enchantment","color":"green","italic":false} \
+    {"text":"Weapon Ability","color":"green","italic":false} \
   ], \
   minecraft:enchantments={ \
     "minecraft:knockback":2 \

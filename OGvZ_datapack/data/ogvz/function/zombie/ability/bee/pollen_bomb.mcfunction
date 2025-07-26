@@ -1,3 +1,6 @@
+#> Description: Throw a pollen bomb which creates a healing zone for zombie on impact.
+
+# Display a fail message and return if ability is on cooldown.
 execute if entity @s[scores={ogvz.bee.pollen_bomb.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
   {"text":"[Pollen Bomb]","bold":true,"color":"red"}, \
@@ -7,14 +10,17 @@ execute if entity @s[scores={ogvz.bee.pollen_bomb.cooldown.seconds=1..}] run tit
 ]
 execute if entity @s[scores={ogvz.bee.pollen_bomb.cooldown.seconds=1..}] run return 0
 
+# Set the cooldown.
 scoreboard players set @s ogvz.bee.pollen_bomb.cooldown.seconds 20
 
+# Display an activation message
 title @s actionbar [ \
   "", \
   {"text":"[Pollen Bomb]","bold":true,"color":"green"}, \
   {"text":" Poof!","color":"green"} \
 ]
 
+# Play an activation sound.
 playsound minecraft:entity.splash_potion.throw player @a ~ ~ ~ 1 0.5
 
 # Summon a vector marker and point it in the same direction as the player, then teleport it forward.
@@ -39,6 +45,7 @@ execute anchored eyes positioned ^ ^ ^ run summon minecraft:splash_potion ~ ~ ~ 
 summon minecraft:marker ~ ~ ~ {Tags:["ogvz.projectile.pollen_bomb","temp.processing"]}
 ride @n[type=minecraft:marker,tag=temp.processing] mount @n[type=minecraft:splash_potion,tag=temp.processing]
 
+# Set the lifetime and heal cooldown scoreboards on the pollen bomb.
 scoreboard players set @n[type=minecraft:marker,tag=temp.processing] ogvz.marker.pollen_bomb.lifetime.ticks 350
 scoreboard players set @n[type=minecraft:marker,tag=temp.processing] ogvz.marker.pollen_bomb.heal_cooldown.ticks 0
 

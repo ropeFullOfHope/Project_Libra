@@ -1,11 +1,18 @@
+#> Description: Show the invisibility custom bar.
+
+# Create temporary scoreboards.
 scoreboard objectives add temp.custom_bar_value dummy
 scoreboard objectives add temp.max_value dummy
 
-# Yes, it's the funny number, no it's not intentional. The custom bar is 69 pixels wide from the inside and it's aligned to vanilla bars.
+# The custom bar is 69 pixels wide from the inside.
 scoreboard players set @s temp.custom_bar_value 69
+
+# Set the maximum invisibility charge.
 # If you have changed the max invisibility charge, you also have to change this to that value.
+# Decremented by 1 to show the bar full before it's hidden.
 scoreboard players set @s temp.max_value 1199
 
+# Calculate the custom bar fullness.
 # This can be represented as: custom bar width * current value / max value
 scoreboard players operation @s temp.custom_bar_value *= @s ogvz.chillager.invisibility.duration
 scoreboard players operation @s temp.custom_bar_value /= @s temp.max_value
@@ -82,5 +89,6 @@ title @s[scores={temp.custom_bar_value=67}  ] actionbar {"font":"ogvz:custom","s
 title @s[scores={temp.custom_bar_value=68}  ] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF164\u1251\u2368"}
 title @s[scores={temp.custom_bar_value=69..}] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF164\u1251\u2369"}
 
+# Remove temporary scoreboards.
 scoreboard objectives remove temp.custom_bar_value
 scoreboard objectives remove temp.max_value

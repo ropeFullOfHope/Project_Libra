@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: ogvz:tick/active_detect
-# File Name: fireball_hit
-# Function Name: ogvz:zombie/ability/blaze/fireball_hit
-# File Purpose: Deals extra damage to player hit.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2025.04.13
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Deals extra damage to player hit.
 
 # Revoke the advancement so it can be granted again.
 advancement revoke @s only ogvz:misc/player_hurt_by_blaze_fireball

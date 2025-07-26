@@ -1,3 +1,5 @@
+#> Description: Performs a check if an ender portal can be opened above.
+
 # Return fail if there isn't 7 non-solid blocks above you.
 execute unless block ~ ~0 ~ #ogvz:go_through run title @s actionbar [ \
   "", \

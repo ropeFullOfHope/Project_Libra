@@ -1,17 +1,25 @@
+#> Description: Take the player out of invisibility.
+
+# Revoke the advancement so it can be granted again.
 advancement revoke @s only ogvz:misc/chillager_take_or_deal_damage_while_invisible
 
+# Hide custom bars for a bit.
 scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 
+# Display a cancel message.
 title @s actionbar [ \
   "", \
   {"text":"[Invisibility]","bold":true,"color":"light_purple"}, \
   {"text":" Canceled!","color":"light_purple"} \
 ]
 
+# Set a cooldown.
 scoreboard players set @s ogvz.chillager.invisibility.cooldown.seconds 5
 
+# Remove the invisibility tag.
 tag @s remove ogvz.zombie.class.chillager.invisible
 
+# Clear the invisibility effect.
 effect clear @s minecraft:invisibility
 
 # Reapply the textures of the armor.

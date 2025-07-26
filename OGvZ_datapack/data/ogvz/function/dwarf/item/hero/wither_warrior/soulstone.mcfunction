@@ -1,18 +1,4 @@
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Called By: 
-# File Name: soulstone
-# Function Name: ogvz:dwarf/hero/wither_warrior/soulstone
-# File Purpose: Gives mana to all other non-hero dwarves.
-# Created By: ropeFullOfHope
-# 
-# Created On: 2024.12.01
-# Last Modified On:
-# Last Modified By:
-#
-# Credit to:
-#
-# Comments:
-# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+#> Description: Give mana to all other non-hero dwarves.
 
 # Revoke advancement, so it can be granted again.
 advancement revoke @s only ogvz:misc/wither_warrior_kill_player
