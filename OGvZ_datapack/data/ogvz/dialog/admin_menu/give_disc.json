@@ -84,7 +84,7 @@
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/dwarf/dragon_warrior"
+        "command": "function ogvz:give/disc/dwarf/hero/dragon_warrior"
       }
     },
     {
@@ -95,7 +95,7 @@
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/dwarf/wither_warrior"
+        "command": "function ogvz:give/disc/dwarf/hero/wither_warrior"
       }
     },
     {
@@ -106,7 +106,7 @@
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/dwarf/dwarven_guard"
+        "command": "function ogvz:give/disc/dwarf/hero/dwarven_guard"
       }
     },
     {
@@ -117,7 +117,7 @@
       "width": 200,
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:give/disc/dwarf/assassin_slayer"
+        "command": "function ogvz:give/disc/dwarf/hero/assassin_slayer"
       }
     },
     {

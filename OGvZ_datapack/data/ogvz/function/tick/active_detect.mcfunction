@@ -31,7 +31,6 @@ execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1002}] at @s run dial
 execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1003}] at @s run dialog show @s ogvz:tool_menu/zombie_spawn
 execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1004}] at @s run dialog show @s ogvz:tool_menu/boss_spawn
 execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1005}] at @s run function ogvz:admin/setup/setup_check
-execute as @s[tag=ogvz.admin,scores={ogvz.rclick.active_id=1006}] at @s run dialog show @s ogvz:rulebook
 
 ### Discs (2xxx)
 # Dwarf discs (200x)
@@ -44,8 +43,8 @@ execute as @s[tag=!ogvz.dwarf.class,tag=ogvz.dwarf,scores={ogvz.rclick.active_id
 # Hero discs (201x)
 execute as @s[tag=ogvz.dwarf,scores={ogvz.rclick.active_id=2010}] at @s run function ogvz:dwarf/disc/hero/dragon_warrior
 execute as @s[tag=ogvz.dwarf,scores={ogvz.rclick.active_id=2011}] at @s run function ogvz:dwarf/disc/hero/wither_warrior
-execute as @s[tag=ogvz.dwarf,scores={ogvz.rclick.active_id=2012}] at @s run function ogvz:dwarf/disc/hero/assassin_slayer
-execute as @s[tag=ogvz.dwarf,scores={ogvz.rclick.active_id=2013}] at @s run function ogvz:dwarf/disc/hero/dwarven_guard
+execute as @s[tag=ogvz.dwarf,scores={ogvz.rclick.active_id=2012}] at @s run function ogvz:dwarf/disc/hero/dwarven_guard
+execute as @s[tag=ogvz.dwarf,scores={ogvz.rclick.active_id=2013}] at @s run function ogvz:dwarf/disc/hero/assassin_slayer
 # Zombie discs (21xx)
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2100}] at @s run function ogvz:zombie/disc/zombie_variant/zombie
 execute as @s[tag=!ogvz.zombie.class,tag=ogvz.zombie,scores={ogvz.rclick.active_id=2101}] at @s run function ogvz:zombie/disc/zombie_variant/husk
@@ -179,6 +178,7 @@ execute as @s[tag=!ogvz.joined_game,scores={ogvz.rclick.active_id=9000}] at @s r
 execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9001}] at @s run function ogvz:zombie/ability/suicide_pill
 execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9002}] at @s run function ogvz:zombie/ability/obsidian_skull
 execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9003}] at @s run function ogvz:zombie/ability/enderman/ender_eye
+execute as @s[scores={ogvz.rclick.active_id=9004}] at @s run dialog show @s ogvz:rulebook
 
 # Remove temporary tags.
 tag @s remove temp.use.mainhand

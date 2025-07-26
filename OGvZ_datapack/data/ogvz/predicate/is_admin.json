@@ -22,7 +22,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{UUID:[I;1448479584,-1598666229,-1750013586,1362885982]}"
+        "nbt": "{UUID:[I;-1712069556,-89706310,-1726810190,-2000323679]}"
       }
     },
     {
@@ -30,7 +30,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{UUID:[I;1448479584,-1598666229,-1750013586,1362885982]}"
+        "nbt": "{UUID:[I;-65773188,-1217311083,-2040204702,191084682]}"
       }
     },
     {
