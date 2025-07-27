@@ -96,7 +96,7 @@ give @s minecraft:carrot_on_a_stick[ \
     {text:"Conjures a stone brick wall in",color:"blue"}, \
     {text:"front of you.",color:"blue"}, \
     {text:"Requires 8 mana",color:"red",italic:false}, \
-    {text:"Secondary Use",color:"green",italic:false}, \
+    {text:"Weapon Ability",color:"green",italic:false}, \
     {text:" "}, \
     {text:"When in Main Hand:",color:"gray",italic:false}, \
     {text:" 12 Attack Damage",color:"dark_green",italic:false}, \

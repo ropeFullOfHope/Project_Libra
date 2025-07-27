@@ -98,7 +98,7 @@ give @s minecraft:carrot_on_a_stick[ \
     {text:"Attacking a player from behind",color:"blue"}, \
     {text:"will deal massive damage.",color:"blue"}, \
     {text:"8 second cooldown",color:"red",italic:false}, \
-    {text:"Secondary Attack",color:"green",italic:false}, \
+    {text:"Weapon Ability",color:"green",italic:false}, \
     {text:" "}, \
     {text:"When in Main Hand:",color:"gray",italic:false}, \
     {text:" 8.5 Attack Damage",color:"dark_green",italic:false}, \
