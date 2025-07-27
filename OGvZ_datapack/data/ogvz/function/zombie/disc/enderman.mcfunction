@@ -25,7 +25,7 @@ team join z6ENDERMAN @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Enderman Head","color":"aqua"}, \
+  minecraft:item_name={text:"Enderman Head",color:"aqua"}, \
   minecraft:item_model="ogvz:enderman_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -44,7 +44,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Enderman Chestplate"}, \
+  minecraft:item_name={text:"Enderman Chestplate"}, \
   minecraft:dyed_color=1052688, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -62,7 +62,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Enderman Leggings"}, \
+  minecraft:item_name={text:"Enderman Leggings"}, \
   minecraft:dyed_color=1052688, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -80,7 +80,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Enderman Boots"}, \
+  minecraft:item_name={text:"Enderman Boots"}, \
   minecraft:dyed_color=1052688, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -102,11 +102,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6600}, \
   minecraft:item_model="ogvz:teleport", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Teleport","color":"light_purple"}, \
+  minecraft:item_name={text:"Teleport",color:"light_purple"}, \
   minecraft:lore=[ \
-    {"text":"Teleport to a targeted block.","color":"blue"}, \
-    {"text":"10 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Teleport to a targeted block.",color:"blue"}, \
+    {text:"10 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -119,30 +119,30 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6601}, \
   minecraft:item_model="ogvz:create_portal", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Create Portal","color":"light_purple"}, \
+  minecraft:item_name={text:"Create Portal",color:"light_purple"}, \
   minecraft:lore=[ \
-    {"text":"Open an Ender Portal above/below","color":"blue"}, \
-    {"text":"you.","color":"blue"}, \
-    {"text":"Other zombies will be able to","color":"blue"}, \
-    {"text":"teleport to the ender portal.","color":"blue"}, \
-    {"text":"Normally you will create the","color":"blue"}, \
-    {"text":"ender portal high above you, but","color":"blue"}, \
-    {"text":"you can sneak to place it right","color":"blue"}, \
-    {"text":"below you instead.","color":"blue"}, \
-    {"text":"You need enough room above you","color":"blue"}, \
-    {"text":"to create the ender portal.","color":"blue"}, \
-    {"text":"The ender portal will close when","color":"blue"}, \
-    {"text":"one of its end stones is broken.","color":"blue"}, \
-    {"text":"Creating the ender portal takes time.","color":"blue"}, \
-    {"text":"You will not be able to move","color":"blue"}, \
-    {"text":"during the process and you will","color":"blue"}, \
-    {"text":"be interrupted if you take","color":"blue"}, \
-    {"text":"damage or teleport.","color":"blue"}, \
-    {"text":"You can manually interrupt the","color":"blue"}, \
-    {"text":"ability by using it again.","color":"blue"}, \
-    {"text":"15 second cooldown","color":"red","italic":false}, \
-    {"text":"Single-use","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Open an Ender Portal above/below",color:"blue"}, \
+    {text:"you.",color:"blue"}, \
+    {text:"Other zombies will be able to",color:"blue"}, \
+    {text:"teleport to the ender portal.",color:"blue"}, \
+    {text:"Normally you will create the",color:"blue"}, \
+    {text:"ender portal high above you, but",color:"blue"}, \
+    {text:"you can sneak to place it right",color:"blue"}, \
+    {text:"below you instead.",color:"blue"}, \
+    {text:"You need enough room above you",color:"blue"}, \
+    {text:"to create the ender portal.",color:"blue"}, \
+    {text:"The ender portal will close when",color:"blue"}, \
+    {text:"one of its end stones is broken.",color:"blue"}, \
+    {text:"Creating the ender portal takes time.",color:"blue"}, \
+    {text:"You will not be able to move",color:"blue"}, \
+    {text:"during the process and you will",color:"blue"}, \
+    {text:"be interrupted if you take",color:"blue"}, \
+    {text:"damage or teleport.",color:"blue"}, \
+    {text:"You can manually interrupt the",color:"blue"}, \
+    {text:"ability by using it again.",color:"blue"}, \
+    {text:"15 second cooldown",color:"red",italic:false}, \
+    {text:"Single-use",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -162,3 +162,15 @@ execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 # Give the player the punish tag and set a timer for it's removal.
 tag @s add ogvz.zombie.punish
 scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Display an enderman message to all players that joined the game.
+tellraw @a[tag=ogvz.joined_game] [ \
+  "", \
+  {text:"\u1120\u1121\u1122\n",font:"ogvz:custom"}, \
+  {text:"▶ ",bold:true,color:"light_purple"}, \
+  {selector:"@s",color:"light_purple"}, \
+  {text:" has risen!",color:"light_purple"} \
+]
+
+# Play a global sound to all players that joined the game.
+execute as @a[tag=ogvz.joined_game] run playsound minecraft:entity.enderman.scream player @s ~ ~512 ~ 1 1 1

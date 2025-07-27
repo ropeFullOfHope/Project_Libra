@@ -3,16 +3,26 @@
 # Set the game phase to 6 - Game over phase.
 scoreboard players set &ogvz ogvz.game.phase 6
 
-# Display a seperate message to dwarves and zombies.
-execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine_block] run tellraw @a [ \
+# Display a different message depending on how the game was ended.
+execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine_block] run tellraw @a[tag=ogvz.joined_game] [ \
   "", \
   {text:"\u1120\u1121\u1122\n",font:"ogvz:custom"}, \
-  {text:"The Shrine has been destroyed! The dwarven keep has fallen! ",color:"light_purple"} \
+  {text:"▶ ",color:"light_purple",bold:true}, \
+  {text:"The ",color:"light_purple"}, \
+  {text:"Shrine",color:"light_purple",bold:true}, \
+  {text:" has been destroyed!\n",color:"light_purple"}, \
+  {text:"▶ ",color:"light_purple",bold:true}, \
+  {text:"The dwarven keep has fallen! ",color:"light_purple"} \
 ]
-execute unless entity @e[type=minecraft:player,tag=ogvz.dwarf] run tellraw @a [ \
+execute unless entity @e[type=minecraft:player,tag=ogvz.dwarf] run tellraw @a[tag=ogvz.joined_game] [ \
   "", \
   {text:"\u1120\u1121\u1122\n",font:"ogvz:custom"}, \
-  {text:"The last Dwarf has perished! The dwarven keep has fallen!",color:"light_purple"} \
+  {text:"▶ ",bold:true,color:"light_purple"}, \
+  {text:"The last ",color:"light_purple"}, \
+  {text:"Dwarf",color:"light_purple",bold:true}, \
+  {text:" has perished!\n",color:"light_purple"}, \
+  {text:"▶ ",bold:true,color:"light_purple"}, \
+  {text:"The dwarven keep has fallen! ",color:"light_purple"} \
 ]
 
 # Create a temporary scoreboard and set it to 1200 (60 seconds in a minute * 20 ticks in a second = 1200 ticks in a minute).
@@ -31,7 +41,7 @@ execute unless entity @e[type=minecraft:player,tag=ogvz.dwarf] run tellraw @a [ 
   {text:":\n",color:"gray"}, \
   {text:"- Game Time: ",color:"gray"}, \
   {score:{name:"&ogvz",objective:"temp.timer.minutes"}}, \
-  {text:" minutes",color:"gray"}, \
+  {text:" minutes"}, \
 ]
 
 # Remove temporary scoreboards.

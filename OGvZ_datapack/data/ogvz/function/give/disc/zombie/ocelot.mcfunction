@@ -4,7 +4,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:2134}, \
   minecraft:item_model="ogvz:disc_ocelot", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Ocelot","color":"dark_red"}, \
+  minecraft:item_name={text:"Ocelot",color:"dark_red"}, \
   minecraft:lore=[ \
     {text:"Steals mana from dwarves,",color:"blue"}, \
     {text:"Disarms them and strongly",color:"blue"}, \

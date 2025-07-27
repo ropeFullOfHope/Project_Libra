@@ -4,7 +4,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:2135}, \
   minecraft:item_model="ogvz:disc_phantom", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Phantom","color":"dark_red"}, \
+  minecraft:item_name={text:"Phantom",color:"dark_red"}, \
   minecraft:lore=[ \
     {text:"Flies and deals huge damage when",color:"blue"}, \
     {text:"flying at high speeds.",color:"blue"}, \

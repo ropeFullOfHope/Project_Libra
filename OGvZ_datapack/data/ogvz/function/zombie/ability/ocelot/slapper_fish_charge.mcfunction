@@ -7,10 +7,10 @@ execute if items entity @s[tag=temp.use.offhand] weapon.offhand minecraft:carrot
 # Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=15..] run title @s actionbar [ \
   "", \
-  {"text":"[Charge]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"15 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
+  {text:"[Charge]",bold:true,color:"red"}, \
+  {text:" You need at least ",color:"red"}, \
+  {text:"15 mana",bold:true,color:"red"}, \
+  {text:"!",color:"red"} \
 ]
 execute unless entity @s[level=15..] run return 0
 

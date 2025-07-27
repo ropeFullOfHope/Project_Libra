@@ -9,8 +9,8 @@ scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 # Display a cancel message.
 title @s actionbar [ \
   "", \
-  {"text":"[Invisibility]","bold":true,"color":"light_purple"}, \
-  {"text":" Canceled!","color":"light_purple"} \
+  {text:"[Invisibility]",bold:true,color:"light_purple"}, \
+  {text:" Canceled!",color:"light_purple"} \
 ]
 
 # Set a cooldown.

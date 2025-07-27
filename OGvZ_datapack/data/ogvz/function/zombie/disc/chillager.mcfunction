@@ -36,7 +36,7 @@ team join z3CHILLAGER @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Chillager Head","color":"aqua"}, \
+  minecraft:item_name={text:"Chillager Head",color:"aqua"}, \
   minecraft:item_model="ogvz:chillager_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -55,7 +55,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Chillager Chestplate"}, \
+  minecraft:item_name={text:"Chillager Chestplate"}, \
   minecraft:dyed_color=1456243, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -73,7 +73,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Chillager Leggings"}, \
+  minecraft:item_name={text:"Chillager Leggings"}, \
   minecraft:dyed_color=1456243, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -91,7 +91,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Chillager Boots"}, \
+  minecraft:item_name={text:"Chillager Boots"}, \
   minecraft:dyed_color=1456243, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -184,22 +184,22 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6320}, \
   minecraft:item_model="ogvz:invisibility", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Invisibility","color":"aqua"}, \
+  minecraft:item_name={text:"Invisibility",color:"aqua"}, \
   minecraft:lore=[ \
-    {"text":"Become invisible.","color":"blue"}, \
-    {"text":"Your invisibility bar will drain","color":"blue"}, \
-    {"text":"while invisible and regenerate","color":"blue"}, \
-    {"text":"while visible.","color":"blue"}, \
-    {"text":"Fully draining your invisibility","color":"blue"}, \
-    {"text":"bar will cancel your","color":"blue"}, \
-    {"text":"invisibility.","color":"blue"}, \
-    {"text":"Taking or dealing damage will","color":"blue"}, \
-    {"text":"cancel the invisibility.","color":"blue"}, \
-    {"text":"You can manually cancel the","color":"blue"}, \
-    {"text":"invisibility by using the","color":"blue"}, \
-    {"text":"ability again.","color":"blue"}, \
-    {"text":"5 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Become invisible.",color:"blue"}, \
+    {text:"Your invisibility bar will drain",color:"blue"}, \
+    {text:"while invisible and regenerate",color:"blue"}, \
+    {text:"while visible.",color:"blue"}, \
+    {text:"Fully draining your invisibility",color:"blue"}, \
+    {text:"bar will cancel your",color:"blue"}, \
+    {text:"invisibility.",color:"blue"}, \
+    {text:"Taking or dealing damage will",color:"blue"}, \
+    {text:"cancel the invisibility.",color:"blue"}, \
+    {text:"You can manually cancel the",color:"blue"}, \
+    {text:"invisibility by using the",color:"blue"}, \
+    {text:"ability again.",color:"blue"}, \
+    {text:"5 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -212,15 +212,15 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6321}, \
   minecraft:item_model="ogvz:ice_bridge", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Ice Bridge","color":"aqua"}, \
+  minecraft:item_name={text:"Ice Bridge",color:"aqua"}, \
   minecraft:lore=[ \
-    {"text":"Create an ice bridge in front of","color":"blue"}, \
-    {"text":"your feet, facing in the","color":"blue"}, \
-    {"text":"direction you are looking at.","color":"blue"}, \
-    {"text":"The bridge will melt after a","color":"blue"}, \
-    {"text":"long time.","color":"blue"}, \
-    {"text":"20 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Create an ice bridge in front of",color:"blue"}, \
+    {text:"your feet, facing in the",color:"blue"}, \
+    {text:"direction you are looking at.",color:"blue"}, \
+    {text:"The bridge will melt after a",color:"blue"}, \
+    {text:"long time.",color:"blue"}, \
+    {text:"20 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

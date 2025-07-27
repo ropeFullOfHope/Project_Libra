@@ -36,7 +36,7 @@ team join z6GOLEM @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:iron_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Golem Head","color":"aqua"}, \
+  minecraft:item_name={text:"Golem Head",color:"aqua"}, \
   minecraft:item_model="ogvz:golem_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -56,7 +56,7 @@ item replace entity @s armor.head with minecraft:iron_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:iron_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Golem Chestplate"}, \
+  minecraft:item_name={text:"Golem Chestplate"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
     "minecraft:protection":4, \
@@ -69,7 +69,7 @@ item replace entity @s armor.chest with minecraft:iron_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:iron_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Golem Leggings"}, \
+  minecraft:item_name={text:"Golem Leggings"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
     "minecraft:protection":4, \
@@ -82,7 +82,7 @@ item replace entity @s armor.legs with minecraft:iron_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:iron_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Golem Boots"}, \
+  minecraft:item_name={text:"Golem Boots"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
     "minecraft:protection":4, \
@@ -99,12 +99,12 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6610}, \
   minecraft:item_model="ogvz:fissure", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Fissure","color":"gray"}, \
+  minecraft:item_name={text:"Fissure",color:"gray"}, \
   minecraft:lore=[ \
-    {"text":"Raise the ground in a straight","color":"blue"}, \
-    {"text":"line in front of you.","color":"blue"}, \
-    {"text":"5 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Raise the ground in a straight",color:"blue"}, \
+    {text:"line in front of you.",color:"blue"}, \
+    {text:"5 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -117,11 +117,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6611}, \
   minecraft:item_model="ogvz:leap", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Leap","color":"green"}, \
+  minecraft:item_name={text:"Leap",color:"green"}, \
   minecraft:lore=[ \
-    {"text":"Jump high into the air.","color":"blue"}, \
-    {"text":"20 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Jump high into the air.",color:"blue"}, \
+    {text:"20 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -141,3 +141,15 @@ execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 # Give the player the punish tag and set a timer for it's removal.
 tag @s add ogvz.zombie.punish
 scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Display a golem message to all players that joined the game.
+tellraw @a[tag=ogvz.joined_game] [ \
+  "", \
+  {text:"\u1120\u1121\u1122\n",font:"ogvz:custom"}, \
+  {text:"▶ ",bold:true,color:"light_purple"}, \
+  {selector:"@s",color:"light_purple"}, \
+  {text:" has risen!",color:"light_purple"} \
+]
+
+# Play a global sound to all players that joined the game.
+execute as @a[tag=ogvz.joined_game] run playsound minecraft:entity.iron_golem.repair player @s ~ ~512 ~ 1 1 1

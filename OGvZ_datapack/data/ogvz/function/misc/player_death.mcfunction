@@ -17,14 +17,14 @@ clear @s
 xp set @s 0 levels
 xp set @s 0 points
 
+# If the player is a dwarf, message everybody that a dwarf has fallen and place a gravestone.
+execute as @s[tag=ogvz.dwarf] at @s if score &ogvz ogvz.game.phase matches 1..5 run function ogvz:misc/dwarf_death_message
+execute as @s[tag=ogvz.dwarf] at @s if score &ogvz ogvz.game.phase matches 1..6 run function ogvz:misc/gravestone
+
 # Remove tags, clear scoreboards and remove attributes from the player.
 execute as @s at @s run function ogvz:misc/remove_tags
 execute as @s at @s run function ogvz:misc/clear_scoreboards
 execute as @s at @s run function ogvz:misc/remove_attributes
-
-# If the player is a dwarf, message everybody that a dwarf has fallen and place a gravestone.
-execute as @s[tag=ogvz.dwarf] at @s if score &ogvz ogvz.game.phase matches 1..5 run function ogvz:misc/dwarf_death_message
-execute as @s[tag=ogvz.dwarf] at @s if score &ogvz ogvz.game.phase matches 1..6 run function ogvz:misc/gravestone
 
 ### If the player joined the game, dying means they always join the zombie team.
 # Add the zombie tag.
@@ -39,5 +39,5 @@ execute as @s[tag=!ogvz.joined_game] at @n[type=minecraft:marker,tag=ogvz.marker
 # If the player hasn't joined the game, restore their adventure mode tag.
 tag @s[tag=!ogvz.joined_game] add ogvz.adventure.lobby
 
-# Kill all wolves belonging to dead players.
+# Kill all wolves belonging to the dead players.
 execute as @e[type=minecraft:wolf] at @s run function ogvz:misc/wolf_kill

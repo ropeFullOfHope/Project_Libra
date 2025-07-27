@@ -3,10 +3,10 @@
 # Display a fail message and return if ability is on cooldown.
 execute if entity @s[scores={ogvz.bee.pollen_bomb.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Pollen Bomb]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.bee.pollen_bomb.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Pollen Bomb]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.bee.pollen_bomb.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.bee.pollen_bomb.cooldown.seconds=1..}] run return 0
 
@@ -16,8 +16,8 @@ scoreboard players set @s ogvz.bee.pollen_bomb.cooldown.seconds 20
 # Display an activation message
 title @s actionbar [ \
   "", \
-  {"text":"[Pollen Bomb]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Pollen Bomb]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an activation sound.

@@ -6,10 +6,10 @@ scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 # Display a fail message and return if the item is on a cooldown.
 execute if entity @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Ocean's Pearl]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.dwarven_guard.oceans_pearl.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Ocean's Pearl]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.dwarven_guard.oceans_pearl.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.dwarven_guard.oceans_pearl.cooldown.seconds=1..}] run return 0
 
@@ -20,10 +20,10 @@ execute store result score @s temp.oceans_pearl_count if entity @e[type=minecraf
 # Display a fail message, remove the temporary scoreboard and return if there are a maximum number of pearls active.
 execute if entity @s[scores={temp.oceans_pearl_count=2..}] run title @s actionbar [ \
   "", \
-  {"text":"[Ocean's Pearl]","bold":true,"color":"red"}, \
-  {"text":" You can have a maximum of ","color":"red"}, \
-  {"text":"2","bold":true,"color":"red"}, \
-  {"text":" ocean's pearls active at once!","color":"red"} \
+  {text:"[Ocean's Pearl]",bold:true,color:"red"}, \
+  {text:" You can have a maximum of ",color:"red"}, \
+  {text:"2",bold:true,color:"red"}, \
+  {text:" ocean's pearls active at once!",color:"red"} \
 ]
 execute if entity @s[scores={temp.oceans_pearl_count=2..}] run return run scoreboard objectives remove temp.oceans_pearl_count
 
@@ -33,26 +33,26 @@ scoreboard objectives remove temp.oceans_pearl_count
 # Display a fail message and return if the player is too close to another ocean's pearl.
 execute positioned ~ ~2.5 ~ if entity @e[type=minecraft:item_display,tag=ogvz.item_display.oceans_pearl,distance=..12] run title @s actionbar [ \
   "", \
-  {"text":"[Ocean's Pearl]","bold":true,"color":"red"}, \
-  {"text":" You are too close to another ocean's pearl!","color":"red"} \
+  {text:"[Ocean's Pearl]",bold:true,color:"red"}, \
+  {text:" You are too close to another ocean's pearl!",color:"red"} \
 ]
 execute positioned ~ ~2.5 ~ if entity @e[type=minecraft:item_display,tag=ogvz.item_display.oceans_pearl,distance=..12] run return 0
 
 # Display a fail message and return if there is not enough room to spawn an ocean's pearl.
 execute unless block ~ ~2.5 ~ #ogvz:go_through run title @s actionbar [ \
   "", \
-  {"text":"[Ocean's Pearl]","bold":true,"color":"red"}, \
-  {"text":" There is not enough space!","color":"red"} \
+  {text:"[Ocean's Pearl]",bold:true,color:"red"}, \
+  {text:" There is not enough space!",color:"red"} \
 ]
 execute unless block ~ ~2.5 ~ #ogvz:go_through run return 0
 
 # Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=50..] run title @s actionbar [ \
   "", \
-  {"text":"[Ocean's Pearl]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"50 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
+  {text:"[Ocean's Pearl]",bold:true,color:"red"}, \
+  {text:" You need at least ",color:"red"}, \
+  {text:"50 mana",bold:true,color:"red"}, \
+  {text:"!",color:"red"} \
 ]
 execute unless entity @s[level=50..] run return 0
 
@@ -65,8 +65,8 @@ scoreboard players set @s ogvz.dwarven_guard.oceans_pearl.cooldown.seconds 30
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Ocean's Pearl]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Ocean's Pearl]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an activation sound and show particles at the summoned ocean's pearl

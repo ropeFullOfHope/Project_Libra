@@ -32,7 +32,7 @@ team join z3OCELOT @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Ocelot Head","color":"aqua"}, \
+  minecraft:item_name={text:"Ocelot Head",color:"aqua"}, \
   minecraft:item_model="ogvz:ocelot_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -51,7 +51,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Ocelot Chestplate"}, \
+  minecraft:item_name={text:"Ocelot Chestplate"}, \
   minecraft:dyed_color=16768372, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -69,7 +69,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Ocelot Leggings"}, \
+  minecraft:item_name={text:"Ocelot Leggings"}, \
   minecraft:dyed_color=16180138, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -87,7 +87,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Ocelot Boots"}, \
+  minecraft:item_name={text:"Ocelot Boots"}, \
   minecraft:dyed_color=9327914, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -109,14 +109,14 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6330}, \
   minecraft:item_model="ogvz:slapper_fish", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Slapper Fish","color":"aqua"}, \
+  minecraft:item_name={text:"Slapper Fish",color:"aqua"}, \
   minecraft:lore=[ \
-    {"text":" "}, \
-    {"text":"Charge","color":"blue","italic":false,"underlined":true}, \
-    {"text":"Increase the power of the","color":"blue"}, \
-    {"text":"knocback for the next attack.","color":"blue"}, \
-    {"text":"Requires 15 mana","color":"red","italic":false}, \
-    {"text":"Weapon Ability","color":"green","italic":false} \
+    {text:" "}, \
+    {text:"Charge",color:"blue",italic:false,underlined:true}, \
+    {text:"Increase the power of the",color:"blue"}, \
+    {text:"knocback for the next attack.",color:"blue"}, \
+    {text:"Requires 15 mana",color:"red",italic:false}, \
+    {text:"Weapon Ability",color:"green",italic:false} \
   ], \
   minecraft:enchantments={ \
     "minecraft:knockback":2 \
@@ -132,11 +132,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6331}, \
   minecraft:item_model="ogvz:mana_steal", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Mana Steal","color":"gold"}, \
+  minecraft:item_name={text:"Mana Steal",color:"gold"}, \
   minecraft:lore=[ \
-    {"text":"Shoot a mana stealing beam.","color":"blue"}, \
-    {"text":"10 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Shoot a mana stealing beam.",color:"blue"}, \
+    {text:"10 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -149,13 +149,13 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6332}, \
   minecraft:item_model="ogvz:disarm", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Disarm","color":"red"}, \
+  minecraft:item_name={text:"Disarm",color:"red"}, \
   minecraft:lore=[ \
-    {"text":"Apply weakness and mining","color":"blue"}, \
-    {"text":"fatigue to all dwarves in front","color":"blue"}, \
-    {"text":"of you.","color":"blue"}, \
-    {"text":"Requires 45 mana","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Apply weakness and mining",color:"blue"}, \
+    {text:"fatigue to all dwarves in front",color:"blue"}, \
+    {text:"of you.",color:"blue"}, \
+    {text:"Requires 45 mana",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

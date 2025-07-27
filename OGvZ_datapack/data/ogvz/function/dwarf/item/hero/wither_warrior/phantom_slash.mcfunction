@@ -3,20 +3,20 @@
 # Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.wither_warrior.phantom_slash.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Phantom Slash]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.wither_warrior.phantom_slash.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Phantom Slash]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.wither_warrior.phantom_slash.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.wither_warrior.phantom_slash.cooldown.seconds=1..}] run return 0
 
 # Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=15..] run title @s actionbar [ \
   "", \
-  {"text":"[Phantom Slash]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"30 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
+  {text:"[Phantom Slash]",bold:true,color:"red"}, \
+  {text:" You need at least ",color:"red"}, \
+  {text:"30 mana",bold:true,color:"red"}, \
+  {text:"!",color:"red"} \
 ]
 execute unless entity @s[level=30..] run return 0
 

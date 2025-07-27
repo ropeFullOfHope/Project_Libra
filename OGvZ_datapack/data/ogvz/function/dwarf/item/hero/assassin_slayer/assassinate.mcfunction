@@ -3,10 +3,10 @@
 # Display a fail message and return if the secondary attack is on a cooldown.
 execute if entity @s[scores={ogvz.assassin_slayer.assassinate.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Assassinate]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.assassin_slayer.assassinate.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Assassinate]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.assassin_slayer.assassinate.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.assassin_slayer.assassinate.cooldown.seconds=1..}] run return 0
 

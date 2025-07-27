@@ -18,5 +18,11 @@ tag @s remove ogvz.zombie.punish
 execute if score &ogvz ogvz.game.phase matches 1..3 run tellraw @s [ \
   "", \
   {text:"\u1120\u1121\u1122\n",font:"ogvz:custom"}, \
-  {text:"Hang tight, you’ll join the fight as a Zombie once the Boss is defeated.",color:"light_purple"} \
+  {text:"▶ ",bold:true,color:"light_purple"}, \
+  {text:"Hang tight, you’ll join the fight as a ",color:"light_purple"}, \
+  {text:"Zombie",color:"light_purple",bold:true}, \
+  {text:" once the\n",color:"light_purple"}, \
+  {text:"\uF00D",font:"ogvz:custom"}, \
+  {text:"Boss",color:"light_purple",bold:true}, \
+  {text:" is defeated.",color:"light_purple"} \
 ]

@@ -28,7 +28,7 @@ team join z3SNOWMAN @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Carved Pumpkin","color":"aqua"}, \
+  minecraft:item_name={text:"Carved Pumpkin",color:"aqua"}, \
   minecraft:item_model="ogvz:carved_pumpkin", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -48,7 +48,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Snowman Chestplate"}, \
+  minecraft:item_name={text:"Snowman Chestplate"}, \
   minecraft:dyed_color=15663103, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -67,7 +67,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Snowman Leggings"}, \
+  minecraft:item_name={text:"Snowman Leggings"}, \
   minecraft:dyed_color=16777215, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -86,7 +86,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Snowman Boots"}, \
+  minecraft:item_name={text:"Snowman Boots"}, \
   minecraft:dyed_color=15663103, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -110,15 +110,15 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6350}, \
   minecraft:item_model="ogvz:snowball_barrage", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Snowball Barrage","color":"aqua"}, \
+  minecraft:item_name={text:"Snowball Barrage",color:"aqua"}, \
   minecraft:lore=[ \
-    {"text":"Lob a barrage of damaging","color":"blue"}, \
-    {"text":"snowballs.","color":"blue"}, \
-    {"text":"The power of your throw is","color":"blue"}, \
-    {"text":"determined by how high you are","color":"blue"}, \
-    {"text":"looking.","color":"blue"}, \
-    {"text":"8 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Lob a barrage of damaging",color:"blue"}, \
+    {text:"snowballs.",color:"blue"}, \
+    {text:"The power of your throw is",color:"blue"}, \
+    {text:"determined by how high you are",color:"blue"}, \
+    {text:"looking.",color:"blue"}, \
+    {text:"8 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -131,11 +131,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6351}, \
   minecraft:item_model="ogvz:freeze", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Freeze","color":"aqua"}, \
+  minecraft:item_name={text:"Freeze",color:"aqua"}, \
   minecraft:lore=[ \
-    {"text":"Shoot a freezing ice beam.","color":"blue"}, \
-    {"text":"30 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Shoot a freezing ice beam.",color:"blue"}, \
+    {text:"30 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

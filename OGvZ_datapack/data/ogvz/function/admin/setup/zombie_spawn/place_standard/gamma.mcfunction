@@ -54,7 +54,7 @@ execute as @a[tag=ogvz.admin] at @s run playsound minecraft:block.note_block.bit
 # Tell all admins which player placed the zombie spawn gamma.
 tellraw @a[tag=ogvz.admin] [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"red"}, \
-  {"selector":"@s","color":"red"}, \
-  {"text":" placed a Standard Zombie Spawn Gamma.","color":"red"} \
+  {text:"SETUP: ",bold:true,color:"red"}, \
+  {"selector":"@s",color:"red"}, \
+  {text:" placed a Standard Zombie Spawn Gamma.",color:"red"} \
 ]

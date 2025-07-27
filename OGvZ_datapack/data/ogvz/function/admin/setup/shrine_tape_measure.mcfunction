@@ -41,9 +41,9 @@ execute as @n[type=minecraft:marker,tag=temp.ray] at @n[type=minecraft:marker,ta
 kill @n[type=minecraft:marker,tag=temp.ray]
 
 # Display how far the shrine is. Red is too close, green is perfect, yellow is too far.
-title @s[scores={temp.shrine_distance=..127}] actionbar ["",{"score":{"name":"@s","objective":"temp.shrine_distance"},"color":"red","bold":true}]
-title @s[scores={temp.shrine_distance=128..160}] actionbar ["",{"score":{"name":"@s","objective":"temp.shrine_distance"},"color":"green","bold":true}]
-title @s[scores={temp.shrine_distance=161..}] actionbar ["",{"score":{"name":"@s","objective":"temp.shrine_distance"},"color":"yellow","bold":true}]
+title @s[scores={temp.shrine_distance=..127}] actionbar ["",{"score":{"name":"@s","objective":"temp.shrine_distance"},color:"red",bold:true}]
+title @s[scores={temp.shrine_distance=128..160}] actionbar ["",{"score":{"name":"@s","objective":"temp.shrine_distance"},color:"green",bold:true}]
+title @s[scores={temp.shrine_distance=161..}] actionbar ["",{"score":{"name":"@s","objective":"temp.shrine_distance"},color:"yellow",bold:true}]
 
 # Remove temporary tag and scoreboard.
 tag @s remove temp.ray_origin

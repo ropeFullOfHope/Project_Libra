@@ -3,10 +3,10 @@
 # Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.ocelot.mana_steal.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Mana Steal]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.ocelot.mana_steal.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Mana Steal]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.ocelot.mana_steal.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.ocelot.mana_steal.cooldown.seconds=1..}] run return 0
 
@@ -16,8 +16,8 @@ scoreboard players set @s ogvz.ocelot.mana_steal.cooldown.seconds 10
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Mana Steal]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Mana Steal]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an activation sound.
@@ -46,7 +46,7 @@ scoreboard players set @s[scores={temp.mana=30..}] temp.mana 30
 execute as @s[scores={temp.mana=1..}] as @p[tag=temp.hit,tag=ogvz.mana] at @s run playsound minecraft:block.beacon.deactivate player @s ~ ~ ~ 1 1 1
 execute as @s[scores={temp.mana=1..}] run title @p[tag=temp.hit,tag=ogvz.mana] actionbar [ \
   "", \
-  {"text":"Your mana has been drained by an Ocelot!","color":"red"} \
+  {text:"Your mana has been drained by an Ocelot!",color:"red"} \
 ]
 
 # Remove up to 30 mana from the targeted player (if they can have mana). Transfer all the removed mana onto the ocelot.

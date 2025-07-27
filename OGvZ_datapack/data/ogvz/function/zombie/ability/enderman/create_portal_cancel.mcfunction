@@ -6,8 +6,8 @@ advancement revoke @s only ogvz:misc/player_hurt_while_creating_portal
 # Display a cancel message.
 title @s actionbar [ \
   "", \
-  {"text":"[Create Portal]","bold":true,"color":"light_purple"}, \
-  {"text":" Canceled!","color":"light_purple"} \
+  {text:"[Create Portal]",bold:true,color:"light_purple"}, \
+  {text:" Canceled!",color:"light_purple"} \
 ]
 
 # Stop the warmup sound.

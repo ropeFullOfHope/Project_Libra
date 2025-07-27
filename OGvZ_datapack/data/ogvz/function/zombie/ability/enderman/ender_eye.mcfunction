@@ -6,18 +6,18 @@ execute as @s[tag=ogvz.zombie.teleporting] at @s run return run function ogvz:zo
 # Display a fail message and return if there is no ender portal active.
 execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] run title @s actionbar [ \
   "", \
-  {"text":"[Ender Eye]","bold":true,"color":"red"}, \
-  {"text":" There is no ender portal to teleport to!","color":"red"}, \
+  {text:"[Ender Eye]",bold:true,color:"red"}, \
+  {text:" There is no ender portal to teleport to!",color:"red"}, \
 ]
 execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] run return 0
 
 # Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.zombie.ender_eye.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Ender Eye]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.zombie.ender_eye.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Ender Eye]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.zombie.ender_eye.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.zombie.ender_eye.cooldown.seconds=1..}] run return 0
 
@@ -30,8 +30,8 @@ execute if entity @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn,distance
 # Display a teleporting message.
 title @s actionbar [ \
   "", \
-  {"text":"[Ender Eye]","bold":true,"color":"light_purple"}, \
-  {"text":" Teleporting...","color":"light_purple"} \
+  {text:"[Ender Eye]",bold:true,color:"light_purple"}, \
+  {text:" Teleporting...",color:"light_purple"} \
 ]
 
 # Play a teleporting sound.s

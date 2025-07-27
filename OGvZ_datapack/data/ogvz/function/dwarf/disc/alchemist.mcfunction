@@ -28,12 +28,12 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3004}, \
   minecraft:item_model="ogvz:summoning_book_alchemist", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Summoning Book","color":"green"}, \
+  minecraft:item_name={text:"Summoning Book",color:"green"}, \
   minecraft:lore=[ \
-    {"text":"Conjures magic potions.","color":"blue"}, \
-    {"text":"Requires 3 Mundane Potions","italic":false,"color":"red"}, \
-    {"text":"Requires 30 mana","italic":false,"color":"red"}, \
-    {"text":"Active Item","italic":false,"color":"green"} \
+    {text:"Conjures magic potions.",color:"blue"}, \
+    {text:"Requires 3 Mundane Potions",italic:false,color:"red"}, \
+    {text:"Requires 30 mana",italic:false,color:"red"}, \
+    {text:"Active Item",italic:false,color:"green"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -46,10 +46,10 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3105}, \
   minecraft:item_model="ogvz:water_wand", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Water Wand","color":"aqua"}, \
+  minecraft:item_name={text:"Water Wand",color:"aqua"}, \
   minecraft:lore=[ \
-    {"text":"Fills cauldrons with water.","color":"blue"}, \
-    {"text":"Active Item","italic":false,"color":"green"} \
+    {text:"Fills cauldrons with water.",color:"blue"}, \
+    {text:"Active Item",italic:false,color:"green"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -71,24 +71,24 @@ give @s minecraft:oak_sign 3
 # Glass Bottle x12
 give @s minecraft:glass_bottle[ \
   minecraft:lore=[ \
-    {"text":"Give to the alchemist.","color":"blue"}, \
-    {"text":"Fill with water then place in","color":"blue"}, \
-    {"text":"brewing stand.","color":"blue"} \
+    {text:"Give to the alchemist.",color:"blue"}, \
+    {text:"Fill with water then place in",color:"blue"}, \
+    {text:"brewing stand.",color:"blue"} \
   ] \
 ] 12
 # Redstone Dust x4
 give @s minecraft:redstone[ \
   minecraft:lore=[ \
-    {"text":"Share with alchemist.","color":"blue"}, \
-    {"text":"Craft into clocks.","color":"blue"}, \
-    {"text":"Use as brewing ingredient.","color":"blue"} \
+    {text:"Share with alchemist.",color:"blue"}, \
+    {text:"Craft into clocks.",color:"blue"}, \
+    {text:"Use as brewing ingredient.",color:"blue"} \
   ] \
 ] 4
 # Blaze Powder x2
 give @s minecraft:blaze_powder[ \
   minecraft:lore=[ \
-    {"text":"Give to the alchemist.","color":"blue"}, \
-    {"text":"Use to fuel the brewing stand.","color":"blue"} \
+    {text:"Give to the alchemist.",color:"blue"}, \
+    {text:"Use to fuel the brewing stand.",color:"blue"} \
   ] \
 ] 2
 # Legendary Book
@@ -97,34 +97,37 @@ execute as @s at @s run function ogvz:give/other/legendary_book
 # Display a message on how to play as the alchemist.
 tellraw @s [ \
   "", \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"You are an ","color":"yellow"}, \
-  {"text":"Alchemist","bold":true,"color":"blue"}, \
-  {"text":". You make ","color":"yellow"}, \
-  {"text":"Magic Potions","color":"gold"}, \
-  {"text":" for the\n   dwarves.\n","color":"yellow"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"Begin by putting ","color":"yellow"}, \
-  {"text":"Water Bottles","color":"gold"}, \
-  {"text":" and ","color":"yellow"}, \
-  {"text":"Redstone","color":"gold"}, \
-  {"text":" in the\n   ","color":"yellow"}, \
-  {"text":"Brewing Stand","color":"gold"}, \
-  {"text":" to create ","color":"yellow"}, \
-  {"text":"Mundane Potions","color":"gold"}, \
-  {"text":".\n","color":"yellow"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"You can get more ","color":"yellow"}, \
-  {"text":"Bottles","color":"gold"}, \
-  {"text":" from the ","color":"yellow"}, \
-  {"text":"Baker","color":"blue"}, \
-  {"text":".\n","color":"yellow"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"You can get more ","color":"yellow"}, \
-  {"text":"Redstone","color":"gold"}, \
-  {"text":" from the ","color":"yellow"}, \
-  {"text":"Blacksmith","color":"blue"}, \
-  {"text":".","color":"yellow"} \
+  {text:"\u1110\u1111\u1112\n",font:"ogvz:custom"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"You are an ",color:"yellow"}, \
+  {text:"Alchemist",bold:true,color:"blue"}, \
+  {text:".\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Your job is to make ",color:"yellow"}, \
+  {text:"Magic Potions",color:"gold"}, \
+  {text:" for the dwarves.\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Begin by brewing ",color:"yellow"}, \
+  {text:"Redstone Dust",color:"gold"}, \
+  {text:" into ",color:"yellow"}, \
+  {text:"Water Bottles",color:"gold"}, \
+  {text:" to\n",color:"yellow"}, \
+  {text:"\uF00D",font:"ogvz:custom"}, \
+  {text:"create ",color:"yellow"}, \
+  {text:"Mundane Potions",color:"gold"}, \
+  {text:".\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"You can get more ",color:"yellow"}, \
+  {text:"Glass Bottles",color:"gold"}, \
+  {text:" from the ",color:"yellow"}, \
+  {text:"Baker",color:"blue"}, \
+  {text:".\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"You can get more ",color:"yellow"}, \
+  {text:"Redstone Dust",color:"gold"}, \
+  {text:" from the ",color:"yellow"}, \
+  {text:"Blacksmith",color:"blue"}, \
+  {text:".",color:"yellow"} \
 ]
 
 # Play a sound and create particles.

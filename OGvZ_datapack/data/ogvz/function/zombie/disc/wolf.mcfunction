@@ -30,7 +30,7 @@ team join z3WOLF @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Wolf Head","color":"aqua"}, \
+  minecraft:item_name={text:"Wolf Head",color:"aqua"}, \
   minecraft:item_model="ogvz:wolf_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -50,7 +50,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Wolf Chestplate"}, \
+  minecraft:item_name={text:"Wolf Chestplate"}, \
   minecraft:dyed_color=13881295, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -69,7 +69,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Wolf Leggings"}, \
+  minecraft:item_name={text:"Wolf Leggings"}, \
   minecraft:dyed_color=13289416, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -88,7 +88,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Wolf Boots"}, \
+  minecraft:item_name={text:"Wolf Boots"}, \
   minecraft:dyed_color=10459798, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -108,32 +108,38 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 ### Give the player all the wolf items.
 # Iron Sword
 give @s minecraft:iron_sword[ \
-  minecraft:unbreakable={}, \
-  minecraft:lore=[ \
-    {"text":" "}, \
-    {"text":"Wolf Rally","color":"blue","italic":false,"underlined":true}, \
-    {"text":"Attacking temporarily increases","color":"blue"}, \
-    {"text":"the strength of your wolves.","color":"blue"}, \
-    {"text":"Enchantment","color":"green","italic":false}, \
-    {"text":" "}, \
-    {"text":"When in Main Hand:","color":"gray","italic":false}, \
-    {"text":" 6 Attack Damage","color":"dark_green","italic":false}, \
-    {"text":" 1.6 Attack Speed","color":"dark_green","italic":false}, \
-    {"text":" 3 Attack Reach","color":"dark_green","italic":false} \
-  ], \
   minecraft:enchantments={ \
     "minecraft:sharpness":5, \
     "ogvz:wolf_rally":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:attack_damage",amount:5.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-    {type:"minecraft:attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+    { \
+      id:"minecraft:base_attack_damage", \
+      type:"minecraft:attack_damage", \
+      amount:5.0, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_attack_speed", \
+      type:"minecraft:attack_speed", \
+      amount:-2.4, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:entity_interaction_range.mainhand", \
+      type:"minecraft:entity_interaction_range", \
+      amount:0.0, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" 3 Attack Reach",color:"dark_green"} \
+      } \
+    } \
   ], \
-  minecraft:tooltip_display={ \
-    hidden_components:[ \
-      "minecraft:attribute_modifiers" \
-    ] \
-  } \
+  minecraft:unbreakable={} \
 ]
 # Cooked Mutton x64
 give @s minecraft:cooked_mutton[ \
@@ -147,12 +153,12 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6360}, \
   minecraft:item_model="ogvz:howl", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Howl","color":"gray"}, \
+  minecraft:item_name={text:"Howl",color:"gray"}, \
   minecraft:lore=[ \
-    {"text":"Summon a pack of wolves to fight","color":"blue"}, \
-    {"text":"for you.","color":"blue"}, \
-    {"text":"Single-use","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Summon a pack of wolves to fight",color:"blue"}, \
+    {text:"for you.",color:"blue"}, \
+    {text:"Single-use",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

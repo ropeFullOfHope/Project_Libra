@@ -9,8 +9,8 @@ scoreboard players remove @s ogvz.silverfish.silverfish_egg.count 1
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Infest]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Infest]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an infest sound and show particles.

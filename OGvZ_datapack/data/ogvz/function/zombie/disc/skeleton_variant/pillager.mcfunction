@@ -26,7 +26,7 @@ team join z1PILLAGER @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Pillager Head","color":"aqua"}, \
+  minecraft:item_name={text:"Pillager Head",color:"aqua"}, \
   minecraft:item_model="ogvz:pillager_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -46,7 +46,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Pillager Chestplate"}, \
+  minecraft:item_name={text:"Pillager Chestplate"}, \
   minecraft:dyed_color=4924973, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -65,7 +65,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Pillager Leggings"}, \
+  minecraft:item_name={text:"Pillager Leggings"}, \
   minecraft:dyed_color=1976874, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -84,7 +84,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Pillager Boots"}, \
+  minecraft:item_name={text:"Pillager Boots"}, \
   minecraft:dyed_color=6239777, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \

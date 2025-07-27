@@ -28,12 +28,12 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3003}, \
   minecraft:item_model="ogvz:summoning_book_baker", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Summoning Book","color":"green"}, \
+  minecraft:item_name={text:"Summoning Book",color:"green"}, \
   minecraft:lore=[ \
-    {"text":"Conjures food.","color":"blue"}, \
-    {"text":"Requires 8 Clay Bricks","italic":false,"color":"red"}, \
-    {"text":"Requires 30 mana","italic":false,"color":"red"}, \
-    {"text":"Active Item","italic":false,"color":"green"} \
+    {text:"Conjures food.",color:"blue"}, \
+    {text:"Requires 8 Clay Bricks",italic:false,color:"red"}, \
+    {text:"Requires 30 mana",italic:false,color:"red"}, \
+    {text:"Active Item",italic:false,color:"green"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -53,14 +53,14 @@ give @s minecraft:oak_sign 3
 # Clay Ball x32
 give @s minecraft:clay_ball[ \
   minecraft:lore=[ \
-    {"text":"Smelt into bricks.","color":"blue"} \
+    {text:"Smelt into bricks.",color:"blue"} \
   ] \
 ] 32
 # Coal x4
 give @s minecraft:coal[ \
   minecraft:lore=[ \
-    {"text":"Share with baker.","color":"blue"}, \
-    {"text":"Use to fuel the furnace.","color":"blue"} \
+    {text:"Share with baker.",color:"blue"}, \
+    {text:"Use to fuel the furnace.",color:"blue"} \
   ] \
 ] 4
 # Legendary Book
@@ -69,24 +69,27 @@ execute as @s at @s run function ogvz:give/other/legendary_book
 # Display a message on how to play as the baker.
 tellraw @s [ \
   "", \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"You are a ","color":"yellow"}, \
-  {"text":"Baker","bold":true,"color":"blue"}, \
-  {"text":". You make ","color":"yellow"}, \
-  {"text":"Food","color":"gold"}, \
-  {"text":" for the dwarves.\n","color":"yellow"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"Begin by smelting ","color":"yellow"}, \
-  {"text":"Clay Balls","color":"gold"}, \
-  {"text":" into ","color":"yellow"}, \
-  {"text":"Bricks","color":"gold"}, \
-  {"text":".\n","color":"yellow"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"You can get more ","color":"yellow"}, \
-  {"text":"Coal","color":"gold"}, \
-  {"text":" from the ","color":"yellow"}, \
-  {"text":"Blacksmith","color":"blue"}, \
-  {"text":".","color":"yellow"} \
+  {text:"\u1110\u1111\u1112\n",font:"ogvz:custom"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"You are a ",color:"yellow"}, \
+  {text:"Baker",bold:true,color:"blue"}, \
+  {text:".\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Your job is to make ",color:"yellow"}, \
+  {text:"Food",color:"gold"}, \
+  {text:" for the dwarves.\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Begin by smelting ",color:"yellow"}, \
+  {text:"Clay Balls",color:"gold"}, \
+  {text:" into ",color:"yellow"}, \
+  {text:"Clay Bricks",color:"gold"}, \
+  {text:".\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"You can get more ",color:"yellow"}, \
+  {text:"Coal",color:"gold"}, \
+  {text:" from the ",color:"yellow"}, \
+  {text:"Blacksmith",color:"blue"}, \
+  {text:".",color:"yellow"} \
 ]
 
 # Play a sound and create particles.

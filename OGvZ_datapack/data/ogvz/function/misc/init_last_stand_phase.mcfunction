@@ -7,6 +7,7 @@ scoreboard players set &ogvz ogvz.game.phase 5
 tellraw @a[tag=ogvz.dwarf] [ \
   "", \
   {text:"\u1110\u1111\u1112\n",font:"ogvz:custom"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
   {text:"The ",color:"gold"}, \
   {text:"Shrine",color:"gold",bold:true}, \
   {text:" channels its remaining power into you!",color:"gold"} \
@@ -14,8 +15,13 @@ tellraw @a[tag=ogvz.dwarf] [ \
 tellraw @a[tag=ogvz.zombie] [ \
   "", \
   {text:"\u1120\u1121\u1122\n",font:"ogvz:custom"}, \
-  {text:"Last Dwarf standing! The ",color:"light_purple"}, \
-  {text:"Shrine’s",color:"light_purple",bold:true}, \
+  {text:"▶ ",bold:true,color:"light_purple"}, \
+  {text:"Last ",color:"light_purple"}, \
+  {text:"Dwarf",color:"light_purple",bold:true}, \
+  {text:" standing!\n",color:"light_purple"}, \
+  {text:"▶ ",bold:true,color:"light_purple"}, \
+  {text:"The ",color:"light_purple"}, \
+  {text:"Shrine's",color:"light_purple",bold:true}, \
   {text:" remaining power surges within them.",color:"light_purple"} \
 ]
 

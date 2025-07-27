@@ -36,8 +36,8 @@ scoreboard objectives add ogvz.game.zombie_players.percentage.max dummy
 scoreboard players add &ogvz ogvz.game.reload_count 1
 scoreboard players reset Dwarves ogvz.game.player_count
 scoreboard players reset Zombies ogvz.game.player_count
-scoreboard objectives modify ogvz.game.player_count displayname {"text":"\u1000","font":"ogvz:custom"}
-scoreboard objectives modify ogvz.game.player_count numberformat styled {"color":"red","bold":true}
+scoreboard objectives modify ogvz.game.player_count displayname {text:"\u1000",font:"ogvz:custom"}
+scoreboard objectives modify ogvz.game.player_count numberformat styled {color:"red",bold:true}
 scoreboard objectives setdisplay sidebar ogvz.game.player_count
 scoreboard players set &ogvz ogvz.game.timer 0
 scoreboard players set &ogvz ogvz.game.shrine_health 0

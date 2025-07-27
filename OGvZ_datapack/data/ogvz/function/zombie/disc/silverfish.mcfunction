@@ -31,7 +31,7 @@ team join z4SILVERFISH @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Silverfish Head","color":"aqua"}, \
+  minecraft:item_name={text:"Silverfish Head",color:"aqua"}, \
   minecraft:item_model="ogvz:silverfish_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -50,7 +50,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Silverfish Chestplate"}, \
+  minecraft:item_name={text:"Silverfish Chestplate"}, \
   minecraft:dyed_color=8816262, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -68,7 +68,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Silverfish Leggings"}, \
+  minecraft:item_name={text:"Silverfish Leggings"}, \
   minecraft:dyed_color=8816262, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -86,7 +86,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Silverfish Boots"}, \
+  minecraft:item_name={text:"Silverfish Boots"}, \
   minecraft:dyed_color=8816262, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -108,12 +108,12 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6410}, \
   minecraft:item_model="ogvz:infest", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Infest","color":"gray"}, \
+  minecraft:item_name={text:"Infest",color:"gray"}, \
   minecraft:lore=[ \
-    {"text":"Infest dwarf blocks with","color":"blue"}, \
-    {"text":"silverfish eggs.","color":"blue"}, \
-    {"text":"Requires 1 Silverfish Egg","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Infest dwarf blocks with",color:"blue"}, \
+    {text:"silverfish eggs.",color:"blue"}, \
+    {text:"Requires 1 Silverfish Egg",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -126,12 +126,12 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6411}, \
   minecraft:item_model="ogvz:roar", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Roar","color":"gray"}, \
+  minecraft:item_name={text:"Roar",color:"gray"}, \
   minecraft:lore=[ \
-    {"text":"Hatch all silverfish eggs from","color":"blue"}, \
-    {"text":"the infested blocks.","color":"blue"}, \
-    {"text":"20 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Hatch all silverfish eggs from",color:"blue"}, \
+    {text:"the infested blocks.",color:"blue"}, \
+    {text:"20 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -143,12 +143,12 @@ give @s minecraft:carrot_on_a_stick[ \
 give @s minecraft:iron_shovel[ \
   minecraft:unbreakable={}, \
     minecraft:lore=[ \
-    {"text":" "}, \
-    {"text":"When in Main Hand:","color":"gray","italic":false}, \
-    {"text":" 1 Attack Damage","color":"dark_green","italic":false}, \
-    {"text":" 1 Attack Speed","color":"dark_green","italic":false}, \
-    {"text":" 3 Attack Reach","color":"dark_green","italic":false}, \
-    {"text":"Unbreakable","color":"blue","italic":false} \
+    {text:" "}, \
+    {text:"When in Main Hand:",color:"gray",italic:false}, \
+    {text:" 1 Attack Damage",color:"dark_green",italic:false}, \
+    {text:" 1 Attack Speed",color:"dark_green",italic:false}, \
+    {text:" 3 Attack Reach",color:"dark_green",italic:false}, \
+    {text:"Unbreakable",color:"blue",italic:false} \
   ], \
   minecraft:attribute_modifiers=[ \
     {type:"minecraft:attack_damage",amount:0.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \

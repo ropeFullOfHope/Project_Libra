@@ -6,18 +6,18 @@ execute as @s[tag=ogvz.zombie.class.enderman.creating_portal] at @s run return r
 # Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.enderman.create_portal.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Create Portal]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.enderman.create_portal.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Create Portal]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.enderman.create_portal.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.enderman.create_portal.cooldown.seconds=1..}] run return 0
 
 # Terrain modifying abilities cannot be used when the player is in adventure mode.
 execute if entity @s[gamemode=adventure] run title @s actionbar [ \
   "", \
-  {"text":"[Create Portal]","bold":true,"color":"red"}, \
-  {"text":" You cannnot use this ability right now!","color":"red"} \
+  {text:"[Create Portal]",bold:true,color:"red"}, \
+  {text:" You cannnot use this ability right now!",color:"red"} \
 ]
 execute if entity @s[gamemode=adventure] run return 0
 
@@ -32,17 +32,17 @@ scoreboard players set @s ogvz.enderman.create_portal.cooldown.seconds 15
 # Dispaly a message for creating the portal above/below depending on if the sneak button is held.
 title @s[predicate=!ogvz:input_sneak_pressed] actionbar [ \
   "", \
-  {"text":"[Create Portal]","bold":true,"color":"light_purple"}, \
-  {"text":" Creating portal ","color":"light_purple"}, \
-  {"text":"above","color":"light_purple","underlined":true}, \
-  {"text":"...","color":"light_purple"} \
+  {text:"[Create Portal]",bold:true,color:"light_purple"}, \
+  {text:" Creating portal ",color:"light_purple"}, \
+  {text:"above",color:"light_purple",underlined:true}, \
+  {text:"...",color:"light_purple"} \
 ]
 title @s[predicate=ogvz:input_sneak_pressed] actionbar [ \
   "", \
-  {"text":"[Create Portal]","bold":true,"color":"light_purple"}, \
-  {"text":" Creating portal ","color":"light_purple"}, \
-  {"text":"below","color":"light_purple","underlined":true}, \
-  {"text":"...","color":"light_purple"} \
+  {text:"[Create Portal]",bold:true,color:"light_purple"}, \
+  {text:" Creating portal ",color:"light_purple"}, \
+  {text:"below",color:"light_purple",underlined:true}, \
+  {text:"...",color:"light_purple"} \
 ]
 
 # Play a warmup sound.

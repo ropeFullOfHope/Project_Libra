@@ -61,35 +61,35 @@ tag @s[predicate=ogvz:is_admin] add ogvz.admin
 tellraw @s [ \
   "", \
   {text:"\u1110\u1111\u1112\n",font:"ogvz:custom"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"Welcome to ","bold":true,"color":"gold"}, \
-  {"text":"<","bold":true,"color":"gold"}, \
-  {"text":"OG","bold":true,"color":"dark_aqua"}, \
-  {"text":"v","bold":true,"color":"gold"}, \
-  {"text":"Z","bold":true,"color":"dark_red"}, \
-  {"text":">","bold":true,"color":"gold"}, \
-  {"text":"!\n","bold":true,"color":"gold"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"By continuing to play, you agree to our ","color":"yellow"}, \
-  {"text":"Privacy Policy\n","color":"gold"}, \
-  {"text":"\uF00D",font:"ogvz:custom"}, \
-  {"text":"and ","color":"yellow"}, \
-  {"text":"TOS","color":"gold"}, \
-  {"text":", provided ","color":"yellow"}, \
-  {"text":"[HERE]","bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"text":"link","italic":true}]},"click_event":{"action":"open_url","url":"https://ogvz.weebly.com/TOS.html"}}, \
-  {"text":".\n","color":"yellow"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"Please read the ","color":"yellow"}, \
-  {"text":"Rules","color":"gold"}, \
-  {"text":" inside the ","color":"yellow"}, \
-  {"text":"Rulebook","color":"gold"}, \
-  {"text":".\n","color":"yellow"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"If you enjoy playing on the server, please consider\n","color":"yellow"}, \
-  {"text":"\uF00D",font:"ogvz:custom"}, \
-  {"text":"supporting us by donating ","color":"yellow"}, \
-  {"text":"[HERE]","bold":true,"color":"gold","hover_event":{"action":"show_text","value":[{"text":"link","italic":true}]},"click_event":{"action":"open_url","url":"https://ogvz.weebly.com/store.html"}}, \
-  {"text":".","color":"yellow"} \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Welcome to ",bold:true,color:"gold"}, \
+  {text:"<",bold:true,color:"gold"}, \
+  {text:"OG",bold:true,color:"dark_aqua"}, \
+  {text:"v",bold:true,color:"gold"}, \
+  {text:"Z",bold:true,color:"dark_red"}, \
+  {text:">",bold:true,color:"gold"}, \
+  {text:"!\n",bold:true,color:"gold"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"By continuing to play, you agree to our ",color:"yellow"}, \
+  {text:"Privacy Policy\n",color:"gold"}, \
+  {text:"\uF00D",font:"ogvz:custom"}, \
+  {text:"and ",color:"yellow"}, \
+  {text:"TOS",color:"gold"}, \
+  {text:", provided ",color:"yellow"}, \
+  {text:"[HERE]",bold:true,color:"gold",hover_event:{"action":"show_text","value":[{text:"link",italic:true}]},click_event:{"action":"open_url","url":"https://ogvz.weebly.com/TOS.html"}}, \
+  {text:".\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Please read the ",color:"yellow"}, \
+  {text:"Rules",color:"gold"}, \
+  {text:" inside the ",color:"yellow"}, \
+  {text:"Rulebook",color:"gold"}, \
+  {text:".\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"If you enjoy playing on the server, please consider\n",color:"yellow"}, \
+  {text:"\uF00D",font:"ogvz:custom"}, \
+  {text:"supporting us by donating ",color:"yellow"}, \
+  {text:"[HERE]",bold:true,color:"gold",hover_event:{"action":"show_text","value":[{text:"link",italic:true}]},click_event:{"action":"open_url","url":"https://ogvz.weebly.com/store.html"}}, \
+  {text:".",color:"yellow"} \
 ]
 
 # Run code common to the player joining the game for the first time and player rejoining the game.

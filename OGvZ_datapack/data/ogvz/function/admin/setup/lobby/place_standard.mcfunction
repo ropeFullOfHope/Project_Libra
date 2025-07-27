@@ -41,7 +41,7 @@ execute as @a[tag=ogvz.admin] at @s run playsound minecraft:block.note_block.bit
 # Tell the admins which player placed the standard shrine.
 tellraw @a[tag=ogvz.admin] [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"green"}, \
-  {"selector":"@s","color":"green"}, \
-  {"text":" placed a Standard Lobby.","color":"green"} \
+  {text:"SETUP: ",bold:true,color:"green"}, \
+  {"selector":"@s",color:"green"}, \
+  {text:" placed a Standard Lobby.",color:"green"} \
 ]

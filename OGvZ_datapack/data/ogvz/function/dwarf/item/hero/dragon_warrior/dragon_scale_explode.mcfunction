@@ -9,8 +9,8 @@ execute as @s[predicate=!ogvz:is_flying] run return 0
 # Display a fail message.
 title @s actionbar [ \
   "", \
-  {"text":"[Dragon Scale]","bold":true,"color":"red"}, \
-  {"text":" The firework burns your wings.","color":"red"} \
+  {text:"[Dragon Scale]",bold:true,color:"red"}, \
+  {text:" The firework burns your wings.",color:"red"} \
 ]
 
 # Gurantee that the player will lose their dragon form.

@@ -4,7 +4,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:2113}, \
   minecraft:item_model="ogvz:disc_guardian", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Guardian","color":"red"}, \
+  minecraft:item_name={text:"Guardian",color:"red"}, \
   minecraft:lore=[ \
     {text:"Basic mage. Uses vines to climb",color:"blue"}, \
     {text:"walls.",color:"blue"}, \

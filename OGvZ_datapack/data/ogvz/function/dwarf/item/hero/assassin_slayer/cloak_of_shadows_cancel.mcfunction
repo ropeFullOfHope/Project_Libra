@@ -6,8 +6,8 @@ advancement revoke @s only ogvz:misc/assassin_slayer_take_or_deal_damage_while_i
 # Display the cancel message.
 title @s actionbar [ \
   "", \
-  {"text":"[Cloak of Shadows]","bold":true,"color":"light_purple"}, \
-  {"text":" Canceled!","color":"light_purple"} \
+  {text:"[Cloak of Shadows]",bold:true,color:"light_purple"}, \
+  {text:" Canceled!",color:"light_purple"} \
 ]
 
 # Set the cooldown.

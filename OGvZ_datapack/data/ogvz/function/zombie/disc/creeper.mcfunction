@@ -25,7 +25,7 @@ team join z2CREEPER @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Creeper Head","color":"aqua"}, \
+  minecraft:item_name={text:"Creeper Head",color:"aqua"}, \
   minecraft:item_model="ogvz:creeper_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -44,7 +44,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Creeper Chestplate"}, \
+  minecraft:item_name={text:"Creeper Chestplate"}, \
   minecraft:dyed_color=42240, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -62,7 +62,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Creeper Leggings"}, \
+  minecraft:item_name={text:"Creeper Leggings"}, \
   minecraft:dyed_color=10082192, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -80,7 +80,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Creeper Boots"}, \
+  minecraft:item_name={text:"Creeper Boots"}, \
   minecraft:dyed_color=1854485, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -102,11 +102,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6200}, \
   minecraft:item_model="ogvz:explode", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Explode","color":"gray"}, \
+  minecraft:item_name={text:"Explode",color:"gray"}, \
   minecraft:lore=[ \
-    {"text":"Instantly explode.","color":"blue"}, \
-    {"text":"Single-use","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Instantly explode.",color:"blue"}, \
+    {text:"Single-use",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

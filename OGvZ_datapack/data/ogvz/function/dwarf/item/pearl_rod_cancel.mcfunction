@@ -6,8 +6,8 @@ advancement revoke @s only ogvz:misc/player_hurt_while_teleporting_pearl_rod
 # Display a cancel message.
 title @s actionbar [ \
   "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"light_purple"}, \
-  {"text":" Canceled!","color":"light_purple"} \
+  {text:"[Pearl Rod]",bold:true,color:"light_purple"}, \
+  {text:" Canceled!",color:"light_purple"} \
 ]
 
 # Stop the activation sound.

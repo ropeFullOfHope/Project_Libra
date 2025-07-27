@@ -32,7 +32,7 @@ team join z1GUARDIAN @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Guardian Head","color":"aqua"}, \
+  minecraft:item_name={text:"Guardian Head",color:"aqua"}, \
   minecraft:item_model="ogvz:guardian_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -53,7 +53,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Guardian Chestplate"}, \
+  minecraft:item_name={text:"Guardian Chestplate"}, \
   minecraft:dyed_color=5287080, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -73,7 +73,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Guardian Leggings"}, \
+  minecraft:item_name={text:"Guardian Leggings"}, \
   minecraft:dyed_color=5287080, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -93,7 +93,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Guardian Boots"}, \
+  minecraft:item_name={text:"Guardian Boots"}, \
   minecraft:dyed_color=15759144, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -117,11 +117,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6140}, \
   minecraft:item_model="ogvz:beam", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Beam","color":"aqua"}, \
+  minecraft:item_name={text:"Beam",color:"aqua"}, \
   minecraft:lore=[ \
-    {"text":"Shoots a damaging electric beam.","color":"blue"}, \
-    {"text":"3 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Shoots a damaging electric beam.",color:"blue"}, \
+    {text:"3 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -138,11 +138,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={passive_id:6900}, \
   minecraft:item_model="ogvz:sharing_grace", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Sharing Grace","color":"aqua"}, \
+  minecraft:item_name={text:"Sharing Grace",color:"aqua"}, \
   minecraft:lore=[ \
-    {"text":"Non-aquatic zombies near you","color":"blue"}, \
-    {"text":"gain dolphin's grace.","color":"blue"}, \
-    {"text":"Passive Ability","color":"green","italic":false} \
+    {text:"Non-aquatic zombies near you",color:"blue"}, \
+    {text:"gain dolphin's grace.",color:"blue"}, \
+    {text:"Passive Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

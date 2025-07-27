@@ -35,6 +35,7 @@ scoreboard players operation &ogvz temp.kill_dwarf_count += Dwarves ogvz.game.pl
 execute if score &ogvz temp.kill_dwarf_count matches 1.. run tellraw @a[tag=ogvz.joined_game] [ \
   "", \
   {text:"\u1120\u1121\u1122\n",font:"ogvz:custom"}, \
+  {text:"▶ ",bold:true,color:"light_purple"}, \
   {text:"A deadly ",color:"light_purple"}, \
   {text:"Plague",color:"light_purple",bold:true}, \
   {text:" spreads through the dwarven keep.",color:"light_purple"} \

@@ -3,28 +3,28 @@
 # Display a fail message and return if the item is on a cooldown.
 execute if entity @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Dragon Scale]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.dragon_warrior.dragon_scale.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Dragon Scale]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.dragon_warrior.dragon_scale.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.seconds=1..}] run return 0
 
 # Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=50..] run title @s actionbar [ \
   "", \
-  {"text":"[Dragon Scale]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"50 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
+  {text:"[Dragon Scale]",bold:true,color:"red"}, \
+  {text:" You need at least ",color:"red"}, \
+  {text:"50 mana",bold:true,color:"red"}, \
+  {text:"!",color:"red"} \
 ]
 execute unless entity @s[level=50..] run return 0
 
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Dragon Scale]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Dragon Scale]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Remove 50 mana (levels) from the player.

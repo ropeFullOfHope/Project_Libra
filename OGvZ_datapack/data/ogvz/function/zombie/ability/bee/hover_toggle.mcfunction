@@ -3,8 +3,8 @@
 # Display a fail message and return if the player isn't on ground.
 title @s[predicate=!ogvz:is_on_ground] actionbar [ \
   "", \
-  {"text":"[Hover]","bold":true,"color":"red"}, \
-  {"text":" You need to be on ground to toggle this ability.","color":"red"} \
+  {text:"[Hover]",bold:true,color:"red"}, \
+  {text:" You need to be on ground to toggle this ability.",color:"red"} \
 ]
 execute as @s[predicate=!ogvz:is_on_ground] run return 0
 
@@ -15,15 +15,15 @@ execute if items entity @s[tag=temp.use.offhand] weapon.offhand minecraft:carrot
 # Display a disable message if hover is enabled.
 title @s[tag=temp.enabled] actionbar [ \
   "", \
-  {"text":"[Hover]","bold":true,"color":"light_purple"}, \
-  {"text":" Disabled!","color":"light_purple"} \
+  {text:"[Hover]",bold:true,color:"light_purple"}, \
+  {text:" Disabled!",color:"light_purple"} \
 ]
 
 # Display an enable message if hover is disabled.
 title @s[tag=!temp.enabled] actionbar [ \
   "", \
-  {"text":"[Hover]","bold":true,"color":"light_purple"}, \
-  {"text":" Enabled!","color":"light_purple"} \
+  {text:"[Hover]",bold:true,color:"light_purple"}, \
+  {text:" Enabled!",color:"light_purple"} \
 ]
 
 # Play a sound.

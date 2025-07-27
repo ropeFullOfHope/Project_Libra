@@ -13,7 +13,7 @@ give @s minecraft:carrot_on_a_stick[ \
     {text:"interrupted if you take damage.",color:"blue"}, \
     {text:"You can manually interrupt the",color:"blue"}, \
     {text:"ability by using it again.",color:"blue"}, \
-    {text:"15 second cooldown","color":"red",italic:false}, \
+    {text:"15 second cooldown",color:"red",italic:false}, \
     {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:unbreakable={}, \

@@ -3,8 +3,8 @@
 # Display a use message.
 title @s actionbar [ \
   "", \
-  {"text":"[Water Wand]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Water Wand]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play a sound.

@@ -26,7 +26,7 @@ team join z1SKELETON @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Skeleton Skull","color":"aqua"}, \
+  minecraft:item_name={text:"Skeleton Skull",color:"aqua"}, \
   minecraft:item_model="ogvz:skeleton_skull", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -46,7 +46,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Skeleton Chestplate"}, \
+  minecraft:item_name={text:"Skeleton Chestplate"}, \
   minecraft:dyed_color=11053475, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -65,7 +65,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Skeleton Leggings"}, \
+  minecraft:item_name={text:"Skeleton Leggings"}, \
   minecraft:dyed_color=11053475, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -84,7 +84,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Skeleton Boots"}, \
+  minecraft:item_name={text:"Skeleton Boots"}, \
   minecraft:dyed_color=11053475, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \

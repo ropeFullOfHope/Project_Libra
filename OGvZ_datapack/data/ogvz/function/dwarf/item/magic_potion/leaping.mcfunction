@@ -3,10 +3,10 @@
 # Display fail message and return if the player doens't have enough mana.
 execute unless entity @s[level=20..] run title @s actionbar [ \
   "", \
-  {"text":"[Magic Leaping Potion]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"20 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
+  {text:"[Magic Leaping Potion]",bold:true,color:"red"}, \
+  {text:" You need at least ",color:"red"}, \
+  {text:"20 mana",bold:true,color:"red"}, \
+  {text:"!",color:"red"} \
 ]
 execute unless entity @s[level=20..] run return 0
 
@@ -16,8 +16,8 @@ scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 20
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Magic Leaping Potion]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Magic Leaping Potion]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an activation sound.

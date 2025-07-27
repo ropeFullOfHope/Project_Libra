@@ -15,7 +15,7 @@ execute as @a[tag=ogvz.admin] at @s run playsound minecraft:block.note_block.bit
 # Tell all admins which player selected the boss.
 tellraw @a[tag=ogvz.admin] [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"light_purple"}, \
-  {"selector":"@s","color":"light_purple"}, \
-  {"text":" selected the AI Dragon boss.","color":"light_purple"} \
+  {text:"SETUP: ",bold:true,color:"light_purple"}, \
+  {"selector":"@s",color:"light_purple"}, \
+  {text:" selected the AI Dragon boss.",color:"light_purple"} \
 ]

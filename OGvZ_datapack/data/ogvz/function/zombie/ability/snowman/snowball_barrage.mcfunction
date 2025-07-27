@@ -6,10 +6,10 @@ scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 # Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.snowman.freeze.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Snowball Barrage]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.snowman.snowball_barrage.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Snowball Barrage]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.snowman.snowball_barrage.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.snowman.snowball_barrage.cooldown.seconds=1..}] run return 0
 
@@ -19,8 +19,8 @@ scoreboard players set @s ogvz.snowman.snowball_barrage.cooldown.seconds 8
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Snowball Barrage]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Snowball Barrage]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an activation sound.

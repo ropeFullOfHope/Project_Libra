@@ -28,7 +28,7 @@ team join z3PHANTOM @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Phantom Head","color":"aqua"}, \
+  minecraft:item_name={text:"Phantom Head",color:"aqua"}, \
   minecraft:item_model="ogvz:phantom_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -47,7 +47,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Phantom Wings"}, \
+  minecraft:item_name={text:"Phantom Wings"}, \
   minecraft:dyed_color=2704794, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -67,7 +67,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Phantom Leggings"}, \
+  minecraft:item_name={text:"Phantom Leggings"}, \
   minecraft:dyed_color=2704794, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -85,7 +85,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Phantom Boots"}, \
+  minecraft:item_name={text:"Phantom Boots"}, \
   minecraft:dyed_color=2704794, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -153,6 +153,7 @@ give @s minecraft:music_disc_cat[ \
       } \
     } \
   ], \
+  minecraft:unbreakable={}, \
   minecraft:max_damage=250, \
   minecraft:damage=0, \
   minecraft:repairable={items:"#minecraft:iron_tool_materials"}, \
@@ -183,12 +184,12 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6340}, \
   minecraft:item_model="ogvz:delirium", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Delirium","color":"gray"}, \
+  minecraft:item_name={text:"Delirium",color:"gray"}, \
   minecraft:lore=[ \
-    {"text":"Shoot a darkness inflicting","color":"blue"}, \
-    {"text":"beam.","color":"blue"}, \
-    {"text":"20 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Shoot a darkness inflicting",color:"blue"}, \
+    {text:"beam.",color:"blue"}, \
+    {text:"20 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

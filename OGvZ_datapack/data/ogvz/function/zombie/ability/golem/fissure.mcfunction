@@ -3,18 +3,18 @@
 # Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.golem.fissure.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Fissure]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.golem.fissure.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Fissure]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.golem.fissure.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.golem.fissure.cooldown.seconds=1..}] run return 0
 
 # Terrain modifying abilities cannot be used when the player is in adventure mode.
 execute if entity @s[gamemode=adventure] run title @s actionbar [ \
   "", \
-  {"text":"[Fissure]","bold":true,"color":"red"}, \
-  {"text":" You cannnot use this ability right now!","color":"red"} \
+  {text:"[Fissure]",bold:true,color:"red"}, \
+  {text:" You cannnot use this ability right now!",color:"red"} \
 ]
 execute if entity @s[gamemode=adventure] run return 0
 
@@ -24,8 +24,8 @@ scoreboard players set @s ogvz.golem.fissure.cooldown.seconds 5
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Fissure]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Fissure]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play a fissure sound.

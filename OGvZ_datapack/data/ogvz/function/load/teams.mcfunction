@@ -142,72 +142,72 @@ team modify z9DEAD color yellow
 
 ### Modify team suffix.
 # Dwarf - Heroes
-team modify d0DRAGON_WARRIOR suffix {"text":" [Dragon Warrior]","bold":true}
-team modify d0ASSASSIN_SLAYER suffix {"text":" [Assassin Slayer]","bold":true}
-team modify d0WITHER_WARRIOR suffix {"text":" [Wither Warrior]","bold":true}
-team modify d0DWARVEN_GUARD suffix {"text":" [Dwarven Guard]","bold":true}
+team modify d0DRAGON_WARRIOR suffix {text:" [Dragon Warrior]",bold:true}
+team modify d0ASSASSIN_SLAYER suffix {text:" [Assassin Slayer]",bold:true}
+team modify d0WITHER_WARRIOR suffix {text:" [Wither Warrior]",bold:true}
+team modify d0DWARVEN_GUARD suffix {text:" [Dwarven Guard]",bold:true}
 
 # Dwarf - No class
-team modify d1DWARF suffix {"text":" [Dwarf]","bold":true}
+team modify d1DWARF suffix {text:" [Dwarf]",bold:true}
 
 # Dwarf - Builder class
-team modify d2BUILDER suffix {"text":" [Builder]","bold":true}
+team modify d2BUILDER suffix {text:" [Builder]",bold:true}
 
 # Dwarf - Non-builder classes
-team modify d3ALCHEMIST suffix {"text":" [Alchemist]","bold":true}
-team modify d3BAKER suffix {"text":" [Baker]","bold":true}
-team modify d3BLACKSMITH suffix {"text":" [Blacksmith]","bold":true}
-team modify d3ENCHANTER suffix {"text":" [Enchanter]","bold":true}
-team modify d3TAILOR suffix {"text":" [Tailor]","bold":true}
+team modify d3ALCHEMIST suffix {text:" [Alchemist]",bold:true}
+team modify d3BAKER suffix {text:" [Baker]",bold:true}
+team modify d3BLACKSMITH suffix {text:" [Blacksmith]",bold:true}
+team modify d3ENCHANTER suffix {text:" [Enchanter]",bold:true}
+team modify d3TAILOR suffix {text:" [Tailor]",bold:true}
 
 # Zombie - Zombie variant
-team modify z0ZOMBIE suffix {"text":" [Zombie]","bold":true}
-team modify z0HUSK suffix {"text":" [Husk]","bold":true}
-team modify z0VINDICATOR suffix {"text":" [Vindicator]","bold":true}
-team modify z0DROWNED suffix {"text":" [Drowned]","bold":true}
+team modify z0ZOMBIE suffix {text:" [Zombie]",bold:true}
+team modify z0HUSK suffix {text:" [Husk]",bold:true}
+team modify z0VINDICATOR suffix {text:" [Vindicator]",bold:true}
+team modify z0DROWNED suffix {text:" [Drowned]",bold:true}
 
 # Zombie - Skeleton variant
-team modify z1SKELETON suffix {"text":" [Skeleton]","bold":true}
-team modify z1WITHER_SKELETON suffix {"text":" [Wither Skeleton]","bold":true}
-team modify z1PILLAGER suffix {"text":" [Pillager]","bold":true}
-team modify z1GUARDIAN suffix {"text":" [Guardian]","bold":true}
+team modify z1SKELETON suffix {text:" [Skeleton]",bold:true}
+team modify z1WITHER_SKELETON suffix {text:" [Wither Skeleton]",bold:true}
+team modify z1PILLAGER suffix {text:" [Pillager]",bold:true}
+team modify z1GUARDIAN suffix {text:" [Guardian]",bold:true}
 
 # Zombie - Common classes
-team modify z2CREEPER suffix {"text":" [Creeper]","bold":true}
-team modify z2SPIDER suffix {"text":" [Spider]","bold":true}
+team modify z2CREEPER suffix {text:" [Creeper]",bold:true}
+team modify z2SPIDER suffix {text:" [Spider]",bold:true}
 
 # Zombie - Uncommon classes
-team modify z3BLAZE suffix {"text":" [Blaze]","bold":true}
-team modify z3CHICKEN_NUGGET suffix {"text":" [Chicken Nugget]","bold":true}
-team modify z3OCELOT suffix {"text":" [Ocelot]","bold":true}
-team modify z3SNOWMAN suffix {"text":" [Snowman]","bold":true}
-team modify z3CHILLAGER suffix {"text":" [Chillager]","bold":true}
-team modify z3BEE suffix {"text":" [Bee]","bold":true}
-team modify z3PHANTOM suffix {"text":" [Phantom]","bold":true}
-team modify z3WOLF suffix {"text":" [Wolf]","bold":true}
+team modify z3BLAZE suffix {text:" [Blaze]",bold:true}
+team modify z3CHICKEN_NUGGET suffix {text:" [Chicken Nugget]",bold:true}
+team modify z3OCELOT suffix {text:" [Ocelot]",bold:true}
+team modify z3SNOWMAN suffix {text:" [Snowman]",bold:true}
+team modify z3CHILLAGER suffix {text:" [Chillager]",bold:true}
+team modify z3BEE suffix {text:" [Bee]",bold:true}
+team modify z3PHANTOM suffix {text:" [Phantom]",bold:true}
+team modify z3WOLF suffix {text:" [Wolf]",bold:true}
 
 # Zombie - Rare classes
-team modify z4PIGLIN suffix {"text":" [Piglin]","bold":true}
-team modify z4SILVERFISH suffix {"text":" [Silverfish]","bold":true}
+team modify z4PIGLIN suffix {text:" [Piglin]",bold:true}
+team modify z4SILVERFISH suffix {text:" [Silverfish]",bold:true}
 
 # Zombie - Evolved classes
-team modify z5HOGLIN suffix {"text":" [Hoglin]","bold":true}
+team modify z5HOGLIN suffix {text:" [Hoglin]",bold:true}
 
 # Zombie - Very rare (purple) classes
-team modify z6ENDERMAN suffix {"text":" [Enderman]","bold":true}
-team modify z6GOLEM suffix {"text":" [Golem]","bold":true}
+team modify z6ENDERMAN suffix {text:" [Enderman]",bold:true}
+team modify z6GOLEM suffix {text:" [Golem]",bold:true}
 
 # Zombie - Minibosses
-team modify z7JOHNNY suffix {"text":" [Johnny]","bold":true}
-team modify z7GHAST suffix {"text":" [Ghast]","bold":true}
-team modify z7RAVAGER suffix {"text":" [Ravager]","bold":true}
+team modify z7JOHNNY suffix {text:" [Johnny]",bold:true}
+team modify z7GHAST suffix {text:" [Ghast]",bold:true}
+team modify z7RAVAGER suffix {text:" [Ravager]",bold:true}
 
 # Zombie - Bosses
-team modify z8DRAGON suffix {"text":" [Dragon]","bold":true}
-team modify z8WITHER suffix {"text":" [Wither]","bold":true}
-team modify z8ELDER_GUARDIAN suffix {"text":" [Elder Guardian]","bold":true}
+team modify z8DRAGON suffix {text:" [Dragon]",bold:true}
+team modify z8WITHER suffix {text:" [Wither]",bold:true}
+team modify z8ELDER_GUARDIAN suffix {text:" [Elder Guardian]",bold:true}
 
-team modify z9DEAD suffix {"text":" [Dead]","bold":true}
+team modify z9DEAD suffix {text:" [Dead]",bold:true}
 
 ### Players can't see each other when invisible.
 # Dwarf - Heroes

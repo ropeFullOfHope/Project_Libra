@@ -30,7 +30,7 @@ team join z3CHICKEN_NUGGET @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Chicken Nugget Head","color":"aqua"}, \
+  minecraft:item_name={text:"Chicken Nugget Head",color:"aqua"}, \
   minecraft:item_model="ogvz:chicken_nugget_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -49,7 +49,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Chicken Nugget Chestplate"}, \
+  minecraft:item_name={text:"Chicken Nugget Chestplate"}, \
   minecraft:dyed_color=16777215, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -67,7 +67,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Chicken Nugget Leggings"}, \
+  minecraft:item_name={text:"Chicken Nugget Leggings"}, \
   minecraft:dyed_color=14728041, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -85,7 +85,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Chicken Nugget Boots"}, \
+  minecraft:item_name={text:"Chicken Nugget Boots"}, \
   minecraft:dyed_color=16573808, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -108,12 +108,12 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6310}, \
   minecraft:item_model="ogvz:eggsplosive_egg", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Eggsplosive Egg","color":"gray"}, \
+  minecraft:item_name={text:"Eggsplosive Egg",color:"gray"}, \
   minecraft:lore=[ \
-    {"text":"Shoot an egg which explodes on","color":"blue"}, \
-    {"text":"impact.","color":"blue"}, \
-    {"text":"3 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Shoot an egg which explodes on",color:"blue"}, \
+    {text:"impact.",color:"blue"}, \
+    {text:"3 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -130,13 +130,13 @@ give @s minecraft:carrot_on_a_stick[ \
   }, \
   minecraft:item_model="ogvz:flutter", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Flutter","color":"gray"}, \
+  minecraft:item_name={text:"Flutter",color:"gray"}, \
   minecraft:lore=[ \
-    {"text":"Grants permanent slow falling.","color":"blue"}, \
-    {"text":"Sneak to temporary remove the","color":"blue"}, \
-    {"text":"effect.","color":"blue"}, \
-    {"text":"Togglable","color":"blue","italic":false}, \
-    {"text":"Passive Ability","color":"green","italic":false} \
+    {text:"Grants permanent slow falling.",color:"blue"}, \
+    {text:"Sneak to temporary remove the",color:"blue"}, \
+    {text:"effect.",color:"blue"}, \
+    {text:"Togglable",color:"blue",italic:false}, \
+    {text:"Passive Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

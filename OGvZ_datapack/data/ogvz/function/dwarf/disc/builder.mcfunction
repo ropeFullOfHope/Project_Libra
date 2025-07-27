@@ -25,7 +25,7 @@ team join d2BUILDER @s
 ### Give the player all the builder items.
 # Builder Helmet (armor)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
-  minecraft:item_name={"text":"Builder Helmet","color":"green"}, \
+  minecraft:item_name={text:"Builder Helmet",color:"green"}, \
   minecraft:enchantments={ \
     "minecraft:respiration":3, \
     "minecraft:aqua_affinity":1 \
@@ -33,21 +33,21 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 ]
 # Builder Chestplate (armor)
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
-  minecraft:item_name={"text":"Builder Chestplate","color":"green"}, \
+  minecraft:item_name={text:"Builder Chestplate",color:"green"}, \
   minecraft:enchantments={ \
     "minecraft:protection":4 \
   } \
 ]
 # Builder Leggings (armor)
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
-  minecraft:item_name={"text":"Builder Leggings","color":"green"}, \
+  minecraft:item_name={text:"Builder Leggings",color:"green"}, \
   minecraft:enchantments={ \
     "minecraft:swift_sneak":3 \
   } \
 ]
 # Builder Boots (armor)
 item replace entity @s armor.feet with minecraft:leather_boots[ \
-  minecraft:item_name={"text":"Builder Boots","color":"green"}, \
+  minecraft:item_name={text:"Builder Boots",color:"green"}, \
   minecraft:enchantments={ \
     "minecraft:feather_falling":4 \
   } \
@@ -59,7 +59,7 @@ item replace entity @s weapon.offhand with minecraft:poisonous_potato[ \
   !minecraft:food, \
   !minecraft:consumable, \
   !minecraft:max_stack_size, \
-  minecraft:item_name={"text":"Crab Claw"}, \
+  minecraft:item_name={text:"Crab Claw"}, \
   minecraft:attribute_modifiers=[ \
     { \
       id:"ogvz:mainhand", \
@@ -91,11 +91,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3000}, \
   minecraft:item_model="ogvz:summoning_book_builder", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Summoning Book","color":"green"}, \
+  minecraft:item_name={text:"Summoning Book",color:"green"}, \
   minecraft:lore=[ \
-    {"text":"Conjures blocks.","color":"blue"}, \
-    {"text":"30 second cooldown","italic":false,"color":"red"}, \
-    {"text":"Active Item","italic":false,"color":"green"} \
+    {text:"Conjures blocks.",color:"blue"}, \
+    {text:"30 second cooldown",italic:false,color:"red"}, \
+    {text:"Active Item",italic:false,color:"green"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -111,6 +111,9 @@ give @s minecraft:iron_pickaxe[ \
     "minecraft:efficiency":2, \
     "minecraft:unbreaking":2 \
   }, \
+  minecraft:lore=[ \
+    {text:"Multi-Tool",color:"gray",italic:false} \
+  ], \
   minecraft:attribute_modifiers=[ \
     { \
       id:"minecraft:base_attack_damage", \
@@ -127,7 +130,7 @@ give @s minecraft:iron_pickaxe[ \
       slot:"mainhand" \
     }, \
     { \
-      id:"minecraft:base_entity_interaction_range", \
+      id:"minecraft:entity_interaction_range.mainhand", \
       type:"minecraft:entity_interaction_range", \
       amount:0.0, \
       operation:"add_value", \
@@ -138,6 +141,9 @@ give @s minecraft:iron_pickaxe[ \
       } \
     } \
   ], \
+  minecraft:weapon={ \
+    item_damage_per_attack:1 \
+  }, \
   minecraft:tool={ \
     damage_per_block:1, \
     rules:[ \
@@ -198,18 +204,21 @@ execute as @s at @s run function ogvz:give/other/legendary_book
 # Display a message on how to play as the builder.
 tellraw @s [ \
   "", \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"You are a ","color":"yellow"}, \
-  {"text":"Builder","bold":true,"color":"green"}, \
-  {"text":". Your job is to ","color":"yellow"}, \
-  {"text":"build the keep","color":"gold"}, \
-  {"text":".\n","color":"yellow"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"Use your ","color":"yellow"}, \
-  {"text":"Summoning Book","color":"gold"}, \
-  {"text":" to conjure ","color":"yellow"}, \
-  {"text":"Blocks","color":"gold"}, \
-  {"text":".","color":"yellow"} \
+  {text:"\u1110\u1111\u1112\n",font:"ogvz:custom"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"You are a ",color:"yellow"}, \
+  {text:"Builder",bold:true,color:"green"}, \
+  {text:".\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Your job is to ",color:"yellow"}, \
+  {text:"build the keep",color:"gold"}, \
+  {text:".\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Use your ",color:"yellow"}, \
+  {text:"Summoning Book",color:"gold"}, \
+  {text:" to conjure ",color:"yellow"}, \
+  {text:"Blocks",color:"gold"}, \
+  {text:".",color:"yellow"} \
 ]
 
 # Play a sound and create particles.

@@ -4,7 +4,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:2132}, \
   minecraft:item_model="ogvz:disc_chicken_nugget", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Chicken Nugget","color":"dark_red"}, \
+  minecraft:item_name={text:"Chicken Nugget",color:"dark_red"}, \
   minecraft:lore=[ \
     {text:"Shoots eggsplosive eggs that",color:"blue"}, \
     {text:"deal area damage.",color:"blue"}, \

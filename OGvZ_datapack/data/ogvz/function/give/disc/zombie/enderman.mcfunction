@@ -4,7 +4,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:2160}, \
   minecraft:item_model="ogvz:disc_enderman", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Enderman","color":"dark_purple"}, \
+  minecraft:item_name={text:"Enderman",color:"dark_purple"}, \
   minecraft:lore=[ \
     {text:"Opens a portal for other zombies",color:"blue"}, \
     {text:"to teleport to.",color:"blue"}, \

@@ -4,7 +4,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:2121}, \
   minecraft:item_model="ogvz:disc_spider", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Spider","color":"red"}, \
+  minecraft:item_name={text:"Spider",color:"red"}, \
   minecraft:lore=[ \
     {text:"Traps dwarves in webs, slowing",color:"blue"}, \
     {text:"them down.",color:"blue"}, \

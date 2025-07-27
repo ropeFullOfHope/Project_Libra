@@ -19,10 +19,10 @@ scoreboard objectives add temp.emerald_count dummy
 execute store result score @s temp.emerald_count run clear @s minecraft:emerald 0
 execute unless entity @s[scores={temp.emerald_count=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Summoning Book]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"1 Emerald","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
+  {text:"[Summoning Book]",bold:true,color:"red"}, \
+  {text:" You need at least ",color:"red"}, \
+  {text:"1 Emerald",bold:true,color:"red"}, \
+  {text:"!",color:"red"} \
 ]
 execute unless entity @s[scores={temp.emerald_count=1..}] run return run scoreboard objectives remove temp.emerald_count
 
@@ -30,8 +30,8 @@ clear @s minecraft:emerald 1
 
 title @s actionbar [ \
   "", \
-  {"text":"[Summoning Book]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Summoning Book]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 playsound minecraft:entity.evoker.cast_spell player @a ~ ~ ~ 1 1

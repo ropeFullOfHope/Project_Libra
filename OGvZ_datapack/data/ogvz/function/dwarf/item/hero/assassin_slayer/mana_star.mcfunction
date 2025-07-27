@@ -3,18 +3,18 @@
 # Display a fail message and return if the item is on a cooldown.
 execute if entity @s[scores={ogvz.assassin_slayer.mana_star.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Mana Star]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.assassin_slayer.mana_star.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Mana Star]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.assassin_slayer.mana_star.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.assassin_slayer.mana_star.cooldown.seconds=1..}] run return 0
 
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Mana Star]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Mana Star]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Set the cooldown.

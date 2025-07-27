@@ -3,8 +3,8 @@
 # Display a teleport message.
 title @s actionbar [ \
   "", \
-  {"text":"[Ender Eye]","bold":true,"color":"light_purple"}, \
-  {"text":" Teleported!","color":"light_purple"} \
+  {text:"[Ender Eye]",bold:true,color:"light_purple"}, \
+  {text:" Teleported!",color:"light_purple"} \
 ]
 
 # Remove the teleporting tag.

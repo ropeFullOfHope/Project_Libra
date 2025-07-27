@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 30
+              "count": 24
             },
             {
               "function": "minecraft:set_components",

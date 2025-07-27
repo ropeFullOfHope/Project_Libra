@@ -26,7 +26,7 @@ execute as @s[tag=temp.hit] run playsound minecraft:entity.player.hurt_freeze pl
 execute as @s[tag=temp.hit] run particle minecraft:snowflake ~ ~1.0 ~ 0.2 0.4 0.2 0 30
 title @a[tag=temp.hit] actionbar [ \
   "", \
-  {"text":"A Chillager has slowed you!","color":"red"} \
+  {text:"A Chillager has slowed you!",color:"red"} \
 ]
 
 # Remove scoreboards.

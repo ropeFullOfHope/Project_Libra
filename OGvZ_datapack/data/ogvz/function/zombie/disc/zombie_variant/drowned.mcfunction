@@ -29,7 +29,7 @@ team join z0DROWNED @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Drowned Head","color":"aqua"}, \
+  minecraft:item_name={text:"Drowned Head",color:"aqua"}, \
   minecraft:item_model="ogvz:drowned_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -49,7 +49,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Drowned Chestplate"}, \
+  minecraft:item_name={text:"Drowned Chestplate"}, \
   minecraft:dyed_color=6571569, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -68,7 +68,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Drowned Leggings"}, \
+  minecraft:item_name={text:"Drowned Leggings"}, \
   minecraft:dyed_color=5782827, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -87,7 +87,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Drowned Boots"}, \
+  minecraft:item_name={text:"Drowned Boots"}, \
   minecraft:dyed_color=5670014, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -107,16 +107,44 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 ### Give the player all the drowned items.
 # Shield (9th hotbar slot)
 item replace entity @s hotbar.8 with minecraft:shield[ \
-  minecraft:unbreakable={} \
+  minecraft:item_name="Light Shield", \
+  minecraft:lore=[ \
+    {text:"Instant Blocking",color:"gray",italic:false} \
+  ], \
+  minecraft:unbreakable={}, \
+  minecraft:blocks_attacks={ \
+    block_delay_seconds:0, \
+    damage_reductions:[ \
+      { \
+        type:"#ogvz:is_physical", \
+        base:0, \
+        factor:1.0 \
+      }, \
+      { \
+        type:"#minecraft:is_explosion", \
+        base:0, \
+        factor:0.35 \
+      } \
+    ], \
+    item_damage:{ \
+      threshold:3.0, \
+      base:0.0, \
+      factor:1.0 \
+    }, \
+    block_sound:"minecraft:item.shield.block", \
+    disabled_sound:"minecraft:item.shield.break", \
+    bypassed_by:"#minecraft:bypasses_shield" \
+  } \
 ]
 
-# Trident
+# Worn Trident
 give @s minecraft:trident[ \
   minecraft:item_name="Worn Trident", \
+  minecraft:enchantments={"minecraft:riptide":1}, \
+  minecraft:lore=[ \
+    {text:"Disables Shields",color:"gray",italic:false} \
+  ], \
   minecraft:rarity="common", \
-  minecraft:enchantments={ \
-    "minecraft:riptide":1 \
-  }, \
   minecraft:attribute_modifiers=[ \
     { \
       id:"minecraft:base_attack_damage", \
@@ -133,7 +161,7 @@ give @s minecraft:trident[ \
       slot:"mainhand" \
     }, \
     { \
-      id:"minecraft:base_entity_interaction_range", \
+      id:"minecraft:entity_interaction_range.mainhand", \
       type:"minecraft:entity_interaction_range", \
       amount:0.5, \
       operation:"add_value", \
@@ -144,6 +172,7 @@ give @s minecraft:trident[ \
       } \
     } \
   ], \
+  minecraft:unbreakable={}, \
   minecraft:max_damage=1561, \
   minecraft:enchantable={value:10}, \
   minecraft:weapon={ \
@@ -169,11 +198,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={passive_id:6000}, \
   minecraft:item_model="ogvz:undying_bond", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Undying Bond","color":"red"}, \
+  minecraft:item_name={text:"Undying Bond",color:"red"}, \
   minecraft:lore=[ \
-    {"text":"Gain regeneration when near","color":"blue"}, \
-    {"text":"another zombie variant.","color":"blue"}, \
-    {"text":"Passive Ability","color":"green","italic":false} \
+    {text:"Gain regeneration when near",color:"blue"}, \
+    {text:"another zombie variant.",color:"blue"}, \
+    {text:"Passive Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -186,11 +215,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={passive_id:6900}, \
   minecraft:item_model="ogvz:sharing_grace", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Sharing Grace","color":"aqua"}, \
+  minecraft:item_name={text:"Sharing Grace",color:"aqua"}, \
   minecraft:lore=[ \
-    {"text":"Non-aquatic zombies near you","color":"blue"}, \
-    {"text":"gain dolphin's grace.","color":"blue"}, \
-    {"text":"Passive Ability","color":"green","italic":false} \
+    {text:"Non-aquatic zombies near you",color:"blue"}, \
+    {text:"gain dolphin's grace.",color:"blue"}, \
+    {text:"Passive Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

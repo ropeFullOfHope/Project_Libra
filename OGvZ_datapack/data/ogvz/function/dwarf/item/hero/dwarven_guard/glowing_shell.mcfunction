@@ -3,20 +3,20 @@
 # Display a fail message and return if the item is on a cooldown.
 execute if entity @s[scores={ogvz.dwarven_guard.glowing_shell.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Glowing Shell]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.dwarven_guard.glowing_shell.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Glowing Shell]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.dwarven_guard.glowing_shell.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.dwarven_guard.glowing_shell.cooldown.seconds=1..}] run return 0
 
 # Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=20..] run title @s actionbar [ \
   "", \
-  {"text":"[Glowing Shell]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"20 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
+  {text:"[Glowing Shell]",bold:true,color:"red"}, \
+  {text:" You need at least ",color:"red"}, \
+  {text:"20 mana",bold:true,color:"red"}, \
+  {text:"!",color:"red"} \
 ]
 execute unless entity @s[level=10..] run return 0
 
@@ -29,8 +29,8 @@ scoreboard players set @s ogvz.dwarven_guard.glowing_shell.cooldown.seconds 30
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Glowing Shell]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Glowing Shell]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an activation sound.

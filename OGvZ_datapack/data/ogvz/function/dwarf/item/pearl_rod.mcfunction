@@ -6,20 +6,20 @@ execute as @s[tag=ogvz.mana.teleporting] at @s run return run function ogvz:dwar
 # Display a fail message and return if the item is still on cooldown.
 execute if entity @s[scores={ogvz.dwarf.pearl_rod.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.dwarf.pearl_rod.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Pearl Rod]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.dwarf.pearl_rod.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.dwarf.pearl_rod.cooldown.seconds=1..}] run return 0
 
 # Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=50..] run title @s actionbar [ \
   "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"50 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
+  {text:"[Pearl Rod]",bold:true,color:"red"}, \
+  {text:" You need at least ",color:"red"}, \
+  {text:"50 mana",bold:true,color:"red"}, \
+  {text:"!",color:"red"} \
 ]
 execute unless entity @s[level=50..] run return 0
 
@@ -36,8 +36,8 @@ execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~2
 # Display a fail message and return if the shrine is obstructed.
 title @s[tag=temp.fail] actionbar [ \
   "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"red"}, \
-  {"text":" The shrine is obstructed!","color":"red"} \
+  {text:"[Pearl Rod]",bold:true,color:"red"}, \
+  {text:" The shrine is obstructed!",color:"red"} \
 ]
 execute as @s[tag=temp.fail] run return run tag @s remove temp.fail
 
@@ -54,8 +54,8 @@ execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~2.5 ~
 # Display a fail message and return if the shrine is webbed.
 title @s[tag=temp.fail] actionbar [ \
   "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"red"}, \
-  {"text":" The shrine is webbed!","color":"red"} \
+  {text:"[Pearl Rod]",bold:true,color:"red"}, \
+  {text:" The shrine is webbed!",color:"red"} \
 ]
 execute as @s[tag=temp.fail] run return run tag @s remove temp.fail
 
@@ -68,8 +68,8 @@ scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.seconds 60
 # Display a teleporting message.
 title @s actionbar [ \
   "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"light_purple"}, \
-  {"text":" Teleporting...","color":"light_purple"} \
+  {text:"[Pearl Rod]",bold:true,color:"light_purple"}, \
+  {text:" Teleporting...",color:"light_purple"} \
 ]
 
 # Play a sound.

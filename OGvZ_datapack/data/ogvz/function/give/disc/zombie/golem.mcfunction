@@ -4,7 +4,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:2161}, \
   minecraft:item_model="ogvz:disc_golem", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Golem","color":"dark_purple"}, \
+  minecraft:item_name={text:"Golem",color:"dark_purple"}, \
   minecraft:lore=[ \
     {text:"Obliterates dwarves with one",color:"blue"}, \
     {text:"punch. Raises the ground to",color:"blue"}, \

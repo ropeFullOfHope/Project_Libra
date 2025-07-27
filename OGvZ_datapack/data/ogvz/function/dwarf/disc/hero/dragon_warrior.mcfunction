@@ -33,7 +33,7 @@ execute as @s at @s run function ogvz:misc/drop_armor
 # Dragon Warrior Helmet (armor)
 item replace entity @s armor.head with minecraft:golden_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Dragon Warrior Helmet","color":"gold"}, \
+  minecraft:item_name={text:"Dragon Warrior Helmet",color:"gold"}, \
   minecraft:enchantments={ \
     "minecraft:protection":4, \
     "minecraft:binding_curse":1 \
@@ -46,7 +46,7 @@ item replace entity @s armor.head with minecraft:golden_helmet[ \
 # Dragon Warrior Chestplate (armor)
 item replace entity @s armor.chest with minecraft:golden_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Dragon Warrior Chestplate","color":"gold"}, \
+  minecraft:item_name={text:"Dragon Warrior Chestplate",color:"gold"}, \
   minecraft:enchantments={ \
     "minecraft:protection":5, \
     "minecraft:binding_curse":1 \
@@ -59,7 +59,7 @@ item replace entity @s armor.chest with minecraft:golden_chestplate[ \
 # Dragon Warrior Leggings (armor)
 item replace entity @s armor.legs with minecraft:golden_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Dragon Warrior Leggings","color":"gold"}, \
+  minecraft:item_name={text:"Dragon Warrior Leggings",color:"gold"}, \
   minecraft:enchantments={ \
     "minecraft:protection":5, \
     "minecraft:binding_curse":1 \
@@ -72,7 +72,7 @@ item replace entity @s armor.legs with minecraft:golden_leggings[ \
 # Dragon Warrior Boots (armor)
 item replace entity @s armor.feet with minecraft:golden_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Dragon Warrior Boots","color":"gold"}, \
+  minecraft:item_name={text:"Dragon Warrior Boots",color:"gold"}, \
   minecraft:enchantments={ \
     "minecraft:protection":4, \
     "minecraft:feather_falling":4, \
@@ -90,20 +90,20 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_model="ogvz:golden_flail", \
   minecraft:unbreakable={}, \
   minecraft:tooltip_style="ogvz:legendary", \
-  minecraft:item_name={"text":"Golden Flail","color":"gold","bold":true}, \
+  minecraft:item_name={text:"Golden Flail",color:"gold",bold:true}, \
   minecraft:lore=[ \
-    {"text":"Conjure Wall","color":"blue","italic":false,"underlined":true}, \
-    {"text":"Conjures a stone brick wall in","color":"blue"}, \
-    {"text":"front of you.","color":"blue"}, \
-    {"text":"Requires 8 mana","color":"red","italic":false}, \
-    {"text":"Secondary Use","color":"green","italic":false}, \
-    {"text":" "}, \
-    {"text":"When in Main Hand:","color":"gray","italic":false}, \
-    {"text":" 12 Attack Damage","color":"dark_green","italic":false}, \
-    {"text":" 1.3 Attack Speed","color":"dark_green","italic":false}, \
-    {"text":" 3 Attack Reach","color":"dark_green","italic":false}, \
-    {"text":"Unbreakable","color":"blue","italic":false}, \
-    {"text":"Heroic Item","color":"gold","italic":false,"bold":true} \
+    {text:"Conjure Wall",color:"blue",italic:false,underlined:true}, \
+    {text:"Conjures a stone brick wall in",color:"blue"}, \
+    {text:"front of you.",color:"blue"}, \
+    {text:"Requires 8 mana",color:"red",italic:false}, \
+    {text:"Secondary Use",color:"green",italic:false}, \
+    {text:" "}, \
+    {text:"When in Main Hand:",color:"gray",italic:false}, \
+    {text:" 12 Attack Damage",color:"dark_green",italic:false}, \
+    {text:" 1.3 Attack Speed",color:"dark_green",italic:false}, \
+    {text:" 3 Attack Reach",color:"dark_green",italic:false}, \
+    {text:"Unbreakable",color:"blue",italic:false}, \
+    {text:"Heroic Item",color:"gold",italic:false,bold:true} \
   ], \
   minecraft:attribute_modifiers=[ \
     {type:"minecraft:attack_damage",amount:11.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
@@ -122,19 +122,19 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_model="ogvz:dragon_scale", \
   minecraft:unbreakable={}, \
   minecraft:tooltip_style="ogvz:legendary", \
-  minecraft:item_name={"text":"Dragon Scale","color":"gray","bold":true}, \
+  minecraft:item_name={text:"Dragon Scale",color:"gray",bold:true}, \
   minecraft:lore=[ \
-    {"text":"Unleashes your dragon form,","color":"blue"}, \
-    {"text":"granting you a boost in damage","color":"blue"}, \
-    {"text":"and speed while also granting","color":"blue"}, \
-    {"text":"you wings.","color":"blue"}, \
-    {"text":"After taking enough damage you","color":"blue"}, \
-    {"text":"will revert back into your","color":"blue"}, \
-    {"text":"regular form.","color":"blue"}, \
-    {"text":"300 second cooldown","color":"red","italic":false}, \
-    {"text":"Requires 50 mana","color":"red","italic":false}, \
-    {"text":"Active Item","color":"green","italic":false}, \
-    {"text":"Heroic Item","color":"gold","italic":false,"bold":true} \
+    {text:"Unleashes your dragon form,",color:"blue"}, \
+    {text:"granting you a boost in damage",color:"blue"}, \
+    {text:"and speed while also granting",color:"blue"}, \
+    {text:"you wings.",color:"blue"}, \
+    {text:"After taking enough damage you",color:"blue"}, \
+    {text:"will revert back into your",color:"blue"}, \
+    {text:"regular form.",color:"blue"}, \
+    {text:"300 second cooldown",color:"red",italic:false}, \
+    {text:"Requires 50 mana",color:"red",italic:false}, \
+    {text:"Active Item",color:"green",italic:false}, \
+    {text:"Heroic Item",color:"gold",italic:false,bold:true} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -148,14 +148,14 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_model="ogvz:dwarven_ruby", \
   minecraft:unbreakable={}, \
   minecraft:tooltip_style="ogvz:legendary", \
-  minecraft:item_name={"text":"Dwarven Ruby","color":"red","bold":true}, \
+  minecraft:item_name={text:"Dwarven Ruby",color:"red",bold:true}, \
   minecraft:lore=[ \
-    {"text":"Restores a large amount of mana","color":"blue"}, \
-    {"text":"to all non-hero dwarves.","color":"blue"}, \
-    {"text":"60 second cooldown","color":"red","italic":false}, \
-    {"text":"Requires 30 mana","color":"red","italic":false}, \
-    {"text":"Active Item","color":"green","italic":false}, \
-    {"text":"Heroic Item","color":"gold","italic":false,"bold":true} \
+    {text:"Restores a large amount of mana",color:"blue"}, \
+    {text:"to all non-hero dwarves.",color:"blue"}, \
+    {text:"60 second cooldown",color:"red",italic:false}, \
+    {text:"Requires 30 mana",color:"red",italic:false}, \
+    {text:"Active Item",color:"green",italic:false}, \
+    {text:"Heroic Item",color:"gold",italic:false,bold:true} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -165,14 +165,18 @@ give @s minecraft:carrot_on_a_stick[ \
 ]
 
 # Display a message about the player becoming the hero to all dwarves.
-tellraw @a [ \
+tellraw @a[tag=ogvz.dwarf] [ \
   "", \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"Due to their valiant efforts, ","color":"yellow"}, \
+  {text:"\u1110\u1111\u1112\n",font:"ogvz:custom"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Due to their valiant efforts,\n",color:"yellow"}, \
+  {text:"\uF00D",font:"ogvz:custom"}, \
   {"selector":"@s"}, \
-  {"text":" has been proclaimed as a ","color":"yellow"}, \
-  {"text":"Hero","color":"gold","bold":true}, \
-  {"text":"!","color":"yellow"} \
+  {text:"\n"}, \
+  {text:"\uF00D",font:"ogvz:custom"}, \
+  {text:"has been proclaimed as a ",color:"yellow"}, \
+  {text:"Hero",color:"gold",bold:true}, \
+  {text:"!",color:"yellow"} \
 ]
 
 # Play a sound and create particles.

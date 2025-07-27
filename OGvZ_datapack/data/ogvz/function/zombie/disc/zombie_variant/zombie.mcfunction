@@ -26,7 +26,7 @@ team join z0ZOMBIE @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Zombie Head","color":"aqua"}, \
+  minecraft:item_name={text:"Zombie Head",color:"aqua"}, \
   minecraft:item_model="ogvz:zombie_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -46,7 +46,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Zombie Chestplate"}, \
+  minecraft:item_name={text:"Zombie Chestplate"}, \
   minecraft:dyed_color=44975, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -65,7 +65,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Zombie Leggings"}, \
+  minecraft:item_name={text:"Zombie Leggings"}, \
   minecraft:dyed_color=4602533, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -84,7 +84,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Zombie Boots"}, \
+  minecraft:item_name={text:"Zombie Boots"}, \
   minecraft:dyed_color=4602533, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -104,46 +104,121 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 ### Give the player all the zombie items.
 # Shield (offhand)
 item replace entity @s weapon.offhand with minecraft:shield[ \
-  minecraft:unbreakable={} \
+  minecraft:item_name="Light Shield", \
+  minecraft:lore=[ \
+    {text:"Instant Blocking",color:"gray",italic:false} \
+  ], \
+  minecraft:unbreakable={}, \
+  minecraft:blocks_attacks={ \
+    block_delay_seconds:0, \
+    damage_reductions:[ \
+      { \
+        type:"#ogvz:is_physical", \
+        base:0, \
+        factor:1.0 \
+      }, \
+      { \
+        type:"#minecraft:is_explosion", \
+        base:0, \
+        factor:0.35 \
+      } \
+    ], \
+    item_damage:{ \
+      threshold:3.0, \
+      base:0.0, \
+      factor:1.0 \
+    }, \
+    block_sound:"minecraft:item.shield.block", \
+    disabled_sound:"minecraft:item.shield.break", \
+    bypassed_by:"#minecraft:bypasses_shield" \
+  } \
 ]
 
 # Iron Sword
 give @s minecraft:iron_sword[ \
-  minecraft:unbreakable={}, \
-  minecraft:lore=[ \
-    {"text":" "}, \
-    {"text":"When in Main Hand:","color":"gray","italic":false}, \
-    {"text":" 6 Attack Damage","color":"dark_green","italic":false}, \
-    {"text":" 1.6 Attack Speed","color":"dark_green","italic":false}, \
-    {"text":" 3 Attack Reach","color":"dark_green","italic":false} \
-  ], \
   minecraft:attribute_modifiers=[ \
-      {type:"minecraft:attack_damage",amount:5.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-      {type:"minecraft:attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+    { \
+      id:"minecraft:base_attack_damage", \
+      type:"minecraft:attack_damage", \
+      amount:5.0, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_attack_speed", \
+      type:"minecraft:attack_speed", \
+      amount:-2.4, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:entity_interaction_range.mainhand", \
+      type:"minecraft:entity_interaction_range", \
+      amount:0.0, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" 3 Attack Reach",color:"dark_green"} \
+      } \
+    } \
   ], \
-  minecraft:tooltip_display={ \
-    hidden_components:[ \
-      "minecraft:attribute_modifiers" \
-    ] \
-  } \
+  minecraft:unbreakable={} \
 ]
 # Stone Axe
 give @s minecraft:stone_axe[ \
-  minecraft:unbreakable={}, \
   minecraft:lore=[ \
-    {"text":" "}, \
-    {"text":"When in Main Hand:","color":"gray","italic":false}, \
-    {"text":" 6 Attack Damage","color":"dark_green","italic":false}, \
-    {"text":" 1 Attack Speed","color":"dark_green","italic":false}, \
-    {"text":" 3 Attack Reach","color":"dark_green","italic":false} \
+    {text:"Disables Shields",color:"gray",italic:false} \
   ], \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:attack_damage",amount:5.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-    {type:"minecraft:attack_speed",amount:-3.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+    { \
+      id:"minecraft:base_attack_damage", \
+      type:"minecraft:attack_damage", \
+      amount:5.0, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_attack_speed", \
+      type:"minecraft:attack_speed", \
+      amount:-3.0, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:entity_interaction_range.mainhand", \
+      type:"minecraft:entity_interaction_range", \
+      amount:0.0, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" 3 Attack Reach",color:"dark_green"} \
+      } \
+    } \
   ], \
-  minecraft:tooltip_display={ \
-    hidden_components:[ \
-      "minecraft:attribute_modifiers" \
+  minecraft:unbreakable={}, \
+  minecraft:weapon={ \
+    item_damage_per_attack:1, \
+    disable_blocking_for_seconds:5.0 \
+  }, \
+  minecraft:tool={ \
+    damage_per_block:1, \
+    rules:[ \
+      { \
+        blocks:"#minecraft:incorrect_for_diamond_tool", \
+        correct_for_drops:false \
+      }, \
+      { \
+        blocks:"minecraft:cobweb", \
+        correct_for_drops:true, \
+        speed:15.0 \
+      }, \
+      { \
+        blocks:"#minecraft:mineable/axe", \
+        correct_for_drops:true, \
+        speed:8.0 \
+      } \
     ] \
   } \
 ]
@@ -154,11 +229,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={passive_id:6000}, \
   minecraft:item_model="ogvz:undying_bond", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Undying Bond","color":"red"}, \
+  minecraft:item_name={text:"Undying Bond",color:"red"}, \
   minecraft:lore=[ \
-    {"text":"Gain regeneration when near","color":"blue"}, \
-    {"text":"another zombie variant.","color":"blue"}, \
-    {"text":"Passive Ability","color":"green","italic":false} \
+    {text:"Gain regeneration when near",color:"blue"}, \
+    {text:"another zombie variant.",color:"blue"}, \
+    {text:"Passive Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

@@ -7,8 +7,8 @@ item replace entity @s[gamemode=!creative,tag=temp.use.offhand] weapon.offhand w
 # Display an activation message.
 title @s[tag=temp.teleported] actionbar [ \
   "", \
-  {"text":"[Suicide Pill]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Suicide Pill]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Deal high cyanide type damage to the player.

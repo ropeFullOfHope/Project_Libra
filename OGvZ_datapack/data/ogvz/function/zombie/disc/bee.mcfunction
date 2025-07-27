@@ -29,7 +29,7 @@ team join z3BEE @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Bee Head","color":"aqua"}, \
+  minecraft:item_name={text:"Bee Head",color:"aqua"}, \
   minecraft:item_model="ogvz:bee_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -48,7 +48,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Bee Chestplate"}, \
+  minecraft:item_name={text:"Bee Chestplate"}, \
   minecraft:dyed_color=15582019, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -66,7 +66,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Bee Leggings"}, \
+  minecraft:item_name={text:"Bee Leggings"}, \
   minecraft:dyed_color=6238757, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -84,7 +84,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Bee Boots"}, \
+  minecraft:item_name={text:"Bee Boots"}, \
   minecraft:dyed_color=15582019, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -106,11 +106,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6370}, \
   minecraft:item_model="ogvz:honey", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Honey","color":"yellow"}, \
+  minecraft:item_name={text:"Honey",color:"yellow"}, \
   minecraft:lore=[ \
-    {"text":"Shoots a healing beam.","color":"blue"}, \
-    {"text":"10 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Shoots a healing beam.",color:"blue"}, \
+    {text:"10 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -123,12 +123,12 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6371}, \
   minecraft:item_model="ogvz:pollen_bomb", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Pollen Bomb","color":"yellow"}, \
+  minecraft:item_name={text:"Pollen Bomb",color:"yellow"}, \
   minecraft:lore=[ \
-    {"text":"Throw a bomb that explodes into","color":"blue"}, \
-    {"text":"a healing zone for zombies.","color":"blue"}, \
-    {"text":"20 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Throw a bomb that explodes into",color:"blue"}, \
+    {text:"a healing zone for zombies.",color:"blue"}, \
+    {text:"20 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -145,15 +145,15 @@ give @s minecraft:carrot_on_a_stick[ \
   }, \
   minecraft:item_model="ogvz:hover_disabled", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Hover","color":"aqua"}, \
+  minecraft:item_name={text:"Hover",color:"aqua"}, \
   minecraft:lore=[ \
-    {"text":"Lets you hover in the air.","color":"blue"}, \
-    {"text":"Hold jump to ascend and sneak","color":"blue"}, \
-    {"text":"to descent.","color":"blue"}, \
-    {"text":"Can only be toggled when on","color":"blue"}, \
-    {"text":"ground.","color":"blue"}, \
-    {"text":"Togglable","color":"blue","italic":false}, \
-    {"text":"Passive Ability","color":"green","italic":false} \
+    {text:"Lets you hover in the air.",color:"blue"}, \
+    {text:"Hold jump to ascend and sneak",color:"blue"}, \
+    {text:"to descent.",color:"blue"}, \
+    {text:"Can only be toggled when on",color:"blue"}, \
+    {text:"ground.",color:"blue"}, \
+    {text:"Togglable",color:"blue",italic:false}, \
+    {text:"Passive Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

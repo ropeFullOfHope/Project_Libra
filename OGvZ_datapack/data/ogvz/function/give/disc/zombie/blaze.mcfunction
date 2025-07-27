@@ -4,7 +4,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:2131}, \
   minecraft:item_model="ogvz:disc_blaze", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Blaze","color":"dark_red"}, \
+  minecraft:item_name={text:"Blaze",color:"dark_red"}, \
   minecraft:lore=[ \
     {text:"Shoots fireballs that deal high",color:"blue"}, \
     {text:"single target damage.",color:"blue"}, \

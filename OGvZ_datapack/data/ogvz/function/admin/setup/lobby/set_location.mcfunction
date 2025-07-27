@@ -38,7 +38,7 @@ execute as @a[tag=ogvz.admin] at @s run playsound minecraft:block.note_block.bit
 # Tell all admins which player set the lobby location
 tellraw @a[tag=ogvz.admin] [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"green"}, \
-  {"selector":"@s","color":"green"}, \
-  {"text":" set a Lobby Location.","color":"green"} \
+  {text:"SETUP: ",bold:true,color:"green"}, \
+  {"selector":"@s",color:"green"}, \
+  {text:" set a Lobby Location.",color:"green"} \
 ]

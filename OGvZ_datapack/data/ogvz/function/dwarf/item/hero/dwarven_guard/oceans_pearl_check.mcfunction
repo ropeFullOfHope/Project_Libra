@@ -13,8 +13,8 @@ playsound minecraft:block.beacon.deactivate player @a[tag=!ogvz.dwarf.class.hero
 # Display a broken ocean's pearl message to the dwarven guard.
 title @a[tag=ogvz.dwarf.class.hero.dwarven_guard] actionbar [ \
   "", \
-  {"text":"[Ocean's Pearl]","bold":true,"color":"light_purple"}, \
-  {"text":" An ocean's pearl has been broken!","color":"light_purple"} \
+  {text:"[Ocean's Pearl]",bold:true,color:"light_purple"}, \
+  {text:" An ocean's pearl has been broken!",color:"light_purple"} \
 ]
 
 # Hide the dwarven guard's custom bars for a bit.

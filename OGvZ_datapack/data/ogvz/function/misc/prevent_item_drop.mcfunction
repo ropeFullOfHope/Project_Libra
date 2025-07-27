@@ -7,7 +7,7 @@ data modify entity @s Owner set from entity @s Thrower
 data modify entity @s PickupDelay set value 0s
 
 # Message the player about being unable to drop the item.
-execute on origin run title @s actionbar {"text":"You cannot drop this item!","color":"red"}
+execute on origin run title @s actionbar {text:"You cannot drop this item!",color:"red"}
 
 # Tag the player that threw the item with the temporary origin tag.
 execute on origin run tag @s add temp.origin

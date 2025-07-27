@@ -28,12 +28,12 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3002}, \
   minecraft:item_model="ogvz:summoning_book_tailor", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Summoning Book","color":"green"}, \
+  minecraft:item_name={text:"Summoning Book",color:"green"}, \
   minecraft:lore=[ \
-    {"text":"Conjures armor and shields.","color":"blue"}, \
-    {"text":"Requires 10 Dyes","italic":false,"color":"red"}, \
-    {"text":"Requires 30 mana","italic":false,"color":"red"}, \
-    {"text":"Active Item","italic":false,"color":"green"} \
+    {text:"Conjures armor and shields.",color:"blue"}, \
+    {text:"Requires 10 Dyes",italic:false,color:"red"}, \
+    {text:"Requires 30 mana",italic:false,color:"red"}, \
+    {text:"Active Item",italic:false,color:"green"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -52,13 +52,13 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3106}, \
   minecraft:item_model="ogvz:super_fertilizer", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Super Fertilizer","color":"green"}, \
+  minecraft:item_name={text:"Super Fertilizer",color:"green"}, \
   minecraft:lore=[ \
-    {"text":"Use on a grass block.","color":"blue"}, \
-    {"text":"Allows flowers to grow in any","color":"blue"}, \
-    {"text":"biome.","color":"blue"}, \
-    {"text":"Single-use","italic":false,"color":"red"}, \
-    {"text":"Active Item","italic":false,"color":"green"} \
+    {text:"Use on a grass block.",color:"blue"}, \
+    {text:"Allows flowers to grow in any",color:"blue"}, \
+    {text:"biome.",color:"blue"}, \
+    {text:"Single-use",italic:false,color:"red"}, \
+    {text:"Active Item",italic:false,color:"green"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -78,8 +78,8 @@ give @s minecraft:oak_sign 3
 # Bone x16
 give @s minecraft:bone[ \
   minecraft:lore=[ \
-    {"text":"Give to the tailor.","color":"blue"}, \
-    {"text":"Craft into bone meal.","color":"blue"} \
+    {text:"Give to the tailor.",color:"blue"}, \
+    {text:"Craft into bone meal.",color:"blue"} \
   ] \
 ] 16
 # Legendary Book
@@ -88,28 +88,33 @@ execute as @s at @s run function ogvz:give/other/legendary_book
 # Display a message on how to play as the tailor.
 tellraw @s [ \
   "", \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"You are a ","color":"yellow"}, \
-  {"text":"Tailor","bold":true,"color":"blue"}, \
-  {"text":". You make ","color":"yellow"}, \
-  {"text":"Armor","color":"gold"}, \
-  {"text":" and ","color":"yellow"}, \
-  {"text":"Shields","color":"gold"}, \
-  {"text":" for the\n   dwarves.\n","color":"yellow"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"Begin by using your ","color":"yellow"}, \
-  {"text":"Bone Meal","color":"gold"}, \
-  {"text":" to get ","color":"yellow"}, \
-  {"text":"Flowers","color":"gold"}, \
-  {"text":", then\n   craft them into ","color":"yellow"}, \
-  {"text":"Dye","color":"gold"}, \
-  {"text":".\n","color":"yellow"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"You can get more ","color":"yellow"}, \
-  {"text":"Bones","color":"gold"}, \
-  {"text":" from the ","color":"yellow"}, \
-  {"text":"Alchemist","color":"blue"}, \
-  {"text":".","color":"yellow"} \
+  {text:"\u1110\u1111\u1112\n",font:"ogvz:custom"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"You are a ",color:"yellow"}, \
+  {text:"Tailor",bold:true,color:"blue"}, \
+  {text:".\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Your job is to make ",color:"yellow"}, \
+  {text:"Armor",color:"gold"}, \
+  {text:" and ",color:"yellow"}, \
+  {text:"Shields",color:"gold"}, \
+  {text:" for the dwarves.\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Begin by using ",color:"yellow"}, \
+  {text:"Bone Meal",color:"gold"}, \
+  {text:" to get ",color:"yellow"}, \
+  {text:"Flowers",color:"gold"}, \
+  {text:", then\n",color:"yellow"}, \
+  {text:"\uF00D",font:"ogvz:custom"}, \
+  {text:"craft them into ",color:"yellow"}, \
+  {text:"Dye",color:"gold"}, \
+  {text:".\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"You can get more ",color:"yellow"}, \
+  {text:"Bones",color:"gold"}, \
+  {text:" from the ",color:"yellow"}, \
+  {text:"Alchemist",color:"blue"}, \
+  {text:".",color:"yellow"} \
 ]
 
 # Play a sound and create particles.

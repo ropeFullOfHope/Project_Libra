@@ -3,10 +3,10 @@
 # Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.enderman.teleport.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Teleport]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.enderman.teleport.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Teleport]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.enderman.teleport.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.enderman.teleport.cooldown.seconds=1..}] run return 0
 
@@ -30,15 +30,15 @@ execute at @n[type=minecraft:marker,tag=temp.ray] unless block ~ ~ ~ #ogvz:go_th
 # Show fail message if there is no valid teleport spot.
 execute unless entity @e[type=minecraft:marker,tag=temp.teleport] run title @s actionbar [ \
   "", \
-  {"text":"[Teleport]","bold":true,"color":"red"}, \
-  {"text":" Cannot teleport to that location!","color":"red"} \
+  {text:"[Teleport]",bold:true,color:"red"}, \
+  {text:" Cannot teleport to that location!",color:"red"} \
 ]
 
 # Show fail message if the ray didn't hit any solid blocks.
 execute at @n[type=minecraft:marker,tag=temp.ray] if block ~ ~ ~ #ogvz:go_through run title @s actionbar [ \
   "", \
-  {"text":"[Teleport]","bold":true,"color":"red"}, \
-  {"text":" That location is too far!","color":"red"} \
+  {text:"[Teleport]",bold:true,color:"red"}, \
+  {text:" That location is too far!",color:"red"} \
 ]
 
 # Teleport the player if there is a valid teleport spot.
@@ -50,8 +50,8 @@ execute if entity @e[type=minecraft:marker,tag=temp.teleport] run scoreboard pla
 # Show activation message if there is a valid teleport spot.
 execute if entity @e[type=minecraft:marker,tag=temp.teleport] run title @s actionbar [ \
   "", \
-  {"text":"[Teleport]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Teleport]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play a sound if there is a valid teleport spot.

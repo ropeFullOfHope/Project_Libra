@@ -3,10 +3,10 @@
 # Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.guardian.beam.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Beam]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.guardian.beam.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Beam]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.guardian.beam.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.guardian.beam.cooldown.seconds=1..}] run return 0
 
@@ -16,8 +16,8 @@ scoreboard players set @s ogvz.guardian.beam.cooldown.seconds 3
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Beam]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Beam]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an activation sound.

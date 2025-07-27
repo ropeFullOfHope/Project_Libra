@@ -28,11 +28,11 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3005}, \
   minecraft:item_model="ogvz:summoning_book_enchanter", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Summoning Book","color":"green"}, \
+  minecraft:item_name={text:"Summoning Book",color:"green"}, \
   minecraft:lore=[ \
-    {"text":"Conjures lapis lazuli.","color":"blue"}, \
-    {"text":"Requires 1 Emerald","italic":false,"color":"red"}, \
-    {"text":"Active Item","italic":false,"color":"green"} \
+    {text:"Conjures lapis lazuli.",color:"blue"}, \
+    {text:"Requires 1 Emerald",italic:false,color:"red"}, \
+    {text:"Active Item",italic:false,color:"green"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -55,42 +55,50 @@ give @s minecraft:grindstone 1
 give @s minecraft:chest 12
 # Oak Sign x3
 give @s minecraft:oak_sign 3
-# Lapis Lazuli x30
-give @s minecraft:lapis_lazuli[ \
+# Emerald x4
+give @s minecraft:emerald[ \
   minecraft:lore=[ \
-    {"text":"Use to enchant.","color":"blue"} \
+    {text:"Give to the enchanter.",color:"blue"} \
   ] \
-] 30
+] 4
 # Legendary Book
 execute as @s at @s run function ogvz:give/other/legendary_book
 
 # Display a message on how to play as the enchanter.
 tellraw @s [ \
   "", \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"You are an ","color":"yellow"}, \
-  {"text":"Enchanter","bold":true,"color":"blue"}, \
-  {"text":". You enchant ","color":"yellow"}, \
-  {"text":"Armor","color":"gold"}, \
-  {"text":", ","color":"yellow"}, \
-  {"text":"Weapons","color":"gold"}, \
-  {"text":" and\n   ","color":"yellow"}, \
-  {"text":"Tools","color":"gold"}, \
-  {"text":" for the dwarves.\n","color":"yellow"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"Begin by using your ","color":"yellow"}, \
-  {"text":"Summoning Book","color":"gold"}, \
-  {"text":" to get ","color":"yellow"}, \
-  {"text":"Lapis Lazuli","color":"gold"}, \
-  {"text":",\n   then use it to enchant at the ","color":"yellow"}, \
-  {"text":"Enchanting Table","color":"gold"}, \
-  {"text":".\n","color":"yellow"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"You can get more ","color":"yellow"}, \
-  {"text":"Emeralds","color":"gold"}, \
-  {"text":" from other ","color":"yellow"}, \
-  {"text":"Dwarves","color":"aqua"}, \
-  {"text":".","color":"yellow"} \
+  {text:"\u1110\u1111\u1112\n",font:"ogvz:custom"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"You are an ",color:"yellow"}, \
+  {text:"Enchanter",bold:true,color:"blue"}, \
+  {text:".\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Your job is to enchant ",color:"yellow"}, \
+  {text:"Armor",color:"gold"}, \
+  {text:", ",color:"yellow"}, \
+  {text:"Weapons",color:"gold"}, \
+  {text:" and ",color:"yellow"}, \
+  {text:"Tools",color:"gold"}, \
+  {text:" for the\n",color:"yellow"}, \
+  {text:"\uF00D",font:"ogvz:custom"}, \
+  {text:"dwarves.\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Begin by using your ",color:"yellow"}, \
+  {text:"Summoning Book",color:"gold"}, \
+  {text:" to transmute\n",color:"yellow"}, \
+  {text:"\uF00D",font:"ogvz:custom"}, \
+  {text:"Emeralds",color:"gold"}, \
+  {text:" into ",color:"yellow"}, \
+  {text:"Lapis Lazuli",color:"gold"}, \
+  {text:", then use it to enchant\n",color:"yellow"}, \
+  {text:"\uF00D",font:"ogvz:custom"}, \
+  {text:"items.\n",color:"yellow"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"You can get more ",color:"yellow"}, \
+  {text:"Emeralds",color:"gold"}, \
+  {text:" from other ",color:"yellow"}, \
+  {text:"Dwarves",color:"aqua"}, \
+  {text:".",color:"yellow"} \
 ]
 
 # Play a sound and create particles.

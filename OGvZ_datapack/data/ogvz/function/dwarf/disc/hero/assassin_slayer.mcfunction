@@ -33,7 +33,7 @@ execute as @s at @s run function ogvz:misc/drop_armor
 # Assassin Slayer Helmet (armor)
 item replace entity @s armor.head with minecraft:chainmail_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Assassin Slayer Helmet","color":"gold"}, \
+  minecraft:item_name={text:"Assassin Slayer Helmet",color:"gold"}, \
   minecraft:enchantments={ \
     "minecraft:protection":4, \
     "minecraft:binding_curse":1 \
@@ -46,7 +46,7 @@ item replace entity @s armor.head with minecraft:chainmail_helmet[ \
 # Assassin Slayer Chestplate (armor)
 item replace entity @s armor.chest with minecraft:chainmail_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Assassin Slayer Chestplate","color":"gold"}, \
+  minecraft:item_name={text:"Assassin Slayer Chestplate",color:"gold"}, \
   minecraft:enchantments={ \
     "minecraft:protection":4, \
     "minecraft:binding_curse":1 \
@@ -59,7 +59,7 @@ item replace entity @s armor.chest with minecraft:chainmail_chestplate[ \
 # Assassin Slayer Leggings (armor)
 item replace entity @s armor.legs with minecraft:chainmail_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Assassin Slayer Leggings","color":"gold"}, \
+  minecraft:item_name={text:"Assassin Slayer Leggings",color:"gold"}, \
   minecraft:enchantments={ \
     "minecraft:protection":4, \
     "minecraft:swift_sneak":3, \
@@ -73,7 +73,7 @@ item replace entity @s armor.legs with minecraft:chainmail_leggings[ \
 # Assassin Slayer Boots (armor)
 item replace entity @s armor.feet with minecraft:chainmail_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Assassin Slayer Boots","color":"gold"}, \
+  minecraft:item_name={text:"Assassin Slayer Boots",color:"gold"}, \
   minecraft:enchantments={ \
     "minecraft:protection":4, \
     "minecraft:feather_falling":4, \
@@ -92,20 +92,20 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_model="ogvz:betrayers_dagger", \
   minecraft:unbreakable={}, \
   minecraft:tooltip_style="ogvz:legendary", \
-  minecraft:item_name={"text":"Betrayer's Dagger","color":"red","bold":true}, \
+  minecraft:item_name={text:"Betrayer's Dagger",color:"red",bold:true}, \
   minecraft:lore=[ \
-    {"text":"Assassinate","color":"blue","italic":false,"underlined":true}, \
-    {"text":"Attacking a player from behind","color":"blue"}, \
-    {"text":"will deal massive damage.","color":"blue"}, \
-    {"text":"8 second cooldown","color":"red","italic":false}, \
-    {"text":"Secondary Attack","color":"green","italic":false}, \
-    {"text":" "}, \
-    {"text":"When in Main Hand:","color":"gray","italic":false}, \
-    {"text":" 8.5 Attack Damage","color":"dark_green","italic":false}, \
-    {"text":" \u221E Attack Speed","color":"dark_green","italic":false}, \
-    {"text":" 2.5 Attack Reach","color":"dark_green","italic":false}, \
-    {"text":"Unbreakable","color":"blue","italic":false}, \
-    {"text":"Heroic Item","color":"gold","italic":false,"bold":true} \
+    {text:"Assassinate",color:"blue",italic:false,underlined:true}, \
+    {text:"Attacking a player from behind",color:"blue"}, \
+    {text:"will deal massive damage.",color:"blue"}, \
+    {text:"8 second cooldown",color:"red",italic:false}, \
+    {text:"Secondary Attack",color:"green",italic:false}, \
+    {text:" "}, \
+    {text:"When in Main Hand:",color:"gray",italic:false}, \
+    {text:" 8.5 Attack Damage",color:"dark_green",italic:false}, \
+    {text:" \u221E Attack Speed",color:"dark_green",italic:false}, \
+    {text:" 2.5 Attack Reach",color:"dark_green",italic:false}, \
+    {text:"Unbreakable",color:"blue",italic:false}, \
+    {text:"Heroic Item",color:"gold",italic:false,bold:true} \
   ], \
   minecraft:attribute_modifiers=[ \
     {type:"minecraft:attack_damage",amount:7.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
@@ -125,19 +125,19 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_model="ogvz:cloak_of_shadows", \
   minecraft:unbreakable={}, \
   minecraft:tooltip_style="ogvz:legendary", \
-  minecraft:item_name={"text":"Cloak of Shadows","color":"gray","bold":true}, \
+  minecraft:item_name={text:"Cloak of Shadows",color:"gray",bold:true}, \
   minecraft:lore=[ \
-    {"text":"Makes you and your armor","color":"blue"}, \
-    {"text":"invisible.","color":"blue"}, \
-    {"text":"Taking or dealing damage will","color":"blue"}, \
-    {"text":"cancel the invisibility.","color":"blue"}, \
-    {"text":"You can manually cancel the","color":"blue"}, \
-    {"text":"invisibility by using the cloak","color":"blue"}, \
-    {"text":"of shadows again.","color":"blue"}, \
-    {"text":"5 second cooldown","color":"red","italic":false}, \
-    {"text":"Drains 2 mana per second","color":"red","italic":false}, \
-    {"text":"Active Item","color":"green","italic":false}, \
-    {"text":"Heroic Item","color":"gold","italic":false,"bold":true} \
+    {text:"Makes you and your armor",color:"blue"}, \
+    {text:"invisible.",color:"blue"}, \
+    {text:"Taking or dealing damage will",color:"blue"}, \
+    {text:"cancel the invisibility.",color:"blue"}, \
+    {text:"You can manually cancel the",color:"blue"}, \
+    {text:"invisibility by using the cloak",color:"blue"}, \
+    {text:"of shadows again.",color:"blue"}, \
+    {text:"5 second cooldown",color:"red",italic:false}, \
+    {text:"Drains 2 mana per second",color:"red",italic:false}, \
+    {text:"Active Item",color:"green",italic:false}, \
+    {text:"Heroic Item",color:"gold",italic:false,bold:true} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -151,14 +151,14 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_model="ogvz:mana_star", \
   minecraft:unbreakable={}, \
   minecraft:tooltip_style="ogvz:legendary", \
-  minecraft:item_name={"text":"Mana Star","color":"green","bold":true}, \
+  minecraft:item_name={text:"Mana Star",color:"green",bold:true}, \
   minecraft:lore=[ \
-    {"text":"Shoots a beam that gives mana","color":"blue"}, \
-    {"text":"regeneration to a targeted","color":"blue"}, \
-    {"text":"non-hero dwarf.","color":"blue"}, \
-    {"text":"10 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Item","color":"green","italic":false}, \
-    {"text":"Heroic Item","color":"gold","italic":false,"bold":true} \
+    {text:"Shoots a beam that gives mana",color:"blue"}, \
+    {text:"regeneration to a targeted",color:"blue"}, \
+    {text:"non-hero dwarf.",color:"blue"}, \
+    {text:"10 second cooldown",color:"red",italic:false}, \
+    {text:"Active Item",color:"green",italic:false}, \
+    {text:"Heroic Item",color:"gold",italic:false,bold:true} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -170,12 +170,16 @@ give @s minecraft:carrot_on_a_stick[ \
 # Display a message about the player becoming the hero to all dwarves.
 tellraw @a[tag=ogvz.dwarf] [ \
   "", \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"Due to their valiant efforts, ","color":"yellow"}, \
+  {text:"\u1110\u1111\u1112\n",font:"ogvz:custom"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Due to their valiant efforts,\n",color:"yellow"}, \
+  {text:"\uF00D",font:"ogvz:custom"}, \
   {"selector":"@s"}, \
-  {"text":" has been proclaimed as a ","color":"yellow"}, \
-  {"text":"Hero","color":"gold","bold":true}, \
-  {"text":"!","color":"yellow"} \
+  {text:"\n"}, \
+  {text:"\uF00D",font:"ogvz:custom"}, \
+  {text:"has been proclaimed as a ",color:"yellow"}, \
+  {text:"Hero",color:"gold",bold:true}, \
+  {text:"!",color:"yellow"} \
 ]
 
 # Play a sound and create particles.

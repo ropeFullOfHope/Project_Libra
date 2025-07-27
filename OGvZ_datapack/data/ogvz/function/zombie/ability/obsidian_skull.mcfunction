@@ -44,8 +44,8 @@ execute as @s[tag=!temp.teleported] at @n[type=minecraft:marker,tag=ogvz.marker.
 # Display an activation message.
 title @s[tag=temp.teleported] actionbar [ \
   "", \
-  {"text":"[Obsidian Skull]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Obsidian Skull]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play a sound and particle at the player's new position

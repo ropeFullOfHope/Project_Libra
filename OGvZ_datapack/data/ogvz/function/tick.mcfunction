@@ -34,7 +34,6 @@ execute as @a at @s run function ogvz:tick/active_cooldown
 execute as @a[tag=ogvz.zombie.punish,tag=ogvz.zombie.class] at @s run function ogvz:tick/punish_timer
 
 # Custom functions
-execute as @a at @s run function ogvz:tick/custom_enchantments
 execute as @a at @s run function ogvz:tick/custom_bars
 
 # Multitick functions

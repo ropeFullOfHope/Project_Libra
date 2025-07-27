@@ -19,7 +19,7 @@ execute as @a[tag=ogvz.admin] at @s run playsound minecraft:block.note_block.bit
 # Tell all admins which player removed the zombie spawn delta location.
 tellraw @a[tag=ogvz.admin] [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"red"}, \
-  {"selector":"@s","color":"red"}, \
-  {"text":" removed the Zombie Spawn Location Delta.","color":"red"} \
+  {text:"SETUP: ",bold:true,color:"red"}, \
+  {"selector":"@s",color:"red"}, \
+  {text:" removed the Zombie Spawn Location Delta.",color:"red"} \
 ]

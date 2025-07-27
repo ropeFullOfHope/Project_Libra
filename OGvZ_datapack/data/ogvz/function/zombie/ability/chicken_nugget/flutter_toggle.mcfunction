@@ -7,15 +7,15 @@ execute if items entity @s[tag=temp.use.offhand] weapon.offhand minecraft:carrot
 # Display a disable message if the ability is enabled.
 title @s[tag=temp.enabled] actionbar [ \
   "", \
-  {"text":"[Flutter]","bold":true,"color":"light_purple"}, \
-  {"text":" Disabled!","color":"light_purple"} \
+  {text:"[Flutter]",bold:true,color:"light_purple"}, \
+  {text:" Disabled!",color:"light_purple"} \
 ]
 
 # Display an enable message if the ability is disabled.
 title @s[tag=!temp.enabled] actionbar [ \
   "", \
-  {"text":"[Flutter]","bold":true,"color":"light_purple"}, \
-  {"text":" Enabled!","color":"light_purple"} \
+  {text:"[Flutter]",bold:true,color:"light_purple"}, \
+  {text:" Enabled!",color:"light_purple"} \
 ]
 
 # Play a toggle sound.

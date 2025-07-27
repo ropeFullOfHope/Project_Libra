@@ -16,10 +16,10 @@
 
 execute if entity @s[scores={ogvz.builder.summoning_book.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Summoning Book]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.builder.summoning_book.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Summoning Book]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.builder.summoning_book.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.builder.summoning_book.cooldown.seconds=1..}] run return 0
 
@@ -27,8 +27,8 @@ scoreboard players set @s ogvz.builder.summoning_book.cooldown.seconds 30
 
 title @s actionbar [ \
   "", \
-  {"text":"[Summoning Book]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Summoning Book]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 playsound minecraft:ui.stonecutter.take_result player @a ~ ~ ~ 1 1

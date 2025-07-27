@@ -3,10 +3,10 @@
 # Show fail message and return if ability is on cooldown.
 execute if entity @s[scores={ogvz.bee.honey.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Honey]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.bee.honey.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Honey]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.bee.honey.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.bee.honey.cooldown.seconds=1..}] run return 0
 
@@ -16,8 +16,8 @@ scoreboard players set @s ogvz.bee.honey.cooldown.seconds 10
 # Display activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Honey]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Honey]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play a sound.

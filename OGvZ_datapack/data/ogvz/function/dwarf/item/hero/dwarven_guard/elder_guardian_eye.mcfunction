@@ -3,20 +3,20 @@
 # Display a fail message and return if the item is on a cooldown.
 execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Elder Guardian Eye]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Elder Guardian Eye]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds=1..}] run return 0
 
 # Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=15..] run title @s actionbar [ \
   "", \
-  {"text":"[Elder Guardian Eye]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"15 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
+  {text:"[Elder Guardian Eye]",bold:true,color:"red"}, \
+  {text:" You need at least ",color:"red"}, \
+  {text:"15 mana",bold:true,color:"red"}, \
+  {text:"!",color:"red"} \
 ]
 execute unless entity @s[level=15..] run return 0
 
@@ -29,8 +29,8 @@ scoreboard players set @s ogvz.dwarven_guard.elder_guardian_eye.cooldown.seconds
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Elder Guardian Eye]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Elder Guardian Eye]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an activation sound.

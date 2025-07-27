@@ -49,7 +49,7 @@ execute as @a[tag=ogvz.admin] at @s run playsound minecraft:block.note_block.bit
 # Tell all admins which player set the shrine location.
 tellraw @a[tag=ogvz.admin] [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"gold"}, \
-  {"selector":"@s","color":"gold"}, \
-  {"text":" set a Shrine Location.","color":"gold"} \
+  {text:"SETUP: ",bold:true,color:"gold"}, \
+  {"selector":"@s",color:"gold"}, \
+  {text:" set a Shrine Location.",color:"gold"} \
 ]

@@ -6,8 +6,8 @@ advancement revoke @s only ogvz:misc/player_hurt_while_teleporting_ender_eye
 # Display a cancel message.
 title @s actionbar [ \
   "", \
-  {"text":"[Ender Eye]","bold":true,"color":"light_purple"}, \
-  {"text":" Canceled!","color":"light_purple"} \
+  {text:"[Ender Eye]",bold:true,color:"light_purple"}, \
+  {text:" Canceled!",color:"light_purple"} \
 ]
 
 # Stop the warmup sound.

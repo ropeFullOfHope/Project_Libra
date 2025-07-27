@@ -6,10 +6,10 @@ scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 # Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.phantom.delirium.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Delirium]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.phantom.delirium.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Delirium]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.phantom.delirium.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.phantom.delirium.cooldown.seconds=1..}] run return 0
 
@@ -19,8 +19,8 @@ scoreboard players set @s ogvz.phantom.delirium.cooldown.seconds 20
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Delirium]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Delirium]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an activation sound.
@@ -49,7 +49,7 @@ execute as @a[tag=temp.hit] at @s run playsound minecraft:entity.phantom.bite pl
 # Display a message to the affected player.
 title @a[tag=temp.hit] actionbar [ \
   "", \
-  {"text":"A Phantom has made you delirious!","color":"red"} \
+  {text:"A Phantom has made you delirious!",color:"red"} \
 ]
 
 # Gets rid of the markers.

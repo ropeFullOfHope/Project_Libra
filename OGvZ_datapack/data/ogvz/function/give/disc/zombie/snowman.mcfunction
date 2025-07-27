@@ -4,7 +4,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:2136}, \
   minecraft:item_model="ogvz:disc_snowman", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Snowman","color":"dark_red"}, \
+  minecraft:item_name={text:"Snowman",color:"dark_red"}, \
   minecraft:lore=[ \
     {text:"Lobs snowballs that cover a",color:"blue"}, \
     {text:"large area. Freezes dwarves.",color:"blue"}, \

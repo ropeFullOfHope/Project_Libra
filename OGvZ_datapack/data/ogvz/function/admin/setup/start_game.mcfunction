@@ -28,15 +28,15 @@ execute as @a at @s run function ogvz:give/other/join_game_magma_cream
 # Display a message that the games are starting.
 title @a subtitle [ \
   "", \
-  {"text":"is now starting!","color":"white"} \
+  {text:"is now starting!",color:"white"} \
 ]
 title @a title [ \
   "", \
-  {"text":"<","bold":true,"color":"gold"}, \
-  {"text":"OG","bold":true,"color":"dark_aqua"}, \
-  {"text":"v","bold":true,"color":"gold"}, \
-  {"text":"Z","bold":true,"color":"dark_red"}, \
-  {"text":">","bold":true,"color":"gold"} \
+  {text:"<",bold:true,color:"gold"}, \
+  {text:"OG",bold:true,color:"dark_aqua"}, \
+  {text:"v",bold:true,color:"gold"}, \
+  {text:"Z",bold:true,color:"dark_red"}, \
+  {text:">",bold:true,color:"gold"} \
 ]
 
 # Play a sound.
@@ -45,19 +45,19 @@ execute as @a at @s run playsound block.portal.trigger master @s ~ ~ ~ 0.7 1.5
 # Tell all admins which player started the game.
 tellraw @a[tag=ogvz.admin] [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"aqua"}, \
-  {"selector":"@s","color":"aqua"}, \
-  {"text":" started the game!","color":"aqua"} \
+  {text:"SETUP: ",bold:true,color:"aqua"}, \
+  {"selector":"@s",color:"aqua"}, \
+  {text:" started the game!",color:"aqua"} \
 ]
 
 # Display a message on how to join the game.
 tellraw @a [ \
   "", \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"The game begins!\n","bold":true,"color":"gold"}, \
-  {"text":"▶ ","bold":true,"color":"gold"}, \
-  {"text":"Right-Click","color":"gold"}, \
-  {"text":" your ","color":"yellow"}, \
-  {"text":"Magma Cream","color":"gold"}, \
-  {"text":" to join the game.","color":"yellow"} \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"The game begins!\n",bold:true,color:"gold"}, \
+  {text:"▶ ",bold:true,color:"gold"}, \
+  {text:"Right-Click",color:"gold"}, \
+  {text:" your ",color:"yellow"}, \
+  {text:"Magma Cream",color:"gold"}, \
+  {text:" to join the game.",color:"yellow"} \
 ]

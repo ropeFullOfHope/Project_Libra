@@ -28,7 +28,7 @@ team join z3BLAZE @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Blaze Head","color":"aqua"}, \
+  minecraft:item_name={text:"Blaze Head",color:"aqua"}, \
   minecraft:item_model="ogvz:blaze_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -48,7 +48,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Blaze Chestplate"}, \
+  minecraft:item_name={text:"Blaze Chestplate"}, \
   minecraft:dyed_color=16775239, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -67,7 +67,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Blaze Leggings"}, \
+  minecraft:item_name={text:"Blaze Leggings"}, \
   minecraft:dyed_color=16553472, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -86,7 +86,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Blaze Boots"}, \
+  minecraft:item_name={text:"Blaze Boots"}, \
   minecraft:dyed_color=9122817, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -109,16 +109,16 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6300}, \
   minecraft:item_model="ogvz:fireball", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Fireball","color":"gold"}, \
+  minecraft:item_name={text:"Fireball",color:"gold"}, \
   minecraft:lore=[ \
-    {"text":"Shoot a fireball that deals huge","color":"blue"}, \
-    {"text":"damage and ignites nearby area","color":"blue"}, \
-    {"text":"on fire.","color":"blue"}, \
-    {"text":"The fireball has limited","color":"blue"}, \
-    {"text":"lifetime and will eventually","color":"blue"}, \
-    {"text":"burn out.","color":"blue"}, \
-    {"text":"8 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Shoot a fireball that deals huge",color:"blue"}, \
+    {text:"damage and ignites nearby area",color:"blue"}, \
+    {text:"on fire.",color:"blue"}, \
+    {text:"The fireball has limited",color:"blue"}, \
+    {text:"lifetime and will eventually",color:"blue"}, \
+    {text:"burn out.",color:"blue"}, \
+    {text:"8 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -131,14 +131,14 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6301}, \
   minecraft:item_model="ogvz:firefly", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Firefly","color":"gold"}, \
+  minecraft:item_name={text:"Firefly",color:"gold"}, \
   minecraft:lore=[ \
-    {"text":"Turn into a fireball and fly in","color":"blue"}, \
-    {"text":"the direction you are looking.","color":"blue"}, \
-    {"text":"You are invulnerable in this","color":"blue"}, \
-    {"text":"state.","color":"blue"}, \
-    {"text":"15 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Turn into a fireball and fly in",color:"blue"}, \
+    {text:"the direction you are looking.",color:"blue"}, \
+    {text:"You are invulnerable in this",color:"blue"}, \
+    {text:"state.",color:"blue"}, \
+    {text:"15 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -151,12 +151,12 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6302}, \
   minecraft:item_model="ogvz:heat_wave", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Heat Wave","color":"gold"}, \
+  minecraft:item_name={text:"Heat Wave",color:"gold"}, \
   minecraft:lore=[ \
-    {"text":"Completely evaporate all the","color":"blue"}, \
-    {"text":"water around you.","color":"blue"}, \
-    {"text":"10 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Completely evaporate all the",color:"blue"}, \
+    {text:"water around you.",color:"blue"}, \
+    {text:"10 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

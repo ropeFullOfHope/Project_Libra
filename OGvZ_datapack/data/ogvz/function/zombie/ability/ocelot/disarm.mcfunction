@@ -3,10 +3,10 @@
 # Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=45..] run title @s actionbar [ \
   "", \
-  {"text":"[Disarm]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"45 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
+  {text:"[Disarm]",bold:true,color:"red"}, \
+  {text:" You need at least ",color:"red"}, \
+  {text:"45 mana",bold:true,color:"red"}, \
+  {text:"!",color:"red"} \
 ]
 execute unless entity @s[level=45..] run return 0
 
@@ -16,8 +16,8 @@ scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 45
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Disarm]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Disarm]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an activation sound.
@@ -34,7 +34,7 @@ effect give @a[tag=temp.hit] minecraft:mining_fatigue 10 0
 execute as @a[tag=temp.hit] run playsound minecraft:block.beacon.deactivate player @s ~ ~ ~ 1 1 1
 title @a[tag=temp.hit] actionbar [ \
   "", \
-  {"text":"An Ocelot has disarmed you!","color":"red"} \
+  {text:"An Ocelot has disarmed you!",color:"red"} \
 ]
 
 # Remove temporary tag.

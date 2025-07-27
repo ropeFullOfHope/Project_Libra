@@ -3,10 +3,10 @@
 # Display a fail message and return if the player doesn't have enough mana.
 execute unless entity @s[level=8..] run title @s actionbar [ \
   "", \
-  {"text":"[Conjure Wall]","bold":true,"color":"red"}, \
-  {"text":" You need at least ","color":"red"}, \
-  {"text":"8 mana","bold":true,"color":"red"}, \
-  {"text":"!","color":"red"} \
+  {text:"[Conjure Wall]",bold:true,color:"red"}, \
+  {text:" You need at least ",color:"red"}, \
+  {text:"8 mana",bold:true,color:"red"}, \
+  {text:"!",color:"red"} \
 ]
 execute unless entity @s[level=8..] run return 0
 
@@ -24,8 +24,8 @@ execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:dwarf/
 # Display an activation message.
 execute at @n[type=minecraft:marker,tag=temp.ray] unless block ~ ~ ~ #ogvz:go_through run title @s actionbar [ \
   "", \
-  {"text":"[Conjure Wall]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Conjure Wall]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Remove mana if the ray has hit a block.

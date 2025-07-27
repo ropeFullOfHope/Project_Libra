@@ -11,9 +11,9 @@ scoreboard players set @s temp.custom_bar_value 2
 execute as @e[type=minecraft:item_display,tag=ogvz.item_display.oceans_pearl] run scoreboard players remove @a[tag=temp.player] temp.custom_bar_value 1
 
 # Display the custom bar in the actionbar.
-title @s[scores={temp.custom_bar_value=..0}] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF1A3\u1210\uF102\u1210"}
-title @s[scores={temp.custom_bar_value=1}  ] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF1A3\u1211\uF102\u1210"}
-title @s[scores={temp.custom_bar_value=2..}] actionbar {"font":"ogvz:custom","shadow_color":0,"text":"\uF1A3\u1211\uF102\u1211"}
+title @s[scores={temp.custom_bar_value=..0}] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF1A3\u1210\uF102\u1210"}
+title @s[scores={temp.custom_bar_value=1}  ] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF1A3\u1211\uF102\u1210"}
+title @s[scores={temp.custom_bar_value=2..}] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF1A3\u1211\uF102\u1211"}
 
 # Remove temporary tags.
 tag @a remove temp.player

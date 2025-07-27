@@ -6,10 +6,10 @@ scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 20
 # Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.snowman.freeze.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Freeze]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.snowman.freeze.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Freeze]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.snowman.freeze.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.snowman.freeze.cooldown.seconds=1..}] run return 0
 
@@ -19,8 +19,8 @@ scoreboard players set @s ogvz.snowman.freeze.cooldown.seconds 30
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Freeze]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Freeze]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an activation message.
@@ -46,7 +46,7 @@ execute as @a[tag=temp.hit] at @s run summon area_effect_cloud ~ ~ ~ {Reapplicat
 # Display a message to the affected player.
 title @a[tag=temp.hit] actionbar [ \
   "", \
-  {"text":"A Snowman has frozen you!","color":"red"} \
+  {text:"A Snowman has frozen you!",color:"red"} \
 ]
 
 # Gets rid of the markers.

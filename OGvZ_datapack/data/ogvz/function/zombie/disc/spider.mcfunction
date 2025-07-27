@@ -30,7 +30,7 @@ team join z2SPIDER @s
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Spider Head","color":"aqua"}, \
+  minecraft:item_name={text:"Spider Head",color:"aqua"}, \
   minecraft:item_model="ogvz:spider_head", \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
@@ -49,7 +49,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
 # Chestplate
 item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Spider Chestplate"}, \
+  minecraft:item_name={text:"Spider Chestplate"}, \
   minecraft:dyed_color=4011053, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -67,7 +67,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
 # Leggings
 item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Spider Leggings"}, \
+  minecraft:item_name={text:"Spider Leggings"}, \
   minecraft:dyed_color=3287846, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -85,7 +85,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
 # Boots
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Spider Boots"}, \
+  minecraft:item_name={text:"Spider Boots"}, \
   minecraft:dyed_color=2498587, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
@@ -105,14 +105,14 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 # Spider Eye
 give @s minecraft:spider_eye[ \
   minecraft:lore=[ \
-    {"text":" "}, \
-    {"text":"Poison Aspect","color":"blue","italic":false,"underlined":true}, \
-    {"text":"Attacks inflict poison.","color":"blue"}, \
-    {"text":"Enchantment","color":"green","italic":false}, \
-    {"text":" "}, \
-    {"text":"Blinding","color":"blue","italic":false,"underlined":true}, \
-    {"text":"Attacks inflict blidness.","color":"blue"}, \
-    {"text":"Enchantment","color":"green","italic":false} \
+    {text:" "}, \
+    {text:"Poison Aspect",color:"blue",italic:false,underlined:true}, \
+    {text:"Attacks inflict poison.",color:"blue"}, \
+    {text:"Enchantment",color:"green",italic:false}, \
+    {text:" "}, \
+    {text:"Blinding",color:"blue",italic:false,underlined:true}, \
+    {text:"Attacks inflict blidness.",color:"blue"}, \
+    {text:"Enchantment",color:"green",italic:false} \
   ], \
   minecraft:enchantments={ \
     "ogvz:poison_aspect":2, \
@@ -125,12 +125,12 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6210}, \
   minecraft:item_model="ogvz:web", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Web","color":"gray"}, \
+  minecraft:item_name={text:"Web",color:"gray"}, \
   minecraft:lore=[ \
-    {"text":"Shoot a wide web, slowing down","color":"blue"}, \
-    {"text":"anyone caught in it.","color":"blue"}, \
-    {"text":"15 second cooldown","color":"red","italic":false}, \
-    {"text":"Active Ability","color":"green","italic":false} \
+    {text:"Shoot a wide web, slowing down",color:"blue"}, \
+    {text:"anyone caught in it.",color:"blue"}, \
+    {text:"15 second cooldown",color:"red",italic:false}, \
+    {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -141,7 +141,7 @@ give @s minecraft:carrot_on_a_stick[ \
 # Web Cleaner
 give @s minecraft:stick[ \
   minecraft:item_model="ogvz:web_cleaner", \
-  minecraft:item_name={"text":"Web Cleaner","color":"white"}, \
+  minecraft:item_name={text:"Web Cleaner",color:"white"}, \
   minecraft:max_stack_size=1, \
   minecraft:tool={ \
     default_mining_speed:1, \

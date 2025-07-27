@@ -48,7 +48,7 @@ execute as @a[tag=ogvz.admin] at @s run playsound minecraft:block.note_block.bit
 # Tell all admins which player placed the zombie spawn beta.
 tellraw @a[tag=ogvz.admin] [ \
   "", \
-  {"text":"SETUP: ","bold":true,"color":"red"}, \
-  {"selector":"@s","color":"red"}, \
-  {"text":" set a Zombie Spawn Location Beta.","color":"red"} \
+  {text:"SETUP: ",bold:true,color:"red"}, \
+  {"selector":"@s",color:"red"}, \
+  {text:" set a Zombie Spawn Location Beta.",color:"red"} \
 ]

@@ -3,18 +3,18 @@
 # If the player is already fireflying, cancel it and return.
 execute if entity @s[scores={ogvz.blaze.firefly.duration.ticks=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Firefly]","bold":true,"color":"light_purple"}, \
-  {"text":" Canceled!","color":"light_purple"} \
+  {text:"[Firefly]",bold:true,color:"light_purple"}, \
+  {text:" Canceled!",color:"light_purple"} \
 ]
 execute if entity @s[scores={ogvz.blaze.firefly.duration.ticks=1..}] run return run function ogvz:zombie/ability/blaze/firefly_stop
 
 # Display a fail message and return if the ability is on a cooldown.
 execute if entity @s[scores={ogvz.blaze.firefly.cooldown.seconds=1..}] run title @s actionbar [ \
   "", \
-  {"text":"[Firefly]","bold":true,"color":"red"}, \
-  {"text":" You have ","color":"red"}, \
-  {"score":{"name":"@s","objective":"ogvz.blaze.firefly.cooldown.seconds"},"bold":true,"color":"red"}, \
-  {"text":" seconds remaining!","color":"red"} \
+  {text:"[Firefly]",bold:true,color:"red"}, \
+  {text:" You have ",color:"red"}, \
+  {"score":{"name":"@s","objective":"ogvz.blaze.firefly.cooldown.seconds"},bold:true,color:"red"}, \
+  {text:" seconds remaining!",color:"red"} \
 ]
 execute if entity @s[scores={ogvz.blaze.firefly.cooldown.seconds=1..}] run return 0
 
@@ -35,8 +35,8 @@ execute positioned ^ ^ ^1.6 unless block ~0.3 ~1.8 ~0.3 #ogvz:go_through run tag
 # Display a fail message, remove the temporary tag and return if the player would be teleported into a solid wall.
 execute if entity @s[tag=temp.fail] run title @s actionbar [ \
   "", \
-  {"text":"[Firefly]","bold":true,"color":"red"}, \
-  {"text":" You can not firefly into solid blocks!","color":"red"} \
+  {text:"[Firefly]",bold:true,color:"red"}, \
+  {text:" You can not firefly into solid blocks!",color:"red"} \
 ]
 execute if entity @s[tag=temp.fail] run return run tag @s remove temp.fail
 
@@ -49,8 +49,8 @@ scoreboard players set @s ogvz.blaze.firefly.cooldown.seconds 15
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Firefly]","bold":true,"color":"green"}, \
-  {"text":" Poof!","color":"green"} \
+  {text:"[Firefly]",bold:true,color:"green"}, \
+  {text:" Poof!",color:"green"} \
 ]
 
 # Play an activation message.

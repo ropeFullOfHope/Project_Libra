@@ -3,8 +3,8 @@
 # Terrain modifying abilities cannot be used when the player is in adventure mode.
 execute if entity @s[gamemode=adventure] run title @s actionbar [ \
   "", \
-  {"text":"[Explode]","bold":true,"color":"red"}, \
-  {"text":" You cannnot use this ability right now!","color":"red"} \
+  {text:"[Explode]",bold:true,color:"red"}, \
+  {text:" You cannnot use this ability right now!",color:"red"} \
 ]
 execute if entity @s[gamemode=adventure] run return 0
 

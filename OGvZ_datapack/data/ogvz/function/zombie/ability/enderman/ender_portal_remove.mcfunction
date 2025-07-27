@@ -8,9 +8,10 @@ playsound minecraft:block.end_portal.spawn player @a ~ ~10000 ~ 1 0.5 1
 particle minecraft:reverse_portal ~ ~-1.5 ~ 3 1 3 1 1000
 
 # Display a ender portal close message.
-tellraw @a [ \
+tellraw @a[tag=ogvz.joined_game] [ \
   "", \
   {text:"\u1120\u1121\u1122\n",font:"ogvz:custom"}, \
+  {text:"▶ ",bold:true,color:"light_purple"}, \
   {text:"The ",color:"light_purple"}, \
   {text:"Ender Portal",color:"light_purple",bold:true}, \
   {text:" has been closed!",color:"light_purple"} \

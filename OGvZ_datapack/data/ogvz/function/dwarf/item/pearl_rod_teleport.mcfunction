@@ -3,8 +3,8 @@
 # Display an activation message.
 title @s actionbar [ \
   "", \
-  {"text":"[Pearl Rod]","bold":true,"color":"light_purple"}, \
-  {"text":" Teleported!","color":"light_purple"} \
+  {text:"[Pearl Rod]",bold:true,color:"light_purple"}, \
+  {text:" Teleported!",color:"light_purple"} \
 ]
 
 # Remove the teleporting tag from the player.

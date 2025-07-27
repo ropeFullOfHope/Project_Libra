@@ -20,8 +20,8 @@ execute as @s[tag=temp.fail] run return run tag @s remove temp.fail
 # Display a success message.
 title @s actionbar [ \
   "", \
-  {"text":"[Create Portal]","bold":true,"color":"light_purple"}, \
-  {"text":" Creating portal!","color":"light_purple"} \
+  {text:"[Create Portal]",bold:true,color:"light_purple"}, \
+  {text:" Creating portal!",color:"light_purple"} \
 ]
 
 # Clear all active items from the player.

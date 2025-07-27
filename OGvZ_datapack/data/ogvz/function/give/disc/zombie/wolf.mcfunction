@@ -4,7 +4,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:2137}, \
   minecraft:item_model="ogvz:disc_wolf", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Wolf","color":"dark_red"}, \
+  minecraft:item_name={text:"Wolf",color:"dark_red"}, \
   minecraft:lore=[ \
     {text:"Summons wolves and fights",color:"blue"}, \
     {text:"alongside them.",color:"blue"}, \

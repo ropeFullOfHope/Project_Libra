@@ -91,6 +91,6 @@ tag @s remove ogvz.mana.teleporting
 
 tag @s remove ogvz.adventure.lobby
 tag @s remove ogvz.adventure.zombie_spawn
-tag @s remove ogvz.adventure.curse_of_unyielding
+tag @s remove ogvz.adventure.tool
 
 tag @s remove ogvz.frozen

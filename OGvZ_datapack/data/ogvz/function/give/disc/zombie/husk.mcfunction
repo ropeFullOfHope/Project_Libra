@@ -4,7 +4,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:2101}, \
   minecraft:item_model="ogvz:disc_husk", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Husk","color":"red"}, \
+  minecraft:item_name={text:"Husk",color:"red"}, \
   minecraft:lore=[ \
     {text:"Basic tank. Stronger with other",color:"blue"}, \
     {text:"husks nearby.",color:"blue"}, \

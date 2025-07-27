@@ -4,7 +4,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:2140}, \
   minecraft:item_model="ogvz:disc_piglin", \
   minecraft:unbreakable={}, \
-  minecraft:item_name={"text":"Piglin","color":"dark_red"}, \
+  minecraft:item_name={text:"Piglin",color:"dark_red"}, \
   minecraft:lore=[ \
     {text:"Eats dwarven keep walls to",color:"blue"}, \
     {text:"evolve into a hoglin.",color:"blue"}, \
